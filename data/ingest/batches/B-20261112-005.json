@@ -1,0 +1,620 @@
+{
+  "batchId": "B-20261112-005",
+  "receivedAt": "2026-11-12T20:59:17.112Z",
+  "fileCount": 3,
+  "files": [
+    {
+      "id": "f001",
+      "name": "spacecraft-fire-safety-demonstration-saffire.pdf",
+      "sizeBytes": 99155,
+      "sha256": "4eed8a4d5bce284e8d9ec24b637b21fdbf4b1fbbaadb663da3b66ee89faecd5f",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "fire-safety",
+      "text": {
+        "chars": 5419,
+        "pages": 2,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2522,
+            "preview": "Spacecraft Fire Safety Demonstration (Saffire) Creating a safe environment for astronauts is the number one priority for all crew missions. Aboard the space station, astronauts have been able to conduct small-scale fire"
+          },
+          {
+            "page": 2,
+            "chars": 2865,
+            "preview": "Launched April 18, 2017 aboard Orbital ATK’s seventh contracted commercial resupply services mission for NASA. The third in the Saffire series, Saffire-III will test the same cotton-fiberglass blend that was burned in Sa"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-005/f001-spacecraft-fire-safety-demonstration-saffire.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-saffire",
+          "entityLabel": "SAFFIRE",
+          "entityType": "investigation",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "Spacecraft Fire Safety Demonstration (Saffire) Creating a safe environment for astronauts is the number one priority for all crew mission",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "its sixth contracted cargo resupply mission with NASA to the International Space Station in October 2016. This second experiment in the Spacecraft Fire Safety s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cygnus",
+          "entityLabel": "Cygnus cargo vehicle",
+          "entityType": "facility",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "ammability limits in space. The experiments are ignited in a Cygnus cargo vehicle after it has completed its primary International Space Station supply mission,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "th. Spacecraft Fire Safety Understanding how fire behaves in microgravity, and how different materials propagate flames in space is immensely important for the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "t kit include a cotton-fiberglass blend, Nomex, and the same acrylic glass that is used for spacecraft windows. After Cygnus departs the station, and before its",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "d of a flow duct and avionics bay. Inside the flow duct, the cotton-fiberglass blend burn sample measured 0.4 m wide by 1 meter long. When commanded by Orbital",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-fiberglass",
+          "entityLabel": "Fiberglass",
+          "entityType": "material",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "flow duct and avionics bay. Inside the flow duct, the cotton-fiberglass blend burn sample measured 0.4 m wide by 1 meter long. When commanded by Orbital ATK and",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-nomex",
+          "entityLabel": "Nomex",
+          "entityType": "material",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 1",
+          "context": "les in the experiment kit include a cotton-fiberglass blend, Nomex, and the same acrylic glass that is used for spacecraft windows. After Cygnus departs the sta",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-saffire",
+          "entityLabel": "SAFFIRE",
+          "entityType": "investigation",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 2",
+          "context": "mercial resupply services mission for NASA. The third in the Saffire series, Saffire-III will test the same cotton-fiberglass blend that was burned in Saffire-I",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 2",
+          "context": "affire-IV was ignited May 11, 2020, when Cygnus departed the International Space Station, before its destructive re-entry through Earth’s atmosphere. This large",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cygnus",
+          "entityLabel": "Cygnus cargo vehicle",
+          "entityType": "facility",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 2",
+          "context": "higher flow velocity. Saffire-III will be ignited after the Cygnus module departs the space station in early June, before its destructive entry through Earth’s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-lunar",
+          "entityLabel": "Lunar / Moon environment",
+          "entityType": "mission-environment",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 2",
+          "context": "in space, especially aboard future spacecraft bound for the Moon and Mars. During the Saffire IV experiment, researchers burned a sample of SIBAL cloth, a comp",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-mars",
+          "entityLabel": "Mars environment",
+          "entityType": "mission-environment",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 2",
+          "context": ", especially aboard future spacecraft bound for the Moon and Mars. During the Saffire IV experiment, researchers burned a sample of SIBAL cloth, a composite of",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 2",
+          "context": "third in the Saffire series, Saffire-III will test the same cotton-fiberglass blend that was burned in Saffire-I, but at a higher flow velocity. Saffire-III wi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-fiberglass",
+          "entityLabel": "Fiberglass",
+          "entityType": "material",
+          "source": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "location": "page/slide 2",
+          "context": "in the Saffire series, Saffire-III will test the same cotton-fiberglass blend that was burned in Saffire-I, but at a higher flow velocity. Saffire-III will be i",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Spacecraft Fire Safety Demonstration (Saffire)",
+        "titleConfidence": "medium",
+        "years": [
+          2016,
+          2017,
+          2020
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-005/f001-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "spacecraft-fire-safety-demonstration-saffire.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 1,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        }
+      ],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-005/f001-spacecraft-fire-safety-demonstration-saffire.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-005/f001.extract.json",
+      "processingMs": 685
+    },
+    {
+      "id": "f002",
+      "name": "structure-liftoff-in-combustion-experiment-slice.pdf",
+      "sizeBytes": 82627,
+      "sha256": "ddc56bd4a9bf46d582fd00e6aed4fbe7c362c1aa6e35a857925fdf7d5a7bc36a",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 5610,
+        "pages": 2,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2938,
+            "preview": "Structure & Liftoff in Combustion Experiment (SLICE) laminar diffusion flames are especially valuable for studies of combustion because of the availability of accurate numerical modeling with that flame configuration. In"
+          },
+          {
+            "page": 2,
+            "chars": 2640,
+            "preview": "The experimental hardware for the Smoke Points In Co-flow Experiment (SPICE), of David L. Urban (NASA Glenn) and Peter B. Sunderland (U. Maryland), which is currently onboard the International Space Station, was built to"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-005/f002-structure-liftoff-in-combustion-experiment-slice.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "lew as part of the STS-87 mission. The SLICE experiment uses SPICE hardware which was based directly on the earlier ELF hardware. Compared to ELF, the SLICE exp",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "Structure & Liftoff in Combustion Experiment (SLICE) laminar diffusion flames are especially valuable for studies of combustion because of the av",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "art of the Advanced Combustion via Microgravity Experiments (ACME) project. The overall goal of the proposed study is to improve our understanding of the physic",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "d value of such studies, the Coflow Laminar Diffusion Flame (CLD Flame) experiment of Marshall B. Long and Mitchell D. Smooke (both of Yale U.) is currently in",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "t for conduct in the Combustion Integrated Rack (CIR) on the International Space Station, as part of the Advanced Combustion via Microgravity Experiments (ACME)",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "h of Yale U.) is currently in development for conduct in the Combustion Integrated Rack (CIR) on the International Space Station, as part of the Advanced Combus",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "ntrols the stability of the entire trailing diffusion flame. Microgravity testing allows for greater temporal and spatial scales and a broader range of flame ch",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "are. Compared to ELF, the SLICE experiment provides superior imaging and a much wider variety of test conditions.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 1",
+          "context": "the CLD Flame experiment. Objectives For diffusion flames of methane, ethylene, and selected nitrogen dilutions of each fuel burning in a coflow of air: (1) Cha",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 2",
+          "context": "imental hardware for the Smoke Points In Co-flow Experiment (SPICE), of David L. Urban (NASA Glenn) and Peter B. Sunderland (U. Maryland), which is currently on",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 2",
+          "context": "the hardware can be used without modification to conduct the SLICE experiment. In terms of the experimental hardware, the only additional requirements for SLICE",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 2",
+          "context": "PICE nozzles are all smaller than the nozzle planned for the CLD Flame experiment. Of course, the SLICE testing could most benefit the CLD Flame experiment by b",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flare",
+          "entityLabel": "FLARE",
+          "entityType": "investigation",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 2",
+          "context": "he left may look like attached flames, the outward fuel-lean flare of each flame’s base reveals it’s lifted nature. SLICE Contacts Project Manager: Robert Hawer",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 2",
+          "context": "w laminar diffusion flames. The SPICE hardware is within the ISS MSG in the image to the right. While the SPICE investigation has been specifically focused on a",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "location": "page/slide 2",
+          "context": "minar diffusion flames. The SPICE hardware is within the ISS MSG in the image to the right. While the SPICE investigation has been specifically focused on a stu",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Structure & Liftoff in Combustion Experiment (SLICE)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-005/f002-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "structure-liftoff-in-combustion-experiment-slice.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 1,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        }
+      ],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-005/f002-structure-liftoff-in-combustion-experiment-slice.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-005/f002.extract.json",
+      "processingMs": 655
+    },
+    {
+      "id": "f003",
+      "name": "20050215648.pdf",
+      "sizeBytes": 156615,
+      "sha256": "4d0e2f9817837c0382ca99fa1bc86777e358188eaad31666749e5998f0779849",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 5775,
+        "pages": 3,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 1997,
+            "preview": "Fundamental Research Applied To Enable Hardware Performance in Microgravity NASA sponsors microgravity research to generate knowledge in physical sciences. In some cases, that knowledge must be applied to enable future r"
+          },
+          {
+            "page": 2,
+            "chars": 2137,
+            "preview": "P-Trak internal components and flow. Long description of figure. Internal components and airflow for the P-Trak, showing pump, focusing optics, laser diode, photodetector, saturator tube, alcohol-soaked wick, and sample"
+          },
+          {
+            "page": 3,
+            "chars": 1593,
+            "preview": "instruments, the smallest particles will be removed from the flow stream by a device called the DAFT Impactor, which was designed with the guidance of scientists at the National Institute of Standards and Technology. The"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-005/f003-20050215648.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-same",
+          "entityLabel": "SAME",
+          "entityType": "investigation",
+          "source": "20050215648.pdf",
+          "location": "page/slide 1",
+          "context": "Center by NASA and ZIN Technologies, Inc., in support of the Smoke Aerosol Measurement Experiment (SAME). SAME is an investigation that is being designed for op",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-daft",
+          "entityLabel": "DAFT",
+          "entityType": "investigation",
+          "source": "20050215648.pdf",
+          "location": "page/slide 1",
+          "context": "example. The Dust and Aerosol measurement Feasibility Test (DAFT) is a risk-mitigation experiment developed at the NASA Glenn Research Center by NASA and ZIN T",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "20050215648.pdf",
+          "location": "page/slide 1",
+          "context": "or operation in the Microgravity Science Glovebox aboard the International Space Station (ISS). The purpose of DAFT is to evaluate the performance of P-Trak (TS",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "20050215648.pdf",
+          "location": "page/slide 1",
+          "context": "an investigation that is being designed for operation in the Microgravity Science Glovebox aboard the International Space Station (ISS). The purpose of DAFT is",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "20050215648.pdf",
+          "location": "page/slide 1",
+          "context": "ndamental Research Applied To Enable Hardware Performance in Microgravity NASA sponsors microgravity research to generate knowledge in physical sciences. In som",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "20050215648.pdf",
+          "location": "page/slide 1",
+          "context": "droplets pass through an internal nozzle and past a focused laser beam, producing flashes of light that are sensed by a photodetector and then counted to deter",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-daft",
+          "entityLabel": "DAFT",
+          "entityType": "investigation",
+          "source": "20050215648.pdf",
+          "location": "page/slide 2",
+          "context": "wetting properties of liquids on surfaces (ref. 1). For the DAFT experiment, both a modified and an unmodified version of the P-Trak will be tested in the long",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "20050215648.pdf",
+          "location": "page/slide 2",
+          "context": "sted in the long-duration microgravity conditions aboard the ISS. In addition to the P-Traks, another commercial instrument, the TSI DustTrak, will be utilized",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "20050215648.pdf",
+          "location": "page/slide 2",
+          "context": "ed version of the P-Trak will be tested in the long-duration microgravity conditions aboard the ISS. In addition to the P-Traks, another commercial instrument,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "20050215648.pdf",
+          "location": "page/slide 2",
+          "context": "s and airflow for the P-Trak, showing pump, focusing optics, laser diode, photodetector, saturator tube, alcohol-soaked wick, and sample inlet. Also shows a cro",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-daft",
+          "entityLabel": "DAFT",
+          "entityType": "investigation",
+          "source": "20050215648.pdf",
+          "location": "page/slide 3",
+          "context": "will be removed from the flow stream by a device called the DAFT Impactor, which was designed with the guidance of scientists at the National Institute of Stan",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "20050215648.pdf",
+          "location": "page/slide 3",
+          "context": "k. These instruments also will take data from samples of the ISS cabin air. Environmental Control and Life Support Systems personnel at the NASA Johnson Space C",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "20050215648.pdf",
+          "location": "page/slide 3",
+          "context": "2003, pp. 481–489. Find out more about this research http://microgravity.grc.nasa.gov/combustion/daft/daft_index.htm Glenn contacts: William A. Sheredy, 216–43",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Fundamental Research Applied To",
+        "titleConfidence": "medium",
+        "years": [
+          2003
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-005/f003-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "20050215648.pdf",
+          "width": 403,
+          "height": 306,
+          "format": "png",
+          "page": 2,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        }
+      ],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-005/f003-20050215648.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-005/f003.extract.json",
+      "processingMs": 656
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "extracted": 3,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 3,
+    "pages": 7,
+    "chars": 16804,
+    "tables": 0,
+    "tableRows": 0,
+    "equations": 0,
+    "figures": 3,
+    "entities": 43,
+    "newEntities": 0,
+    "mediaAssets": 3
+  },
+  "cumulative": {
+    "batches": 5,
+    "files": 33,
+    "uniqueFiles": 33,
+    "duplicateFiles": 0,
+    "documents": 33,
+    "pages": 71,
+    "chars": 132392,
+    "tables": 23,
+    "tableRows": 2007,
+    "equations": 1,
+    "figures": 64,
+    "mediaAssets": 64,
+    "entities": 110,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261112-005",
+    "updatedAt": "2026-11-12T20:59:19.131Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

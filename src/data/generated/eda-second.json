@@ -1,0 +1,6701 @@
+{
+ "generatedAt": "2026-11-09T05:05:58.510641+00:00",
+ "source": "data/raw/*.csv \u2014 19 PSI experimental tables, parsed with utf-8/latin-1 fallback; all statistics computed from actual rows",
+ "tables": {
+  "PSI-100_SAFFIRE-III.csv": {
+   "rows": 2,
+   "columns": [
+    {
+     "name": "Sample Number",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "S1",
+       "count": 1
+      },
+      {
+       "value": "S2",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Material",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "SIBAL Fabric",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Sample Thickness",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": ".33 cm",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Sample Length",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "94 cm",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Sample Width",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "40.6 cm",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Air Flow",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "30 cm/s",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Direction",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Concurrent",
+       "count": 1
+      },
+      {
+       "value": "Opposed",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Camera 1",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "S1C1",
+       "count": 1
+      },
+      {
+       "value": "S2C1",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Camera 2",
+     "filled": 2,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "S1C2",
+       "count": 1
+      },
+      {
+       "value": "S2C2",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [],
+   "missingTotal": 0,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Material",
+     "kind": "categorical",
+     "coverage": "2/2",
+     "values": [
+      "SIBAL Fabric"
+     ]
+    },
+    "flow": {
+     "column": "Air Flow",
+     "kind": "categorical",
+     "coverage": "2/2",
+     "values": [
+      "30 cm/s"
+     ]
+    }
+   }
+  },
+  "PSI-101_SAME-R.csv": {
+   "rows": 109,
+   "columns": [
+    {
+     "name": "Sample Type",
+     "filled": 109,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 5,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Kapton",
+       "count": 29
+      },
+      {
+       "value": "Silicone",
+       "count": 22
+      },
+      {
+       "value": "Lampwick",
+       "count": 20
+      },
+      {
+       "value": "Pyrell",
+       "count": 20
+      },
+      {
+       "value": "Teflon",
+       "count": 18
+      }
+     ]
+    },
+    {
+     "name": "SAME Test #",
+     "filled": 109,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 108,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "57",
+       "count": 2
+      },
+      {
+       "value": "51",
+       "count": 1
+      },
+      {
+       "value": "51a",
+       "count": 1
+      },
+      {
+       "value": "61",
+       "count": 1
+      },
+      {
+       "value": "61a",
+       "count": 1
+      },
+      {
+       "value": "62",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Description",
+     "filled": 109,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 34,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "aged",
+       "count": 41
+      },
+      {
+       "value": "Baseline STS det",
+       "count": 6
+      },
+      {
+       "value": "No flow run w/ aging",
+       "count": 6
+      },
+      {
+       "value": "No flow run w/aging",
+       "count": 5
+      },
+      {
+       "value": "Baseline Aging",
+       "count": 4
+      },
+      {
+       "value": "High Temp aging",
+       "count": 4
+      }
+     ]
+    },
+    {
+     "name": "Date",
+     "filled": 109,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 17,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "26-Aug",
+       "count": 19
+      },
+      {
+       "value": "9-Sep",
+       "count": 17
+      },
+      {
+       "value": "8-Sep",
+       "count": 12
+      },
+      {
+       "value": "30-Aug",
+       "count": 11
+      },
+      {
+       "value": "7-Sep",
+       "count": 10
+      },
+      {
+       "value": "23-Aug",
+       "count": 8
+      }
+     ]
+    },
+    {
+     "name": "Inlet velocity (cm/s)",
+     "filled": 109,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 5,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 8.1,
+     "mean": 5.7927,
+     "std": 3.5377,
+     "q1": 1.0,
+     "median": 8.1,
+     "q3": 8.1,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Rt/R0",
+     "filled": 109,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 20,
+     "kind": "numeric",
+     "min": 1.22,
+     "max": 1.48,
+     "mean": 1.3473,
+     "std": 0.0923,
+     "q1": 1.245,
+     "median": 1.35,
+     "q3": 1.445,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Duration (sec)",
+     "filled": 68,
+     "blanks": 41,
+     "missingPct": 37.6,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 60.0,
+     "max": 120.0,
+     "mean": 60.8824,
+     "std": 7.2761,
+     "q1": 60.0,
+     "median": 60.0,
+     "q3": 60.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Primary aging time (sec)",
+     "filled": 67,
+     "blanks": 42,
+     "missingPct": 38.5,
+     "unique": 3,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 720.0,
+     "mean": 63.7612,
+     "std": 187.7698,
+     "q1": 11.0,
+     "median": 11.0,
+     "q3": 11.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Primary mixing time (sec)",
+     "filled": 67,
+     "blanks": 42,
+     "missingPct": 38.5,
+     "unique": 1,
+     "kind": "numeric",
+     "min": 8.0,
+     "max": 8.0,
+     "mean": 8.0,
+     "std": 0.0,
+     "q1": 8.0,
+     "median": 8.0,
+     "q3": 8.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Net aging time (sec)",
+     "filled": 109,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 67,
+     "kind": "numeric",
+     "min": 21.0,
+     "max": 1923.0,
+     "mean": 312.7981,
+     "std": 344.9298,
+     "q1": 37.0,
+     "median": 51.0,
+     "q3": 579.25,
+     "iqrOutliers": 1
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Primary aging time (sec)",
+     "b": "Net aging time (sec)",
+     "r": 0.999,
+     "n": 63,
+     "strength": "strong"
+    },
+    {
+     "a": "Inlet velocity (cm/s)",
+     "b": "Duration (sec)",
+     "r": -0.219,
+     "n": 68,
+     "strength": "weak"
+    },
+    {
+     "a": "Rt/R0",
+     "b": "Duration (sec)",
+     "r": 0.183,
+     "n": 68,
+     "strength": "weak"
+    },
+    {
+     "a": "Inlet velocity (cm/s)",
+     "b": "Primary aging time (sec)",
+     "r": 0.177,
+     "n": 67,
+     "strength": "weak"
+    },
+    {
+     "a": "Inlet velocity (cm/s)",
+     "b": "Net aging time (sec)",
+     "r": 0.091,
+     "n": 104,
+     "strength": "weak"
+    },
+    {
+     "a": "Duration (sec)",
+     "b": "Net aging time (sec)",
+     "r": -0.046,
+     "n": 64,
+     "strength": "weak"
+    },
+    {
+     "a": "Rt/R0",
+     "b": "Primary aging time (sec)",
+     "r": 0.043,
+     "n": 67,
+     "strength": "weak"
+    },
+    {
+     "a": "Duration (sec)",
+     "b": "Primary aging time (sec)",
+     "r": -0.035,
+     "n": 67,
+     "strength": "weak"
+    },
+    {
+     "a": "Inlet velocity (cm/s)",
+     "b": "Rt/R0",
+     "r": -0.005,
+     "n": 109,
+     "strength": "weak"
+    },
+    {
+     "a": "Rt/R0",
+     "b": "Net aging time (sec)",
+     "r": -0.0,
+     "n": 104,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 125,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Sample Type",
+     "kind": "categorical",
+     "coverage": "109/109",
+     "values": [
+      "Kapton",
+      "Silicone",
+      "Lampwick",
+      "Pyrell",
+      "Teflon"
+     ]
+    },
+    "flow": {
+     "column": "Inlet velocity (cm/s)",
+     "kind": "numeric",
+     "coverage": "109/109",
+     "values": [
+      0.0,
+      8.1
+     ]
+    }
+   }
+  },
+  "PSI-102_SAME.csv": {
+   "rows": 8,
+   "columns": [
+    {
+     "name": "Sample #",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 8,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 8.0,
+     "mean": 4.5,
+     "std": 2.4495,
+     "q1": 2.75,
+     "median": 4.5,
+     "q3": 6.25,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Sample Material",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 5,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Teflon",
+       "count": 4
+      },
+      {
+       "value": "Kapton: same conditions as 1-4",
+       "count": 1
+      },
+      {
+       "value": "Silicone Rubber: same conditions as 1-4",
+       "count": 1
+      },
+      {
+       "value": "Lampwick: same conditions as 1-4",
+       "count": 1
+      },
+      {
+       "value": "Dibutyl Phthalate: same conditions as 1-4",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Air Flow (cm/s)",
+     "filled": 4,
+     "blanks": 4,
+     "missingPct": 50.0,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 5.0,
+     "max": 10.0,
+     "mean": 6.25,
+     "std": 2.5,
+     "q1": 5.0,
+     "median": 5.0,
+     "q3": 6.25,
+     "iqrOutliers": 1
+    },
+    {
+     "name": "Weight loss rate (mg/min)",
+     "filled": 4,
+     "blanks": 4,
+     "missingPct": 50.0,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 2.0,
+     "mean": 1.75,
+     "std": 0.5,
+     "q1": 1.75,
+     "median": 2.0,
+     "q3": 2.0,
+     "iqrOutliers": 1
+    },
+    {
+     "name": "Aging Duration (minutes)",
+     "filled": 4,
+     "blanks": 4,
+     "missingPct": 50.0,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 20.0,
+     "mean": 5.75,
+     "std": 9.5,
+     "q1": 1.0,
+     "median": 1.0,
+     "q3": 5.75,
+     "iqrOutliers": 1
+    }
+   ],
+   "correlations": [],
+   "missingTotal": 12,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Sample Material",
+     "kind": "categorical",
+     "coverage": "8/8",
+     "values": [
+      "Teflon",
+      "Kapton: same conditions as 1-4",
+      "Silicone Rubber: same conditions as 1-4",
+      "Lampwick: same conditions as 1-4",
+      "Dibutyl Phthalate: same conditions as 1-4"
+     ]
+    },
+    "flow": {
+     "column": "Air Flow (cm/s)",
+     "kind": "numeric",
+     "coverage": "4/8",
+     "values": [
+      5.0,
+      10.0
+     ]
+    }
+   }
+  },
+  "PSI-106_SLICE.csv": {
+   "rows": 12,
+   "columns": [
+    {
+     "name": "Test Date",
+     "filled": 12,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 12,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "2012-FEB-09",
+       "count": 1
+      },
+      {
+       "value": "2012-FEB-13 SLICE testing with",
+       "count": 1
+      },
+      {
+       "value": "2012-FEB-17",
+       "count": 1
+      },
+      {
+       "value": "2012-FEB-20",
+       "count": 1
+      },
+      {
+       "value": "2012-FEB-27",
+       "count": 1
+      },
+      {
+       "value": "2012-MAR-01",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Fuel Type",
+     "filled": 12,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 9,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "100% CH4",
+       "count": 3
+      },
+      {
+       "value": "20% C2H4 (balance N2)",
+       "count": 2
+      },
+      {
+       "value": "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations",
+       "count": 1
+      },
+      {
+       "value": "70% CH4 (balance N2) including 1 pyrometry calibration test",
+       "count": 1
+      },
+      {
+       "value": "40% CH4 (balance N2)",
+       "count": 1
+      },
+      {
+       "value": "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [],
+   "missingTotal": 0,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel Type",
+     "kind": "categorical",
+     "coverage": "12/12",
+     "values": [
+      "100% CH4",
+      "20% C2H4 (balance N2)",
+      "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations",
+      "70% CH4 (balance N2) including 1 pyrometry calibration test",
+      "40% CH4 (balance N2)"
+     ]
+    }
+   }
+  },
+  "PSI-107_SPICE.csv": {
+   "rows": 469,
+   "columns": [
+    {
+     "name": "GMT date",
+     "filled": 469,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 11,
+     "kind": "numeric",
+     "min": 45.0,
+     "max": 174.0,
+     "mean": 100.8316,
+     "std": 56.3914,
+     "q1": 52.0,
+     "median": 58.0,
+     "q3": 173.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "GMT ignition",
+     "filled": 469,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 151,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "10:34:07",
+       "count": 12
+      },
+      {
+       "value": "11:50:17",
+       "count": 11
+      },
+      {
+       "value": "10:41:34",
+       "count": 9
+      },
+      {
+       "value": "9:59:46",
+       "count": 8
+      },
+      {
+       "value": "11:04:59",
+       "count": 8
+      },
+      {
+       "value": "14.48.19",
+       "count": 7
+      }
+     ]
+    },
+    {
+     "name": "GMT  Flame Off",
+     "filled": 458,
+     "blanks": 11,
+     "missingPct": 2.3,
+     "unique": 143,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "10:36:51",
+       "count": 12
+      },
+      {
+       "value": "11:53:45",
+       "count": 11
+      },
+      {
+       "value": "10:44:30",
+       "count": 9
+      },
+      {
+       "value": "10:02:52",
+       "count": 8
+      },
+      {
+       "value": "11:09:58",
+       "count": 8
+      },
+      {
+       "value": "14.51.56",
+       "count": 7
+      }
+     ]
+    },
+    {
+     "name": "Fuel",
+     "filled": 469,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 7,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Propylene",
+       "count": 122
+      },
+      {
+       "value": "75 % Propylene",
+       "count": 119
+      },
+      {
+       "value": "50 % Propylene",
+       "count": 111
+      },
+      {
+       "value": "Propane",
+       "count": 50
+      },
+      {
+       "value": "Ethylene",
+       "count": 47
+      },
+      {
+       "value": "75% Propylene",
+       "count": 16
+      }
+     ]
+    },
+    {
+     "name": "Nozzle (mm)",
+     "filled": 469,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "numeric",
+     "min": 0.4064,
+     "max": 1.6002,
+     "mean": 0.9497,
+     "std": 0.5276,
+     "q1": 0.4064,
+     "median": 0.762,
+     "q3": 1.6002,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fuel Rate (sccm)",
+     "filled": 457,
+     "blanks": 12,
+     "missingPct": 2.6,
+     "unique": 284,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 231.6,
+     "mean": 52.7237,
+     "std": 38.5645,
+     "q1": 25.5887,
+     "median": 43.617,
+     "q3": 68.4,
+     "iqrOutliers": 17
+    },
+    {
+     "name": "Fuel Rate (mg/s)",
+     "filled": 457,
+     "blanks": 12,
+     "missingPct": 2.6,
+     "unique": 275,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 4.397,
+     "mean": 1.2227,
+     "std": 0.8215,
+     "q1": 0.59,
+     "median": 1.02,
+     "q3": 1.665,
+     "iqrOutliers": 16
+    },
+    {
+     "name": "HC Fuel Rate (mg/s)",
+     "filled": 469,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 269,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 4.397,
+     "mean": 1.0037,
+     "std": 0.7851,
+     "q1": 0.409,
+     "median": 0.817,
+     "q3": 1.343,
+     "iqrOutliers": 18
+    },
+    {
+     "name": "Air Rate (cm/s)",
+     "filled": 444,
+     "blanks": 25,
+     "missingPct": 5.3,
+     "unique": 62,
+     "kind": "numeric",
+     "min": -5.92,
+     "max": 85.28,
+     "mean": 30.5817,
+     "std": 17.0356,
+     "q1": 15.71,
+     "median": 27.93,
+     "q3": 40.15,
+     "iqrOutliers": 1
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Fuel Rate (mg/s)",
+     "b": "HC Fuel Rate (mg/s)",
+     "r": 0.94,
+     "n": 457,
+     "strength": "strong"
+    },
+    {
+     "a": "Fuel Rate (sccm)",
+     "b": "Fuel Rate (mg/s)",
+     "r": 0.928,
+     "n": 457,
+     "strength": "strong"
+    },
+    {
+     "a": "Fuel Rate (sccm)",
+     "b": "HC Fuel Rate (mg/s)",
+     "r": 0.865,
+     "n": 457,
+     "strength": "strong"
+    },
+    {
+     "a": "Nozzle (mm)",
+     "b": "Air Rate (cm/s)",
+     "r": 0.214,
+     "n": 444,
+     "strength": "weak"
+    },
+    {
+     "a": "HC Fuel Rate (mg/s)",
+     "b": "Air Rate (cm/s)",
+     "r": 0.201,
+     "n": 444,
+     "strength": "weak"
+    },
+    {
+     "a": "Fuel Rate (mg/s)",
+     "b": "Air Rate (cm/s)",
+     "r": 0.187,
+     "n": 444,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT date",
+     "b": "Fuel Rate (mg/s)",
+     "r": -0.176,
+     "n": 457,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT date",
+     "b": "HC Fuel Rate (mg/s)",
+     "r": -0.169,
+     "n": 469,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT date",
+     "b": "Fuel Rate (sccm)",
+     "r": -0.157,
+     "n": 457,
+     "strength": "weak"
+    },
+    {
+     "a": "Nozzle (mm)",
+     "b": "Fuel Rate (mg/s)",
+     "r": 0.116,
+     "n": 457,
+     "strength": "weak"
+    },
+    {
+     "a": "Fuel Rate (sccm)",
+     "b": "Air Rate (cm/s)",
+     "r": 0.113,
+     "n": 444,
+     "strength": "weak"
+    },
+    {
+     "a": "Nozzle (mm)",
+     "b": "Fuel Rate (sccm)",
+     "r": 0.087,
+     "n": 457,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT date",
+     "b": "Nozzle (mm)",
+     "r": -0.021,
+     "n": 469,
+     "strength": "weak"
+    },
+    {
+     "a": "Nozzle (mm)",
+     "b": "HC Fuel Rate (mg/s)",
+     "r": 0.017,
+     "n": 469,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT date",
+     "b": "Air Rate (cm/s)",
+     "r": -0.01,
+     "n": 444,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 60,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel",
+     "kind": "categorical",
+     "coverage": "469/469",
+     "values": [
+      "Propylene",
+      "75 % Propylene",
+      "50 % Propylene",
+      "Propane",
+      "Ethylene"
+     ]
+    },
+    "flow": {
+     "column": "Fuel Rate (sccm)",
+     "kind": "numeric",
+     "coverage": "457/469",
+     "values": [
+      0.0,
+      231.6
+     ]
+    },
+    "ignition": {
+     "column": "GMT ignition",
+     "kind": "categorical",
+     "coverage": "469/469",
+     "values": [
+      "10:34:07",
+      "11:50:17",
+      "10:41:34",
+      "9:59:46",
+      "11:04:59"
+     ]
+    },
+    "extinction": {
+     "column": "GMT  Flame Off",
+     "kind": "categorical",
+     "coverage": "458/469",
+     "values": [
+      "10:36:51",
+      "11:53:45",
+      "10:44:30",
+      "10:02:52",
+      "11:09:58"
+     ]
+    }
+   }
+  },
+  "PSI-10_FlameDesign_Inverse.csv": {
+   "rows": 120,
+   "columns": [
+    {
+     "name": "Flame Type",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Inverse",
+       "count": 120
+      }
+     ]
+    },
+    {
+     "name": "Day",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 8,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 8.0,
+     "mean": 4.7667,
+     "std": 2.1566,
+     "q1": 3.0,
+     "median": 5.0,
+     "q3": 7.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Test",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 120,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "21328A1",
+       "count": 1
+      },
+      {
+       "value": "21328A2",
+       "count": 1
+      },
+      {
+       "value": "21328D1",
+       "count": 1
+      },
+      {
+       "value": "21328N1",
+       "count": 1
+      },
+      {
+       "value": "21328N2",
+       "count": 1
+      },
+      {
+       "value": "21328N3",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "XO2",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 60,
+     "kind": "numeric",
+     "min": 0.212017175,
+     "max": 0.849977932,
+     "mean": 0.6091,
+     "std": 0.2466,
+     "q1": 0.3654,
+     "median": 0.572,
+     "q3": 0.85,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "mO2 (mg/s)",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 114,
+     "kind": "numeric",
+     "min": 1.523649805,
+     "max": 9.799337625,
+     "mean": 4.3495,
+     "std": 1.6258,
+     "q1": 3.3788,
+     "median": 4.0732,
+     "q3": 5.1114,
+     "iqrOutliers": 6
+    },
+    {
+     "name": "mN2 (mg/s)",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 111,
+     "kind": "numeric",
+     "min": 0.235437505,
+     "max": 9.611028728,
+     "mean": 3.3456,
+     "std": 2.9041,
+     "q1": 0.7893,
+     "median": 2.56,
+     "q3": 6.0086,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "mtot (mg/s)",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 111,
+     "kind": "numeric",
+     "min": 1.75908731,
+     "max": 13.75969736,
+     "mean": 7.6797,
+     "std": 3.0775,
+     "q1": 5.8961,
+     "median": 7.3342,
+     "q3": 9.9007,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "XC2H4 initial",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 120,
+     "kind": "numeric",
+     "min": 0.080313163,
+     "max": 0.658125963,
+     "mean": 0.1775,
+     "std": 0.1039,
+     "q1": 0.0989,
+     "median": 0.168,
+     "q3": 0.1891,
+     "iqrOutliers": 4
+    },
+    {
+     "name": "XC2H4 final",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 120,
+     "kind": "numeric",
+     "min": 0.080092897,
+     "max": 0.657133201,
+     "mean": 0.1762,
+     "std": 0.1034,
+     "q1": 0.0986,
+     "median": 0.1671,
+     "q3": 0.1884,
+     "iqrOutliers": 4
+    },
+    {
+     "name": "pinit (atm)",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 69,
+     "kind": "numeric",
+     "min": 0.42460704,
+     "max": 3.0076332,
+     "mean": 1.2188,
+     "std": 0.7826,
+     "q1": 0.9525,
+     "median": 1.003,
+     "q3": 1.0134,
+     "iqrOutliers": 51
+    },
+    {
+     "name": "pfinal (atm)",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 72,
+     "kind": "numeric",
+     "min": 0.42732888,
+     "max": 3.02872746,
+     "mean": 1.231,
+     "std": 0.784,
+     "q1": 0.9594,
+     "median": 1.0149,
+     "q3": 1.0328,
+     "iqrOutliers": 51
+    },
+    {
+     "name": "pmean (atm)",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 89,
+     "kind": "numeric",
+     "min": 0.42596796,
+     "max": 3.01818033,
+     "mean": 1.2249,
+     "std": 0.7833,
+     "q1": 0.956,
+     "median": 1.0088,
+     "q3": 1.0222,
+     "iqrOutliers": 51
+    },
+    {
+     "name": "mean Zst",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 111,
+     "kind": "numeric",
+     "min": 0.09531966,
+     "max": 0.75847983,
+     "mean": 0.5201,
+     "std": 0.1696,
+     "q1": 0.4027,
+     "median": 0.5569,
+     "q3": 0.6769,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Tad (K)",
+     "filled": 120,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 111,
+     "kind": "numeric",
+     "min": 2074.412212,
+     "max": 2974.456119,
+     "mean": 2512.4461,
+     "std": 199.4882,
+     "q1": 2335.8193,
+     "median": 2513.7455,
+     "q3": 2671.7725,
+     "iqrOutliers": 0
+    }
+   ],
+   "correlations": [
+    {
+     "a": "XC2H4 initial",
+     "b": "XC2H4 final",
+     "r": 1.0,
+     "n": 120,
+     "strength": "strong"
+    },
+    {
+     "a": "pinit (atm)",
+     "b": "pfinal (atm)",
+     "r": 1.0,
+     "n": 120,
+     "strength": "strong"
+    },
+    {
+     "a": "pinit (atm)",
+     "b": "pmean (atm)",
+     "r": 1.0,
+     "n": 120,
+     "strength": "strong"
+    },
+    {
+     "a": "pfinal (atm)",
+     "b": "pmean (atm)",
+     "r": 1.0,
+     "n": 120,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2",
+     "b": "mN2 (mg/s)",
+     "r": -0.948,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "mN2 (mg/s)",
+     "b": "mtot (mg/s)",
+     "r": 0.855,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "mN2 (mg/s)",
+     "b": "mean Zst",
+     "r": -0.85,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2",
+     "b": "mean Zst",
+     "r": 0.837,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "mtot (mg/s)",
+     "b": "mean Zst",
+     "r": -0.722,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2",
+     "b": "mtot (mg/s)",
+     "r": -0.715,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "XC2H4 initial",
+     "b": "mean Zst",
+     "r": -0.71,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "XC2H4 final",
+     "b": "mean Zst",
+     "r": -0.706,
+     "n": 109,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2",
+     "b": "Tad (K)",
+     "r": 0.579,
+     "n": 109,
+     "strength": "moderate"
+    },
+    {
+     "a": "mN2 (mg/s)",
+     "b": "Tad (K)",
+     "r": -0.506,
+     "n": 109,
+     "strength": "moderate"
+    },
+    {
+     "a": "mO2 (mg/s)",
+     "b": "Tad (K)",
+     "r": 0.469,
+     "n": 109,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "pinit (atm)",
+     "r": 0.43,
+     "n": 120,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "pmean (atm)",
+     "r": 0.43,
+     "n": 120,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "pfinal (atm)",
+     "r": 0.429,
+     "n": 120,
+     "strength": "moderate"
+    },
+    {
+     "a": "mtot (mg/s)",
+     "b": "XC2H4 initial",
+     "r": 0.419,
+     "n": 109,
+     "strength": "moderate"
+    },
+    {
+     "a": "mtot (mg/s)",
+     "b": "XC2H4 final",
+     "r": 0.416,
+     "n": 109,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "mtot (mg/s)",
+     "r": -0.384,
+     "n": 109,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "mean Zst",
+     "r": 0.375,
+     "n": 109,
+     "strength": "weak"
+    },
+    {
+     "a": "mN2 (mg/s)",
+     "b": "XC2H4 initial",
+     "r": 0.375,
+     "n": 109,
+     "strength": "weak"
+    },
+    {
+     "a": "mN2 (mg/s)",
+     "b": "XC2H4 final",
+     "r": 0.37,
+     "n": 109,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 0,
+   "qualityNotes": [],
+   "conditions": {
+    "oxygen": {
+     "column": "XO2",
+     "kind": "numeric",
+     "coverage": "120/120",
+     "values": [
+      0.212017175,
+      0.849977932
+     ]
+    }
+   }
+  },
+  "PSI-10_FlameDesign_Normal.csv": {
+   "rows": 207,
+   "columns": [
+    {
+     "name": "Flame Type",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Normal",
+       "count": 207
+      }
+     ]
+    },
+    {
+     "name": "Day",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 14,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 13.0,
+     "mean": 6.7633,
+     "std": 4.2194,
+     "q1": 3.0,
+     "median": 7.0,
+     "q3": 11.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fuel",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "C2H4",
+       "count": 187
+      },
+      {
+       "value": "C3H8",
+       "count": 20
+      }
+     ]
+    },
+    {
+     "name": "Test",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 207,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "19115A1",
+       "count": 1
+      },
+      {
+       "value": "19115D2",
+       "count": 1
+      },
+      {
+       "value": "19115B1",
+       "count": 1
+      },
+      {
+       "value": "19115B2",
+       "count": 1
+      },
+      {
+       "value": "19115F1",
+       "count": 1
+      },
+      {
+       "value": "19115G1",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Xfuel",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 98,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "RAMP",
+       "count": 57
+      },
+      {
+       "value": "1",
+       "count": 49
+      },
+      {
+       "value": "RAMPED",
+       "count": 3
+      },
+      {
+       "value": "0.25",
+       "count": 2
+      },
+      {
+       "value": "0.167",
+       "count": 2
+      },
+      {
+       "value": "0.1",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "mfuel (mg/s)",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 142,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "RAMP",
+       "count": 57
+      },
+      {
+       "value": "1.05",
+       "count": 4
+      },
+      {
+       "value": "RAMPED",
+       "count": 3
+      },
+      {
+       "value": "1.2",
+       "count": 3
+      },
+      {
+       "value": "1",
+       "count": 2
+      },
+      {
+       "value": "0.65",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "mN2 (mg/s)",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 99,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "RAMP",
+       "count": 57
+      },
+      {
+       "value": "0",
+       "count": 49
+      },
+      {
+       "value": "RAMPED",
+       "count": 3
+      },
+      {
+       "value": "2.001192204",
+       "count": 2
+      },
+      {
+       "value": "3.168887189",
+       "count": 2
+      },
+      {
+       "value": "1.545139763",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "mtot (mg/s)",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 144,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "RAMP",
+       "count": 57
+      },
+      {
+       "value": "RAMPED",
+       "count": 3
+      },
+      {
+       "value": "1.2",
+       "count": 3
+      },
+      {
+       "value": "1.05",
+       "count": 2
+      },
+      {
+       "value": "3.051192204",
+       "count": 2
+      },
+      {
+       "value": "4.168887189",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "XO2 (init)",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 188,
+     "kind": "numeric",
+     "min": 0.198048193,
+     "max": 0.4,
+     "mean": 0.3207,
+     "std": 0.0863,
+     "q1": 0.2062,
+     "median": 0.3756,
+     "q3": 0.3896,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "XO2 (final)",
+     "filled": 187,
+     "blanks": 20,
+     "missingPct": 9.7,
+     "unique": 187,
+     "kind": "numeric",
+     "min": 0.197475265,
+     "max": 0.397248069,
+     "mean": 0.3102,
+     "std": 0.0856,
+     "q1": 0.2049,
+     "median": 0.3659,
+     "q3": 0.3844,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "pinit (atm)",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 80,
+     "kind": "numeric",
+     "min": 0.931972789,
+     "max": 1.29695676,
+     "mean": 1.0755,
+     "std": 0.1217,
+     "q1": 1.0078,
+     "median": 1.0139,
+     "q3": 1.2558,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "pfinal (atm)",
+     "filled": 187,
+     "blanks": 20,
+     "missingPct": 9.7,
+     "unique": 91,
+     "kind": "numeric",
+     "min": 0.99279114,
+     "max": 1.32417516,
+     "mean": 1.1009,
+     "std": 0.1197,
+     "q1": 1.0152,
+     "median": 1.0255,
+     "q3": 1.2619,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "pmean (atm)",
+     "filled": 187,
+     "blanks": 20,
+     "missingPct": 9.7,
+     "unique": 112,
+     "kind": "numeric",
+     "min": 0.99211068,
+     "max": 1.31056596,
+     "mean": 1.0959,
+     "std": 0.1189,
+     "q1": 1.0125,
+     "median": 1.0221,
+     "q3": 1.2612,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "mean Zst",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 135,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "RAMP",
+       "count": 57
+      },
+      {
+       "value": "0.106461571",
+       "count": 12
+      },
+      {
+       "value": "RAMPED",
+       "count": 3
+      },
+      {
+       "value": "0.257182771",
+       "count": 2
+      },
+      {
+       "value": "0.331866302",
+       "count": 2
+      },
+      {
+       "value": "0.444563692",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Tad (K)",
+     "filled": 207,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 135,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "RAMP",
+       "count": 57
+      },
+      {
+       "value": "2734.953406",
+       "count": 12
+      },
+      {
+       "value": "RAMPED",
+       "count": 3
+      },
+      {
+       "value": "2607.182737",
+       "count": 2
+      },
+      {
+       "value": "2523.97951",
+       "count": 2
+      },
+      {
+       "value": "2357.78851",
+       "count": 2
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "XO2 (init)",
+     "b": "XO2 (final)",
+     "r": 1.0,
+     "n": 187,
+     "strength": "strong"
+    },
+    {
+     "a": "pinit (atm)",
+     "b": "pmean (atm)",
+     "r": 0.999,
+     "n": 187,
+     "strength": "strong"
+    },
+    {
+     "a": "pfinal (atm)",
+     "b": "pmean (atm)",
+     "r": 0.999,
+     "n": 187,
+     "strength": "strong"
+    },
+    {
+     "a": "pinit (atm)",
+     "b": "pfinal (atm)",
+     "r": 0.998,
+     "n": 187,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2 (final)",
+     "b": "pfinal (atm)",
+     "r": 0.612,
+     "n": 187,
+     "strength": "moderate"
+    },
+    {
+     "a": "XO2 (init)",
+     "b": "pfinal (atm)",
+     "r": 0.606,
+     "n": 187,
+     "strength": "moderate"
+    },
+    {
+     "a": "XO2 (final)",
+     "b": "pmean (atm)",
+     "r": 0.598,
+     "n": 187,
+     "strength": "moderate"
+    },
+    {
+     "a": "XO2 (init)",
+     "b": "pmean (atm)",
+     "r": 0.592,
+     "n": 187,
+     "strength": "moderate"
+    },
+    {
+     "a": "XO2 (final)",
+     "b": "pinit (atm)",
+     "r": 0.583,
+     "n": 187,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "XO2 (init)",
+     "r": 0.43,
+     "n": 207,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "pfinal (atm)",
+     "r": 0.398,
+     "n": 187,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "pmean (atm)",
+     "r": 0.396,
+     "n": 187,
+     "strength": "weak"
+    },
+    {
+     "a": "XO2 (init)",
+     "b": "pinit (atm)",
+     "r": 0.391,
+     "n": 207,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "XO2 (final)",
+     "r": 0.343,
+     "n": 187,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "pinit (atm)",
+     "r": 0.13,
+     "n": 207,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 60,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel",
+     "kind": "categorical",
+     "coverage": "207/207",
+     "values": [
+      "C2H4",
+      "C3H8"
+     ]
+    },
+    "oxygen": {
+     "column": "XO2 (init)",
+     "kind": "numeric",
+     "coverage": "207/207",
+     "values": [
+      0.198048193,
+      0.4
+     ]
+    }
+   }
+  },
+  "PSI-159_CFI-G_Inverse.csv": {
+   "rows": 154,
+   "columns": [
+    {
+     "name": "Flame Type",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "inverse",
+       "count": 90
+      },
+      {
+       "value": "Inverse",
+       "count": 64
+      }
+     ]
+    },
+    {
+     "name": "Day",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 12,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 12.0,
+     "mean": 6.487,
+     "std": 3.5595,
+     "q1": 3.0,
+     "median": 6.0,
+     "q3": 10.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fuel",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "butane",
+       "count": 58
+      },
+      {
+       "value": "ethane",
+       "count": 53
+      },
+      {
+       "value": "propane",
+       "count": 43
+      }
+     ]
+    },
+    {
+     "name": "Test",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 154,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "21196 A1",
+       "count": 1
+      },
+      {
+       "value": "21196 A2",
+       "count": 1
+      },
+      {
+       "value": "21196 F1",
+       "count": 1
+      },
+      {
+       "value": "21196 H1",
+       "count": 1
+      },
+      {
+       "value": "21196 J1",
+       "count": 1
+      },
+      {
+       "value": "21196 F2",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Xf  before test",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 140,
+     "kind": "numeric",
+     "min": 0.056479312,
+     "max": 0.4287,
+     "mean": 0.1567,
+     "std": 0.1009,
+     "q1": 0.0817,
+     "median": 0.1,
+     "q3": 0.2104,
+     "iqrOutliers": 6
+    },
+    {
+     "name": "Xf  after test",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 141,
+     "kind": "numeric",
+     "min": 0.055626433,
+     "max": 0.427799337,
+     "mean": 0.1557,
+     "std": 0.1003,
+     "q1": 0.0815,
+     "median": 0.0999,
+     "q3": 0.2045,
+     "iqrOutliers": 6
+    },
+    {
+     "name": "approx p (bar)",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 6,
+     "kind": "numeric",
+     "min": 0.4953817,
+     "max": 3.3099,
+     "mean": 1.7315,
+     "std": 1.0569,
+     "q1": 0.5516,
+     "median": 1.1033,
+     "q3": 2.2066,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "XO2",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 12,
+     "kind": "numeric",
+     "min": 0.12,
+     "max": 0.85,
+     "mean": 0.5891,
+     "std": 0.2869,
+     "q1": 0.2325,
+     "median": 0.85,
+     "q3": 0.85,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "HC burnrate (mg/s)",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 17,
+     "kind": "numeric",
+     "min": 0.25,
+     "max": 2.5,
+     "mean": 1.3517,
+     "std": 0.6683,
+     "q1": 0.75,
+     "median": 1.5,
+     "q3": 1.5,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "O2 flow rate (mg/s)",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 30,
+     "kind": "numeric",
+     "min": 0.931125707,
+     "max": 9.084062394,
+     "mean": 4.917,
+     "std": 2.4232,
+     "q1": 2.7934,
+     "median": 5.368,
+     "q3": 5.5868,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "TFP",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "No",
+       "count": 142
+      },
+      {
+       "value": "Yes",
+       "count": 12
+      }
+     ]
+    },
+    {
+     "name": "Tad (K)",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 145,
+     "kind": "numeric",
+     "min": 1567.030825,
+     "max": 2978.371796,
+     "mean": 2407.8969,
+     "std": 341.9202,
+     "q1": 2204.2984,
+     "median": 2492.9671,
+     "q3": 2612.7854,
+     "iqrOutliers": 1
+    },
+    {
+     "name": "Zst",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 145,
+     "kind": "numeric",
+     "min": 0.105556515,
+     "max": 0.783917907,
+     "mean": 0.4555,
+     "std": 0.197,
+     "q1": 0.3068,
+     "median": 0.4901,
+     "q3": 0.6421,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Hot ignition",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 5,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Yes",
+       "count": 114
+      },
+      {
+       "value": "yes",
+       "count": 17
+      },
+      {
+       "value": "No",
+       "count": 13
+      },
+      {
+       "value": "flash",
+       "count": 8
+      },
+      {
+       "value": "no",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "burn time (sec)",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 51,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 152.0,
+     "mean": 28.987,
+     "std": 31.2659,
+     "q1": 5.0,
+     "median": 15.0,
+     "q3": 62.25,
+     "iqrOutliers": 1
+    },
+    {
+     "name": "Self -ext or flow term",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "SE",
+       "count": 81
+      },
+      {
+       "value": "FT",
+       "count": 58
+      },
+      {
+       "value": "-",
+       "count": 15
+      }
+     ]
+    },
+    {
+     "name": "Peak burner Temp (C)",
+     "filled": 153,
+     "blanks": 1,
+     "missingPct": 0.6,
+     "unique": 142,
+     "kind": "numeric",
+     "min": 25.6,
+     "max": 651.5,
+     "mean": 178.2079,
+     "std": 147.865,
+     "q1": 66.35,
+     "median": 126.5,
+     "q3": 258.0,
+     "iqrOutliers": 1
+    },
+    {
+     "name": "Peak burner temp (K)",
+     "filled": 154,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 143,
+     "kind": "numeric",
+     "min": 273.15,
+     "max": 924.65,
+     "mean": 450.1855,
+     "std": 148.0818,
+     "q1": 338.75,
+     "median": 398.75,
+     "q3": 529.95,
+     "iqrOutliers": 2
+    },
+    {
+     "name": "Color",
+     "filled": 144,
+     "blanks": 10,
+     "missingPct": 6.5,
+     "unique": 8,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "blue",
+       "count": 47
+      },
+      {
+       "value": "limit",
+       "count": 29
+      },
+      {
+       "value": "-",
+       "count": 24
+      },
+      {
+       "value": "Yellow-Blue",
+       "count": 20
+      },
+      {
+       "value": "Blue",
+       "count": 12
+      },
+      {
+       "value": "yellow",
+       "count": 6
+      }
+     ]
+    },
+    {
+     "name": "Comments",
+     "filled": 39,
+     "blanks": 115,
+     "missingPct": 74.7,
+     "unique": 21,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "No ignition",
+       "count": 7
+      },
+      {
+       "value": "Not lasted long",
+       "count": 6
+      },
+      {
+       "value": "hit the temperature limit",
+       "count": 6
+      },
+      {
+       "value": "Flash",
+       "count": 3
+      },
+      {
+       "value": "Failed to ignite",
+       "count": 1
+      },
+      {
+       "value": "Not spherical shape",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Xf  before test",
+     "b": "Xf  after test",
+     "r": 1.0,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "Peak burner Temp (C)",
+     "b": "Peak burner temp (K)",
+     "r": 1.0,
+     "n": 151,
+     "strength": "strong"
+    },
+    {
+     "a": "HC burnrate (mg/s)",
+     "b": "O2 flow rate (mg/s)",
+     "r": 0.999,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2",
+     "b": "Zst",
+     "r": 0.824,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2",
+     "b": "Tad (K)",
+     "r": 0.804,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "Xf  before test",
+     "b": "Zst",
+     "r": -0.79,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "Xf  after test",
+     "b": "Zst",
+     "r": -0.79,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "Xf  before test",
+     "b": "approx p (bar)",
+     "r": -0.736,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "Xf  after test",
+     "b": "approx p (bar)",
+     "r": -0.732,
+     "n": 154,
+     "strength": "strong"
+    },
+    {
+     "a": "burn time (sec)",
+     "b": "Peak burner Temp (C)",
+     "r": 0.632,
+     "n": 151,
+     "strength": "moderate"
+    },
+    {
+     "a": "approx p (bar)",
+     "b": "Zst",
+     "r": 0.605,
+     "n": 154,
+     "strength": "moderate"
+    },
+    {
+     "a": "burn time (sec)",
+     "b": "Peak burner temp (K)",
+     "r": 0.596,
+     "n": 152,
+     "strength": "moderate"
+    },
+    {
+     "a": "Tad (K)",
+     "b": "Peak burner temp (K)",
+     "r": 0.566,
+     "n": 152,
+     "strength": "moderate"
+    },
+    {
+     "a": "Tad (K)",
+     "b": "Peak burner Temp (C)",
+     "r": 0.564,
+     "n": 151,
+     "strength": "moderate"
+    },
+    {
+     "a": "approx p (bar)",
+     "b": "Peak burner temp (K)",
+     "r": -0.47,
+     "n": 152,
+     "strength": "moderate"
+    },
+    {
+     "a": "approx p (bar)",
+     "b": "Peak burner Temp (C)",
+     "r": -0.464,
+     "n": 151,
+     "strength": "moderate"
+    },
+    {
+     "a": "Tad (K)",
+     "b": "Zst",
+     "r": 0.438,
+     "n": 154,
+     "strength": "moderate"
+    },
+    {
+     "a": "Xf  after test",
+     "b": "XO2",
+     "r": -0.409,
+     "n": 154,
+     "strength": "moderate"
+    },
+    {
+     "a": "Xf  before test",
+     "b": "XO2",
+     "r": -0.408,
+     "n": 154,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "Tad (K)",
+     "r": 0.397,
+     "n": 154,
+     "strength": "weak"
+    },
+    {
+     "a": "approx p (bar)",
+     "b": "burn time (sec)",
+     "r": -0.32,
+     "n": 154,
+     "strength": "weak"
+    },
+    {
+     "a": "Xf  before test",
+     "b": "Peak burner temp (K)",
+     "r": 0.319,
+     "n": 152,
+     "strength": "weak"
+    },
+    {
+     "a": "Xf  before test",
+     "b": "Peak burner Temp (C)",
+     "r": 0.313,
+     "n": 151,
+     "strength": "weak"
+    },
+    {
+     "a": "Xf  after test",
+     "b": "Peak burner temp (K)",
+     "r": 0.313,
+     "n": 152,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 126,
+   "qualityNotes": [
+    "861 fully-empty row(s) excluded from profiling"
+   ],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel",
+     "kind": "categorical",
+     "coverage": "154/154",
+     "values": [
+      "butane",
+      "ethane",
+      "propane"
+     ]
+    },
+    "oxygen": {
+     "column": "XO2",
+     "kind": "numeric",
+     "coverage": "154/154",
+     "values": [
+      0.12,
+      0.85
+     ]
+    },
+    "flow": {
+     "column": "HC burnrate (mg/s)",
+     "kind": "numeric",
+     "coverage": "154/154",
+     "values": [
+      0.25,
+      2.5
+     ]
+    },
+    "ignition": {
+     "column": "Hot ignition",
+     "kind": "categorical",
+     "coverage": "154/154",
+     "values": [
+      "Yes",
+      "yes",
+      "No",
+      "flash",
+      "no"
+     ]
+    }
+   }
+  },
+  "PSI-159_CFI-G_Normal.csv": {
+   "rows": 179,
+   "columns": [
+    {
+     "name": "Flame Type",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Normal",
+       "count": 179
+      }
+     ]
+    },
+    {
+     "name": "Day",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 11,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 11.0,
+     "mean": 5.7933,
+     "std": 2.9693,
+     "q1": 4.0,
+     "median": 6.0,
+     "q3": 8.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fuel",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 6,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "30% butane",
+       "count": 52
+      },
+      {
+       "value": "30% propane",
+       "count": 36
+      },
+      {
+       "value": "50% butane",
+       "count": 30
+      },
+      {
+       "value": "30% ethane",
+       "count": 27
+      },
+      {
+       "value": "propane",
+       "count": 20
+      },
+      {
+       "value": "ethane",
+       "count": 14
+      }
+     ]
+    },
+    {
+     "name": "Test",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 179,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "21088A1",
+       "count": 1
+      },
+      {
+       "value": "21088 B1",
+       "count": 1
+      },
+      {
+       "value": "21088 C1",
+       "count": 1
+      },
+      {
+       "value": "21088 D1",
+       "count": 1
+      },
+      {
+       "value": "21088 F1",
+       "count": 1
+      },
+      {
+       "value": "21088 G1",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Cool flame?",
+     "filled": 8,
+     "blanks": 171,
+     "missingPct": 95.5,
+     "unique": 8,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "no, PCI-hot",
+       "count": 1
+      },
+      {
+       "value": "yes, PCI-D",
+       "count": 1
+      },
+      {
+       "value": "yes, PCI-B",
+       "count": 1
+      },
+      {
+       "value": "yes, PCI-C",
+       "count": 1
+      },
+      {
+       "value": "yes, PCI-E",
+       "count": 1
+      },
+      {
+       "value": "yes, PCI-A",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "XO2 before test",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 139,
+     "kind": "numeric",
+     "min": 0.179685675,
+     "max": 0.3997,
+     "mean": 0.3218,
+     "std": 0.0827,
+     "q1": 0.2125,
+     "median": 0.3759,
+     "q3": 0.3897,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "XO2  after test",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 136,
+     "kind": "numeric",
+     "min": 0.17939183,
+     "max": 0.397258964,
+     "mean": 0.3194,
+     "std": 0.0813,
+     "q1": 0.2124,
+     "median": 0.3664,
+     "q3": 0.3866,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "approx p (bar)",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 5,
+     "kind": "numeric",
+     "min": 0.50665,
+     "max": 3.0399,
+     "mean": 1.2794,
+     "std": 0.6751,
+     "q1": 0.9444,
+     "median": 1.0133,
+     "q3": 2.0266,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Xf",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 14,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 1.0,
+     "mean": 0.3712,
+     "std": 0.3056,
+     "q1": 0.15,
+     "median": 0.3,
+     "q3": 0.5,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "mHC (mg/s)",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 25,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 3.215,
+     "mean": 1.1355,
+     "std": 0.6771,
+     "q1": 0.5,
+     "median": 1.0,
+     "q3": 1.5,
+     "iqrOutliers": 2
+    },
+    {
+     "name": "TFP",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "No",
+       "count": 161
+      },
+      {
+       "value": "Yes",
+       "count": 18
+      }
+     ]
+    },
+    {
+     "name": "Tad (K)",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 145,
+     "kind": "numeric",
+     "min": 1397.031071,
+     "max": 2729.986983,
+     "mean": 2315.4893,
+     "std": 390.9523,
+     "q1": 2113.8516,
+     "median": 2512.3152,
+     "q3": 2640.3192,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Zst",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 145,
+     "kind": "numeric",
+     "min": 0.058763347,
+     "max": 0.762145755,
+     "mean": 0.2558,
+     "std": 0.1781,
+     "q1": 0.1376,
+     "median": 0.2002,
+     "q3": 0.3032,
+     "iqrOutliers": 16
+    },
+    {
+     "name": "Hot ignition",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Yes",
+       "count": 132
+      },
+      {
+       "value": "No",
+       "count": 47
+      }
+     ]
+    },
+    {
+     "name": "burn time (sec)",
+     "filled": 175,
+     "blanks": 4,
+     "missingPct": 2.2,
+     "unique": 78,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 304.0,
+     "mean": 44.0457,
+     "std": 64.0888,
+     "q1": 1.0,
+     "median": 20.0,
+     "q3": 52.5,
+     "iqrOutliers": 16
+    },
+    {
+     "name": "Self-ext or flow term",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "SE",
+       "count": 102
+      },
+      {
+       "value": "-",
+       "count": 46
+      },
+      {
+       "value": "FT",
+       "count": 31
+      }
+     ]
+    },
+    {
+     "name": "Peak burner T (C )",
+     "filled": 179,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 130,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "-",
+       "count": 46
+      },
+      {
+       "value": "505",
+       "count": 2
+      },
+      {
+       "value": "388",
+       "count": 2
+      },
+      {
+       "value": "242",
+       "count": 2
+      },
+      {
+       "value": "258",
+       "count": 2
+      },
+      {
+       "value": "290.617198",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Comments",
+     "filled": 44,
+     "blanks": 135,
+     "missingPct": 75.4,
+     "unique": 32,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Cool flame!",
+       "count": 5
+      },
+      {
+       "value": "hot flame",
+       "count": 3
+      },
+      {
+       "value": "Irregular Oscillation",
+       "count": 3
+      },
+      {
+       "value": "Igniter voltage: 2V and 2.5V for 10 sec and 20 sec respectively.",
+       "count": 2
+      },
+      {
+       "value": "direct cool - no hot ignition",
+       "count": 2
+      },
+      {
+       "value": "hot flame, the igniter stayed in the flame longer than others.",
+       "count": 2
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "XO2 before test",
+     "b": "XO2  after test",
+     "r": 0.999,
+     "n": 179,
+     "strength": "strong"
+    },
+    {
+     "a": "Xf",
+     "b": "Zst",
+     "r": -0.747,
+     "n": 177,
+     "strength": "strong"
+    },
+    {
+     "a": "Tad (K)",
+     "b": "Zst",
+     "r": -0.727,
+     "n": 177,
+     "strength": "strong"
+    },
+    {
+     "a": "XO2 before test",
+     "b": "Tad (K)",
+     "r": 0.565,
+     "n": 177,
+     "strength": "moderate"
+    },
+    {
+     "a": "XO2  after test",
+     "b": "Tad (K)",
+     "r": 0.558,
+     "n": 177,
+     "strength": "moderate"
+    },
+    {
+     "a": "Xf",
+     "b": "Tad (K)",
+     "r": 0.556,
+     "n": 177,
+     "strength": "moderate"
+    },
+    {
+     "a": "Tad (K)",
+     "b": "burn time (sec)",
+     "r": 0.442,
+     "n": 173,
+     "strength": "moderate"
+    },
+    {
+     "a": "Day",
+     "b": "Xf",
+     "r": -0.427,
+     "n": 179,
+     "strength": "moderate"
+    },
+    {
+     "a": "XO2 before test",
+     "b": "burn time (sec)",
+     "r": 0.425,
+     "n": 175,
+     "strength": "moderate"
+    },
+    {
+     "a": "XO2  after test",
+     "b": "burn time (sec)",
+     "r": 0.396,
+     "n": 175,
+     "strength": "weak"
+    },
+    {
+     "a": "approx p (bar)",
+     "b": "Xf",
+     "r": -0.314,
+     "n": 179,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "approx p (bar)",
+     "r": 0.312,
+     "n": 179,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "burn time (sec)",
+     "r": 0.298,
+     "n": 175,
+     "strength": "weak"
+    },
+    {
+     "a": "approx p (bar)",
+     "b": "Tad (K)",
+     "r": -0.291,
+     "n": 177,
+     "strength": "weak"
+    },
+    {
+     "a": "XO2 before test",
+     "b": "approx p (bar)",
+     "r": -0.242,
+     "n": 179,
+     "strength": "weak"
+    },
+    {
+     "a": "XO2  after test",
+     "b": "approx p (bar)",
+     "r": -0.231,
+     "n": 179,
+     "strength": "weak"
+    },
+    {
+     "a": "approx p (bar)",
+     "b": "Zst",
+     "r": 0.192,
+     "n": 177,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "XO2 before test",
+     "r": 0.173,
+     "n": 179,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "mHC (mg/s)",
+     "r": 0.172,
+     "n": 179,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "XO2  after test",
+     "r": 0.166,
+     "n": 179,
+     "strength": "weak"
+    },
+    {
+     "a": "mHC (mg/s)",
+     "b": "Tad (K)",
+     "r": 0.148,
+     "n": 177,
+     "strength": "weak"
+    },
+    {
+     "a": "XO2  after test",
+     "b": "Zst",
+     "r": 0.14,
+     "n": 177,
+     "strength": "weak"
+    },
+    {
+     "a": "XO2 before test",
+     "b": "Zst",
+     "r": 0.136,
+     "n": 177,
+     "strength": "weak"
+    },
+    {
+     "a": "Day",
+     "b": "Zst",
+     "r": 0.134,
+     "n": 177,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 310,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel",
+     "kind": "categorical",
+     "coverage": "179/179",
+     "values": [
+      "30% butane",
+      "30% propane",
+      "50% butane",
+      "30% ethane",
+      "propane"
+     ]
+    },
+    "oxygen": {
+     "column": "XO2 before test",
+     "kind": "numeric",
+     "coverage": "179/179",
+     "values": [
+      0.179685675,
+      0.3997
+     ]
+    },
+    "flow": {
+     "column": "Self-ext or flow term",
+     "kind": "categorical",
+     "coverage": "179/179",
+     "values": [
+      "SE",
+      "-",
+      "FT"
+     ]
+    },
+    "ignition": {
+     "column": "Hot ignition",
+     "kind": "categorical",
+     "coverage": "179/179",
+     "values": [
+      "Yes",
+      "No"
+     ]
+    }
+   }
+  },
+  "PSI-20_ACME-BRE.csv": {
+   "rows": 18,
+   "columns": [
+    {
+     "name": "Year",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "numeric",
+     "min": 2019.0,
+     "max": 2021.0,
+     "mean": 2019.6111,
+     "std": 0.6978,
+     "q1": 2019.0,
+     "median": 2019.5,
+     "q3": 2020.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Month",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 7,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Dec",
+       "count": 5
+      },
+      {
+       "value": "March",
+       "count": 4
+      },
+      {
+       "value": "Feb",
+       "count": 3
+      },
+      {
+       "value": "April",
+       "count": 2
+      },
+      {
+       "value": "Jan",
+       "count": 2
+      },
+      {
+       "value": "Sept",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Date",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 12,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 28.0,
+     "mean": 13.1111,
+     "std": 9.2156,
+     "q1": 4.25,
+     "median": 11.0,
+     "q3": 20.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Burner Size (mm)",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 25.0,
+     "max": 50.0,
+     "mean": 27.7778,
+     "std": 8.0845,
+     "q1": 25.0,
+     "median": 25.0,
+     "q3": 25.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fuel Bottle",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 4,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "100% C2H4",
+       "count": 8
+      },
+      {
+       "value": "50% C2H4",
+       "count": 5
+      },
+      {
+       "value": "100%C2H4",
+       "count": 3
+      },
+      {
+       "value": "100% CH4",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Oxygen Conc (percent)",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 10,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "26.5; 34",
+       "count": 4
+      },
+      {
+       "value": "25; 34; 40",
+       "count": 4
+      },
+      {
+       "value": "21; 26.5; 34",
+       "count": 2
+      },
+      {
+       "value": "25; 40",
+       "count": 2
+      },
+      {
+       "value": "21; 26.5; 40",
+       "count": 1
+      },
+      {
+       "value": "21; 26.5; 34; 40",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Flames Ignited",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 12,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 21.0,
+     "mean": 10.7778,
+     "std": 5.0475,
+     "q1": 8.0,
+     "median": 10.0,
+     "q3": 13.0,
+     "iqrOutliers": 2
+    },
+    {
+     "name": "Notes",
+     "filled": 2,
+     "blanks": 16,
+     "missingPct": 88.9,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table.",
+       "count": 1
+      },
+      {
+       "value": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS).",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Year",
+     "b": "Flames Ignited",
+     "r": 0.692,
+     "n": 18,
+     "strength": "moderate"
+    },
+    {
+     "a": "Year",
+     "b": "Burner Size (mm)",
+     "r": 0.463,
+     "n": 18,
+     "strength": "moderate"
+    },
+    {
+     "a": "Year",
+     "b": "Date",
+     "r": 0.291,
+     "n": 18,
+     "strength": "weak"
+    },
+    {
+     "a": "Burner Size (mm)",
+     "b": "Flames Ignited",
+     "r": 0.16,
+     "n": 18,
+     "strength": "weak"
+    },
+    {
+     "a": "Date",
+     "b": "Flames Ignited",
+     "r": 0.118,
+     "n": 18,
+     "strength": "weak"
+    },
+    {
+     "a": "Date",
+     "b": "Burner Size (mm)",
+     "r": 0.094,
+     "n": 18,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 16,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel Bottle",
+     "kind": "categorical",
+     "coverage": "18/18",
+     "values": [
+      "100% C2H4",
+      "50% C2H4",
+      "100%C2H4",
+      "100% CH4"
+     ]
+    },
+    "oxygen": {
+     "column": "Oxygen Conc (percent)",
+     "kind": "categorical",
+     "coverage": "18/18",
+     "values": [
+      "26.5; 34",
+      "25; 34; 40",
+      "21; 26.5; 34",
+      "25; 40",
+      "21; 26.5; 40"
+     ]
+    }
+   }
+  },
+  "PSI-21_CLD-Flame.csv": {
+   "rows": 32,
+   "columns": [
+    {
+     "name": "Test Type",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Methane based test",
+       "count": 14
+      },
+      {
+       "value": "Ethylene based test",
+       "count": 14
+      },
+      {
+       "value": "Improved coflow tests",
+       "count": 4
+      }
+     ]
+    },
+    {
+     "name": "Test Day",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 32,
+     "kind": "numeric",
+     "min": 17319.0,
+     "max": 21062.0,
+     "mean": 18398.0625,
+     "std": 1055.7471,
+     "q1": 18019.25,
+     "median": 18164.0,
+     "q3": 18239.5,
+     "iqrOutliers": 8
+    },
+    {
+     "name": "Fuel MFC",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 0.1,
+     "max": 0.2,
+     "mean": 0.1438,
+     "std": 0.0504,
+     "q1": 0.1,
+     "median": 0.1,
+     "q3": 0.2,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "N2 MFC",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 4,
+     "kind": "numeric",
+     "min": 0.02,
+     "max": 0.2,
+     "mean": 0.1163,
+     "std": 0.0533,
+     "q1": 0.1,
+     "median": 0.1,
+     "q3": 0.125,
+     "iqrOutliers": 13
+    },
+    {
+     "name": "Fuel Bottle",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 30,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "40% CH4",
+       "count": 2
+      },
+      {
+       "value": "40% CH5",
+       "count": 2
+      },
+      {
+       "value": "40% CH6",
+       "count": 1
+      },
+      {
+       "value": "40% CH7",
+       "count": 1
+      },
+      {
+       "value": "40% CH8",
+       "count": 1
+      },
+      {
+       "value": "40% CH9",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Fuel conc. Range",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 18,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "30%-40%",
+       "count": 8
+      },
+      {
+       "value": "25%-40%",
+       "count": 4
+      },
+      {
+       "value": "40%",
+       "count": 2
+      },
+      {
+       "value": "80%-100%",
+       "count": 2
+      },
+      {
+       "value": "100%",
+       "count": 2
+      },
+      {
+       "value": "15%-20%",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Flames ignited",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 15,
+     "kind": "numeric",
+     "min": 2.0,
+     "max": 18.0,
+     "mean": 10.75,
+     "std": 4.5791,
+     "q1": 8.0,
+     "median": 10.5,
+     "q3": 14.25,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Notes",
+     "filled": 1,
+     "blanks": 31,
+     "missingPct": 96.9,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Test Day - includes the year as the first two digits followed by the 3-digit day of the year (where any late-hour transition to the next day is neglected). MFC - identifies the maximum flow rate of the specified ACME Mass Flow Controller (MFC) in slpm on a nitrogen basis. Fuel conc. - (as diluted with nitrogen on a volume basis) was varied between tests and sometimes during tests where the listing here accounts for both. However, it does not account for extinction that sometimes occurred before the flame fully reached the lowest concentration. Flames ignited is the number ignited on that test day.",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Test Day",
+     "b": "N2 MFC",
+     "r": 0.621,
+     "n": 32,
+     "strength": "moderate"
+    },
+    {
+     "a": "Test Day",
+     "b": "Fuel MFC",
+     "r": 0.52,
+     "n": 32,
+     "strength": "moderate"
+    },
+    {
+     "a": "Test Day",
+     "b": "Flames ignited",
+     "r": 0.285,
+     "n": 32,
+     "strength": "weak"
+    },
+    {
+     "a": "Fuel MFC",
+     "b": "Flames ignited",
+     "r": 0.231,
+     "n": 32,
+     "strength": "weak"
+    },
+    {
+     "a": "Fuel MFC",
+     "b": "N2 MFC",
+     "r": 0.087,
+     "n": 32,
+     "strength": "weak"
+    },
+    {
+     "a": "N2 MFC",
+     "b": "Flames ignited",
+     "r": 0.077,
+     "n": 32,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 31,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel MFC",
+     "kind": "numeric",
+     "coverage": "32/32",
+     "values": [
+      0.1,
+      0.2
+     ]
+    },
+    "flow": {
+     "column": "Fuel MFC",
+     "kind": "numeric",
+     "coverage": "32/32",
+     "values": [
+      0.1,
+      0.2
+     ]
+    }
+   }
+  },
+  "PSI-22_E-FIELD-Flames.csv": {
+   "rows": 32,
+   "columns": [
+    {
+     "name": "Test Type",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "First round of tests with coflow burner",
+       "count": 11
+      },
+      {
+       "value": "Second round of tests with gas-jet burner",
+       "count": 10
+      }
+     ]
+    },
+    {
+     "name": "Test Day",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 20,
+     "kind": "numeric",
+     "min": 18073.0,
+     "max": 18319.0,
+     "mean": 18192.5238,
+     "std": 101.9155,
+     "q1": 18095.0,
+     "median": 18137.0,
+     "q3": 18290.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Year",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 1,
+     "kind": "numeric",
+     "min": 2018.0,
+     "max": 2018.0,
+     "mean": 2018.0,
+     "std": 0.0,
+     "q1": 2018.0,
+     "median": 2018.0,
+     "q3": 2018.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Month",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 6,
+     "kind": "numeric",
+     "min": 3.0,
+     "max": 11.0,
+     "mean": 6.8571,
+     "std": 3.336,
+     "q1": 4.0,
+     "median": 5.0,
+     "q3": 10.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Date",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 18,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 29.0,
+     "mean": 15.4286,
+     "std": 8.0658,
+     "q1": 10.0,
+     "median": 15.0,
+     "q3": 21.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Mesh Polarity",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "positive",
+       "count": 11
+      },
+      {
+       "value": "negative",
+       "count": 10
+      }
+     ]
+    },
+    {
+     "name": "Fuel Bottle",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 4,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "100% CH4",
+       "count": 6
+      },
+      {
+       "value": "100% C2H4",
+       "count": 6
+      },
+      {
+       "value": "40% CH4",
+       "count": 5
+      },
+      {
+       "value": "30% C2H4",
+       "count": 4
+      }
+     ]
+    },
+    {
+     "name": "Fuel Conc",
+     "filled": 32,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 7,
+     "kind": "numeric",
+     "min": 25.0,
+     "max": 100.0,
+     "mean": 67.1875,
+     "std": 28.3963,
+     "q1": 40.0,
+     "median": 70.0,
+     "q3": 100.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Flames Ignited",
+     "filled": 21,
+     "blanks": 11,
+     "missingPct": 34.4,
+     "unique": 7,
+     "kind": "numeric",
+     "min": 8.0,
+     "max": 15.0,
+     "mean": 10.9524,
+     "std": 1.7457,
+     "q1": 10.0,
+     "median": 11.0,
+     "q3": 12.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Notes",
+     "filled": 4,
+     "blanks": 28,
+     "missingPct": 87.5,
+     "unique": 4,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Test day is formatted YYDDD where YY identifies year and DDD identifies day of year (GMT).",
+       "count": 1
+      },
+      {
+       "value": "Mesh polarity refers to the polarity of the high-voltage power supply and the copper electrode relative to the burner.",
+       "count": 1
+      },
+      {
+       "value": "Fuel Conc. (diluted with nitrogen on a volume basis) was varied between tests, but typically matched the bottle. The list only accounts for flames ignited.",
+       "count": 1
+      },
+      {
+       "value": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS).",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Test Day",
+     "b": "Month",
+     "r": 0.997,
+     "n": 21,
+     "strength": "strong"
+    },
+    {
+     "a": "Fuel Conc",
+     "b": "Flames Ignited",
+     "r": 0.329,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Month",
+     "b": "Fuel Conc",
+     "r": -0.225,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Test Day",
+     "b": "Fuel Conc",
+     "r": -0.215,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Date",
+     "b": "Flames Ignited",
+     "r": -0.162,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Date",
+     "b": "Fuel Conc",
+     "r": 0.135,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Month",
+     "b": "Flames Ignited",
+     "r": 0.119,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Test Day",
+     "b": "Flames Ignited",
+     "r": 0.107,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Month",
+     "b": "Date",
+     "r": -0.05,
+     "n": 21,
+     "strength": "weak"
+    },
+    {
+     "a": "Test Day",
+     "b": "Date",
+     "r": 0.029,
+     "n": 21,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 116,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel Bottle",
+     "kind": "categorical",
+     "coverage": "21/32",
+     "values": [
+      "100% CH4",
+      "100% C2H4",
+      "40% CH4",
+      "30% C2H4"
+     ]
+    }
+   }
+  },
+  "PSI-23_s-Flame.csv": {
+   "rows": 18,
+   "columns": [
+    {
+     "name": "Test Type",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "First round of tests with nitrogen-diluted fuel and oxygen",
+       "count": 10
+      },
+      {
+       "value": "Second round of tests with helium-diluted fuel and oxygen",
+       "count": 8
+      }
+     ]
+    },
+    {
+     "name": "Test Day*",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 18,
+     "kind": "numeric",
+     "min": 19254.0,
+     "max": 20190.0,
+     "mean": 19887.2778,
+     "std": 383.0778,
+     "q1": 19515.5,
+     "median": 20080.5,
+     "q3": 20158.75,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Year",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 2019.0,
+     "max": 2020.0,
+     "mean": 2019.7222,
+     "std": 0.4609,
+     "q1": 2019.25,
+     "median": 2020.0,
+     "q3": 2020.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Month",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 8,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "June",
+       "count": 5
+      },
+      {
+       "value": "Jan.",
+       "count": 4
+      },
+      {
+       "value": "May",
+       "count": 3
+      },
+      {
+       "value": "Sept.",
+       "count": 2
+      },
+      {
+       "value": "Oct.",
+       "count": 1
+      },
+      {
+       "value": "Nov.",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Date",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 13,
+     "kind": "numeric",
+     "min": 3.0,
+     "max": 31.0,
+     "mean": 14.9444,
+     "std": 8.2638,
+     "q1": 8.75,
+     "median": 13.0,
+     "q3": 20.25,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Atmosphere*",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 9,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "~30% and ~21% O2 with He",
+       "count": 5
+      },
+      {
+       "value": "~21% O2 with N2",
+       "count": 2
+      },
+      {
+       "value": "~21% O2 with N3",
+       "count": 2
+      },
+      {
+       "value": "~21% O2 with N4",
+       "count": 2
+      },
+      {
+       "value": "~21% O2 with He",
+       "count": 2
+      },
+      {
+       "value": "~30% O2 with He",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Fuel Bottle",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 16,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "50% C2H4 with N2",
+       "count": 2
+      },
+      {
+       "value": "100% H2",
+       "count": 2
+      },
+      {
+       "value": "50% C2H4 with N3",
+       "count": 1
+      },
+      {
+       "value": "45% CH4 with N2",
+       "count": 1
+      },
+      {
+       "value": "45% CH4 with N3",
+       "count": 1
+      },
+      {
+       "value": "44.4% H2 with CH4",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Flames Ignited*",
+     "filled": 18,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 12,
+     "kind": "numeric",
+     "min": 7.0,
+     "max": 23.0,
+     "mean": 15.3333,
+     "std": 5.2018,
+     "q1": 11.0,
+     "median": 16.0,
+     "q3": 20.75,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Notes",
+     "filled": 3,
+     "blanks": 15,
+     "missingPct": 83.3,
+     "unique": 3,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "*Test Day is formatted YYDDD where YY identfies year and DDD identifies day of year (GMT).",
+       "count": 1
+      },
+      {
+       "value": "*Atmosphere is ~1 atm but pressure increases and O2% drops with vitiation.",
+       "count": 1
+      },
+      {
+       "value": "*Flames Ignited is the number ignited on that day (neglecting the day change on ISS).",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Test Day*",
+     "b": "Year",
+     "r": 0.987,
+     "n": 18,
+     "strength": "strong"
+    },
+    {
+     "a": "Year",
+     "b": "Flames Ignited*",
+     "r": 0.188,
+     "n": 18,
+     "strength": "weak"
+    },
+    {
+     "a": "Test Day*",
+     "b": "Flames Ignited*",
+     "r": 0.148,
+     "n": 18,
+     "strength": "weak"
+    },
+    {
+     "a": "Date",
+     "b": "Flames Ignited*",
+     "r": 0.115,
+     "n": 18,
+     "strength": "weak"
+    },
+    {
+     "a": "Test Day*",
+     "b": "Date",
+     "r": -0.055,
+     "n": 18,
+     "strength": "weak"
+    },
+    {
+     "a": "Year",
+     "b": "Date",
+     "r": -0.035,
+     "n": 18,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 15,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel Bottle",
+     "kind": "categorical",
+     "coverage": "18/18",
+     "values": [
+      "50% C2H4 with N2",
+      "100% H2",
+      "50% C2H4 with N3",
+      "45% CH4 with N2",
+      "45% CH4 with N3"
+     ]
+    }
+   }
+  },
+  "PSI-25_BASS-II.csv": {
+   "rows": 129,
+   "columns": [
+    {
+     "name": "PI",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 6,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "T'ien",
+       "count": 29
+      },
+      {
+       "value": "Olson",
+       "count": 27
+      },
+      {
+       "value": "Fernandez-Pello",
+       "count": 27
+      },
+      {
+       "value": "Bhattacharjee",
+       "count": 22
+      },
+      {
+       "value": "Miller",
+       "count": 20
+      },
+      {
+       "value": "Ferkul",
+       "count": 4
+      }
+     ]
+    },
+    {
+     "name": "Test #",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 129,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "B1",
+       "count": 1
+      },
+      {
+       "value": "B2",
+       "count": 1
+      },
+      {
+       "value": "B3",
+       "count": 1
+      },
+      {
+       "value": "B4",
+       "count": 1
+      },
+      {
+       "value": "B5",
+       "count": 1
+      },
+      {
+       "value": "B6",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Date",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 30,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "2/19/2014",
+       "count": 8
+      },
+      {
+       "value": "7/7/2014",
+       "count": 8
+      },
+      {
+       "value": "8/4/2014",
+       "count": 8
+      },
+      {
+       "value": "7/9/2014",
+       "count": 7
+      },
+      {
+       "value": "7/2/2014",
+       "count": 6
+      },
+      {
+       "value": "7/8/2014",
+       "count": 6
+      }
+     ]
+    },
+    {
+     "name": "GMT",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 29,
+     "kind": "numeric",
+     "min": 45.0,
+     "max": 216.0,
+     "mean": 166.9302,
+     "std": 55.7933,
+     "q1": 174.0,
+     "median": 188.0,
+     "q3": 203.0,
+     "iqrOutliers": 25
+    },
+    {
+     "name": "Sample #",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 107,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "220m",
+       "count": 3
+      },
+      {
+       "value": "144m",
+       "count": 3
+      },
+      {
+       "value": "174m",
+       "count": 2
+      },
+      {
+       "value": "176m",
+       "count": 2
+      },
+      {
+       "value": "205M",
+       "count": 2
+      },
+      {
+       "value": "208m",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Fuel Sample Material",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 51,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "2 cm SIBAL",
+       "count": 17
+      },
+      {
+       "value": "1/4\" clear rod",
+       "count": 15
+      },
+      {
+       "value": "1/4\" black rod",
+       "count": 11
+      },
+      {
+       "value": "1 cm SIBAL",
+       "count": 8
+      },
+      {
+       "value": "3/8\" black rod",
+       "count": 7
+      },
+      {
+       "value": "1 cm wide 200 micron thick PMMA",
+       "count": 5
+      }
+     ]
+    },
+    {
+     "name": "Flow restrictor",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 2.0,
+     "mean": 1.6899,
+     "std": 0.6349,
+     "q1": 2.0,
+     "median": 2.0,
+     "q3": 2.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fan display",
+     "filled": 116,
+     "blanks": 13,
+     "missingPct": 10.1,
+     "unique": 99,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "55  47  etc (pot 1  2  1  2   etc)",
+       "count": 4
+      },
+      {
+       "value": "48   41",
+       "count": 3
+      },
+      {
+       "value": "53   45",
+       "count": 3
+      },
+      {
+       "value": "62",
+       "count": 2
+      },
+      {
+       "value": "47",
+       "count": 2
+      },
+      {
+       "value": "61",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Air display",
+     "filled": 125,
+     "blanks": 4,
+     "missingPct": 3.1,
+     "unique": 90,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "5",
+       "count": 12
+      },
+      {
+       "value": "5 down to ext",
+       "count": 9
+      },
+      {
+       "value": "10",
+       "count": 5
+      },
+      {
+       "value": "2  0  2  0  etc",
+       "count": 4
+      },
+      {
+       "value": "2",
+       "count": 3
+      },
+      {
+       "value": "5  3",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "name": "Radiometer gain   (1000   250   50   10)",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 14,
+     "kind": "numeric",
+     "min": 10.0,
+     "max": 1000.0,
+     "mean": 174.2727,
+     "std": 129.0364,
+     "q1": 50.0,
+     "median": 250.0,
+     "q3": 250.0,
+     "iqrOutliers": 1
+    },
+    {
+     "name": "Total Frames Shot",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 110,
+     "kind": "numeric",
+     "min": 2.0,
+     "max": 316.0,
+     "mean": 165.8862,
+     "std": 91.9064,
+     "q1": 85.0,
+     "median": 156.0,
+     "q3": 254.5,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Calibrated  initial O2 % by vol",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 50,
+     "kind": "numeric",
+     "min": 13.6,
+     "max": 22.2,
+     "mean": 18.5698,
+     "std": 2.2947,
+     "q1": 17.0,
+     "median": 18.2,
+     "q3": 20.8,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Calibrated final O2 % by vol",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 66,
+     "kind": "numeric",
+     "min": 0.6,
+     "max": 40.4,
+     "mean": 17.9346,
+     "std": 4.3742,
+     "q1": 16.6,
+     "median": 17.4,
+     "q3": 20.1,
+     "iqrOutliers": 5
+    },
+    {
+     "name": "Initial CO2 % by vol",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 53,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 1.85,
+     "mean": 0.5216,
+     "std": 0.3588,
+     "q1": 0.32,
+     "median": 0.41,
+     "q3": 0.52,
+     "iqrOutliers": 21
+    },
+    {
+     "name": "Final CO2 % by vol",
+     "filled": 128,
+     "blanks": 1,
+     "missingPct": 0.8,
+     "unique": 81,
+     "kind": "numeric",
+     "min": 0.2,
+     "max": 3.22,
+     "mean": 0.9206,
+     "std": 0.5924,
+     "q1": 0.445,
+     "median": 0.7,
+     "q3": 1.32,
+     "iqrOutliers": 1
+    },
+    {
+     "name": "Initial CO (ppm)",
+     "filled": 129,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 67,
+     "kind": "numeric",
+     "min": -3.0,
+     "max": 950.0,
+     "mean": 70.6365,
+     "std": 150.7305,
+     "q1": 0.0,
+     "median": 5.5,
+     "q3": 58.5,
+     "iqrOutliers": 15
+    },
+    {
+     "name": "Final CO (ppm)",
+     "filled": 128,
+     "blanks": 1,
+     "missingPct": 0.8,
+     "unique": 100,
+     "kind": "numeric",
+     "min": 0.3,
+     "max": 950.0,
+     "mean": 193.4108,
+     "std": 217.7354,
+     "q1": 33.75,
+     "median": 94.0,
+     "q3": 305.5,
+     "iqrOutliers": 4
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Initial CO2 % by vol",
+     "b": "Initial CO (ppm)",
+     "r": 0.837,
+     "n": 126,
+     "strength": "strong"
+    },
+    {
+     "a": "Final CO2 % by vol",
+     "b": "Final CO (ppm)",
+     "r": 0.811,
+     "n": 119,
+     "strength": "strong"
+    },
+    {
+     "a": "Initial CO (ppm)",
+     "b": "Final CO (ppm)",
+     "r": 0.673,
+     "n": 118,
+     "strength": "moderate"
+    },
+    {
+     "a": "Initial CO2 % by vol",
+     "b": "Final CO2 % by vol",
+     "r": 0.635,
+     "n": 121,
+     "strength": "moderate"
+    },
+    {
+     "a": "Initial CO2 % by vol",
+     "b": "Final CO (ppm)",
+     "r": 0.546,
+     "n": 118,
+     "strength": "moderate"
+    },
+    {
+     "a": "Final CO2 % by vol",
+     "b": "Initial CO (ppm)",
+     "r": 0.48,
+     "n": 120,
+     "strength": "moderate"
+    },
+    {
+     "a": "Calibrated  initial O2 % by vol",
+     "b": "Initial CO (ppm)",
+     "r": -0.471,
+     "n": 126,
+     "strength": "moderate"
+    },
+    {
+     "a": "GMT",
+     "b": "Radiometer gain   (1000   250   50   10)",
+     "r": 0.442,
+     "n": 110,
+     "strength": "moderate"
+    },
+    {
+     "a": "Radiometer gain   (1000   250   50   10)",
+     "b": "Calibrated  initial O2 % by vol",
+     "r": -0.431,
+     "n": 110,
+     "strength": "moderate"
+    },
+    {
+     "a": "Calibrated  initial O2 % by vol",
+     "b": "Calibrated final O2 % by vol",
+     "r": 0.427,
+     "n": 127,
+     "strength": "moderate"
+    },
+    {
+     "a": "Total Frames Shot",
+     "b": "Final CO2 % by vol",
+     "r": 0.411,
+     "n": 118,
+     "strength": "moderate"
+    },
+    {
+     "a": "Calibrated  initial O2 % by vol",
+     "b": "Initial CO2 % by vol",
+     "r": -0.373,
+     "n": 127,
+     "strength": "weak"
+    },
+    {
+     "a": "Total Frames Shot",
+     "b": "Final CO (ppm)",
+     "r": 0.35,
+     "n": 116,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT",
+     "b": "Calibrated  initial O2 % by vol",
+     "r": -0.308,
+     "n": 129,
+     "strength": "weak"
+    },
+    {
+     "a": "Calibrated final O2 % by vol",
+     "b": "Final CO (ppm)",
+     "r": -0.3,
+     "n": 120,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT",
+     "b": "Final CO (ppm)",
+     "r": 0.292,
+     "n": 120,
+     "strength": "weak"
+    },
+    {
+     "a": "Calibrated  initial O2 % by vol",
+     "b": "Final CO (ppm)",
+     "r": -0.291,
+     "n": 120,
+     "strength": "weak"
+    },
+    {
+     "a": "Calibrated final O2 % by vol",
+     "b": "Initial CO (ppm)",
+     "r": -0.246,
+     "n": 124,
+     "strength": "weak"
+    },
+    {
+     "a": "Calibrated final O2 % by vol",
+     "b": "Final CO2 % by vol",
+     "r": -0.228,
+     "n": 123,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT",
+     "b": "Final CO2 % by vol",
+     "r": 0.226,
+     "n": 123,
+     "strength": "weak"
+    },
+    {
+     "a": "Calibrated final O2 % by vol",
+     "b": "Initial CO2 % by vol",
+     "r": -0.213,
+     "n": 125,
+     "strength": "weak"
+    },
+    {
+     "a": "Radiometer gain   (1000   250   50   10)",
+     "b": "Calibrated final O2 % by vol",
+     "r": -0.21,
+     "n": 108,
+     "strength": "weak"
+    },
+    {
+     "a": "Radiometer gain   (1000   250   50   10)",
+     "b": "Initial CO (ppm)",
+     "r": 0.177,
+     "n": 107,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT",
+     "b": "Initial CO (ppm)",
+     "r": 0.152,
+     "n": 126,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 19,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel Sample Material",
+     "kind": "categorical",
+     "coverage": "129/129",
+     "values": [
+      "2 cm SIBAL",
+      "1/4\" clear rod",
+      "1/4\" black rod",
+      "1 cm SIBAL",
+      "3/8\" black rod"
+     ]
+    },
+    "flow": {
+     "column": "Flow restrictor",
+     "kind": "numeric",
+     "coverage": "129/129",
+     "values": [
+      0.0,
+      2.0
+     ]
+    }
+   }
+  },
+  "PSI-26_BASS.csv": {
+   "rows": 122,
+   "columns": [
+    {
+     "name": "Date",
+     "filled": 122,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 33,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "8/16/2012",
+       "count": 8
+      },
+      {
+       "value": "6/5/2012",
+       "count": 6
+      },
+      {
+       "value": "7/19/2012",
+       "count": 6
+      },
+      {
+       "value": "6/1/2013",
+       "count": 6
+      },
+      {
+       "value": "5/11/2012",
+       "count": 5
+      },
+      {
+       "value": "7/3/2012",
+       "count": 5
+      }
+     ]
+    },
+    {
+     "name": "GMT",
+     "filled": 122,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 31,
+     "kind": "numeric",
+     "min": 90.0,
+     "max": 234.0,
+     "mean": 156.1475,
+     "std": 43.4073,
+     "q1": 119.0,
+     "median": 157.0,
+     "q3": 191.75,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "As Run Test #",
+     "filled": 121,
+     "blanks": 1,
+     "missingPct": 0.8,
+     "unique": 116,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 116.0,
+     "mean": 59.2149,
+     "std": 33.5254,
+     "q1": 30.0,
+     "median": 60.0,
+     "q3": 89.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Test #",
+     "filled": 121,
+     "blanks": 1,
+     "missingPct": 0.8,
+     "unique": 117,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 119.0,
+     "mean": 58.6132,
+     "std": 35.6476,
+     "q1": 27.25,
+     "median": 56.5,
+     "q3": 88.5,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Sample #",
+     "filled": 121,
+     "blanks": 1,
+     "missingPct": 0.8,
+     "unique": 40,
+     "kind": "numeric",
+     "min": 2.0,
+     "max": 44.0,
+     "mean": 24.9835,
+     "std": 9.5673,
+     "q1": 20.0,
+     "median": 24.0,
+     "q3": 33.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fuel Sample Material",
+     "filled": 122,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 34,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "2 cm sphere",
+       "count": 18
+      },
+      {
+       "value": "PMMA sphere 2 cm",
+       "count": 10
+      },
+      {
+       "value": "SIBAL 2 cm",
+       "count": 9
+      },
+      {
+       "value": "PMMA 2 cm",
+       "count": 8
+      },
+      {
+       "value": "Japan Wax Candle   wake",
+       "count": 8
+      },
+      {
+       "value": "1 cm sphere",
+       "count": 6
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "As Run Test #",
+     "b": "Test #",
+     "r": 0.553,
+     "n": 106,
+     "strength": "moderate"
+    },
+    {
+     "a": "Test #",
+     "b": "Sample #",
+     "r": 0.521,
+     "n": 106,
+     "strength": "moderate"
+    },
+    {
+     "a": "As Run Test #",
+     "b": "Sample #",
+     "r": 0.466,
+     "n": 121,
+     "strength": "moderate"
+    },
+    {
+     "a": "GMT",
+     "b": "Sample #",
+     "r": 0.161,
+     "n": 121,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT",
+     "b": "Test #",
+     "r": -0.115,
+     "n": 106,
+     "strength": "weak"
+    },
+    {
+     "a": "GMT",
+     "b": "As Run Test #",
+     "r": -0.031,
+     "n": 121,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 3,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel Sample Material",
+     "kind": "categorical",
+     "coverage": "122/122",
+     "values": [
+      "2 cm sphere",
+      "PMMA sphere 2 cm",
+      "SIBAL 2 cm",
+      "PMMA 2 cm",
+      "Japan Wax Candle   wake"
+     ]
+    }
+   }
+  },
+  "PSI-39_CFI.csv": {
+   "rows": 87,
+   "columns": [
+    {
+     "name": "Flex Number",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 79,
+     "kind": "numeric",
+     "min": 1206.0,
+     "max": 1387.0,
+     "mean": 1299.2874,
+     "std": 55.1729,
+     "q1": 1257.0,
+     "median": 1300.0,
+     "q3": 1341.5,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Test Date",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 23,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "22-Jun-17",
+       "count": 10
+      },
+      {
+       "value": "31-Mar-17",
+       "count": 9
+      },
+      {
+       "value": "28-Jun-17",
+       "count": 6
+      },
+      {
+       "value": "9-Mar-17",
+       "count": 5
+      },
+      {
+       "value": "26-Jun-17",
+       "count": 5
+      },
+      {
+       "value": "5-Jul-17",
+       "count": 5
+      }
+     ]
+    },
+    {
+     "name": "Local Time",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 79,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "11:05:52 am est",
+       "count": 2
+      },
+      {
+       "value": "11:23:26 am est",
+       "count": 2
+      },
+      {
+       "value": "11:42:32 am est",
+       "count": 2
+      },
+      {
+       "value": "12:36:48 pm est",
+       "count": 2
+      },
+      {
+       "value": "12:47:53 pm est",
+       "count": 2
+      },
+      {
+       "value": "09:24:35 am est",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "CIR",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 79,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "f173e01",
+       "count": 2
+      },
+      {
+       "value": "f173e02",
+       "count": 2
+      },
+      {
+       "value": "f173e03",
+       "count": 2
+      },
+      {
+       "value": "f173e05",
+       "count": 2
+      },
+      {
+       "value": "f173e06",
+       "count": 2
+      },
+      {
+       "value": "f179e01",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Pressure",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 7,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "1 atm",
+       "count": 47
+      },
+      {
+       "value": "3 atm",
+       "count": 14
+      },
+      {
+       "value": "1.25 atm",
+       "count": 9
+      },
+      {
+       "value": "2 atm",
+       "count": 7
+      },
+      {
+       "value": "0.75 atm",
+       "count": 4
+      },
+      {
+       "value": "5 atm",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "name": "Oxygen",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "numeric",
+     "min": 0.17,
+     "max": 0.21,
+     "mean": 0.199,
+     "std": 0.018,
+     "q1": 0.17,
+     "median": 0.21,
+     "q3": 0.21,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Nitrogen",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 5,
+     "kind": "numeric",
+     "min": 0.2,
+     "max": 0.83,
+     "mean": 0.7323,
+     "std": 0.171,
+     "q1": 0.79,
+     "median": 0.79,
+     "q3": 0.83,
+     "iqrOutliers": 14
+    },
+    {
+     "name": "Helium",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 0.59,
+     "mean": 0.0674,
+     "std": 0.1659,
+     "q1": 0.0,
+     "median": 0.0,
+     "q3": 0.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Fiber",
+     "filled": 78,
+     "blanks": 9,
+     "missingPct": 10.3,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Yes",
+       "count": 50
+      },
+      {
+       "value": "No",
+       "count": 28
+      }
+     ]
+    },
+    {
+     "name": "Fuel",
+     "filled": 87,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "[.60]/[.40] C12H26/iso-dodecane",
+       "count": 41
+      },
+      {
+       "value": "[.75]/[.25] C12H26/iso-dodecane",
+       "count": 24
+      },
+      {
+       "value": "C12H26",
+       "count": 22
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "Nitrogen",
+     "b": "Helium",
+     "r": -0.994,
+     "n": 87,
+     "strength": "strong"
+    },
+    {
+     "a": "Flex Number",
+     "b": "Helium",
+     "r": 0.563,
+     "n": 87,
+     "strength": "moderate"
+    },
+    {
+     "a": "Flex Number",
+     "b": "Nitrogen",
+     "r": -0.552,
+     "n": 87,
+     "strength": "moderate"
+    },
+    {
+     "a": "Oxygen",
+     "b": "Nitrogen",
+     "r": -0.355,
+     "n": 87,
+     "strength": "weak"
+    },
+    {
+     "a": "Oxygen",
+     "b": "Helium",
+     "r": 0.252,
+     "n": 87,
+     "strength": "weak"
+    },
+    {
+     "a": "Flex Number",
+     "b": "Oxygen",
+     "r": 0.16,
+     "n": 87,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 9,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel",
+     "kind": "categorical",
+     "coverage": "87/87",
+     "values": [
+      "[.60]/[.40] C12H26/iso-dodecane",
+      "[.75]/[.25] C12H26/iso-dodecane",
+      "C12H26"
+     ]
+    },
+    "oxygen": {
+     "column": "Oxygen",
+     "kind": "numeric",
+     "coverage": "87/87",
+     "values": [
+      0.17,
+      0.21
+     ]
+    },
+    "pressure": {
+     "column": "Pressure",
+     "kind": "categorical",
+     "coverage": "87/87",
+     "values": [
+      "1 atm",
+      "3 atm",
+      "1.25 atm",
+      "2 atm",
+      "0.75 atm"
+     ]
+    }
+   }
+  },
+  "PSI-68_FLEX-2.csv": {
+   "rows": 8,
+   "columns": [
+    {
+     "name": "Sample (Fuel Type)",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 8,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "IsoOctane (pure)",
+       "count": 1
+      },
+      {
+       "value": "n-Octane (pure)",
+       "count": 1
+      },
+      {
+       "value": "Heptane (pure)",
+       "count": 1
+      },
+      {
+       "value": "Decane (pure)",
+       "count": 1
+      },
+      {
+       "value": "Ethanol (pure)",
+       "count": 1
+      },
+      {
+       "value": "Propanol (95%) Glycerol (5%) (mixture)",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Initial Droplet Diameter (mm)",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "1.5 - 5",
+       "count": 8
+      }
+     ]
+    },
+    {
+     "name": "Ambient Gas Mixture",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "O2/N2 or O2/He",
+       "count": 8
+      }
+     ]
+    },
+    {
+     "name": "Oxygen Mole Fraction",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "0.17; 0.21;0.25; 0.3",
+       "count": 8
+      }
+     ]
+    },
+    {
+     "name": "Ambient Pressure (atm)",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "0.5; 1.0; 1.5; 2.0; or 3.0",
+       "count": 8
+      }
+     ]
+    },
+    {
+     "name": "Ambient Temperature (C)",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "numeric",
+     "min": 25.0,
+     "max": 25.0,
+     "mean": 25.0,
+     "std": 0.0,
+     "q1": 25.0,
+     "median": 25.0,
+     "q3": 25.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Flow Velocity (cm/s)",
+     "filled": 8,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "0.1 - 5",
+       "count": 8
+      }
+     ]
+    }
+   ],
+   "correlations": [],
+   "missingTotal": 0,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Sample (Fuel Type)",
+     "kind": "categorical",
+     "coverage": "8/8",
+     "values": [
+      "IsoOctane (pure)",
+      "n-Octane (pure)",
+      "Heptane (pure)",
+      "Decane (pure)",
+      "Ethanol (pure)"
+     ]
+    },
+    "oxygen": {
+     "column": "Ambient Gas Mixture",
+     "kind": "categorical",
+     "coverage": "8/8",
+     "values": [
+      "O2/N2 or O2/He"
+     ]
+    },
+    "pressure": {
+     "column": "Ambient Pressure (atm)",
+     "kind": "categorical",
+     "coverage": "8/8",
+     "values": [
+      "0.5; 1.0; 1.5; 2.0; or 3.0"
+     ]
+    },
+    "flow": {
+     "column": "Flow Velocity (cm/s)",
+     "kind": "categorical",
+     "coverage": "8/8",
+     "values": [
+      "0.1 - 5"
+     ]
+    }
+   }
+  },
+  "PSI-69_FLEX.csv": {
+   "rows": 274,
+   "columns": [
+    {
+     "name": "FLEX Test #",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 274,
+     "kind": "numeric",
+     "min": 1.0,
+     "max": 274.0,
+     "mean": 137.5,
+     "std": 79.2412,
+     "q1": 69.25,
+     "median": 137.5,
+     "q3": 205.75,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "FLEX Identifier",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 273,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "193F001",
+       "count": 2
+      },
+      {
+       "value": "20CAL08",
+       "count": 1
+      },
+      {
+       "value": "20CAL10",
+       "count": 1
+      },
+      {
+       "value": "20CAL12",
+       "count": 1
+      },
+      {
+       "value": "30CAL02",
+       "count": 1
+      },
+      {
+       "value": "30CAL03",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Test Date",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 80,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "10/6/2010",
+       "count": 9
+      },
+      {
+       "value": "8/29/2011",
+       "count": 7
+      },
+      {
+       "value": "9/27/2011",
+       "count": 7
+      },
+      {
+       "value": "11/18/11",
+       "count": 7
+      },
+      {
+       "value": "4/19/2010",
+       "count": 6
+      },
+      {
+       "value": "8/8/2011",
+       "count": 6
+      }
+     ]
+    },
+    {
+     "name": "Test GMT",
+     "filled": 273,
+     "blanks": 1,
+     "missingPct": 0.4,
+     "unique": 269,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "19:00:48",
+       "count": 2
+      },
+      {
+       "value": "12:28:41",
+       "count": 2
+      },
+      {
+       "value": "7:25:43",
+       "count": 2
+      },
+      {
+       "value": "19:14:22",
+       "count": 2
+      },
+      {
+       "value": "17:22:03",
+       "count": 1
+      },
+      {
+       "value": "19:20:06",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Fuel",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Methanol",
+       "count": 157
+      },
+      {
+       "value": "Heptane",
+       "count": 117
+      }
+     ]
+    },
+    {
+     "name": "Ambient pressure; mmHg",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 183,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 2319.9,
+     "mean": 716.7077,
+     "std": 275.1102,
+     "q1": 536.3,
+     "median": 759.6,
+     "q3": 765.675,
+     "iqrOutliers": 10
+    },
+    {
+     "name": "O initial ambient composition; mole fraction",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 15,
+     "kind": "numeric",
+     "min": 0.12,
+     "max": 0.34,
+     "mean": 0.2007,
+     "std": 0.048,
+     "q1": 0.17,
+     "median": 0.2,
+     "q3": 0.21,
+     "iqrOutliers": 24
+    },
+    {
+     "name": "N initial ambient composition; mole fraction",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 33,
+     "kind": "numeric",
+     "min": 0.09,
+     "max": 0.88,
+     "mean": 0.6301,
+     "std": 0.1758,
+     "q1": 0.52,
+     "median": 0.66,
+     "q3": 0.79,
+     "iqrOutliers": 9
+    },
+    {
+     "name": "CO initial ambient composition; mole fraction",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 14,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 0.7,
+     "mean": 0.1203,
+     "std": 0.1744,
+     "q1": 0.0,
+     "median": 0.0,
+     "q3": 0.2,
+     "iqrOutliers": 9
+    },
+    {
+     "name": "He initial ambient composition; mole fraction",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 10,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 0.45,
+     "mean": 0.0478,
+     "std": 0.1121,
+     "q1": 0.0,
+     "median": 0.0,
+     "q3": 0.0,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Droplet initial diameter; mm",
+     "filled": 268,
+     "blanks": 6,
+     "missingPct": 2.2,
+     "unique": 164,
+     "kind": "numeric",
+     "min": 1.1,
+     "max": 4.67,
+     "mean": 3.0017,
+     "std": 0.6954,
+     "q1": 2.5825,
+     "median": 3.015,
+     "q3": 3.5275,
+     "iqrOutliers": 2
+    },
+    {
+     "name": "Visible flame extinction diameter; mm",
+     "filled": 225,
+     "blanks": 49,
+     "missingPct": 17.9,
+     "unique": 146,
+     "kind": "numeric",
+     "min": 0.0,
+     "max": 4.6,
+     "mean": 1.9096,
+     "std": 1.0351,
+     "q1": 1.19,
+     "median": 1.77,
+     "q3": 2.61,
+     "iqrOutliers": 0
+    },
+    {
+     "name": "Burning rate; mm",
+     "filled": 258,
+     "blanks": 16,
+     "missingPct": 5.8,
+     "unique": 60,
+     "kind": "numeric",
+     "min": 0.05,
+     "max": 1.06,
+     "mean": 0.5019,
+     "std": 0.1376,
+     "q1": 0.4,
+     "median": 0.5,
+     "q3": 0.58,
+     "iqrOutliers": 6
+    },
+    {
+     "name": "Burn time; s",
+     "filled": 268,
+     "blanks": 6,
+     "missingPct": 2.2,
+     "unique": 164,
+     "kind": "numeric",
+     "min": 0.3,
+     "max": 39.2,
+     "mean": 11.2094,
+     "std": 7.6023,
+     "q1": 5.225,
+     "median": 9.6,
+     "q3": 15.6,
+     "iqrOutliers": 4
+    },
+    {
+     "name": "Test end",
+     "filled": 274,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 3,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Extinction",
+       "count": 186
+      },
+      {
+       "value": "Disruption",
+       "count": 61
+      },
+      {
+       "value": "Completion",
+       "count": 27
+      }
+     ]
+    }
+   ],
+   "correlations": [
+    {
+     "a": "N initial ambient composition; mole fraction",
+     "b": "CO initial ambient composition; mole fraction",
+     "r": -0.787,
+     "n": 274,
+     "strength": "strong"
+    },
+    {
+     "a": "Droplet initial diameter; mm",
+     "b": "Visible flame extinction diameter; mm",
+     "r": 0.682,
+     "n": 197,
+     "strength": "moderate"
+    },
+    {
+     "a": "FLEX Test #",
+     "b": "He initial ambient composition; mole fraction",
+     "r": 0.63,
+     "n": 274,
+     "strength": "moderate"
+    },
+    {
+     "a": "O initial ambient composition; mole fraction",
+     "b": "Burning rate; mm",
+     "r": 0.549,
+     "n": 258,
+     "strength": "moderate"
+    },
+    {
+     "a": "Visible flame extinction diameter; mm",
+     "b": "Burning rate; mm",
+     "r": -0.545,
+     "n": 197,
+     "strength": "moderate"
+    },
+    {
+     "a": "Droplet initial diameter; mm",
+     "b": "Burn time; s",
+     "r": 0.498,
+     "n": 259,
+     "strength": "moderate"
+    },
+    {
+     "a": "He initial ambient composition; mole fraction",
+     "b": "Burning rate; mm",
+     "r": 0.414,
+     "n": 258,
+     "strength": "moderate"
+    },
+    {
+     "a": "Ambient pressure; mmHg",
+     "b": "CO initial ambient composition; mole fraction",
+     "r": 0.409,
+     "n": 274,
+     "strength": "moderate"
+    },
+    {
+     "a": "CO initial ambient composition; mole fraction",
+     "b": "Burning rate; mm",
+     "r": -0.403,
+     "n": 258,
+     "strength": "moderate"
+    },
+    {
+     "a": "FLEX Test #",
+     "b": "O initial ambient composition; mole fraction",
+     "r": -0.378,
+     "n": 274,
+     "strength": "weak"
+    },
+    {
+     "a": "O initial ambient composition; mole fraction",
+     "b": "Visible flame extinction diameter; mm",
+     "r": -0.351,
+     "n": 197,
+     "strength": "weak"
+    },
+    {
+     "a": "O initial ambient composition; mole fraction",
+     "b": "Burn time; s",
+     "r": 0.336,
+     "n": 266,
+     "strength": "weak"
+    },
+    {
+     "a": "N initial ambient composition; mole fraction",
+     "b": "He initial ambient composition; mole fraction",
+     "r": -0.301,
+     "n": 274,
+     "strength": "weak"
+    },
+    {
+     "a": "CO initial ambient composition; mole fraction",
+     "b": "He initial ambient composition; mole fraction",
+     "r": -0.295,
+     "n": 274,
+     "strength": "weak"
+    },
+    {
+     "a": "Droplet initial diameter; mm",
+     "b": "Burning rate; mm",
+     "r": -0.295,
+     "n": 258,
+     "strength": "weak"
+    },
+    {
+     "a": "He initial ambient composition; mole fraction",
+     "b": "Burn time; s",
+     "r": -0.281,
+     "n": 266,
+     "strength": "weak"
+    },
+    {
+     "a": "Ambient pressure; mmHg",
+     "b": "N initial ambient composition; mole fraction",
+     "r": -0.273,
+     "n": 274,
+     "strength": "weak"
+    },
+    {
+     "a": "Visible flame extinction diameter; mm",
+     "b": "Burn time; s",
+     "r": -0.264,
+     "n": 196,
+     "strength": "weak"
+    },
+    {
+     "a": "CO initial ambient composition; mole fraction",
+     "b": "Visible flame extinction diameter; mm",
+     "r": 0.246,
+     "n": 197,
+     "strength": "weak"
+    },
+    {
+     "a": "FLEX Test #",
+     "b": "Ambient pressure; mmHg",
+     "r": -0.242,
+     "n": 274,
+     "strength": "weak"
+    },
+    {
+     "a": "O initial ambient composition; mole fraction",
+     "b": "Droplet initial diameter; mm",
+     "r": 0.217,
+     "n": 262,
+     "strength": "weak"
+    },
+    {
+     "a": "FLEX Test #",
+     "b": "CO initial ambient composition; mole fraction",
+     "r": -0.199,
+     "n": 274,
+     "strength": "weak"
+    },
+    {
+     "a": "FLEX Test #",
+     "b": "Burn time; s",
+     "r": -0.192,
+     "n": 266,
+     "strength": "weak"
+    },
+    {
+     "a": "He initial ambient composition; mole fraction",
+     "b": "Droplet initial diameter; mm",
+     "r": -0.159,
+     "n": 262,
+     "strength": "weak"
+    }
+   ],
+   "missingTotal": 78,
+   "qualityNotes": [
+    "encoding fallback latin-1 used"
+   ],
+   "conditions": {
+    "fuel": {
+     "column": "Fuel",
+     "kind": "categorical",
+     "coverage": "274/274",
+     "values": [
+      "Methanol",
+      "Heptane"
+     ]
+    },
+    "pressure": {
+     "column": "Ambient pressure; mmHg",
+     "kind": "numeric",
+     "coverage": "274/274",
+     "values": [
+      0.0,
+      2319.9
+     ]
+    },
+    "flow": {
+     "column": "Burning rate; mm",
+     "kind": "numeric",
+     "coverage": "258/274",
+     "values": [
+      0.05,
+      1.06
+     ]
+    },
+    "extinction": {
+     "column": "Visible flame extinction diameter; mm",
+     "kind": "numeric",
+     "coverage": "225/274",
+     "values": [
+      0.0,
+      4.6
+     ]
+    }
+   }
+  },
+  "PSI-99_SAFFIRE-II.csv": {
+   "rows": 15,
+   "columns": [
+    {
+     "name": "Sample Number",
+     "filled": 15,
+     "blanks": 0,
+     "missingPct": 0.0,
+     "unique": 15,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "2-1",
+       "count": 1
+      },
+      {
+       "value": "2-2",
+       "count": 1
+      },
+      {
+       "value": "2-3",
+       "count": 1
+      },
+      {
+       "value": "2-4",
+       "count": 1
+      },
+      {
+       "value": "2-5",
+       "count": 1
+      },
+      {
+       "value": "2-6",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Material",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 6,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Silicone",
+       "count": 4
+      },
+      {
+       "value": "Cotton-Fiberglass (SIBAL)",
+       "count": 1
+      },
+      {
+       "value": "PMMA & Nomex",
+       "count": 1
+      },
+      {
+       "value": "PMMA",
+       "count": 1
+      },
+      {
+       "value": "Pre-test flow visulation data for sample 2-1",
+       "count": 1
+      },
+      {
+       "value": "Pre-test flow visulation data for sample 2-2",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Samle Thickness",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 7,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "037 mm",
+       "count": 3
+      },
+      {
+       "value": "0.27 mm",
+       "count": 1
+      },
+      {
+       "value": "0.61 mm",
+       "count": 1
+      },
+      {
+       "value": "1.03 mm",
+       "count": 1
+      },
+      {
+       "value": "0.85 and 0.37 mm",
+       "count": 1
+      },
+      {
+       "value": "See Fig. 5",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Sample Length",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "29 cm",
+       "count": 8
+      },
+      {
+       "value": "5 and 24 cm",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Sample Width (cm)",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "5 cm",
+       "count": 9
+      }
+     ]
+    },
+    {
+     "name": "Air Flow (cm/s)",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 1,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "20 cm/s",
+       "count": 9
+      }
+     ]
+    },
+    {
+     "name": "Percent O2 (Note 1)",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 4,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "~ 22.1",
+       "count": 6
+      },
+      {
+       "value": "~ 21.5",
+       "count": 1
+      },
+      {
+       "value": "22.1 to 22.0",
+       "count": 1
+      },
+      {
+       "value": "22.0 to 21.9",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Ignition Power (W)",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "80 W",
+       "count": 7
+      },
+      {
+       "value": "97 W",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Ignition Time (s)",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "9.2 s",
+       "count": 7
+      },
+      {
+       "value": "30 s",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "name": "Burn Time (s)",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 6,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Insignificant",
+       "count": 4
+      },
+      {
+       "value": "145 s",
+       "count": 1
+      },
+      {
+       "value": "115 s",
+       "count": 1
+      },
+      {
+       "value": "140 s",
+       "count": 1
+      },
+      {
+       "value": "600 s",
+       "count": 1
+      },
+      {
+       "value": "900 s",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Flow Direction",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 2,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Concurrent",
+       "count": 8
+      },
+      {
+       "value": "Opposed",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "?-g Burn Length",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 5,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "~ 0",
+       "count": 4
+      },
+      {
+       "value": "29 cm",
+       "count": 2
+      },
+      {
+       "value": "5 cm & 0 (note 2)",
+       "count": 1
+      },
+      {
+       "value": "~ 10 cm (note 3)",
+       "count": 1
+      },
+      {
+       "value": "~ 10 cm (note 4)",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "?-g Spread Length",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 5,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "n/a",
+       "count": 4
+      },
+      {
+       "value": "Note 4",
+       "count": 2
+      },
+      {
+       "value": "2.1 mm/s",
+       "count": 1
+      },
+      {
+       "value": "2.6 mm/s",
+       "count": 1
+      },
+      {
+       "value": "n/a (Nomex)",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "1-g Burn Length",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 4,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Complete",
+       "count": 6
+      },
+      {
+       "value": "7.6 cm",
+       "count": 1
+      },
+      {
+       "value": "~ 0",
+       "count": 1
+      },
+      {
+       "value": "~ 0 (Nomex)",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "1-g Spread Rate",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 5,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "Acceleratory",
+       "count": 5
+      },
+      {
+       "value": "1.2 mm/s",
+       "count": 1
+      },
+      {
+       "value": "n/a",
+       "count": 1
+      },
+      {
+       "value": "0.6 mm/s",
+       "count": 1
+      },
+      {
+       "value": "n/a (Nomex)",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Camera 1",
+     "filled": 8,
+     "blanks": 7,
+     "missingPct": 46.7,
+     "unique": 8,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "S1C1",
+       "count": 1
+      },
+      {
+       "value": "n/a",
+       "count": 1
+      },
+      {
+       "value": "S4C1",
+       "count": 1
+      },
+      {
+       "value": "S5C1",
+       "count": 1
+      },
+      {
+       "value": "S6C1",
+       "count": 1
+      },
+      {
+       "value": "S7C1",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "name": "Camera 2",
+     "filled": 9,
+     "blanks": 6,
+     "missingPct": 40.0,
+     "unique": 7,
+     "kind": "categorical",
+     "top": [
+      {
+       "value": "n/a",
+       "count": 3
+      },
+      {
+       "value": "S1C2",
+       "count": 1
+      },
+      {
+       "value": "S2C2",
+       "count": 1
+      },
+      {
+       "value": "S3C2",
+       "count": 1
+      },
+      {
+       "value": "S4C1",
+       "count": 1
+      },
+      {
+       "value": "S5C2",
+       "count": 1
+      }
+     ]
+    }
+   ],
+   "correlations": [],
+   "missingTotal": 97,
+   "qualityNotes": [],
+   "conditions": {
+    "fuel": {
+     "column": "Material",
+     "kind": "categorical",
+     "coverage": "9/15",
+     "values": [
+      "Silicone",
+      "Cotton-Fiberglass (SIBAL)",
+      "PMMA & Nomex",
+      "PMMA",
+      "Pre-test flow visulation data for sample 2-1"
+     ]
+    },
+    "flow": {
+     "column": "Air Flow (cm/s)",
+     "kind": "categorical",
+     "coverage": "9/15",
+     "values": [
+      "20 cm/s"
+     ]
+    },
+    "ignition": {
+     "column": "Ignition Power (W)",
+     "kind": "categorical",
+     "coverage": "9/15",
+     "values": [
+      "80 W",
+      "97 W"
+     ]
+    }
+   }
+  }
+ },
+ "crossTable": {
+  "conditionFamilies": [
+   "fuel",
+   "oxygen",
+   "pressure",
+   "flow",
+   "ignition",
+   "extinction"
+  ],
+  "coverage": {
+   "fuel": {
+    "PSI-100_SAFFIRE-III.csv": "Material",
+    "PSI-101_SAME-R.csv": "Sample Type",
+    "PSI-102_SAME.csv": "Sample Material",
+    "PSI-106_SLICE.csv": "Fuel Type",
+    "PSI-107_SPICE.csv": "Fuel",
+    "PSI-10_FlameDesign_Inverse.csv": null,
+    "PSI-10_FlameDesign_Normal.csv": "Fuel",
+    "PSI-159_CFI-G_Inverse.csv": "Fuel",
+    "PSI-159_CFI-G_Normal.csv": "Fuel",
+    "PSI-20_ACME-BRE.csv": "Fuel Bottle",
+    "PSI-21_CLD-Flame.csv": "Fuel MFC",
+    "PSI-22_E-FIELD-Flames.csv": "Fuel Bottle",
+    "PSI-23_s-Flame.csv": "Fuel Bottle",
+    "PSI-25_BASS-II.csv": "Fuel Sample Material",
+    "PSI-26_BASS.csv": "Fuel Sample Material",
+    "PSI-39_CFI.csv": "Fuel",
+    "PSI-68_FLEX-2.csv": "Sample (Fuel Type)",
+    "PSI-69_FLEX.csv": "Fuel",
+    "PSI-99_SAFFIRE-II.csv": "Material"
+   },
+   "oxygen": {
+    "PSI-100_SAFFIRE-III.csv": null,
+    "PSI-101_SAME-R.csv": null,
+    "PSI-102_SAME.csv": null,
+    "PSI-106_SLICE.csv": null,
+    "PSI-107_SPICE.csv": null,
+    "PSI-10_FlameDesign_Inverse.csv": "XO2",
+    "PSI-10_FlameDesign_Normal.csv": "XO2 (init)",
+    "PSI-159_CFI-G_Inverse.csv": "XO2",
+    "PSI-159_CFI-G_Normal.csv": "XO2 before test",
+    "PSI-20_ACME-BRE.csv": "Oxygen Conc (percent)",
+    "PSI-21_CLD-Flame.csv": null,
+    "PSI-22_E-FIELD-Flames.csv": null,
+    "PSI-23_s-Flame.csv": null,
+    "PSI-25_BASS-II.csv": null,
+    "PSI-26_BASS.csv": null,
+    "PSI-39_CFI.csv": "Oxygen",
+    "PSI-68_FLEX-2.csv": "Ambient Gas Mixture",
+    "PSI-69_FLEX.csv": null,
+    "PSI-99_SAFFIRE-II.csv": null
+   },
+   "pressure": {
+    "PSI-100_SAFFIRE-III.csv": null,
+    "PSI-101_SAME-R.csv": null,
+    "PSI-102_SAME.csv": null,
+    "PSI-106_SLICE.csv": null,
+    "PSI-107_SPICE.csv": null,
+    "PSI-10_FlameDesign_Inverse.csv": null,
+    "PSI-10_FlameDesign_Normal.csv": null,
+    "PSI-159_CFI-G_Inverse.csv": null,
+    "PSI-159_CFI-G_Normal.csv": null,
+    "PSI-20_ACME-BRE.csv": null,
+    "PSI-21_CLD-Flame.csv": null,
+    "PSI-22_E-FIELD-Flames.csv": null,
+    "PSI-23_s-Flame.csv": null,
+    "PSI-25_BASS-II.csv": null,
+    "PSI-26_BASS.csv": null,
+    "PSI-39_CFI.csv": "Pressure",
+    "PSI-68_FLEX-2.csv": "Ambient Pressure (atm)",
+    "PSI-69_FLEX.csv": "Ambient pressure; mmHg",
+    "PSI-99_SAFFIRE-II.csv": null
+   },
+   "flow": {
+    "PSI-100_SAFFIRE-III.csv": "Air Flow",
+    "PSI-101_SAME-R.csv": "Inlet velocity (cm/s)",
+    "PSI-102_SAME.csv": "Air Flow (cm/s)",
+    "PSI-106_SLICE.csv": null,
+    "PSI-107_SPICE.csv": "Fuel Rate (sccm)",
+    "PSI-10_FlameDesign_Inverse.csv": null,
+    "PSI-10_FlameDesign_Normal.csv": null,
+    "PSI-159_CFI-G_Inverse.csv": "HC burnrate (mg/s)",
+    "PSI-159_CFI-G_Normal.csv": "Self-ext or flow term",
+    "PSI-20_ACME-BRE.csv": null,
+    "PSI-21_CLD-Flame.csv": "Fuel MFC",
+    "PSI-22_E-FIELD-Flames.csv": null,
+    "PSI-23_s-Flame.csv": null,
+    "PSI-25_BASS-II.csv": "Flow restrictor",
+    "PSI-26_BASS.csv": null,
+    "PSI-39_CFI.csv": null,
+    "PSI-68_FLEX-2.csv": "Flow Velocity (cm/s)",
+    "PSI-69_FLEX.csv": "Burning rate; mm",
+    "PSI-99_SAFFIRE-II.csv": "Air Flow (cm/s)"
+   },
+   "ignition": {
+    "PSI-100_SAFFIRE-III.csv": null,
+    "PSI-101_SAME-R.csv": null,
+    "PSI-102_SAME.csv": null,
+    "PSI-106_SLICE.csv": null,
+    "PSI-107_SPICE.csv": "GMT ignition",
+    "PSI-10_FlameDesign_Inverse.csv": null,
+    "PSI-10_FlameDesign_Normal.csv": null,
+    "PSI-159_CFI-G_Inverse.csv": "Hot ignition",
+    "PSI-159_CFI-G_Normal.csv": "Hot ignition",
+    "PSI-20_ACME-BRE.csv": null,
+    "PSI-21_CLD-Flame.csv": null,
+    "PSI-22_E-FIELD-Flames.csv": null,
+    "PSI-23_s-Flame.csv": null,
+    "PSI-25_BASS-II.csv": null,
+    "PSI-26_BASS.csv": null,
+    "PSI-39_CFI.csv": null,
+    "PSI-68_FLEX-2.csv": null,
+    "PSI-69_FLEX.csv": null,
+    "PSI-99_SAFFIRE-II.csv": "Ignition Power (W)"
+   },
+   "extinction": {
+    "PSI-100_SAFFIRE-III.csv": null,
+    "PSI-101_SAME-R.csv": null,
+    "PSI-102_SAME.csv": null,
+    "PSI-106_SLICE.csv": null,
+    "PSI-107_SPICE.csv": "GMT  Flame Off",
+    "PSI-10_FlameDesign_Inverse.csv": null,
+    "PSI-10_FlameDesign_Normal.csv": null,
+    "PSI-159_CFI-G_Inverse.csv": null,
+    "PSI-159_CFI-G_Normal.csv": null,
+    "PSI-20_ACME-BRE.csv": null,
+    "PSI-21_CLD-Flame.csv": null,
+    "PSI-22_E-FIELD-Flames.csv": null,
+    "PSI-23_s-Flame.csv": null,
+    "PSI-25_BASS-II.csv": null,
+    "PSI-26_BASS.csv": null,
+    "PSI-39_CFI.csv": null,
+    "PSI-68_FLEX-2.csv": null,
+    "PSI-69_FLEX.csv": "Visible flame extinction diameter; mm",
+    "PSI-99_SAFFIRE-II.csv": null
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+source_file,source_sheet,Unnamed: 0,Fuel,do (mm),P (atm),XO2,XN2,XO3,Unnamed: 7,Data File,Reference,Unnamed: 10
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-heptane,0.5,1,0.21,74,Balance,,PROCI_2019_Stable_Cool,https://doi.org/10.1016/j.proci.2018.05.151,Fig. 1
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-heptane,0.5,1,0.1,85,Balance,,PROCI_2019_Oscillatory_Cool_Flame,https://doi.org/10.1016/j.proci.2018.05.151,Fig. 1
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,Fuel,do (mm),P (atm),XO2,XN2,XHe,,,,
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-dodecane,4.5,2.75,0.21,0.5,0.29,,PROCI_C12_2019_Three_Stage,https://doi.org/10.1016/j.proci.2018.09.015,Fig. 7
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,Fuel,do (mm),P (atm),XO2,XN2,,,,,
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,"n-heptane, n-decane, n-dodecane",2.0 - 7.0,1,0.21,0.79,,,PROCI_2023_Alkane_Extinction_Diameter_1atm,https://doi.org/10.1016/j.proci.2022.07.094,Fig. 3
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-dodecane,4,0.5 - 3.0,0.21,0.79,,,PROCI_2023_C12_Extinction_Diameter_vs_pressure,https://doi.org/10.1016/j.proci.2022.07.094,Fig. 7
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,Fuel,do (mm),P (atm),XO2,XN2,,,,,
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-dodecane,4,1,0.21,0.79,,,MST_2024_Burning_history_Flame_diameter,https://doi.org/10.1007/s12217-024-10115-x,Fig. 1
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-dodecane,4,0.5 - 1.5,0.21,0.79,,,MST_2024_Dext,https://doi.org/10.1007/s12217-024-10115-x,Fig. 5
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-dodecane,4.5,0.5 - 5.0,0.21,0.79,,,MST_2024_Kavg,https://doi.org/10.1007/s12217-024-10115-x,Fig. 4
+PSI-117/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx,Sheet1,,n-dodecane,~4.5,0.5 and 5.0,0.21,0.79,,,MST_2024_Radiance_Flame_Diameter,https://doi.org/10.1007/s12217-024-10115-x,Fig. 11

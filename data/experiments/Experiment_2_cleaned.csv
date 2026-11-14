@@ -1,0 +1,9 @@
+source_file,source_sheet,Sample #,Sample Material,Air Flow (cm/s),Weight loss rate (mg/min),Aging Duration (minutes)
+PSI-102/PSI-102_Experimental table_SAME.csv,,1,Teflon,5.0,2.0,1.0
+PSI-102/PSI-102_Experimental table_SAME.csv,,2,Teflon,5.0,1.0,1.0
+PSI-102/PSI-102_Experimental table_SAME.csv,,3,Teflon,5.0,2.0,20.0
+PSI-102/PSI-102_Experimental table_SAME.csv,,4,Teflon,10.0,2.0,1.0
+PSI-102/PSI-102_Experimental table_SAME.csv,,5,Kapton: same conditions as 1-4,,,
+PSI-102/PSI-102_Experimental table_SAME.csv,,6,Silicone Rubber: same conditions as 1-4,,,
+PSI-102/PSI-102_Experimental table_SAME.csv,,7,Lampwick: same conditions as 1-4,,,
+PSI-102/PSI-102_Experimental table_SAME.csv,,8,Dibutyl Phthalate: same conditions as 1-4,,,

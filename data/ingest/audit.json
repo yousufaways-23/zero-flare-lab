@@ -1,0 +1,1234 @@
+{
+  "ranAt": "2026-11-12T21:01:04.925Z",
+  "triggeredBy": "user-confirmation",
+  "batchesReconciled": [
+    "B-20261112-001",
+    "B-20261112-002",
+    "B-20261112-003",
+    "B-20261112-004",
+    "B-20261112-005",
+    "B-20261112-006",
+    "B-20261112-007"
+  ],
+  "crossBatchDuplicates": [],
+  "datasetInventory": [
+    {
+      "id": "B-20261112-001:f001:t1",
+      "source": "test-upload.csv — test-upload",
+      "rows": 2,
+      "columns": [
+        "Sample (Fuel Type)",
+        "Initial Droplet Diameter (mm)",
+        "Ambient Gas Mixture",
+        "Oxygen Mole Fraction",
+        "Ambient Pressure (atm)",
+        "Ambient Temperature (C)",
+        "Flow Velocity (cm/s)"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f001:t1",
+      "source": "PSI-100_Experimental table_SAFFIRE-3.csv — PSI-100_Experimental table_SAFFIRE-3",
+      "rows": 2,
+      "columns": [
+        "Sample Number",
+        "Material",
+        "Sample Thickness",
+        "Sample Length",
+        "Sample Width",
+        "Air Flow",
+        "Direction",
+        "Camera 1",
+        "Camera 2"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f002:t1",
+      "source": "PSI-101_Experimental table_SAME-R.csv — PSI-101_Experimental table_SAME-R",
+      "rows": 109,
+      "columns": [
+        "Sample Type",
+        "SAME Test #",
+        "Description",
+        "Date",
+        "Inlet velocity (cm/s)",
+        "Rt/R0",
+        "Duration (sec)",
+        "Primary aging time (sec)",
+        "Primary mixing time (sec)",
+        "Net aging time (sec)"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f003:t1",
+      "source": "PSI-102_Experimental table_SAME.csv — PSI-102_Experimental table_SAME",
+      "rows": 8,
+      "columns": [
+        "Sample #",
+        "Sample Material",
+        "Air Flow (cm/s)",
+        "Weight loss rate (mg/min)",
+        "Aging Duration (minutes)"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f004:t1",
+      "source": "PSI-106_Experimental table_Slice.csv — PSI-106_Experimental table_Slice",
+      "rows": 12,
+      "columns": [
+        "Test Date",
+        "Fuel Type"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f005:t1",
+      "source": "PSI-107_Experimental table_Spice.csv — PSI-107_Experimental table_Spice",
+      "rows": 469,
+      "columns": [
+        "GMT date",
+        "GMT ignition",
+        "GMT  Flame Off",
+        "Fuel",
+        "Nozzle (mm)",
+        "Fuel Rate (sccm)",
+        "Fuel Rate (mg/s)",
+        "HC Fuel Rate (mg/s)",
+        "Air Rate (cm/s)"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f006:t1",
+      "source": "PSI-10_Experimental table_Flame Design_Inverse Flame.csv — PSI-10_Experimental table_Flame Design_Inverse Flame",
+      "rows": 120,
+      "columns": [
+        "Flame Type",
+        "Day",
+        "Test",
+        "XO2",
+        "mO2 (mg/s)",
+        "mN2 (mg/s)",
+        "mtot (mg/s)",
+        "XC2H4 initial",
+        "XC2H4 final",
+        "pinit (atm)",
+        "pfinal (atm)",
+        "pmean (atm)",
+        "mean Zst",
+        "Tad (K)"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f007:t1",
+      "source": "PSI-10_Experimental table_Flame Design_Normal Flame.csv — PSI-10_Experimental table_Flame Design_Normal Flame",
+      "rows": 207,
+      "columns": [
+        "Flame Type",
+        "Day",
+        "Fuel",
+        "Test",
+        "Xfuel",
+        "mfuel (mg/s)",
+        "mN2 (mg/s)",
+        "mtot (mg/s)",
+        "XO2 (init)",
+        "XO2 (final)",
+        "pinit (atm)",
+        "pfinal (atm)",
+        "pmean (atm)",
+        "mean Zst",
+        "Tad (K)"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f008:t1",
+      "source": "PSI-159_Experimental table_CFI-G_Inverse Flames.csv — PSI-159_Experimental table_CFI-G_Inverse Flames",
+      "rows": 154,
+      "columns": [
+        "Flame Type",
+        "Day",
+        "Fuel",
+        "Test",
+        "Xf  before test",
+        "Xf  after test",
+        "approx p (bar)",
+        "XO2",
+        "HC burnrate (mg/s)",
+        "O2 flow rate (mg/s)",
+        "TFP",
+        "Tad (K)",
+        "Zst",
+        "Hot ignition",
+        "burn time (sec)",
+        "Self -ext or flow term",
+        "Peak burner Temp (C)",
+        "Peak burner temp (K)",
+        "Color",
+        "Comments"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f009:t1",
+      "source": "PSI-159_Experimental table_CFI-G_Normal Flames.csv — PSI-159_Experimental table_CFI-G_Normal Flames",
+      "rows": 179,
+      "columns": [
+        "Flame Type",
+        "Day",
+        "Fuel",
+        "Test",
+        "Cool flame?",
+        "XO2 before test",
+        "XO2  after test",
+        "approx p (bar)",
+        "Xf",
+        "mHC (mg/s)",
+        "TFP",
+        "Tad (K)",
+        "Zst",
+        "Hot ignition",
+        "burn time (sec)",
+        "Self-ext or flow term",
+        "Peak burner T (C )",
+        "Comments"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-002:f010:t1",
+      "source": "PSI-20_Experimental table_ACME BRE.csv — PSI-20_Experimental table_ACME BRE",
+      "rows": 18,
+      "columns": [
+        "Year",
+        "Month",
+        "Date",
+        "Burner Size (mm)",
+        "Fuel Bottle",
+        "Oxygen Conc (percent)",
+        "Flames Ignited",
+        "Notes"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f001:t1",
+      "source": "PSI-21_Experimental table_CLD Flame.csv — PSI-21_Experimental table_CLD Flame",
+      "rows": 32,
+      "columns": [
+        "Test Type",
+        "Test Day",
+        "Fuel MFC",
+        "N2 MFC",
+        "Fuel Bottle",
+        "Fuel conc. Range",
+        "Flames ignited",
+        "Notes"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f002:t1",
+      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv — PSI-22_Experimental table_ACME E-FIELD Flames",
+      "rows": 32,
+      "columns": [
+        "Test Type",
+        "Test Day",
+        "Year",
+        "Month",
+        "Date",
+        "Mesh Polarity",
+        "Fuel Bottle",
+        "Fuel Conc",
+        "Flames Ignited",
+        "Notes"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f003:t1",
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv — PSI-23_Experimental table_ACME s-Flame",
+      "rows": 18,
+      "columns": [
+        "Test Type",
+        "Test Day*",
+        "Year",
+        "Month",
+        "Date",
+        "Atmosphere*",
+        "Fuel Bottle",
+        "Flames Ignited*",
+        "Notes"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f004:t1",
+      "source": "PSI-25_Experimental table_BASS-II.csv — PSI-25_Experimental table_BASS-II",
+      "rows": 129,
+      "columns": [
+        "PI",
+        "Test #",
+        "Date",
+        "GMT",
+        "Sample #",
+        "Fuel Sample Material",
+        "Flow restrictor",
+        "Fan display",
+        "Air display",
+        "Radiometer gain   (1000   250   50   10)",
+        "Total Frames Shot",
+        "Calibrated  initial O2 % by vol",
+        "Calibrated final O2 % by vol",
+        "Initial CO2 % by vol",
+        "Final CO2 % by vol",
+        "Initial CO (ppm)",
+        "Final CO (ppm)"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f005:t1",
+      "source": "PSI-26_Experimental table_BASS.csv — PSI-26_Experimental table_BASS",
+      "rows": 122,
+      "columns": [
+        "Date",
+        "GMT",
+        "As Run Test #",
+        "Test #",
+        "Sample #",
+        "Fuel Sample Material"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f006:t1",
+      "source": "PSI-39_Experimental table_CFI.csv — PSI-39_Experimental table_CFI",
+      "rows": 87,
+      "columns": [
+        "Flex Number",
+        "Test Date",
+        "Local Time",
+        "CIR",
+        "Pressure",
+        "Oxygen",
+        "Nitrogen",
+        "Helium",
+        "Fiber",
+        "Fuel"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f007:t1",
+      "source": "PSI-68_Experimental table_Flex2.csv — PSI-68_Experimental table_Flex2",
+      "rows": 8,
+      "columns": [
+        "Sample (Fuel Type)",
+        "Initial Droplet Diameter (mm)",
+        "Ambient Gas Mixture",
+        "Oxygen Mole Fraction",
+        "Ambient Pressure (atm)",
+        "Ambient Temperature (C)",
+        "Flow Velocity (cm/s)"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f008:t1",
+      "source": "PSI-69_Experimental table_FLEX.csv — PSI-69_Experimental table_FLEX",
+      "rows": 274,
+      "columns": [
+        "FLEX Test #",
+        "FLEX Identifier",
+        "Test Date",
+        "Test GMT",
+        "Fuel",
+        "Ambient pressure; mmHg",
+        "O initial ambient composition; mole fraction",
+        "N initial ambient composition; mole fraction",
+        "CO initial ambient composition; mole fraction",
+        "He initial ambient composition; mole fraction",
+        "Droplet initial diameter; mm",
+        "Visible flame extinction diameter; mm",
+        "Burning rate; mm",
+        "Burn time; s",
+        "Test end"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-003:f009:t1",
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv — PSI-99_Experimental table_SAFFIRE-2",
+      "rows": 15,
+      "columns": [
+        "Sample Number",
+        "Material",
+        "Samle Thickness",
+        "Sample Length",
+        "Sample Width (cm)",
+        "Air Flow (cm/s)",
+        "Percent O2 (Note 1)",
+        "Ignition Power (W)",
+        "Ignition Time (s)",
+        "Burn Time (s)",
+        "Flow Direction",
+        "?-g Burn Length",
+        "?-g Spread Length",
+        "1-g Burn Length",
+        "1-g Spread Rate",
+        "Camera 1",
+        "Camera 2"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-004:f005:t1",
+      "source": "advanced-combustion-via-microgravity-experiments-acme.pdf — pdf-heuristic-table-1",
+      "rows": 3,
+      "columns": [
+        "•",
+        "Combustion is the primary man-made contributor to acid rain."
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-004:f005:t2",
+      "source": "advanced-combustion-via-microgravity-experiments-acme.pdf — pdf-heuristic-table-2",
+      "rows": 3,
+      "columns": [
+        "•",
+        "ACME Image Processing Software (OMA2 and QtOma)"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-004:f005:t3",
+      "source": "advanced-combustion-via-microgravity-experiments-acme.pdf — pdf-heuristic-table-3",
+      "rows": 4,
+      "columns": [
+        "•",
+        "NASA Glenn Research Center (lead center for ISS combustion research)"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-006:f006:t1",
+      "source": "1-s2.0-S0010218022004606-main.pdf — pdf-heuristic-table-1",
+      "rows": 12,
+      "columns": [
+        "Testpoints",
+        "Fuel",
+        "Fuel Velocity",
+        "Coflow Air (3.1 cm/s)",
+        "Electric Field Direction"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-006:f008:t1",
+      "source": "1-s2.0-S001021802300233X-am.pdf — pdf-table-p4-1",
+      "rows": 7,
+      "columns": [
+        "col_1",
+        "col_2",
+        "col_3"
+      ],
+      "qualityFlags": [
+        "placeholder column names — header mapping needed",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-006:f008:t2",
+      "source": "1-s2.0-S001021802300233X-am.pdf — pdf-table-p5-2",
+      "rows": 7,
+      "columns": [
+        "Cool"
+      ],
+      "qualityFlags": [
+        "single column",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f003:t1",
+      "source": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-1",
+      "rows": 6,
+      "columns": [
+        "col_1",
+        "col_2"
+      ],
+      "qualityFlags": [
+        "placeholder column names — header mapping needed",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f003:t2",
+      "source": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-2",
+      "rows": 3,
+      "columns": [
+        "col_1",
+        "col_2"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "placeholder column names — header mapping needed",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f003:t3",
+      "source": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-3",
+      "rows": 3,
+      "columns": [
+        "col_1",
+        "col_2"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "placeholder column names — header mapping needed",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f003:t4",
+      "source": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-4",
+      "rows": 6,
+      "columns": [
+        "col_1",
+        "4 cm HAB - Exp."
+      ],
+      "qualityFlags": [
+        "placeholder column names — header mapping needed",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f003:t5",
+      "source": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p14-5",
+      "rows": 15,
+      "columns": [
+        "col_1",
+        "col_2"
+      ],
+      "qualityFlags": [
+        "placeholder column names — header mapping needed",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f003:t6",
+      "source": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p14-6",
+      "rows": 3,
+      "columns": [
+        "col_1",
+        "col_2",
+        "col_3"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "placeholder column names — header mapping needed",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t1",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-1",
+      "rows": 2,
+      "columns": [
+        "1 School of Applied Mathematics and Computational Physics, Peter the Great St. Petersburg",
+        "6"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t2",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-2",
+      "rows": 18,
+      "columns": [
+        "Word count",
+        "12"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t3",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-3",
+      "rows": 18,
+      "columns": [
+        "Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating",
+        "33"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t4",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-4",
+      "rows": 9,
+      "columns": [
+        "1. Introduction",
+        "55"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t5",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-5",
+      "rows": 14,
+      "columns": [
+        "Meanwhile, this kind of flame develops in combustion of solid materials, and (for a given",
+        "66"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t6",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-6",
+      "rows": 2,
+      "columns": [
+        "the flames were produced by the 25 mm diameter BRE burner with the igniter (taken away after",
+        "81"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t7",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-7",
+      "rows": 4,
+      "columns": [
+        "In total, 79 orbital experiments have been undertaken so far with the following parameters.",
+        "88"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t8",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-8",
+      "rows": 7,
+      "columns": [
+        "In this paper, we apply the comprehensive model developed in Refs. [6, 7] (comprising multi-step",
+        "94"
+      ],
+      "qualityFlags": [
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t9",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-9",
+      "rows": 2,
+      "columns": [
+        "In the first round of the BRE (Flamenco) experiment, it has been observed that the flames are long-",
+        "103"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    },
+    {
+      "id": "B-20261112-007:f004:t10",
+      "source": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-10",
+      "rows": 2,
+      "columns": [
+        "above-listed test scenarios, we focus on those replicating the low-momentum diffusion combustion",
+        "106"
+      ],
+      "qualityFlags": [
+        "< 5 rows",
+        "human review pending"
+      ],
+      "harmonizationNotes": "Columns are as extracted; mapping to canonical variables (variable registry) is deferred to the curated layer and requires human review."
+    }
+  ],
+  "mlEligibilityPreAssessment": [
+    {
+      "dataset": "test-upload.csv — test-upload",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-100_Experimental table_SAFFIRE-3.csv — PSI-100_Experimental table_SAFFIRE-3",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-101_Experimental table_SAME-R.csv — PSI-101_Experimental table_SAME-R",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-102_Experimental table_SAME.csv — PSI-102_Experimental table_SAME",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-106_Experimental table_Slice.csv — PSI-106_Experimental table_Slice",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-107_Experimental table_Spice.csv — PSI-107_Experimental table_Spice",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-10_Experimental table_Flame Design_Inverse Flame.csv — PSI-10_Experimental table_Flame Design_Inverse Flame",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-10_Experimental table_Flame Design_Normal Flame.csv — PSI-10_Experimental table_Flame Design_Normal Flame",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-159_Experimental table_CFI-G_Inverse Flames.csv — PSI-159_Experimental table_CFI-G_Inverse Flames",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-159_Experimental table_CFI-G_Normal Flames.csv — PSI-159_Experimental table_CFI-G_Normal Flames",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-20_Experimental table_ACME BRE.csv — PSI-20_Experimental table_ACME BRE",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-21_Experimental table_CLD Flame.csv — PSI-21_Experimental table_CLD Flame",
+      "eligibleTasks": [
+        "exploratory descriptive analysis"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-22_Experimental table_ACME E-FIELD Flames.csv — PSI-22_Experimental table_ACME E-FIELD Flames",
+      "eligibleTasks": [
+        "exploratory descriptive analysis"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-23_Experimental table_ACME s-Flame.csv — PSI-23_Experimental table_ACME s-Flame",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-25_Experimental table_BASS-II.csv — PSI-25_Experimental table_BASS-II",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-26_Experimental table_BASS.csv — PSI-26_Experimental table_BASS",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-39_Experimental table_CFI.csv — PSI-39_Experimental table_CFI",
+      "eligibleTasks": [
+        "exploratory descriptive analysis"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-68_Experimental table_Flex2.csv — PSI-68_Experimental table_Flex2",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-69_Experimental table_FLEX.csv — PSI-69_Experimental table_FLEX",
+      "eligibleTasks": [
+        "exploratory descriptive analysis",
+        "candidate regression/classification — pending label audit"
+      ],
+      "blockers": [
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "PSI-99_Experimental table_SAFFIRE-2.csv — PSI-99_Experimental table_SAFFIRE-2",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "advanced-combustion-via-microgravity-experiments-acme.pdf — pdf-heuristic-table-1",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "advanced-combustion-via-microgravity-experiments-acme.pdf — pdf-heuristic-table-2",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "advanced-combustion-via-microgravity-experiments-acme.pdf — pdf-heuristic-table-3",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S0010218022004606-main.pdf — pdf-heuristic-table-1",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S001021802300233X-am.pdf — pdf-table-p4-1",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "columns not yet mapped to canonical variables",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S001021802300233X-am.pdf — pdf-table-p5-2",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-1",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "columns not yet mapped to canonical variables",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-2",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "columns not yet mapped to canonical variables",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-3",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "columns not yet mapped to canonical variables",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p13-4",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "columns not yet mapped to canonical variables",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p14-5",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "columns not yet mapped to canonical variables",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920300602-am.pdf — pdf-table-p14-6",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "columns not yet mapped to canonical variables",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-1",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-2",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-3",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-4",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-5",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-6",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-7",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-8",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-9",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "dataset": "1-s2.0-S1540748920301711-am.pdf — pdf-heuristic-table-10",
+      "eligibleTasks": [
+        "descriptive registration only"
+      ],
+      "blockers": [
+        "too few rows for any supervised task",
+        "outcome/label semantics not yet audited (CFI-G rule: ambiguous labels are never forced into a negative class)"
+      ],
+      "humanReviewRequired": true
+    }
+  ],
+  "knowledgeGraphNodes": 115,
+  "knowledgeGraphEdges": 21825,
+  "reportPath": "reports/GLOBAL_AUDIT_2026-11-12T21-01-04-925Z.md"
+}

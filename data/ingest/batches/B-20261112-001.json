@@ -1,0 +1,126 @@
+{
+  "batchId": "B-20261112-001",
+  "receivedAt": "2026-11-12T16:58:22.040Z",
+  "fileCount": 1,
+  "files": [
+    {
+      "id": "f001",
+      "name": "test-upload.csv",
+      "sizeBytes": 362,
+      "sha256": "bbd16bb7a7f17fbf52ca7d55891a13652927a4c5d1a902c7c9f039ab12603e8a",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 227,
+        "headings": [
+          "test-upload.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-001/f001-test-upload.txt"
+      },
+      "tables": [
+        {
+          "name": "test-upload",
+          "columns": [
+            "Sample (Fuel Type)",
+            "Initial Droplet Diameter (mm)",
+            "Ambient Gas Mixture",
+            "Oxygen Mole Fraction",
+            "Ambient Pressure (atm)",
+            "Ambient Temperature (C)",
+            "Flow Velocity (cm/s)"
+          ],
+          "rowCount": 2,
+          "sample": [
+            {
+              "Sample (Fuel Type)": "IsoOctane (pure)",
+              "Initial Droplet Diameter (mm)": "1.5 - 5",
+              "Ambient Gas Mixture": "O2/N2 or O2/He",
+              "Oxygen Mole Fraction": "0.17; 0.21;0.25; 0.3",
+              "Ambient Pressure (atm)": "0.5; 1.0; 1.5; 2.0; or 3.0",
+              "Ambient Temperature (C)": 25,
+              "Flow Velocity (cm/s)": "0.1 - 5"
+            },
+            {
+              "Sample (Fuel Type)": "n-Octane (pure)",
+              "Initial Droplet Diameter (mm)": "1.5 - 5",
+              "Ambient Gas Mixture": "O2/N2 or O2/He",
+              "Oxygen Mole Fraction": "0.17; 0.21;0.25; 0.3",
+              "Ambient Pressure (atm)": "0.5; 1.0; 1.5; 2.0; or 3.0",
+              "Ambient Temperature (C)": 25,
+              "Flow Velocity (cm/s)": "0.1 - 5"
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fuel-octane",
+          "entityLabel": "n-Octane",
+          "entityType": "fuel",
+          "source": "test-upload.csv",
+          "location": "document body",
+          "context": "17; 0.21;0.25; 0.3,0.5; 1.0; 1.5; 2.0; or 3.0 ,25,0.1 - 5 n-Octane (pure),1.5 - 5,O2/N2 or O2/He,0.17; 0.21;0.25; 0.3,0.5; 1.0; 1.5; 2.0; or 3.0 ,25,0.1 - 5",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Sample (Fuel Type),Initial Droplet Diameter (mm),Ambient Gas Mixture ,Oxygen Mole Fraction,Ambient Pressure (atm), Ambient Temperature (C),Flow Velocity (cm/s)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-001/f001-test-upload.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-001/f001.extract.json",
+      "processingMs": 21
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "extracted": 1,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 1,
+    "pages": 0,
+    "chars": 227,
+    "tables": 1,
+    "tableRows": 2,
+    "equations": 0,
+    "figures": 0,
+    "entities": 1,
+    "newEntities": 0,
+    "mediaAssets": 0
+  },
+  "cumulative": {
+    "batches": 1,
+    "files": 1,
+    "uniqueFiles": 1,
+    "duplicateFiles": 0,
+    "documents": 1,
+    "pages": 0,
+    "chars": 227,
+    "tables": 1,
+    "tableRows": 2,
+    "equations": 0,
+    "figures": 0,
+    "mediaAssets": 0,
+    "entities": 109,
+    "errors": 0,
+    "userConfirmedAllUploads": false,
+    "lastBatchId": "B-20261112-001",
+    "updatedAt": "2026-11-12T16:58:22.073Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

@@ -1,0 +1,50 @@
+{
+ "source": "PSI-69_FLEX (canonical corpus, SHA-256-verified)",
+ "computedAt": "2026-11-13T18:29:13.998Z",
+ "note": "d2-law: d(t) = d0*sqrt(1 - t/t_life), t_life = d0^2/K; K reported directly in the recovered table as 'Burning rate' (mm^2/s)",
+ "usable_rows": 259,
+ "internal_consistency": {
+  "n": 256,
+  "mae_s": 10.254,
+  "rmse_s": 18.992,
+  "median_s": 4.634
+ },
+ "burning_rate_by_fuel": {
+  "Heptane": {
+   "n": 106,
+   "median_mm2_s": 0.54,
+   "min": 0.05,
+   "max": 1.06,
+   "lit_range_note": "classical microgravity droplet-burning K is commonly O(0.5-1.5) mm^2/s for methanol/heptane at these conditions",
+   "within_lit_order_of_magnitude": false
+  },
+  "Methanol": {
+   "n": 150,
+   "median_mm2_s": 0.46,
+   "min": 0.2,
+   "max": 0.74,
+   "lit_range_note": "classical microgravity droplet-burning K is commonly O(0.5-1.5) mm^2/s for methanol/heptane at these conditions",
+   "within_lit_order_of_magnitude": true
+  }
+ },
+ "lifetime_prediction": {
+  "Heptane": {
+   "n": 106,
+   "K_used": 0.54,
+   "mae_s": 8.58,
+   "rmse_s": 12.25
+  },
+  "Methanol": {
+   "n": 153,
+   "K_used": 0.46,
+   "mae_s": 7.87,
+   "rmse_s": 10.44
+  }
+ },
+ "limitations": [
+  "Quasi-steady d2-law is an idealisation: real FLEX droplets show time-varying K, disruption events and radiative effects",
+  "Internal consistency checks the table against itself (t = d0^2/K); it is NOT independent validation",
+  "K-by-fuel medians are compared against published literature order-of-magnitude ranges as PARTIAL validation only"
+ ],
+ "validation_class": "partially_validated (internal consistency + literature order-of-magnitude; no independent campaign)"
+}

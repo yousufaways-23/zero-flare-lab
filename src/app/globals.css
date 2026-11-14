@@ -1,0 +1,650 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  /* ZERO FLARE semantic tokens (kept for merged-app compatibility) */
+  --color-ember: var(--ember);
+  --color-ember-foreground: var(--ember-foreground);
+  --color-hotcore: var(--hotcore);
+  --color-emission: var(--emission);
+  --color-emission-foreground: var(--emission-foreground);
+  --color-glow: var(--glow);
+  --color-research: var(--research);
+  --color-research-foreground: var(--research-foreground);
+  --color-research-muted: var(--research-muted);
+  --color-space-deep: var(--space-deep);
+  --color-space-panel: var(--space-panel);
+  --color-space-raised: var(--space-raised);
+  --color-starfield: var(--starfield);
+  /* V2 design-base extensions (measured palette — see :root note) */
+  --color-flame: var(--flame);
+  --color-flame-soft: var(--flame-soft);
+  --color-ink: var(--ink);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-hairline: var(--hairline);
+  --color-data: var(--data);
+  --color-evidence: var(--evidence);
+  --color-sci-ember: var(--sci-ember);
+  --color-sci-deep-orange: var(--sci-deep-orange);
+  --color-sci-orange: var(--sci-orange);
+  --color-sci-amber: var(--sci-amber);
+  --color-sci-hotcore: var(--sci-hotcore);
+  --color-sci-blue: var(--sci-blue);
+  --color-sci-blue-core: var(--sci-blue-core);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/*
+ * ZERO FLARE — Flame Evidence Lab. DESIGN BASE: the SECOND version's
+ * cinematic deep-space theme, with every hue MEASURED, not guessed:
+ *  - brand hues measured from the supplied ZERO FLARE brand art
+ *    (spaceapps_cosmic_iss_background.png) — plasma blue #4784d9,
+ *    nebula pink #e587bc, deep-space navy #030b26;
+ *  - flame temperature scale measured from 495 genuine NASA flame
+ *    photographs — ember #be5f35 → hot-core #fcdaa7;
+ *  - cool-flame blue band #5799d1 → #9ccae9 from 299 blue-emission images.
+ * Type system: Sora (display) / Inter (body) / JetBrains Mono (data).
+ */
+:root {
+  --radius: 0.75rem;
+  /* --- cosmic base (logo-measured) --- */
+  --background: #030b26;
+  --foreground: #e6ecfb;
+  --card: #0d1c4e;
+  --card-foreground: #e6ecfb;
+  --popover: #0a1a4a;
+  --popover-foreground: #e6ecfb;
+  --primary: #4784d9;               /* logo plasma blue */
+  --primary-foreground: #04102e;
+  --secondary: #16296b;
+  --secondary-foreground: #ccd9f6;
+  --muted: #122358;
+  --muted-foreground: #93a7d9;
+  --accent: #4784d9;
+  --accent-foreground: #04102e;
+  --destructive: #d24a5c;
+  --destructive-foreground: #fdf0f2;
+  --border: #2c3f7e;
+  --input: #1c2f68;
+  --ring: #4784d9;
+  /* chart palette: brand blues + flame-scale warmth, distinct hues */
+  --chart-1: #4784d9;               /* plasma blue */
+  --chart-2: #97e2fe;               /* plasma cyan */
+  --chart-3: #b48ae0;               /* nebula violet (lifted for contrast) */
+  --chart-4: #e587bc;               /* nebula pink */
+  --chart-5: #e7986d;               /* flame orange (measured) */
+  --sidebar: #081643;
+  --sidebar-foreground: #ccd9f6;
+  --sidebar-primary: #4784d9;
+  --sidebar-primary-foreground: #04102e;
+  --sidebar-accent: #16296b;
+  --sidebar-accent-foreground: #e6ecfb;
+  --sidebar-border: #2c3f7e;
+  --sidebar-ring: #4784d9;
+  /* extensions */
+  --flame: #4784d9;                 /* plasma-blue flame — the ZERO FLARE mark */
+  --flame-soft: #93a7d9;
+  --ember: #e587bc;                 /* nebula-pink embers (brand-measured) */
+  --ember-foreground: #04102e;
+  --ink: #02081e;                   /* deepest navy for insets */
+  --panel: #0d1c4e;
+  --panel-2: #16296b;
+  --hairline: #2c3f7e;
+  --data: #97e2fe;                  /* plasma cyan for data accents */
+  --evidence: #b8c8f2;              /* periwinkle evidence accents */
+  /* legacy-alias tokens (merged-app compatibility) — remapped onto V2 values */
+  --hotcore: #fcdaa7;               /* measured flame hot core */
+  --emission: #5799d1;              /* cool-flame / diffusion-flame blue */
+  --emission-foreground: #04102e;
+  --glow: #97e2fe;
+  --research: rgba(18, 34, 86, 0.55);      /* translucent research surface (V2 .panel) */
+  --research-foreground: #dce7fb;
+  --research-muted: rgba(11, 22, 60, 0.5);
+  --space-deep: #030b26;
+  --space-panel: #0d1c4e;
+  --space-raised: #16296b;
+  --starfield: #97e2fe;
+  /* flame temperature scale — measured from NASA flame imagery */
+  --sci-ember: #be5f35;
+  --sci-deep-orange: #d38154;
+  --sci-orange: #e7986d;
+  --sci-amber: #eeb086;
+  --sci-hotcore: #fcdaa7;
+  --sci-blue: #5799d1;
+  --sci-blue-core: #9ccae9;
+}
+
+/* single dark cosmic theme (V2 base) — .dark mirrors :root */
+.dark {
+  --background: #030b26;
+  --foreground: #e6ecfb;
+  --card: #0d1c4e;
+  --card-foreground: #e6ecfb;
+  --popover: #0a1a4a;
+  --popover-foreground: #e6ecfb;
+  --primary: #4784d9;
+  --primary-foreground: #04102e;
+  --secondary: #16296b;
+  --secondary-foreground: #ccd9f6;
+  --muted: #122358;
+  --muted-foreground: #93a7d9;
+  --accent: #4784d9;
+  --accent-foreground: #04102e;
+  --destructive: #d24a5c;
+  --destructive-foreground: #fdf0f2;
+  --border: #2c3f7e;
+  --input: #1c2f68;
+  --ring: #4784d9;
+  --chart-1: #4784d9;
+  --chart-2: #97e2fe;
+  --chart-3: #b48ae0;
+  --chart-4: #e587bc;
+  --chart-5: #e7986d;
+  --ember: #e587bc;
+  --ember-foreground: #04102e;
+  --hotcore: #fcdaa7;
+  --emission: #5799d1;
+  --emission-foreground: #04102e;
+  --glow: #97e2fe;
+  --research: rgba(18, 34, 86, 0.55);
+  --research-foreground: #dce7fb;
+  --research-muted: rgba(11, 22, 60, 0.5);
+  --space-deep: #030b26;
+  --space-panel: #0d1c4e;
+  --space-raised: #16296b;
+  --starfield: #97e2fe;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+    /* clip (not hidden): transformed fixed elements (the collapsed copilot
+       dock) must not create horizontal scroll; clip also keeps sticky working
+       because it does not create a scroll container. */
+    overflow-x: clip;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01" on, "cv05" on;
+    /* Cinematic deep-space environment: layered nebula gradients over a navy
+       base with the deterministic starfield tile. */
+    background-color: var(--background);
+    background-image:
+      radial-gradient(1100px 750px at 88% -12%, rgba(90, 44, 134, 0.30), transparent 62%),
+      radial-gradient(1300px 900px at -12% 26%, rgba(54, 98, 190, 0.22), transparent 64%),
+      radial-gradient(1000px 700px at 55% 118%, rgba(71, 132, 217, 0.13), transparent 60%),
+      radial-gradient(720px 520px at 30% -8%, rgba(229, 135, 188, 0.07), transparent 58%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  /* starfield layer — fixed, subtle, above the nebulae, below all content */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background-image: url("/textures/starfield-tile.png");
+    background-repeat: repeat;
+    background-size: 640px 640px;
+    opacity: 0.55;
+    pointer-events: none;
+  }
+  /* atmospheric depth: gentle top glow + vignette */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      linear-gradient(to bottom, rgba(71, 132, 217, 0.10), transparent 18%),
+      radial-gradient(ellipse 120% 90% at 50% 50%, transparent 62%, rgba(1, 6, 22, 0.5) 100%);
+  }
+  ::selection {
+    background: color-mix(in oklch, var(--flame) 32%, transparent);
+    color: var(--foreground);
+  }
+}
+
+/* ---------- Flame platform utilities (V2 base) ---------- */
+@layer components {
+
+.font-display {
+  font-family: var(--font-display), var(--font-body), sans-serif;
+  letter-spacing: -0.022em;
+}
+
+.text-flame { color: var(--flame); }
+.text-data { color: var(--data); }
+.text-sci-ember { color: var(--sci-ember); }
+.text-sci-orange { color: var(--sci-orange); }
+.text-sci-amber { color: var(--sci-amber); }
+.text-sci-hotcore { color: var(--sci-hotcore); }
+.text-sci-blue { color: var(--sci-blue); }
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklch, var(--hairline) 42%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklch, var(--hairline) 42%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.bg-grid-fade {
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 35%, transparent 78%);
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 35%, transparent 78%);
+}
+
+/* merged-app structural classes, restyled onto the V2 measured palette */
+
+/* .space-deep keeps its name (merged app shell) — now anchored on the V2 base */
+.space-deep {
+  position: relative;
+}
+
+/* blueprint engineering grid — origin signature, kept as a faint overlay */
+.space-deep::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(151, 226, 254, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(151, 226, 254, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(1400px 900px at 50% 0%, black 0%, transparent 82%);
+  mask-image: radial-gradient(1400px 900px at 50% 0%, black 0%, transparent 82%);
+}
+
+/* same grid as a hero overlay (sits above the 3D scene, below content) */
+.blueprint-overlay {
+  background-image:
+    linear-gradient(rgba(151, 226, 254, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(151, 226, 254, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 72%);
+  mask-image: linear-gradient(to bottom, black 0%, transparent 72%);
+}
+
+/* lighter translucent research surface — readable, not a black slab (V2 .panel) */
+.panel {
+  background: linear-gradient(180deg, rgba(18, 34, 86, 0.60), rgba(11, 22, 60, 0.46));
+  border: 1px solid rgba(126, 156, 224, 0.17);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(14px) saturate(1.12);
+  -webkit-backdrop-filter: blur(14px) saturate(1.12);
+  box-shadow: 0 18px 48px -24px rgba(2, 8, 30, 0.85);
+}
+
+.panel-inset {
+  background: color-mix(in oklch, var(--ink) 66%, transparent);
+  border: 1px solid color-mix(in oklch, var(--hairline) 62%, transparent);
+  border-radius: var(--radius-md);
+}
+
+.panel-glass {
+  background: linear-gradient(180deg, rgba(22, 40, 100, 0.50), rgba(12, 24, 64, 0.38));
+  border: 1px solid rgba(151, 226, 254, 0.20);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  box-shadow:
+    0 24px 60px -28px rgba(2, 8, 30, 0.9),
+    inset 0 1px 0 rgba(214, 230, 255, 0.09);
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(18, 34, 86, 0.55), rgba(11, 22, 60, 0.42));
+  border: 1px solid rgba(126, 156, 224, 0.18);
+  backdrop-filter: blur(14px) saturate(1.12);
+  -webkit-backdrop-filter: blur(14px) saturate(1.12);
+  border-radius: var(--radius-lg);
+}
+
+/* .research-panel is now the V2 translucent research surface (was light) */
+.research-panel {
+  background: linear-gradient(180deg, rgba(18, 34, 86, 0.60), rgba(11, 22, 60, 0.46));
+  color: var(--research-foreground);
+  border: 1px solid rgba(126, 156, 224, 0.17);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(14px) saturate(1.12);
+  -webkit-backdrop-filter: blur(14px) saturate(1.12);
+}
+
+.research-panel .text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.research-panel [data-slot="table-head"] {
+  color: var(--muted-foreground);
+}
+
+/* origin hero headline gradient — plasma core → nebula violet (V2 .grad-cosmic family) */
+.hero-gradient-text {
+  background: linear-gradient(100deg, #e6ecfb 0%, var(--sci-blue-core) 40%, var(--flame) 78%, var(--ember) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* flame-scale gradient text — measured endpoints */
+.grad-flame {
+  background-image: linear-gradient(90deg,
+    var(--sci-hotcore), var(--sci-amber), var(--sci-orange),
+    var(--sci-deep-orange), var(--sci-ember));
+}
+
+.grad-cosmic {
+  background-image: linear-gradient(90deg, var(--sci-blue-core), var(--flame), #7a5cc0, var(--ember));
+}
+
+/* glow-bloom CTAs — measured flame scale for primary, plasma blue for cool */
+.cta-glow {
+  box-shadow:
+    0 0 0 1px color-mix(in oklch, var(--sci-orange) 55%, transparent),
+    0 0 30px color-mix(in oklch, var(--sci-ember) 55%, transparent),
+    0 0 64px color-mix(in oklch, var(--sci-ember) 30%, transparent),
+    0 8px 28px rgba(2, 8, 30, 0.55);
+  transition: box-shadow 220ms ease, transform 220ms ease, filter 220ms ease;
+}
+.cta-glow:hover {
+  box-shadow:
+    0 0 0 1px color-mix(in oklch, var(--sci-amber) 70%, transparent),
+    0 0 42px color-mix(in oklch, var(--sci-orange) 70%, transparent),
+    0 0 84px color-mix(in oklch, var(--sci-ember) 40%, transparent),
+    0 10px 34px rgba(2, 8, 30, 0.6);
+  filter: brightness(1.07);
+}
+.cta-glow-cool {
+  box-shadow:
+    0 0 0 1px rgba(151, 226, 254, 0.45),
+    0 0 26px rgba(71, 132, 217, 0.38),
+    0 0 56px rgba(71, 132, 217, 0.2);
+  transition: box-shadow 220ms ease, filter 220ms ease;
+}
+.cta-glow-cool:hover {
+  box-shadow:
+    0 0 0 1px rgba(151, 226, 254, 0.6),
+    0 0 36px rgba(87, 153, 209, 0.5),
+    0 0 72px rgba(71, 132, 217, 0.28);
+}
+
+.glow-flame {
+  box-shadow: 0 0 0 1px color-mix(in oklch, var(--flame) 28%, transparent),
+    0 8px 40px -12px color-mix(in oklch, var(--flame) 30%, transparent);
+}
+
+.hairline { border-color: var(--hairline); }
+
+/* glassy pill chip for badges overlaid on imagery */
+.glass-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(151, 226, 254, 0.28);
+  background: rgba(4, 12, 40, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #dce7fb;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.625rem;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+}
+
+/* V2 tag system */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  padding: 0.12rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--muted-foreground);
+  background: color-mix(in oklch, var(--panel) 70%, transparent);
+  white-space: nowrap;
+}
+.tag-flame { color: var(--flame-soft); border-color: color-mix(in oklch, var(--flame) 35%, transparent); background: color-mix(in oklch, var(--flame) 8%, transparent); }
+.tag-data { color: var(--data); border-color: color-mix(in oklch, var(--data) 35%, transparent); background: color-mix(in oklch, var(--data) 8%, transparent); }
+.tag-evidence { color: var(--evidence); border-color: color-mix(in oklch, var(--evidence) 35%, transparent); background: color-mix(in oklch, var(--evidence) 10%, transparent); }
+.tag-warn { color: #e587bc; border-color: #e587bc66; background: #e587bc1a; }
+.tag-hot { color: var(--sci-amber); border-color: color-mix(in oklch, var(--sci-orange) 42%, transparent); background: color-mix(in oklch, var(--sci-ember) 12%, transparent); }
+
+.mono-data { font-family: var(--font-mono), monospace; font-variant-numeric: tabular-nums; }
+
+/* teal instrument readout — data accent */
+.mono-readout {
+  font-family: var(--font-mono);
+  color: var(--data);
+  letter-spacing: 0.02em;
+}
+
+/* mission journey chips (V2) */
+.journey-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(151, 226, 254, 0.28);
+  background: rgba(8, 20, 56, 0.55);
+  backdrop-filter: blur(10px);
+  padding: 0.42rem 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #d7e4fb;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+.journey-chip:hover { border-color: rgba(151, 226, 254, 0.6); transform: translateY(-1px); }
+.journey-chip[data-active="true"] {
+  border-color: rgba(151, 226, 254, 0.85);
+  background: rgba(23, 46, 108, 0.72);
+  box-shadow: 0 0 24px -6px rgba(71, 132, 217, 0.55);
+}
+
+.dest-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 8px;
+  border: 1px solid rgba(126, 156, 224, 0.35);
+  background: rgba(4, 12, 40, 0.78);
+  backdrop-filter: blur(8px);
+  padding: 0.3rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #dce7fb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.dest-label:hover, .dest-label[data-active="true"] {
+  border-color: rgba(151, 226, 254, 0.8);
+  color: #ffffff;
+  box-shadow: 0 0 18px -4px rgba(71, 132, 217, 0.6);
+}
+
+.fidelity-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 6px;
+  padding: 0.14rem 0.5rem;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* flame gradient text for merged headings (hotcore → ember scale) */
+.ember-gradient-text {
+  background: linear-gradient(100deg, var(--sci-hotcore), var(--sci-orange), var(--sci-ember));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.flame-underline {
+  background-image: linear-gradient(90deg, color-mix(in oklch, var(--flame) 75%, transparent), transparent);
+  background-repeat: no-repeat;
+  background-size: 100% 1.5px;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+}
+
+/* scrollbars */
+.scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: color-mix(in oklch, var(--hairline) 90%, transparent); border-radius: 8px; }
+.scroll-thin::-webkit-scrollbar-track { background: transparent; }
+.data-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.data-scroll::-webkit-scrollbar-thumb {
+  background: color-mix(in oklch, var(--hairline) 90%, transparent);
+  border-radius: 8px;
+}
+.data-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* soft fade edges on horizontal scroll strips */
+.scroll-fade-x {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 28px, black calc(100% - 36px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 28px, black calc(100% - 36px), transparent);
+}
+
+/* sticky subnav on the cosmic base */
+.sticky-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(3, 11, 38, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(126, 156, 224, 0.18);
+}
+
+/* provenance strip — evidence-quote styling (V2) */
+.provenance-strip {
+  font-size: 0.6875rem;
+  letter-spacing: 0.02em;
+  color: var(--muted-foreground);
+  border-left: 2px solid color-mix(in oklch, var(--flame) 55%, transparent);
+  padding-left: 0.5rem;
+}
+
+.evidence-quote {
+  border-left: 2px solid color-mix(in oklch, var(--flame) 55%, transparent);
+  padding-left: 0.9rem;
+  color: var(--muted-foreground);
+}
+
+.reveal-up {
+  animation: reveal-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes flame-pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+.animate-flame-pulse { animation: flame-pulse 2.6s ease-in-out infinite; }
+
+.copilot-dot {
+  width: 7px; height: 7px; border-radius: 999px;
+  background: var(--flame);
+  box-shadow: 0 0 10px color-mix(in oklch, var(--flame) 70%, transparent);
+}
+
+/* ---------- CIR-1 guide character animations (SVG, reduced-motion safe) ---------- */
+@keyframes cir-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2.5px); }
+}
+.cir-float { animation: cir-float 3.4s ease-in-out infinite; transform-origin: 32px 32px; }
+
+@keyframes cir-pulse {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+.cir-pulse { animation: cir-pulse 1.4s ease-in-out infinite; }
+
+@keyframes cir-dot-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+  40% { transform: translateY(-3px); opacity: 1; }
+}
+.cir-dot { animation: cir-dot-bounce 1.2s ease-in-out infinite; transform-origin: center; }
+.cir-dot-2 { animation-delay: 0.15s; }
+.cir-dot-3 { animation-delay: 0.3s; }
+
+@keyframes cir-wave-fade {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}
+.cir-wave { animation: cir-wave-fade 1.1s ease-in-out infinite; }
+.cir-wave-2 { animation-delay: 0.22s; }
+
+} /* end @layer components */
+
+a { text-underline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  body::before, body::after { display: none; }
+}

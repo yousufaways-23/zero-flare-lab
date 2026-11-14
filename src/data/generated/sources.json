@@ -1,0 +1,422 @@
+{
+ "generatedAt": "2026-11-11T19:50:02Z",
+ "note": "Registered official/primary sources from the project source registry (V6 spec). External fetching follows the SSRF/allowlist policy.",
+ "sources": [
+  {
+   "id": "challenge_2026",
+   "title": "NASA Space Apps 2026 \u2014 Flame in Freefall",
+   "url": "https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/",
+   "category": "challenge_brief",
+   "authority": "official NASA Space Apps",
+   "use": "Challenge requirements, requested output and three fire-safety pillars. Re-open current official challenge content and verify exact wording."
+  },
+  {
+   "id": "psi_portal",
+   "title": "NASA Physical Sciences Informatics",
+   "url": "https://psi.nasa.gov/physci/repo/",
+   "category": "primary_data_repository",
+   "authority": "NASA",
+   "use": "Primary investigation records and datasets. Prefer official repository metadata and download pathways."
+  },
+  {
+   "id": "psi_guide",
+   "title": "NASA PSI Database Guide",
+   "url": "https://science.nasa.gov/wp-content/uploads/2024/11/psi-database-guide.pdf",
+   "category": "repository_documentation",
+   "authority": "NASA",
+   "use": "How PSI is organized and accessed."
+  },
+  {
+   "id": "ntrs",
+   "title": "NASA Technical Reports Server",
+   "url": "https://ntrs.nasa.gov/",
+   "category": "technical_literature",
+   "authority": "NASA",
+   "use": "Technical reports, publications, metadata and downloadable documents."
+  },
+  {
+   "id": "ntrs_openapi",
+   "title": "NASA NTRS OpenAPI",
+   "url": "https://ntrs.nasa.gov/api/openapi/",
+   "category": "api",
+   "authority": "NASA",
+   "use": "Documented citation search, pubspace search, document/download endpoints and exports; inspect live schema before coding."
+  },
+  {
+   "id": "nasa_combustion",
+   "title": "NASA Glenn Combustion Science",
+   "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/#current",
+   "category": "science_context",
+   "authority": "NASA",
+   "use": "Current and historical combustion investigations, science descriptions and research programme context."
+  },
+  {
+   "id": "nasa_fcf",
+   "title": "NASA Fluids and Combustion Facility",
+   "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/science-facilities-on-the-iss/fluids-combustion-facility/",
+   "category": "facility_documentation",
+   "authority": "NASA",
+   "use": "Facility structure and experiment equipment context. Verify which hardware was used by each investigation."
+  },
+  {
+   "id": "nasa_fm2",
+   "title": "NASA FM\u00b2 \u2014 Flammability of Materials on the Moon",
+   "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+   "category": "future_research",
+   "authority": "NASA",
+   "use": "Partial-gravity lunar material flammability research context; distinguish planned/future work from completed data."
+  },
+  {
+   "id": "nasa_sofie",
+   "title": "NASA SoFIE \u2014 Solid Fuel Ignition and Extinction",
+   "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+   "category": "investigation_page",
+   "authority": "NASA",
+   "use": "Experimental scope, objectives and relevant future/available data status."
+  },
+  {
+   "id": "nasa_flare",
+   "title": "NASA FLARE \u2014 Flammability Limits at Reduced g",
+   "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-limits-at-reduced-g-experiment-flare/",
+   "category": "investigation_page",
+   "authority": "NASA",
+   "use": "Reduced-g flammability investigation context; carefully distinguish data availability and flight status."
+  },
+  {
+   "id": "nasa_images_api",
+   "title": "NASA Images and Video API documentation",
+   "url": "https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf",
+   "category": "media_api",
+   "authority": "NASA",
+   "use": "Search, asset, metadata, captions and album endpoints; retrieve official media with captions and IDs."
+  },
+  {
+   "id": "nasa_images",
+   "title": "NASA Images API",
+   "url": "https://images-api.nasa.gov/",
+   "category": "media_api",
+   "authority": "NASA",
+   "use": "Official media discovery and metadata. Verify licensing/credit and asset URL before storing."
+  },
+  {
+   "id": "nasa_3d",
+   "title": "NASA 3D Resources",
+   "url": "https://science.nasa.gov/3d-resources/",
+   "category": "3d_assets",
+   "authority": "NASA",
+   "use": "Official spacecraft/planet/hardware 3D assets. Check asset-specific rights, formats and model metadata."
+  },
+  {
+   "id": "nasa_iss_3d",
+   "title": "NASA ISS 3D Model",
+   "url": "https://science.nasa.gov/resource/international-space-station-3d-model/",
+   "category": "3d_assets",
+   "authority": "NASA",
+   "use": "Official ISS model reference; preserve actual provenance and model fidelity."
+  },
+  {
+   "id": "osdr_api",
+   "title": "NASA OSDR API",
+   "url": "https://api.nasa.gov/",
+   "category": "supplementary_data_api",
+   "authority": "NASA",
+   "use": "OSDR REST API for study/data files and metadata; OSDR primarily serves space biology/biomedical and related data, not a dedicated combustion repository. Use only for supplementary mission/crew/bio context where relevant."
+  },
+  {
+   "id": "osdr_official",
+   "title": "NASA OSDR API description",
+   "url": "https://www.nasa.gov/osdr-api/",
+   "category": "supplementary_data_api",
+   "authority": "NASA",
+   "use": "Official overview of OSDR API and data access. Do not conflate OSDR with PSI combustion data."
+  },
+  {
+   "id": "cantera",
+   "title": "Cantera documentation",
+   "url": "https://www.cantera.org/stable/reference/index.html",
+   "category": "scientific_software",
+   "authority": "open-source project",
+   "use": "Thermodynamics, kinetics, transport and selected 0-D/1-D reacting systems; verify mechanism and boundary condition suitability."
+  },
+  {
+   "id": "cantera_flames",
+   "title": "Cantera One-dimensional Flames",
+   "url": "https://www.cantera.org/stable/reference/onedim/index.html",
+   "category": "scientific_software",
+   "authority": "open-source project",
+   "use": "Premixed, burner-stabilized, counterflow diffusion and strained flames; not a general spacecraft microgravity simulator."
+  },
+  {
+   "id": "openfoam",
+   "title": "OpenFOAM solver documentation",
+   "url": "https://www.openfoam.com/documentation/user-guide/a-reference/a.1-standard-solvers",
+   "category": "scientific_software",
+   "authority": "OpenFOAM",
+   "use": "Reacting-flow solvers including fireFoam/reactingFoam; use only after solver physics, boundary conditions and validation are established."
+  },
+  {
+   "id": "fds_manuals",
+   "title": "NIST FDS and Smokeview manuals",
+   "url": "https://pages.nist.gov/fds/manuals.html",
+   "category": "scientific_software",
+   "authority": "NIST",
+   "use": "FDS user, technical reference, verification and validation manuals; terrestrial fire modelling is not automatically valid for microgravity."
+  },
+  {
+   "id": "cfast",
+   "title": "NIST CFAST",
+   "url": "https://pages.nist.gov/cfast/",
+   "category": "scientific_software",
+   "authority": "NIST",
+   "use": "Compartment fire model for applicable building/compartment scenarios; do not assume validation for spacecraft or reduced gravity."
+  },
+  {
+   "id": "deepxde",
+   "title": "DeepXDE",
+   "url": "https://deepxde.readthedocs.io/en/latest/",
+   "category": "physics_ml",
+   "authority": "open-source project",
+   "use": "PINN/scientific machine-learning framework. Requires well-defined PDEs, boundary conditions, adequate data and validation."
+  },
+  {
+   "id": "physicsnemo",
+   "title": "NVIDIA PhysicsNeMo",
+   "url": "https://docs.nvidia.com/physicsnemo/latest/overview.html",
+   "category": "physics_ml",
+   "authority": "NVIDIA open-source framework",
+   "use": "Physics-informed ML, neural operators, GNNs, transformers and surrogate models for scientific computing; typically expects field/simulation data and compute."
+  },
+  {
+   "id": "deepflame",
+   "title": "DeepFlame documentation",
+   "url": "https://deepflame-dev.readthedocs.io/en/latest/index.html",
+   "category": "combustion_cfd_ml",
+   "authority": "research/open-source software",
+   "use": "Deep-learning-assisted combustion CFD/solver integration candidate; verify current maintenance, license, solver compatibility and benchmark evidence before adoption."
+  },
+  {
+   "id": "sam2",
+   "title": "Meta Segment Anything Model 2",
+   "url": "https://github.com/facebookresearch/sam2",
+   "category": "computer_vision",
+   "authority": "Meta FAIR",
+   "use": "Promptable image/video segmentation and tracking; not a trained flame detector. Fine-tune/evaluate on annotated flame imagery."
+  },
+  {
+   "id": "opencv",
+   "title": "OpenCV documentation",
+   "url": "https://docs.opencv.org/",
+   "category": "computer_vision",
+   "authority": "OpenCV",
+   "use": "Image/video preprocessing, calibration, optical flow, tracking and classical CV."
+  },
+  {
+   "id": "cvat",
+   "title": "CVAT annotation platform",
+   "url": "https://docs.cvat.ai/",
+   "category": "data_annotation",
+   "authority": "CVAT",
+   "use": "Human annotation and QA for flame masks, bounding boxes, video sequences and instrument regions."
+  },
+  {
+   "id": "docling",
+   "title": "Docling supported formats and extraction",
+   "url": "https://docling.ai/formats/",
+   "category": "document_ai",
+   "authority": "Docling",
+   "use": "PDF, Office, spreadsheets, images, video and structured extraction; page/figure/table provenance must still be audited."
+  },
+  {
+   "id": "grobid",
+   "title": "GROBID full text processing",
+   "url": "https://grobid.readthedocs.io/en/latest/Grobid-service/",
+   "category": "document_ai",
+   "authority": "GROBID",
+   "use": "Scientific article structure, TEI, bibliographic metadata and citation extraction."
+  },
+  {
+   "id": "qdrant",
+   "title": "Qdrant hybrid search",
+   "url": "https://qdrant.tech/documentation/search/hybrid-queries/",
+   "category": "retrieval",
+   "authority": "Qdrant",
+   "use": "Combine dense semantic and sparse/BM25 retrieval with rank fusion; benchmark against BM25 baseline and held-out queries."
+  },
+  {
+   "id": "pgvector",
+   "title": "pgvector",
+   "url": "https://github.com/pgvector/pgvector",
+   "category": "retrieval_database",
+   "authority": "open-source project",
+   "use": "PostgreSQL vector similarity extension; simpler deployment if PostgreSQL is adopted, but measure hybrid retrieval needs."
+  },
+  {
+   "id": "shap",
+   "title": "SHAP",
+   "url": "https://shap.readthedocs.io/",
+   "category": "model_interpretability",
+   "authority": "open-source project",
+   "use": "Feature attribution explanations; do not treat attribution as causal effect."
+  },
+  {
+   "id": "salib",
+   "title": "SALib",
+   "url": "https://salib.readthedocs.io/en/latest/",
+   "category": "sensitivity_analysis",
+   "authority": "open-source project",
+   "use": "Sobol, Morris, FAST and other global sensitivity methods with defined model inputs/ranges."
+  },
+  {
+   "id": "mlflow",
+   "title": "MLflow Model Registry",
+   "url": "https://mlflow.org/docs/latest/model-registry/",
+   "category": "mlops",
+   "authority": "open-source project",
+   "use": "Experiment lineage, model versioning, aliases, tags, staging/production management."
+  },
+  {
+   "id": "threejs",
+   "title": "Three.js",
+   "url": "https://threejs.org/docs/",
+   "category": "3d_web",
+   "authority": "open-source project",
+   "use": "Core WebGL 3D rendering, materials, loaders, animation and camera controls."
+  },
+  {
+   "id": "r3f",
+   "title": "React Three Fiber",
+   "url": "https://r3f.docs.pmnd.rs/",
+   "category": "3d_web",
+   "authority": "pmndrs",
+   "use": "React renderer for Three.js scenes; already used by project. Optimize GLTF loading, draw calls and lazy mounting."
+  },
+  {
+   "id": "drei",
+   "title": "Drei helpers",
+   "url": "https://drei.docs.pmnd.rs/",
+   "category": "3d_web",
+   "authority": "pmndrs",
+   "use": "Reusable R3F controls/helpers; select only relevant helpers."
+  },
+  {
+   "id": "babylon",
+   "title": "Babylon.js",
+   "url": "https://doc.babylonjs.com/",
+   "category": "3d_web",
+   "authority": "open-source project",
+   "use": "Alternative full 3D engine; do not add alongside Three/R3F unless a defined capability gap justifies it."
+  },
+  {
+   "id": "vtkjs",
+   "title": "VTK.js",
+   "url": "https://kitware.github.io/vtk-js/docs/index.html",
+   "category": "scientific_visualization",
+   "authority": "Kitware",
+   "use": "Scientific/volumetric 3D visualization; use if actual volumetric simulation fields exist."
+  },
+  {
+   "id": "plotly",
+   "title": "Plotly JavaScript",
+   "url": "https://plotly.com/javascript/",
+   "category": "data_visualization",
+   "authority": "Plotly",
+   "use": "Interactive scientific charts, heatmaps, contours, 3D plots; verify license and bundle impact."
+  },
+  {
+   "id": "echarts",
+   "title": "Apache ECharts",
+   "url": "https://echarts.apache.org/en/index.html",
+   "category": "data_visualization",
+   "authority": "Apache",
+   "use": "Responsive dashboards and high-volume interactive charts; compare against existing Recharts."
+  },
+  {
+   "id": "motion",
+   "title": "Motion for React accessibility",
+   "url": "https://motion.dev/docs/react-accessibility",
+   "category": "motion_design",
+   "authority": "Motion",
+   "use": "Reduced-motion support and accessible animation transitions."
+  },
+  {
+   "id": "gsap",
+   "title": "GSAP ScrollTrigger",
+   "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/",
+   "category": "motion_design",
+   "authority": "GSAP",
+   "use": "Scroll-linked storytelling transitions; avoid motion overload and handle reduced-motion."
+  },
+  {
+   "id": "webxr",
+   "title": "MDN WebXR Device API",
+   "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+   "category": "immersive_web",
+   "authority": "MDN",
+   "use": "Optional true headset VR only on supported secure contexts/hardware; normal 3D mission browser experience must remain primary."
+  },
+  {
+   "id": "vrm_spec",
+   "title": "VRM humanoid avatar expressions specification",
+   "url": "https://github.com/vrm-c/vrm-specification",
+   "category": "avatar",
+   "authority": "VRM consortium",
+   "use": "Avatar format including humanoid rig, expressions, gaze and mouth/lip-sync controls."
+  },
+  {
+   "id": "three_vrm",
+   "title": "three-vrm",
+   "url": "https://pixiv.github.io/three-vrm/docs/",
+   "category": "avatar",
+   "authority": "Pixiv",
+   "use": "Load/control VRM avatar in Three.js; animate expression and rig states."
+  },
+  {
+   "id": "tts_openai",
+   "title": "OpenAI Text-to-Speech guide",
+   "url": "https://developers.openai.com/api/docs/guides/text-to-speech",
+   "category": "voice_output",
+   "authority": "OpenAI",
+   "use": "Text-to-speech streaming and voice generation. Current docs indicate legacy TTS model shutdown on 2027-01-06; implement provider abstraction and re-check model support at build time. Disclose AI-generated voice."
+  },
+  {
+   "id": "tts_elevenlabs",
+   "title": "ElevenLabs streaming TTS",
+   "url": "https://elevenlabs.io/docs/eleven-api/guides/how-to/text-to-speech/streaming",
+   "category": "voice_output",
+   "authority": "ElevenLabs",
+   "use": "Streaming text-to-speech alternative; verify commercial license, pricing, consent and privacy."
+  },
+  {
+   "id": "spaceapps_2025",
+   "title": "2025 Space Apps official global winners",
+   "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/",
+   "category": "competition_benchmark",
+   "authority": "NASA",
+   "use": "SpaceGenes+ won Best Use of Science; Resonant Exoplanets won Best Use of Data. Study integrated knowledge exploration and automated large-data analysis."
+  },
+  {
+   "id": "spaceapps_2024",
+   "title": "2024 Space Apps official global winners",
+   "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/",
+   "category": "competition_benchmark",
+   "authority": "NASA",
+   "use": "2024 Best Use of Science was WMPGang (SkyShield: Orrery); Best Use of Data was GaamaRamma (Waterwise). Do not repeat older notes that conflate team/project titles."
+  },
+  {
+   "id": "spaceapps_2023",
+   "title": "2023 Space Apps official global winners",
+   "url": "https://science.nasa.gov/directorates/smd/2023-nasa-international-space-apps-challenge-announces-10-global-winners/",
+   "category": "competition_benchmark",
+   "authority": "NASA",
+   "use": "LunarTech Ensemble won Best Use of Science; Storm Prophet won Best Use of Data. Study immersive scientific visualization and time-series modelling."
+  },
+  {
+   "id": "spaceapps_awards",
+   "title": "2025 Space Apps award definitions",
+   "url": "https://www.spaceappschallenge.org/2025/awards/",
+   "category": "competition_rubric",
+   "authority": "NASA Space Apps",
+   "use": "Official definitions: Best Use of Science = most valid use of science/scientific method; Best Use of Data = most effective accessibility/unique application of space data."
+  }
+ ]
+}

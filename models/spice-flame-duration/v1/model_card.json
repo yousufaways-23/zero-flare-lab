@@ -1,0 +1,61 @@
+{
+  "id": "spice-flame-duration",
+  "task": "regression \u2014 log flame burn duration (s) of SPICE co-flow smoke-point tests",
+  "pillar": "detection",
+  "dataset": {
+    "source": "PSI-107_SPICE.csv (NASA PSI, SPICE)",
+    "rowsUsed": 370,
+    "excluded": {
+      "missingTimes": 85,
+      "missingFeatures": 7,
+      "nonpositiveDuration": 7
+    },
+    "features": [
+      "nozzle_mm",
+      "fuel_rate_sccm",
+      "air_rate_cm_s",
+      "fuel_50% Propylene",
+      "fuel_75% Propylene",
+      "fuel_Ethylene",
+      "fuel_Methane",
+      "fuel_Propane",
+      "fuel_Propylene"
+    ],
+    "target": "ln(1 + burn duration seconds), burn duration = GMT Flame Off \u2212 GMT ignition",
+    "fuelCategories": [
+      "50% Propylene",
+      "75% Propylene",
+      "Ethylene",
+      "Methane",
+      "Propane",
+      "Propylene"
+    ]
+  },
+  "validation": "GroupKFold n=4 grouped by GMT test date",
+  "metrics": {
+    "ridge": {
+      "rmseLogMean": 0.5943,
+      "maeLogMean": 0.4852,
+      "r2Mean": -0.409
+    },
+    "gbm": {
+      "rmseLogMean": 0.5979,
+      "maeLogMean": 0.472,
+      "r2Mean": -0.367
+    },
+    "baselineFuelMean": {
+      "rmseLogMean": 0.5817,
+      "maeLogMean": 0.4682
+    }
+  },
+  "limitations": [
+    "Burn duration is derived from operator-logged GMT timestamps; timestamp resolution and logging practice vary.",
+    "Duplicate timestamps appear in the source (replicate records) \u2014 grouped validation mitigates but does not eliminate overlap effects.",
+    "Applicability domain limited to SPICE fuels/nozzles/flow ranges; extrapolation unsupported."
+  ],
+  "trainedAt": "2026-11-09T05:09:34.865061+00:00",
+  "framework": "scikit-learn 1.5.2",
+  "artifact": "models/spice-flame-duration/v1/",
+  "status": "negative-result",
+  "statusDetail": "Neither ridge nor gradient boosting beats the per-fuel mean-duration baseline under grouped (by-date) validation. Honest conclusion: pre-test features in this table do not generalise across test dates for burn duration. Retained for transparency and future re-evaluation; NOT offered as a predictor in the UI playground."
+}

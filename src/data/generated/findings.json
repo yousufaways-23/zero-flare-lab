@@ -1,0 +1,105 @@
+{
+ "generatedAt": "2026-11-13T18:58:39Z",
+ "findings": [
+  {
+   "id": "f1",
+   "rank": 1,
+   "tier": "verified",
+   "statement": "FLEX droplet visible-flame extinction is predictable from ambient conditions: a six-feature logistic model reaches grouped AUC 0.882 (recomputed; historical build recorded 0.875) vs 0.818 for an oxygen-only baseline on 262 clean microgravity tests.",
+   "basis": "PSI-69_FLEX.csv (274 rows, recovered from NASA PSI, sha256-verified); GroupKFold-4 by condition.",
+   "caveat": "Microgravity domain only; not a flammability or cabin-safety metric; uncalibrated score.",
+   "links": [
+    "PSI-69",
+    "model:flex-extinction-v2"
+   ]
+  },
+  {
+   "id": "f2",
+   "rank": 2,
+   "tier": "verified",
+   "statement": "Oxygen partial pressure, not just O2 fraction, separates habitat atmospheres: the Moon-Base concept (10.2 psi, 30% O2) has ~43% higher O2 fraction than Earth reference but ~1% lower pO2 (21.1 vs 21.3 kPa).",
+   "basis": "Challenge-brief reference atmospheres (Earth 14.7 psi/21%; Moon concept <=10.2 psi/>=30% O2); computed via the equation registry.",
+   "caveat": "Atmosphere concepts are design references, not certified habitat standards.",
+   "links": [
+    "env:moon",
+    "env:earth"
+   ]
+  },
+  {
+   "id": "f3",
+   "rank": 3,
+   "tier": "negative-result",
+   "statement": "CFI-G hot-ignition remains unsolved by pre-test features: the calibrated multivariate logistic model (grouped AUC 0.682) does not beat a single-feature oxygen baseline (0.728) on 146 labelled inverse-configuration tests.",
+   "basis": "PSI-159_CFI-G_Inverse.csv (154 rows, 8 flash-excluded); spec-preserved coefficients validated on recovered data (146/131 exact match).",
+   "caveat": "Exploratory; small negative class (15); fold instability 0.038-0.92; retained as honest negative result.",
+   "links": [
+    "PSI-159",
+    "model:cfig-hot-ignition"
+   ]
+  },
+  {
+   "id": "f4",
+   "rank": 4,
+   "tier": "negative-result",
+   "statement": "SPICE burn duration does not generalise from pre-test features: ridge (R2 -0.409) and gradient boosting (R2 -0.367) both fail to beat the per-fuel mean baseline under date-grouped validation.",
+   "basis": "PSI-107_SPICE.csv (469 rows, 34 duplicates counted); recorded negative result retained per spec.",
+   "caveat": "Timestamps are operator-logged; applicability limited to SPICE fuels/nozzles/flows.",
+   "links": [
+    "PSI-107",
+    "model:spice-flame-duration"
+   ]
+  },
+  {
+   "id": "f5",
+   "rank": 5,
+   "tier": "source-reported",
+   "statement": "Cool flames radically alter ignition/extinction behaviour: FLEX/CFI investigations documented radiatively-driven cool-flame extinction and re-ignition regimes not captured by classical hot-flame theory (see investigation objectives and publications).",
+   "basis": "PSI-69/PSI-39/PSI-159 PSI metadata: objectives, approach, publication lists (NASA-recorded).",
+   "caveat": "Qualitative synthesis of NASA-recorded investigation goals; not a new quantitative claim.",
+   "links": [
+    "PSI-69",
+    "PSI-39",
+    "PSI-159"
+   ]
+  },
+  {
+   "id": "f6",
+   "rank": 6,
+   "tier": "verified",
+   "statement": "Large-scale spacecraft fire growth evidence is extremely scarce: SAFFIRE flight tables bundle only 4 (SAFFIRE-I), 15 (SAFFIRE-II) and 2 (SAFFIRE-III) summary rows respectively.",
+   "basis": "PSI-98/99/100 experimental tables (recovered, sha256-verified).",
+   "caveat": "Rows are experiment summaries, not the full instrument time-series; SAFFIRE-III is a two-row table and must not be inflated.",
+   "links": [
+    "PSI-98",
+    "PSI-99",
+    "PSI-100"
+   ]
+  },
+  {
+   "id": "f7",
+   "rank": 7,
+   "tier": "source-reported",
+   "statement": "Smoke/aerosol measurement evidence spans three flight investigations (SAME, SAME-R, DAFT) targeting spacecraft smoke detector response characterisation.",
+   "basis": "PSI-101/PSI-102/PSI-47 metadata and tables (recovered from NASA PSI).",
+   "caveat": "Tables are small (109/8/2 rows); detector-response thresholds are not directly recorded in them.",
+   "links": [
+    "PSI-101",
+    "PSI-102",
+    "PSI-47"
+   ]
+  },
+  {
+   "id": "f8",
+   "rank": 8,
+   "tier": "verified",
+   "statement": "Data duplication is real and must be surfaced: the recovered corpus contains 50 exact duplicate rows (SPICE 34, E-FIELD 8, CFI 8) out of 2,009 rows across 22 tables.",
+   "basis": "Recomputed in this rebuild (scripts/build_corpus.py); matches spec-recorded total of 50.",
+   "caveat": "Duplicates retained and displayed; removal would require per-case source review.",
+   "links": [
+    "PSI-107",
+    "PSI-22",
+    "PSI-39"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+import { chromium } from "@playwright/test";
+const b = await chromium.launch();
+const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await p.goto("http://localhost:3000/#compare");
+await p.waitForLoadState("domcontentloaded");
+await p.waitForTimeout(2500);
+const cov = p.getByText("Cross-experiment condition coverage", { exact: false }).first();
+await cov.scrollIntoViewIfNeeded();
+await p.waitForTimeout(800);
+await p.screenshot({ path: "docs/screenshots/t3-coverage-compare.png" });
+console.log("captured");
+await b.close();
+process.exit(0);

@@ -1,0 +1,2587 @@
+{
+ "manifestVersion": "1.0",
+ "generatedAt": "2026-11-12T22:26:56.736Z",
+ "source": "NASA Physical Sciences Informatics \u2014 live geode-py endpoints",
+ "policy": "targeted acquisition; per-file downloads; ZIP range inspection; no bulk archive pulls; host allowlist + path containment enforced",
+ "discovery": {
+  "combustionTotal": 24,
+  "unionDiscovered": 52,
+  "keywords": [
+   "combustion",
+   "flame",
+   "flammability",
+   "ignition",
+   "extinction",
+   "suppression",
+   "smoke",
+   "aerosol",
+   "soot",
+   "droplet combustion",
+   "solid fuel",
+   "oxygen concentration",
+   "airflow",
+   "ACME",
+   "BASS",
+   "SAFFIRE",
+   "SAME",
+   "FLEX",
+   "CFI",
+   "SoFIE",
+   "FM2",
+   "FLARE",
+   "SPICE",
+   "SLICE"
+  ]
+ },
+ "investigations": [
+  {
+   "accession": "PSI-10",
+   "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+   "acronym": "ACME/Flame Design",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:extinction",
+    "keyword:soot",
+    "keyword:ACME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+     "version": 1,
+     "status": "existing-same-name"
+    },
+    {
+     "file_name": "PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+     "version": 1,
+     "status": "existing-same-name"
+    }
+   ],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-10_metadata_PSI-10-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-10_Raw Data_21301J4_INTNS_ALL.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-10_Raw Data_21301J4_ACME_Converted.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-10_Raw Data_21301J4_ACME.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [
+    {
+     "file_name": "PSI-10_Representative Image(s)_Flame Design_In Space flame.jpg",
+     "version": 1
+    },
+    {
+     "file_name": "PSI-10_Representative Image(s)_Flame Design_Flame Stages.jpg",
+     "version": 1
+    },
+    {
+     "file_name": "PSI-10_Representative Image(s)_CIR support on ISS.jpg",
+     "version": 1
+    },
+    {
+     "file_name": "PSI-10_Representative Image(s)_ACME Flame Design Hardware.jpg",
+     "version": 1
+    }
+   ],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/w4zy-bt45"
+  },
+  {
+   "accession": "PSI-100",
+   "title": "Spacecraft Fire Experiment-III",
+   "acronym": "SAFFIRE-III",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:SAFFIRE"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-100_Experimental table_SAFFIRE-3.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 239,
+     "sha256": "4d3c717ec20dd0247db670b2784a9fd7d746788bc54a936f80693e48eb8cd117"
+    }
+   ],
+   "newFiles": [
+    "PSI-100_PSI-100_Experimental_table_SAFFIRE-3.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-100_Raw Data_SAFFIRE-III_F1C1_Distortion Grid_1200x920.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-100_Raw Data_SAFFIRE-III_F1C1_Distortion Grid_1360x1024.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-100_Raw Data_SAFFIRE-III_F1C1_BIT_jpeg.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-100_Raw Data_SAFFIRE-III_F1C1_F1_jpeg.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/040q-4h36"
+  },
+  {
+   "accession": "PSI-101",
+   "title": "Smoke Aerosol Measurement Experiment-Reflight",
+   "acronym": "SAME-R",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:suppression",
+    "keyword:smoke",
+    "keyword:aerosol",
+    "keyword:soot",
+    "keyword:droplet combustion",
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-101_Experimental table_SAME-R.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 5674,
+     "sha256": "87164b7dc9168a4273c159f7a9f23699afbd06ad97b77974377e79b9bf8a3bef"
+    }
+   ],
+   "newFiles": [
+    "PSI-101_PSI-101_Experimental_table_SAME-R.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-101_Raw Data_2 Kapton vlc-record-2010-09-07-17h19m24s-udp___233.1.14.11 _50300-.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-101_Raw Data_7 kapton vlc-record-2010-09-08-14h26m11s-udp___233.1.14.5 _50000-.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-101_Raw Data_vlc-record-2010-07-30-13h25m07s-udp___233.1.14.7 _50100-.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-101_Raw Data_vlc-record-2010-07-30-14h12m08s-udp___233.1.14.7 _50100-.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/2np7-jv14"
+  },
+  {
+   "accession": "PSI-102",
+   "title": "Smoke and Aerosol Measurement Experiment",
+   "acronym": "SAME",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:suppression",
+    "keyword:smoke",
+    "keyword:aerosol",
+    "keyword:soot",
+    "keyword:droplet combustion",
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-102_Experimental table_SAME.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 331,
+     "sha256": "268d1e121d2f211b124407dd32b9475617bd269ede2c2d1749441da3e949a2af"
+    }
+   ],
+   "newFiles": [
+    "PSI-102_PSI-102_Experimental_table_SAME.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-102_metadata_PSI-170_SAME.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-102_Engineering Documents_Resistive Heater Coil-TN001.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-102_Engineering Documents_Resistive Heater Coil-TN002.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-102_Engineering Documents_SAME OPS images.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/gd4k-8h62"
+  },
+  {
+   "accession": "PSI-106",
+   "title": "Structure and Liftoff In Combustion Experiment",
+   "acronym": "SLICE",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:soot",
+    "keyword:airflow",
+    "keyword:SLICE"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-106_Experimental table_Slice.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 734,
+     "sha256": "89ef980810ca6d9aa8be817b42e36cd2adff23f5e9058361b5a33d18b4363f4d"
+    }
+   ],
+   "newFiles": [
+    "PSI-106_PSI-106_Experimental_table_Slice.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/pm12-rg61"
+  },
+  {
+   "accession": "PSI-107",
+   "title": "Smoke Point In Co-flow Experiment",
+   "acronym": "SPICE",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:smoke",
+    "keyword:soot",
+    "keyword:SPICE"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-107_Experimental table_Spice.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 31205,
+     "sha256": "fb0d7e60cf5367afb429089e9901d27288f78038efd26c8de1db4fbe04117136"
+    }
+   ],
+   "newFiles": [
+    "PSI-107_PSI-107_Experimental_table_Spice.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-107_Raw Data_SPICE_GMT045_2009_NEF.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-107_Raw Data_SPICE_GMT052_2009_NEF.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-107_Raw Data_SPICE_GMT048_2009_NEF.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-107_Raw Data_SPICE_GMT2009_062_NEF.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/9kbh-e962"
+  },
+  {
+   "accession": "PSI-108",
+   "title": "Surface Tension Driven Convection Experiment-1",
+   "acronym": "STDCE-1",
+   "via": [
+    "keyword:combustion"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-108_Experimental table_STDCE-1.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 7111,
+     "sha256": "c883ab3bc89cadf870d97b0f5d9c533119e1827d788deb0f6e28e59317a8535a"
+    },
+    {
+     "file_name": "PSI-108_Experimental table_STDCE-1(1).csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 6601,
+     "sha256": "9d403958984512828ade3110691f7bfc5ba1c704ef42b1093edb7fec1e2df9c7"
+    }
+   ],
+   "newFiles": [
+    "PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+    "PSI-108_PSI-108_Experimental_table_STDCE-1(1).csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/j1z3-bw42"
+  },
+  {
+   "accession": "PSI-113",
+   "title": "Solidification Using a Baffle in Sealed Ampoules",
+   "acronym": "SUBSA",
+   "via": [
+    "keyword:suppression"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-113_Experimental table_Experimental Table_SUBSA.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 834,
+     "sha256": "19a8d61ceef1b7129af6224d101bedb857dd2eb68e3890cedf0ed6ff550f7ba3"
+    }
+   ],
+   "newFiles": [
+    "PSI-113_PSI-113_Experimental_table_Experimental_Table_SUBSA.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/ep4n-sg69"
+  },
+  {
+   "accession": "PSI-115",
+   "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+   "acronym": "",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:smoke",
+    "keyword:aerosol",
+    "keyword:SAME"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-115_metadata_PSI-185_Utilization of the S.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/q0v5-1v28"
+  },
+  {
+   "accession": "PSI-117",
+   "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis",
+   "acronym": "",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:ignition",
+    "keyword:extinction",
+    "keyword:droplet combustion",
+    "keyword:FLEX"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/gz0q-b577"
+  },
+  {
+   "accession": "PSI-125",
+   "title": "Light Microscopy Module Biophysics-2,5",
+   "acronym": "LMMBIO-2",
+   "via": [
+    "keyword:suppression"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-125_Experimental table_LMMBIO-2.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1433,
+     "sha256": "1114d42ded4f551a5a5580ea8afebaec4b3d3967e61e0ae467e0030fb7998364"
+    }
+   ],
+   "newFiles": [
+    "PSI-125_PSI-125_Experimental_table_LMMBIO-2.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/y7c0-ha11"
+  },
+  {
+   "accession": "PSI-142",
+   "title": "Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames",
+   "acronym": "",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:extinction",
+    "keyword:droplet combustion",
+    "keyword:oxygen concentration",
+    "keyword:FLEX"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-142_Experimental table_Data Summary Table.csv",
+     "version": 1,
+     "status": "existing-same-name"
+    }
+   ],
+   "newFiles": [],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/80qf-vj95"
+  },
+  {
+   "accession": "PSI-15",
+   "title": "Advanced Colloids Experiment-Microscopy 2 Reflight",
+   "acronym": "ACE-M2R",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-15_Experimental table_ACE-M2R_Exp Table.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 675,
+     "sha256": "01770176accca1e257a5fe2f0b3e83f8350eba8f87decc91b1757909f9a59ef4"
+    }
+   ],
+   "newFiles": [
+    "PSI-15_PSI-15_Experimental_table_ACE-M2R_Exp_Table.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "S2105_C1_X2.5_SP_Originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "S2105_C1_X20_DR4_Y1_SP_Originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "S2105_C1_X20_DR2_Y2_SP_Originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "S2105_C2_X2.5_SP_Originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/5mh8-k670"
+  },
+  {
+   "accession": "PSI-159",
+   "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases",
+   "acronym": "ACME CFI-G",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:extinction",
+    "keyword:ACME",
+    "keyword:CFI"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 22166,
+     "sha256": "d95a621c3fbd27d204dd32ed29fa17d68f2b779d6a523cde8479ed7ebaa5251a"
+    },
+    {
+     "file_name": "PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 39422,
+     "sha256": "d4d44f8b9896936728748e34d1b6ad0812032a92fa5289599b708c138e3a9b39"
+    }
+   ],
+   "newFiles": [
+    "PSI-159_PSI-159_Experimental_table_CFI-G_Normal_Flames.csv",
+    "PSI-159_PSI-159_Experimental_table_CFI-G_Inverse_Flames.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-159_metadata_PSI-159-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-159_Raw Data_Images_Converted 21228A1.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-159_Raw Data_Images_21228A1.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-159_Raw Data_21228A1_INTNS_ALL.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [
+    {
+     "file_name": "PSI-159_Representative Image(s)_ACME logo.png",
+     "version": 1
+    },
+    {
+     "file_name": "PSI-159_Representative Image(s)_CFI-G_Observation of non-premixed quasi-steady spherical cool flames on porous burners.jpg",
+     "version": 1
+    }
+   ],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/cyt1-kh64"
+  },
+  {
+   "accession": "PSI-17",
+   "title": "Advanced Colloids Experiment - Temperature 6",
+   "acronym": "ACE-T6",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-17_Experimental table_ACE-T6_Exp Table.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 3945,
+     "sha256": "b0695713da850361f118489f04496cb85484ddd8fb009386d207b807b38a4d09"
+    }
+   ],
+   "newFiles": [
+    "PSI-17_PSI-17_Experimental_table_ACE-T6_Exp_Table.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/4gj8-d687"
+  },
+  {
+   "accession": "PSI-177",
+   "title": "Investigating the Structure of Paramagnetic Aggregates from Colloidal Emulsions - 4",
+   "acronym": "InSPACE-4",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-177_Experimental table_INSPACE4.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 6484,
+     "sha256": "25fde8e89b2168706a7061397c325f6a8697e703cabea658a9dcec39b0bf13a5"
+    }
+   ],
+   "newFiles": [
+    "PSI-177_PSI-177_Experimental_table_INSPACE4.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-177_metadata_PSI-177-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-177_Engineering Documents_InSPACE4-Camera Specs.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-177_Engineering Documents_OpsPlanning.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-177_Engineering Documents_IntegratedVerificationTesting_vid.imgs.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/jq1d-x679"
+  },
+  {
+   "accession": "PSI-179",
+   "title": "Aerosol Sampling Experiment",
+   "acronym": "ASE",
+   "via": [
+    "keyword:smoke",
+    "keyword:aerosol",
+    "keyword:soot",
+    "keyword:SAME"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-179_metadata_PSI-179-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-179_Analyzed Data_32-Partition.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-179_Analyzed Data_32-Field Image.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-179_Analyzed Data_16-Partition.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [
+    {
+     "file_name": "PSI-179_Representative Image(s)_ASE_Representative Image.png",
+     "version": 1
+    }
+   ],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/pdgr-c961"
+  },
+  {
+   "accession": "PSI-181",
+   "title": "Structure and Properties of Pb-Sn and Pb-free Sn-Ag-Cu Solders Produced in Terrestrial vs. Microgravity Environments under Extremes of Elevated and Cryo Temperatures",
+   "acronym": "",
+   "via": [
+    "keyword:combustion",
+    "keyword:suppression"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-181_Experimental table_Experimental Table_PSI_181.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 688,
+     "sha256": "8eeede3bc23213668d4e017cc81d98b273fc6e9291ccc6b7084f108dfbe2a35e"
+    }
+   ],
+   "newFiles": [
+    "PSI-181_PSI-181_Experimental_table_Experimental_Table_PSI_181.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-181_metadata_PSI-181-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-181_Raw Data_T2S10-Section1-2023-04-08.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-181_Raw Data_T2S10-Section8-2025-03-29.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-181_Raw Data_T2S10-Section7-2025-02-06.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/td9e-cz97"
+  },
+  {
+   "accession": "PSI-189",
+   "title": "Validation of a CFD Model for Gas-Liquid Flows in Packed Bed Reactors to Enable Thermo-Fluid Analysis in Microgravity",
+   "acronym": "",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-189_metadata_PSI-189-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/2e14-qv79"
+  },
+  {
+   "accession": "PSI-191",
+   "title": "Advanced Colloids Experiment-Temperature 5",
+   "acronym": "ACE-T5",
+   "via": [
+    "keyword:solid fuel"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-191_metadata_PSI-191-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/2zsv-zs73"
+  },
+  {
+   "accession": "PSI-2",
+   "title": "Multi-Scale Modeling and Experimentation on Liquid Phase Sintering in Gravity and Microgravity Environments",
+   "acronym": "MSRR GEDS",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-2_metadata_PSI-2-ISA.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [
+    {
+     "file_name": "PSI-2_Representative Image(s)_GEDS.png",
+     "version": 1
+    }
+   ],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/pez3-ew29"
+  },
+  {
+   "accession": "PSI-20",
+   "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+   "acronym": "ACME BRE",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:ignition",
+    "keyword:extinction",
+    "keyword:smoke",
+    "keyword:solid fuel",
+    "keyword:oxygen concentration",
+    "keyword:ACME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-20_Experimental table_ACME BRE.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1113,
+     "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7"
+    }
+   ],
+   "newFiles": [
+    "PSI-20_PSI-20_Experimental_table_ACME_BRE.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/vb93-3y72"
+  },
+  {
+   "accession": "PSI-21",
+   "title": "Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame",
+   "acronym": "ACME CLD Flame",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:extinction",
+    "keyword:suppression",
+    "keyword:soot",
+    "keyword:ACME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-21_Experimental table_CLD Flame.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 2454,
+     "sha256": "9fafbc5b3dddaf715ce8025ed9154ce297803f7b69a935f077ec26c8249e44c0"
+    }
+   ],
+   "newFiles": [
+    "PSI-21_PSI-21_Experimental_table_CLD_Flame.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/23e1-9950"
+  },
+  {
+   "accession": "PSI-22",
+   "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+   "acronym": "ACME E-FIELD Flames",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:extinction",
+    "keyword:soot",
+    "keyword:solid fuel",
+    "keyword:ACME",
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+     "version": 2,
+     "status": "downloaded",
+     "bytes": 2475,
+     "sha256": "69090c357b83ae38d161d29001d1d32b40fd77b13324ca6585ee990cdceef524"
+    }
+   ],
+   "newFiles": [
+    "PSI-22_PSI-22_Experimental_table_ACME_E-FIELD_Flames.csv"
+   ],
+   "zipInspections": [],
+   "images": [
+    {
+     "file_name": "PSI-22_Representative Image(s)_ACME logo.png",
+     "version": 1
+    },
+    {
+     "file_name": "PSI-22_Representative Image(s)_E-Field flames blue 2.jpg",
+     "version": 1
+    },
+    {
+     "file_name": "PSI-22_Representative Image(s)_E-Field Flames.jpg",
+     "version": 1
+    },
+    {
+     "file_name": "PSI-22_Representative Image(s)_E-Field Flames blue.jpg",
+     "version": 1
+    }
+   ],
+   "limitations": [],
+   "doi": "10.60555/se5a-8c73"
+  },
+  {
+   "accession": "PSI-23",
+   "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+   "acronym": "ACME s-Flame",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:ignition",
+    "keyword:extinction",
+    "keyword:suppression",
+    "keyword:soot",
+    "keyword:droplet combustion",
+    "keyword:ACME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-23_Experimental table_ACME s-Flame.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 2456,
+     "sha256": "16cd10f50bd2e962887c8eb4077e5a9b3e790c78de8e0361c0b77e19300be7cf"
+    }
+   ],
+   "newFiles": [
+    "PSI-23_PSI-23_Experimental_table_ACME_s-Flame.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-23_Raw Data_vlc-record-2019-10-31-15h32m20s-udp_19304A1.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-23_Raw Data_19304A1_ACME.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-23_Raw Data_19304A1_ACME_Converted.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-23_Raw Data_19304A1_INTNS.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/k57n-p030"
+  },
+  {
+   "accession": "PSI-25",
+   "title": "Burning and Suppression of Solids - II",
+   "acronym": "BASS-II",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:ignition",
+    "keyword:extinction",
+    "keyword:suppression",
+    "keyword:solid fuel",
+    "keyword:oxygen concentration",
+    "keyword:airflow",
+    "keyword:BASS",
+    "keyword:SAME",
+    "keyword:SoFIE"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-25_Experimental table_BASS-II.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 16590,
+     "sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    }
+   ],
+   "newFiles": [
+    "PSI-25_PSI-25_Experimental_table_BASS-II.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-25_metadata_PSI_metadata_PSI-101_BASS-II.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-25_Raw Data_iss038e051108.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-25_Raw Data_iss038e051295.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-25_Raw Data_iss038e051200.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [
+    {
+     "file_name": "PSI-25_Representative Image(s)_BASS-II_flame testing.jpg",
+     "version": 1
+    }
+   ],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/4qc4-de67"
+  },
+  {
+   "accession": "PSI-26",
+   "title": "Burning and Suppression of Solids",
+   "acronym": "BASS",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:extinction",
+    "keyword:suppression",
+    "keyword:solid fuel",
+    "keyword:oxygen concentration",
+    "keyword:airflow",
+    "keyword:BASS",
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-26_Experimental table_BASS.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 4726,
+     "sha256": "ccfc3c54d948b64a1c5d2596a63c7c8019e51df0c91a1d62f039f48fa28c300f"
+    }
+   ],
+   "newFiles": [
+    "PSI-26_PSI-26_Experimental_table_BASS.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-26_metadata_PSI-102_BASS.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-26_Raw Data_2013_04_06_orig.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-26_Raw Data_2013_04_06_xmp.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-26_Raw Data_2013_04_04_orig.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/58h4-dy80"
+  },
+  {
+   "accession": "PSI-31",
+   "title": "Cold Atom Lab - Microgravity Dynamics of Bubble-Geometry Bose-Einstein Condensates",
+   "acronym": "CAL-BEC Bubble Dynamics",
+   "via": [
+    "keyword:BASS"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-31_Experimental table_CAL BEC Bubble Dynamics.csv",
+     "version": 3,
+     "status": "downloaded",
+     "bytes": 78941,
+     "sha256": "312814c59250b5989b8a0c4909a55cd6bbdc27ec42db508da0a75ecbd493c91e"
+    }
+   ],
+   "newFiles": [
+    "PSI-31_PSI-31_Experimental_table_CAL_BEC_Bubble_Dynamics.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/e8mt-aj63"
+  },
+  {
+   "accession": "PSI-32",
+   "title": "Cold Atom Lab - Consortium for Ultracold Atoms in Space",
+   "acronym": "CAL-CUAS",
+   "via": [
+    "keyword:suppression",
+    "keyword:SAME"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-32_Raw Data_CAL_bigelow_RF_evap_ex_2018-09-06_L1.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-32_Raw Data_CAL_bigelow_RF_evap_ex_2018-09-06_raw.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/6cnc-re60"
+  },
+  {
+   "accession": "PSI-35",
+   "title": "Cold Atom Lab - Fundamental Interactions for Atom Interferometry with Ultracold Quantum Gases in a Microgravity Environment",
+   "acronym": "CAL-Fundamental Interactions",
+   "via": [
+    "keyword:suppression"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-35_Experimental table_CAL Fundamental Interactions.csv",
+     "version": 3,
+     "status": "downloaded",
+     "bytes": 7085,
+     "sha256": "635fbda06bb11a5778186d1289956680b605fa86164154f274c3316ce95f0726"
+    }
+   ],
+   "newFiles": [
+    "PSI-35_PSI-35_Experimental_table_CAL_Fundamental_Interactions.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/0pv6-m208"
+  },
+  {
+   "accession": "PSI-37",
+   "title": "Capillary Flow Experiment - 2",
+   "acronym": "CFE-2",
+   "via": [
+    "keyword:solid fuel"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-37_Experimental table_CFE2.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1858,
+     "sha256": "95ba54bb86cdc8fe89dcc0a577085091c984fc796e86395693f6927206dc0915"
+    }
+   ],
+   "newFiles": [
+    "PSI-37_PSI-37_Experimental_table_CFE2.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-37_Reports_AAS Denver June 2012.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-37_Raw Data_CFE-2 Exp 24 ICF 1-4 Bubble Shake Test 1 10-04-2010 GMT 252.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-37_Raw Data_CFE-2 Exp 24 ICF 1-4 Bubble Shake Test 2 10-04-2010 GMT 252.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-37_Raw Data_CFE-2 Exp 24 ICF 1-4 Bubble Shake Test 3 10-04-2010 GMT 252.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/msw8-xw26"
+  },
+  {
+   "accession": "PSI-39",
+   "title": "Cool Flames Investigation",
+   "acronym": "CFI",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:ignition",
+    "keyword:extinction",
+    "keyword:soot",
+    "keyword:droplet combustion",
+    "keyword:CFI"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-39_Experimental table_CFI.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 7792,
+     "sha256": "fb898e28762353aa132c16b886dbd207a024b1dd3c9bed5928d70d8036d2ec7e"
+    }
+   ],
+   "newFiles": [
+    "PSI-39_PSI-39_Experimental_table_CFI.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-39_metadata_PSI-118_CFI.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-39_Raw Data_F173E01A.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-39_Raw Data_F173E01C.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-39_Raw Data_F173E01D.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/m6pj-a914"
+  },
+  {
+   "accession": "PSI-40",
+   "title": "Coarsening in Solid Liquid Mixtures-2",
+   "acronym": "CSLM-2",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-40_Experimental table_CSLM2.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 435,
+     "sha256": "a000d2b8705fd1113dc3c1355fe8106a9b86b2693bc049be21a6824296c4d9ed"
+    }
+   ],
+   "newFiles": [
+    "PSI-40_PSI-40_Experimental_table_CSLM2.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-40_metadata_PSI-119_CSLM-2.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/mfaa-wk03"
+  },
+  {
+   "accession": "PSI-41",
+   "title": "Coarsening in Solid-Liquid Mixtures-2 Reflight",
+   "acronym": "CSLM-2R",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-41_Experimental table_CSLM2R.csv",
+     "version": 2,
+     "status": "downloaded",
+     "bytes": 285,
+     "sha256": "5a93d77b9618447f422d359210d83e389efd17f89233fc9f3ac94ecc8c3061fb"
+    }
+   ],
+   "newFiles": [
+    "PSI-41_PSI-41_Experimental_table_CSLM2R.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-41_metadata_PSI-120_CSLM-2R.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-41_Raw Data_PbSn15_48hr_originals1.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-41_Raw Data_PbSn15_48hr_originals4.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-41_Raw Data_PbSn15_48hr_originals3.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/4h4p-e750"
+  },
+  {
+   "accession": "PSI-47",
+   "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+   "acronym": "DAFT / DAFT-2",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:suppression",
+    "keyword:smoke",
+    "keyword:aerosol",
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-47_Experimental table_DAFT.csv",
+     "version": 2,
+     "status": "existing-same-name"
+    }
+   ],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-47_metadata_PSI-126_DAFT_DAFT-2.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [
+    {
+     "file_name": "PSI-47_Representative Image(s)_DAFT on ISS.jpg",
+     "version": 4
+    }
+   ],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/ztgj-d202"
+  },
+  {
+   "accession": "PSI-49",
+   "title": "DEvice for the study of Critical LIquids and Crystallization - Alice Like Insert",
+   "acronym": "DECLIC-ALI",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-49_Experimental table_declic-ali.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 845,
+     "sha256": "8bce629e71b5fbf9c4b949067579f0aac19f155fea92fcd011f6924bd9f671a1"
+    }
+   ],
+   "newFiles": [
+    "PSI-49_PSI-49_Experimental_table_declic-ali.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/e9cw-gn62"
+  },
+  {
+   "accession": "PSI-6",
+   "title": "Foam Optics and Mechanics",
+   "acronym": "FOAM",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/34m1-4772"
+  },
+  {
+   "accession": "PSI-60",
+   "title": "Computational and Experimental Analysis of SPICE Data Sets",
+   "acronym": "",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:suppression",
+    "keyword:smoke",
+    "keyword:soot",
+    "keyword:ACME",
+    "keyword:SPICE"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-60_metadata_NEWID-5_Computational and Ex.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/mzjm-yv57"
+  },
+  {
+   "accession": "PSI-62",
+   "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+   "acronym": "",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:suppression",
+    "keyword:soot",
+    "keyword:solid fuel",
+    "keyword:BASS"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-62_metadata_NEWID-7_Concurrent Flame Spr.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/e9xp-ex83"
+  },
+  {
+   "accession": "PSI-68",
+   "title": "Flame Extinguishment Experiment - 2",
+   "acronym": "FLEX-2",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:ignition",
+    "keyword:extinction",
+    "keyword:soot",
+    "keyword:droplet combustion",
+    "keyword:oxygen concentration",
+    "keyword:SAME",
+    "keyword:FLEX"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-68_Experimental table_Flex2.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1029,
+     "sha256": "cc57ad1bd9977aa13e7ac6c3aa618303012686e232b36c052c6a9f1a74e5f528"
+    }
+   ],
+   "newFiles": [
+    "PSI-68_PSI-68_Experimental_table_Flex2.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/byp8-h018"
+  },
+  {
+   "accession": "PSI-69",
+   "title": "Flame Extinguishment Experiment",
+   "acronym": "FLEX",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:ignition",
+    "keyword:extinction",
+    "keyword:suppression",
+    "keyword:soot",
+    "keyword:droplet combustion",
+    "keyword:FLEX"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-69_Experimental table_FLEX.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 24776,
+     "sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+    }
+   ],
+   "newFiles": [
+    "PSI-69_PSI-69_Experimental_table_FLEX.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/mbq8-0451"
+  },
+  {
+   "accession": "PSI-7",
+   "title": "Particle Stabilized Emulsions and Foams",
+   "acronym": "PASTA",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [],
+   "newFiles": [],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/70cs-xg17"
+  },
+  {
+   "accession": "PSI-70",
+   "title": "Gradient Driven Fluctuation Experiment",
+   "acronym": "GRADFLEX",
+   "via": [
+    "keyword:suppression",
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-70_Experimental table_gradflex.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1884,
+     "sha256": "36beb19ac7dfab99906e0ba5729be1100cbfd2d35a24c3c64248dac90b5f8574"
+    }
+   ],
+   "newFiles": [
+    "PSI-70_PSI-70_Experimental_table_gradflex.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/awcm-gx95"
+  },
+  {
+   "accession": "PSI-77",
+   "title": "In Space Soldering Investigation",
+   "acronym": "ISSI",
+   "via": [
+    "keyword:flame"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-77_Experimental table_ExperimentalTable_ISSI.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 2736,
+     "sha256": "f86b48ff25e76cbae427f03f5196e1bb20456447441519fdf90cd5b083806517"
+    }
+   ],
+   "newFiles": [
+    "PSI-77_PSI-77_Experimental_table_ExperimentalTable_ISSI.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-77_Raw Data_ISSI 01-04-05 Ref.Mstr. 719051.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-77_Raw Data_ISSI 02-06-05 Exp 10.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-77_Raw Data_ISSI 12-08-04 Ref.Mstr. 719035.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-77_Raw Data_ISSI ISS VC3 1_2.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/dc58-7a75"
+  },
+  {
+   "accession": "PSI-8",
+   "title": "Characterization of Biofilm Formation, Growth and Gene Expression on Different Materials and Environmental Conditions in Microgravity",
+   "acronym": "Space Biofilms",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-8_Experimental table_Space_Biofilm_Experimental_Table.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 63778,
+     "sha256": "2a4b95ce7fbc818212f3ce4a21105b68bfdddcc80d8cf2a89ae80405af730221"
+    }
+   ],
+   "newFiles": [
+    "PSI-8_PSI-8_Experimental_table_Space_Biofilm_Experimental_Table.csv"
+   ],
+   "zipInspections": [],
+   "images": [
+    {
+     "file_name": "PSI-8_Representative Image(s)_BF1 Biofilm Growth Mechanisms.jpg",
+     "version": 1
+    }
+   ],
+   "limitations": [],
+   "doi": "10.60555/tz48-ng44"
+  },
+  {
+   "accession": "PSI-84",
+   "title": "Microgravity Investigation of Cement Solidification",
+   "acronym": "MICS",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-84_Experimental table_MICS_Experiment Table.csv",
+     "version": 2,
+     "status": "downloaded",
+     "bytes": 1225,
+     "sha256": "5f757e448d9f1cb884eea9a1989f0785fd6c5d7b164fc75e30119889f9c8e9a8"
+    }
+   ],
+   "newFiles": [
+    "PSI-84_PSI-84_Experimental_table_MICS_Experiment_Table.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-84_metadata_PSI-151_MICS.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-84_Raw Data_C3A SEM_Microgravity_7HR_Original_Images.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-84_Raw Data_XRD_Original_Images.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-84_Raw Data_Ground_C3S2.0_spinning.xrdml.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/zqtn-8g63"
+  },
+  {
+   "accession": "PSI-90",
+   "title": "Packed Bed Reactor Experiment",
+   "acronym": "PBRE",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-90_Experimental table_PBRE.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1835,
+     "sha256": "1944d5362880e4ddc4386f3d86b710420fbd64d04d34dc197d1c6448edfe6d2c"
+    }
+   ],
+   "newFiles": [
+    "PSI-90_PSI-90_Experimental_table_PBRE.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/cbnn-ym02"
+  },
+  {
+   "accession": "PSI-91",
+   "title": "Physics of Colloids in Space",
+   "acronym": "PCS",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-91_Experimental table_PCS_Sample Table.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1874,
+     "sha256": "ba07549939b7456438e88a083f2e7b3e4e33bd8659b22cc09aecac3f709b5694"
+    },
+    {
+     "file_name": "PSI-91_Experimental table_PCS_Exp Table.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 3353,
+     "sha256": "a2053287ca8255d94a6682632d2ff1c5e7e435220afc68d85ffaf841ad0048a1"
+    }
+   ],
+   "newFiles": [
+    "PSI-91_PSI-91_Experimental_table_PCS_Sample_Table.csv",
+    "PSI-91_PSI-91_Experimental_table_PCS_Exp_Table.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-91_Raw Data_Autocorrelation - Initiated020215 200825 originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-91_Raw Data_Autocorrelation - Initiated 700101 000000.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-91_Raw Data_DLS - Initiated 020215 200825 Originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-91_Raw Data_LAD - Initiated 020215 200825 Orignials.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/72a8-5032"
+  },
+  {
+   "accession": "PSI-94",
+   "title": "Physics of Hard Spheres Experiment",
+   "acronym": "PHaSE",
+   "via": [
+    "keyword:SAME"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-94_Experimental table_PHaSE_Exp Table_.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 3955,
+     "sha256": "620046bbe590c5413b43bd834cb0f2407504b6406f5436f08a98b81fb8c4711a"
+    }
+   ],
+   "newFiles": [
+    "PSI-94_PSI-94_Experimental_table_PHaSE_Exp_Table_.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-94_Raw Data_FInal Data Set Sample1-MIX0003 Color.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-94_Raw Data_Final Data Set Sample1-MIX0004 Color.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-94_Raw Data_Final Data Set Sample1-MIX0005 Color.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-94_Raw Data_Downlink Sample1-MIX0000-0067611C.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/7tkn-g998"
+  },
+  {
+   "accession": "PSI-97",
+   "title": "Ring-Sheared Drop - Amyloid Fibril Formation",
+   "acronym": "RSD-AFF",
+   "via": [
+    "keyword:extinction"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-97_Experimental table_RSD AFF.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 6167,
+     "sha256": "5a6e271f6598909b3fb8367fc74b09e5980aaea7e7f46bf36ad3f47e8474d5f7"
+    }
+   ],
+   "newFiles": [
+    "PSI-97_PSI-97_Experimental_table_RSD_AFF.csv"
+   ],
+   "zipInspections": [
+    {
+     "zip": "PSI-97_Raw Data_Insulin_2mgmL_Native_t0p0.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-97_Raw Data_Insulin_2mgmL_Native_t0p5.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-97_Raw Data_Insulin_2mgmL_Native_t1p0.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-97_Raw Data_Insulin_2mgmL_Native_t1p5.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/d4jq-pv07"
+  },
+  {
+   "accession": "PSI-98",
+   "title": "Spacecraft Fire Safety Experiment-I",
+   "acronym": "SAFFIRE-I",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:smoke",
+    "keyword:SAFFIRE"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-98_Experimental table_SAFFIRE-1.csv",
+     "version": 1,
+     "status": "existing-same-name"
+    }
+   ],
+   "newFiles": [],
+   "zipInspections": [
+    {
+     "zip": "PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1280x920_originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-98_Raw Data_Mapped_SAFFIRE-1_F1C1_DistortionGrid_1280x920.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1360x1024_originals.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    },
+    {
+     "zip": "PSI-98_Raw Data_SAFFIRE_I_F1C1_jpegs.zip",
+     "note": "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+    }
+   ],
+   "images": [],
+   "limitations": [
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy",
+    "range requests not supported (size=0, accepts=false) \u2014 recorded inaccessible; no bulk download per policy"
+   ],
+   "doi": "10.60555/0t15-1z43"
+  },
+  {
+   "accession": "PSI-99",
+   "title": "Spacecraft Fire Experiment-II",
+   "acronym": "SAFFIRE-II",
+   "via": [
+    "research-area-filter",
+    "keyword:combustion",
+    "keyword:flame",
+    "keyword:flammability",
+    "keyword:smoke",
+    "keyword:SAFFIRE"
+   ],
+   "tables": [
+    {
+     "file_name": "PSI-99_Experimental table_SAFFIRE-2.csv",
+     "version": 1,
+     "status": "downloaded",
+     "bytes": 1973,
+     "sha256": "3c24390b9ef86f3d1ebaab911a1a3cc95a8759aebf42062371370e6d4b31b8ac"
+    }
+   ],
+   "newFiles": [
+    "PSI-99_PSI-99_Experimental_table_SAFFIRE-2.csv"
+   ],
+   "zipInspections": [],
+   "images": [],
+   "limitations": [],
+   "doi": "10.60555/2chp-m469"
+  }
+ ],
+ "images": [
+  {
+   "query": "FLEX",
+   "search": "FLEX flame extinguishment droplet",
+   "hits": [
+    {
+     "nasa_id": "iss043e190395",
+     "title": "CIR MDCA replacement",
+     "center": "JSC",
+     "date": "2015-05-13T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss043e190395/iss043e190395~medium.jpg",
+     "description": "ISS043E190395 (05/13/2015) --- NASA astronaut Terry Virts prepares the Multi-user Droplet Combustion Apparatus from inside the Combustion Integrated Rack for upcoming runs of the FLame Extinguishment Experiment, or FLEX-"
+    },
+    {
+     "nasa_id": "iss035e017702",
+     "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+     "center": "JSC",
+     "date": "2013-04-10T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss035e017702/iss035e017702~medium.jpg",
+     "description": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and"
+    },
+    {
+     "nasa_id": "iss035e017712",
+     "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+     "center": "JSC",
+     "date": "2013-04-10T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss035e017712/iss035e017712~medium.jpg",
+     "description": "ISS035-E-017712 (10 April 2013)?-- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement in the U.S. lab Destiny.  Here, Expedition 35 Flight Engineer Ch"
+    },
+    {
+     "nasa_id": "iss035e017705",
+     "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+     "center": "JSC",
+     "date": "2013-04-10T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss035e017705/iss035e017705~medium.jpg",
+     "description": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and"
+    },
+    {
+     "nasa_id": "iss035e017700",
+     "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+     "center": "JSC",
+     "date": "2013-04-10T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss035e017700/iss035e017700~medium.jpg",
+     "description": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and"
+    },
+    {
+     "nasa_id": "iss035e017703",
+     "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+     "center": "JSC",
+     "date": "2013-04-10T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss035e017703/iss035e017703~medium.jpg",
+     "description": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and"
+    }
+   ]
+  },
+  {
+   "query": "BASS",
+   "search": "BASS burning suppression solids microgravity",
+   "hits": [
+    {
+     "nasa_id": "iss040e086481",
+     "title": "BASS-II Experiment",
+     "center": "JSC",
+     "date": "2014-08-02T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss040e086481/iss040e086481~medium.jpg",
+     "description": "Image taken on card 8 during BASS-II flame test session with reduced O2 partial pressure. Session conducted on GMT 213. The Burning and Suppression of Solids - II (BASS-II) investigation examines the burning and extincti"
+    },
+    {
+     "nasa_id": "iss040e088023",
+     "title": "BASS-II Experiment",
+     "center": "JSC",
+     "date": "2014-08-02T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss040e088023/iss040e088023~medium.jpg",
+     "description": "Image taken on card 15 during BASS-II flame test session with reduced O2 partial pressure. Session conducted on GMT 214. The Burning and Suppression of Solids - II (BASS-II) investigation examines the burning and extinct"
+    },
+    {
+     "nasa_id": "iss039e005726",
+     "title": "BASS-II Hardware Repair",
+     "center": "JSC",
+     "date": "2014-03-27T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss039e005726/iss039e005726~medium.jpg",
+     "description": "ISS039-E-005726 (27 March 2014) ---  Expedition 39 Flight Engineer Rick Mastracchio performs inflight maintenance on an experiment called Burning and Suppression of Solids (BASS)-II.  The investigation examines the burni"
+    },
+    {
+     "nasa_id": "iss035e015081",
+     "title": "Cassidy conducts BASS Experiment Test Operations",
+     "center": "JSC",
+     "date": "2013-04-05T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss035e015081/iss035e015081~medium.jpg",
+     "description": "ISS035-E-015081 (5 April 2013) --- Astronaut Chris Cassidy, Expedition 35 flight engineer,  conducts a session of the Burning and Suppression of Solids (BASS) experiment onboard the Earth-orbiting International Space Sta"
+    },
+    {
+     "nasa_id": "iss040e072900",
+     "title": "BASS II Operations",
+     "center": "JSC",
+     "date": "2014-07-23T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss040e072900/iss040e072900~medium.jpg",
+     "description": "Image taken during BASS-II flame test session -card 2 - conducted on GMT 203. Burned a 4 mm thick, 1 cm wide acrylic slab at multiple velocities. At high flows, the flame was long and sooty. When the flow was reduced, th"
+    },
+    {
+     "nasa_id": "iss035e016429",
+     "title": "Cassidy conducts BASS Flame Test",
+     "center": "JSC",
+     "date": "2013-04-09T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss035e016429/iss035e016429~medium.jpg",
+     "description": "ISS035-E-16429 (9 April 2013) --- Astronaut Chris Cassidy, Expedition 35 flight engineer, conducts a session of the Burning and Suppression of Solids (BASS) experiment located in the U.S. lab Destiny onboard the Earth-or"
+    }
+   ]
+  },
+  {
+   "query": "SAFFIRE",
+   "search": "SAFFIRE spacecraft fire experiment",
+   "hits": [
+    {
+     "nasa_id": "jsc2023e046377",
+     "title": "jsc2023e046377",
+     "center": "JSC",
+     "date": "2019-12-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/jsc2023e046377/jsc2023e046377~medium.jpg",
+     "description": "jsc2023e046377 (12/14/2019) --- A view of the Spacecraft Fire Safety Experiments (Saffire) VI experiment hardware, loaded inside the Northrop Grumman (NG) Cygnus cargo vehicle for the 19th NG resupply mission to the Inte"
+    },
+    {
+     "nasa_id": "jsc2023e046631",
+     "title": "jsc2023e046631",
+     "center": "JSC",
+     "date": "2023-07-25T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/jsc2023e046631/jsc2023e046631~small.jpg",
+     "description": "jsc2023e046631 (7/25/2023) --- Plexiglass is shown burning in Spacecraft Fire Experiment-IV (Saffire-IV). The flame appears orange because of the soot that is produced as it burns. As the plexiglass burns, the solid is m"
+    },
+    {
+     "nasa_id": "jsc2020e043815",
+     "title": "Cargo PORT Outer Bay 4 L912 (S/N 1002)",
+     "center": "JSC",
+     "date": "2020-09-10T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/jsc2020e043815/jsc2020e043815~medium.jpg",
+     "description": "jsc2020e043815 (Sept. 10, 2020) --- A view of the Spacecraft Fire Safety Experiments (Saffire) V experiment hardware, loaded inside the Northrop Grumman(NG) Cygnus cargo vehicle for the 14th NG resupply mission to the In"
+    },
+    {
+     "nasa_id": "jsc2023e046375",
+     "title": "jsc2023e046375",
+     "center": "JSC",
+     "date": "2023-07-25T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/jsc2023e046375/jsc2023e046375~medium.jpg",
+     "description": "jsc2023e046375 (7/25/2023) --- A sample of fabric burns inside Spacecraft Fire Experiment-IV (Saffire-IV). The sample is a composite fabric made of cotton and fiberglass and is 40 cm wide. The image appears green because"
+    },
+    {
+     "nasa_id": "jsc2023e046376",
+     "title": "jsc2023e046376",
+     "center": "JSC",
+     "date": "2019-12-12T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/jsc2023e046376/jsc2023e046376~medium.jpg",
+     "description": "jsc2023e046376 (12/12/2019) --- The Far-Field Diagnostic (FFD) hardware for Spacecraft Fire Experiment-VI (Saffire-VI) is pictured aboard Cygnus before launch. This package contains the Smoke Eater and CO scrubbers, a pr"
+    },
+    {
+     "nasa_id": "iss051e039882",
+     "title": "Saffire-II in Cygnus OA-7 during Cargo Transfer OPS",
+     "center": "JSC",
+     "date": "2017-05-08T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss051e039882/iss051e039882~medium.jpg",
+     "description": "iss051e039882 (5/8/2017) --- A view of Spacecraft Fire Experiment-III (Saffire-III) award the John Glenn Orbital ATK 7 (OA-7) Cygnus spacecraft, taken during cargo transfer operations (OPS). The NASA Advanced Exploration"
+    }
+   ]
+  },
+  {
+   "query": "SAME",
+   "search": "SAME smoke aerosol measurement microgravity",
+   "hits": [
+    {
+     "nasa_id": "iss015e27411",
+     "title": "View of Anderson working with SAME Hardware in the US Lab during Expedition 15",
+     "center": "JSC",
+     "date": "2007-09-08T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss015e27411/iss015e27411~medium.jpg",
+     "description": "ISS015-E-27411 (8 Sept. 2007) --- NASA astronaut Clay Anderson, Expedition 15 flight engineer, works on the Smoke and Aerosol Measurement Experiment (SAME) hardware located in the Microgravity Science Glovebox (MSG) in t"
+    },
+    {
+     "nasa_id": "iss015e27397",
+     "title": "View of working with SAME Hardware in the US Lab during Expedition 15",
+     "center": "JSC",
+     "date": "2007-09-08T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss015e27397/iss015e27397~medium.jpg",
+     "description": "ISS015-E-27397 (8 Sept. 2007) --- NASA astronaut Clay Anderson, Expedition 15 flight engineer, pauses for a photo while working on the Smoke and Aerosol Measurement Experiment (SAME) hardware located in the Microgravity "
+    },
+    {
+     "nasa_id": "iss015e27425",
+     "title": "View of Anderson working with SAME Hardware in the US Lab during Expedition 15",
+     "center": "JSC",
+     "date": "2007-09-08T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss015e27425/iss015e27425~medium.jpg",
+     "description": "ISS015-E-27425 (8 Sept. 2007) --- NASA astronaut Clay Anderson, Expedition 15 flight engineer, works on the Smoke and Aerosol Measurement Experiment (SAME) hardware located in the Microgravity Science Glovebox (MSG) in t"
+    },
+    {
+     "nasa_id": "iss015e26252",
+     "title": "View of Anderson setting up SAME Hardware in the US Lab during Expedition 15",
+     "center": "JSC",
+     "date": "2007-09-01T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss015e26252/iss015e26252~medium.jpg",
+     "description": "ISS015-E-26252 (1 Sept. 2007) --- Astronaut Clay Anderson, Expedition 15 flight engineer, works on the Smoke and Aerosol Measurement Experiment (SAME) hardware setup located in the Microgravity Science Glovebox (MSG) in "
+    },
+    {
+     "nasa_id": "iss024e008351",
+     "title": "MSG SAME Experiment",
+     "center": "JSC",
+     "date": "2010-07-15T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss024e008351/iss024e008351~medium.jpg",
+     "description": "ISS024-E-008351 (15 July 2010) --- NASA astronaut Shannon Walker, Expedition 24 flight engineer, works with the Smoke Aerosol Measurement Experiment (SAME) in the Microgravity Sciences Glovebox (MSG) located in the Colum"
+    },
+    {
+     "nasa_id": "iss024e008364",
+     "title": "MSG SAME Experiment",
+     "center": "JSC",
+     "date": "2010-07-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss024e008364/iss024e008364~medium.jpg",
+     "description": "ISS024-E-008364 (14 July 2010)--- Astronaut Shannon Walker, Expedition 24 flight engineer, works on the Smoke Aerosol Measurement Experiment (SAME) inside the Microgravity Science Glovebox (MSG) in the European laborator"
+    }
+   ]
+  },
+  {
+   "query": "ACME",
+   "search": "ACME combustion integrated rack microgravity",
+   "hits": [
+    {
+     "nasa_id": "GRC-2020-C-00116",
+     "title": "Review of International Space Station, ISS data from the Structure and Response of Spherical Diffusion Flames, s-Flame experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+     "center": "GRC",
+     "date": "2020-01-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/GRC-2020-C-00116/GRC-2020-C-00116~medium.jpg",
+     "description": "Review of ISS data from the Structure and Response of Spherical Diffusion Flames (s-Flame) experiment - of the Advanced Combustion via Microgravity Experiments. ACME project conducted in the Combustion Integrated Rack, C"
+    },
+    {
+     "nasa_id": "GRC-2020-C-00115",
+     "title": "Testing of software with ground hardware for the Structue and Response of Spherical Diffusion Flames, s-Flame, experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+     "center": "GRC",
+     "date": "2020-01-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/GRC-2020-C-00115/GRC-2020-C-00115~medium.jpg",
+     "description": "Testing of software with ground hardware for the Structue and Response of Spherical Diffusion Flames, s-Flame, experiment  - of the Advanced Combustion via Microgravity Experiments, ACME, project conducted in the ISS Com"
+    },
+    {
+     "nasa_id": "iss058e008801",
+     "title": "Astronaut David Saint-Jacques of the Canadian Space Agency",
+     "center": "JSC",
+     "date": "2019-01-30T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss058e008801/iss058e008801~medium.jpg",
+     "description": "iss058e008801 (Jan. 31, 2019) --- Astronaut David Saint-Jacques of the Canadian Space Agency replaces a control unit and a radiometer inside the Combustion Integrated Rack's (CIR) ACME (Advanced Combustion via Microgravi"
+    },
+    {
+     "nasa_id": "iss064e040953",
+     "title": "iss064e040953",
+     "center": "JSC",
+     "date": "2021-03-09T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss064e040953/iss064e040953~medium.jpg",
+     "description": "iss064e040953 (March 9, 2021) --- NASA astronaut and Expedition 64 Flight Engineer Kate Rubins replaces and cleans hardware supporting a suite of studies known as ACME, or Advanced Combustion via Microgravity Experiments"
+    },
+    {
+     "nasa_id": "iss064e040971",
+     "title": "iss064e040971",
+     "center": "JSC",
+     "date": "2021-03-09T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss064e040971/iss064e040971~medium.jpg",
+     "description": "iss064e040971 (March 9, 2021) --- NASA astronaut and Expedition 64 Flight Engineer Kate Rubins opens the Combustion Integrated Rack's combustion chamber to access ACME, or Advanced Combustion via Microgravity Experiments"
+    },
+    {
+     "nasa_id": "iss059e103188",
+     "title": "CIR / ACME / Flame Design hardware replacement",
+     "center": "JSC",
+     "date": "2019-06-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss059e103188/iss059e103188~medium.jpg",
+     "description": "iss059e103188 (6/14/2019) --- Photo documentation taken aboard the International Space Station (ISS) during the Fluids and Combustion Facility (FCF) Combustion Integration Rack (CIR) / Advanced Combustion via Microgravit"
+    }
+   ]
+  },
+  {
+   "query": "SPICE",
+   "search": "SPICE smoke point co-flow combustion",
+   "hits": []
+  },
+  {
+   "query": "MDCA",
+   "search": "MDCA droplet apparatus",
+   "hits": [
+    {
+     "nasa_id": "iss037e004956",
+     "title": "Multi-user Droplet Combustion Apparatus (MDCA) Hardware Replacement",
+     "center": "JSC",
+     "date": "2013-10-02T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss037e004956/iss037e004956~medium.jpg",
+     "description": "ISS037-E-004956 (2 Oct. 2013) --- NASA astronaut Karen Nyberg, Expedition 37 flight engineer, performs the Multi-user Droplet Combustion Apparatus (MDCA) hardware replacement in the Harmony node of the International Spac"
+    },
+    {
+     "nasa_id": "iss037e004959",
+     "title": "Multi-user Droplet Combustion Apparatus (MDCA) Hardware Replacement",
+     "center": "JSC",
+     "date": "2013-10-02T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss037e004959/iss037e004959~medium.jpg",
+     "description": "ISS037-E-004959 (2 Oct. 2013) --- NASA astronaut Karen Nyberg, Expedition 37 flight engineer, performs the Multi-user Droplet Combustion Apparatus (MDCA) hardware replacement in the Harmony node of the International Spac"
+    },
+    {
+     "nasa_id": "iss036e024637",
+     "title": "Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA)",
+     "center": "JSC",
+     "date": "2013-07-24T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss036e024637/iss036e024637~medium.jpg",
+     "description": "ISS036-E-024637 (24 July 2013) --- European Space Agency astronaut Luca Parmitano, Expedition 36 flight engineer, works on the Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA) at a maintenance"
+    },
+    {
+     "nasa_id": "iss036e024605",
+     "title": "Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA)",
+     "center": "JSC",
+     "date": "2013-07-24T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss036e024605/iss036e024605~medium.jpg",
+     "description": "ISS036-E-024605 (24 July 2013) --- European Space Agency astronaut Luca Parmitano, Expedition 36 flight engineer, works on the Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA) at a maintenance"
+    },
+    {
+     "nasa_id": "iss036e024569",
+     "title": "Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA)",
+     "center": "JSC",
+     "date": "2013-07-24T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss036e024569/iss036e024569~medium.jpg",
+     "description": "ISS036-E-024569 (24 July 2013) --- European Space Agency astronaut Luca Parmitano, Expedition 36 flight engineer, works on the Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA) at a maintenance"
+    },
+    {
+     "nasa_id": "iss018e010645",
+     "title": "ISS Expedition 18 Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA) in Node 2",
+     "center": "JSC",
+     "date": "2008-12-06T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss018e010645/iss018e010645~medium.jpg",
+     "description": "ISS018-E-010645 (6 Dec. 2008) --- Astronaut Michael Fincke, Expedition 18 commander, works on the Multi-User Droplet Combustion Apparatus (MDCA) Chamber Insert Assembly (CIA) in the Harmony node of the International Spac"
+    }
+   ]
+  },
+  {
+   "query": "CIR",
+   "search": "combustion integrated rack ISS",
+   "hits": [
+    {
+     "nasa_id": "0003857",
+     "title": "Microgravity",
+     "center": "MSFC",
+     "date": "2000-01-31T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/0003857/0003857~medium.jpg",
+     "description": "The combustion chamber for the Combustion Integrated Rack section of the Fluids and Combustion Facility (FCF) is shown extracted for servicing. The FCF will be installed, in phases, in the Destiny, the U.S. Laboratory Mo"
+    },
+    {
+     "nasa_id": "0003860",
+     "title": "Microgravity",
+     "center": "MSFC",
+     "date": "2000-01-31T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/0003860/0003860~medium.jpg",
+     "description": "The optical bench for the Fluid Integrated Rack section of the Fluids and Combustion Facility (FCF) is shown in its operational configuration. The FCF will be installed, in phases, in the Destiny, the U.S. Laboratory Mod"
+    },
+    {
+     "nasa_id": "GRC-2020-C-00116",
+     "title": "Review of International Space Station, ISS data from the Structure and Response of Spherical Diffusion Flames, s-Flame experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+     "center": "GRC",
+     "date": "2020-01-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/GRC-2020-C-00116/GRC-2020-C-00116~medium.jpg",
+     "description": "Review of ISS data from the Structure and Response of Spherical Diffusion Flames (s-Flame) experiment - of the Advanced Combustion via Microgravity Experiments. ACME project conducted in the Combustion Integrated Rack, C"
+    },
+    {
+     "nasa_id": "GRC-2020-C-00115",
+     "title": "Testing of software with ground hardware for the Structue and Response of Spherical Diffusion Flames, s-Flame, experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+     "center": "GRC",
+     "date": "2020-01-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/GRC-2020-C-00115/GRC-2020-C-00115~medium.jpg",
+     "description": "Testing of software with ground hardware for the Structue and Response of Spherical Diffusion Flames, s-Flame, experiment  - of the Advanced Combustion via Microgravity Experiments, ACME, project conducted in the ISS Com"
+    },
+    {
+     "nasa_id": "GRC-2005-C-00892",
+     "title": "Combustion Integration Rack (CIR) Testing",
+     "center": "GRC",
+     "date": "2015-02-18T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/GRC-2005-C-00892/GRC-2005-C-00892~medium.jpg",
+     "description": "Fluids and Combustion Facility (FCF), Combustion Integration Rack (CIR) during testing in the Structural Dynamics Laboratory (SDL). The Fluids and Combustion Facility (FCF) is a set of two International Space Station (IS"
+    },
+    {
+     "nasa_id": "iss059e103188",
+     "title": "CIR / ACME / Flame Design hardware replacement",
+     "center": "JSC",
+     "date": "2019-06-14T00:00:00Z",
+     "thumb": "https://images-assets.nasa.gov/image/iss059e103188/iss059e103188~medium.jpg",
+     "description": "iss059e103188 (6/14/2019) --- Photo documentation taken aboard the International Space Station (ISS) during the Fluids and Combustion Facility (FCF) Combustion Integration Rack (CIR) / Advanced Combustion via Microgravit"
+    }
+   ]
+  }
+ ],
+ "existingRawCount": 64,
+ "reconciliation": {
+  "generatedAt": "2026-11-13",
+  "canonicalCorpus": 22,
+  "byteIdenticalConfirmations": 19,
+  "confirmations": [
+   {
+    "file": "PSI-100_PSI-100_Experimental_table_SAFFIRE-3.csv",
+    "sha256": "4d3c717ec20dd0247db670b2784a9fd7d746788bc54a936f80693e48eb8cd117",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-101_PSI-101_Experimental_table_SAME-R.csv",
+    "sha256": "87164b7dc9168a4273c159f7a9f23699afbd06ad97b77974377e79b9bf8a3bef",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-102_PSI-102_Experimental_table_SAME.csv",
+    "sha256": "268d1e121d2f211b124407dd32b9475617bd269ede2c2d1749441da3e949a2af",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-106_PSI-106_Experimental_table_Slice.csv",
+    "sha256": "89ef980810ca6d9aa8be817b42e36cd2adff23f5e9058361b5a33d18b4363f4d",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-107_PSI-107_Experimental_table_Spice.csv",
+    "sha256": "fb0d7e60cf5367afb429089e9901d27288f78038efd26c8de1db4fbe04117136",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-10_PSI-10_Experimental_table_Flame_Design_Inverse_Flame.csv",
+    "sha256": "97933ee9ae0b9ebc6b948a67485a0fe2f8218f753253a4f2be93c40d374c44e4",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-10_PSI-10_Experimental_table_Flame_Design_Normal_Flame.csv",
+    "sha256": "4a663292bd3f65201943cc71bd661a70383639276a9176f64105b285bf0b6deb",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-159_PSI-159_Experimental_table_CFI-G_Inverse_Flames.csv",
+    "sha256": "d4d44f8b9896936728748e34d1b6ad0812032a92fa5289599b708c138e3a9b39",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-159_PSI-159_Experimental_table_CFI-G_Normal_Flames.csv",
+    "sha256": "d95a621c3fbd27d204dd32ed29fa17d68f2b779d6a523cde8479ed7ebaa5251a",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-20_PSI-20_Experimental_table_ACME_BRE.csv",
+    "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-21_PSI-21_Experimental_table_CLD_Flame.csv",
+    "sha256": "9fafbc5b3dddaf715ce8025ed9154ce297803f7b69a935f077ec26c8249e44c0",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-22_PSI-22_Experimental_table_ACME_E-FIELD_Flames.csv",
+    "sha256": "69090c357b83ae38d161d29001d1d32b40fd77b13324ca6585ee990cdceef524",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-23_PSI-23_Experimental_table_ACME_s-Flame.csv",
+    "sha256": "16cd10f50bd2e962887c8eb4077e5a9b3e790c78de8e0361c0b77e19300be7cf",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-25_PSI-25_Experimental_table_BASS-II.csv",
+    "sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-26_PSI-26_Experimental_table_BASS.csv",
+    "sha256": "ccfc3c54d948b64a1c5d2596a63c7c8019e51df0c91a1d62f039f48fa28c300f",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-39_PSI-39_Experimental_table_CFI.csv",
+    "sha256": "fb898e28762353aa132c16b886dbd207a024b1dd3c9bed5928d70d8036d2ec7e",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-68_PSI-68_Experimental_table_Flex2.csv",
+    "sha256": "cc57ad1bd9977aa13e7ac6c3aa618303012686e232b36c052c6a9f1a74e5f528",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-69_PSI-69_Experimental_table_FLEX.csv",
+    "sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   },
+   {
+    "file": "PSI-99_PSI-99_Experimental_table_SAFFIRE-2.csv",
+    "sha256": "3c24390b9ef86f3d1ebaab911a1a3cc95a8759aebf42062371370e6d4b31b8ac",
+    "result": "byte-identical to canonical corpus \u2014 provenance confirmation, duplicate removed"
+   }
+  ],
+  "adoptedNew": [
+   {
+    "file": "PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+    "investigation": "PSI-108",
+    "note": "STDCE-1 surface-tension-driven convection \u2014 microgravity fluid physics relevant to fire-safety airflow analysis"
+   },
+   {
+    "file": "PSI-108_PSI-108_Experimental_table_STDCE-1(1).csv",
+    "investigation": "PSI-108",
+    "note": "STDCE-1 variant table (v1 with spaces; distinct rows)"
+   }
+  ],
+  "relocatedOtherDomains": [
+   {
+    "file": "PSI-113_PSI-113_Experimental_table_Experimental_Table_SUBSA.csv",
+    "sha256": "19a8d61ceef1b7129af6224d101bedb857dd2eb68e3890cedf0ed6ff550f7ba3",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-125_PSI-125_Experimental_table_LMMBIO-2.csv",
+    "sha256": "1114d42ded4f551a5a5580ea8afebaec4b3d3967e61e0ae467e0030fb7998364",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-15_PSI-15_Experimental_table_ACE-M2R_Exp_Table.csv",
+    "sha256": "01770176accca1e257a5fe2f0b3e83f8350eba8f87decc91b1757909f9a59ef4",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-177_PSI-177_Experimental_table_INSPACE4.csv",
+    "sha256": "25fde8e89b2168706a7061397c325f6a8697e703cabea658a9dcec39b0bf13a5",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-17_PSI-17_Experimental_table_ACE-T6_Exp_Table.csv",
+    "sha256": "b0695713da850361f118489f04496cb85484ddd8fb009386d207b807b38a4d09",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-181_PSI-181_Experimental_table_Experimental_Table_PSI_181.csv",
+    "sha256": "8eeede3bc23213668d4e017cc81d98b273fc6e9291ccc6b7084f108dfbe2a35e",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-31_PSI-31_Experimental_table_CAL_BEC_Bubble_Dynamics.csv",
+    "sha256": "312814c59250b5989b8a0c4909a55cd6bbdc27ec42db508da0a75ecbd493c91e",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-35_PSI-35_Experimental_table_CAL_Fundamental_Interactions.csv",
+    "sha256": "635fbda06bb11a5778186d1289956680b605fa86164154f274c3316ce95f0726",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-37_PSI-37_Experimental_table_CFE2.csv",
+    "sha256": "95ba54bb86cdc8fe89dcc0a577085091c984fc796e86395693f6927206dc0915",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-40_PSI-40_Experimental_table_CSLM2.csv",
+    "sha256": "a000d2b8705fd1113dc3c1355fe8106a9b86b2693bc049be21a6824296c4d9ed",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-41_PSI-41_Experimental_table_CSLM2R.csv",
+    "sha256": "5a93d77b9618447f422d359210d83e389efd17f89233fc9f3ac94ecc8c3061fb",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-49_PSI-49_Experimental_table_declic-ali.csv",
+    "sha256": "8bce629e71b5fbf9c4b949067579f0aac19f155fea92fcd011f6924bd9f671a1",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-70_PSI-70_Experimental_table_gradflex.csv",
+    "sha256": "36beb19ac7dfab99906e0ba5729be1100cbfd2d35a24c3c64248dac90b5f8574",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-77_PSI-77_Experimental_table_ExperimentalTable_ISSI.csv",
+    "sha256": "f86b48ff25e76cbae427f03f5196e1bb20456447441519fdf90cd5b083806517",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-84_PSI-84_Experimental_table_MICS_Experiment_Table.csv",
+    "sha256": "5f757e448d9f1cb884eea9a1989f0785fd6c5d7b164fc75e30119889f9c8e9a8",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-8_PSI-8_Experimental_table_Space_Biofilm_Experimental_Table.csv",
+    "sha256": "2a4b95ce7fbc818212f3ce4a21105b68bfdddcc80d8cf2a89ae80405af730221",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-90_PSI-90_Experimental_table_PBRE.csv",
+    "sha256": "1944d5362880e4ddc4386f3d86b710420fbd64d04d34dc197d1c6448edfe6d2c",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-91_PSI-91_Experimental_table_PCS_Exp_Table.csv",
+    "sha256": "a2053287ca8255d94a6682632d2ff1c5e7e435220afc68d85ffaf841ad0048a1",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-91_PSI-91_Experimental_table_PCS_Sample_Table.csv",
+    "sha256": "ba07549939b7456438e88a083f2e7b3e4e33bd8659b22cc09aecac3f709b5694",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-94_PSI-94_Experimental_table_PHaSE_Exp_Table_.csv",
+    "sha256": "620046bbe590c5413b43bd834cb0f2407504b6406f5436f08a98b81fb8c4711a",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   },
+   {
+    "file": "PSI-97_PSI-97_Experimental_table_RSD_AFF.csv",
+    "sha256": "5a6e271f6598909b3fb8367fc74b09e5980aaea7e7f46bf36ad3f47e8474d5f7",
+    "reason": "non-combustion research domain (physical sciences other areas) \u2014 discovered but not imported per relevance policy"
+   }
+  ],
+  "finalRawCsvCount": 24
+ }
+}

@@ -1,0 +1,224 @@
+{
+ "generatedAt": "2026-11-09T05:09:34.866091+00:00",
+ "policy": "Every model below was trained with leakage-checked features and grouped validation. Small-sample models are labelled exploratory. No model is a flight-qualified safety device.",
+ "models": [
+  {
+   "id": "cfig-hot-ignition",
+   "task": "binary classification \u2014 will a CFI-G inverse-config gaseous flame achieve hot ignition?",
+   "pillar": "prevention",
+   "dataset": {
+    "source": "PSI-159_CFI-G_Inverse.csv (NASA PSI, ACME CFI-G)",
+    "rowsReal": 154,
+    "rowsUsed": 146,
+    "positives": 131,
+    "negatives": 15,
+    "excluded": {
+     "emptyPaddingRows": 861,
+     "flashAmbiguous": 8,
+     "blankLabel": 0,
+     "missingFeatures": 0
+    },
+    "features": [
+     "Xf_before",
+     "p_bar",
+     "XO2",
+     "HC_burn_rate",
+     "O2_flow",
+     "Tad_K",
+     "Zst",
+     "fuel_butane",
+     "fuel_ethane",
+     "fuel_propane"
+    ],
+    "excludedAsLeakage": [
+     "TFP (thin-filament pyrometry \u2014 post-test diagnostic)",
+     "Peak burner Temp (post-test)",
+     "burn time (post-test)",
+     "Self-ext or flow term (post-test)",
+     "Color (post-test)",
+     "Xf after test (post-test change)"
+    ]
+   },
+   "validation": "StratifiedGroupKFold n=4 grouped by test Day (12 groups); calibration via sigmoid CV",
+   "metrics": {
+    "logisticCalibrated": {
+     "rocAucMean": 0.682,
+     "rocAucFolds": [
+      0.914,
+      0.038,
+      0.92,
+      0.855
+     ],
+     "balancedAccuracyMean": 0.537,
+     "brierMean": 0.073
+    },
+    "gbmReference": {
+     "rocAucMean": 0.701
+    },
+    "baselines": {
+     "majorityClassRocAuc": 0.5,
+     "singleFeatureXo2RocAuc": 0.728
+    }
+   },
+   "permutationImportance": [
+    {
+     "feature": "Xf_before",
+     "aucDrop": 0.3612
+    },
+    {
+     "feature": "Tad_K",
+     "aucDrop": 0.2691
+    },
+    {
+     "feature": "XO2",
+     "aucDrop": 0.0157
+    },
+    {
+     "feature": "p_bar",
+     "aucDrop": 0.0101
+    },
+    {
+     "feature": "O2_flow",
+     "aucDrop": 0.0094
+    },
+    {
+     "feature": "Zst",
+     "aucDrop": 0.0068
+    },
+    {
+     "feature": "HC_burn_rate",
+     "aucDrop": 0.0034
+    },
+    {
+     "feature": "fuel_ethane",
+     "aucDrop": 0.0026
+    }
+   ],
+   "inBrowserScoring": {
+    "kind": "logistic",
+    "featureNames": [
+     "Xf_before",
+     "p_bar",
+     "XO2",
+     "HC_burn_rate",
+     "O2_flow",
+     "Tad_K",
+     "Zst",
+     "fuel_butane",
+     "fuel_ethane",
+     "fuel_propane"
+    ],
+    "coefStandardized": [
+     -1.7059,
+     -0.3313,
+     -0.4338,
+     -0.0445,
+     -0.1823,
+     1.7687,
+     -0.2663,
+     -0.1297,
+     0.1397,
+     -0.0023
+    ],
+    "intercept": 1.0748,
+    "note": "Apply to z-scored features using means/stds below; score = sigmoid(intercept + X\u00b7coef).",
+    "means": [
+     0.15088,
+     1.76332,
+     0.60705,
+     1.37521,
+     4.99826,
+     2431.67875,
+     0.46864,
+     0.39726,
+     0.30822,
+     0.29452
+    ],
+    "stds": [
+     0.09904,
+     1.05367,
+     0.27788,
+     0.65783,
+     2.3841,
+     327.10888,
+     0.1885,
+     0.48933,
+     0.46176,
+     0.45583
+    ]
+   },
+   "limitations": [
+    "Small sample (146 labelled rows, 15 negatives) \u2014 exploratory evidence, not a flight-qualifiable predictor.",
+    "Groups are test days; day-specific operator/setup effects are partially controlled but not fully independent.",
+    "Applicability domain limited to CFI-G inverse configuration (ethane/propane/butane, XO2 0.15\u20130.5, ~1 bar).",
+    "'flash' outcomes (8 rows) are excluded as ambiguous \u2014 never counted as negatives."
+   ],
+   "trainedAt": "2026-11-09T05:09:34.430968+00:00",
+   "framework": "scikit-learn 1.5.2",
+   "artifact": "models/cfig-hot-ignition/v1/",
+   "status": "exploratory",
+   "statusDetail": "Small-sample exploratory model. The calibrated multivariate logistic model does NOT yet outperform the single-feature XO2 baseline (see metrics) \u2014 reported honestly rather than tuned away. Retained as a registered, reproducible baseline for future data."
+  },
+  {
+   "id": "spice-flame-duration",
+   "task": "regression \u2014 log flame burn duration (s) of SPICE co-flow smoke-point tests",
+   "pillar": "detection",
+   "dataset": {
+    "source": "PSI-107_SPICE.csv (NASA PSI, SPICE)",
+    "rowsUsed": 370,
+    "excluded": {
+     "missingTimes": 85,
+     "missingFeatures": 7,
+     "nonpositiveDuration": 7
+    },
+    "features": [
+     "nozzle_mm",
+     "fuel_rate_sccm",
+     "air_rate_cm_s",
+     "fuel_50% Propylene",
+     "fuel_75% Propylene",
+     "fuel_Ethylene",
+     "fuel_Methane",
+     "fuel_Propane",
+     "fuel_Propylene"
+    ],
+    "target": "ln(1 + burn duration seconds), burn duration = GMT Flame Off \u2212 GMT ignition",
+    "fuelCategories": [
+     "50% Propylene",
+     "75% Propylene",
+     "Ethylene",
+     "Methane",
+     "Propane",
+     "Propylene"
+    ]
+   },
+   "validation": "GroupKFold n=4 grouped by GMT test date",
+   "metrics": {
+    "ridge": {
+     "rmseLogMean": 0.5943,
+     "maeLogMean": 0.4852,
+     "r2Mean": -0.409
+    },
+    "gbm": {
+     "rmseLogMean": 0.5979,
+     "maeLogMean": 0.472,
+     "r2Mean": -0.367
+    },
+    "baselineFuelMean": {
+     "rmseLogMean": 0.5817,
+     "maeLogMean": 0.4682
+    }
+   },
+   "limitations": [
+    "Burn duration is derived from operator-logged GMT timestamps; timestamp resolution and logging practice vary.",
+    "Duplicate timestamps appear in the source (replicate records) \u2014 grouped validation mitigates but does not eliminate overlap effects.",
+    "Applicability domain limited to SPICE fuels/nozzles/flow ranges; extrapolation unsupported."
+   ],
+   "trainedAt": "2026-11-09T05:09:34.865061+00:00",
+   "framework": "scikit-learn 1.5.2",
+   "artifact": "models/spice-flame-duration/v1/",
+   "status": "negative-result",
+   "statusDetail": "Neither ridge nor gradient boosting beats the per-fuel mean-duration baseline under grouped (by-date) validation. Honest conclusion: pre-test features in this table do not generalise across test dates for burn duration. Retained for transparency and future re-evaluation; NOT offered as a predictor in the UI playground."
+  }
+ ]
+}

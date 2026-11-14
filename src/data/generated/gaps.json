@@ -1,0 +1,99 @@
+{
+ "generatedAt": "2026-11-13T18:58:39Z",
+ "gaps": [
+  {
+   "id": "gap-partial-g",
+   "topic": "Partial-gravity (lunar 0.166 g / Martian 0.38 g) combustion outcomes",
+   "status": "no-evidence-found",
+   "detail": "The PSI corpus does not provide validated lunar/Mars combustion outcome data. Microgravity data are not direct lunar/Mars validation. FLEX model guard rejects > 0.02 g.",
+   "related": [
+    "PSI-69",
+    "model:flex-extinction-v2"
+   ],
+   "specRef": "integrity case 'No partial gravity'"
+  },
+  {
+   "id": "gap-media-batch",
+   "topic": "2,393 historically indexed research media binaries (batches B-20261109-001..004)",
+   "status": "inaccessible",
+   "detail": "Original uploaded batch archives are not available in this environment. The platform uses authentic NASA Images API media with per-item provenance instead, and displays this gap honestly.",
+   "related": [],
+   "specRef": "R001"
+  },
+  {
+   "id": "gap-bass-outcomes",
+   "topic": "BASS/BASS-II measured flame-spread outcomes",
+   "status": "absent",
+   "detail": "Main bundled records are test-condition/planning inventories; measured spread-rate labels do not exist in these tables. Do not infer outcomes.",
+   "related": [
+    "PSI-25",
+    "PSI-26"
+   ],
+   "specRef": "integrity case 'BASS/BASS-II'"
+  },
+  {
+   "id": "gap-cld-ch5-14",
+   "topic": "PSI-21 CLD gas-bottle labels CH5-CH14",
+   "status": "not-indexed",
+   "detail": "Labels identified as copy-down/categorical data-integrity errors; resolution requires source references, not regex guesses.",
+   "related": [
+    "PSI-21"
+   ],
+   "specRef": "integrity case 'PSI-21 ACME CLD'"
+  },
+  {
+   "id": "gap-saffire3-rows",
+   "topic": "SAFFIRE-III per-flight outcome rows",
+   "status": "absent",
+   "detail": "PSI-100 table contains a two-row summary; must not be inflated to the number of flight tests.",
+   "related": [
+    "PSI-100"
+   ],
+   "specRef": "integrity case 'SAFFIRE-III'"
+  },
+  {
+   "id": "gap-flex-co-he",
+   "topic": "FLEX missing CO/He ambient values",
+   "status": "absent",
+   "detail": "Missing values must not be replaced by zero unless source semantics establish true absence; they are excluded from model features when unknown.",
+   "related": [
+    "PSI-69"
+   ],
+   "specRef": "integrity case 'FLEX gas fields'"
+  },
+  {
+   "id": "gap-labeled-flame-images",
+   "topic": "Labelled flame-image masks for computer-vision training",
+   "status": "no-evidence-found",
+   "detail": "No annotated segmentation masks exist in recovered public assets. CV models are therefore NOT trained or claimed (spec deep-learning policy).",
+   "related": [],
+   "specRef": "deep_learning_policy.image_video"
+  },
+  {
+   "id": "gap-field-data-pinn",
+   "topic": "PDE/field data for physics-informed neural operators",
+   "status": "no-evidence-found",
+   "detail": "Sparse flat CSVs do not provide the mesh/time field data required for PINN/FNO training; no simulation is claimed.",
+   "related": [],
+   "specRef": "deep_learning_policy.pinn_neural_operator"
+  },
+  {
+   "id": "gap-flex-calibration",
+   "topic": "FLEX model probability calibration",
+   "status": "not-indexed",
+   "detail": "Model output is an uncalibrated relative score; calibration requires independent reproduction (isotonic/Platt on held-out groups) before any probability claim.",
+   "related": [
+    "model:flex-extinction-v2"
+   ],
+   "specRef": "FLEX_PSI69.calibration"
+  },
+  {
+   "id": "gap-pinn-synthetic",
+   "topic": "Synthetic simulation datasets for augmentation",
+   "status": "not-indexed",
+   "detail": "No validated simulator configuration is registered; NASA rows are never inflated with synthetic data (spec rule).",
+   "related": [],
+   "specRef": "deep_learning_policy.synthetic_data"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+# ZERO FLARE — FLAME EVIDENCE LAB · git ignore
+
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# opennext / cloudflare
+.open-next/
+.wrangler/
+.wrangler-*/
+
+# env & secrets (never commit real keys)
+.env
+.env.*
+!.env.example
+
+# local runtime state (recreated by the app)
+data/workspace/
+data/raw/
+data/extracted/
+data/normalized/
+data/curated/
+data/derived/
+data/media/
+data/sync/
+upload/
+db/*.db
+db/*.db-journal
+
+# generated corpus mirror (rebuilt by scripts/cloudflare/sync-corpus.mjs)
+public/corpus/
+
+# logs
+dev.log
+server.log
+*.log
+
+# tests & tooling
+test-results/
+playwright-report/
+tsconfig.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# local tooling state
+.mimosa/

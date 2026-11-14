@@ -1,0 +1,31 @@
+// ZERO FLARE — FLAME EVIDENCE LAB · Cloudflare Workers deployment configuration
+// Runtime: @opennextjs/cloudflare (Next.js 16 on Workers with Static Assets)
+// Bindings:
+//   DB     — D1 (SQLite): durable research workspace (saved items, conversations,
+//            scenario snapshots) + edge ingest metadata overlay
+//   AI     — Workers AI: zero-key CIR-1 synthesis provider (llama-3.3-70b-instruct)
+//   ASSETS — static assets (OpenNext-managed; also mirrors the open corpus under /corpus)
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zero-flare-lab",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "zero-flare-lab",
+      "database_id": "a247f12e-2973-4139-b2cb-a120a4625a2a"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "manifestVersion": "1.0",
+  "generatedAt": "2026-11-12T17:00:00Z",
+  "product": "ZERO FLARE — FLAME EVIDENCE LAB (merged final build)",
+  "note": "Source-artifact manifest: the six supplied version archives + the data corpus, with SHA-256 identities. The ZIP/TAR pair per version carries the same tree; TARs are the authoritative full sources.",
+  "canonicalLabels": {
+    "ORIGINAL_MAIN": "original and main version.tar/.zip — V7 rebuild of the product spine (Nov 11-12): consolidated IA, copilot, 51-equation registry, honest model registry, 22-table corpus",
+    "SECOND_EVIDENCE": "Second Version.tar/.zip — evidence/data governance layer: batched ingestion pipeline, EDA engine, source-sync, model policy, NASA GLB assets, fire-safety engine",
+    "THIRD_PRESENTATION": "Third Version.tar/.zip — simplified 8-view presentation layer: grouped nav, command palette, equation resolver, contextual graph, My Work export",
+    "DATA_CORPUS": "data.zip — official NASA PSI investigation archives (22 zips), NASA facility PDFs, reference textbooks, journal papers"
+  },
+  "artifacts": [
+    {
+      "artifactId": "SRC-ORIGINAL-MAIN-TAR",
+      "file": "original and main version.tar",
+      "canonicalLabel": "ORIGINAL_MAIN",
+      "bytes": 262341186,
+      "sha256": "e5f85c1c2081799fbd9e4c14ce53012892424bcdd0a2b98aa93043a0daa45728",
+      "role": "product spine — primary foundation",
+      "status": "verified"
+    },
+    {
+      "artifactId": "SRC-ORIGINAL-MAIN-ZIP",
+      "file": "original and main version.zip",
+      "canonicalLabel": "ORIGINAL_MAIN",
+      "bytes": 6018645,
+      "sha256": "2b726ceb6e408b61302833be76f0e3ac99e5a02a2d19cf19ba2e10aa8cdea4e8",
+      "role": "reports + screenshots subset of the same tree",
+      "status": "verified"
+    },
+    {
+      "artifactId": "SRC-SECOND-TAR",
+      "file": "Second Version.tar",
+      "canonicalLabel": "SECOND_EVIDENCE",
+      "bytes": 125059525,
+      "sha256": "de1846e41c52cdf4a2e25a35d3f33e1cba3ec6744be319d959073cda4b262788",
+      "role": "evidence, data engineering, QA and governance layer",
+      "status": "verified"
+    },
+    {
+      "artifactId": "SRC-SECOND-ZIP",
+      "file": "Second Version.zip",
+      "canonicalLabel": "SECOND_EVIDENCE",
+      "bytes": 116588217,
+      "sha256": "22ef364be784b69ba51c8693e6e64ca79b52a70c265fe4ed2ee6ea76c30df50e",
+      "role": "reports + screenshots subset of the same tree",
+      "status": "verified"
+    },
+    {
+      "artifactId": "SRC-THIRD-TAR",
+      "file": "Third Version.tar",
+      "canonicalLabel": "THIRD_PRESENTATION",
+      "bytes": 12242481,
+      "sha256": "23cd5a5226dd31c5a9515692d35d3b6a17213f31a3a52b1f3936b1e523d0f346",
+      "role": "UX simplification and presentation layer",
+      "status": "verified"
+    },
+    {
+      "artifactId": "SRC-THIRD-ZIP",
+      "file": "third Version.zip",
+      "canonicalLabel": "THIRD_PRESENTATION",
+      "bytes": 12358236,
+      "sha256": "839202262805e642f0dc7eaea20b93ee5651a92bd5d24b9dbdf3d8db02a0bf76",
+      "role": "same Next.js tree as Third Version.tar (contains .git history)",
+      "status": "verified"
+    },
+    {
+      "artifactId": "SRC-DATA-CORPUS",
+      "file": "data.zip",
+      "canonicalLabel": "DATA_CORPUS",
+      "bytes": 600303385,
+      "sha256": "1999cd7a63e46a6b6bfecabcbcbd38d68dd948441a6596f54d1ef3569a34ff0b",
+      "role": "raw scientific corpus: 22 PSI investigation archives + NASA facility PDFs + reference textbooks + journal papers",
+      "status": "verified"
+    },
+    {
+      "artifactId": "SRC-BRAND-ART",
+      "file": "spaceapps_cosmic_iss_background.png",
+      "canonicalLabel": "BRAND_REFERENCE",
+      "bytes": null,
+      "sha256": "recorded-in-CANONICAL_DATA_MANIFEST.json (asset layer)",
+      "role": "ZERO FLARE brand art: emblem extracted to a round badge (public/brand/zero-flare-emblem.png); full art used as Mission hero backdrop. Wordmark preserved independently.",
+      "status": "verified"
+    }
+  ],
+  "mergeRule": "Original/Main is the product spine; Second's verified data/governance components are ported into it; Third's navigation/UX patterns are adopted. No wholesale replacement, no directory-level concatenation of the three trees."
+}

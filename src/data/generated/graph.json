@@ -1,0 +1,936 @@
+{
+ "generatedAt": "2026-11-13T18:58:39Z",
+ "honesty": "Edges are typed, evidence-carrying links derived from PSI metadata fields and table columns. They are NOT inferred causal or semantic relations. reviewStatus marks source-reported vs recomputed vs needs-review.",
+ "edgeTypes": [
+  "uses_equipment",
+  "studies_fuel",
+  "related_investigation",
+  "produced_model",
+  "tests_diluent",
+  "conducted_in",
+  "related_evidence"
+ ],
+ "typeColors": {
+  "investigation": "#D2451E",
+  "facility": "#1F6FB2",
+  "apparatus": "#5B8DB8",
+  "sensor": "#3E9B7A",
+  "material": "#B08A2E",
+  "fuel": "#C26415",
+  "suppressant": "#7C6BAF",
+  "model": "#9A5B8F",
+  "mission-environment": "#4E5D6C"
+ },
+ "nodes": [
+  {
+   "id": "PSI-142",
+   "type": "investigation",
+   "label": "Quantitative Studies of Cool Flame Transitions a",
+   "title": "Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames",
+   "doi": "10.60555/80qf-vj95",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/142"
+  },
+  {
+   "id": "MDCA/FLEX",
+   "type": "apparatus",
+   "label": "MDCA/FLEX"
+  },
+  {
+   "id": "PSI-62",
+   "type": "investigation",
+   "label": "Concurrent Flame Spread Modeling using Flamelet ",
+   "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+   "doi": "10.60555/e9xp-ex83",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/62"
+  },
+  {
+   "id": "BASS",
+   "type": "apparatus",
+   "label": "BASS"
+  },
+  {
+   "id": "PSI-60",
+   "type": "investigation",
+   "label": "Computational and Experimental Analysis of SPICE",
+   "title": "Computational and Experimental Analysis of SPICE Data Sets",
+   "doi": "10.60555/mzjm-yv57",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/60"
+  },
+  {
+   "id": "SPICE",
+   "type": "apparatus",
+   "label": "SPICE"
+  },
+  {
+   "id": "PSI-26",
+   "type": "investigation",
+   "label": "BASS",
+   "title": "Burning and Suppression of Solids",
+   "doi": "10.60555/58h4-dy80",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/26"
+  },
+  {
+   "id": "MSG",
+   "type": "facility",
+   "label": "MSG"
+  },
+  {
+   "id": "PSI-106",
+   "type": "investigation",
+   "label": "SLICE",
+   "title": "Structure and Liftoff In Combustion Experiment",
+   "doi": "10.60555/pm12-rg61",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/106"
+  },
+  {
+   "id": "PSI-98",
+   "type": "investigation",
+   "label": "SAFFIRE",
+   "title": "Spacecraft Fire Safety Experiment-I",
+   "doi": "10.60555/0t15-1z43",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/98"
+  },
+  {
+   "id": "SAFFIRE instrument",
+   "type": "apparatus",
+   "label": "SAFFIRE instrument"
+  },
+  {
+   "id": "PSI-117",
+   "type": "investigation",
+   "label": "Effect of External Thermo-Convective Perturbatio",
+   "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis",
+   "doi": "10.60555/gz0q-b577",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/117"
+  },
+  {
+   "id": "PSI-115",
+   "type": "investigation",
+   "label": "SAME",
+   "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+   "doi": "10.60555/q0v5-1v28",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/115"
+  },
+  {
+   "id": "SAME",
+   "type": "apparatus",
+   "label": "SAME"
+  },
+  {
+   "id": "PSI-47",
+   "type": "investigation",
+   "label": "DAFT",
+   "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+   "doi": "10.60555/ztgj-d202",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/47"
+  },
+  {
+   "id": "PSI-100",
+   "type": "investigation",
+   "label": "Spacecraft Fire Experiment-III",
+   "title": "Spacecraft Fire Experiment-III",
+   "doi": "10.60555/040q-4h36",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/100"
+  },
+  {
+   "id": "PSI-39",
+   "type": "investigation",
+   "label": "CFI",
+   "title": "Cool Flames Investigation",
+   "doi": "10.60555/m6pj-a914",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/39"
+  },
+  {
+   "id": "CIR",
+   "type": "facility",
+   "label": "CIR"
+  },
+  {
+   "id": "PSI-102",
+   "type": "investigation",
+   "label": "Smoke and Aerosol Measurement Experiment",
+   "title": "Smoke and Aerosol Measurement Experiment",
+   "doi": "10.60555/gd4k-8h62",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/102"
+  },
+  {
+   "id": "PSI-159",
+   "type": "investigation",
+   "label": "ACME",
+   "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases",
+   "doi": "10.60555/cyt1-kh64",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/159"
+  },
+  {
+   "id": "ACME chamber",
+   "type": "apparatus",
+   "label": "ACME chamber"
+  },
+  {
+   "id": "fuel:Butane",
+   "type": "fuel",
+   "label": "Butane"
+  },
+  {
+   "id": "fuel:Ethane",
+   "type": "fuel",
+   "label": "Ethane"
+  },
+  {
+   "id": "fuel:Propane",
+   "type": "fuel",
+   "label": "Propane"
+  },
+  {
+   "id": "PSI-101",
+   "type": "investigation",
+   "label": "SAME",
+   "title": "Smoke Aerosol Measurement Experiment-Reflight",
+   "doi": "10.60555/2np7-jv14",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/101"
+  },
+  {
+   "id": "PSI-25",
+   "type": "investigation",
+   "label": "BASS",
+   "title": "Burning and Suppression of Solids - II",
+   "doi": "10.60555/4qc4-de67",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/25"
+  },
+  {
+   "id": "PSI-99",
+   "type": "investigation",
+   "label": "Spacecraft Fire Experiment-II",
+   "title": "Spacecraft Fire Experiment-II",
+   "doi": "10.60555/2chp-m469",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/99"
+  },
+  {
+   "id": "PSI-22",
+   "type": "investigation",
+   "label": "ACME",
+   "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+   "doi": "10.60555/se5a-8c73",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/22"
+  },
+  {
+   "id": "PSI-107",
+   "type": "investigation",
+   "label": "SPICE",
+   "title": "Smoke Point In Co-flow Experiment",
+   "doi": "10.60555/9kbh-e962",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/107"
+  },
+  {
+   "id": "fuel:Ethylene",
+   "type": "fuel",
+   "label": "Ethylene"
+  },
+  {
+   "id": "fuel:Methane",
+   "type": "fuel",
+   "label": "Methane"
+  },
+  {
+   "id": "fuel:Propylene",
+   "type": "fuel",
+   "label": "Propylene"
+  },
+  {
+   "id": "PSI-21",
+   "type": "investigation",
+   "label": "ACME",
+   "title": "Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame",
+   "doi": "10.60555/23e1-9950",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/21"
+  },
+  {
+   "id": "PSI-20",
+   "type": "investigation",
+   "label": "ACME",
+   "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+   "doi": "10.60555/vb93-3y72",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/20"
+  },
+  {
+   "id": "PSI-23",
+   "type": "investigation",
+   "label": "ACME",
+   "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+   "doi": "10.60555/k57n-p030",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/23"
+  },
+  {
+   "id": "PSI-10",
+   "type": "investigation",
+   "label": "ACME",
+   "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+   "doi": "10.60555/w4zy-bt45",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/10"
+  },
+  {
+   "id": "PSI-69",
+   "type": "investigation",
+   "label": "FLEX",
+   "title": "Flame Extinguishment Experiment",
+   "doi": "10.60555/mbq8-0451",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/69"
+  },
+  {
+   "id": "FCF",
+   "type": "facility",
+   "label": "FCF"
+  },
+  {
+   "id": "fuel:Heptane",
+   "type": "fuel",
+   "label": "Heptane"
+  },
+  {
+   "id": "fuel:Methanol",
+   "type": "fuel",
+   "label": "Methanol"
+  },
+  {
+   "id": "PSI-68",
+   "type": "investigation",
+   "label": "FLEX",
+   "title": "Flame Extinguishment Experiment - 2",
+   "doi": "10.60555/byp8-h018",
+   "url": "https://psi.nasa.gov/physci/repo/investigation/68"
+  },
+  {
+   "id": "PSI-108",
+   "type": "investigation",
+   "label": "Surface Tension Driven Convection Experiment-1",
+   "title": "Surface Tension Driven Convection Experiment-1",
+   "doi": "10.60555/j1z3-bw42",
+   "url": null
+  },
+  {
+   "id": "model:flex-extinction-v2",
+   "type": "model",
+   "label": "FLEX extinction model v2",
+   "status": "verified-reproduction"
+  },
+  {
+   "id": "model:cfig-hot-ignition",
+   "type": "model",
+   "label": "CFI-G hot ignition (exploratory)",
+   "status": "exploratory"
+  },
+  {
+   "id": "model:spice-flame-duration",
+   "type": "model",
+   "label": "SPICE flame duration (negative result)",
+   "status": "negative-result"
+  },
+  {
+   "id": "suppressant:CO2",
+   "type": "suppressant",
+   "label": "Carbon dioxide (CO2)"
+  },
+  {
+   "id": "suppressant:He",
+   "type": "suppressant",
+   "label": "Helium (diluent)"
+  },
+  {
+   "id": "suppressant:N2",
+   "type": "suppressant",
+   "label": "Nitrogen (diluent)"
+  },
+  {
+   "id": "suppressant:water-mist",
+   "type": "suppressant",
+   "label": "Water mist"
+  },
+  {
+   "id": "env:earth",
+   "type": "mission-environment",
+   "label": "Earth reference"
+  },
+  {
+   "id": "env:iss",
+   "type": "mission-environment",
+   "label": "ISS"
+  },
+  {
+   "id": "env:moon",
+   "type": "mission-environment",
+   "label": "Lunar habitat (concept)"
+  },
+  {
+   "id": "env:mars",
+   "type": "mission-environment",
+   "label": "Mars habitat (concept)"
+  },
+  {
+   "id": "env:spacecraft",
+   "type": "mission-environment",
+   "label": "Spacecraft cabin (concept)"
+  }
+ ],
+ "edges": [
+  {
+   "source": "PSI-142",
+   "dst": "MDCA/FLEX",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-142",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-142",
+   "dst": "PSI-69",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-142",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-62",
+   "dst": "BASS",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-62",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-62",
+   "dst": "PSI-25",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-62",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-62",
+   "dst": "PSI-26",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-62",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-60",
+   "dst": "SPICE",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-60",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-60",
+   "dst": "PSI-107",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-60",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-26",
+   "dst": "MSG",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-26",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-26",
+   "dst": "PSI-107",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-26",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-26",
+   "dst": "PSI-25",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-26",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-106",
+   "dst": "PSI-107",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-106",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-98",
+   "dst": "SAFFIRE instrument",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-98",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-98",
+   "dst": "PSI-99",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-98",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-98",
+   "dst": "PSI-100",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-98",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-98",
+   "dst": "PSI-26",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-98",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-117",
+   "dst": "MDCA/FLEX",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-117",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-117",
+   "dst": "PSI-69",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-117",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-117",
+   "dst": "PSI-142",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-117",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-115",
+   "dst": "SAME",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-115",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-115",
+   "dst": "PSI-102",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-115",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-47",
+   "dst": "PSI-102",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-47",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-100",
+   "dst": "SAFFIRE instrument",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-100",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-100",
+   "dst": "PSI-99",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-100",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-100",
+   "dst": "PSI-98",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-100",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-39",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-39",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-39",
+   "dst": "MDCA/FLEX",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-39",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-39",
+   "dst": "PSI-69",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-39",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-102",
+   "dst": "PSI-101",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-102",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-159",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-159",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-159",
+   "dst": "ACME chamber",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-159",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-159",
+   "dst": "fuel:Butane",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-159 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-159",
+   "dst": "fuel:Ethane",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-159 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-159",
+   "dst": "fuel:Propane",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-159 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-101",
+   "dst": "SAME",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-101",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-101",
+   "dst": "PSI-102",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-101",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-25",
+   "dst": "MSG",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-25",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-25",
+   "dst": "BASS",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-25",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-25",
+   "dst": "PSI-26",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-25",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-99",
+   "dst": "SAFFIRE instrument",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-99",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-22",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-22",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-22",
+   "dst": "ACME chamber",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-22",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-22",
+   "dst": "PSI-23",
+   "type": "related_investigation",
+   "evidence": "PSI metadata: Related Investigations field of PSI-22",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-107",
+   "dst": "MSG",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-107",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-107",
+   "dst": "fuel:Ethylene",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-107 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-107",
+   "dst": "fuel:Methane",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-107 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-107",
+   "dst": "fuel:Propane",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-107 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-107",
+   "dst": "fuel:Propylene",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-107 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-21",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-21",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-21",
+   "dst": "ACME chamber",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-21",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-20",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-20",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-20",
+   "dst": "ACME chamber",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-20",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-23",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-23",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-23",
+   "dst": "ACME chamber",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-23",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-10",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-10",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-10",
+   "dst": "ACME chamber",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-10",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-69",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "FCF",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-69",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "MDCA/FLEX",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-69",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "fuel:Heptane",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-69 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "fuel:Methanol",
+   "type": "studies_fuel",
+   "evidence": "fuel column in PSI-69 experimental table (NASA PSI)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-68",
+   "dst": "CIR",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-68",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-68",
+   "dst": "MDCA/FLEX",
+   "type": "uses_equipment",
+   "evidence": "PSI metadata: hardware/title of PSI-68",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "model:flex-extinction-v2",
+   "type": "produced_model",
+   "evidence": "trained on PSI-69_FLEX.csv (recovered, sha256-verified)",
+   "confidence": "verified",
+   "reviewStatus": "recomputed"
+  },
+  {
+   "source": "PSI-159",
+   "dst": "model:cfig-hot-ignition",
+   "type": "produced_model",
+   "evidence": "spec-preserved coefficients validated on recovered PSI-159 inverse table",
+   "confidence": "verified",
+   "reviewStatus": "recomputed"
+  },
+  {
+   "source": "PSI-107",
+   "dst": "model:spice-flame-duration",
+   "type": "produced_model",
+   "evidence": "recorded negative result (spec) \u2014 ridge/GBM below fuel-mean baseline",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "suppressant:He",
+   "type": "tests_diluent",
+   "evidence": "FLEX ambient He mole-fraction column",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "suppressant:CO2",
+   "type": "tests_diluent",
+   "evidence": "FLEX ambient CO mole-fraction column (CO/CO2 space)",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-98",
+   "dst": "suppressant:water-mist",
+   "type": "related_evidence",
+   "evidence": "SAFFIRE-I flight experiments include suppression-relevant material burns",
+   "confidence": "qualitative",
+   "reviewStatus": "needs-review"
+  },
+  {
+   "source": "PSI-69",
+   "dst": "env:iss",
+   "type": "conducted_in",
+   "evidence": "FLEX operated in the ISS Combustion Integrated Rack",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  },
+  {
+   "source": "PSI-98",
+   "dst": "env:spacecraft",
+   "type": "conducted_in",
+   "evidence": "SAFFIRE flew on Cygnus after ISS departure",
+   "confidence": "recorded",
+   "reviewStatus": "source-reported"
+  }
+ ]
+}

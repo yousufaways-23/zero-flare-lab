@@ -1,0 +1,966 @@
+{
+  "batchId": "B-20261113-004",
+  "receivedAt": "2026-11-13T15:15:45.035Z",
+  "fileCount": 10,
+  "files": [
+    {
+      "id": "f001",
+      "name": "PSI-69_record.txt",
+      "sizeBytes": 6391,
+      "sha256": "8bd211c886db1cdc45ae8414946ab4513cda9456706db90b30bbe2c8992d33e4",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 6385,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f001-PSI-69_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/mbq8-0451"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "PSI-69_record.txt",
+          "location": "document body",
+          "context": "f, e, t, y, , , , , , F, l, a, m, e, s OBJECTIVES: The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "PSI-69_record.txt",
+          "location": "document body",
+          "context": "byproducts during fire events. Additionally, the study of ''cool flames'' and low-temperature combustion processes observed in microgravity can inform the desi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-69_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/mbq8-0451 | SOURCE: KEYWORDS: F, L, E, X, , , ,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-69_record.txt",
+          "location": "document body",
+          "context": "nd terrestrial fire safety technologies. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR)-Fluids and Combustion Facility (FCF) Multi-user Droplet Combustio",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-mdca",
+          "entityLabel": "MDCA",
+          "entityType": "apparatus",
+          "source": "PSI-69_record.txt",
+          "location": "document body",
+          "context": "on Facility (FCF) Multi-user Droplet Combustion Appartatus (MDCA)\", \"Link\": \"https://issnationallab.org/facilities/combustion-integrated-rack/ https://gipoc.g",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-69_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/mbq8-",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-69",
+        "titleConfidence": "medium",
+        "doi": "10.60555/mbq8-0451",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f001-PSI-69_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f001.extract.json",
+      "processingMs": 66
+    },
+    {
+      "id": "f002",
+      "name": "PSI-98_record.txt",
+      "sizeBytes": 3935,
+      "sha256": "4000a663ba84c409698d8cb5a6949024ee7b951bd315a2e5080005d5eb9df268",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3927,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f002-PSI-98_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/0t15-1z43"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-saffire",
+          "entityLabel": "SAFFIRE",
+          "entityType": "investigation",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "gravity material flammability screening test. APPROACH: The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deber",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/0t15-1z43 | SOURCE: KEYWORDS: C, y, g, n, u, s, ,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "gnus\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/msg/saffire/\"} RECOVERED TABLES: (0 rows)",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cygnus",
+          "entityLabel": "Cygnus cargo vehicle",
+          "entityType": "facility",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a com",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "Science / Spacecraft Fire, Smoke Distribution PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/0t15-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-exploration",
+          "entityLabel": "Exploration vehicle / habitat",
+          "entityType": "mission-environment",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "xperiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instru",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-flow",
+          "entityLabel": "Flow controller / anemometer",
+          "entityType": "sensor",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "e used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked. HYPOTHESIS:",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "r Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-fiberglass",
+          "entityLabel": "Fiberglass",
+          "entityType": "material",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experim",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "PSI-98_record.txt",
+          "location": "document body",
+          "context": "igh. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame.",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-98",
+        "titleConfidence": "medium",
+        "doi": "10.60555/0t15-1z43",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f002-PSI-98_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f002.extract.json",
+      "processingMs": 21
+    },
+    {
+      "id": "f003",
+      "name": "PSI-99_record.txt",
+      "sizeBytes": 3942,
+      "sha256": "14aa17693cc496694a66453deb18c7f086f384923fe89a8fa2d625d322c5535d",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3934,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f003-PSI-99_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/2chp-m469"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-saffire",
+          "entityLabel": "SAFFIRE",
+          "entityType": "investigation",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": ", s, t, r, i, b, u, t, i, o, n OBJECTIVES: The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "cience’s Cygnus resupply vehicle after it deberthed from the ISS. As a follow on to the Saffire-I investigation, the Saffire-II investigation added more samples",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cygnus",
+          "entityLabel": "Cygnus cargo vehicle",
+          "entityType": "facility",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: Cygnus Spacecraft DOI: 10.60555/2chp-m469 | SOURCE: KEYWORDS: f, i, r, e, , , , , , C, y, g,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "AREA: Combustion Science / Surface Combustion PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: Cygnus Spacecraft DOI: 10.60555/2chp-m469 | SOURCE:",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-exploration",
+          "entityLabel": "Exploration vehicle / habitat",
+          "entityType": "mission-environment",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "xperiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instru",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-flow",
+          "entityLabel": "Flow controller / anemometer",
+          "entityType": "sensor",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "e used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked. Details rel",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "tion added more samples including SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex. The Saffire-1I flight unit had a sample card installed in the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "n, the Saffire-II investigation added more samples including SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex. The Saffire-1I flight unit had a s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-nomex",
+          "entityLabel": "Nomex",
+          "entityType": "material",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "ng SIBAL, silicone, structure PMMA, flat PMMA, and PMMA with Nomex. The Saffire-1I flight unit had a sample card installed in the middle of a large flow duct. A",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "PSI-99_record.txt",
+          "location": "document body",
+          "context": "igh. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame.",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-99",
+        "titleConfidence": "medium",
+        "doi": "10.60555/2chp-m469",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f003-PSI-99_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f003.extract.json",
+      "processingMs": 23
+    },
+    {
+      "id": "f004",
+      "name": "PSI-100_record.txt",
+      "sizeBytes": 3586,
+      "sha256": "825c4c4835be5275c9ecc97199b8a657cc5e0558c58dd49822bbb22883b3d9bc",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3578,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f004-PSI-100_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/040q-4h36"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-saffire",
+          "entityLabel": "SAFFIRE",
+          "entityType": "investigation",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "gravity material flammability screening test. APPROACH: The Saffire-III experiments were performed on the Orbital Science’s Cygnus resupply vehicle after it de",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/040q-4h36 | SOURCE: KEYWORDS: S, A, F, F, I, R, E,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "gnus\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/msg/saffire/\"} RECOVERED TABLES: (0 rows)",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cygnus",
+          "entityLabel": "Cygnus cargo vehicle",
+          "entityType": "facility",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "fire-III experiments were performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. As a follow on to the Saffire 1 investigat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/040q-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-exploration",
+          "entityLabel": "Exploration vehicle / habitat",
+          "entityType": "mission-environment",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "xperiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instru",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-flow",
+          "entityLabel": "Flow controller / anemometer",
+          "entityType": "sensor",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "e used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked. Details rel",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "ire 1 investigation, the Saffire III investigation also used SIBAL as the sample material. However, the experiments were conducted at a flow velocity of 30 cm/s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "PSI-100_record.txt",
+          "location": "document body",
+          "context": "igh. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame.",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-100",
+        "titleConfidence": "medium",
+        "doi": "10.60555/040q-4h36",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f004-PSI-100_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f004.extract.json",
+      "processingMs": 32
+    },
+    {
+      "id": "f005",
+      "name": "PSI-101_record.txt",
+      "sizeBytes": 4774,
+      "sha256": "0f1d5369b9c03409fc9d9a0132e5ecfb175fd9c6fc26fa80d7590bf42b453c62",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "aerosol-smoke",
+      "text": {
+        "chars": 4767,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f005-PSI-101_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/2np7-jv14"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-same",
+          "entityLabel": "SAME",
+          "entityType": "investigation",
+          "source": "PSI-101_record.txt",
+          "location": "document body",
+          "context": "NASA PSI INVESTIGATION RECORD — PSI-101 TITLE: Smoke Aerosol Measurement Experiment-Reflight SHORT LABEL: RESEARCH AREA: Combustion Science / Spa",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-samer",
+          "entityLabel": "SAME-R",
+          "entityType": "investigation",
+          "source": "PSI-101_record.txt",
+          "location": "document body",
+          "context": "he original SAME investigation, the primary objective of the SAME-R investigation was to quantify the sizes that the liquid smoke particulate achieves in low gr",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-101_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/2np7-jv14 | SOURCE: KEYWORDS: S, o, o, t, , , ,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-101_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/2np7-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-smoke-detector",
+          "entityLabel": "Smoke detector",
+          "entityType": "sensor",
+          "source": "PSI-101_record.txt",
+          "location": "document body",
+          "context": "ercial Diagnostic Enclosures that includes a DustTrak and an ionization detector used in SAME. SAME-R flight tests were conducted from July 16, to September 9,",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-101",
+        "titleConfidence": "medium",
+        "doi": "10.60555/2np7-jv14",
+        "years": [
+          2010
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f005-PSI-101_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f005.extract.json",
+      "processingMs": 17
+    },
+    {
+      "id": "f006",
+      "name": "PSI-102_record.txt",
+      "sizeBytes": 4231,
+      "sha256": "612926b9247fc45ac65b7af840dcc253c887f1c611de2aff911db907d9706d36",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "aerosol-smoke",
+      "text": {
+        "chars": 4227,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f006-PSI-102_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/gd4k-8h62"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-102_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/gd4k-8h62 | SOURCE: KEYWORDS: S, m, o, k, e, , ,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-102_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/gd4k-",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-102",
+        "titleConfidence": "medium",
+        "doi": "10.60555/gd4k-8h62",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f006-PSI-102_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f006.extract.json",
+      "processingMs": 28
+    },
+    {
+      "id": "f007",
+      "name": "PSI-106_record.txt",
+      "sizeBytes": 2657,
+      "sha256": "f6b6b35fbd6face9395dd5bcde343cc5fee3fa811a553cc7b88656e367d76e6f",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 2655,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f007-PSI-106_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/pm12-rg61"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "PSI-106_record.txt",
+          "location": "document body",
+          "context": "and thermal radiation in non-premixed flames. APPROACH: The SLICE apparatus consisted of a fan-driven flow duct, exchangeable burner tubes, and integrated sens",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-106_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/pm12-rg61 | SOURCE: KEYWORDS: f, u, e, l, , d, i,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-106_record.txt",
+          "location": "document body",
+          "context": "T LABEL: RESEARCH AREA: Combustion Science / PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/pm12-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "PSI-106_record.txt",
+          "location": "document body",
+          "context": "ed under controlled coflow air conditions. A high resolution camera captured still images while sensor data was overlaid on these images. Calibration tests for",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-106_record.txt",
+          "location": "document body",
+          "context": "rates and temperature. This setup used several fuels such as methane, ethylene, and nitrogen-diluted mixtures. Flames were then manually ignited and observed un",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-106",
+        "titleConfidence": "medium",
+        "doi": "10.60555/pm12-rg61",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f007-PSI-106_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f007.extract.json",
+      "processingMs": 12
+    },
+    {
+      "id": "f008",
+      "name": "PSI-107_record.txt",
+      "sizeBytes": 2926,
+      "sha256": "68fcc667f543ddf557ea423a5a760aa33defba82298ad76b4f86009294229d92",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 2924,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f008-PSI-107_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/9kbh-e962"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "PSI-107_record.txt",
+          "location": "document body",
+          "context": "g, h, t, e, r, , f, l, a, m, e OBJECTIVES: The objective of SPICE is to better understand the complex process of combustion by observing flames in a microgravi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-107_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/9kbh-e962 | SOURCE: KEYWORDS: S, o, o, t, , , ,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "PSI-107_record.txt",
+          "location": "document body",
+          "context": "phenomena in space. APPROACH: The experimental setup in the microgravity science glovebox consisted of an apparatus with a flow duct with integrated nozzles, c",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-107_record.txt",
+          "location": "document body",
+          "context": "ESEARCH AREA: Combustion Science / Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/9kbh-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "PSI-107_record.txt",
+          "location": "document body",
+          "context": "the sooting propensity of different fuels, such as ethylene, propane, and propylene mixtures. (4) Validate the correlation between luminous flame shape and resi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-107_record.txt",
+          "location": "document body",
+          "context": "s, cameras, and fuel delivery systems. Fuels tested included methane, ethylene, propane, propylene, and propylene mixtures. Each flame was ignited in a controll",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-107",
+        "titleConfidence": "medium",
+        "doi": "10.60555/9kbh-e962",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f008-PSI-107_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f008.extract.json",
+      "processingMs": 22
+    },
+    {
+      "id": "f009",
+      "name": "PSI-108_record.txt",
+      "sizeBytes": 8374,
+      "sha256": "c84640d2e7d889a08240e1eae51a3b28e95ec2c61325b04c1771ce1b5f48c9b7",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "fluid-physics",
+      "text": {
+        "chars": 8186,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f009-PSI-108_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [
+          {
+            "id": "prandtl-number",
+            "name": "Prandtl number",
+            "where": "page/slide 1"
+          }
+        ],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/j1z3-bw42"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-108_record.txt",
+          "location": "document body",
+          "context": "en Convection) RESEARCH AREA: Fluid Physics / PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: Space Shuttle DOI: 10.60555/j1z3-bw42 | SOURCE: https",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "PSI-108_record.txt",
+          "location": "document body",
+          "context": "nt of non-intrusive measurement techniques, such as infrared imaging and particle image velocimetry, for the STDCE have expanded the toolkit for studying fluid",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-ir",
+          "entityLabel": "Infrared imaging",
+          "entityType": "sensor",
+          "source": "PSI-108_record.txt",
+          "location": "document body",
+          "context": "refinement of non-intrusive measurement techniques, such as infrared imaging and particle image velocimetry, for the STDCE have expanded the toolkit for studyi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-prandtl-number",
+          "entityLabel": "Prandtl number",
+          "entityType": "equation",
+          "source": "PSI-108_record.txt",
+          "location": "document body",
+          "context": "g thermocapillary flow, including the Marangoni number (Ma), Prandtl number (Pr), aspect ratio (Ar), and the novel surface deformation parameter (S). These para",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-108",
+        "titleConfidence": "medium",
+        "doi": "10.60555/j1z3-bw42",
+        "years": [
+          2026
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f009-PSI-108_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f009.extract.json",
+      "processingMs": 23
+    },
+    {
+      "id": "f010",
+      "name": "PSI-115_record.txt",
+      "sizeBytes": 3138,
+      "sha256": "94e2fb92879242fa9b82766fa8f9406482376a15fbfa83f6ac151d1d3c3df484",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "aerosol-smoke",
+      "text": {
+        "chars": 3136,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-004/f010-PSI-115_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/q0v5-1v28"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-same",
+          "entityLabel": "SAME",
+          "entityType": "investigation",
+          "source": "PSI-115_record.txt",
+          "location": "document body",
+          "context": "PSI INVESTIGATION RECORD — PSI-115 TITLE: Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-115_record.txt",
+          "location": "document body",
+          "context": "ention of this effort is to quantify the differences between microgravity and Earth gravity smoke, and to identify the fluid dynamic mechanisms that cause the d",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-115",
+        "titleConfidence": "medium",
+        "doi": "10.60555/q0v5-1v28",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-004/f010-PSI-115_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-004/f010.extract.json",
+      "processingMs": 18
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "extracted": 10,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 10,
+    "pages": 0,
+    "chars": 43719,
+    "tables": 0,
+    "tableRows": 0,
+    "equations": 1,
+    "figures": 0,
+    "entities": 59,
+    "newEntities": 1,
+    "mediaAssets": 0
+  },
+  "cumulative": {
+    "batches": 11,
+    "files": 73,
+    "uniqueFiles": 72,
+    "duplicateFiles": 1,
+    "documents": 72,
+    "pages": 432,
+    "chars": 926637,
+    "tables": 44,
+    "tableRows": 2223,
+    "equations": 157,
+    "figures": 468,
+    "mediaAssets": 216,
+    "entities": 116,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261113-004",
+    "updatedAt": "2026-11-13T15:15:45.997Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

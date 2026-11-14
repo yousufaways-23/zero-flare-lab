@@ -1,0 +1,66 @@
+{
+  "batchId": "B-20261113-002",
+  "receivedAt": "2026-11-13T15:13:47.974Z",
+  "fileCount": 1,
+  "files": [
+    {
+      "id": "f001",
+      "name": "PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+      "sizeBytes": 7111,
+      "sha256": "c883ab3bc89cadf870d97b0f5d9c533119e1827d788deb0f6e28e59317a8535a",
+      "kind": "csv",
+      "status": "duplicate",
+      "domain": "other",
+      "duplicateOf": {
+        "batchId": "B-20261113-001",
+        "name": "PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+        "sha256": "c883ab3bc89cadf870d97b0f5d9c533119e1827d788deb0f6e28e59317a8535a"
+      },
+      "tables": [],
+      "entities": [],
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-002/f001-PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+      "processingMs": 6
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "extracted": 0,
+    "duplicates": 1,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 0,
+    "pages": 0,
+    "chars": 0,
+    "tables": 0,
+    "tableRows": 0,
+    "equations": 0,
+    "figures": 0,
+    "entities": 0,
+    "newEntities": 0,
+    "mediaAssets": 0
+  },
+  "cumulative": {
+    "batches": 9,
+    "files": 53,
+    "uniqueFiles": 52,
+    "duplicateFiles": 1,
+    "documents": 52,
+    "pages": 432,
+    "chars": 835122,
+    "tables": 44,
+    "tableRows": 2223,
+    "equations": 155,
+    "figures": 468,
+    "mediaAssets": 216,
+    "entities": 115,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261113-002",
+    "updatedAt": "2026-11-13T15:13:47.998Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

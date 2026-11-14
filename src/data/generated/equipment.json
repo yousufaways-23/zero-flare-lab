@@ -1,0 +1,152 @@
+{
+ "generatedAt": "2026-11-11T19:50:45Z",
+ "note": "Equipment records derived from NASA PSI hardware metadata fields (per-investigation) and registered NASA source pages. 3D models are labelled procedural schematics, never claimed as official CAD (spec R005).",
+ "equipment": [
+  {
+   "id": "cir",
+   "name": "Combustion Integrated Rack (CIR)",
+   "type": "facility",
+   "usedBy": [
+    "PSI-10",
+    "PSI-20",
+    "PSI-21",
+    "PSI-22",
+    "PSI-23",
+    "PSI-68",
+    "PSI-69",
+    "PSI-159"
+   ],
+   "sourceLink": "https://www1.grc.nasa.gov/space/iss-research/iss-fcf/combustion-integrated-rack/",
+   "sourceNote": "NASA Glenn CIR facility page (registered source nasa_fcf/nasa_combustion)",
+   "description": "An ISS rack-level combustion facility that houses experiment-specific chamber inserts (ACME, MDCA), providing power, combustion air/nitrogen supply, avionics, imaging and diagnostics for microgravity flame experiments.",
+   "model3d": "cir-rack",
+   "fidelity": "schematic",
+   "fidelityNote": "Procedural schematic reconstruction from public facility descriptions; NOT official NASA CAD."
+  },
+  {
+   "id": "fcf",
+   "name": "Fluids and Combustion Facility (FCF)",
+   "type": "facility",
+   "usedBy": [
+    "PSI-68",
+    "PSI-69"
+   ],
+   "sourceLink": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/science-facilities-on-the-iss/fluids-combustion-facility/",
+   "sourceNote": "NASA Glenn FCF page (registered source nasa_fcf)",
+   "description": "The ISS research facility comprising the Fluids Integrated Rack and the Combustion Integrated Rack, supporting physical sciences experiments aboard the station.",
+   "model3d": null,
+   "fidelity": "record",
+   "fidelityNote": "Referenced via NASA facility documentation; no standalone model."
+  },
+  {
+   "id": "mdca",
+   "name": "Multi-user Droplet Combustion Apparatus (MDCA)",
+   "type": "apparatus",
+   "usedBy": [
+    "PSI-68",
+    "PSI-69"
+   ],
+   "sourceLink": "https://www1.grc.nasa.gov/space/iss-research/iss-fcf/combustion-integrated-rack/",
+   "sourceNote": "PSI-69 hardware record (NASA PSI metadata)",
+   "description": "A CIR chamber insert for droplet combustion: deployer needles/fiber position fuel droplets (methanol, heptane) in a quiescent test atmosphere with controlled pressure, O2 and diluent composition; cameras and radiometers record droplet regression and flame behaviour.",
+   "model3d": "mdca-droplet",
+   "fidelity": "schematic",
+   "fidelityNote": "Procedural schematic reconstruction; droplet deployment and imaging geometry simplified."
+  },
+  {
+   "id": "acme",
+   "name": "ACME Chamber Insert",
+   "type": "apparatus",
+   "usedBy": [
+    "PSI-10",
+    "PSI-20",
+    "PSI-21",
+    "PSI-22",
+    "PSI-23",
+    "PSI-159"
+   ],
+   "sourceLink": "https://www1.grc.nasa.gov/space/iss-research/iss-fcf/combustion-integrated-rack/",
+   "sourceNote": "PSI-159/PSI-20 hardware records (NASA PSI metadata)",
+   "description": "The Advanced Combustion via Microgravity Experiments chamber insert in the CIR: a gas burner platform supporting configurable co-flow and inverse diffusion flame geometries (BRE, CLD, E-FIELD, s-Flame, Flame Design, CFI-G) with gas flow control, electric fields and diagnostics.",
+   "model3d": "acme-burner",
+   "fidelity": "schematic",
+   "fidelityNote": "Procedural schematic reconstruction of a co-flow/inverse burner geometry; not official CAD."
+  },
+  {
+   "id": "msg",
+   "name": "Microgravity Science Glovebox (MSG)",
+   "type": "facility",
+   "usedBy": [
+    "PSI-25",
+    "PSI-26",
+    "PSI-47",
+    "PSI-107"
+   ],
+   "sourceLink": "https://www1.grc.nasa.gov/space/iss-research/msg/",
+   "sourceNote": "PSI-25/PSI-107 hardware records (NASA PSI metadata)",
+   "description": "A sealed ISS glovebox work volume enabling small-scale interactive experiments \u2014 hosted BASS/BASS-II solid-fuel burning, SPICE smoke-point tests and DAFT aerosol feasibility measurements.",
+   "model3d": "msg-glovebox",
+   "fidelity": "schematic",
+   "fidelityNote": "Procedural schematic reconstruction of the glovebox work volume."
+  },
+  {
+   "id": "spice-insert",
+   "name": "SPICE Co-flow Burner Insert",
+   "type": "apparatus",
+   "usedBy": [
+    "PSI-107"
+   ],
+   "sourceLink": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Microgravity_Science_Glovebox",
+   "sourceNote": "PSI-107 hardware record (NASA PSI metadata)",
+   "description": "The Smoke Point In Co-flow Experiment insert: a round fuel nozzle in an annular co-flow of air within the MSG, used to measure smoke-point flame heights for different gaseous fuels and flow conditions.",
+   "model3d": "spice-burner",
+   "fidelity": "schematic",
+   "fidelityNote": "Procedural schematic reconstruction of nozzle + co-flow geometry."
+  },
+  {
+   "id": "saffire",
+   "name": "SAFFIRE Instrumented Flow Duct",
+   "type": "apparatus",
+   "usedBy": [
+    "PSI-98",
+    "PSI-99",
+    "PSI-100"
+   ],
+   "sourceLink": "https://www1.grc.nasa.gov/space/iss-research/msg/saffire/",
+   "sourceNote": "PSI-98 hardware record (NASA PSI metadata)",
+   "description": "A large flow duct with instrumented sample cards flown inside the Cygnus pressurized cargo module after ISS departure, enabling the largest-in-history spacecraft fire-safety (flame growth/spread) experiments on realistic materials at vehicle scale.",
+   "model3d": "saffire-duct",
+   "fidelity": "schematic",
+   "fidelityNote": "Procedural schematic reconstruction of the flow duct and sample card."
+  },
+  {
+   "id": "csd",
+   "name": "Comparative Soot Diagnostics Hardware",
+   "type": "instrument",
+   "usedBy": [
+    "PSI-101",
+    "PSI-102"
+   ],
+   "sourceLink": "https://ntrs.nasa.gov/api/citations/19960008413/downloads/19960008413.pdf",
+   "sourceNote": "PSI-101/PSI-102 hardware records (NASA PSI metadata)",
+   "description": "Instrument package used by SAME/SAME-R to characterize spacecraft smoke/aerosol from overheated materials, comparing detector responses (ionization vs photoelectric) and particle size distributions.",
+   "model3d": null,
+   "fidelity": "record",
+   "fidelityNote": "Documented in NTRS records; no standalone 3D model."
+  },
+  {
+   "id": "ptrak",
+   "name": "TSI P-Trak Ultrafine Particle Counter",
+   "type": "instrument",
+   "usedBy": [
+    "PSI-47"
+   ],
+   "sourceLink": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+   "sourceNote": "PSI-47 hardware record (NASA PSI metadata)",
+   "description": "Commercial condensation particle counter used in the DAFT feasibility test to measure ultrafine aerosol concentrations in the ISS cabin environment.",
+   "model3d": null,
+   "fidelity": "record",
+   "fidelityNote": "Commercial instrument documented in NTRS record; no model."
+  }
+ ]
+}

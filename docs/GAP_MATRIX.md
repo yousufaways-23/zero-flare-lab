@@ -1,0 +1,29 @@
+# GAP MATRIX — ZERO FLARE / FLAME EVIDENCE LAB (final review)
+
+**Date:** 2026-11-13 · Priorities: **P0** blocks submission/judging · **P1** high-value · **P2** post-challenge. Every row states the evidence that motivated it — nothing assumed missing without checking the sources.
+
+| # | Gap | Evidence (where checked) | Priority | Status / Solution | Components |
+|---|---|---|---|---|---|
+| G-01 | PSI Combustion Science area completeness unverified | Live search returned exactly 24 records; corpus held 24 | P0 | **Closed** — live sweep confirmed 24/24 + 28 cross-area discoveries; keyword union 52 | acquisition manifest |
+| G-02 | Canonical corpus provenance only double-verified | Team archives vs manifest | P0 | **Closed** — 19 live-downloaded tables SHA-256 byte-identical to canonical (third verification path) | data/raw, acquisition manifest |
+| G-03 | Missing investigations beyond Combustion Science filter | Keyword sweep found PSI-108/179/181 et al. | P1 | **Closed** — PSI-108 (STDCE-1, combustion-adjacent fluid physics) adopted: +2 tables, +76 rows; PSI-179/181 verified out-of-domain (solder/aerosol-instrumentation) or inaccessible (ZIP-only) and recorded | corpus, investigations.json |
+| G-04 | No investigation-specific video content | Brief §2 requested verified videos | P1 | **Closed** — 6 oEmbed-verified videos (Combustion Institute, Princeton, KAUST, UNOOSA, Scott Manley, AITC) with honest source-type labels + SoFIE podcast as external lead; facades (thumbnail-first) on Media tabs + 3D Lab + Mission | VideoShelf |
+| G-05 | Agent cannot answer "what is PSI-108?" | knowledge/index.json predating acquisition | P0 | **Closed** — investigation-record text exports ingested (batches B-…-003..005): index 367→392 docs, entities 115→116; `search_knowledge_base` covers PSI-108 | CIR-1 tools |
+| G-06 | Indexes could drift after data updates (manual rebuilds) | rebuild chain was 4 manual commands | P1 | **Closed** — `scripts/flame/rebuild-all.mjs` chains corpus → data layer → manifests → index-currency check with drift warning | scripts |
+| G-07 | CTA buttons failed WCAG AA (white on #d98e4a = 2.65:1) | computed contrast during F5 pass | P0 | **Closed** — CTA gradient deepened (#b45a2b→#a34d28; white = 4.7–5.75:1 AA); all core text pairs verified 5.3–16.4:1 | globals, nav, dock, demo |
+| G-08 | CIR-1 had no visual identity | brief §7 asked for a character | P1 | **Closed** — SVG guide character with idle/thinking/speaking states, CSS-only animation (reduced-motion safe), honesty badge ("guide character, not a real astronaut") | CirOneAvatar, dock |
+| G-09 | Guided tour predated new features | tour predated coverage map, source figures, CIR internals, V2 mission map | P1 | **Closed** — 12-step tour (added media/source-figures, coverage map, CIR internals with equipment deep-link, mission map) — E2E updated and passing | demo script + walkthrough |
+| G-10 | Mission 3D used stylized primitives | V2 assets existed in reconcile tree | P0 | **Closed (prior round)** — V2 MissionMap migrated (Blue-Marble shader Earth, textured Moon/Mars, official NASA ISS GLB, Perseverance) + body toggles/isolate/reset | MissionView, V2MissionMap |
+| G-11 | 3D Lab models lacked engineering depth | brief §6 | P1 | **Closed (prior round)** — CIR 8-assembly model with cutaway/exploded/isolate/camera presets, fidelity labels | ApparatusModels |
+| G-12 | Not deployed publicly | brief §9 | P0 | **Closed** — deployed to ZCode Sites (see DEPLOYMENT.md); cloud limitations documented | .zcode-site/stage |
+| G-13 | PSI-179 contents inaccessible (ZIP-only, Range refused) | manifest zipInspections notes | P2 | **Open, recorded honestly** — 1,932 files remain un-listed; no bulk download per policy; revisit if PSI enables Range | acquisition manifest |
+| G-14 | Non-combustion discovered tables not imported | 21 tables (biofilms, solders, protein crystals…) | P2 | **Open by policy** — staged in `data/acquisition/other-domains/` with reasons; import only if scope expands | acquisition staging |
+| G-15 | Dense-embedding RAG not configured | no embedding credential in sandbox | P2 | **Open, documented** — BM25 hybrid (corpus + source docs) is the measured baseline; dense leg requires a provider | knowledge-retrieval |
+| G-16 | LLM synthesis layer credential-dependent | platform SDK not configured in sandbox | P2 | **Open by design** — deterministic tool layer fully verified (28 tools, 12/12 QA eval); degradation path is the honesty contract | /api/copilot |
+| G-17 | Cloud deployment loses ephemeral writes on recycle | platform storage is temporary | P2 | **Open, documented** — corpus immutable and packaged; ingestion writes go to per-instance storage | DEPLOYMENT.md |
+| G-18 | Prisma schema unused at runtime | db.ts has zero importers | P2 | **Open by design** — file/JSON persistence is the honest current model; Prisma removal or Postgres migration deferred | src/lib/db.ts |
+
+**Verification commands for the closed rows:** Playwright 30/30 · `/api/selftest` 4/4 · `/api/scientific-qa-eval` 12/12 · `next build` BUILD_ID ✓ · live-PSI acquisition manifest.
+| G-19 | No Mathematical Model Registry (equations ≠ models) | 17A brief: equations were retrievable but models were not composed/classified | P0 | **Closed** — 11-model registry (8 implemented/code-verified, 1 exp-validated, 1 partially-validated d²-law, 3 KB-cited documented-only) + selection engine + 5 CIR-1 tools + UI panel | math-models.ts, mathematical_models.json, MathematicalModelsPanel |
+| G-20 | d²-law validation evidence absent | PSI-69 K/d0/t columns existed unused for validation | P1 | **Closed** — PARTIALLY_VALIDATED with honest MAE/RMSE (fails per-test quantitative prediction; recorded) | data/validation/d2law_validation.json |
+| G-21 | Deployment 5 MB over cloud limit | ZCode Sites PACKAGE_CHECK_FAILED 205>200 MB | P1 | **Open, evidence captured** — prune .next/cache/sourcemaps and redeploy | .zcode-site/stage |

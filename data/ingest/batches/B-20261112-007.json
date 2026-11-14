@@ -1,0 +1,4321 @@
+{
+  "batchId": "B-20261112-007",
+  "receivedAt": "2026-11-12T21:00:49.602Z",
+  "fileCount": 7,
+  "files": [
+    {
+      "id": "f001",
+      "name": "1-s2.0-S1540748918303845-am.pdf",
+      "sizeBytes": 6072443,
+      "sha256": "e712a5d3042e72b80f85f0d1aed012a5bd01233a64e470b361fc43ef6c67cc7e",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 32294,
+        "pages": 21,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 1457,
+            "preview": "1 Binary Collision of a Burning Droplet and a Non-Burning Droplet of Xylene: Outcome Regimes and Flame Dynamics Gang Xiong1, Rahul Gandhi1, Xiaosheng Zhong1, Lutz Mädler2, and Stephen D. Tse1* 1Department of Mechanical a"
+          },
+          {
+            "page": 2,
+            "chars": 1948,
+            "preview": "2 Abstract The binary collisions of a burning droplet and a non-burning droplet of xylene are experimentally investigated. The experimental parameters span an extensive range of Weber number and impact parameter, coverin"
+          },
+          {
+            "page": 3,
+            "chars": 1978,
+            "preview": "3 1. Introduction Study of the collision of droplets is of interest and importance in the understanding of various phenomena in nature, such as raindrop formation, and in technical applications, such as spray combustion,"
+          },
+          {
+            "page": 4,
+            "chars": 2088,
+            "preview": "4 the prediction of reflexive and stretching separation. The studies were then extended to hydrocarbon droplets for the application of spray combustion[9]. Jiang et al.[13] performed an extensive and systematic study on"
+          },
+          {
+            "page": 5,
+            "chars": 2027,
+            "preview": "5 occur. However, the study was limited to a small range of Weber numbers, and the collision impact parameter was not explicitly mentioned. Surprisingly, there is a lack of literature on the study of droplet collisions w"
+          },
+          {
+            "page": 6,
+            "chars": 1558,
+            "preview": "6 burning droplet (ds) at collision is around 90μm, with a constant drop-size ratio of 0.9. Oxygen is supplied at a flow rate of 0.4L/min through a porous frit into the cuvette to avoid fluctuation in the droplet traject"
+          },
+          {
+            "page": 7,
+            "chars": 2063,
+            "preview": "7 has a high sooting tendency because of its benzene ring, which can decrease reaction rates, leading to accumulation of fuel vapor between the droplet and the flame[38]. Moreover, soot formation (correlated here with vi"
+          },
+          {
+            "page": 8,
+            "chars": 1880,
+            "preview": "8 outcome regimes of binary collisions with flame(s) can be satisfactorily predicted by the available models[27]. 3. Results and discussions The Weber numbers in this study range from about 15-120, with impact parameters"
+          },
+          {
+            "page": 9,
+            "chars": 970,
+            "preview": "9 0.525ms. There is a strong interaction between the flames of the close droplets. Since the droplet moves in the same direction as the droplet alignment, the case is similar to the streamwise interaction of burning drop"
+          },
+          {
+            "page": 10,
+            "chars": 1115,
+            "preview": "10 After the collision of the droplets, the ligament forms and ignites quickly between the droplets. The length of the ligament reaches its maximum at 0.120ms (0.075ms after collision). The ligament then breaks up and fo"
+          },
+          {
+            "page": 11,
+            "chars": 1615,
+            "preview": "11 Fig. 4. Time sequence images of a collision in the regime of coalescence, We=105, B=0.21. As seen in Figs. 2, 3, and 4, the line-of-sight integrated images (where the focal depth is larger than the droplet flame diame"
+          },
+          {
+            "page": 12,
+            "chars": 1407,
+            "preview": "12 dynamics of the flame upon collision. For the reflexive separation case, as shown in Fig. 2, the rapid change in visible flame radiation only occurs after the formation of the ligament, particularly after the break-up"
+          },
+          {
+            "page": 13,
+            "chars": 1035,
+            "preview": "13 For collisions with We~50 (±10%, i.e., 45-55), there is less or no satellite-droplet formation compared to that with We=100, which is consistent with results from the literature[10,23]. One typical collision in the re"
+          },
+          {
+            "page": 14,
+            "chars": 1399,
+            "preview": "14 radiation change, and coalescence leading to the lowest visible radiation change. Moreover, it takes a longer time to reach the maximum visible flame radiation, since the relative velocity is lower for smaller Weber n"
+          },
+          {
+            "page": 15,
+            "chars": 1973,
+            "preview": "15 formed and ignited quickly without sufficient time for vapor accumulation, leading to a less sooty flame as compared to that for the reflexive separation case. Furthermore, the gaps between the satellite droplets stro"
+          },
+          {
+            "page": 16,
+            "chars": 1692,
+            "preview": "16 the liquid are taken as the averaged properties of the burning droplet and the non-burning droplet of the single component xylene. For the collision of multicomponent droplets with the presence of flame, the process i"
+          },
+          {
+            "page": 17,
+            "chars": 1566,
+            "preview": "17 the flame spreads rapidly over the ligament during the interaction process of the collision, and then spreads around separated droplets and satellite droplets, forming highly interactive flames in-between the droplets"
+          },
+          {
+            "page": 18,
+            "chars": 1557,
+            "preview": "18 [10] N. Ashgriz, J.Y. Poo, J. Fluid Mech. 221 (1990) 183–204. [11] J.R. Adam, N.R. Lindblad, C.D. Hendricks, J. Appl. Phys. 39 (1968) 5173–5180. [12] P.R. Brazier-Smith, S.G. Jennings, J. Latham, Proc R Soc Lond A 326"
+          },
+          {
+            "page": 19,
+            "chars": 1472,
+            "preview": "19 [29] C. Gotaas, P. Havelka, H.A. Jakobsen, H.F. Svendsen, M. Hase, N. Roth, B. Weigand, Phys. Fluids 19 (2007) 102106. [30] N. Ashgriz, P. Givi, Int. J. Heat Fluid Flow 8 (1987) 205–210. [31] N. Ashgriz, P. Givi, Int."
+          },
+          {
+            "page": 20,
+            "chars": 276,
+            "preview": "20 [47] C. Wang, A.M. Dean, H. Zhu, R.J. Kee, Combust. Flame 160 (2013) 265–275. [48] S.K. Aggarwal, Prog. Energy Combust. Sci. 45 (2014) 79–107. [49] S.K. Aggarwal, Prog. Energy Combust. Sci. 24 (1998) 565–600. [50] W.A"
+          },
+          {
+            "page": 21,
+            "chars": 849,
+            "preview": "21 Figure Captions list: Fig. 1. Sketch of the experimental setup. Fig. 2. Time sequence images of a collision in the regime of reflexive separation, We=105, B=0.10. Fig. 3. Time sequence images of a collision in the reg"
+          }
+        ],
+        "headings": [
+          "W911NF-14-1-0412)."
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-007/f001-1-s2.0-S1540748918303845-am.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [
+          {
+            "formula": "spread of a typical reflexive separation case with We=105. The bottom droplet is burning and",
+            "where": "page/slide 8"
+          },
+          {
+            "formula": "collision (t = 0, 0.015, and 0.030ms), the flame is located behind the burning droplet as a wake",
+            "where": "page/slide 8"
+          },
+          {
+            "formula": "Fig. 2. Time sequence images of a collision in the regime of reflexive separation, We=105,",
+            "where": "page/slide 9"
+          },
+          {
+            "formula": "B=0.10.",
+            "where": "page/slide 9"
+          },
+          {
+            "formula": "The sequential images of stretching separation with We=96 are presented in Fig. 3. It can",
+            "where": "page/slide 9"
+          },
+          {
+            "formula": "Fig. 3. Time sequence images of a collision in the regime of stretching separation, We=96,",
+            "where": "page/slide 10"
+          },
+          {
+            "formula": "B=0.73.",
+            "where": "page/slide 10"
+          },
+          {
+            "formula": "The flame spread for the case of coalescence at We=105 is shown in Fig. 4. The two",
+            "where": "page/slide 10"
+          },
+          {
+            "formula": "Fig. 4. Time sequence images of a collision in the regime of coalescence, We=105, B=0.21.",
+            "where": "page/slide 11"
+          },
+          {
+            "formula": "formation compared to that with We=100, which is consistent with results from the",
+            "where": "page/slide 13"
+          },
+          {
+            "formula": "literature[10,23]. One typical collision in the regime of reflexive separation with We=48 is",
+            "where": "page/slide 13"
+          },
+          {
+            "formula": "reflexive separation with We=105. However, the visible flame radiation is weaker compared to",
+            "where": "page/slide 13"
+          },
+          {
+            "formula": "Fig. 6. Time sequence images of a collision in the regime of reflexive separation, We=48,",
+            "where": "page/slide 13"
+          },
+          {
+            "formula": "B=0.03.",
+            "where": "page/slide 13"
+          },
+          {
+            "formula": "follows the same trend as that for We=100, with reflexive separation leading to highest visible",
+            "where": "page/slide 13"
+          },
+          {
+            "formula": "Fig. 2. Time sequence images of a collision in the regime of reflexive separation, We=105,",
+            "where": "page/slide 21"
+          },
+          {
+            "formula": "B=0.10.",
+            "where": "page/slide 21"
+          },
+          {
+            "formula": "Fig. 3. Time sequence images of a collision in the regime of stretching separation, We=96,",
+            "where": "page/slide 21"
+          },
+          {
+            "formula": "B=0.73.",
+            "where": "page/slide 21"
+          },
+          {
+            "formula": "Fig. 4. Time sequence images of a collision in the regime of coalescence, We=105, B=0.21.",
+            "where": "page/slide 21"
+          },
+          {
+            "formula": "Fig. 6. Time sequence images of a collision in the regime of reflexive separation, We=48, B=0.03.",
+            "where": "page/slide 21"
+          }
+        ],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918303845-am.pdf",
+          "location": "page/slide 2",
+          "context": "eflexive separation, and stretching separation. A high-speed camera captures the temporal details of the collision process, involving flame spread, visible radi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-ethanol",
+          "entityLabel": "Ethanol",
+          "entityType": "fuel",
+          "source": "1-s2.0-S1540748918303845-am.pdf",
+          "location": "page/slide 4",
+          "context": "ious hydrocarbons, such as two propanol droplets[14,15], two ethanol droplets[16], two diesel droplets[17], methanol droplet and water droplet [18], diesel drop",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methanol",
+          "entityLabel": "Methanol",
+          "entityType": "fuel",
+          "source": "1-s2.0-S1540748918303845-am.pdf",
+          "location": "page/slide 4",
+          "context": "s[14,15], two ethanol droplets[16], two diesel droplets[17], methanol droplet and water droplet [18], diesel droplet and water droplet[19], and two tetradecane",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918303845-am.pdf",
+          "location": "page/slide 6",
+          "context": "tory and to sustain the burning of the single droplet. A CCD camera (taking images perpendicular to the high-speed camera) in conjunction with an LED strobe is",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918303845-am.pdf",
+          "location": "page/slide 16",
+          "context": "a burning and a non-burning droplet of xylene. A high-speed camera captures the temporal details of the collision process in the presence of a flame, with the",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Binary Collision of a Burning Droplet and a Non-Burning Droplet of Xylene:",
+        "titleConfidence": "medium",
+        "years": [
+          1968,
+          1971,
+          1972,
+          1977,
+          1979,
+          1981,
+          1982,
+          1987,
+          1989,
+          1990,
+          1992,
+          1996,
+          1997,
+          1998,
+          1999,
+          2001,
+          2002,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "authorPattern": "Jiang et al. (first author + et al.)",
+        "authorConfidence": "low",
+        "referencesCount": 50,
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 791,
+          "height": 743,
+          "format": "png",
+          "page": 6,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 546,
+          "format": "png",
+          "page": 9,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 546,
+          "format": "png",
+          "page": 9,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 546,
+          "format": "png",
+          "page": 9,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 546,
+          "format": "png",
+          "page": 9,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 545,
+          "format": "png",
+          "page": 9,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 567,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg08.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 567,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg09.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 567,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg10.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 453,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg11.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 453,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg12.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 1701,
+          "height": 451,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f001-pdfimg13.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "width": 791,
+          "height": 1325,
+          "format": "png",
+          "page": 13
+        },
+        {
+          "path": "caption:Figure 1 — Isolated xylene droplets with a",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 1 — Sketch of the experimental setup.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — Time sequence images of a collision in the regime of reflexive separation, We=105,",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — It can",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Time sequence images of a collision in the regime of stretching separation, We=96,",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — The two",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Time sequence images of a collision in the regime of coalescence, We=105, B=0.21.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — Mean visible flame radiation for different collision regimes at a We~100. (a) reflexive",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — The flame spread and visible radiation of the stretching separation and",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 6 — Time sequence images of a collision in the regime of reflexive separation, We=48,",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 7 — The intensity change of the visible flame radiation still",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 7 — Mean visible flame radiation for different collision regimes at a We~50. (a)",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 8 — Outcome regimes of binary collision of a burning and a non-burning droplet of xylene.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 1 — Sketch of the experimental setup.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — Time sequence images of a collision in the regime of reflexive separation, We=105,",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Time sequence images of a collision in the regime of stretching separation, We=96,",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Time sequence images of a collision in the regime of coalescence, We=105, B=0.21.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — Mean visible flame radiation for different collision regimes at a We~100. (a) reflexive",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 6 — Time sequence images of a collision in the regime of reflexive separation, We=48, B=0.03.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 7 — Mean visible flame radiation for different collision regimes at a We~50. (a) reflexive",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 8 — Outcome regimes of binary collision of a burning and a non-burning droplet of xylene.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918303845-am.pdf",
+          "format": "caption-only"
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-007/f001-1-s2.0-S1540748918303845-am.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-007/f001.extract.json",
+      "processingMs": 4974
+    },
+    {
+      "id": "f002",
+      "name": "1-s2.0-S1540748918305145-am.pdf",
+      "sizeBytes": 278951,
+      "sha256": "aee0cc4df03bdc6bc7ba8159b163bcec5292f879c8ddddd242f310342f19c39f",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 28076,
+        "pages": 18,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 1440,
+            "preview": "1 A new method of flame temperature measurement utilizing the acoustic emissions from laser-induced plasmas Wendong Wu a, Adewale Adeosun b, Richard L. Axelbaum b,* Mailing Address: a School of Mechanical Engineering, Sh"
+          },
+          {
+            "page": 2,
+            "chars": 1265,
+            "preview": "2 Abstract: The optical emissions from laser-induced plasmas have been successfully exploited for elemental composition measurements in flames; however, the information from the accompanying plasma-generated acoustic emi"
+          },
+          {
+            "page": 3,
+            "chars": 2121,
+            "preview": "3 1. Introduction Obtaining accurate temperature measurements is essential for flame studies. A variety of methods have been employed for obtaining gas temperature measurements in flames. Broadly speaking, these methods"
+          },
+          {
+            "page": 4,
+            "chars": 1814,
+            "preview": "4 spectroscopy (LIBS) [3-11]. LIBS can offer in-situ multi-element measurements for a broad range of fuels and equivalence ratios, and is applicable to complex combustion conditions. To fully exploit the potential of pla"
+          },
+          {
+            "page": 5,
+            "chars": 1667,
+            "preview": "5 To understand the potential of laser-induced breakdown as a method of measuring temperature requires consideration of the shock wave that accompanies breakdown. Based on the N-wave form assumption, the peak pressure, P"
+          },
+          {
+            "page": 6,
+            "chars": 2108,
+            "preview": "6 2. Experimental Setup The LIBT system, shown in Fig.1, includes a pulsed Nd:YAG laser (Continuum Surelite SLI-10) with a repetition rate of 10 Hz. The laser has a beam diameter of 6 mm, a pulse width of 4-6 ns, and a b"
+          },
+          {
+            "page": 7,
+            "chars": 704,
+            "preview": "7 the region of interest. The flow velocity at the jet exit was 40 cm/s for both fuel and oxidizer in this study, corresponding to a PDPA-measured strain rate of 140/s on the centerline. For comparison with the experimen"
+          },
+          {
+            "page": 8,
+            "chars": 2064,
+            "preview": "8 3. Results and Discussion 3.1. The effect of flame temperature and composition on acoustic emissions For these experiments, the laser was focused 1 cm above the center of the McKenna burner head, which reduces the infl"
+          },
+          {
+            "page": 9,
+            "chars": 1437,
+            "preview": "9 deviate more than two standard deviations from the sample mean. An average of 4.6 samples were excluded from each temperature measurement by this screening process, which constitute 3.3% of the 140 samples. Thus, even"
+          },
+          {
+            "page": 10,
+            "chars": 1533,
+            "preview": "10 was highly sensitive to the change in flame temperature. The average relative standard deviation (RSD) was 14.4% for all 8 acoustic signal measurements, which corresponds to an RSD of 4.8% in corresponding flame tempe"
+          },
+          {
+            "page": 11,
+            "chars": 1216,
+            "preview": "11 acoustic signal of less than +/-10% was observed when equivalence ratio was increased 3-fold, from 0.6 to 1.7, with no clear trend observed. In the range of equivalence ratios from 0.8 to 1.4, which was comfortably wi"
+          },
+          {
+            "page": 12,
+            "chars": 1742,
+            "preview": "12 (LIBT). Due to the shot-to-shot variations discussed above, one typical problem encountered in LIBS is the requirement of a large sample size. For the LIBT measurements, the average RSD for measured temperature was 4."
+          },
+          {
+            "page": 13,
+            "chars": 576,
+            "preview": "13 Table 1. The 0.95 confidence interval of LIBT measurement as a function of sample size in relative (%) and absolute (K) terms in a 1500K flame. 20 40 60 80 100 120 140 160 180 200 0 1 2 3 4 5 6 7 8 0.95 Confidence int"
+          },
+          {
+            "page": 14,
+            "chars": 2267,
+            "preview": "14 3.2. The evaluation of acoustic-based laser induced breakdown thermometry in the counter-flow diffusion flame To evaluate the applicability of LIBT in flames with large composition and temperature variations, acoustic"
+          },
+          {
+            "page": 15,
+            "chars": 1270,
+            "preview": "15 higher than the numerical results. Part of the reason for this observed deviations is the effect of equivalence ratio, which introduced a +/- 50K uncertainty (corresponding to +/-10% uncertainty in acoustic signal); m"
+          },
+          {
+            "page": 16,
+            "chars": 1618,
+            "preview": "16 200 400 600 800 1000 1200 1400 1600 1800 2000 2200 Before screening After screening T (K) X( mm) 3.5 4.0 4.5 5.0 5.5 6.0 6.5 OPPDIF simulation Fig. 8 Comparison between the LIBT measured and OPPDIF simulated temperatu"
+          },
+          {
+            "page": 17,
+            "chars": 269,
+            "preview": "17 Acknowledgements Funding for this work was provided by the National Aeronautics and Space Administration under the microgravity program. The authors would like to thank Dr. Peter Sunderland, Dr. Benjamin Kumfer, Jose"
+          },
+          {
+            "page": 18,
+            "chars": 2650,
+            "preview": "18 References [1] S. Krishnan, B.M. Kumfer, W.D. Wu, J.C. Li, A. Nehorai, R.L. Axelbaum, Energy & Fuels, 29 (2015) 3446-3455. [2] P.R.N. Childs, J.R. Greenwood, C.A. Long, Rev. Sci. Instrum., 71 (2000) 2959-2978. [3] A."
+          }
+        ],
+        "headings": [
+          "T (K)"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-007/f002-1-s2.0-S1540748918305145-am.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [
+          {
+            "formula": "Fig.1=(51+10)*2.2+23=157.2 Fig.7=(51+10)*2.2+13=147.2",
+            "where": "page/slide 1"
+          },
+          {
+            "formula": "Fig.2=(87.2+10)*2.2*2+18=445.7 Fig.8=(51+10)*2.2+15=149.2",
+            "where": "page/slide 1"
+          },
+          {
+            "formula": "Fig.3=(46.7+10)*2.2+12=136.7",
+            "where": "page/slide 1"
+          },
+          {
+            "formula": "Fig.4=(51+10)*2.2+14=148.2",
+            "where": "page/slide 1"
+          },
+          {
+            "formula": "Fig.5=(51+10)*2.2+14=148.2",
+            "where": "page/slide 1"
+          },
+          {
+            "formula": "Fig.6=(51+10)*2.2+25=159.2",
+            "where": "page/slide 1"
+          },
+          {
+            "formula": "Y=901285X-2.01",
+            "where": "page/slide 10"
+          },
+          {
+            "formula": "R2=0.97",
+            "where": "page/slide 10"
+          },
+          {
+            "formula": "sample size and critical probability. Here, a critical probability of 0.95 and z = 1.96 are used when the",
+            "where": "page/slide 12"
+          },
+          {
+            "formula": "freedom is used instead. Taking RSD =5%, the confidence intervals for the population mean in both",
+            "where": "page/slide 12"
+          }
+        ],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 1",
+          "context": "emperature measurement utilizing the acoustic emissions from laser-induced plasmas Wendong Wu a, Adewale Adeosun b, Richard L. Axelbaum b,* Mailing Address: a S",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 2",
+          "context": "2 Abstract: The optical emissions from laser-induced plasmas have been successfully exploited for elemental composition measurements in fl",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 3",
+          "context": "ames. Broadly speaking, these methods can be classified into thermocouple-based and laser-based measurements. Thermocouple-based techniques have gained preemine",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 3",
+          "context": "these methods can be classified into thermocouple-based and laser-based measurements. Thermocouple-based techniques have gained preeminence because they are in",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 4",
+          "context": "erred from the plasma information. One approach to utilizing laser-induced breakdown to obtain temperature involves the concept of breakdown threshold. The lase",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 5",
+          "context": "5 To understand the potential of laser-induced breakdown as a method of measuring temperature requires consideration of the shock wa",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 6",
+          "context": "laser. The reference temperature was measured with a type-B thermocouple with 50 μm lead wires and an 80 μm bead. The influence of flame temperature and compos",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 6",
+          "context": "up The LIBT system, shown in Fig.1, includes a pulsed Nd:YAG laser (Continuum Surelite SLI-10) with a repetition rate of 10 Hz. The laser has a beam diameter of",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 7",
+          "context": "Wang and Frenklach [24]. Fig. 1. Schematic of LIBT setup. A: Laser B: Synchronizer C: Spectrometer D: Dichroic mirror E: Lens F: Filter G: Oscilloscope H: Micro",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 8",
+          "context": "composition on acoustic emissions For these experiments, the laser was focused 1 cm above the center of the McKenna burner head, which reduces the influence of",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 9",
+          "context": "er law to the radiation-corrected temperatures measured by a thermocouple. There is a strong negative correlation (T-2) between the acoustic signal and temperat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 10",
+          "context": "ue. Fig. 3. Negative correlation between acoustic signal and thermocouple-measured temperature using a McKenna Burner. In the physical model discussed above, th",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 10",
+          "context": "atures in equivalence ratio space. The acoustic signals from laser-induced plasmas demonstrate a much lower sensitivity to the change in equivalence ratio than",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 11",
+          "context": "500 Temperature Temperature (K) Fig. 4. Acoustic signals and thermocouple-measured flame temperatures as a function of equivalence ratio. 0.6 0.8 1.0 1.2 1.4 1.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 11",
+          "context": "e measurement technique based on the acoustic emissions from laser-induced plasmas is envisioned; namely, an acoustics-based laser induced breakdown thermometry",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 12",
+          "context": "LIBT utilize the optical and acoustic emission from the same laser-induced plasma, they also have matching spatial resolutions corresponding to the plasma size,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 14",
+          "context": "14 3.2. The evaluation of acoustic-based laser induced breakdown thermometry in the counter-flow diffusion flame To evaluate the applicabili",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 16",
+          "context": "e temperature and composition on the acoustic emissions from laser induced plasmas. The acoustic emissions were much more sensitive to changes in flame temperat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 17",
+          "context": "the National Aeronautics and Space Administration under the microgravity program. The authors would like to thank Dr. Peter Sunderland, Dr. Benjamin Kumfer, Jo",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748918305145-am.pdf",
+          "location": "page/slide 18",
+          "context": "ach, Combustion and Flame, 110 (1997) 173-221. [25] R. Noll, Laser-Induced Breakdown Spectroscopy: Fundamentals and Applications, Springer, 2012. [26] J.P. Sing",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "A new method of flame temperature measurement utilizing the acoustic emissions",
+        "titleConfidence": "medium",
+        "years": [
+          1970,
+          1986,
+          1988,
+          1994,
+          1997,
+          2000,
+          2003,
+          2004,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2015,
+          2016,
+          2018
+        ],
+        "authorPattern": "Kiefer et al. (first author + et al.)",
+        "authorConfidence": "low",
+        "referencesCount": 27,
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-007/f002-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "width": 800,
+          "height": 600,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "caption:Figure 1 — Schematic of LIBT setup.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — Extreme large values can easily be identified under",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — Histograms of acoustic signals from the McKenna burner for the same equivalence ratio and",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Thus, the acoustic signal",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Negative correlation between acoustic signal and thermocouple-measured temperature using a",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Acoustic signals and thermocouple-measured flame temperatures as a function of equivalence",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — Deviation of acoustic signal from the mean value in equivalence ratio space.",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 6 — The 0.95 confidence interval of LIBT measurement as a function of sample size corresponding to",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748918305145-am.pdf",
+          "format": "caption-only"
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-007/f002-1-s2.0-S1540748918305145-am.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-007/f002.extract.json",
+      "processingMs": 913
+    },
+    {
+      "id": "f003",
+      "name": "1-s2.0-S1540748920300602-am.pdf",
+      "sizeBytes": 319108,
+      "sha256": "dafeb5e1fd8b05c41cbf21ff2f1d88979207312d81a4920dafe1e76312e0412f",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 35016,
+        "pages": 19,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 1422,
+            "preview": "1 Constrained-Temperature Solutions of Coflow Laminar Diffusion Flames Nathan J. Kempema1*, Richard R. Dobbins2, Marshall B. Long3 and Mitchell D. Smooke3 1 Applied Research Laboratory, The Pennsylvania State University,"
+          },
+          {
+            "page": 2,
+            "chars": 1447,
+            "preview": "2 Abstract We investigate the use of an experimental 2-D temperature profile to constrain detailed numerical solutions of a sooting coflow laminar diffusion flame. Experimentally, four optical diagnostic techniques are u"
+          },
+          {
+            "page": 3,
+            "chars": 2206,
+            "preview": "3 1. Introduction It has been nearly 37 years since the first one-dimensional burner stabilized premixed laminar flame computation was performed by imposing a specified experimental temperature field to constrain the num"
+          },
+          {
+            "page": 4,
+            "chars": 2182,
+            "preview": "4 systems, researchers can better understand the fluid dynamic-aerothermochemistry coupling, i.e., the inherent importance of transport, chemistry and radiation. In this paper we extend the concept of constraining the te"
+          },
+          {
+            "page": 5,
+            "chars": 2201,
+            "preview": "5 temperature field to be resolved from a 2-D measurement extending from along the flame centerline to the burner outside radius (3.7 cm) and from the burner surface to a predetermined (10 cm) height above the burner (HA"
+          },
+          {
+            "page": 6,
+            "chars": 2513,
+            "preview": "6 and temporally integrating soot incandescence using the three color channels (red (R), green (G), and blue (B)) of a Nikon D90 DSLR camera. The camera spectral response was measured previously [11] and images were acqu"
+          },
+          {
+            "page": 7,
+            "chars": 2019,
+            "preview": "7 and the flame lit to account for collected flame luminosity and the detector A/D offset. Temperature was measured and radiation corrected at the reference location with a 200 μm S-type thermocouple (cylindrical junctio"
+          },
+          {
+            "page": 8,
+            "chars": 2362,
+            "preview": "8 to coat the fibers used in TFP with a thin layer of thermographic phosphor (mixed with a ceramic binder), thereby imparting temperature sensitivity down to ambient conditions with proper phosphor selection. The resulti"
+          },
+          {
+            "page": 9,
+            "chars": 2274,
+            "preview": "9 Rayleigh scattering because it uses an intensity-modulated light sheet to impart a spatial frequency into the signal generated within the probe volume. The collected scattering from soot particles was diffuse and did n"
+          },
+          {
+            "page": 10,
+            "chars": 2397,
+            "preview": "10 eliminating the need to model radiation and ensuring that the submodels for gas-phase and soot chemistry, with their extreme sensitivity to temperature, are able to work on the best possible footing. While there are s"
+          },
+          {
+            "page": 11,
+            "chars": 1029,
+            "preview": "11 included for soot, CO2, H2O, and CO. Computations were performed on a 3.0 GHz Intel Xeon 'Harpertown' CPU with 16 GB of RAM. 4. Results In order to build a composite temperature field, data from each technique was spa"
+          },
+          {
+            "page": 12,
+            "chars": 2368,
+            "preview": "12 Fig. 1. Experimental composite temperature map for the 40% flame where Rayleigh SLIPI was applied in regions (a), TFP in regions (b), soot pyrometry in region (c), and TPTFs in region (d) below 1400 K and at heights l"
+          },
+          {
+            "page": 13,
+            "chars": 1376,
+            "preview": "13 susceptible to introducing error if the characteristics of the interpolating algorithm deviate from reality over the unmeasured grid points. Fig. 2. Comparison between the raw experimental data (thick red, blue, or gr"
+          },
+          {
+            "page": 14,
+            "chars": 1149,
+            "preview": "14 centerline. These observed differences in the temperature affect the time history of soot particles and are therefore significant for capturing soot inception, growth, and oxidation in a numerical model. Fig. 3. Exper"
+          },
+          {
+            "page": 15,
+            "chars": 1493,
+            "preview": "15 Fig. 4. Measured (left figure) versus computed (right figure) soot volume fraction contours with both constrained (right figure - left panel) and unconstrained (right figure - right panel) soot volume fraction fields"
+          },
+          {
+            "page": 16,
+            "chars": 1795,
+            "preview": "16 subtle differences in the numerical temperature field can produce remarkable discrepancies in the predicted soot fields. These discrepancies are not just quantitative in nature but structural. Low fuel mole fraction f"
+          },
+          {
+            "page": 17,
+            "chars": 1885,
+            "preview": "17 [7] M.C. Rochoux, B. Cuenot, S. Ricci, A. Trouvé, B. Delmotte, S. Massart, R. Paoli, R. Paugam, Data assimilation applied to combustion, Comptes Rendus Mécanique 341 (1) (2013) 266–276. [8] J.W. Labahn, H. Wu, B. Cori"
+          },
+          {
+            "page": 18,
+            "chars": 1850,
+            "preview": "18 [18] N.J. Kempema, M.B. Long, Quantitative Rayleigh thermometry for high background scattering applications with structured laser illumination planar imaging, Appl. Opt. 53 (29) (2014) 6688- 6697. [19] E. Kristensson,"
+          },
+          {
+            "page": 19,
+            "chars": 715,
+            "preview": "19 [28] R.J. Hall, M.D. Smooke, M.B. Colket, in: F.L. Dryer, R.F. Sawyer (Eds.), Physical and Chemical Aspects of Combustion: A Tribute to Irvin Glassman, Gordon & Breach, Amsterdam, 1997, p. 189. [29] S.J. Harris, A.M."
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-007/f003-1-s2.0-S1540748920300602-am.txt"
+      },
+      "tables": [
+        {
+          "name": "pdf-table-p13-1",
+          "columns": [
+            "col_1",
+            "col_2"
+          ],
+          "rowCount": 6,
+          "sample": [
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": "Centerline - Exp.\nCenterline - Fit",
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            }
+          ],
+          "location": "page 13 (ruled-table parser)"
+        },
+        {
+          "name": "pdf-table-p13-2",
+          "columns": [
+            "col_1",
+            "col_2"
+          ],
+          "rowCount": 3,
+          "sample": [
+            {
+              "col_1": null,
+              "col_2": "1 cm HAB - Exp.\n1 cm HAB - Fit"
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            }
+          ],
+          "location": "page 13 (ruled-table parser)"
+        },
+        {
+          "name": "pdf-table-p13-3",
+          "columns": [
+            "col_1",
+            "col_2"
+          ],
+          "rowCount": 3,
+          "sample": [
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            }
+          ],
+          "location": "page 13 (ruled-table parser)"
+        },
+        {
+          "name": "pdf-table-p13-4",
+          "columns": [
+            "col_1",
+            "4 cm HAB - Exp."
+          ],
+          "rowCount": 6,
+          "sample": [
+            {
+              "col_1": null,
+              "4 cm HAB - Exp.": "4 cm HAB - Fit\n7 cm HAB - Exp."
+            },
+            {
+              "col_1": null,
+              "4 cm HAB - Exp.": "7 cm HAB - Fit"
+            },
+            {
+              "col_1": null,
+              "4 cm HAB - Exp.": null
+            },
+            {
+              "col_1": null,
+              "4 cm HAB - Exp.": "10 cm HAB - Exp.\n10 cm HAB - Fit"
+            },
+            {
+              "col_1": null,
+              "4 cm HAB - Exp.": null
+            }
+          ],
+          "location": "page 13 (ruled-table parser)"
+        },
+        {
+          "name": "pdf-table-p14-5",
+          "columns": [
+            "col_1",
+            "col_2"
+          ],
+          "rowCount": 15,
+          "sample": [
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            },
+            {
+              "col_1": null,
+              "col_2": null
+            }
+          ],
+          "location": "page 14 (ruled-table parser)"
+        },
+        {
+          "name": "pdf-table-p14-6",
+          "columns": [
+            "col_1",
+            "col_2",
+            "col_3"
+          ],
+          "rowCount": 3,
+          "sample": [
+            {
+              "col_1": null,
+              "col_2": null,
+              "col_3": null
+            },
+            {
+              "col_1": null,
+              "col_2": null,
+              "col_3": null
+            },
+            {
+              "col_1": null,
+              "col_2": null,
+              "col_3": null
+            }
+          ],
+          "location": "page 14 (ruled-table parser)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [
+          {
+            "formula": "in acetylene concentration with an activation energy of Es = 31.8 kcal/mol based on the premixed data",
+            "where": "page/slide 10"
+          }
+        ],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 3",
+          "context": "quired. Whether the temperature profile was generated with a thermocouple or with a laser-based technique, this combined experimental and computational approach",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 3",
+          "context": "perature profile was generated with a thermocouple or with a laser-based technique, this combined experimental and computational approach set the stage for an e",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 3",
+          "context": "e able to focus on the development of mechanisms for H2-Air, CH4-Air, NH3-Air, C2H2-Air as well as more complex hydrocarbons. These early reaction sets provided",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 4",
+          "context": "mographic phosphors and structured laser illumination planar imaging (SLIPI) – to provide temperature measurements in the ethylene-air coflow diffusion flame in",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 4",
+          "context": "ent anti-Stokes Raman spectroscopy, Rayleigh scattering, and laser-induced fluorescence together with pyrometry techniques are now well-established procedures f",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 5",
+          "context": "a diagnostic. Rayleigh structured laser illumination planar imaging was implemented as the final diagnostic and is based on elastic light scattering from gas-p",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 5",
+          "context": "e of phosphor particles as a diagnostic. Rayleigh structured laser illumination planar imaging was implemented as the final diagnostic and is based on elastic l",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 6",
+          "context": "nnels (red (R), green (G), and blue (B)) of a Nikon D90 DSLR camera. The camera spectral response was measured previously [11] and images were acquired through",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 7",
+          "context": "ion corrected at the reference location with a 200 μm S-type thermocouple (cylindrical junction) to determine the local gas-phase temperature. This gas-phase te",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 8",
+          "context": "mperature. 2.3 Rayleigh Structured Laser Illumination Planar Imaging The final diagnostic technique applied in this study is Rayleigh structured laser illuminat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 8",
+          "context": "obtained after excitation with the 3rd harmonic of an Nd:YAG laser, and the ratio of signals collected was related to temperature through a calibration procedur",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 17",
+          "context": "Long, Soot and Thin-filament Pyrometry using a Color Digital Camera, Proc. Combust. Inst. 33 (2011) 743-750. [12] V. Vilimpoc, L.P. Goss, SiC-Based thin-filamen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 18",
+          "context": "ering applications with structured laser illumination planar imaging, Appl. Opt. 53 (29) (2014) 6688- 6697. [19] E. Kristensson, G. Kristensson, Physical explan",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748920300602-am.pdf",
+          "location": "page/slide 18",
+          "context": "for high background scattering applications with structured laser illumination planar imaging, Appl. Opt. 53 (29) (2014) 6688- 6697. [19] E. Kristensson, G. Kr",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Constrained-Temperature Solutions of Coflow Laminar",
+        "titleConfidence": "medium",
+        "years": [
+          1980,
+          1982,
+          1983,
+          1989,
+          1993,
+          1994,
+          1996,
+          1997,
+          1999,
+          2000,
+          2004,
+          2005,
+          2007,
+          2008,
+          2011,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2019,
+          2020
+        ],
+        "authorConfidence": "low",
+        "referencesCount": 31,
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-007/f003-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "width": 289,
+          "height": 417,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f003-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "width": 202,
+          "height": 901,
+          "format": "png",
+          "page": 14
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f003-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "width": 202,
+          "height": 901,
+          "format": "png",
+          "page": 15
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f003-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "width": 202,
+          "height": 901,
+          "format": "png",
+          "page": 15
+        },
+        {
+          "path": "caption:Figure 1 — Experimental composite temperature map for the 40% flame where Rayleigh SLIPI was applied",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — The fitted solution is shown as a thin black line while the unfitted data",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — Comparison between the raw experimental data (thick red, blue, or green lines) and the fitted",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Experimentally-derived temperature (left panel) compared to the unconstrained computed",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Measured (left figure) versus computed (right figure) soot volume fraction contours with both",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920300602-am.pdf",
+          "format": "caption-only"
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-007/f003-1-s2.0-S1540748920300602-am.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-007/f003.extract.json",
+      "processingMs": 1055
+    },
+    {
+      "id": "f004",
+      "name": "1-s2.0-S1540748920301711-am.pdf",
+      "sizeBytes": 1178409,
+      "sha256": "c7d536a99fe69c30bbc532aa098cc8b4e9e104920181254440ea747ffcc03a32",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 33754,
+        "pages": 19,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 1153,
+            "preview": "1 Transient dynamics of radiative extinction 1 in low-momentum microgravity diffusion flames 2 3 Alexander Snegirev*, 1, Egor Kuznetsov1, Ekaterina Markus1, Parham Dehghani2, Peter Sunderland2 4 5 1 School of Applied Ma"
+          },
+          {
+            "page": 2,
+            "chars": 2018,
+            "preview": "2 Abstract 32 Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating 33 at the flat surface has not yet been properly addressed. The flames of interest resemble properties of 34 lam"
+          },
+          {
+            "page": 3,
+            "chars": 2334,
+            "preview": "3 1. Introduction 55 Dynamics and structure of diffusion flames in stagnant environment depend on the dimensions of the 56 fuel source and the fuel flow momentum. In the extensive and long-lasting research agenda of 57 m"
+          },
+          {
+            "page": 4,
+            "chars": 1747,
+            "preview": "4 the flames were produced by the 25 mm diameter BRE burner with the igniter (taken away after 81 ignition) shown in Fig. 1. Small circular holes are scattered over the top plate to facilitate a uniform 82 distribution o"
+          },
+          {
+            "page": 5,
+            "chars": 1925,
+            "preview": "5 above-listed test scenarios, we focus on those replicating the low-momentum diffusion combustion 106 in the normal atmosphere. The objective of this work is to consider transient dynamics of flame 107 growth which is f"
+          },
+          {
+            "page": 6,
+            "chars": 2091,
+            "preview": "6 Soot formation is modeled by using the Moss-Brooks model [14], and the acetylene instantaneous 132 concentration is used as that of the precursor. Soot oxidation is modeled using the Fenimore-Jones 133 model [15], in w"
+          },
+          {
+            "page": 7,
+            "chars": 1541,
+            "preview": "7 158 Table 1. Simulated scenarios of the BRE experiment 159 Test ID Oxygen mole fraction Fuel flow rate (N2 basis), slpm Fuel mass flux, g/(m2‧s) Fuel velocity, mm/s Re f L , mm, Eq. (1) Nominal HRRPUA, kW/m2 Nominal HR"
+          },
+          {
+            "page": 8,
+            "chars": 1391,
+            "preview": "8 reasonably well. Minor deviation of predicted flame shape from that captured by video could be 176 attributed to the assumption of perfectly uniform distribution of the fuel mass flux over the burner 177 surface. As th"
+          },
+          {
+            "page": 9,
+            "chars": 1197,
+            "preview": "9 197 198 199 Fig. 4. Transient disintegration and quenching of the flame. Top to bottom: extinction of the upper part; flame 200 recovery; final quenching. Time increments (0.6 and 0.2 s) between the frames are the same"
+          },
+          {
+            "page": 10,
+            "chars": 1625,
+            "preview": "10 214 Fig. 5. Collision and annihilation of the triple flames formed in flame ball re-ignition. Simulations with 215 DRM22 mechanism for test 19039H2 216 217 Predicted dynamics of this process agrees with the experiment"
+          },
+          {
+            "page": 11,
+            "chars": 978,
+            "preview": "11 235 236 Fig. 6. Transient variations of the heat release rate and the peak temperature in test 19039H2 predicted with 237 DRM22 (top) and USC-Mech II sk32 (bottom) chemical mechanisms. Horizontal dashed lines show the"
+          },
+          {
+            "page": 12,
+            "chars": 1020,
+            "preview": "12 confused with the conventional definition of the radiative fraction, which is related to the nominal 253 heat release rate for the given fuel supply) increase in time up to the rather high values shown in Fig. 254 8."
+          },
+          {
+            "page": 13,
+            "chars": 1718,
+            "preview": "13 too early, which is due to the overestimated effective extinction coefficient, and, therefore, radiative 271 emission. It is worthy of note, that good agreement with the measured surface heat flux is obtained 272 with"
+          },
+          {
+            "page": 14,
+            "chars": 1880,
+            "preview": "14 Ref L c D = , (1) 295 where Re fuel V D = ν is the Reynolds number, ν ≈ D , and c ≈ 0.12 according to Ref. [19]. The 296 flame lengths estimated by Eq. (1) for the test conditions are given in Table 1; these estimates"
+          },
+          {
+            "page": 15,
+            "chars": 1780,
+            "preview": "15 the residence time can be estimated as res f fuel L V τ = , where the flame length can be deduced using 316 Eq. (1). The residence time 2 res f fuel L V c D τ = = ν is, therefore, diffusion-controlled, and it does 317"
+          },
+          {
+            "page": 16,
+            "chars": 2120,
+            "preview": "16 which is rather strained in the reaction zone, where the strain rate varies in the range 10-300 s-1. 338 Since the magnitude of the buoyancy-driven velocity is much higher, it results in a much shorter 339 residence t"
+          },
+          {
+            "page": 17,
+            "chars": 2031,
+            "preview": "17 Yet another consequence of the decreasing flame temperatures is that soot only forms during a short 363 time period after the ignition when the soot volume fraction attains its maximum followed by a rapid 364 decay to"
+          },
+          {
+            "page": 18,
+            "chars": 2254,
+            "preview": "18 The increase of the oxygen content in the atmosphere causes a much longer period of steady burning 388 which is the subject of future work. 389 390 Acknowledgments 391 The BRE (Flamenco) project is funded by JSC «TsNI"
+          },
+          {
+            "page": 19,
+            "chars": 2618,
+            "preview": "19 7. E.A. Kuznetsov, A.Yu. Snegirev, E.S. Markus, Radiative Extinction of Laminar Diffusion Flame 418 above the Flat Porous Burner in Microgravity: a Computational Study, Combust. Explos. Shock 419 Waves 56 (4) (2020) ("
+          }
+        ],
+        "headings": [
+          "HRRPUA,",
+          "HRR, W"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-007/f004-1-s2.0-S1540748920301711-am.txt"
+      },
+      "tables": [
+        {
+          "name": "pdf-heuristic-table-1",
+          "columns": [
+            "1 School of Applied Mathematics and Computational Physics, Peter the Great St. Petersburg",
+            "6"
+          ],
+          "rowCount": 2,
+          "sample": [
+            {
+              "6": 7,
+              "1 School of Applied Mathematics and Computational Physics, Peter the Great St. Petersburg": "Polytechnic University, St. Petersburg, Russia"
+            },
+            {
+              "6": 8,
+              "1 School of Applied Mathematics and Computational Physics, Peter the Great St. Petersburg": "2 Department of Fire Protection Engineering, University of Maryland, College Park, MD, USA"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-2",
+          "columns": [
+            "Word count",
+            "12"
+          ],
+          "rowCount": 18,
+          "sample": [
+            {
+              "12": 13,
+              "Word count": "Main text (Introduction, Body, Conclusions, Acknowledgments) 3278"
+            },
+            {
+              "12": 14,
+              "Word count": "Equations 68"
+            },
+            {
+              "12": 15,
+              "Word count": "References 385"
+            },
+            {
+              "12": 16,
+              "Word count": "Figures (with captions) 2282"
+            },
+            {
+              "12": 17,
+              "Word count": "Fig. 1 96"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-3",
+          "columns": [
+            "Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating",
+            "33"
+          ],
+          "rowCount": 18,
+          "sample": [
+            {
+              "33": 34,
+              "Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating": "at the flat surface has not yet been properly addressed. The flames of interest resemble properties of"
+            },
+            {
+              "33": 35,
+              "Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating": "laminar jet flames and the candle or droplet flames produced by a point fuel source. However, due to"
+            },
+            {
+              "33": 36,
+              "Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating": "the considerable size of the fuel source, these flames appear to be dissimilar to either of the two"
+            },
+            {
+              "33": 37,
+              "Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating": "cases. The practical importance of studying the stability and dynamics of these flames stems from"
+            },
+            {
+              "33": 38,
+              "Transient dynamics of growing diffusion flames produced by a low-momentum fuel flow emanating": "the need to scrutinize the flammability of condensed fuels in normal and zero gravity. This paper"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-4",
+          "columns": [
+            "1. Introduction",
+            "55"
+          ],
+          "rowCount": 9,
+          "sample": [
+            {
+              "55": 56,
+              "1. Introduction": "Dynamics and structure of diffusion flames in stagnant environment depend on the dimensions of the"
+            },
+            {
+              "55": 57,
+              "1. Introduction": "fuel source and the fuel flow momentum. In the extensive and long-lasting research agenda of"
+            },
+            {
+              "55": 58,
+              "1. Introduction": "microgravity combustion, transient dynamics of growing diffusion flames produced by a low-"
+            },
+            {
+              "55": 59,
+              "1. Introduction": "momentum fuel flow (the Reynolds number of order of 10 or less) emanating at the flat surface into"
+            },
+            {
+              "55": 60,
+              "1. Introduction": "the stagnant atmosphere has not yet been properly addressed. A very low momentum of fuel flow"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-5",
+          "columns": [
+            "Meanwhile, this kind of flame develops in combustion of solid materials, and (for a given",
+            "66"
+          ],
+          "rowCount": 14,
+          "sample": [
+            {
+              "66": 67,
+              "Meanwhile, this kind of flame develops in combustion of solid materials, and (for a given": "gasification rate) its stable development or extinction determines how flammable the material is."
+            },
+            {
+              "66": 68,
+              "Meanwhile, this kind of flame develops in combustion of solid materials, and (for a given": "This is the motivation of the recent studies of the diffusion flames generated by the flat circular"
+            },
+            {
+              "66": 69,
+              "Meanwhile, this kind of flame develops in combustion of solid materials, and (for a given": "burner known as the Burning rate Emulator (BRE). The BRE flames have been studied in normal"
+            },
+            {
+              "66": 70,
+              "Meanwhile, this kind of flame develops in combustion of solid materials, and (for a given": "gravity (see Refs. [1, 2]) and in short-duration microgravity (Refs. [3, 4, 5]). Microgravity"
+            },
+            {
+              "66": 71,
+              "Meanwhile, this kind of flame develops in combustion of solid materials, and (for a given": "experiments in the NASA Glenn’s Zero Gravity Research Facility demonstrated that some of the"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-6",
+          "columns": [
+            "the flames were produced by the 25 mm diameter BRE burner with the igniter (taken away after",
+            "81"
+          ],
+          "rowCount": 2,
+          "sample": [
+            {
+              "81": 82,
+              "the flames were produced by the 25 mm diameter BRE burner with the igniter (taken away after": "ignition) shown in Fig. 1. Small circular holes are scattered over the top plate to facilitate a uniform"
+            },
+            {
+              "81": 83,
+              "the flames were produced by the 25 mm diameter BRE burner with the igniter (taken away after": "distribution of the gas flow over the burner outlet."
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-7",
+          "columns": [
+            "In total, 79 orbital experiments have been undertaken so far with the following parameters.",
+            "88"
+          ],
+          "rowCount": 4,
+          "sample": [
+            {
+              "88": 89,
+              "In total, 79 orbital experiments have been undertaken so far with the following parameters.": "1. Oxygen mole fraction in the ambient atmosphere: 0.21-0.4."
+            },
+            {
+              "88": 90,
+              "In total, 79 orbital experiments have been undertaken so far with the following parameters.": "2. Pressure: normal (98.6-101.3 kPa) and reduced (55.8-71.0 kPa)."
+            },
+            {
+              "88": 91,
+              "In total, 79 orbital experiments have been undertaken so far with the following parameters.": "3. Fuel flow rate 0.012-0.4 slpm (N2 basis)."
+            },
+            {
+              "88": 92,
+              "In total, 79 orbital experiments have been undertaken so far with the following parameters.": "4. Fuel composition (pure ethylene and equimolar ethylene-nitrogen mixture)."
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-8",
+          "columns": [
+            "In this paper, we apply the comprehensive model developed in Refs. [6, 7] (comprising multi-step",
+            "94"
+          ],
+          "rowCount": 7,
+          "sample": [
+            {
+              "94": 95,
+              "In this paper, we apply the comprehensive model developed in Refs. [6, 7] (comprising multi-step": "and multi-component chemical mechanisms of fuel oxidation, formation and oxidation of soot, and"
+            },
+            {
+              "94": 96,
+              "In this paper, we apply the comprehensive model developed in Refs. [6, 7] (comprising multi-step": "thermal radiation emission, transfer and absorption) to replicate and analyze the abovementioned"
+            },
+            {
+              "94": 97,
+              "In this paper, we apply the comprehensive model developed in Refs. [6, 7] (comprising multi-step": "orbital microgravity experiments. It is worthy of note that previously published simulations of"
+            },
+            {
+              "94": 98,
+              "In this paper, we apply the comprehensive model developed in Refs. [6, 7] (comprising multi-step": "laminar diffusion flames were performed in 2D axisymmetric or 1D spherically symmetric domains."
+            },
+            {
+              "94": 99,
+              "In this paper, we apply the comprehensive model developed in Refs. [6, 7] (comprising multi-step": "More recently, composite analytical solution has been developed in Ref. [8] to approximate the"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-9",
+          "columns": [
+            "In the first round of the BRE (Flamenco) experiment, it has been observed that the flames are long-",
+            "103"
+          ],
+          "rowCount": 2,
+          "sample": [
+            {
+              "103": 104,
+              "In the first round of the BRE (Flamenco) experiment, it has been observed that the flames are long-": "living and quasi steady if the ambient oxygen mole fraction is above 0.265. In contrast, the flames"
+            },
+            {
+              "103": 105,
+              "In the first round of the BRE (Flamenco) experiment, it has been observed that the flames are long-": "developing in normal atmosphere exhibit spectacular instability followed by extinction. Among the"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-10",
+          "columns": [
+            "above-listed test scenarios, we focus on those replicating the low-momentum diffusion combustion",
+            "106"
+          ],
+          "rowCount": 2,
+          "sample": [
+            {
+              "106": 107,
+              "above-listed test scenarios, we focus on those replicating the low-momentum diffusion combustion": "in the normal atmosphere. The objective of this work is to consider transient dynamics of flame"
+            },
+            {
+              "106": 108,
+              "above-listed test scenarios, we focus on those replicating the low-momentum diffusion combustion": "growth which is followed by instability and quenching driven by the radiative losses."
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [
+          {
+            "id": "heat-release-rate",
+            "name": "Heat release rate",
+            "where": "page/slide 2, 8, 9, 10, 11"
+          },
+          {
+            "id": "reynolds-number",
+            "name": "Reynolds number",
+            "where": "page/slide 3, 13, 14"
+          }
+        ],
+        "heuristicFormulas": [
+          {
+            "formula": "D = , (1)\t295",
+            "where": "page/slide 14"
+          },
+          {
+            "formula": "rs/cnts/experiments/flamenko/?sphrase_id=3100.\t426",
+            "where": "page/slide 19"
+          }
+        ],
+        "doiLike": [
+          "10.1016/j.firesaf.2016.11.003",
+          "10.1016/j.firesaf.2019.02.003",
+          "10.1016/j.combustflame.2015.05.005",
+          "10.1016/j.proci.2018.05.006",
+          "10.1016/j.combustflame.2018.01.044",
+          "10.18720/spbpu/2/k19-73",
+          "10.1016/j.combustflame.2019.09.030",
+          "10.1016/S0010",
+          "10.1021/j100862a021",
+          "10.1115/1.3245174",
+          "10.1007/s00231-017-2198-x",
+          "10.1016/j.proci.2006.08.117",
+          "10.1016/j.combustflame.2007.08.011"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 1",
+          "context": "Transient dynamics of radiative extinction 1 in low-momentum microgravity diffusion flames 2 3 Alexander Snegirev*, 1, Egor Kuznetsov1, Ekaterina Markus1, Parha",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 2",
+          "context": "ero- and normal gravity diffusion 39 flames generated by the BRE (Burning Rate Emulator) burner. The scenarios of interest represent the 40 subset of the ongoin",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 2",
+          "context": "acilitated by the long 47 residence time in the low-momentum microgravity flame. The transient dynamics of flame 48 disintegration after the local extinction on",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 2",
+          "context": "eous radiative fraction grows up to 60-70% of the 46 current heat release rate. The excessively high level of the radiative losses is facilitated by the long 47",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 3",
+          "context": "7 Russian space research program, Ref. [9]) as a part of the ACME microgravity combustion program 78 [10] provide an extensive measurement database enabling the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 3",
+          "context": "tum. In the extensive and long-lasting research agenda of 57 microgravity combustion, transient dynamics of growing diffusion flames produced by a low- 58 momen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-reynolds-number",
+          "entityLabel": "Reynolds number",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 3",
+          "context": "ffusion flames produced by a low- 58 momentum fuel flow (the Reynolds number of order of 10 or less) emanating at the flat surface into 59 the stagnant atmosphe",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 4",
+          "context": "4 the flames were produced by the 25 mm diameter BRE burner with the igniter (taken away after 81 ignition) shown in Fig. 1. Small circular holes ar",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 4",
+          "context": "tion) to replicate and analyze the abovementioned 96 orbital microgravity experiments. It is worthy of note that previously published simulations of 97 laminar",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 5",
+          "context": "ar diffusion flame in normal 115 gravity and for the similar microgravity flame. In addition, dynamic mesh adaptation was undertaken 116 with the localized mesh",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 6",
+          "context": "in Table 1. 151 152 The steady growth of the flame above the BRE burner observed in the experiments is illustrated in 153 Fig. 2. Because of the rapidly decreas",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 6",
+          "context": "s (taken at the rate of 30 fps). Nevertheless, the 155 (semi)spherical flame shape is clearly visible, and the brighter spots at the lower edge indicate the 156",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 7",
+          "context": "7 158 Table 1. Simulated scenarios of the BRE experiment 159 Test ID Oxygen mole fraction Fuel flow rate (N2 basis), slpm Fuel mass flux, g/(",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 7",
+          "context": "Fig. 2. The steady growth of the flame ball observed in the microgravity experiment (left, test 19039H2) and 164 predicted numerically (right, DRM22 mechanism,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 8",
+          "context": "r the burner 177 surface. As the flame grows, the volumetric heat release rate and the temperature in the reaction zone 178 progressively decrease (see Fig. 3).",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 9",
+          "context": "e. When the 208 heads of the triple flames collide, both the heat release rate and the flame luminosity exhibit a sharp 209 increase which is followed by the pr",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 10",
+          "context": "ted in Fig. 7, which shows 228 predicted dependencies of the heat release rate and peak temperature on time. Similar to the 229 experimental observations, the s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 11",
+          "context": "11 235 236 Fig. 6. Transient variations of the heat release rate and the peak temperature in test 19039H2 predicted with 237 DRM22 (top) and USC-M",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 12",
+          "context": "the radiative fraction, which is related to the nominal 253 heat release rate for the given fuel supply) increase in time up to the rather high values shown in",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 13",
+          "context": "similar to that observed in the orbital experiments. 282 The BRE flames considered in this work do not approach its steady state and exhibit local extinction 28",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 13",
+          "context": ", beyond the ignition phase, the steady growth of the nearly spherical flame ball detached from 281 the burner is adequately predicted by the model similar to t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 13",
+          "context": "es produced by a point fuel source. Like the candle flame in microgravity, the BRE flame 288 transforms into a spherical segment. At the same time, the maximum",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 13",
+          "context": "orms into a spherical segment. At the same time, the maximum heat release rate is achieved at 289 the bottom flame edge (not at the top as that for the candle f",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-reynolds-number",
+          "entityLabel": "Reynolds number",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 13",
+          "context": "τ ≈ D D , causes proportionality of the flame length to the Reynolds number, 294",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 14",
+          "context": "t, c , is 308 coupled with the flame properties. 309 310 The BRE flames developing in micro- and normal gravity are very dissimilar, even for the same fuel 311",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 14",
+          "context": "due to 314 the dramatic disparity of the residence times. In microgravity, the velocity strain rate vanishes, and 315",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-reynolds-number",
+          "entityLabel": "Reynolds number",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 14",
+          "context": "14 Ref L c D = , (1) 295 where Re fuel V D = ν is the Reynolds number, ν ≈ D , and c ≈ 0.12 according to Ref. [19]. The 296 flame lengths estimated by Eq",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 15",
+          "context": "to the normal gravity flames. 322 323 324 Fig. 11. Predicted BRE flame in microgravity, fuel m′′ = 3.09 g/(m2‧s). a) – temperature (K) and streamlines; b) 325 –",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 15",
+          "context": "gravity flames. 322 323 324 Fig. 11. Predicted BRE flame in microgravity, fuel m′′ = 3.09 g/(m2‧s). a) – temperature (K) and streamlines; b) 325 – net radiativ",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 16",
+          "context": "er switched off. In this case, a stable and steadily growing spherical flame develops, 358 with the peak temperature close to the value characteristic of strain",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 16",
+          "context": "idence time (about 0.04 s) than that estimated above for the microgravity flames. This residence 340 time is still sufficient for complete fuel oxidation while,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 17",
+          "context": "ro- and normal gravity 370 diffusion flames generated by the BRE burner. The scenarios of interest represent the subset of the 371 ongoing orbital experiments i",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 17",
+          "context": "cilitated by the long residence time in the low-momentum 381 microgravity flame. 382 3. Analysis of transient dynamics of flame disintegration after the local e",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 17",
+          "context": "net radiative 379 emission grows up to 60-70% of the current heat release rate. The excessively high level of 380 the radiative losses is facilitated by the lon",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 18",
+          "context": "the subject of future work. 389 390 Acknowledgments 391 The BRE (Flamenco) project is funded by JSC «TsNIIMash» of Russian Space Corporation 392 ROSCOSMOS and",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 18",
+          "context": "” (SPbPU). The UMD authors acknowledge support by NASA’s 394 International Space Station Research Program (grant number NNX15AD06A), with D.P. Stocker 395 servi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 18",
+          "context": "tocker, Emulation of 405 condensed fuel flames with gases in microgravity, Combust. Flame 162 (10) (2015) 3449–3455, 406 https://doi.org/10.1016/j.combustflame.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 19",
+          "context": "0. 426 10. Advanced Combustion via Microgravity Experiments (ACME) 427 http://spaceflightsystems.grc.nasa.gov/acme/. 428 11. ANSYS FLUENT Theory Guide, Release",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748920301711-am.pdf",
+          "location": "page/slide 19",
+          "context": "Laminar Diffusion Flame 418 above the Flat Porous Burner in Microgravity: a Computational Study, Combust. Explos. Shock 419 Waves 56 (4) (2020) (in press). 420",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Transient dynamics of radiative extinction\t1",
+        "titleConfidence": "medium",
+        "doi": "10.1016/j.firesaf.2016.11.003",
+        "years": [
+          1967,
+          1982,
+          1999,
+          2006,
+          2007,
+          2008,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 505,
+          "height": 378,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 329,
+          "height": 262,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 685,
+          "height": 393,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 329,
+          "height": 262,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 685,
+          "height": 393,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 329,
+          "height": 262,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 685,
+          "height": 393,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg08.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 397,
+          "format": "png",
+          "page": 8
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg09.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 397,
+          "format": "png",
+          "page": 8
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg10.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 300,
+          "height": 329,
+          "format": "png",
+          "page": 9
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg11.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 350,
+          "height": 258,
+          "format": "png",
+          "page": 9
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg12.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 300,
+          "height": 329,
+          "format": "png",
+          "page": 9
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg13.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 350,
+          "height": 258,
+          "format": "png",
+          "page": 9
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg14.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 300,
+          "height": 329,
+          "format": "png",
+          "page": 9
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg15.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 685,
+          "height": 450,
+          "format": "png",
+          "page": 9
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg16.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 534,
+          "height": 450,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg17.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 534,
+          "height": 450,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg18.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 534,
+          "height": 450,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg19.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 534,
+          "height": 450,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg20.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg21.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg22.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg23.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg24.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg25.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 12
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg26.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 12
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg27.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 12
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg28.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 12
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg29.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 1063,
+          "height": 389,
+          "format": "png",
+          "page": 13
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f004-pdfimg30.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "width": 572,
+          "height": 423,
+          "format": "png",
+          "page": 15
+        },
+        {
+          "path": "caption:Figure 1 — Small circular holes are scattered over the top plate to facilitate a uniform\t82",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 1 — The BRE burner and the igniter\t86",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — Because of the rapidly decreasing temperature, flame luminosity appears to be very low\t154",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — The steady growth of the flame ball observed in the microgravity experiment (left, test 19039H2) and",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Predicted vertical centerline profiles of the heat release rate, net radiative emission (top) and\t18",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — The remaining flame may exhibit oscillations, with the upper part moving up and down. At\t193",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Transient disintegration and quenching of the flame. Top to bottom: extinction of the upper part; fl",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — An interesting observation is that the classical triple (tribrachial) flames develop, comprising\t207",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — Collision and annihilation of the triple flames formed in flame ball re-ignition. Simulations with\t2",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 6 — Transient variations of the heat release rate and the peak temperature in test 19039H2 predicted wit",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 7 — The effect of the fuel mass flux on predictions of the heat release rate (top) and peak flame temper",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 8 — Normalized radiative loss. Solid lines – zero-gravity tests from Table 1, dashed line – normal gravi",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 9 — This comparison is quite favorable, and it further supports the model validity. Note that the\t258",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 9 — Measured and predicted net heat fluxes in the tests listed in Table 1\t266",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 10 — The effect of the radiation pathlength on predictions of the heat flux in the center of the burner\t2",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 11 — Predicted BRE flame in microgravity, fuel\tm′′ = 3.09 g/(m2‧s). a) – temperature (K) and streamlines;",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 12 — Predicted BRE flame in normal gravity, fuel\tm′′ = 3.09 g/(m2‧s). a) – temperature (K) and streamline",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748920301711-am.pdf",
+          "format": "caption-only"
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "No ruled tables detected; tables come from a whitespace-alignment heuristic over the text layer — verify columns against the source before use.",
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-007/f004-1-s2.0-S1540748920301711-am.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-007/f004.extract.json",
+      "processingMs": 2656
+    },
+    {
+      "id": "f005",
+      "name": "1-s2.0-S1540748922000670-am.pdf",
+      "sizeBytes": 815648,
+      "sha256": "a1074f810b34f7420123ff6f1939c6eb58f0c70e9830183e3d5334b67fd73fdc",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 36694,
+        "pages": 9,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 3065,
+            "preview": "1 Critical temperature and reactant mass flux for radiative extinction of ethylene microgravity spherical diffusion flames at 1 bar Phillip H. Iracea, Kendyl A. Waddellb, Denis Constalesc, Peter B. Sunderlandb, Richard L"
+          },
+          {
+            "page": 2,
+            "chars": 5900,
+            "preview": "2 1. Introduction Flame extinction is of fundamental importance in topics such as fire safety (terrestrial and extra- terrestrial), large-scale wildfires, and quenching near solid boundaries. Extinction can also have neg"
+          },
+          {
+            "page": 3,
+            "chars": 3778,
+            "preview": "3 Advanced Combustion via Microgravity Experiments (ACME). 2. Methods 2.1 Experimental Experiments are conducted aboard the ISS in the Combustion Integrated Rack (CIR). Figure 1 illustrates the experimental configuration"
+          },
+          {
+            "page": 4,
+            "chars": 4640,
+            "preview": "4 second order, but non-negligible, thus the temperature at the inner boundary is set to the experimentally measured burner temperature, as in [19]. The size of the domain is sufficiently large that there is no change in"
+          },
+          {
+            "page": 5,
+            "chars": 2885,
+            "preview": "5 volume (qC), and temperature as a function of distance from the burner centerline for a flame just before radiative extinction. Figure 4b shows the simulated fraction of total volumetric radiation heat loss rate, fract"
+          },
+          {
+            "page": 6,
+            "chars": 3958,
+            "preview": "6 global parameter that allows one to calculate the flame size at extinction directly from the initial conditions. Figure 6 shows the calculated rext as a function of ṁC2H4 calculated from Eq. 2 where JC2H4 is 0.2 g/m2-"
+          },
+          {
+            "page": 7,
+            "chars": 4635,
+            "preview": "7 rf = ṁtotal / [4πρDO ln(1+ν-1XO)] , (3) where rf is flame radius, ρ is density, D is diffusivity, ν is the stoichiometric coefficient of the oxidizer, X is mole fraction (i.e., concentration), and the subscript O denot"
+          },
+          {
+            "page": 8,
+            "chars": 4969,
+            "preview": "8 The above findings provide a simple method to estimate the size of normal or inverse spherical diffusion flames at the point of radiative extinction for atmospheric-pressure ethylene flames. Further research must be co"
+          },
+          {
+            "page": 9,
+            "chars": 2720,
+            "preview": "9 [11] K.J. Santa, Z. Sun, B.H. Chao, P.B. Sunderland, R.L. Axelbaum, D.L. Urban, D.P. Stocker, Numerical and Experimental Observations of Spherical Diffusion Flames, Combustion Theory and Modelling 11 (2007) 639-652. [1"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-007/f005-1-s2.0-S1540748922000670-am.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [
+          {
+            "id": "heat-release-rate",
+            "name": "Heat release rate",
+            "where": "page/slide 4, 5"
+          },
+          {
+            "id": "damkohler-number",
+            "name": "Damköhler number",
+            "where": "page/slide 2"
+          },
+          {
+            "id": "lewis-number",
+            "name": "Lewis number",
+            "where": "page/slide 2"
+          }
+        ],
+        "heuristicFormulas": [
+          {
+            "formula": "(XO2=0.3 and XC2H4=0.17) and inverse (XO2=0.29 and",
+            "where": "page/slide 3"
+          },
+          {
+            "formula": "XC2H4=0.17) spherical flame at a fuel consumption rate",
+            "where": "page/slide 3"
+          },
+          {
+            "formula": "oxygen (i.e., JO2 = σJC2H4, where σ = 3.42). Thus, the",
+            "where": "page/slide 7"
+          }
+        ],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 1",
+          "context": "es via atmospheric pressure experiments conducted aboard the International Space Station, as well as with a transient numerical model. The fuel is ethylene with",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 1",
+          "context": "and reactant mass flux for radiative extinction of ethylene microgravity spherical diffusion flames at 1 bar Phillip H. Iracea, Kendyl A. Waddellb, Denis Const",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flamedesign",
+          "entityLabel": "Flame Design",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 2",
+          "context": "ient numerical model. This investigation was conducted under Flame Design, which is one of six experiments under the NASA project titled",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 2",
+          "context": "at atmospheric pressure by conducting experiments aboard the International Space Station (ISS). Experimentation aboard the ISS allows for ample time to achieve",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 2",
+          "context": "To avoid buoyancy, radiative extinction has been studied in microgravity using spherical diffusion flames. The two most common spherical diffusion flames are d",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-damkohler-number",
+          "entityLabel": "Damköhler number",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 2",
+          "context": "and radiative extinction. Kinetic extinction occurs at small Damköhler number, Da, when residence time (i.e., the time for the reactant to pass through the reac",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-lewis-number",
+          "entityLabel": "Lewis number",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 2",
+          "context": "rt residence times. Mills et al. [8] also concluded that the Lewis number of the oxidizer has a large effect on flame location in a normal flame configuration.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 3",
+          "context": "3 Advanced Combustion via Microgravity Experiments (ACME). 2. Methods 2.1 Experimental Experiments are conducted aboard the ISS in the Combustion Integ",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 3",
+          "context": "O2=0.3 and XC2H4=0.17) and inverse (XO2=0.29 and XC2H4=0.17) spherical flame at a fuel consumption rate of about 0.8 mg/s taken aboard the ISS. Fig. 1. Illustra",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 3",
+          "context": "ethods 2.1 Experimental Experiments are conducted aboard the ISS in the Combustion Integrated Rack (CIR). Figure 1 illustrates the experimental configuration an",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 3",
+          "context": "Experimental Experiments are conducted aboard the ISS in the Combustion Integrated Rack (CIR). Figure 1 illustrates the experimental configuration and the resul",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 3",
+          "context": "3 Advanced Combustion via Microgravity Experiments (ACME). 2. Methods 2.1 Experimental Experiments are conducted aboard the I",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "app-droplet-burner",
+          "entityLabel": "Droplet deployment/igniter apparatus",
+          "entityType": "apparatus",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 3",
+          "context": "estimated uncertainty of ± 5%. Ignition is achieved using a hot wire igniter that retracts after ignition. At the beginning of each test period, the chamber is",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 3",
+          "context": "time is measured using still frames from the ACME operations camera, a 0.44-megapixel CCD color video camera that records at 30 fps. For each flame image, an el",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 4",
+          "context": "3.1 Normal flames From the experiments conducted aboard the ISS, 49 normal spherical flames that radiatively extinguished are investigated. The conditions for",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-radiometer",
+          "entityLabel": "Radiometer",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 4",
+          "context": "n measurements are not available, owing to the signal of the radiometer aboard the ISS being saturated. Figure 3 shows that the radiative loss fraction increase",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 4",
+          "context": "duct gases and the growth of the flame. The total volumetric heat release rate, QC, remains relatively constant (varies by less than 3% after the ignition trans",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 5",
+          "context": "ch of the 49 flames that radiatively extinguished aboard the ISS, the numerical model shows that in addition to a constant extinction temperature, all normal et",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 5",
+          "context": ". 4. Simulated (a) radiation heat loss rate per unit volume, heat release rate per unit volume, and temperature, and (b) fraction of the total volumetric radiat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 6",
+          "context": "proaches steady state [25]. This can be done by simulating a spherical flame with and without radiation heat loss. Figure 7 shows the simulated flame radius and",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 6",
+          "context": "low rate measured using 49 normal flames observed aboard the ISS (open circles), calculated using Nayagam et al. [18] with an empirical constant of 0.8 (open tr",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 6",
+          "context": "nction radius is measured for each experiment using the last camera frame when the flame is whole, as in [19]. Flames near extinction experience an oscillatory",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 7",
+          "context": "zer for a normal flame is reasonable, because for the normal spherical flame configuration, the diffusive flux of the oxidizer to the flame is the controlling m",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 7",
+          "context": "even inverse flames that radiatively extinguished aboard the ISS. The simulated and experimental data agree well with Eq. 4. Moreover, the experimental data fit",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 8",
+          "context": "ethylene and 0.68 g/m2-s for oxygen. The size of an ethylene spherical flame at extinction can be conveniently estimated using the burner reactant mass flow rat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 8",
+          "context": "flames was investigated via experiments conducted aboard the ISS and a transient numerical model. The following conclusions have been made: 1) All the atmospher",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 8",
+          "context": "e effect of pressure. 4. Conclusions Radiative extinction of microgravity spherical diffusion flames was investigated via experiments conducted aboard the ISS a",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-ethanol",
+          "entityLabel": "Ethanol",
+          "entityType": "fuel",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 8",
+          "context": "ov, J. Conley, F.L. Dryer, Detailed modeling of an isolated, ethanol droplet combustion under microgravity conditions, Combust. Flame 134 (2003) 301-314. [6] T.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-octane",
+          "entityLabel": "n-Octane",
+          "entityType": "fuel",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 8",
+          "context": "X. Yuhao, M.C. Hicks, C.T. Avedisian, The combustion of iso-octane droplets with initial diameters from 0.5 to 5 mm: Effects on burning rate and flame extincti",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 9",
+          "context": "Duration Microgravity Spherical Diffusion Flames Aboard the International Space Station, Combust. Flame 229 (2021) 111373. [20] Z. Wang, P.B. Sunderland, R.L.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 9",
+          "context": "n fuel versus oxidizer side of spherical diffusion flames in microgravity, Proc. Combust. Inst. 31 (2007) 1005–1013. [13] S. Tang, M. Chernovsky, H. Im, A. Atre",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-hydrogen",
+          "entityLabel": "Hydrogen",
+          "entityType": "fuel",
+          "source": "1-s2.0-S1540748922000670-am.pdf",
+          "location": "page/slide 9",
+          "context": ". Chao, R.L. Axelbaum, Modeled quenching limits of spherical hydrogen diffusion flames, Proc. Combust. Inst. 34 (2013) 887-894. [17] M.K. Rodenhurst, B.H. Chao,",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Critical temperature and reactant mass flux for",
+        "titleConfidence": "medium",
+        "years": [
+          1986,
+          1987,
+          1991,
+          1997,
+          1998,
+          2000,
+          2001,
+          2003,
+          2007,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "authorPattern": "Chernovsky et al. (first author + et al.)",
+        "authorConfidence": "low",
+        "referencesCount": 25,
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 660,
+          "height": 378,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 863,
+          "height": 1056,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1580,
+          "height": 469,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1580,
+          "height": 469,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1580,
+          "height": 468,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1305,
+          "height": 613,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1305,
+          "height": 612,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg08.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1581,
+          "height": 383,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg09.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1581,
+          "height": 383,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg10.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 806,
+          "height": 728,
+          "format": "png",
+          "page": 6
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg11.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1313,
+          "height": 544,
+          "format": "png",
+          "page": 6
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg12.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 1313,
+          "height": 543,
+          "format": "png",
+          "page": 6
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f005-pdfimg13.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "width": 805,
+          "height": 728,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "caption:Figure 2 — Representative photographs of a normal",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 1 — Illustration of the experimental configuration",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Simulated radiative loss fraction (total",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — Simulated flame temperature as a function of",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Simulated (a) radiation heat loss rate per unit volume, heat release rate per unit volume, and tempe",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 6 — Flame radius at extinction as a function of fuel",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 7 — Simulated flame radius (primary axis) and",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 8 — Flame radius at extinction as a function of",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000670-am.pdf",
+          "format": "caption-only"
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-007/f005-1-s2.0-S1540748922000670-am.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-007/f005.extract.json",
+      "processingMs": 2069
+    },
+    {
+      "id": "f006",
+      "name": "1-s2.0-S1540748922000736-am.pdf",
+      "sizeBytes": 567842,
+      "sha256": "787c87862b4a73993330812b6ac0f08aaeb1336a4f450883cd4f5afb6bc0ba17",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 38186,
+        "pages": 9,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2895,
+            "preview": "1 On the existence of steady-state gaseous microgravity spherical diffusion flames in the presence of radiation heat loss Phillip H. Iracea, Kendyl A. Waddellb, Denis Constalesc, Minhyeng Kimb, Gregory Yablonskya, Peter"
+          },
+          {
+            "page": 2,
+            "chars": 5561,
+            "preview": "2 1. Introduction A number of steady-state flames have been shown to exist in microgravity, even in the presence of significant radiative loss. For example, steady-state microgravity flame balls have also been observed ["
+          },
+          {
+            "page": 3,
+            "chars": 5070,
+            "preview": "3 Because this tube was found to be physically weak, it was encased in a larger 1.6/1.83 mm support tube to avoid damage to the reactant supply tube during assembly on the ISS. Gas flow rates are controlled with mass flo"
+          },
+          {
+            "page": 4,
+            "chars": 5223,
+            "preview": "4 method, the time step is varied during simulations to ensure accuracy. As the problem approaches steady- state, the maximum time step necessary to accurately capture the changes in the system increases. Thus, in order"
+          },
+          {
+            "page": 5,
+            "chars": 3534,
+            "preview": "5 extinction for a spherical diffusion flame in microgravity was developed based on their experimental and numerical observation of a critical temperature and a critical reactant-based mass flux at flame extinction. Base"
+          },
+          {
+            "page": 6,
+            "chars": 5101,
+            "preview": "6 [16], with the exception that the characteristic temperature is taken as the average between the ambient (295 K) and critical extinction (1130 K) temperatures. Thus, the effect of radiation heat loss is accounted for b"
+          },
+          {
+            "page": 7,
+            "chars": 2743,
+            "preview": "7 will be further evaluated using the experimental data below. Figure 3b shows simulated flame temperature normalized by the critical extinction temperature, and the radiative loss fraction, XR as a function of time. The"
+          },
+          {
+            "page": 8,
+            "chars": 4127,
+            "preview": "8 times, owing to the effect of burner heating [16]. This also results in the initial nearly constant emission of OH*. After the burner temperature reaches a peak in IE1 (at 180 s), the flame exhibits quasi-steady behavi"
+          },
+          {
+            "page": 9,
+            "chars": 3788,
+            "preview": "9 flames: experiment and computation, Combust. Flame 125 (2001) 1265–1278. [5] M. Chernovsky, A. Atreya, H. Im, Effect of CO2 diluent on fuel versus oxidizer side of spherical diffusion flames in microgravity, Proc. Comb"
+          }
+        ],
+        "headings": [
+          "NS1 0.17 0.47 1.0 6",
+          "NS2 0.17 0.64 1.0 6",
+          "IS1 0.35 0.18 4.0 20",
+          "IS2 0.58 0.18 4.0 20",
+          "IE1 0.257 0.212 2.37 10.05",
+          "IE2 0.27 0.212 2.15 9.11"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-007/f006-1-s2.0-S1540748922000736-am.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [
+          {
+            "id": "heat-release-rate",
+            "name": "Heat release rate",
+            "where": "page/slide 4, 7"
+          },
+          {
+            "id": "lewis-number",
+            "name": "Lewis number",
+            "where": "page/slide 4"
+          }
+        ],
+        "heuristicFormulas": [
+          {
+            "formula": "tdiff = l2 / D , (1)",
+            "where": "page/slide 4"
+          },
+          {
+            "formula": "f = (1-Zst) / Zst . (6)",
+            "where": "page/slide 5"
+          },
+          {
+            "formula": "R = rf / rext , (8)",
+            "where": "page/slide 5"
+          },
+          {
+            "formula": "Recognizing that R=1 identifies the limit where",
+            "where": "page/slide 5"
+          },
+          {
+            "formula": "inverse flames, where R=1. Flames to the right of each curve should exhibit steady-state behavior and flames to the left",
+            "where": "page/slide 5"
+          },
+          {
+            "formula": "back to where R=1.",
+            "where": "page/slide 6"
+          },
+          {
+            "formula": "and NS1 both extinguish (when R=1). They each",
+            "where": "page/slide 6"
+          },
+          {
+            "formula": "XR = QR / QC , (10)",
+            "where": "page/slide 7"
+          }
+        ],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 1",
+          "context": "spacecraft fire safety. In this work, experiments aboard the International Space Station and a transient numerical model are used to investigate the existence o",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 1",
+          "context": "1 On the existence of steady-state gaseous microgravity spherical diffusion flames in the presence of radiation heat loss Phillip H. Iracea, K",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 2",
+          "context": "SA project Advanced Combustion via Microgravity Experiments (ACME), long-duration gaseous microgravity spherical diffusion flames been observed. Irace et al. [1",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flamedesign",
+          "entityLabel": "Flame Design",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 2",
+          "context": "model. This investigation was conducted under the experiment Flame Design, which is one of six experiments under the NASA project ACME. 2. Methods 2.1 Experimen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 2",
+          "context": "nd has implications for spacecraft fire safety. Prior to the International Space Station (ISS) gaseous spherical diffusion flames had not been investigated for",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 2",
+          "context": "Microgravity experiments are conducted aboard the ISS in the Combustion Integrated Rack (CIR). The experimental configuration and diagnostics are described in m",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 2",
+          "context": "A number of steady-state flames have been shown to exist in microgravity, even in the presence of significant radiative loss. For example, steady-state microgr",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 3",
+          "context": "d using a hot-wire igniter that retracts after ignition. The ACME chamber insert is a 105 L chamber with free volume of 83.4 L. Experiments are conducted in tes",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 3",
+          "context": "id damage to the reactant supply tube during assembly on the ISS. Gas flow rates are controlled with mass flow controllers with an estimated uncertainty of ± 5%",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 3",
+          "context": "rded at 30 frames per second (fps) using the ACME operations camera, a 0.44- megapixel color camera with an adjustable gain. Flame radius is measured as a funct",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 3",
+          "context": "± 4%. Spectral radiance of OH* (310 nm) is measured using a photomultiplier tube (PMT) with a bandpass filter. Peak gas-phase temperature as a function of time",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 4",
+          "context": "ion time of approximately 130,000 s. Thus, if a steady-state spherical flame exists, a significant duration of microgravity must be available to demonstrate it.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 4",
+          "context": "eady-state spherical flame exists, a significant duration of microgravity must be available to demonstrate it. 3.2 Identifying initial conditions favorable for",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 4",
+          "context": "peak (i.e., flame) temperature to decrease, while the total heat release rate from the flame remains relatively constant. It has recently been concluded that t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-lewis-number",
+          "entityLabel": "Lewis number",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 4",
+          "context": "ature, ṁ mass flow rate, and rf flame radius. Assuming unity Lewis number, the parameter ZT is defined by ZT = 1 / 4πρD , (3) where ρ is density and D the diffu",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 5",
+          "context": "flame radius at extinction, rext, can be calculated for any spherical flame from rext = √ (ṁreactant / 4πJcr, reactant) , (4) where ṁreactant is the mass flow",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 5",
+          "context": "5 extinction for a spherical diffusion flame in microgravity was developed based on their experimental and numerical observation of a critical temp",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 6",
+          "context": "decreases with time, and the nearest wall of the cylindrical ACME chamber insert is only 19 cm from the burner center. Based on the characteristic diffusion tim",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 6",
+          "context": "achieving steady-state spherical diffusion flames aboard the ISS Experimentation aboard the ISS comes with intrinsic limitations that make it difficult to achie",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 6",
+          "context": "h is a significant amount of time when compared to a typical microgravity flame. However, their burn times are still two orders of magnitude less than the chara",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 7",
+          "context": "a finite boundary representative of the nearest wall in the ACME chamber insert. The experimental flame temperature measurements are inferred from fiber temper",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 7",
+          "context": "IE1 and IE2 were both investigated experimentally aboard the ISS and burned until the flow of gas was stopped. IE1 burned for 867.6 s and flow was stopped due t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 7",
+          "context": "shows, for IE1, the measured OH* emission normalized by the PMT saturation value (0.1 W/cm2) (OH*/OH*max), the measured and simulated flame temperature normali",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-heat-release-rate",
+          "entityLabel": "Heat release rate",
+          "entityType": "equation",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 7",
+          "context": "c rate of radiation heat loss and QC is the total volumetric heat release rate. The figure shows that for flames that exhibit steady- state behavior, the radiat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 8",
+          "context": "comparison, (b) a typical unsteady flame observed aboard the ISS at 2 s and 10 s. It is clear that IE1 is growing very slowly when compared to the flame in Fig.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 8",
+          "context": "t loss. 5. Conclusions The existence of steady-state gaseous microgravity spherical diffusion flames in the presence of radiation heat loss was investigated usi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 8",
+          "context": ". The round orange glow in (b) at 2 s is a reflection from a PMT window",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 9",
+          "context": "Duration Microgravity Spherical Diffusion Flames Aboard the International Space Station, Combust. Flame 229 (2021) 111373. [17] V. Lecoustre, Numerical Investi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 9",
+          "context": "n fuel versus oxidizer side of spherical diffusion flames in microgravity, Proc. Combust. Inst. 31 (2007) 1005–1013. [6] K. Santa, B.H. Chao, P.B. Sunderland, D",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-hydrogen",
+          "entityLabel": "Hydrogen",
+          "entityType": "fuel",
+          "source": "1-s2.0-S1540748922000736-am.pdf",
+          "location": "page/slide 9",
+          "context": ". Chao, R.L. Axelbaum, Modeled quenching limits of spherical hydrogen diffusion flames, Proc. Combust. Inst. 34 (2013) 887-894. [19] R.J. Kee, J.F. Grcar, M.D.",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "On the existence of steady-state gaseous microgravity",
+        "titleConfidence": "medium",
+        "years": [
+          1975,
+          1987,
+          1997,
+          1998,
+          2000,
+          2001,
+          2003,
+          2007,
+          2009,
+          2010,
+          2013,
+          2014,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "authorPattern": "Tang et al. (first author + et al.)",
+        "authorConfidence": "low",
+        "referencesCount": 23,
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-007/f006-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "width": 697,
+          "height": 354,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f006-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "width": 1592,
+          "height": 406,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f006-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "width": 1592,
+          "height": 405,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f006-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "width": 1547,
+          "height": 383,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f006-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "width": 1547,
+          "height": 382,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f006-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "width": 804,
+          "height": 684,
+          "format": "png",
+          "page": 7
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f006-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "width": 809,
+          "height": 776,
+          "format": "png",
+          "page": 8
+        },
+        {
+          "path": "caption:Figure 1 — Photograph of the experimental configuration",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — ṁtotal as a function of ambient reactant concentration for various (a) ṁC2H4 for normal flames and (",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — (a) Simulated R as a function of time for each flame in Table 1. (b) Flame temperature normalized by",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Flame IE1. Black lines show measured OH*",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5b — Much of the flame",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — Photographs of (a) IE1 and (b) an inverse flame",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922000736-am.pdf",
+          "format": "caption-only"
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-007/f006-1-s2.0-S1540748922000736-am.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-007/f006.extract.json",
+      "processingMs": 1688
+    },
+    {
+      "id": "f007",
+      "name": "1-s2.0-S1540748922004497-am.pdf",
+      "sizeBytes": 711109,
+      "sha256": "c7fe9181275176e98d45750ee9ebcc6ac854989eb5c6cfe06eafe541668e98c1",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 36460,
+        "pages": 10,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2622,
+            "preview": "1 Demonstrating Steady Burning for Small Flat Materials in Microgravity in a Quiescent Ambient Parham Dehghani, John L. de Ris, James G. Quintiere* University of Maryland, College Park, Maryland 20742, USA ______________"
+          },
+          {
+            "page": 2,
+            "chars": 4293,
+            "preview": "2 Nomenclature \u0001\u0002 Gas specific heat = 1.24 J/gK \u0001 empirical constant for calculated radius correction FT Fuel terminated FR Fire retarded \u0004 Gas thermal conductivity 0.084 W/mK \u0005 Heat of gasification \u0006\u0007 \" Heat flux Ambien"
+          },
+          {
+            "page": 3,
+            "chars": 4438,
+            "preview": "3 properties that are used to establish emulation. The two additional properties for full emulation are the surface steady burning temperature (or vaporization temperature) and the laminar smoke point. The smoke point re"
+          },
+          {
+            "page": 4,
+            "chars": 2346,
+            "preview": "4 process. These behaviors are also simulated in [25]. The self-extinguished flames as discussed in [26], have low strain rates, high residence time and thus, enhanced radiative heat loss that leads to local extinction,"
+          },
+          {
+            "page": 5,
+            "chars": 3336,
+            "preview": "5 [36], for flames without soot, the absorption coefficient depends on path length, approaching the Planck limit at zero path length [37,38]. RADCAL [39], a narrow-band model, was used to estimate emissivity and absorpti"
+          },
+          {
+            "page": 6,
+            "chars": 2613,
+            "preview": "6 data. The measured flame height, and aspect ratio (height divided by radius) will be shown and compared to the computed values in the next section and in the end, a flammability diagram (heats of gasification vs. fuel"
+          },
+          {
+            "page": 7,
+            "chars": 5492,
+            "preview": "7 fluxes at the burner surface, as shown by Eq. (8), were used to evaluate their apparent heats of gasification. \u000e\u0007ijk \" ; 0.5 \u000e\u0007\u001fk\u0015 \" 2 0.5 \u000e\u0007\u0015l@.B mm \" (8) In general, Eq. (9) is used to calculate heats of gasification"
+          },
+          {
+            "page": 8,
+            "chars": 5190,
+            "preview": "8 manufactured by Medtherm, and the flow meters are made by Teledyne Hastings (model: HFC-302D). The manufacturer’s reported uncertainties for the raw measurement of each instrument were used to obtain the uncertainty of"
+          },
+          {
+            "page": 9,
+            "chars": 5641,
+            "preview": "9 Pello, A. C., Cowlard, A. J., Rouvreau, S., Smirnov, N., Fujita, O., T׳ien, J. S., Ruff, G. A., and Urban, D. L., Fire Safety in Space beyond Flammability Testing of Small Samples, Acta Astronautica, 109 (2015), 208–21"
+          },
+          {
+            "page": 10,
+            "chars": 318,
+            "preview": "10 [40] J.G. Quintiere, Principles of Fire Behavior, 2nd edition, CRC Press/Taylor Francis, Boca Raton, FL, 2016, 174-175 [41] Kline, S. J., Describing Uncertainty in Single Sample Experiments, Mech. Engineering, (75) (1"
+          }
+        ],
+        "headings": [
+          "Dimensionless mass flux = \u0006\u0007 \"/(4\u0004/'\u0001\u0002R)",
+          "; \u0006\u0007 ^^",
+          "fg (6)"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-007/f007-1-s2.0-S1540748922004497-am.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [
+          {
+            "formula": "gauge at r = 0 mm",
+            "where": "page/slide 2"
+          },
+          {
+            "formula": "gauge at r = 9.5 mm",
+            "where": "page/slide 2"
+          },
+          {
+            "formula": "at r = 4.5 mm",
+            "where": "page/slide 2"
+          },
+          {
+            "formula": "at r = 10.4 mm",
+            "where": "page/slide 2"
+          },
+          {
+            "formula": "surface (at r = 0 and 9.5 mm) were used to measure",
+            "where": "page/slide 3"
+          },
+          {
+            "formula": "Figure 4. Calculated flame temperature at flame sheet, cp = 1.24 J/g K",
+            "where": "page/slide 4"
+          },
+          {
+            "formula": "conditions but p = 0.56, and 1 atm. In the theoretical",
+            "where": "page/slide 7"
+          }
+        ],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 1",
+          "context": "ing in microgravity is examined with Burning Rate Emulation (BRE) using a gas burner with a flat 25 mm diameter porous surface with two embedded heat flux senso",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 1",
+          "context": "gainst the burner flames. Keywords: Combustion; Fire safety; International Space Station; Polymer; Radiation ___________________________________________________",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 1",
+          "context": "1 Demonstrating Steady Burning for Small Flat Materials in Microgravity in a Quiescent Ambient Parham Dehghani, John L. de Ris, James G. Quintiere* University",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 2",
+          "context": "strated from the emulated flames. The Burning Rate Emulator (BRE) is an efficient way to examine the possibility of real condensed- phase steady burning in micr",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 2",
+          "context": "ication. Experiments aboard the International Space Station (ISS) display growing hemispherical- like flames on a flat surface with some appearing to reach near",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 2",
+          "context": "the beginning of human aspirations for spaceflight, fire in microgravity has been a real concern, both anticipated and realized [1,2]. Even today this hazard i",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 2",
+          "context": "t flux gauge at r = 9.5 mm Flame sheet Copper surface Center Thermocouple at r = 4.5 mm Offset thermocouple at r = 10.4 mm Flame height xf",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 2",
+          "context": "fication \u0006\u0007 \" Heat flux Ambient pressure Partial pressure of carbon dioxide Partial pressure of water vapor \u000e\u0007\" Heat flux \u000f Burner surface radius (12.5 mm in th",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 3",
+          "context": "s neglected. In short, with these three parameters, previous BRE experiments in 1-g have resulted in successful emulation of plastics and liquids absorbed in an",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 3",
+          "context": "rk expands upon the data used in references [21,23], as more ISS experiments were performed. A larger range of heats of combustion over 12 to 47.2 kJ/g were sim",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 3",
+          "context": "ot, and is important in 1-g fires because of soot radiation. Microgravity flames with their significantly higher radiation fraction, and thus lower flame temper",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 5",
+          "context": "CO2) [23]. It was shown in [23] in detail that for sootless BRE flames !̃ depends only on path length (flame height is taken as the path length for BRE flames)",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 5",
+          "context": "ylene, that resulted in partial pressures of water vapor and carbon dioxide (2/(4 2 3(1 5 \u0013 \u0014)/\u0013 \u0014 2 (1 5 \u0013 \u0016 )/\u0013 \u0016 )), that are equal in magnitude and are resp",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 7",
+          "context": "s of combustion and gasification can be identified among the BRE data of Fig. 6. The microgravity steady data are shown on the left of the figure from mass flux",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 7",
+          "context": "the results obtained in the second round of tests aboard the ISS. The data measured in 1-g and discussed in [24] is added to the plot for comparison between mic",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 7",
+          "context": "ing rate in normal gravity is about 3 to 4 times higher than microgravity. The figure shows how fuels with a given heat of combustion and gasification would bur",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 7",
+          "context": "in [20,24]. For instance, if one takes the line representing PMMA, the burning rate measured in -1-g is 18.5 g/m2s, the heat of gasification is 1.6 kJ/g and the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 8",
+          "context": "material is examined in microgravity for steady burning. The BRE using a gas fuel supplied burner with two embedded heat flux sensors is an efficient method to",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 8",
+          "context": "ty Project Scientist. This investigation is funded by NASA’s ISS Research Program through agreement 80NSSC20M0119. References [1] Ross HD Editor, Gollahalli SR",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 8",
+          "context": "er flat disk- shaped condensed-phase material is examined in microgravity for steady burning. The BRE using a gas fuel supplied burner with two embedded heat fl",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 9",
+          "context": "an, A., Development and Analysis of a Burning Rate Emulator (BRE) for Study in Microgravity, PhD Thesis, UMCP. [13] Dietrich, D., Ross, H., Shu, Y., Chang, P.,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 9",
+          "context": "D. L., Ferkul, P. V., Hicks, M. C., and Williams, F. A., Can Cool Flames Support Quasi-Steady Alkane Droplet Burning?, Combust. Flame 159 (12) (2012) 3583–3588.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "1-s2.0-S1540748922004497-am.pdf",
+          "location": "page/slide 9",
+          "context": "rsal of Material Flammability Ranking from Normal Gravity to Microgravity, Combust. Flame 80 (3) (1990) 355– 357. [10] Olson, S. L., Ferkul, P. V., and T’ien, J",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Demonstrating Steady Burning for Small Flat Materials",
+        "titleConfidence": "medium",
+        "years": [
+          1974,
+          1979,
+          1985,
+          1989,
+          1990,
+          1991,
+          1998,
+          2000,
+          2001,
+          2002,
+          2007,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-007/f007-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "width": 756,
+          "height": 1174,
+          "format": "png",
+          "page": 2
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f007-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "width": 334,
+          "height": 115,
+          "format": "png",
+          "page": 2
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f007-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "width": 419,
+          "height": 109,
+          "format": "png",
+          "page": 2
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f007-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "width": 397,
+          "height": 117,
+          "format": "png",
+          "page": 2
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f007-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "width": 1425,
+          "height": 511,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-007/f007-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "width": 1036,
+          "height": 920,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "caption:Figure 1 — Schematic of the burner surface and heat flux",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 2 — Two typical BRE flames with same mass flux of 2.55 g/m2s and heat of combustion of 47.2 kJ/g, fuel t",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — It was",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 3 — Radiative loss fraction empirical correlation",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 4 — Calculated flame temperature at flame sheet, cp = 1.24 J/g K",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — Calculated vs. measured, flame heights (top) and",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 5 — The accuracy of the analytical model introduced in",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 6 — Flammability map (heats of gasification vs. fuel mixture mass flux) for micro and normal gravity dat",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        },
+        {
+          "path": "caption:Figure 6 — The sources of",
+          "kind": "extracted-figure",
+          "sourceFile": "1-s2.0-S1540748922004497-am.pdf",
+          "format": "caption-only"
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-007/f007-1-s2.0-S1540748922004497-am.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-007/f007.extract.json",
+      "processingMs": 1482
+    }
+  ],
+  "totals": {
+    "files": 7,
+    "extracted": 7,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 7,
+    "pages": 105,
+    "chars": 240480,
+    "tables": 16,
+    "tableRows": 114,
+    "equations": 59,
+    "figures": 148,
+    "entities": 163,
+    "newEntities": 1,
+    "mediaAssets": 74
+  },
+  "cumulative": {
+    "batches": 7,
+    "files": 50,
+    "uniqueFiles": 50,
+    "duplicateFiles": 0,
+    "documents": 50,
+    "pages": 432,
+    "chars": 834665,
+    "tables": 42,
+    "tableRows": 2147,
+    "equations": 155,
+    "figures": 468,
+    "mediaAssets": 216,
+    "entities": 115,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261112-007",
+    "updatedAt": "2026-11-12T21:01:04.506Z"
+  },
+  "unresolvedIssues": [
+    "1-s2.0-S1540748918303845-am.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "1-s2.0-S1540748918305145-am.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "1-s2.0-S1540748920300602-am.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "1-s2.0-S1540748920301711-am.pdf: No ruled tables detected; tables come from a whitespace-alignment heuristic over the text layer — verify columns against the source before use.",
+    "1-s2.0-S1540748920301711-am.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "1-s2.0-S1540748922000670-am.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "1-s2.0-S1540748922000736-am.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "1-s2.0-S1540748922004497-am.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+  ],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

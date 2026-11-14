@@ -1,0 +1,19 @@
+{
+  "batches": 12,
+  "files": 78,
+  "uniqueFiles": 77,
+  "duplicateFiles": 1,
+  "documents": 77,
+  "pages": 432,
+  "chars": 945934,
+  "tables": 44,
+  "tableRows": 2223,
+  "equations": 157,
+  "figures": 468,
+  "mediaAssets": 216,
+  "entities": 116,
+  "errors": 0,
+  "userConfirmedAllUploads": true,
+  "lastBatchId": "B-20261113-005",
+  "updatedAt": "2026-11-13T15:15:47.313Z"
+}

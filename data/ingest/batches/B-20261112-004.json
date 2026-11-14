@@ -1,0 +1,3707 @@
+{
+  "batchId": "B-20261112-004",
+  "receivedAt": "2026-11-12T20:58:29.250Z",
+  "fileCount": 10,
+  "files": [
+    {
+      "id": "f001",
+      "name": "Combustion Science - NASA.pdf",
+      "sizeBytes": 11450992,
+      "sha256": "7c991819c91a2a7ef6ef4cbcd3614f33f7af4bd1c437d7ba03f6b8abcdd6d32d",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 9473,
+        "pages": 12,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 520,
+            "preview": "Physical Sciences Overview In the United States, combustion processes contribute to about 85% of delivered energy and are an integral part in many industrial fabrication processes. Combustion produces greenhouse gases an"
+          },
+          {
+            "page": 2,
+            "chars": 3005,
+            "preview": "removal of gravity enables researchers to study details of the combustion processes that cannot be readily studied on the ground. The Space Station environment also provides an important test-bed for studying spacecraft"
+          },
+          {
+            "page": 3,
+            "chars": 468,
+            "preview": "Current Combustion Experiments C O M B U S T I O N E X P E R I M E N T S Flammability of Materials on the Moon (FM2) FM2 is the first-ever combustion experiment to be performed on another planetary body. Building on the"
+          },
+          {
+            "page": 4,
+            "chars": 267,
+            "preview": "Edge view of Solid Inflammability Boundary at Low-Speed (SIBAL) fabric, a cotton-fiberglass blend, burning in air in lunar gravity (simulated in drop tower centrifuge). C O M B U S T I O N E X P E R I M E N T S Solid Fue"
+          },
+          {
+            "page": 5,
+            "chars": 787,
+            "preview": "Fire can be a catastrophic hazard for manned spacecraft. NASA mitigates the risk of fire with the implementation of NASA-STD-6001, which establishes program requirements for evaluation, testing, and selection of material"
+          },
+          {
+            "page": 6,
+            "chars": 470,
+            "preview": "C O M B U S T I O N E X P E R I M E N T Flammability Limits At Reduced-g Experiment (FLARE) To develop a methodology to correlate material flammability limits in normal gravity and microgravity, which allows quantitative"
+          },
+          {
+            "page": 7,
+            "chars": 534,
+            "preview": "Archived Combustion Experiments This work is a part of “Flammability Limits at Reduced-g Experiment” (FLARE) project which aims to (1) develop a methodology to correlate material flammability limits in normal and microgr"
+          },
+          {
+            "page": 8,
+            "chars": 1060,
+            "preview": "improve efficiency and reduce pollutant emission in practical terrestrial combustion. Burning and Suppression of Solids (BASS) The Burning and Suppression of Solids (BASS) investigation examines the burning and extinctio"
+          },
+          {
+            "page": 9,
+            "chars": 743,
+            "preview": "Combustion Science Facilities/Areas on the ISS Spacecraft smoke detectors must detect different types of smoke. For example, hydrocarbon fuels typically produce soot and plastics produce droplets of recondensed polymer f"
+          },
+          {
+            "page": 10,
+            "chars": 667,
+            "preview": "Combustion Integrated RackThe Combustion Integrated Rack (CIR), located in the U.S. Laboratory Module (Destiny), enables investigators to perform combustion research to understand the fundamentals of the combustion proce"
+          },
+          {
+            "page": 11,
+            "chars": 90,
+            "preview": "Learn More D E V E L O P E D Glenn Research Center L A U N C H E D T O I S S November 2008"
+          },
+          {
+            "page": 12,
+            "chars": 655,
+            "preview": "Multi-user Droplet Combustion Apparatus (MDCA)The Multi-user Droplet Combustion Apparatus (MDCA) is a multi-user facility designed to accommodate different droplet combustion science experiments. The MDCA will conduct ex"
+          }
+        ],
+        "headings": [
+          "C O M B U S T I O N E X P E R I M E N T S",
+          "C O M B U S T I O N E X P E R I M E N T",
+          "D E V E L O P E D",
+          "L A U N C H E D T O I S S"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f001-Combustion Science - NASA.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 1",
+          "context": "ion Science Discipline conducts idealized experiments on the International Space Station where the Combustion Science Explore Combustion Science being performed",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "isk. Combustion occurs when fuel and oxygen react to produce carbon dioxide, water and heat. For the foreseeable future, the overwhelming majority of delivered",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-fm2",
+          "entityLabel": "FM²",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "E X P E R I M E N T S Flammability of Materials on the Moon (FM2) FM2 is the first-ever combustion experiment to be performed on another planetary body. Buildin",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "the decades-long combustion science ground (1g) program and International Space Station (ISS) microgravity (~0g) combustion experiment campaigns, FM2 investiga",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "ce ground (1g) program and International Space Station (ISS) microgravity (~0g) combustion experiment campaigns, FM2 investigates burning materials on the Moon",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-lunar",
+          "entityLabel": "Lunar / Moon environment",
+          "entityType": "mission-environment",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "I O N E X P E R I M E N T S Flammability of Materials on the Moon (FM2) FM2 is the first-ever combustion experiment to be performed on another planetary body. B",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sofie",
+          "entityLabel": "SoFIE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 4",
+          "context": "M E N T S Solid Fuel Ignition and Extinction investigation (SoFIE)",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-lunar",
+          "entityLabel": "Lunar / Moon environment",
+          "entityType": "mission-environment",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 4",
+          "context": "(SIBAL) fabric, a cotton-fiberglass blend, burning in air in lunar gravity (simulated in drop tower centrifuge). C O M B U S T I O N E X P E R I M E N T S Solid",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 4",
+          "context": "Solid Inflammability Boundary at Low-Speed (SIBAL) fabric, a cotton-fiberglass blend, burning in air in lunar gravity (simulated in drop tower centrifuge). C O",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-fiberglass",
+          "entityLabel": "Fiberglass",
+          "entityType": "material",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 4",
+          "context": "nflammability Boundary at Low-Speed (SIBAL) fabric, a cotton-fiberglass blend, burning in air in lunar gravity (simulated in drop tower centrifuge). C O M B U S",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sofie",
+          "entityLabel": "SoFIE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 5",
+          "context": "pace Station’s Unity module reconfiguring components for the Solid Fuel Ignition and Extinction investigation that explores fire growth and fire safety techniqu",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "std-nasa-std",
+          "entityLabel": "NASA standard",
+          "entityType": "standard",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 5",
+          "context": ". NASA mitigates the risk of fire with the implementation of NASA-STD-6001, which establishes program requirements for evaluation, testing, and selection of mat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flare",
+          "entityLabel": "FLARE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 6",
+          "context": "P E R I M E N T Flammability Limits At Reduced-g Experiment (FLARE) To develop a methodology to correlate material flammability limits in normal gravity and mic",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 6",
+          "context": "correlate material flammability limits in normal gravity and microgravity, which allows quantitative estimation of material flammability limit in microgravity b",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 7",
+          "context": "he ground. Advanced Combustion via Microgravity Experiments (ACME) ACME is focused on advanced combustion technology via fundamental microgravity research. The",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flare",
+          "entityLabel": "FLARE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 7",
+          "context": "is a part of “Flammability Limits at Reduced-g Experiment” (FLARE) project which aims to (1) develop a methodology to correlate material flammability limits in",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 7",
+          "context": "logy to correlate material flammability limits in normal and microgravity, and (2) allow quantitative estimation of material flammability limit in microgravity",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 8",
+          "context": "nvironment of microgravity. Flame Extinguishment Experiment (FLEX) The Flame Extinguishment Experiment (FLEX) experiment was designed to assess and quantify the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 8",
+          "context": "ial combustion. Burning and Suppression of Solids (BASS) The Burning and Suppression of Solids (BASS) investigation examines the burning and extinction characte",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-saffire",
+          "entityLabel": "SAFFIRE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 8",
+          "context": "for steady combustion. Spacecraft Fire Safety Demonstration (Saffire) Creating a safe environment for astronauts is the number one priority for all crew mission",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-daft",
+          "entityLabel": "DAFT",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 8",
+          "context": "microgravity. Dust and Aerosol Measurement Feasibility Test (DAFT) The Dust and Aerosol Measurement Feasibility Test (DAFT) was designed to ensure that a modifi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 8",
+          "context": "inction characteristics of a wide variety of fuel samples in microgravity. Dust and Aerosol Measurement Feasibility Test (DAFT) The Dust and Aerosol Measurement",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 9",
+          "context": "that flame configuration. Smoke Point in Co-flow Experiment (SPICE) The Smoke Point In Co-flow Experiment will continue the study of fundamental phenomena relat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 9",
+          "context": "mer fragments. Structure & Liftoff in Combustion Experiment (SLICE) Coflow laminar diffusion flames are especially valuable for studies of combustion because of",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 9",
+          "context": "Combustion Science Facilities/Areas on the ISS Spacecraft smoke detectors must detect different types of smoke. For example, hydrocarbon fuels",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 10",
+          "context": "by NASA’s Glenn Research Center, the CIR was launched to the International Space Station (ISS) in November 2008 by the Space Shuttle (STS-126).",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 10",
+          "context": "Combustion Integrated RackThe Combustion Integrated Rack (CIR), located in the U.S. Laboratory Module (Destiny), enables investig",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-destiny",
+          "entityLabel": "Destiny module",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 10",
+          "context": "ntegrated Rack (CIR), located in the U.S. Laboratory Module (Destiny), enables investigators to perform combustion research to understand the fundamentals of th",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 12",
+          "context": "nd Combustion Facility (FCF). The payload is planned for the International Space Station. The MDCA, in conjunction with the CIR, will allow for cost effective e",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 12",
+          "context": "nce experiments. The MDCA will conduct experiments using the Combustion Integrated Rack (CIR) of the NASA Glenn Research Center’s Fluids and Combustion Facility",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-mdca",
+          "entityLabel": "MDCA",
+          "entityType": "apparatus",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 12",
+          "context": "Multi-user Droplet Combustion Apparatus (MDCA)The Multi-user Droplet Combustion Apparatus (MDCA) is a multi-user facility designed to accomm",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Combustion Science - NASA.pdf",
+          "location": "page/slide 12",
+          "context": "he CIR, will allow for cost effective extended access to the microgravity environment, not possible on previous space flights. Learn More D E V E L O P E D Glen",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Physical Sciences",
+        "titleConfidence": "medium",
+        "years": [
+          2008
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 2000,
+          "height": 1333,
+          "format": "png",
+          "page": 1,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 558,
+          "height": 522,
+          "format": "png",
+          "page": 4,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 900,
+          "height": 600,
+          "format": "png",
+          "page": 5,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 900,
+          "height": 506,
+          "format": "png",
+          "page": 7,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 900,
+          "height": 600,
+          "format": "png",
+          "page": 9,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 900,
+          "height": 600,
+          "format": "png",
+          "page": 10,
+          "interpretationError": "Configuration file not found or invalid. Please create .z-ai-config in your project, home directory, or /etc."
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 320,
+          "height": 274,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg08.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 600,
+          "height": 320,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg09.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 900,
+          "height": 597,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg10.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 600,
+          "height": 399,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f001-pdfimg11.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Combustion Science - NASA.pdf",
+          "width": 598,
+          "height": 900,
+          "format": "png",
+          "page": 11
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f001-Combustion Science - NASA.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f001.extract.json",
+      "processingMs": 3483
+    },
+    {
+      "id": "f002",
+      "name": "Fluids & Combustion Facility - NASA.pdf",
+      "sizeBytes": 14223429,
+      "sha256": "d9d22310f1a062b973b1aeb88abe89e051fbe0df85b682fe55f063aec7c50a1b",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3873,
+        "pages": 5,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 621,
+            "preview": "Physical Sciences The Fluids and Combustion Facility (FCF) is a set of two International Space Station (ISS) research facilities designed to support physical and biological experiments in support of technology developmen"
+          },
+          {
+            "page": 2,
+            "chars": 1292,
+            "preview": "the FIR was launched on STS-128 in 2009. Both racks are operated remotely from the Glenn ISS Payload Operations Center (GIPOC) at GRC. The sustaining engineering and operations team is under a prime contract with ZIN Tec"
+          },
+          {
+            "page": 3,
+            "chars": 491,
+            "preview": "provided by the specific investigation teams. A significant amount of diagnostic hardware is designed for many of the planned experiments. The CIR accommodates experiments that address critical needs in the areas of spac"
+          },
+          {
+            "page": 4,
+            "chars": 1317,
+            "preview": "Astronaut Karen Nyberg working in the FIR rack on the ISS. The Fluids Integrated Rack (FIR), located in the U.S. Laboratory Module (Destiny), enables investigators from multiple disciplines a large, optics bench platform"
+          },
+          {
+            "page": 5,
+            "chars": 72,
+            "preview": "Media K E E P E X P L O R I N G Discover More Topics From NASA 10 IMAGES"
+          }
+        ],
+        "headings": [
+          "K E E P E X P L O R I N G"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f002-Fluids & Combustion Facility - NASA.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 1",
+          "context": "ces The Fluids and Combustion Facility (FCF) is a set of two International Space Station (ISS) research facilities designed to support physical and biological e",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 1",
+          "context": "reconfigurable racks called the Combustion Integration Rack (CIR) and the Fluids Integration Rack (FIR). The CIR and FIR were developed at NASAʼs Glenn Research",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "by NASA’s Glenn Research Center, the CIR was launched to the International Space Station (ISS) in November 2008 by the Space Shuttle (STS-126). European Space A",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "ations team is under a prime contract with ZIN Technologies. Combustion Integrated Rack (CIR) The Combustion Integrated Rack (CIR), located in the U.S. Laborato",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-destiny",
+          "entityLabel": "Destiny module",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "ntegrated Rack (CIR), located in the U.S. Laboratory Module (Destiny), enables investigators to perform combustion research to understand the fundamentals of th",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "90% of the required hardware to perform a majority of future microgravity combustion experiments on board the ISS. The remaining 10% of the hardware (fuel, igni",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "ardware is designed for many of the planned experiments. The CIR accommodates experiments that address critical needs in the areas of spacecraft fire safety (i.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 4",
+          "context": "Astronaut Karen Nyberg working in the FIR rack on the ISS. The Fluids Integrated Rack (FIR), located in the U.S. Laboratory Module (Destiny), enables inv",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-destiny",
+          "entityLabel": "Destiny module",
+          "entityType": "facility",
+          "source": "Fluids & Combustion Facility - NASA.pdf",
+          "location": "page/slide 4",
+          "context": "ntegrated Rack (FIR), located in the U.S. Laboratory Module (Destiny), enables investigators from multiple disciplines a large, optics bench platform to integra",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Physical Sciences",
+        "titleConfidence": "medium",
+        "years": [
+          2008,
+          2009
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 2000,
+          "height": 1333,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 974,
+          "height": 650,
+          "format": "png",
+          "page": 2
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 1920,
+          "height": 1280,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 364,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 1400,
+          "height": 1200,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 1920,
+          "height": 1280,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 1200,
+          "height": 736,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg08.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 266,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg09.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 142,
+          "height": 211,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg10.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 267,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg11.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 1111,
+          "height": 723,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg12.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 300,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg13.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 225,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg14.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 266,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg15.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 267,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg16.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 1200,
+          "height": 799,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg17.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 266,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg18.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 266,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f002-pdfimg19.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Fluids & Combustion Facility - NASA.pdf",
+          "width": 400,
+          "height": 267,
+          "format": "png",
+          "page": 5
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f002-Fluids & Combustion Facility - NASA.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f002.extract.json",
+      "processingMs": 5948
+    },
+    {
+      "id": "f003",
+      "name": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+      "sizeBytes": 979870,
+      "sha256": "72851a46eea9531aaac1e833070743cd6a6b97529abe96041f905ebe92080119",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 1521,
+        "pages": 1,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 1505,
+            "preview": "ISS Fluids and Combustion Facility – Combustion Integrated Rack Operations Glenn Research Center ISS Payload Operations Center GMT 309:10:19:55 FCF-CIR Overview The Combustion Integrated Rack (CIR), located in the US Lab"
+          }
+        ],
+        "headings": [
+          "FCFOPS"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f003-ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "Flames Investigation (CFI) Flame Extinguishment Experiment (FLEX) Flame Extinguishment Experiment-2 (FLEX-2) Flame Extinguishment Experiment-2J (FLEX-2J) FLEX",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex2",
+          "entityLabel": "FLEX-2",
+          "entityType": "investigation",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "ishment Experiment (FLEX) Flame Extinguishment Experiment-2 (FLEX-2) Flame Extinguishment Experiment-2J (FLEX-2J) FLEX Italian Combustion Experiment Green Air (",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "Operations Advanced Combustion via Microgravity Experiments (ACME) Burning Rate Emulator (BRE) Coflow Laminar Diffusion Flame (CLD Flame) Electric-Field Effects",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "Design Structure and Response of Spherical Diffusion Flames (s-Flame) Multi-user Droplet Combustion Apparatus (MDCA) Cool Flames Investigation (CFI) Flame Extin",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "Burning Rate Emulator (BRE) Coflow Laminar Diffusion Flame (CLD Flame) Electric-Field Effects on Laminar Diffusion Flames (E- FIELD Flames) Flame Design Struct",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flamedesign",
+          "entityLabel": "Flame Design",
+          "entityType": "investigation",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "-Field Effects on Laminar Diffusion Flames (E- FIELD Flames) Flame Design Structure and Response of Spherical Diffusion Flames (s-Flame) Multi-user Droplet Comb",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sofie",
+          "entityLabel": "SoFIE",
+          "entityType": "investigation",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "Green Air (FLEX-ICE-GA) Solid Fuel Ignition and Extinction (SoFIE) CIR Ground Unit FCFOPS",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "by NASA’s Glenn Research Center, the CIR was launched to the International Space Station (ISS) in November 2008 by the Space Shuttle (STS-126). FCF-CIR Payload",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "ISS Fluids and Combustion Facility – Combustion Integrated Rack Operations Glenn Research Center ISS Payload Operations Center GMT 309:1",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-mdca",
+          "entityLabel": "MDCA",
+          "entityType": "apparatus",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "on Flames (s-Flame) Multi-user Droplet Combustion Apparatus (MDCA) Cool Flames Investigation (CFI) Flame Extinguishment Experiment (FLEX) Flame Extinguishment E",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-destiny",
+          "entityLabel": "Destiny module",
+          "entityType": "facility",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "Integrated Rack (CIR), located in the US Laboratory Module (Destiny), enables investigators to perform combustion research to understand the fundamentals of th",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "location": "document body",
+          "context": "ombustion Integrated Rack Operations Advanced Combustion via Microgravity Experiments (ACME) Burning Rate Emulator (BRE) Coflow Laminar Diffusion Flame (CLD Fla",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "ISS Fluids and Combustion Facility –",
+        "titleConfidence": "medium",
+        "years": [
+          2008
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 1920,
+          "height": 1080,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 3107,
+          "height": 4637,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 227,
+          "height": 300,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 224,
+          "height": 300,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 192,
+          "height": 300,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 300,
+          "height": 160,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 217,
+          "height": 300,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f003-pdfimg08.png",
+          "kind": "extracted-figure",
+          "sourceFile": "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+          "width": 225,
+          "height": 300,
+          "format": "png",
+          "page": 1
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f003-ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f003.extract.json",
+      "processingMs": 3412
+    },
+    {
+      "id": "f004",
+      "name": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+      "sizeBytes": 7706297,
+      "sha256": "823f09fbbfb997adb455998a96a6beb745e9aa2684d003e0739120cdb2313bfa",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 2371,
+        "pages": 3,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 384,
+            "preview": "Physical Sciences The Microgravity Science Glovebox (MSG) is one of the major dedicated science facilities inside Destiny. It has a large front window and built-in gloves to provide a sealed environment for conducting sc"
+          },
+          {
+            "page": 2,
+            "chars": 618,
+            "preview": "Line drawing of the Microgravity Science Glovebox (MSG). The MSG is a double rack facility aboard the International Space Station (ISS) designed for gravity- dependent phenomena investigation handling. The MSG has been o"
+          },
+          {
+            "page": 3,
+            "chars": 1321,
+            "preview": "supply interface (120, 28, ± 12, and 5 Vdc), 1000 watts of cooling capability, video and data recording and real time downlink, ground commanding capabilities, access to ISS Vacuum Exhaust and Vacuum Resource Systems, an"
+          }
+        ],
+        "headings": [
+          "BASS-II",
+          "BASS-M",
+          "OASIS",
+          "PBRE-WRS",
+          "SAME-R",
+          "SHERE",
+          "SHERE-II",
+          "SLICE",
+          "SPICE",
+          "K E E P E X P L O R I N G"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f004-Microgravity Science Glovebox (MSG) - NASA.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 1",
+          "context": "Physical Sciences The Microgravity Science Glovebox (MSG) is one of the major dedicated science facilities inside Destiny",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-destiny",
+          "entityLabel": "Destiny module",
+          "entityType": "facility",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 1",
+          "context": "MSG) is one of the major dedicated science facilities inside Destiny. It has a large front window and built-in gloves to provide a sealed environment for conduc",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 1",
+          "context": "Physical Sciences The Microgravity Science Glovebox (MSG) is one of the major dedicated science facilities inside Destiny",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "Glovebox (MSG). The MSG is a double rack facility aboard the International Space Station (ISS) designed for gravity- dependent phenomena investigation handling.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "Line drawing of the Microgravity Science Glovebox (MSG). The MSG is a double rack facility aboard the International Spa",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 2",
+          "context": "Line drawing of the Microgravity Science Glovebox (MSG). The MSG is a double rack facility aboard the International Spa",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass2",
+          "entityLabel": "BASS-II",
+          "entityType": "investigation",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "l Laboratory. List of experiments performed in the MSG: BASS BASS-II BASS-M BXF CCF CSLM EHD Eli Lilly-Lyophilization FOAM InSPACE InSPACE-2 InSPACE-3 InSPACE-4",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "OASIS PBRE PBRE-WRS SAME SAME-R Saffire SHERE SHERE-II SLICE SPICE ZBOT K E E P E X P L O R I N G",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "ACE-4 OASIS PBRE PBRE-WRS SAME SAME-R Saffire SHERE SHERE-II SLICE SPICE ZBOT K E E P E X P L O R I N G",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-saffire",
+          "entityLabel": "SAFFIRE",
+          "entityType": "investigation",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "nSPACE-2 InSPACE-3 InSPACE-4 OASIS PBRE PBRE-WRS SAME SAME-R Saffire SHERE SHERE-II SLICE SPICE ZBOT K E E P E X P L O R I N G",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-samer",
+          "entityLabel": "SAME-R",
+          "entityType": "investigation",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "SPACE InSPACE-2 InSPACE-3 InSPACE-4 OASIS PBRE PBRE-WRS SAME SAME-R Saffire SHERE SHERE-II SLICE SPICE ZBOT K E E P E X P L O R I N G",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "eal time downlink, ground commanding capabilities, access to ISS Vacuum Exhaust and Vacuum Resource Systems, and gaseous nitrogen supply. With these capabilitie",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "s, and gaseous nitrogen supply. With these capabilities, the MSG is an ideal platform for research required to advance the technology readiness levels (TRL) nee",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-exploration",
+          "entityLabel": "Exploration vehicle / habitat",
+          "entityType": "mission-environment",
+          "source": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "location": "page/slide 3",
+          "context": "ce the technology readiness levels (TRL) needed for the Crew Exploration Vehicle and the Exploration Initiative. Areas of research that will benefit from invest",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Physical Sciences",
+        "titleConfidence": "medium",
+        "years": [
+          2002
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f004-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "width": 2000,
+          "height": 1667,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f004-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "Microgravity Science Glovebox (MSG) - NASA.pdf",
+          "width": 1127,
+          "height": 1536,
+          "format": "png",
+          "page": 2
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f004-Microgravity Science Glovebox (MSG) - NASA.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f004.extract.json",
+      "processingMs": 2316
+    },
+    {
+      "id": "f005",
+      "name": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+      "sizeBytes": 850625,
+      "sha256": "21d226540a4764db3f55a686daeecdb1d4fb7458502a0f8d2175a0e85ddad853",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 31401,
+        "pages": 19,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2701,
+            "preview": "Advanced Combustion via Microgravity Experiments (ACME) ACME is focused on advanced combustion technology via fundamental microgravity research. The primary goal is to improve efficiency and reduce pollutant emission in"
+          },
+          {
+            "page": 2,
+            "chars": 1565,
+            "preview": "Burning Rate Emulator (BRE) Unlike the other current ACME experiments, the Burning Rate Emulator (BRE) experiment is focused on fire prevention, especially in spacecraft. Specifically, BRE’s objective is to improve our f"
+          },
+          {
+            "page": 3,
+            "chars": 2554,
+            "preview": "examined for flames at both very dilute and highly sooting conditions. Measurements will be made of the structure of diluted methane and ethylene flames in an air coflow. Lifted flames will be used as the basis for the r"
+          },
+          {
+            "page": 4,
+            "chars": 1365,
+            "preview": "• Soot volume fraction measurements indicate that microgravity flames contain five to eight times more soot than the equivalent normal gravity flames. • The data has shown that for highly diluted weak flames, micrograv"
+          },
+          {
+            "page": 5,
+            "chars": 1855,
+            "preview": "premixed flames. Outside reviewers recently concluded that the experiment “… will contribute to our critical understanding to our knowledge of combustion processes in the presence of electric fields.” The experiment will"
+          },
+          {
+            "page": 6,
+            "chars": 3269,
+            "preview": "case of the inverse flames, the oxygen/inert mixture is injected from a central tube, while the fuel is ejected from a surrounding annulus. The Flame Design experiment will explore whether the stoichiometric mixture frac"
+          },
+          {
+            "page": 7,
+            "chars": 2539,
+            "preview": "• SHARING OF RESULTS: The research will be disseminated widely to the combustion research community and to industry. It should advance the state-of-the-art in cool flame kinetics mechanisms, which in turn could lead to"
+          },
+          {
+            "page": 8,
+            "chars": 2082,
+            "preview": "• Flicker, which is a buoyancy-driven (i.e., gravity-driven) instability, is eliminated yielding quasi- steady flames. • Length scales are increased in microgravity flames facilitating analysis of the flame structure."
+          },
+          {
+            "page": 9,
+            "chars": 718,
+            "preview": "• NASA Glenn Research Center (lead center for ISS combustion research) • Profs to a Flame (cover story, pp. 24-29) • Structure & Liftoff In Combustion Experiment (SLICE, an ACME precursor) • To Understand Combustion,"
+          },
+          {
+            "page": 10,
+            "chars": 168,
+            "preview": "Engineering model of the ACME avionics package, with the internal card stack shown at the right (where the two photographs are at different scales). Burners and Igniter"
+          },
+          {
+            "page": 11,
+            "chars": 1744,
+            "preview": "• ACME provides common mounting (on the chamber axis) of a variety of burners, which are depicted and described below. • Most burners will be equipped with a surface thermocouple, and each burner for the BRE experiment"
+          },
+          {
+            "page": 12,
+            "chars": 1053,
+            "preview": "Imaging Overview • ACME’s primary flame diagnostics are a suite of imaging systems including five video cameras and two illumination systems. Three of the cameras and one illumination system are part of the CIR facility"
+          },
+          {
+            "page": 13,
+            "chars": 716,
+            "preview": "• The 12-bit digital camera (shown below) records at up to 30 full frames (1360×1024) per second, and is equipped with a motorized lens with independent control of the zoom, iris, and focus. • The digital camera will b"
+          },
+          {
+            "page": 14,
+            "chars": 905,
+            "preview": "• Alternately, CH* imaging can be conducted with this camera because the filter assembly includes a 430-nm bandpass filter with a 10-nm full width at half-maximum transmission (FWHM). A 450- nm bandpass filter (again wi"
+          },
+          {
+            "page": 15,
+            "chars": 2687,
+            "preview": "• As a result of the signal loss through the narrow bandpass filter, binning is employed such that the OH* images are recorded at 512×512 and 30 fps. Color Ratio Pyrometry • Pyrometry is a technique used to determine a"
+          },
+          {
+            "page": 16,
+            "chars": 1162,
+            "preview": "• The amount of soot particulate in a flame can be determined via an extinction technique, where the camera and the collimated light source are positioned at opposite windows. • For ACME, the extinction measurement wil"
+          },
+          {
+            "page": 17,
+            "chars": 716,
+            "preview": "• An additional wide-view radiometer, that is fixed and not crew exchangeable, is positioned downstream of the burner and flame at 30o from the chamber axis. This detector is primarily intended to support the spherical"
+          },
+          {
+            "page": 18,
+            "chars": 2794,
+            "preview": "• Each PMT will have a wide-angle view, a sight line that is orthogonal to the chamber axis, and will be centered (along the chamber length) relative to the chamber windows so that it is aligned with most of the other i"
+          },
+          {
+            "page": 19,
+            "chars": 475,
+            "preview": "Gallery Need to upload from previous site. Videos Need to upload from previous site. ACME Contact Information Project Manager: Lauren Brown, NASA Glenn Research Center, 216-433-8429, lauren.brown@nasa.gov Project Scienti"
+          }
+        ],
+        "headings": [
+          "GENERAL OVERVIEW",
+          "SELECTED FINDINGS"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f005-advanced-combustion-via-microgravity-experiments-acme.txt"
+      },
+      "tables": [
+        {
+          "name": "pdf-heuristic-table-1",
+          "columns": [
+            "•",
+            "Combustion is the primary man-made contributor to acid rain."
+          ],
+          "rowCount": 3,
+          "sample": [
+            {
+              "•": "•",
+              "Combustion is the primary man-made contributor to acid rain.": "Soot contributes to global warming and is a health problem."
+            },
+            {
+              "•": "•",
+              "Combustion is the primary man-made contributor to acid rain.": "Fire safety!"
+            },
+            {
+              "•": "•",
+              "Combustion is the primary man-made contributor to acid rain.": "Given our pervasive use of combustion as an energy source, the U.S. consumes fossil fuels which"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-2",
+          "columns": [
+            "•",
+            "ACME Image Processing Software (OMA2 and QtOma)"
+          ],
+          "rowCount": 3,
+          "sample": [
+            {
+              "•": "•",
+              "ACME Image Processing Software (OMA2 and QtOma)": "Combustion Integrated Rack (CIR, facility in which ACME will be conducted)"
+            },
+            {
+              "•": "•",
+              "ACME Image Processing Software (OMA2 and QtOma)": "ISS Researchers Guide to Combustion Science"
+            },
+            {
+              "•": "•",
+              "ACME Image Processing Software (OMA2 and QtOma)": "International Space Station (ISS)"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        },
+        {
+          "name": "pdf-heuristic-table-3",
+          "columns": [
+            "•",
+            "NASA Glenn Research Center (lead center for ISS combustion research)"
+          ],
+          "rowCount": 4,
+          "sample": [
+            {
+              "•": "•",
+              "NASA Glenn Research Center (lead center for ISS combustion research)": "Profs to a Flame (cover story, pp. 24-29)"
+            },
+            {
+              "•": "•",
+              "NASA Glenn Research Center (lead center for ISS combustion research)": "Structure & Liftoff In Combustion Experiment (SLICE, an ACME precursor)"
+            },
+            {
+              "•": "•",
+              "NASA Glenn Research Center (lead center for ISS combustion research)": "To Understand Combustion, Yale Engineers Look to the Skies"
+            },
+            {
+              "•": "•",
+              "NASA Glenn Research Center (lead center for ISS combustion research)": "ZIN Technologies, Inc. (ACME payload developer)"
+            }
+          ],
+          "location": "text layer (whitespace heuristic)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [
+          {
+            "id": "lewis-number",
+            "name": "Lewis number",
+            "where": "page/slide 6"
+          }
+        ],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 1",
+          "context": "CME precursor, Structure & Liftoff In Combustion Experiment (SLICE), was conducted in the ISS’ Microgravity Science Glovebox (MSG) in early 2012. The ACME desig",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 1",
+          "context": "Advanced Combustion via Microgravity Experiments (ACME) ACME is focused on advanced combustion technology via fundamental microgravity research. The",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 1",
+          "context": "on Integrated Rack (CIR) on the International Space Station (ISS). An ACME precursor, Structure & Liftoff In Combustion Experiment (SLICE), was conducted in the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 1",
+          "context": "gle modular set of hardware (see ACME Implementation) in the Combustion Integrated Rack (CIR) on the International Space Station (ISS). An ACME precursor, Struc",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 1",
+          "context": "In Combustion Experiment (SLICE), was conducted in the ISS’ Microgravity Science Glovebox (MSG) in early 2012. The ACME design is complete and the engineering",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 1",
+          "context": "Advanced Combustion via Microgravity Experiments (ACME) ACME is focused on advanced combustion technology via fundamental m",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 2",
+          "context": "Burning Rate Emulator (BRE) Unlike the other current ACME experiments, the Burning Rate Emulator (BRE) experiment is focused on fire prevention, especia",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 2",
+          "context": "rature and smoke production. Coflow Laminar Diffusion Flame (CLD Flame) Research, especially including that already conducted in microgravity, has revealed that",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 2",
+          "context": "me) Research, especially including that already conducted in microgravity, has revealed that our current predictive ability is significantly lacking for flames",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 3",
+          "context": "OVERVIEW • EXPERIMENT: The Coflow Laminar Diffusion Flame (CLD Flame) experiment investigates combustion at the extremes of the fuel dilution spectrum – namel",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 3",
+          "context": ". However, comparison of the flames under normal gravity and microgravity conditions shows a striking difference (in microgravity, the absence of buoyancy means",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 3",
+          "context": "tions. Measurements will be made of the structure of diluted methane and ethylene flames in an air coflow. Lifted flames will be used as the basis for the resea",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-efield",
+          "entityLabel": "E-FIELD Flames",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 4",
+          "context": "models. Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames) Electric fields can strongly influence flames because of its effect on the ions pre",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 4",
+          "context": "• Soot volume fraction measurements indicate that microgravity flames contain five to eight times more soot than the equivalent normal gravity flames",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 5",
+          "context": "l microgravity flames, created in the same manner as for the s-Flame experiment. Tests will be conducted with various concentrations of both the injected fuel (",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 5",
+          "context": "ment will be conducted with a normal coflow flame (as in the CLD Flame experiment) or perhaps with a simple gas-jet flame, where there is no surrounding coflow.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flamedesign",
+          "entityLabel": "Flame Design",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 5",
+          "context": "the flame and the flame’s response time to electric forcing. Flame Design The primary goal of the Flame Design experiment is to improve our understanding of soo",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 5",
+          "context": "tigate the soot inception and extinction limits of spherical microgravity flames, created in the same manner as for the s-Flame experiment. Tests will be conduc",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 5",
+          "context": "concentrations of both the injected fuel (i.e., ethylene or methane) and the oxygen enriched atmosphere in order to determine the role of the flame structure o",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cfig",
+          "entityLabel": "CFI-G",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "//youtu.be/f9AQ-OebO_U Cool Flames Investigation with Gases (CFI-G) Cool diffusion flames were discovered during droplet combustion experiments aboard the Inter",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "lames. Structure and Response of Spherical Diffusion Flames (s-Flame) The purpose of the Spherical Flame (s-Flame) experiment is to advance our ability to predi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "above a critical Lewis number. https://youtu.be/f9AQ-OebO_U Cool Flames Investigation with Gases (CFI-G) Cool diffusion flames were discovered during droplet c",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flamedesign",
+          "entityLabel": "Flame Design",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "e, while the fuel is ejected from a surrounding annulus. The Flame Design experiment will explore whether the stoichiometric mixture fraction can characterize s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "mbustion experiments aboard the International Space Station (ISS) in 2012, and this initiated a rapidly growing field of combustion research. Droplet experiment",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "rner from which a fuel/inert gas mixture will issue into the CIR chamber. Flames will be ignited at non-steady conditions and allowed to transition naturally to",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "sooty flames. The spherical flame, which is only possible in microgravity, will be created through use of a porous spherical burner from which a fuel/inert gas",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-octane",
+          "entityLabel": "n-Octane",
+          "entityType": "fuel",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": ". Cool flame chemistry also has a significant impact on fuel octane and cetane numbers, whose understanding has large economic consequences. • MICROGRAVITY: Th",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "and chamber atmosphere. The fuel gases include hydrogen and methane for soot-free flames, and ethylene for sooty flames. One experiment objective is to identif",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-hydrogen",
+          "entityLabel": "Hydrogen",
+          "entityType": "fuel",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "both the fuel and chamber atmosphere. The fuel gases include hydrogen and methane for soot-free flames, and ethylene for sooty flames. One experiment objective",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-lewis-number",
+          "entityLabel": "Lewis number",
+          "entityType": "equation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 6",
+          "context": "flames with fuel/diluent mixtures that are above a critical Lewis number. https://youtu.be/f9AQ-OebO_U Cool Flames Investigation with Gases (CFI-G) Cool diffus",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 7",
+          "context": "reated enabling one-dimensional analysis. Two of the current ACME experiments take advantage of this feature.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 7",
+          "context": "fuel needs and pollutant production. Why study combustion in microgravity? • Flames are strongly affected by gravity because the high-temperature combustion ga",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 7",
+          "context": "tion is a leading man-made source of greenhouse gases, where carbon dioxide is the most important example. • Combustion is the primary man-made contributor to",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 8",
+          "context": "t, extinction, and stability limits are being studied in the ACME experiments. • Microgravity is of course the appropriate environment for studies related to s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 8",
+          "context": "conducted) • ISS Researchers Guide to Combustion Science • International Space Station (ISS)",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 8",
+          "context": "Links • ACME Image Processing Software (OMA2 and QtOma) • Combustion Integrated Rack (CIR, facility in which ACME will be conducted) • ISS Researchers Guide",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 8",
+          "context": "ding quasi- steady flames. • Length scales are increased in microgravity flames facilitating analysis of the flame structure. • Momentum-dominated flames, whi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 9",
+          "context": "pp. 24-29) • Structure & Liftoff In Combustion Experiment (SLICE, an ACME precursor) • To Understand Combustion, Yale Engineers Look to the Skies • ZIN Tech",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 9",
+          "context": ") • Structure & Liftoff In Combustion Experiment (SLICE, an ACME precursor) • To Understand Combustion, Yale Engineers Look to the Skies • ZIN Technologies,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 9",
+          "context": "t of hardware in the Combustion Integrated Rack (CIR) on the International Space Station (ISS), where the CIR is depicted below. The three main elements of the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 9",
+          "context": "e modular set of hardware in the Combustion Integrated Rack (CIR) on the International Space Station (ISS), where the CIR is depicted below. The three main elem",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 9",
+          "context": "e the chamber insert (shown below), a high- definition color camera, and an avionics package (for data acquisition and control and also depicted below).",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 10",
+          "context": "Engineering model of the ACME avionics package, with the internal card stack shown at the right (where the two photographs a",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 11",
+          "context": "• ACME provides common mounting (on the chamber axis) of a variety of burners, which are depicted and",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 11",
+          "context": "cumstances, such as the blending of different fuel gases. • CIR’s standard bottle sizes are 1, 2.25, and 3.8 liters but ACME will sometimes use smaller bottles",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 11",
+          "context": "ribed below. • Most burners will be equipped with a surface thermocouple, and each burner for the BRE experiment will have two heat flux transducers. • The in",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 11",
+          "context": "for the delivery of fuel, oxidizer or inert (e.g., helium or carbon dioxide), and nitrogen to the burner or for chamber filling. • The maximum fuel flow is 2 s",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-he",
+          "entityLabel": "Helium (diluent)",
+          "entityType": "suppressant",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 11",
+          "context": "ntrollers for the delivery of fuel, oxidizer or inert (e.g., helium or carbon dioxide), and nitrogen to the burner or for chamber filling. • The maximum fuel f",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 12",
+          "context": "Imaging Overview • ACME’s primary flame diagnostics are a suite of imaging systems including five video cameras and tw",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 12",
+          "context": "e of the cameras and one illumination system are part of the CIR facility and are already in use on orbit. • Collectively, the imaging systems will enable colo",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 12",
+          "context": "is provided by two video cameras: a high-definition digital camera mounted outside of the chamber and a standard analog camera mounted on the chamber insert (w",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 13",
+          "context": "• The 12-bit digital camera (shown below) records at up to 30 full frames (1360×1024) per second, and is equipped with a",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 14",
+          "context": "wer energy state in a process known as chemiluminescence. • ACME will carry out OH* imaging using CIR’s Low-Light-Level Ultraviolet (LLL-UV) package, which is",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 14",
+          "context": "chemiluminescence. • ACME will carry out OH* imaging using CIR’s Low-Light-Level Ultraviolet (LLL-UV) package, which is a monochrome camera with an intensifie",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 14",
+          "context": "• Alternately, CH* imaging can be conducted with this camera because the filter assembly includes a 430-nm bandpass filter with a 10-nm full width at hal",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 15",
+          "context": "he flame and glow when hot, just like the soot particles. • ACME’s chamber insert is equipped with a crew-replaceable array of 5 silicon carbide (SiC) fibers.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 15",
+          "context": "rmocouples to measure the spread of the thermal field in the spherical flame experiments. • The thermocouples are of limited utility for the other experiments",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 15",
+          "context": "ot is visibly glowing. • Pyrometry can be accomplished with CIR’s monochrome High-Bit Depth Multispectral (HiBMs) camera, when equipped with a Liquid-Crystal T",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-thermocouple",
+          "entityLabel": "Thermocouple",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 15",
+          "context": "f accidental damage. • There will be two versions of a four-thermocouple rake to allow a choice of near and far measurements. Other arrays could be designed to",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 15",
+          "context": "d with CIR’s monochrome High-Bit Depth Multispectral (HiBMs) camera, when equipped with a Liquid-Crystal Tunable Filter (LCTF) for imaging at multiple spectra.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-ir",
+          "entityLabel": "Infrared imaging",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 15",
+          "context": "ture from its broadband thermal radiation which is typically infrared but becomes visible at high temperatures. The yellow through red coloring of a typical hyd",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 16",
+          "context": "ated light source are positioned at opposite windows. • For ACME, the extinction measurement will be made with a second High-Bit Depth Multispectral (HiBMs) ca",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 16",
+          "context": "ectral (HiBMs) camera, without a filter, in combination with CIR’s illumination package (with its two fiber-coupled laser diodes). The images are recorded at 10",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-radiometer",
+          "entityLabel": "Radiometer",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 16",
+          "context": "ate arrays could be developed for future experiments. • The radiometer array has a fixed position which is parallel to the chamber and burner axis and is cente",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 16",
+          "context": "ame can be determined via an extinction technique, where the camera and the collimated light source are positioned at opposite windows. • For ACME, the extinct",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 16",
+          "context": "with CIR’s illumination package (with its two fiber-coupled laser diodes). The images are recorded at 1024×1024 and 30 frames per second. • Alternatively, the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 17",
+          "context": "sensitive detectors that will used in the linear arrays. • ACME’s radiometers are more precisely thermopile detectors with a spectral range of nominally 0.2-1",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 17",
+          "context": "ber axis. This detector is primarily intended to support the spherical flame experiments and will have a quicker response than the more sensitive detectors that",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-radiometer",
+          "entityLabel": "Radiometer",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 17",
+          "context": "• An additional wide-view radiometer, that is fixed and not crew exchangeable, is positioned downstream of the burner and fla",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 17",
+          "context": "mes, the chamber insert will be equipped with a set of three Photomultiplier Tube (PMT) modules.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 18",
+          "context": "eutral density filter to prevent saturation. Like many other ACME components, the PMT array can be removed from the chamber insert by the crew. Other Measuremen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-efield",
+          "entityLabel": "E-FIELD Flames",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 18",
+          "context": "unted on the chamber insert. For example, to accommodate the E-FIELD Flames experiment, the insert is equipped with a high-voltage supply and a crew-removable e",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 18",
+          "context": "I), which is the primary instrument for such measurements on ISS. Its predecessor previously served that role for the space shuttle. Experiment-Unique Equipment",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 18",
+          "context": "re is a simple example. • The ACME experiments will use the CIR’s gas chromatograph for pre- and post-test analysis of the chamber atmosphere, e.g., for oxygen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 18",
+          "context": "• Each PMT will have a wide-angle view, a sight line that is orthogonal to the chamber axis, and will be c",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 18",
+          "context": "lysis of the chamber atmosphere, e.g., for oxygen, nitrogen, carbon dioxide, carbon monoxide, and fuel gases. • Acceleration measurements will be provided by t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "location": "page/slide 19",
+          "context": "rom previous site. Videos Need to upload from previous site. ACME Contact Information Project Manager: Lauren Brown, NASA Glenn Research Center, 216-433-8429, l",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Advanced Combustion via Microgravity Experiments (ACME)",
+        "titleConfidence": "medium",
+        "years": [
+          2012,
+          2017
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 750,
+          "height": 600,
+          "format": "png",
+          "page": 2
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 850,
+          "height": 239,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 686,
+          "height": 564,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg05.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 1094,
+          "height": 804,
+          "format": "png",
+          "page": 5
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg06.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 600,
+          "height": 333,
+          "format": "png",
+          "page": 9
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg07.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 600,
+          "height": 397,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg08.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 253,
+          "height": 330,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg09.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 440,
+          "height": 330,
+          "format": "png",
+          "page": 10
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg10.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 600,
+          "height": 150,
+          "format": "png",
+          "page": 11
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg11.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 600,
+          "height": 382,
+          "format": "png",
+          "page": 12
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg12.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 600,
+          "height": 227,
+          "format": "png",
+          "page": 13
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg13.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 600,
+          "height": 415,
+          "format": "png",
+          "page": 13
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f005-pdfimg14.png",
+          "kind": "extracted-figure",
+          "sourceFile": "advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "width": 600,
+          "height": 542,
+          "format": "png",
+          "page": 14
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "No ruled tables detected; tables come from a whitespace-alignment heuristic over the text layer — verify columns against the source before use.",
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f005-advanced-combustion-via-microgravity-experiments-acme.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f005.extract.json",
+      "processingMs": 2402
+    },
+    {
+      "id": "f006",
+      "name": "burning-and-suppression-of-solids-bass.pdf",
+      "sizeBytes": 206949,
+      "sha256": "a6b5da803a4dfd3e9902ac2013a4495a4712831a86f434e3812e5592822446ac",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 25533,
+        "pages": 10,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2950,
+            "preview": "Burning and Suppression of Solids (BASS) The Burning and Suppression of Solids (BASS) investigation examines the burning and extinction characteristics of a wide variety of fuel samples in microgravity. The BASS experime"
+          },
+          {
+            "page": 2,
+            "chars": 2846,
+            "preview": "has a very low soot point. For many of these tests, the nitrogen suppressant system is engaged at a gradually increasing level until extinction is reached. The important experimental observations from BASS with respect t"
+          },
+          {
+            "page": 3,
+            "chars": 3083,
+            "preview": "record data, exchange fuel samples, and replace the igniter. Forty-one test samples will be burned in a variety of flow conditions for a total of 89 test points. Data is downlinked via video during or immediately after e"
+          },
+          {
+            "page": 4,
+            "chars": 2042,
+            "preview": "Solid--Fuel Flame Extinction and Stabilization in Response to a Step Change in Gravity. Combustion and Flame. Vol. 147. pp. 262--277 (2006). • Ferkul PV, T’ien JS. A Model of Low--Speed Concurrent Flow Flame Spread over"
+          },
+          {
+            "page": 5,
+            "chars": 2402,
+            "preview": "• Takahashi F, Linteris G, Katta VR. Extinguishment Mechanisms of Co--flow Diffusion Flames in a Cup--Burner Apparatus. Proceedings of The Combustion Institute. Vol. 31 (2007). • Takahashi F, Linteris G, Katta VR. Exti"
+          },
+          {
+            "page": 6,
+            "chars": 3071,
+            "preview": "The modeling effort includes: • Modeling flame spread over flat samples: For flat samples, the steady spread characteristics can be examined using the three-dimensional model currently available. Alterations are the new"
+          },
+          {
+            "page": 7,
+            "chars": 3239,
+            "preview": "• Detailed combustion models can be validated by data obtained in the simpler flow environment in microgravity. Once validated, they can be used to build more complex combustion models needed to capture the important de"
+          },
+          {
+            "page": 8,
+            "chars": 2385,
+            "preview": "Contact Information Principal Investigators: Dr. Sandra Olson, NASA Glenn Research Center, Cleveland, Ohio, United States Co-Investigators/Collaborators: Dr. Paul Ferkul, National Center for Space Exploration Research, C"
+          },
+          {
+            "page": 9,
+            "chars": 3199,
+            "preview": "same material in normal gravity with other conditions being identical (pressure, oxygen concentration, temperature, etc.). • BASS-M tests ten different treated textiles at various air flow rates found in forced convecti"
+          },
+          {
+            "page": 10,
+            "chars": 145,
+            "preview": "video image. Upon completion of the tests, the crew member stows the hardware, and the stored images and data are returned to Earth for analysis."
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f006-burning-and-suppression-of-solids-bass.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "Burning and Suppression of Solids (BASS) The Burning and Suppression of Solids (BASS) investigation",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "tilizes slightly modified Smoke Point In Co-flow Experiment (SPICE) hardware within the Microgravity Science Glovebox (MSG) for observations of burning solid ma",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "SG) for observations of burning solid materials on board the ISS. BASS consists of 41 fuel samples. There are three categories of samples: flat, solid spheres,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "moke Point In Co-flow Experiment (SPICE) hardware within the Microgravity Science Glovebox (MSG) for observations of burning solid materials on board the ISS. B",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "inction characteristics of a wide variety of fuel samples in microgravity. The BASS experiment will guide strategies for extinguishing accidental fires in micro",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "by 1 cm wide by 1 and 2 mm thick) of Polymethylmethacrylate (PMMA) and wax-saturated fiberglass fabric yield thickness effects on flame spread and extinguishmen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "d concurrent-flow spread rate and limiting flame length. The cotton-fiberglass fabric blend Solid Inflammability Boundary at Low-Speeds (SIBAL) fuel is our prin",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-fiberglass",
+          "entityLabel": "Fiberglass",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "rrent-flow spread rate and limiting flame length. The cotton-fiberglass fabric blend Solid Inflammability Boundary at Low-Speeds (SIBAL) fuel is our principal t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-nomex",
+          "entityLabel": "Nomex",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 1",
+          "context": "for this purpose. Other thin materials are burned including Nomex and Ultem. Thick flat samples (5 cm long by 1 cm wide by 1 and 2 mm thick) of Polymethylmetha",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 2",
+          "context": "and assembles the BASS hardware on the base plate within the MSG working volume and connects electrical and data harnesses. • Before each test point, the crew",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 2",
+          "context": "d. Some changes are needed for the sphere and the duct flow. Zero-g facility test burning 2-cm-diameter PMMA sphere in 30 cm/s airflow. Left: 1 g; Middle: 0 g,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 2",
+          "context": "til the flame goes out. • The crew controls video and still camera functions. Some photos are downlinked for near- real time coordination with the investigator",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 2",
+          "context": "ing the current model. • Modeling burning and extinction of PMMA spheres: Similar problem on modeling two- dimensional circular PMMA cylinder in cross flow has",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 3",
+          "context": "n no major reboost or docking procedures are underway on the International Space Station (ISS). Operational Protocols: The crewmember installs the BASS hardware",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 3",
+          "context": "Protocols: The crewmember installs the BASS hardware in the MSG work volume. The BASS hardware consists of a small flow duct with an igniter and a small nozzle",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 3",
+          "context": "selection process. Using nitrogen as a flame suppressant in microgravity provides a direct link to current and planned extinguishment techniques. Earth Applica",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-radiometer",
+          "entityLabel": "Radiometer",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 3",
+          "context": "supplied via a mass flow controller, from 0 to 500 cc/min. A radiometer measures flame output. The crewmember conducts each test. They install the correct fuel",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-flow",
+          "entityLabel": "Flow controller / anemometer",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 3",
+          "context": "a minute. A nitrogen suppressant is then supplied via a mass flow controller, from 0 to 500 cc/min. A radiometer measures flame output. The crewmember conducts",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 4",
+          "context": "ion Experiments Using a Continuous Fuel Dispenser for Use in Microgravity. Microgravity Science and Technology. Vol. XV/2 (2004). • Foutch DW. Size and Shape o",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 4",
+          "context": ". • Goldmeer JS. Extinguishment of a Diffusion Flame Over a PMMA Cylinder by Depressurization in Reduced--Gravity. NASA CR--198550 (CWRU PhD Dissertation) (199",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "Hawersaat, NASA GRC Engineering Team: ZIN Technologies, Inc. Burning and Suppression of Solids – II (BASS-II) Burning and Suppression of Solids – II (BASS-II) u",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass2",
+          "entityLabel": "BASS-II",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "N Technologies, Inc. Burning and Suppression of Solids – II (BASS-II) Burning and Suppression of Solids – II (BASS-II) utilizes slightly modified Smoke Point In",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "tilizes slightly modified Smoke Point In Co-flow Experiment (SPICE) hardware within the Microgravity Science Glovebox (MSG) for observations of burning solid ma",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "SG) for observations of burning solid materials on board the ISS. BASS-II consists of 100 fuel samples and associated igniter wires. There are three categories",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "moke Point In Co-flow Experiment (SPICE) hardware within the Microgravity Science Glovebox (MSG) for observations of burning solid materials on board the ISS. B",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "lames by Carbon Dioxide in Co--flow Air and Oxygen- Enriched Microgravity Environments. Combustion and Flame. Vol. 155, pp. 37--53 (2008). • Tseng Y--T. Igniti",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "nd extinction limits. The flat sample materials will include acrylic films and sheets of different thicknesses, and a cotton-fiberglass fabric blend Solid Infla",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "ude acrylic films and sheets of different thicknesses, and a cotton-fiberglass fabric blend Solid Inflammability Boundary at Low- Speeds (SIBAL) fuel which was",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-fiberglass",
+          "entityLabel": "Fiberglass",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "ylic films and sheets of different thicknesses, and a cotton-fiberglass fabric blend Solid Inflammability Boundary at Low- Speeds (SIBAL) fuel which was previou",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 5",
+          "context": "07). • Takahashi F, Linteris G, Katta VR. Extinguishment of Methane Diffusion Flames by Carbon Dioxide in Co--flow Air and Oxygen- Enriched Microgravity Enviro",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 6",
+          "context": "ded for the sphere and the duct flow. Science Objectives The Burning and Suppression of Solids –II (BASS-II) investigation examines the burning and extinction c",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass2",
+          "entityLabel": "BASS-II",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 6",
+          "context": "cience Objectives The Burning and Suppression of Solids –II (BASS-II) investigation examines the burning and extinction characteristics of a wide variety of fue",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 6",
+          "context": "inction characteristics of a wide variety of fuel samples in microgravity. The BASS-II experiment will guide strategies for materials flammability screening for",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 6",
+          "context": "ently being developed. • Modeling burning and extinction of PMMA spheres: Similar problem on modeling two- dimensional circular PMMA cylinder in cross flow has",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass2",
+          "entityLabel": "BASS-II",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 7",
+          "context": "al combustion problems. Space Applications A primary goal of BASS-II is improved spacecraft fire safety, improved understanding of combustion in space and how t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 7",
+          "context": "n no major reboost or docking procedures are underway on the International Space Station (ISS). The crewmember installs the BASS-II hardware in the MSG work vol",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 7",
+          "context": "rements and Protocols BASS-II is conducted inside the sealed MSG work volume. The crewmember is involved throughout the experiment to load fuel samples, adjust",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 7",
+          "context": "alidated by data obtained in the simpler flow environment in microgravity. Once validated, they can be used to build more complex combustion models needed to ca",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-radiometer",
+          "entityLabel": "Radiometer",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 7",
+          "context": "e flame is ignited and allowed to burn for about a minute. A radiometer measures flame output. The crewmember conducts each test. They install the correct fuel",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-flow",
+          "entityLabel": "Flow controller / anemometer",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 7",
+          "context": "rations a fan produces a co-flow of air through the duct. An anemometer is used to measure the actual flow rate. The crewmember adjusts the airflow from 5 to 50",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 8",
+          "context": "Ohio, United States Engineering Team: ZIN Technologies, Inc. Burning and Suppression of Solids-Milliken (BASS-M) The Burning and Suppression of Solids-Milliken",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 8",
+          "context": "tilizes slightly modified Smoke Point In Co-flow Experiment (SPICE) hardware within the Microgravity Science Glovebox (MSG) for observations of burning solid ma",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 8",
+          "context": "ng solid materials on board the International Space Station (ISS). BASS-M consists of 44 textile samples with integrated igniter wires. There are four samples o",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 8",
+          "context": "moke Point In Co-flow Experiment (SPICE) hardware within the Microgravity Science Glovebox (MSG) for observations of burning solid materials on board the Intern",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 8",
+          "context": "moke Point In Co-flow Experiment (SPICE) hardware within the Microgravity Science Glovebox (MSG) for observations of burning solid materials on board the Intern",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "app-droplet-burner",
+          "entityLabel": "Droplet deployment/igniter apparatus",
+          "entityType": "apparatus",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 8",
+          "context": "ll piece untreated textile which is ignited by an integrated hot wire igniter. The flame from the untreated textile impinges on the treated textile which is imm",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "he International Space Station. The crew member installs the SPICE and BASS hardware in the MSG work volume. The SPICE and BASS hardware consists of a small flo",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "no major re-boost or docking procedures are underway on the International Space Station. The crew member installs the SPICE and BASS hardware in the MSG work v",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "irements and Protocols BASS-M is conducted inside the sealed MSG work volume. The crew member is involved throughout the experiment to load flame retardant text",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "iles at various air flow rates found in forced convection in microgravity environments, or in a free fall environment. Each textile’s ability to self-extinguish",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-radiometer",
+          "entityLabel": "Radiometer",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "textile until both extinguish, which takes about a minute. A radiometer measures flame output. The crew member conducts each test by installing the correct text",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "ge textile samples, and replace the memory card in the still camera. Forty-four test samples are burned in a variety of flow conditions for a total of 44 test p",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-flow",
+          "entityLabel": "Flow controller / anemometer",
+          "entityType": "sensor",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "ations, a fan produces a co-flow of air through the duct. An anemometer is used to measure the actual flow rate. The crew member adjusts the airflow from 5 to 5",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "burning-and-suppression-of-solids-bass.pdf",
+          "location": "page/slide 9",
+          "context": "nducts space-based burning and flame extinguishment tests on cotton textiles that have been treated with flame retardants. Results provide new knowledge of how",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Burning and Suppression of Solids (BASS)",
+        "titleConfidence": "medium",
+        "years": [
+          1974,
+          1987,
+          1994,
+          1995,
+          1996,
+          1998,
+          1999,
+          2000,
+          2003,
+          2004,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f006-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "burning-and-suppression-of-solids-bass.pdf",
+          "width": 206,
+          "height": 135,
+          "format": "png",
+          "page": 5
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f006-burning-and-suppression-of-solids-bass.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f006.extract.json",
+      "processingMs": 2438
+    },
+    {
+      "id": "f007",
+      "name": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+      "sizeBytes": 94577,
+      "sha256": "cc508885c1871dae87beb0ba8fd8c1f3c02419e468caea836b04d1617d658885",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "aerosol-smoke",
+      "text": {
+        "chars": 5294,
+        "pages": 2,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 3081,
+            "preview": "Dust and Aerosol Measurement Feasibility Test (DAFT) The Dust and Aerosol Measurement Feasibility Test (DAFT) was designed to ensure that a modified P-Trak—a key component of the forthcoming NASA Smoke Aerosol Measuremen"
+          },
+          {
+            "page": 2,
+            "chars": 2181,
+            "preview": "the spacecraft’s filter. Knowing the median particulate level throughout ISS will help design better smoke detectors capable of distinguishing normal dust from dangerous smoke particles. Applications Space Applications E"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f007-dust-and-aerosol-measurement-feasibility-test-daft.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-same",
+          "entityLabel": "SAME",
+          "entityType": "investigation",
+          "source": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "location": "page/slide 1",
+          "context": "at a modified P-Trak—a key component of the forthcoming NASA Smoke Aerosol Measurement Experiment (SAME)—will perform properly in the unique environment of micr",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-daft",
+          "entityLabel": "DAFT",
+          "entityType": "investigation",
+          "source": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "location": "page/slide 1",
+          "context": "Dust and Aerosol Measurement Feasibility Test (DAFT) The Dust and Aerosol Measurement Feasibility Test (DAFT) was designed to ensure that a modifi",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "location": "page/slide 1",
+          "context": "(SAME) is planned to gather particulate size information on ISS. The DAFT experiment, which was initiated after the Columbia accident, is to be used to obtain",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "location": "page/slide 1",
+          "context": "nt (SAME)—will perform properly in the unique environment of microgravity. If the P-Trak performs as expected, the device will be used in SAME to provide data t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "location": "page/slide 1",
+          "context": "ogravity environment. Most particle counters work by using a laser to record instances when the beam is interrupted; however, this method will not record ultra-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-daft",
+          "entityLabel": "DAFT",
+          "entityType": "investigation",
+          "source": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "location": "page/slide 2",
+          "context": "ata required for that development, SAME needs to utilize the DAFT experiment to provide mitigation against the risk that the P-Trak may not be able to provide t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "location": "page/slide 2",
+          "context": "ft’s filter. Knowing the median particulate level throughout ISS will help design better smoke detectors capable of distinguishing normal dust from dangerous sm",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Dust and Aerosol Measurement Feasibility Test (DAFT)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f007-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 1
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f007-dust-and-aerosol-measurement-feasibility-test-daft.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f007.extract.json",
+      "processingMs": 635
+    },
+    {
+      "id": "f008",
+      "name": "flame-extinguishment-experiment-flex.pdf",
+      "sizeBytes": 214938,
+      "sha256": "318b21e5deb17e61d9668cfede6da61d6676e84950aa3d33c5b5f5bf3f1464b2",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 13120,
+        "pages": 5,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 3380,
+            "preview": "Flame Extinguishment Experiment (FLEX) The Flame Extinguishment Experiment (FLEX) experiment was designed to assess and quantify the effectiveness of inert-gas suppressants in microgravity and obtain the most conservativ"
+          },
+          {
+            "page": 2,
+            "chars": 2424,
+            "preview": "concentrations range from 0.00 mole fraction to the limit where no flame can exist (0.70 expected for the least active suppressant). Pressure: Ambient pressure does not significantly influence the droplet burning rate bu"
+          },
+          {
+            "page": 3,
+            "chars": 3383,
+            "preview": "Flame Extinguishment Experiment-2 (FLEX-2) The second in the FLEX series of experiments, the FLEX-2 investigation uses fuels and environmental conditions that mimic real combustor conditions. The investigation will exten"
+          },
+          {
+            "page": 4,
+            "chars": 2617,
+            "preview": "droplet radius in a quiescent ambient. During the experiments involving binary droplet arrays, two droplets are placed along a support fiber at known locations and the droplets are ignited simultaneously and the subseque"
+          },
+          {
+            "page": 5,
+            "chars": 1236,
+            "preview": "experiment will measure burning rate, burning time, flame spread and droplet motion as a function of inter-droplet spacing, ambient pressure and gas composition. Contact Information PI Team: Masao Kikuchi, JAXA; Hiroshi"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f008-flame-extinguishment-experiment-flex.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 1",
+          "context": "Flame Extinguishment Experiment (FLEX) The Flame Extinguishment Experiment (FLEX) experiment was designed to assess and quantify the",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-mdca",
+          "entityLabel": "MDCA",
+          "entityType": "apparatus",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 1",
+          "context": "stic fires. The independent experiment variables analyzed by MDCA-FLEX are: Oxygen Mole Fraction: The ambient oxygen mole fraction in a typical space environmen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 1",
+          "context": "and quantify the effectiveness of inert-gas suppressants in microgravity and obtain the most conservative estimate of the limiting oxygen index for steady comb",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 1",
+          "context": "predictive capabilities of the models. The suppressants are carbon dioxide and helium. The expected",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-he",
+          "entityLabel": "Helium (diluent)",
+          "entityType": "suppressant",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 1",
+          "context": "ected in space. There will be a small number of tests with a helium diluent gas. The reason is primarily for baseline comparisons with the Droplet Combustion Ex",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 2",
+          "context": "aracterized than typical fuels in fire safety studies (e.g., PMMA or paper). This is also a disadvantage since it does not represent a practical fuel. The study",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methanol",
+          "entityLabel": "Methanol",
+          "entityType": "fuel",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 2",
+          "context": "he study will use two typical hydrocarbon fuels, an alcohol, methanol (CH3OH) and an alkane, heptane (C7H16). There is a relatively large experience base with t",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-heptane",
+          "entityLabel": "n-Heptane",
+          "entityType": "fuel",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 2",
+          "context": "drocarbon fuels, an alcohol, methanol (CH3OH) and an alkane, heptane (C7H16). There is a relatively large experience base with these fuels. Methanol has a fuel-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 3",
+          "context": "Flame Extinguishment Experiment-2 (FLEX-2) The second in the FLEX series of experiments, the FLEX-2 investigation uses fuels and envir",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex2",
+          "entityLabel": "FLEX-2",
+          "entityType": "investigation",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 3",
+          "context": "Flame Extinguishment Experiment-2 (FLEX-2) The second in the FLEX series of experiments, the FLEX-2 investigation uses fuels and envir",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 3",
+          "context": "the mathematics required for modeling combustion processes. Microgravity experiments provide the opportunity to achieve this spherical symmetry, a fact which N",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 4",
+          "context": "scent atmosphere surrounding the droplet. The experiments in FLEX-2 can easily be categorized into four separate groupings; these being, the pure fuel experimen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex2",
+          "entityLabel": "FLEX-2",
+          "entityType": "investigation",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 4",
+          "context": "scent atmosphere surrounding the droplet. The experiments in FLEX-2 can easily be categorized into four separate groupings; these being, the pure fuel experimen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 4",
+          "context": "using the NASA FLEX-2 hardware and combustion facilities on ISS. FLEX-2J will observe and measure fuel droplet motions during flame spreading along a one-dimen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "app-droplet-burner",
+          "entityLabel": "Droplet deployment/igniter apparatus",
+          "entityType": "apparatus",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 4",
+          "context": "will be deployed to fixed positions upon ceramic beads on a silicon carbide fiber. Then an additional three to ten movable droplets are positioned to the fiber",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 5",
+          "context": "k Hickman, NASA GRC Engineering Team: ZIN Technologies, Inc. FLEX-Italian Combustion Experiment for Green Air (FLEX-ICE-GA) The FLEX-Italian Combustion Experime",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex2",
+          "entityLabel": "FLEX-2",
+          "entityType": "investigation",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 5",
+          "context": "ined by the Italian Space Agency (ASI) within the CIR in the FLEX-2 configuration. A collaborative agreement between U.S. and Italian scientists from the Italia",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 5",
+          "context": "uels as defined by the Italian Space Agency (ASI) within the CIR in the FLEX-2 configuration. A collaborative agreement between U.S. and Italian scientists from",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-ethanol",
+          "entityLabel": "Ethanol",
+          "entityType": "fuel",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 5",
+          "context": "entified the fuels to be used as 50–50 mixtures of n-heptane/ethanol and 50–50 n-hexanol/n- decane. Contact Information PI Team: Patrizio Massoli, Istituto Moto",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-heptane",
+          "entityLabel": "n-Heptane",
+          "entityType": "fuel",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 5",
+          "context": "have identified the fuels to be used as 50–50 mixtures of n-heptane/ethanol and 50–50 n-hexanol/n- decane. Contact Information PI Team: Patrizio Massoli, Istit",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-decane",
+          "entityLabel": "n-Decane",
+          "entityType": "fuel",
+          "source": "flame-extinguishment-experiment-flex.pdf",
+          "location": "page/slide 5",
+          "context": "s 50–50 mixtures of n-heptane/ethanol and 50–50 n-hexanol/n- decane. Contact Information PI Team: Patrizio Massoli, Istituto Motori of Italian National Research",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f008-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "flame-extinguishment-experiment-flex.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 1
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f008-pdfimg02.png",
+          "kind": "extracted-figure",
+          "sourceFile": "flame-extinguishment-experiment-flex.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 3
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f008-pdfimg03.png",
+          "kind": "extracted-figure",
+          "sourceFile": "flame-extinguishment-experiment-flex.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 4
+        },
+        {
+          "path": "data/media/batches/B-20261112-004/f008-pdfimg04.png",
+          "kind": "extracted-figure",
+          "sourceFile": "flame-extinguishment-experiment-flex.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 5
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f008-flame-extinguishment-experiment-flex.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f008.extract.json",
+      "processingMs": 828
+    },
+    {
+      "id": "f009",
+      "name": "smoke-aerosol-measurement-experiment-same.pdf",
+      "sizeBytes": 125215,
+      "sha256": "18fd998abc3f9f2e8942d998fbaa8207a983add97284cca3419c8b1070a4cdbb",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "aerosol-smoke",
+      "text": {
+        "chars": 13159,
+        "pages": 5,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2768,
+            "preview": "Smoke Aerosol Measurement Experiment (SAME) Spacecraft smoke detectors must detect different types of smoke. For example, hydrocarbon fuels typically produce soot, and plastics produce droplets of recondensed polymer fra"
+          },
+          {
+            "page": 2,
+            "chars": 3519,
+            "preview": "these detectors to reduced gravity smokes that will allow evaluation of the adequacy of these existing technologies using relevant data. The current Fire Prevention, Detection, and Suppression (FPDS) program plan allows"
+          },
+          {
+            "page": 3,
+            "chars": 2114,
+            "preview": "Results Publications • Meyer ME, Mulholland G, Bryg V, Urban DL, Yuan Z, Ruff GA, Cleary T, Yang J. Smoke characterization and feasibility of the moment method for spacecraft fire detection. Aerosol Science and Technolo"
+          },
+          {
+            "page": 4,
+            "chars": 3617,
+            "preview": "Smoke Aerosol Measurement Experiment-Reflight (SAME-R) The Re-flight of the Smoke Aerosol Measurement Experiment (SAME-2) was conducted during Expedition 24 (July – September 2010) and flight experiment results have been"
+          },
+          {
+            "page": 5,
+            "chars": 1061,
+            "preview": "sensitivity of the shuttle detector. As described by Friedman, there have been six component failures by overheating or other causes in the NASA Orbiter fleet in addition to several similar incidents that have occurred o"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f009-smoke-aerosol-measurement-experiment-same.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.1080/02786826.2015.1025124",
+          "10.1080/02786826.2015.1025125",
+          "10.4271/2008-01-2089.report",
+          "10.4271/2008-01-2089",
+          "10.1016/j.firesaf.2018.04.004"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-same",
+          "entityLabel": "SAME",
+          "entityType": "investigation",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 1",
+          "context": "Smoke Aerosol Measurement Experiment (SAME) Spacecraft smoke detectors must detect different types o",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 1",
+          "context": "erformance of the photoelectric smoke detectors (used on the ISS) and collect data for which a numerical formula can be developed and used to predict smoke drop",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 1",
+          "context": "e. • Results will allow an evaluation of the performance in microgravity of the two existing U.S. spacecraft smoke detector designs, in use on the Shuttle and",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-smoke-detector",
+          "entityLabel": "Smoke detector",
+          "entityType": "sensor",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 1",
+          "context": "formance in microgravity of the two existing U.S. spacecraft smoke detector designs, in use on the Shuttle and ISS, and evaluate other fire detection devices. •",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 2",
+          "context": "conducted in the Microgravity Science Glovebox (MSG) on the International Space Station (ISS) during Expedition 15. Overall, 30 samples were tested comprising",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 2",
+          "context": "t (SAME) was conducted in the Microgravity Science Glovebox (MSG) on the International Space Station (ISS) during Expedition 15. Overall, 30 samples were tested",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 2",
+          "context": "d Aerosol Measurement Experiment (SAME) was conducted in the Microgravity Science Glovebox (MSG) on the International Space Station (ISS) during Expedition 15.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-smoke-detector",
+          "entityLabel": "Smoke detector",
+          "entityType": "sensor",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 2",
+          "context": "ron particulate that are better detected using an ionization smoke detector, however a light scattering detector would perform very well for most of the cases.",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-smoke-detector",
+          "entityLabel": "Smoke detector",
+          "entityType": "sensor",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 3",
+          "context": "Yuan Z, Ruff GA, Cleary T, Yang J. Evaluation of spacecraft smoke detector performance in the low-gravity environment. Fire Safety Journal. 2018 June 1; 9874-8",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-same",
+          "entityLabel": "SAME",
+          "entityType": "investigation",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 4",
+          "context": "Smoke Aerosol Measurement Experiment-Reflight (SAME-R) The Re-flight of the Smoke Aerosol Measuremen",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-samer",
+          "entityLabel": "SAME-R",
+          "entityType": "investigation",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 4",
+          "context": "Smoke Aerosol Measurement Experiment-Reflight (SAME-R) The Re-flight of the Smoke Aerosol Measurement Experiment (SAME-2) was conducted during Exp",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 4",
+          "context": "is assumed to be lognormal. The flight system also included International Space Station and Space Shuttle smoke detectors and the results from these devices ar",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-smoke-detector",
+          "entityLabel": "Smoke detector",
+          "entityType": "sensor",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 4",
+          "context": "roscopy (TEM), several aerosol instruments, and a commercial smoke detector. These flight units measured moments of the particle size distribution: particle num",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-aps",
+          "entityLabel": "Aerosol particle sizer",
+          "entityType": "sensor",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 4",
+          "context": "esults from these devices are presented. A Scanning Mobility Particle Sizer Spectrometer (SMPS) is too large and complex to include in a flight experiment, but",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 4",
+          "context": "ibutions of the smoke from SAME-2 materials (Teflon, Kapton, cotton, silicone rubber and Pyrell ). Repeatable sample surface temperatures were obtained with SAM",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "smoke-aerosol-measurement-experiment-same.pdf",
+          "location": "page/slide 5",
+          "context": "ition to several similar incidents that have occurred on the ISS. None of these events spread into a real fire but as mission durations increase, the likelihood",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Smoke Aerosol Measurement Experiment (SAME)",
+        "titleConfidence": "medium",
+        "doi": "10.1080/02786826.2015.1025124",
+        "years": [
+          1997,
+          2008,
+          2009,
+          2010,
+          2015,
+          2018
+        ],
+        "authorPattern": "Urban et al. (first author + et al.)",
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-004/f009-smoke-aerosol-measurement-experiment-same.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f009.extract.json",
+      "processingMs": 2147
+    },
+    {
+      "id": "f010",
+      "name": "smoke-point-in-co-flow-experiment-spice.pdf",
+      "sizeBytes": 114770,
+      "sha256": "ed3905a0a13afe0390b5ed89959cc9f2e21edba5d1a103f2676425a7efa48e9b",
+      "kind": "pdf",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 4947,
+        "pages": 2,
+        "pageTexts": [
+          {
+            "page": 1,
+            "chars": 2616,
+            "preview": "Smoke Point in Co-flow Experiment (SPICE) The Smoke Point In Co-flow Experiment will continue the study of fundamental phenomena related to understanding the mechanisms controlling the stability and extinction of jet dif"
+          },
+          {
+            "page": 2,
+            "chars": 2299,
+            "preview": "Science Results The Smoke Point isn’t a break room for those who like to light up, it’s the point at which gas-jet flames begin to emit soot. Studying soot-emitting flame advances our understanding of fire safety in spac"
+          }
+        ],
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261112-004/f010-smoke-point-in-co-flow-experiment-spice.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "smoke-point-in-co-flow-experiment-spice.pdf",
+          "location": "page/slide 1",
+          "context": "Smoke Point in Co-flow Experiment (SPICE) The Smoke Point In Co-flow Experiment will continue the study of fundamental phenomena relat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "smoke-point-in-co-flow-experiment-spice.pdf",
+          "location": "page/slide 1",
+          "context": "dominates the heat emitted from flames in normal gravity and microgravity fires. Control of this heat emission is critical for prevention of the spread of fires",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "smoke-point-in-co-flow-experiment-spice.pdf",
+          "location": "page/slide 2",
+          "context": "ristics of many flames of practical interest are nonbuoyant. SPICE seeks to extend our understanding by looking at the interaction of ambient flow with the smok",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "smoke-point-in-co-flow-experiment-spice.pdf",
+          "location": "page/slide 2",
+          "context": "uel mixtures, including propylene, propane, and ethylene, in microgravity. Researchers identified more than 70 smoke points, which yielded estimates of soot-for",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "smoke-point-in-co-flow-experiment-spice.pdf",
+          "location": "page/slide 2",
+          "context": "stion tests with various fuel mixtures, including propylene, propane, and ethylene, in microgravity. Researchers identified more than 70 smoke points, which yie",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Smoke Point in Co-flow Experiment (SPICE)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [
+        {
+          "path": "data/media/batches/B-20261112-004/f010-pdfimg01.png",
+          "kind": "extracted-figure",
+          "sourceFile": "smoke-point-in-co-flow-experiment-spice.pdf",
+          "width": 155,
+          "height": 155,
+          "format": "png",
+          "page": 1
+        }
+      ],
+      "errors": [],
+      "unresolved": [
+        "Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+      ],
+      "rawPath": "data/raw/batches/B-20261112-004/f010-smoke-point-in-co-flow-experiment-spice.pdf",
+      "extractedPath": "data/extracted/batches/B-20261112-004/f010.extract.json",
+      "processingMs": 659
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "extracted": 10,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 10,
+    "pages": 64,
+    "chars": 110692,
+    "tables": 3,
+    "tableRows": 10,
+    "equations": 1,
+    "figures": 61,
+    "entities": 247,
+    "newEntities": 1,
+    "mediaAssets": 61
+  },
+  "cumulative": {
+    "batches": 4,
+    "files": 30,
+    "uniqueFiles": 30,
+    "duplicateFiles": 0,
+    "documents": 30,
+    "pages": 64,
+    "chars": 115588,
+    "tables": 23,
+    "tableRows": 2007,
+    "equations": 1,
+    "figures": 61,
+    "mediaAssets": 61,
+    "entities": 110,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261112-004",
+    "updatedAt": "2026-11-12T20:58:53.606Z"
+  },
+  "unresolvedIssues": [
+    "Combustion Science - NASA.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "Fluids & Combustion Facility - NASA.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations - ISS Fluids and Combustion Facility - Combustion Integrated Rack Operations.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "Microgravity Science Glovebox (MSG) - NASA.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "advanced-combustion-via-microgravity-experiments-acme.pdf: No ruled tables detected; tables come from a whitespace-alignment heuristic over the text layer — verify columns against the source before use.",
+    "advanced-combustion-via-microgravity-experiments-acme.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "burning-and-suppression-of-solids-bass.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "dust-and-aerosol-measurement-feasibility-test-daft.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "flame-extinguishment-experiment-flex.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description.",
+    "smoke-point-in-co-flow-experiment-spice.pdf: Vision interpretation budget (6 images/batch) reached — remaining images registered without AI description."
+  ],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

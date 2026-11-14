@@ -1,0 +1,110 @@
+source_file,source_sheet,Sample Type,SAME Test #,Description,Date,Inlet velocity (cm/s),Rt/R0,Duration (sec),Primary aging time (sec),Primary mixing time (sec),Net aging time (sec)
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,51,B.L. new formula,21-Jul,8.1,1.38,60.0,11.0,8.0,38.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,51a,B.L. new formula,22-Jul,8.1,1.38,60.0,,,261.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,61,Baseline Aging,2-Aug,8.1,1.38,60.0,11.0,8.0,38.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,61a,aged,2-Aug,8.1,1.38,,,,807.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,62,High Temp aging,2-Aug,8.1,1.48,60.0,11.0,8.0,39.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,62a,aged,2-Aug,8.1,1.48,,,,808.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,70,High temp aged STS det,24-Aug,8.1,1.48,60.0,720.0,8.0,747.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,73,Baseline Aging,26-Aug,8.1,1.38,60.0,11.0,8.0,33.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,73a,aged,26-Aug,8.1,1.38,,,,560.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,75,Mid Temp aging (no Ptrak),26-Aug,8.1,1.43,60.0,11.0,8.0,32.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,75a,aged,26-Aug,8.1,1.43,,,,563.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,77,High Temp aging,26-Aug,8.1,1.48,60.0,11.0,8.0,31.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,77a,aged,26-Aug,8.1,1.48,,,,559.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,85,Mid Temp aging run. Repeat 75,30-Aug,8.1,1.43,60.0,11.0,8.0,33.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,85a,aged,30-Aug,8.1,1.43,,,,563.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,90,Mid Temp aging reburn 85,30-Aug,8.1,1.43,60.0,11.0,8.0,38.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,90a,aged,30-Aug,8.1,1.43,,,,569.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,92,Baseline STS det,7-Sep,8.1,1.38,60.0,11.0,8.0,35.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,93,Mid Temp aging run 75 repeat,7-Sep,8.1,1.43,60.0,11.0,8.0,36.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,93a,aged,7-Sep,8.1,1.43,,,,568.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,94,Mid Temp aging run mid high,7-Sep,8.1,1.45,60.0,11.0,8.0,42.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,94a,aged,7-Sep,8.1,1.45,,,,567.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,101,No flow run w/ aging,8-Sep,0.0,1.48,60.0,11.0,8.0,29.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,101a,aged,8-Sep,0.0,1.48,,,,561.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,102,No flow run w/ aging,8-Sep,0.0,1.48,120.0,11.0,8.0,28.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,102a,aged,8-Sep,0.0,1.48,,,,563.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,108,Low flow run w/aging,9-Sep,1.0,1.48,60.0,11.0,8.0,30.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,108a,aged,9-Sep,1.0,1.48,,,,560.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Kapton,114,low flow run w STS no Ptrak,9-Sep,2.0,1.43,60.0,11.0,8.0,28.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,48,Low Temp,16-Jul,8.0,1.304,60.0,11.0,8.0,62.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,53,HighTemp,22-Jul,8.1,1.35,60.0,1.0,8.0,52.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,59,baseline aged,30-Jul,8.1,1.327,60.0,11.0,8.0,24.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,59a,aged,30-Jul,8.1,1.327,,,,856.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,60,Htemp ageing,30-Jul,8.1,1.35,60.0,11.0,8.0,49.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,60a,aged,30-Jul,8.1,1.35,,,,856.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,65,Baseline long aging,23-Aug,8.1,1.327,60.0,11.0,8.0,50.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,65a,aged,23-Aug,8.1,1.327,,,,1923.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,66,High T aging,23-Aug,8.1,1.36,60.0,11.0,8.0,42.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,66a,aged,23-Aug,8.1,1.36,,,,837.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,67,High temp aged,24-Aug,8.1,1.35,60.0,720.0,8.0,751.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,72,Baseline STS det,25-Aug,8.1,1.327,60.0,11.0,8.0,42.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,86,Mid temp aging,30-Aug,8.1,1.345,60.0,11.0,8.0,50.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,86a,aged,30-Aug,8.1,1.345,,,,628.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,91,Baseline STS det,7-Sep,8.1,1.327,60.0,11.0,8.0,46.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,99,No flow run w/aging,8-Sep,0.0,1.35,60.0,11.0,8.0,48.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,99a,aged,8-Sep,0.0,1.35,,,,627.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,103,low flow run w/ aging,9-Sep,1.0,1.35,60.0,11.0,8.0,48.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,103a,aged,9-Sep,1.0,1.35,,,,619.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,104,No flow run w/ aging,9-Sep,0.0,1.35,60.0,11.0,8.0,51.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,104a,aged,9-Sep,0.0,1.35,,,,636.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Silicone,109,low flow run w STS,9-Sep,2.0,1.35,60.0,11.0,8.0,28.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,49,B.L. High RT/R0,19-Jul,8.0,1.251,60.0,11.0,8.0,51.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,54,Baseline,29-Jul,8.1,1.245,60.0,11.0,8.0,57.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,55,High RT/R0 test aging,29-Jul,8.1,1.245,60.0,11.0,8.0,47.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,55a,aged,29-Jul,8.1,1.245,,,,218.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,57,High RT/R0 reburn sample,29-Jul,8.1,1.253,60.0,11.0,8.0,
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,68,High temp aged STS det,24-Aug,8.1,1.28,60.0,720.0,8.0,747.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,78,Baseline aging,26-Aug,8.1,1.245,60.0,11.0,8.0,37.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,78a,aged,26-Aug,8.1,1.245,,,,581.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,80,High temp aging,26-Aug,8.1,1.28,60.0,11.0,8.0,40.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,80a,aged,26-Aug,8.1,1.28,,,,580.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,82,Mid temp aging,26-Aug,8.1,1.265,60.0,11.0,8.0,39.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,82a,aged,27-Aug,8.1,1.265,,,,579.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,88,Baseline STS det,30-Aug,8.1,1.245,60.0,11.0,8.0,
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,96,No flow run w/aging,7-Sep,0.0,1.245,60.0,11.0,8.0,34.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,96a,aged,7-Sep,0.0,1.245,,,,582.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,98,No flow run w/aging,8-Sep,0.0,1.28,60.0,11.0,8.0,37.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,98a,aged,8-Sep,0.0,1.28,,,,585.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,106,No flow run w/aging,9-Sep,0.0,1.28,60.0,11.0,8.0,30.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,106a,aged,9-Sep,0.0,1.28,,,,558.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Lampwick,110,low flow run w/STS,9-Sep,2.0,1.28,60.0,11.0,8.0,21.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,50,B.L. High RT/R0,20-Jul,8.1,1.452,60.0,11.0,8.0,33.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,56,Baseline,29-Jul,8.1,1.445,60.0,11.0,8.0,41.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,57,High RT/R0 reburn sample,29-Jul,8.1,1.253,60.0,11.0,8.0,
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,58,Baseline aging,30-Jul,8.1,1.445,60.0,11.0,8.0,34.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,58a,aged,30-Jul,8.1,1.445,,,,805.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,69,High temp aged STS det,24-Aug,8.1,1.45,60.0,720.0,8.0,745.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,79,Baseline aging,26-Aug,8.1,1.445,60.0,11.0,8.0,33.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,79a,aged,26-Aug,8.1,1.445,,,,560.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,81,High temp aging,26-Aug,8.1,1.45,60.0,11.0,8.0,30.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,81a,aged,27-Aug,8.1,1.45,,,,559.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,83,Mid temp aging,26-Aug,8.1,1.448,60.0,11.0,8.0,30.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,83a,aged,27-Aug,8.1,1.448,,,,557.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,89,Baseline STS det,30-Aug,8.1,1.445,60.0,11.0,8.0,31.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,100,No flow run w/ aging,8-Sep,0.0,1.45,60.0,11.0,8.0,29.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,100a,aged,8-Sep,0.0,1.45,,,,560.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,105,No flow run w/ aging,9-Sep,0.0,1.45,60.0,11.0,8.0,24.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,105a,aged,9-Sep,0.0,1.45,,,,559.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Teflon,111,low flow run w/ STS,9-Sep,2.0,1.45,60.0,11.0,8.0,43.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,52,Baseline,22-Jul,8.1,1.22,60.0,11.0,8.0,
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,63,Baseline Aging,23-Aug,8.1,1.22,60.0,11.0,8.0,56.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,63a,aged,23-Aug,8.1,1.22,,,,840.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,64,High Temp aging,23-Aug,8.1,1.23,60.0,11.0,8.0,47.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,64a,aged,23-Aug,8.1,1.23,,,,842.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,71,High temp aged STS det,24-Aug,8.1,1.23,60.0,720.0,8.0,750.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,74,Baseline Aging,26-Aug,8.1,1.22,60.0,11.0,8.0,48.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,74a,aged,26-Aug,8.1,1.22,,,,623.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,76,High Temp aging,26-Aug,8.1,1.23,60.0,11.0,8.0,51.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,76a,aged,26-Aug,8.1,1.23,,,,625.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,84,Mid Temp aging retry,30-Aug,8.1,1.225,60.0,11.0,8.0,53.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,84a,aged,30-Aug,8.1,1.225,,,,632.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,87,Baseline STS det,30-Aug,8.1,1.22,60.0,11.0,8.0,45.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,95,No flow run w/ aging,7-Sep,0.0,1.22,60.0,11.0,8.0,38.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,95a,aged,7-Sep,0.0,1.22,,,,
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,97,No flow run w/aging,8-Sep,0.0,1.23,60.0,11.0,8.0,48.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,97a,aged,8-Sep,0.0,1.23,,,,624.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,107,Low flow run w/aging,9-Sep,1.0,1.23,60.0,11.0,8.0,32.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,107a,aged,9-Sep,1.0,1.23,,,,559.0
+Exp7 Smoke/PSI-101_Experimental table_SAME-R.csv,,Pyrell,113,low flow run w STS,9-Sep,2.0,1.23,60.0,11.0,8.0,31.0

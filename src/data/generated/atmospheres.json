@@ -1,0 +1,78 @@
+{
+ "generatedAt": "2026-11-13T18:58:39Z",
+ "note": "Earth/ISS are operational references. Moon Base and spacesuit values are challenge-brief concept references. Mars habitat is a concept study default (Earth-like) with no fixed NASA standard; no validated partial-g combustion data exists.",
+ "environments": [
+  {
+   "id": "earth",
+   "label": "Earth reference",
+   "gravityG": 1.0,
+   "totalPressurePsi": 14.7,
+   "totalPressureKpa": 101.3,
+   "o2Fraction": 0.21,
+   "diluents": "N2 79%",
+   "pO2Kpa": 21.3,
+   "kind": "reference",
+   "evidenceStatus": "reference atmosphere (challenge brief)"
+  },
+  {
+   "id": "iss",
+   "label": "ISS (CIR/ACME era)",
+   "gravityG": 1e-06,
+   "totalPressurePsi": 14.7,
+   "totalPressureKpa": 101.3,
+   "o2Fraction": 0.21,
+   "diluents": "N2 79%",
+   "pO2Kpa": 21.3,
+   "kind": "flight-proven",
+   "evidenceStatus": "FLEX/ACME/SPICE/BASS operated here (PSI records)"
+  },
+  {
+   "id": "moon",
+   "label": "Lunar habitat (concept)",
+   "gravityG": 0.166,
+   "totalPressurePsi": 10.2,
+   "totalPressureKpa": 70.3,
+   "o2Fraction": 0.3,
+   "diluents": "N2 (diluted)",
+   "pO2Kpa": 21.1,
+   "kind": "concept",
+   "evidenceStatus": "challenge-brief concept; no validated partial-g combustion data"
+  },
+  {
+   "id": "mars",
+   "label": "Mars habitat (concept)",
+   "gravityG": 0.38,
+   "totalPressurePsi": 14.7,
+   "totalPressureKpa": 101.3,
+   "o2Fraction": 0.21,
+   "diluents": "N2 79%",
+   "pO2Kpa": 21.3,
+   "kind": "concept",
+   "evidenceStatus": "concept study default (Earth-like interior); no validated partial-g combustion data"
+  },
+  {
+   "id": "spacecraft",
+   "label": "Spacecraft cabin (concept)",
+   "gravityG": 0.0,
+   "totalPressurePsi": 14.7,
+   "totalPressureKpa": 101.3,
+   "o2Fraction": 0.21,
+   "diluents": "N2 79%",
+   "pO2Kpa": 21.3,
+   "kind": "concept",
+   "evidenceStatus": "SAFFIRE flew post-ISS-departure in Cygnus (PSI-98/99/100)"
+  },
+  {
+   "id": "spacesuit",
+   "label": "Spacesuit (concept)",
+   "gravityG": 0.0,
+   "totalPressurePsi": 4.3,
+   "totalPressureKpa": 29.6,
+   "o2Fraction": 1.0,
+   "diluents": "none (pure O2)",
+   "pO2Kpa": 29.6,
+   "kind": "concept",
+   "evidenceStatus": "challenge-brief concept; outside all model applicability domains"
+  }
+ ]
+}

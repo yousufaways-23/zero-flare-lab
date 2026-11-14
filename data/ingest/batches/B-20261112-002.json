@@ -1,0 +1,1387 @@
+{
+  "batchId": "B-20261112-002",
+  "receivedAt": "2026-11-12T20:27:06.375Z",
+  "fileCount": 10,
+  "files": [
+    {
+      "id": "f001",
+      "name": "PSI-100_Experimental table_SAFFIRE-3.csv",
+      "sizeBytes": 239,
+      "sha256": "4d3c717ec20dd0247db670b2784a9fd7d746788bc54a936f80693e48eb8cd117",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "data",
+      "text": {
+        "chars": 200,
+        "headings": [
+          "PSI-100_Experimental table_SAFFIRE-3.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f001-PSI-100_Experimental table_SAFFIRE-3.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-100_Experimental table_SAFFIRE-3",
+          "columns": [
+            "Sample Number",
+            "Material",
+            "Sample Thickness",
+            "Sample Length",
+            "Sample Width",
+            "Air Flow",
+            "Direction",
+            "Camera 1",
+            "Camera 2"
+          ],
+          "rowCount": 2,
+          "sample": [
+            {
+              "Sample Number": "S1",
+              "Material": "SIBAL Fabric",
+              "Sample Thickness": ".33 cm",
+              "Sample Length": "94 cm",
+              "Sample Width": "40.6 cm",
+              "Air Flow": "30 cm/s",
+              "Direction": "Concurrent",
+              "Camera 1": "S1C1",
+              "Camera 2": "S1C2"
+            },
+            {
+              "Sample Number": "S2",
+              "Material": "SIBAL Fabric",
+              "Sample Thickness": ".33 cm",
+              "Sample Length": "94 cm",
+              "Sample Width": "40.6 cm",
+              "Air Flow": "30 cm/s",
+              "Direction": "Opposed",
+              "Camera 1": "S2C1",
+              "Camera 2": "S2C2"
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "PSI-100_Experimental table_SAFFIRE-3.csv",
+          "location": "document body",
+          "context": "ple Thickness,Sample Length,Sample Width,Air Flow ,Direction,Camera 1,Camera 2 S1,SIBAL Fabric,.33 cm,94 cm,40.6 cm,30 cm/s,Concurrent ,S1C1,S1C2 S2,SIBAL Fab",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "PSI-100_Experimental table_SAFFIRE-3.csv",
+          "location": "document body",
+          "context": "ength,Sample Width,Air Flow ,Direction,Camera 1,Camera 2 S1,SIBAL Fabric,.33 cm,94 cm,40.6 cm,30 cm/s,Concurrent ,S1C1,S1C2 S2,SIBAL Fabric,.33 cm,94 cm,40.6",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Sample Number ,Material,Sample Thickness,Sample Length,Sample Width,Air Flow ,Direction,Camera 1,Camera 2",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f001-PSI-100_Experimental table_SAFFIRE-3.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f001.extract.json",
+      "processingMs": 14
+    },
+    {
+      "id": "f002",
+      "name": "PSI-101_Experimental table_SAME-R.csv",
+      "sizeBytes": 5674,
+      "sha256": "87164b7dc9168a4273c159f7a9f23699afbd06ad97b77974377e79b9bf8a3bef",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "data",
+      "text": {
+        "chars": 253,
+        "headings": [
+          "PSI-101_Experimental table_SAME-R.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f002-PSI-101_Experimental table_SAME-R.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-101_Experimental table_SAME-R",
+          "columns": [
+            "Sample Type",
+            "SAME Test #",
+            "Description",
+            "Date",
+            "Inlet velocity (cm/s)",
+            "Rt/R0",
+            "Duration (sec)",
+            "Primary aging time (sec)",
+            "Primary mixing time (sec)",
+            "Net aging time (sec)"
+          ],
+          "rowCount": 109,
+          "sample": [
+            {
+              "Sample Type": "Kapton",
+              "SAME Test #": 51,
+              "Description": "B.L. new formula",
+              "Date": "21-Jul",
+              "Inlet velocity (cm/s)": 8.1,
+              "Rt/R0": 1.38,
+              "Duration (sec)": 60,
+              "Primary aging time (sec)": 11,
+              "Primary mixing time (sec)": 8,
+              "Net aging time (sec)": 38
+            },
+            {
+              "Sample Type": "Kapton",
+              "SAME Test #": "51a",
+              "Description": "B.L. new formula",
+              "Date": "22-Jul",
+              "Inlet velocity (cm/s)": 8.1,
+              "Rt/R0": 1.38,
+              "Duration (sec)": 60,
+              "Primary aging time (sec)": null,
+              "Primary mixing time (sec)": null,
+              "Net aging time (sec)": 261
+            },
+            {
+              "Sample Type": "Kapton",
+              "SAME Test #": 61,
+              "Description": "Baseline Aging",
+              "Date": "2-Aug",
+              "Inlet velocity (cm/s)": 8.1,
+              "Rt/R0": 1.38,
+              "Duration (sec)": 60,
+              "Primary aging time (sec)": 11,
+              "Primary mixing time (sec)": 8,
+              "Net aging time (sec)": 38
+            },
+            {
+              "Sample Type": "Kapton",
+              "SAME Test #": "61a",
+              "Description": "aged",
+              "Date": "2-Aug",
+              "Inlet velocity (cm/s)": 8.1,
+              "Rt/R0": 1.38,
+              "Duration (sec)": null,
+              "Primary aging time (sec)": null,
+              "Primary mixing time (sec)": null,
+              "Net aging time (sec)": 807
+            },
+            {
+              "Sample Type": "Kapton",
+              "SAME Test #": 62,
+              "Description": "High Temp aging",
+              "Date": "2-Aug",
+              "Inlet velocity (cm/s)": 8.1,
+              "Rt/R0": 1.48,
+              "Duration (sec)": 60,
+              "Primary aging time (sec)": 11,
+              "Primary mixing time (sec)": 8,
+              "Net aging time (sec)": 39
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [],
+      "publication": {
+        "title": "Sample Type,SAME Test #,Description,Date,Inlet velocity (cm/s),Rt/R0,Duration (sec),Primary aging time (sec),Primary mixing time (sec),Net aging time (sec)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f002-PSI-101_Experimental table_SAME-R.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f002.extract.json",
+      "processingMs": 9
+    },
+    {
+      "id": "f003",
+      "name": "PSI-102_Experimental table_SAME.csv",
+      "sizeBytes": 331,
+      "sha256": "268d1e121d2f211b124407dd32b9475617bd269ede2c2d1749441da3e949a2af",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "materials",
+      "text": {
+        "chars": 179,
+        "headings": [
+          "PSI-102_Experimental table_SAME.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f003-PSI-102_Experimental table_SAME.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-102_Experimental table_SAME",
+          "columns": [
+            "Sample #",
+            "Sample Material",
+            "Air Flow (cm/s)",
+            "Weight loss rate (mg/min)",
+            "Aging Duration (minutes)"
+          ],
+          "rowCount": 8,
+          "sample": [
+            {
+              "Sample #": 1,
+              "Sample Material": "Teflon",
+              "Air Flow (cm/s)": 5,
+              "Weight loss rate (mg/min)": 2,
+              "Aging Duration (minutes)": 1
+            },
+            {
+              "Sample #": 2,
+              "Sample Material": "Teflon",
+              "Air Flow (cm/s)": 5,
+              "Weight loss rate (mg/min)": 1,
+              "Aging Duration (minutes)": 1
+            },
+            {
+              "Sample #": 3,
+              "Sample Material": "Teflon",
+              "Air Flow (cm/s)": 5,
+              "Weight loss rate (mg/min)": 2,
+              "Aging Duration (minutes)": 20
+            },
+            {
+              "Sample #": 4,
+              "Sample Material": "Teflon",
+              "Air Flow (cm/s)": 10,
+              "Weight loss rate (mg/min)": 2,
+              "Aging Duration (minutes)": 1
+            },
+            {
+              "Sample #": 5,
+              "Sample Material": "Kapton: same conditions as 1-4",
+              "Air Flow (cm/s)": null,
+              "Weight loss rate (mg/min)": null,
+              "Aging Duration (minutes)": null
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [],
+      "publication": {
+        "title": "Sample #,Sample Material  ,Air Flow (cm/s),Weight loss rate (mg/min),Aging Duration (minutes)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f003-PSI-102_Experimental table_SAME.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f003.extract.json",
+      "processingMs": 3
+    },
+    {
+      "id": "f004",
+      "name": "PSI-106_Experimental table_Slice.csv",
+      "sizeBytes": 734,
+      "sha256": "89ef980810ca6d9aa8be817b42e36cd2adff23f5e9058361b5a33d18b4363f4d",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "data",
+      "text": {
+        "chars": 106,
+        "headings": [
+          "PSI-106_Experimental table_Slice.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f004-PSI-106_Experimental table_Slice.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-106_Experimental table_Slice",
+          "columns": [
+            "Test Date",
+            "Fuel Type"
+          ],
+          "rowCount": 12,
+          "sample": [
+            {
+              "Test Date": "2012-FEB-09",
+              "Fuel Type": "100% CH4"
+            },
+            {
+              "Test Date": "2012-FEB-13 SLICE testing with",
+              "Fuel Type": "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations"
+            },
+            {
+              "Test Date": "2012-FEB-17",
+              "Fuel Type": "70% CH4 (balance N2) including 1 pyrometry calibration test"
+            },
+            {
+              "Test Date": "2012-FEB-20",
+              "Fuel Type": "20% C2H4 (balance N2)"
+            },
+            {
+              "Test Date": "2012-FEB-27",
+              "Fuel Type": "100% CH4"
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "PSI-106_Experimental table_Slice.csv",
+          "location": "document body",
+          "context": "est and 2 fan calibrations 2012-MAR-23 Last day of testing: SPICE testing with 100% C3H8 and then 100%,100% C2H4",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-slice",
+          "entityLabel": "SLICE",
+          "entityType": "investigation",
+          "source": "PSI-106_Experimental table_Slice.csv",
+          "location": "document body",
+          "context": "Test Date,Fuel Type 2012-FEB-09,100% CH4 2012-FEB-13 SLICE testing with ,40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrat",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "PSI-106_Experimental table_Slice.csv",
+          "location": "document body",
+          "context": "ns 2012-MAR-23 Last day of testing: SPICE testing with 100% C3H8 and then 100%,100% C2H4",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-106_Experimental table_Slice.csv",
+          "location": "document body",
+          "context": "Test Date,Fuel Type 2012-FEB-09,100% CH4 2012-FEB-13 SLICE testing with ,40% CH4 (balance N2) including 2 pyrometry calibration tests a",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Test Date,Fuel Type",
+        "titleConfidence": "medium",
+        "years": [
+          2012
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f004-PSI-106_Experimental table_Slice.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f004.extract.json",
+      "processingMs": 4
+    },
+    {
+      "id": "f005",
+      "name": "PSI-107_Experimental table_Spice.csv",
+      "sizeBytes": 31205,
+      "sha256": "fb0d7e60cf5367afb429089e9901d27288f78038efd26c8de1db4fbe04117136",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 218,
+        "headings": [
+          "PSI-107_Experimental table_Spice.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f005-PSI-107_Experimental table_Spice.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-107_Experimental table_Spice",
+          "columns": [
+            "GMT date",
+            "GMT ignition",
+            "GMT  Flame Off",
+            "Fuel",
+            "Nozzle (mm)",
+            "Fuel Rate (sccm)",
+            "Fuel Rate (mg/s)",
+            "HC Fuel Rate (mg/s)",
+            "Air Rate (cm/s)"
+          ],
+          "rowCount": 469,
+          "sample": [
+            {
+              "GMT date": 45,
+              "GMT ignition": "14:37:08",
+              "GMT  Flame Off": "14:48:03",
+              "Fuel": "Ethylene",
+              "Nozzle (mm)": 1.6002,
+              "Fuel Rate (sccm)": 103.8,
+              "Fuel Rate (mg/s)": 1.971,
+              "HC Fuel Rate (mg/s)": 1.971,
+              "Air Rate (cm/s)": 36.39
+            },
+            {
+              "GMT date": 45,
+              "GMT ignition": "14:37:08",
+              "GMT  Flame Off": "14:48:03",
+              "Fuel": "Ethylene",
+              "Nozzle (mm)": 1.6002,
+              "Fuel Rate (sccm)": 103.8,
+              "Fuel Rate (mg/s)": 1.971,
+              "HC Fuel Rate (mg/s)": 1.971,
+              "Air Rate (cm/s)": 36.39
+            },
+            {
+              "GMT date": 45,
+              "GMT ignition": "14:50:07",
+              "GMT  Flame Off": "14:52:11",
+              "Fuel": "Ethylene",
+              "Nozzle (mm)": 1.6002,
+              "Fuel Rate (sccm)": 51,
+              "Fuel Rate (mg/s)": 0.968,
+              "HC Fuel Rate (mg/s)": 0.968,
+              "Air Rate (cm/s)": 40.15
+            },
+            {
+              "GMT date": 45,
+              "GMT ignition": "14:50:07",
+              "GMT  Flame Off": "14:52:11",
+              "Fuel": "Ethylene",
+              "Nozzle (mm)": 1.6002,
+              "Fuel Rate (sccm)": 51.6,
+              "Fuel Rate (mg/s)": 0.98,
+              "HC Fuel Rate (mg/s)": 0.98,
+              "Air Rate (cm/s)": 40.15
+            },
+            {
+              "GMT date": 45,
+              "GMT ignition": "15:35:44",
+              "GMT  Flame Off": "15:37:00",
+              "Fuel": "Ethylene",
+              "Nozzle (mm)": 1.6002,
+              "Fuel Rate (sccm)": 138,
+              "Fuel Rate (mg/s)": 2.62,
+              "HC Fuel Rate (mg/s)": 2.62,
+              "Air Rate (cm/s)": 57.08
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "PSI-107_Experimental table_Spice.csv",
+          "location": "document body",
+          "context": "Ethylene,0.4064,88.8,1.686,1.686,15.71 48,16:53:44,16:55:09,Propane,1.6002,92.52,2.761,2.761,42.97 48,16.53.45,16.55.09,Propane,1.6002,,,0, 48,17:01:35,17:03",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-107_Experimental table_Spice.csv",
+          "location": "document body",
+          "context": "thylene,1.6002,138.6,2.631,2.631,55.2 168,10:42:48,10:45:01,Methane,0.4064,51.12,0.555,0.555,27.93 168,11:16:48,11:18:15,Methane,0.4064,41.04,0.446,0.446,32.6",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "GMT date,GMT ignition,GMT  Flame Off ,Fuel,Nozzle (mm),Fuel Rate (sccm),Fuel Rate (mg/s),HC Fuel Rate (mg/s),Air Rate (cm/s)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f005-PSI-107_Experimental table_Spice.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f005.extract.json",
+      "processingMs": 8
+    },
+    {
+      "id": "f006",
+      "name": "PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+      "sizeBytes": 17314,
+      "sha256": "97933ee9ae0b9ebc6b948a67485a0fe2f8218f753253a4f2be93c40d374c44e4",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 258,
+        "headings": [
+          "PSI-10_Experimental table_Flame Design_Inverse Flame.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f006-PSI-10_Experimental table_Flame Design_Inverse Flame.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-10_Experimental table_Flame Design_Inverse Flame",
+          "columns": [
+            "Flame Type",
+            "Day",
+            "Test",
+            "XO2",
+            "mO2 (mg/s)",
+            "mN2 (mg/s)",
+            "mtot (mg/s)",
+            "XC2H4 initial",
+            "XC2H4 final",
+            "pinit (atm)",
+            "pfinal (atm)",
+            "pmean (atm)",
+            "mean Zst",
+            "Tad (K)"
+          ],
+          "rowCount": 120,
+          "sample": [
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Test": "21328A1",
+              "XO2": 0.37082819,
+              "mO2 (mg/s)": 5.116084436,
+              "mN2 (mg/s)": 7.599363286,
+              "mtot (mg/s)": 12.71544772,
+              "XC2H4 initial": 0.271563399,
+              "XC2H4 final": 0.270262846,
+              "pinit (atm)": 0.99823482,
+              "pfinal (atm)": 1.00980264,
+              "pmean (atm)": 1.00401873,
+              "mean Zst": 0.302316402,
+              "Tad (K)": 2595.073097
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Test": "21328A2",
+              "XO2": 0.371286026,
+              "mO2 (mg/s)": 5.116388106,
+              "mN2 (mg/s)": 7.584919544,
+              "mtot (mg/s)": 12.70130765,
+              "XC2H4 initial": 0.270262846,
+              "XC2H4 final": 0.26916346,
+              "pinit (atm)": 1.00163712,
+              "pfinal (atm)": 1.0138854,
+              "pmean (atm)": 1.00776126,
+              "mean Zst": 0.30350118,
+              "Tad (K)": 2594.870605
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Test": "21328D1",
+              "XO2": 0.212319452,
+              "mO2 (mg/s)": 2.367048277,
+              "mN2 (mg/s)": 7.687948069,
+              "mtot (mg/s)": 10.05499635,
+              "XC2H4 initial": 0.26916346,
+              "XC2H4 final": 0.24285623,
+              "pinit (atm)": 1.0036785,
+              "pfinal (atm)": 1.09281876,
+              "pmean (atm)": 1.04824863,
+              "mean Zst": 0.211548493,
+              "Tad (K)": 2192.217132
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Test": "21328N1",
+              "XO2": 0.849977932,
+              "mO2 (mg/s)": 9.799337625,
+              "mN2 (mg/s)": 1.514213825,
+              "mtot (mg/s)": 11.31355145,
+              "XC2H4 initial": 0.082213121,
+              "XC2H4 final": 0.081614867,
+              "pinit (atm)": 0.9492417,
+              "pfinal (atm)": 0.96080952,
+              "pmean (atm)": 0.95502561,
+              "mean Zst": 0.755160549,
+              "Tad (K)": 2335.819318
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Test": "21328N2",
+              "XO2": 0.849977932,
+              "mO2 (mg/s)": 7.987785467,
+              "mN2 (mg/s)": 1.234289056,
+              "mtot (mg/s)": 9.222074523,
+              "XC2H4 initial": 0.081614867,
+              "XC2H4 final": 0.081198911,
+              "pinit (atm)": 0.95060262,
+              "pfinal (atm)": 0.9594486,
+              "pmean (atm)": 0.95502561,
+              "mean Zst": 0.756306904,
+              "Tad (K)": 2330.954842
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [],
+      "publication": {
+        "title": "Flame Type,Day,Test,XO2,mO2 (mg/s),mN2 (mg/s),mtot (mg/s),XC2H4 initial,XC2H4 final,pinit (atm),pfinal (atm),pmean (atm),mean Zst,Tad (K)",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f006-PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f006.extract.json",
+      "processingMs": 6
+    },
+    {
+      "id": "f007",
+      "name": "PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+      "sizeBytes": 26933,
+      "sha256": "4a663292bd3f65201943cc71bd661a70383639276a9176f64105b285bf0b6deb",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 264,
+        "headings": [
+          "PSI-10_Experimental table_Flame Design_Normal Flame.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f007-PSI-10_Experimental table_Flame Design_Normal Flame.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-10_Experimental table_Flame Design_Normal Flame",
+          "columns": [
+            "Flame Type",
+            "Day",
+            "Fuel",
+            "Test",
+            "Xfuel",
+            "mfuel (mg/s)",
+            "mN2 (mg/s)",
+            "mtot (mg/s)",
+            "XO2 (init)",
+            "XO2 (final)",
+            "pinit (atm)",
+            "pfinal (atm)",
+            "pmean (atm)",
+            "mean Zst",
+            "Tad (K)"
+          ],
+          "rowCount": 207,
+          "sample": [
+            {
+              "Flame Type": "Normal",
+              "Day": 0,
+              "Fuel": "C2H4",
+              "Test": "19115A1",
+              "Xfuel": 1,
+              "mfuel (mg/s)": 0.968953877,
+              "mN2 (mg/s)": 0,
+              "mtot (mg/s)": 0.968953877,
+              "XO2 (init)": 0.207128374,
+              "XO2 (final)": 0.206202891,
+              "pinit (atm)": 1.01184402,
+              "pfinal (atm)": 1.0240923,
+              "pmean (atm)": 1.01796816,
+              "mean Zst": 0.062716477,
+              "Tad (K)": 2352.144414
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 0,
+              "Fuel": "C2H4",
+              "Test": "19115D2",
+              "Xfuel": "RAMPED",
+              "mfuel (mg/s)": "RAMPED",
+              "mN2 (mg/s)": "RAMPED",
+              "mtot (mg/s)": "RAMPED",
+              "XO2 (init)": 0.206169206,
+              "XO2 (final)": 0.205663073,
+              "pinit (atm)": 1.01320494,
+              "pfinal (atm)": 1.01932908,
+              "pmean (atm)": 1.01626701,
+              "mean Zst": "RAMPED",
+              "Tad (K)": "RAMPED"
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 0,
+              "Fuel": "C2H4",
+              "Test": "19115B1",
+              "Xfuel": 1,
+              "mfuel (mg/s)": 0.639804819,
+              "mN2 (mg/s)": 0,
+              "mtot (mg/s)": 0.639804819,
+              "XO2 (init)": 0.205663073,
+              "XO2 (final)": 0.204951718,
+              "pinit (atm)": 1.0138854,
+              "pfinal (atm)": 1.02069,
+              "pmean (atm)": 1.0172877,
+              "mean Zst": 0.062341004,
+              "Tad (K)": 2345.932123
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 0,
+              "Fuel": "C2H4",
+              "Test": "19115B2",
+              "Xfuel": "RAMPED",
+              "mfuel (mg/s)": "RAMPED",
+              "mN2 (mg/s)": "RAMPED",
+              "mtot (mg/s)": "RAMPED",
+              "XO2 (init)": 0.204939076,
+              "XO2 (final)": 0.20431758,
+              "pinit (atm)": 1.01320494,
+              "pfinal (atm)": 1.02000954,
+              "pmean (atm)": 1.01660724,
+              "mean Zst": "RAMPED",
+              "Tad (K)": "RAMPED"
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 0,
+              "Fuel": "C2H4",
+              "Test": "19115F1",
+              "Xfuel": 0.292030339,
+              "mfuel (mg/s)": 0.638036948,
+              "mN2 (mg/s)": 1.545139763,
+              "mtot (mg/s)": 2.183176711,
+              "XO2 (init)": 0.20431758,
+              "XO2 (final)": 0.203863566,
+              "pinit (atm)": 1.0138854,
+              "pfinal (atm)": 1.01932908,
+              "pmean (atm)": 1.01660724,
+              "mean Zst": 0.184576296,
+              "Tad (K)": 2186.108871
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+          "location": "document body",
+          "context": "7475265,1.01184402,1.0172877,1.01456586,RAMP,RAMP Normal,13,C3H8,21301A1,1,1.2,0,1.2,0.4,,0.931972789,,,0.106461571,2734.953406 Normal,13,C3H8,21301A2,1,1.2,0",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Flame Type,Day,Fuel,Test,Xfuel,mfuel (mg/s),mN2 (mg/s),mtot (mg/s),XO2 (init),XO2 (final),pinit (atm),pfinal (atm),pmean (atm),mean Zst,Tad (K)",
+        "titleConfidence": "medium",
+        "years": [
+          2003,
+          2006,
+          2016
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f007-PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f007.extract.json",
+      "processingMs": 9
+    },
+    {
+      "id": "f008",
+      "name": "PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "sizeBytes": 39422,
+      "sha256": "d4d44f8b9896936728748e34d1b6ad0812032a92fa5289599b708c138e3a9b39",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 360,
+        "headings": [
+          "PSI-159_Experimental table_CFI-G_Inverse Flames.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f008-PSI-159_Experimental table_CFI-G_Inverse Flames.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-159_Experimental table_CFI-G_Inverse Flames",
+          "columns": [
+            "Flame Type",
+            "Day",
+            "Fuel",
+            "Test",
+            "Xf  before test",
+            "Xf  after test",
+            "approx p (bar)",
+            "XO2",
+            "HC burnrate (mg/s)",
+            "O2 flow rate (mg/s)",
+            "TFP",
+            "Tad (K)",
+            "Zst",
+            "Hot ignition",
+            "burn time (sec)",
+            "Self -ext or flow term",
+            "Peak burner Temp (C)",
+            "Peak burner temp (K)",
+            "Color",
+            "Comments"
+          ],
+          "rowCount": 154,
+          "sample": [
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21196 A1",
+              "Xf  before test": 0.2981,
+              "Xf  after test": 0.2981,
+              "approx p (bar)": 1.1,
+              "XO2": 0.21,
+              "HC burnrate (mg/s)": 1.5,
+              "O2 flow rate (mg/s)": 5.59,
+              "TFP": "No",
+              "Tad (K)": 2120,
+              "Zst": 0.1665,
+              "Hot ignition": "No",
+              "burn time (sec)": 0,
+              "Self -ext or flow term": "-",
+              "Peak burner Temp (C)": 27.1,
+              "Peak burner temp (K)": 300.25,
+              "Color": "-",
+              "Comments": "Failed to ignite"
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21196 A2",
+              "Xf  before test": 0.2981,
+              "Xf  after test": 0.295425,
+              "approx p (bar)": 1.1,
+              "XO2": 0.21,
+              "HC burnrate (mg/s)": 1.5,
+              "O2 flow rate (mg/s)": 5.59,
+              "TFP": "No",
+              "Tad (K)": 2120,
+              "Zst": 0.1665,
+              "Hot ignition": "Yes",
+              "burn time (sec)": 35,
+              "Self -ext or flow term": "FT",
+              "Peak burner Temp (C)": 162.9,
+              "Peak burner temp (K)": 436.05,
+              "Color": "yellow",
+              "Comments": null
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21196 F1",
+              "Xf  before test": 0.295424848,
+              "Xf  after test": 0.291765297,
+              "approx p (bar)": 1.1033,
+              "XO2": 0.15,
+              "HC burnrate (mg/s)": 1.5,
+              "O2 flow rate (mg/s)": 5.58675424,
+              "TFP": "No",
+              "Tad (K)": 1786.994366,
+              "Zst": 0.126728327,
+              "Hot ignition": "Yes",
+              "burn time (sec)": 36,
+              "Self -ext or flow term": "FT",
+              "Peak burner Temp (C)": 118.5,
+              "Peak burner temp (K)": 391.65,
+              "Color": "blue",
+              "Comments": "Not spherical shape"
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21196 H1",
+              "Xf  before test": 0.291765297,
+              "Xf  after test": 0.291765297,
+              "approx p (bar)": 1.1033,
+              "XO2": 0.12,
+              "HC burnrate (mg/s)": 1.5,
+              "O2 flow rate (mg/s)": 5.58675424,
+              "TFP": "No",
+              "Tad (K)": 1567.030825,
+              "Zst": 0.105556515,
+              "Hot ignition": "No",
+              "burn time (sec)": 0,
+              "Self -ext or flow term": "-",
+              "Peak burner Temp (C)": 26.7,
+              "Peak burner temp (K)": 299.85,
+              "Color": "-",
+              "Comments": "Not ignited"
+            },
+            {
+              "Flame Type": "Inverse",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21196 J1",
+              "Xf  before test": 0.291765297,
+              "Xf  after test": 0.291653541,
+              "approx p (bar)": 1.1033,
+              "XO2": 0.135,
+              "HC burnrate (mg/s)": 1.5,
+              "O2 flow rate (mg/s)": 5.58675424,
+              "TFP": "No",
+              "Tad (K)": 1680.718299,
+              "Zst": 0.116987922,
+              "Hot ignition": "flash",
+              "burn time (sec)": 1,
+              "Self -ext or flow term": "SE",
+              "Peak burner Temp (C)": 27.8,
+              "Peak burner temp (K)": 300.95,
+              "Color": "-",
+              "Comments": "Not lasted long"
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+          "location": "document body",
+          "context": "9.772352,0.374893855,Yes,66,FT,131.4,404.55,blue, Inverse,5,propane,21222 A1,0.08,0.079950834,3.3099,0.85,1.5,5.441972789,No,2532.591389,0.664749239,Yes,10,SE,",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Inverse,1,ethane,21196 A1,0.298100,0.298100,1.10,0.21,1.5,5.59,No,2120,0.1665,No,0,-,27.1,300.25,-,Failed to ignite",
+        "titleConfidence": "medium",
+        "years": [
+          2006,
+          2029
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f008-PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f008.extract.json",
+      "processingMs": 10
+    },
+    {
+      "id": "f009",
+      "name": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+      "sizeBytes": 22166,
+      "sha256": "d95a621c3fbd27d204dd32ed29fa17d68f2b779d6a523cde8479ed7ebaa5251a",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 311,
+        "headings": [
+          "PSI-159_Experimental table_CFI-G_Normal Flames.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f009-PSI-159_Experimental table_CFI-G_Normal Flames.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-159_Experimental table_CFI-G_Normal Flames",
+          "columns": [
+            "Flame Type",
+            "Day",
+            "Fuel",
+            "Test",
+            "Cool flame?",
+            "XO2 before test",
+            "XO2  after test",
+            "approx p (bar)",
+            "Xf",
+            "mHC (mg/s)",
+            "TFP",
+            "Tad (K)",
+            "Zst",
+            "Hot ignition",
+            "burn time (sec)",
+            "Self-ext or flow term",
+            "Peak burner T (C )",
+            "Comments"
+          ],
+          "rowCount": 179,
+          "sample": [
+            {
+              "Flame Type": "Normal",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21088A1",
+              "Cool flame?": null,
+              "XO2 before test": 0.3939,
+              "XO2  after test": 0.389822946,
+              "approx p (bar)": 0.9443956,
+              "Xf": 1,
+              "mHC (mg/s)": 2,
+              "TFP": "No",
+              "Tad (K)": 2719.323211,
+              "Zst": 0.102651783,
+              "Hot ignition": "Yes",
+              "burn time (sec)": 50,
+              "Self-ext or flow term": "SE",
+              "Peak burner T (C )": 290.617198,
+              "Comments": null
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21088 B1",
+              "Cool flame?": null,
+              "XO2 before test": 0.389822946,
+              "XO2  after test": 0.386321188,
+              "approx p (bar)": 0.9443956,
+              "Xf": 1,
+              "mHC (mg/s)": 2,
+              "TFP": "Yes",
+              "Tad (K)": 2713.594987,
+              "Zst": 0.101747543,
+              "Hot ignition": "Yes",
+              "burn time (sec)": 43,
+              "Self-ext or flow term": "SE",
+              "Peak burner T (C )": 276.009368,
+              "Comments": null
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21088 C1",
+              "Cool flame?": null,
+              "XO2 before test": 0.386321188,
+              "XO2  after test": 0.382905163,
+              "approx p (bar)": 0.9443956,
+              "Xf": 1,
+              "mHC (mg/s)": 2,
+              "TFP": "Yes",
+              "Tad (K)": 2708.596221,
+              "Zst": 0.100968644,
+              "Hot ignition": "Yes",
+              "burn time (sec)": 42,
+              "Self-ext or flow term": "SE",
+              "Peak burner T (C )": 266.374008,
+              "Comments": "hit burner T limit"
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21088 D1",
+              "Cool flame?": null,
+              "XO2 before test": 0.382905163,
+              "XO2  after test": 0.380426741,
+              "approx p (bar)": 0.9443956,
+              "Xf": 1,
+              "mHC (mg/s)": 1,
+              "TFP": "Yes",
+              "Tad (K)": 2703.647801,
+              "Zst": 0.100206801,
+              "Hot ignition": "Yes",
+              "burn time (sec)": 61,
+              "Self-ext or flow term": "FT",
+              "Peak burner T (C )": 459.195642,
+              "Comments": "FC=flow cut"
+            },
+            {
+              "Flame Type": "Normal",
+              "Day": 1,
+              "Fuel": "ethane",
+              "Test": "21088 F1",
+              "Cool flame?": null,
+              "XO2 before test": 0.380426741,
+              "XO2  after test": 0.379858042,
+              "approx p (bar)": 0.9443956,
+              "Xf": 1,
+              "mHC (mg/s)": 0.5,
+              "TFP": "Yes",
+              "Tad (K)": 2700.011998,
+              "Zst": 0.099652813,
+              "Hot ignition": "Yes",
+              "burn time (sec)": 28,
+              "Self-ext or flow term": "FT",
+              "Peak burner T (C )": 532.162657,
+              "Comments": "Lowest flow rate for ignition"
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+          "location": "document body",
+          "context": ",Yes,246,FT,435,\"5 transitions from hot to cool, 6 hot and 5 cool flames\" Normal,11,30% butane,21291 C2,,0.389271344,0.388318854,2.0266,0.3,1.75,No,2645.520346",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+          "location": "document body",
+          "context": "SE,269,Extinction detected. Fuel flow stopped in 6 sec after PMT dropped to 0. Normal,2,50% butane,21102 B1,,0.390548195,0.388126117,1.0133,0.125,1.3,No,2501.0",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+          "location": "document body",
+          "context": "0.50665,0.5,0.8,No,2219.09339,0.086741882,No,,-,-, Normal,4,propane,21112A1,,0.3954,0.3940449,0.9443956,1,0.8,No,2729.986983,0.105434724,Yes,43,FT,513.074689,1",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Flame Type,Day,Fuel,Test,Cool flame?, XO2 before test,XO2  after test,approx p (bar),Xf,mHC (mg/s),TFP,Tad (K),Zst,Hot ignition,burn time (sec),Self-ext or flow term,Peak burner T (C ),Comments",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f009-PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f009.extract.json",
+      "processingMs": 8
+    },
+    {
+      "id": "f010",
+      "name": "PSI-20_Experimental table_ACME BRE.csv",
+      "sizeBytes": 1113,
+      "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 182,
+        "headings": [
+          "PSI-20_Experimental table_ACME BRE.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261112-002/f010-PSI-20_Experimental table_ACME BRE.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-20_Experimental table_ACME BRE",
+          "columns": [
+            "Year",
+            "Month",
+            "Date",
+            "Burner Size (mm)",
+            "Fuel Bottle",
+            "Oxygen Conc (percent)",
+            "Flames Ignited",
+            "Notes"
+          ],
+          "rowCount": 18,
+          "sample": [
+            {
+              "Year": 2019,
+              "Month": "Feb",
+              "Date": 8,
+              "Burner Size (mm)": 25,
+              "Fuel Bottle": "100% C2H4",
+              "Oxygen Conc (percent)": "21; 26.5; 40",
+              "Flames Ignited": 10,
+              "Notes": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
+            },
+            {
+              "Year": 2019,
+              "Month": "Feb",
+              "Date": 20,
+              "Burner Size (mm)": 25,
+              "Fuel Bottle": "100% C2H4",
+              "Oxygen Conc (percent)": "26.5; 34",
+              "Flames Ignited": 8,
+              "Notes": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+            },
+            {
+              "Year": 2019,
+              "Month": "Feb",
+              "Date": 25,
+              "Burner Size (mm)": 25,
+              "Fuel Bottle": "50% C2H4",
+              "Oxygen Conc (percent)": "21; 26.5; 34; 40",
+              "Flames Ignited": 8,
+              "Notes": null
+            },
+            {
+              "Year": 2019,
+              "Month": "March",
+              "Date": 4,
+              "Burner Size (mm)": 25,
+              "Fuel Bottle": "50% C2H4",
+              "Oxygen Conc (percent)": "26.5; 40",
+              "Flames Ignited": 6,
+              "Notes": null
+            },
+            {
+              "Year": 2019,
+              "Month": "March",
+              "Date": 7,
+              "Burner Size (mm)": 25,
+              "Fuel Bottle": "50% C2H4",
+              "Oxygen Conc (percent)": "3400%",
+              "Flames Ignited": 6,
+              "Notes": null
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-20_Experimental table_ACME BRE.csv",
+          "location": "document body",
+          "context": "the number ignited on that day (neglecting the day change on ISS). 2019,Feb,25,25,50% C2H4,21; 26.5; 34; 40,8, 2019,March,4,25,50% C2H4,26.5; 40,6, 2019,Marc",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-20_Experimental table_ACME BRE.csv",
+          "location": "document body",
+          "context": ", 2020,Oct,17,25,100% C2H4,26.5; 34,13, 2020,Dec,5,25,100% CH4,25; 34; 40,21, 2020,Dec,4,25,100% CH4,25; 40,18, 2020,Dec,11,25,50% C2H4,25; 40,12, 2020,Dec",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Year,Month,Date,Burner Size (mm),Fuel Bottle,Oxygen Conc (percent),Flames Ignited,Notes",
+        "titleConfidence": "medium",
+        "years": [
+          2019,
+          2020,
+          2021
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261112-002/f010-PSI-20_Experimental table_ACME BRE.csv",
+      "extractedPath": "data/extracted/batches/B-20261112-002/f010.extract.json",
+      "processingMs": 3
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "extracted": 10,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 10,
+    "pages": 0,
+    "chars": 2331,
+    "tables": 10,
+    "tableRows": 1278,
+    "equations": 0,
+    "figures": 0,
+    "entities": 15,
+    "newEntities": 0,
+    "mediaAssets": 0
+  },
+  "cumulative": {
+    "batches": 2,
+    "files": 11,
+    "uniqueFiles": 11,
+    "duplicateFiles": 0,
+    "documents": 11,
+    "pages": 0,
+    "chars": 2558,
+    "tables": 11,
+    "tableRows": 1280,
+    "equations": 0,
+    "figures": 0,
+    "mediaAssets": 0,
+    "entities": 109,
+    "errors": 0,
+    "userConfirmedAllUploads": false,
+    "lastBatchId": "B-20261112-002",
+    "updatedAt": "2026-11-12T20:27:06.535Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

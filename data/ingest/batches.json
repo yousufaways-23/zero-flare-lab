@@ -1,0 +1,62 @@
+[
+  {
+    "batchId": "B-20261112-001",
+    "receivedAt": "2026-11-12T16:58:22.040Z",
+    "fileCount": 1
+  },
+  {
+    "batchId": "B-20261112-002",
+    "receivedAt": "2026-11-12T20:27:06.375Z",
+    "fileCount": 10
+  },
+  {
+    "batchId": "B-20261112-003",
+    "receivedAt": "2026-11-12T20:27:28.720Z",
+    "fileCount": 9
+  },
+  {
+    "batchId": "B-20261112-004",
+    "receivedAt": "2026-11-12T20:58:29.250Z",
+    "fileCount": 10
+  },
+  {
+    "batchId": "B-20261112-005",
+    "receivedAt": "2026-11-12T20:59:17.112Z",
+    "fileCount": 3
+  },
+  {
+    "batchId": "B-20261112-006",
+    "receivedAt": "2026-11-12T20:59:47.600Z",
+    "fileCount": 10
+  },
+  {
+    "batchId": "B-20261112-007",
+    "receivedAt": "2026-11-12T21:00:49.602Z",
+    "fileCount": 7
+  },
+  {
+    "batchId": "B-20261113-001",
+    "receivedAt": "2026-11-13T15:13:17.001Z",
+    "fileCount": 2
+  },
+  {
+    "batchId": "B-20261113-002",
+    "receivedAt": "2026-11-13T15:13:47.974Z",
+    "fileCount": 1
+  },
+  {
+    "batchId": "B-20261113-003",
+    "receivedAt": "2026-11-13T15:15:15.519Z",
+    "fileCount": 10
+  },
+  {
+    "batchId": "B-20261113-004",
+    "receivedAt": "2026-11-13T15:15:45.035Z",
+    "fileCount": 10
+  },
+  {
+    "batchId": "B-20261113-005",
+    "receivedAt": "2026-11-13T15:15:47.032Z",
+    "fileCount": 5
+  }
+]

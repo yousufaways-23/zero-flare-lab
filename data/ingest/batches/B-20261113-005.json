@@ -1,0 +1,462 @@
+{
+  "batchId": "B-20261113-005",
+  "receivedAt": "2026-11-13T15:15:47.032Z",
+  "fileCount": 5,
+  "files": [
+    {
+      "id": "f001",
+      "name": "PSI-117_record.txt",
+      "sizeBytes": 3581,
+      "sha256": "81f76211d55748d7fffd49622f3c4ac842d710a2e94dedaf834f6583605cce62",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3573,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-005/f001-PSI-117_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/gz0q-b577"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "PSI-117_record.txt",
+          "location": "document body",
+          "context": "ned from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamic",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "PSI-117_record.txt",
+          "location": "document body",
+          "context": "he dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-117_record.txt",
+          "location": "document body",
+          "context": "nsfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convecti",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-117_record.txt",
+          "location": "document body",
+          "context": "o hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable mo",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-117",
+        "titleConfidence": "medium",
+        "doi": "10.60555/gz0q-b577",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-005/f001-PSI-117_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-005/f001.extract.json",
+      "processingMs": 16
+    },
+    {
+      "id": "f002",
+      "name": "PSI-142_record.txt",
+      "sizeBytes": 4772,
+      "sha256": "f046d1d8b1458b183447b6af24802c670286dc402916e2c62af96c560293b0fa",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 4768,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-005/f002-PSI-142_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/80qf-vj95",
+          "10.1016/j.pecs.2019.100787",
+          "10.1016/j.proci.2020.09.019",
+          "10.1016/j.combustflame.2017.01.028",
+          "10.1016/j.combustflame.2016.01.008"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "PSI-142_record.txt",
+          "location": "document body",
+          "context": "G, r, a, n, t OBJECTIVES: By using the Flame Extinguishment (FLEX) experimental data from the Physical Sciences Informatics (PSI) system of combustion science,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "PSI-142_record.txt",
+          "location": "document body",
+          "context": "elop a new diagram of the flammability limits of diffusional cool flames affected by radiation, diffusion, and convection. 2) Bridge the knowledge gap betwe",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-142_record.txt",
+          "location": "document body",
+          "context": "and cool flames. 3) Verify the phenomena observed on the ISS flame extinguishment experiments. 4) Obtain new, quantitative data of extinction limit, fla",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-142_record.txt",
+          "location": "document body",
+          "context": "elevant to combustion in highly turbulent flow fields and in microgravity environments, owing to the possibility of long residence times. The results showed tha",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-heptane",
+          "entityLabel": "n-Heptane",
+          "entityType": "fuel",
+          "source": "PSI-142_record.txt",
+          "location": "document body",
+          "context": "odeling schemes, (a) spark-assisted flame propagation of a n-heptane/air mixture, (b) one dimensional freely-propagating dimethyl ether (DME) flames using an ar",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-142",
+        "titleConfidence": "medium",
+        "doi": "10.60555/80qf-vj95",
+        "years": [
+          2016,
+          2017,
+          2019,
+          2020
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-005/f002-PSI-142_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-005/f002.extract.json",
+      "processingMs": 25
+    },
+    {
+      "id": "f003",
+      "name": "PSI-159_record.txt",
+      "sizeBytes": 3490,
+      "sha256": "e911b6ec6e91ca7ed516f35a876380a7237817b0ed64fda1a800078ab369c6b6",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3484,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-005/f003-PSI-159_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/cyt1-kh64"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "PSI-159_record.txt",
+          "location": "document body",
+          "context": "e efficient internal combustion engines. HARDWARE: {\"Name\": \"ACME Combustion Integrated Rack (CIR)\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "PSI-159_record.txt",
+          "location": "document body",
+          "context": "59 TITLE: Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases SHORT LABEL: RESEARCH AREA: Combustion Science / Flames of Ga",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-159_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/cyt1-kh64 | SOURCE: KEYWORDS: c, h, e, m, i, c, a,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-159_record.txt",
+          "location": "document body",
+          "context": "cient internal combustion engines. HARDWARE: {\"Name\": \"ACME Combustion Integrated Rack (CIR)\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-fcf/co",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-159_record.txt",
+          "location": "document body",
+          "context": "NVESTIGATION RECORD — PSI-159 TITLE: Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases SHORT LABEL: RESEARCH AREA: Combus",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "PSI-159_record.txt",
+          "location": "document body",
+          "context": "serve the flames with a broad suite of cameras, radiometers, photomultiplier tubes, and thermocouples. HYPOTHESIS: The hypotheses of this research are that test",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-propane",
+          "entityLabel": "Propane",
+          "entityType": "fuel",
+          "source": "PSI-159_record.txt",
+          "location": "document body",
+          "context": "ine the conditions for which cool diffusion flames occur for propane, n-butane, and n-pentane; normal and inverse flames; and a broad range of Zst, Tad, and flu",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-159",
+        "titleConfidence": "medium",
+        "doi": "10.60555/cyt1-kh64",
+        "years": [
+          2012
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-005/f003-PSI-159_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-005/f003.extract.json",
+      "processingMs": 13
+    },
+    {
+      "id": "f004",
+      "name": "PSI-60_record.txt",
+      "sizeBytes": 3095,
+      "sha256": "09ddff51a83747129024e84980b4f74a867f6cbeeaab39bd8fda6309f6b289d7",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3089,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-005/f004-PSI-60_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/mzjm-yv57"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-spice",
+          "entityLabel": "SPICE",
+          "entityType": "investigation",
+          "source": "PSI-60_record.txt",
+          "location": "document body",
+          "context": "D — PSI-60 TITLE: Computational and Experimental Analysis of SPICE Data Sets SHORT LABEL: RESEARCH AREA: Combustion Science / Gaseous PROJECT TYPE: Ground Inve",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "PSI-60_record.txt",
+          "location": "document body",
+          "context": "gate formation. Simulations were performed for both Yale and ACME burner configurations under normal and microgravity conditions. Comparisons between experiment",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-60_record.txt",
+          "location": "document body",
+          "context": "heavily sooting flames. The work further aimed to reconcile microgravity and normal gravity flame behavior, identify key physical and chemical processes influe",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-60",
+        "titleConfidence": "medium",
+        "doi": "10.60555/mzjm-yv57",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-005/f004-PSI-60_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-005/f004.extract.json",
+      "processingMs": 30
+    },
+    {
+      "id": "f005",
+      "name": "PSI-62_record.txt",
+      "sizeBytes": 4397,
+      "sha256": "65dcc7322daac517aae5135a465132881064fbe5efc77d9d47a7bd79edc20a24",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 4383,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-005/f005-PSI-62_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/e9xp-ex83"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "PSI-62_record.txt",
+          "location": "document body",
+          "context": "fuel combustion processes with high fidelity, using the NASA Burning and Suppression of Solids (BASS and BASS-II) experiments as benchmarks. Ultimately, the lon",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass2",
+          "entityLabel": "BASS-II",
+          "entityType": "investigation",
+          "source": "PSI-62_record.txt",
+          "location": "document body",
+          "context": ", using the NASA Burning and Suppression of Solids (BASS and BASS-II) experiments as benchmarks. Ultimately, the long-term goal was to enable accurate predictio",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-fgm",
+          "entityLabel": "FGM",
+          "entityType": "investigation",
+          "source": "PSI-62_record.txt",
+          "location": "document body",
+          "context": "was to develop and validate new flamelet generated manifold (FGM) modeling techniques for concurrent flame spread in microgravity. Concurrent flame spread prese",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-62_record.txt",
+          "location": "document body",
+          "context": "Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography SHORT LABEL: RESEARCH",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "PSI-62_record.txt",
+          "location": "document body",
+          "context": "lat sheets, spheres, and rod-shaped polymethyl methacrylate (PMMA) samples, as well as wax cylinders. Experimental imagery found in PSI from the BASS and BASS-I",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-62",
+        "titleConfidence": "medium",
+        "doi": "10.60555/e9xp-ex83",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-005/f005-PSI-62_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-005/f005.extract.json",
+      "processingMs": 12
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "extracted": 5,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 5,
+    "pages": 0,
+    "chars": 19297,
+    "tables": 0,
+    "tableRows": 0,
+    "equations": 0,
+    "figures": 0,
+    "entities": 24,
+    "newEntities": 0,
+    "mediaAssets": 0
+  },
+  "cumulative": {
+    "batches": 12,
+    "files": 78,
+    "uniqueFiles": 77,
+    "duplicateFiles": 1,
+    "documents": 77,
+    "pages": 432,
+    "chars": 945934,
+    "tables": 44,
+    "tableRows": 2223,
+    "equations": 157,
+    "figures": 468,
+    "mediaAssets": 216,
+    "entities": 116,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261113-005",
+    "updatedAt": "2026-11-13T15:15:47.313Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

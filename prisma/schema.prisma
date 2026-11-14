@@ -1,0 +1,112 @@
+// FLAME EVIDENCE LAB — scientific persistence schema (local SQLite; Postgres is
+// the deployment target per spec M12). Migration policy: explicit migrations
+// only; never db push --accept-data-loss on shared data. Every write records
+// actor/timestamp/provenance.
+//
+// Bundled scientific corpora (PSI tables, investigation metadata, equations,
+// models) are file-based artifacts with SHA-256 provenance and are NOT
+// duplicated into the database. This DB holds user research state only.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// A reproducible research session: the user's saved context across the app.
+model ResearchSession {
+  id            String   @id @default(cuid())
+  title         String
+  summary       String? // what the session investigated
+  environment   String? // earth | iss | moon | mars | spacecraft
+  investigation String? // PSI accession if scoped
+  // JSON snapshots of app state: selected tables, scenario params, charts, notes
+  stateJson     String
+  tags          String? // comma separated
+  provenance    String? // which tools/data produced it
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  scenarioRuns  ScenarioRun[]
+}
+
+// One saved What-if/scenario analysis within a session.
+model ScenarioRun {
+  id           String   @id @default(cuid())
+  sessionId    String?
+  session      ResearchSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  label        String
+  pillar       String // prevention | detection | prediction | suppression
+  environment  String
+  atmosphere   String? // JSON: total pressure, O2 fraction, diluents
+  inputsJson   String // exact tool inputs
+  outputsJson  String // exact tool outputs (never fabricated)
+  toolsUsed    String? // tool trace summary
+  createdAt    DateTime @default(now())
+}
+
+// Ingestion batch ledger (uploads in this environment).
+model IngestBatch {
+  id           String   @id @default(cuid())
+  label        String
+  fileCount    Int      @default(0)
+  byteCount    Int      @default(0)
+  receiptJson  String? // per-file: name, size, sha256, type-sniffed, status
+  createdAt    DateTime @default(now())
+  files        IngestFile[]
+}
+
+model IngestFile {
+  id           String   @id @default(cuid())
+  batchId      String
+  batch        IngestBatch @relation(fields: [batchId], references: [id], onDelete: Cascade)
+  name         String
+  bytes        Int
+  sha256       String
+  kind         String? // csv | pdf | image | archive | other (sniffed)
+  status       String   @default("received") // received | validated | rejected | quarantined
+  validationJson String? // quality report: rows, parse failures, duplicates, units
+  provenance   String? // origin/stated source
+  createdAt    DateTime @default(now())
+}
+
+// Official source registry sync records (bundled registry + live checks).
+model SourceRecord {
+  id           String   @id @default(cuid())
+  sourceId     String   @unique
+  title        String
+  url          String
+  category     String
+  status       String   @default("registered") // registered | checked | fetch-failed | landing-page
+  lastChecked  DateTime?
+  checkJson    String? // http status, content type, bytes, sha256 of snapshot
+}
+
+// User-authored equation drafts — never enter the canonical registry without approval.
+model EquationDraft {
+  id           String   @id @default(cuid())
+  name         String
+  symbol       String
+  expression   String // shunting-yard AST JSON, never eval()
+  unitIn       String? // declared input units
+  unitOut      String?
+  assumptions  String?
+  source       String?
+  dimensionalCheckJson String? // check result
+  testCaseJson String? // numeric test vector + expected
+  status       String   @default("pending-review") // pending-review | approved | rejected
+  createdAt    DateTime @default(now())
+}
+
+// Research-gap records: absent / not-indexed / inaccessible / no-evidence-found.
+model GapRecord {
+  id           String   @id @default(cuid())
+  topic        String
+  status       String // absent | not-indexed | inaccessible | no-evidence-found
+  detail       String
+  relatedInvestigation String?
+  sourceUrl    String?
+  createdAt    DateTime @default(now())
+}

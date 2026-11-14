@@ -1,0 +1,33 @@
+source_file,source_sheet,Test Type,Test Day,Year,Month,Date,Mesh Polarity,Fuel Bottle,Fuel Conc,Flames Ignited,Notes
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18073.0,2018.0,3.0,14.0,negative,100% CH4,100%,10.0,Test day is formatted YYDDD where YY identifies year and DDD identifies day of year (GMT).
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18078.0,2018.0,3.0,19.0,negative,100% CH4,70%,10.0,Mesh polarity refers to the polarity of the high-voltage power supply and the copper electrode relative to the burner.
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,100%,,"Fuel Conc. (diluted with nitrogen on a volume basis) was varied between tests, but typically matched the bottle. The list only accounts for flames ignited."
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18080.0,2018.0,3.0,21.0,negative,40% CH4,40%,8.0,Flames Ignited is the number ignited on that day (neglecting the day change on ISS).
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18087.0,2018.0,3.0,28.0,negative,100% C2H4,80%,10.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,100%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18092.0,2018.0,4.0,2.0,negative,30% C2H4,30%,11.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18095.0,2018.0,4.0,5.0,positive,30% C2H4,30%,10.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18102.0,2018.0,4.0,12.0,positive,40% CH4,40%,8.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18106.0,2018.0,4.0,16.0,positive,40% CH4,40%,13.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18113.0,2018.0,4.0,23.0,positive,100% CH4,100%,15.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18130.0,2018.0,5.0,10.0,positive,100% CH4,70%,13.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,First round of tests with coflow burner,18137.0,2018.0,5.0,17.0,positive,100% C2H4,80%,12.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,100%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18269.0,2018.0,9.0,26.0,negative,40% CH4,40%,11.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18274.0,2018.0,10.0,1.0,negative,30% C2H4,30%,11.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18282.0,2018.0,10.0,9.0,negative,100% CH4,70%,13.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,100%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18285.0,2018.0,10.0,12.0,negative,100% C2H4,100%,10.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18290.0,2018.0,10.0,17.0,negative,100% C2H4,80%,11.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18298.0,2018.0,10.0,25.0,positive,40% CH4,40%,9.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18302.0,2018.0,10.0,29.0,positive,30% C2H4,30%,10.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18312.0,2018.0,11.0,8.0,positive,100% CH4,70%,13.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,100%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18319.0,2018.0,11.0,15.0,positive,100% C2H4,25%,11.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,50%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,80%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,100%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,Second round of tests with gas-jet burner,18319.0,2018.0,11.0,15.0,positive,100% C2H4,25%,11.0,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,50%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,80%,,
+PSI-22_Experimental table_ACME E-FIELD Flames.csv,,,,,,,,,100%,,

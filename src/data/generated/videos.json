@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-11-13T00:00:00Z",
+  "verification": "Every record verified live via YouTube oEmbed (title + author resolved) on 2026-11-13; no unverified video is embedded. Source type is labelled honestly — NASA-official vs institutional vs independent educator.",
+  "note": "These are curated educational/research videos chosen for direct topical relevance to each investigation; they are NOT NASA experimental footage unless labelled so. Fire Science Show episode 221 (SoFIE/MIST, Prof. Michael Gollner) is linked as an external resource, not embedded.",
+  "videos": [
+    {
+      "id": "b3SocjRoGgA",
+      "title": "Why Fires In Space Are So Dangerous",
+      "channel": "Scott Manley",
+      "sourceType": "independent-science-communicator",
+      "durationNote": "topical overview",
+      "overview": "Accessible explanation of why flames behave differently in microgravity — spherical diffusion flames, no buoyant plume — the exact physics regime of the PSI corpus. Good orientation for non-specialists.",
+      "mapsTo": ["PSI-98", "PSI-99", "PSI-100", "PSI-26", "PSI-25"],
+      "placement": ["investigation", "mission"]
+    },
+    {
+      "id": "C8wexPpuCcU",
+      "title": "Understanding Cool Flames and Warm Flames — Yiguang Ju",
+      "channel": "The Combustion Institute",
+      "sourceType": "scientific-society",
+      "durationNote": "technical lecture",
+      "overview": "Combustion Institute lecture on cool-flame chemistry and limits — directly the science of CFI (droplet cool flames) and CFI-G (gaseous cool flames, up to 85% O₂ at the burner), including two-stage ignition and extinction physics.",
+      "mapsTo": ["PSI-39", "PSI-159", "PSI-142", "PSI-117"],
+      "placement": ["investigation"]
+    },
+    {
+      "id": "OBGPB0QSXMc",
+      "title": "High Pressure Combustion in Microgravity using Biofuel — Ziaul Rizal",
+      "channel": "AITC Mission Integration (Land Grant Seminar Series)",
+      "sourceType": "university-seminar",
+      "durationNote": "research seminar",
+      "overview": "Research seminar on droplet-scale microgravity combustion at elevated pressure — methodologically adjacent to FLEX/FLEX-2 droplet extinction studies (pressure and diluent sweeps on isolated droplets).",
+      "mapsTo": ["PSI-69", "PSI-68"],
+      "placement": ["investigation"]
+    },
+    {
+      "id": "4x5P6OR_6LA",
+      "title": "Master Class: Flame Fundamentals",
+      "channel": "KAUST Clean Energy Research",
+      "sourceType": "research-institution",
+      "durationNote": "master class",
+      "overview": "Flame fundamentals — stoichiometry, flame structure, soot and luminosity — the theoretical background behind the SPICE smoke-point investigation and the equation registry's combustion section.",
+      "mapsTo": ["PSI-107", "PSI-106"],
+      "placement": ["investigation", "lab3d"]
+    },
+    {
+      "id": "lak9Bl2lZCE",
+      "title": "Combustion Physics, Law, Day 1, Part 1",
+      "channel": "Princeton University Combustion Summer School",
+      "sourceType": "university-course",
+      "durationNote": "course lecture",
+      "overview": "Prof. Chung Law's combustion physics lectures — the same framework (droplet burning, flammability limits, extinction) that underlies the FLEX-family analyses and the project's verified equation sources.",
+      "mapsTo": ["PSI-69", "PSI-68", "PSI-20"],
+      "placement": ["investigation"]
+    },
+    {
+      "id": "v8TCBRDgrsE",
+      "title": "Webinar #6 Physical Science: Fluid Dynamics (AccSpace4All Hypergravity/Microgravity Series)",
+      "channel": "UN Office for Outer Space Affairs",
+      "sourceType": "un-agency",
+      "durationNote": "webinar",
+      "overview": "UNOOSA webinar on microgravity physical-science research — programme context for why fluids/combustion experiments run on orbiting laboratories and how the results transfer (or do not) to partial gravity.",
+      "mapsTo": ["PSI-108"],
+      "placement": ["investigation", "lab3d"]
+    }
+  ],
+  "externalResources": [
+    {
+      "title": "Fire Science Show #221 — Fire experiments at the ISS: SoFIE & MIST with Michael Gollner",
+      "url": "https://www.firescienceshow.com/221-fire-experiments-at-the-iss-sofie-mist-with-michael-gollner/",
+      "type": "podcast-episode",
+      "overview": "Episode with a SoFIE co-investigator on solid-fuel ignition and extinction aboard the ISS — external listening resource for the SoFIE research gap (SoFIE data not yet in PSI)."
+    }
+  ]
+}

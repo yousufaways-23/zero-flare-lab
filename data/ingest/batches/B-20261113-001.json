@@ -1,0 +1,285 @@
+{
+  "batchId": "B-20261113-001",
+  "receivedAt": "2026-11-13T15:13:17.001Z",
+  "fileCount": 2,
+  "files": [
+    {
+      "id": "f001",
+      "name": "PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+      "sizeBytes": 7111,
+      "sha256": "c883ab3bc89cadf870d97b0f5d9c533119e1827d788deb0f6e28e59317a8535a",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "fluid-physics",
+      "text": {
+        "chars": 228,
+        "headings": [
+          "PSI-108_PSI-108_Experimental_table_STDCE-1.csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261113-001/f001-PSI-108_PSI-108_Experimental_table_STDCE-1.txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-108_PSI-108_Experimental_table_STDCE-1",
+          "columns": [
+            "Run#",
+            "Test#",
+            "Configuration",
+            "Heating Mode",
+            "Free Surface Shape",
+            "Power (W)",
+            "Laser Diameter (cm)",
+            "Results",
+            "Key Observations & References"
+          ],
+          "rowCount": 38,
+          "sample": [
+            {
+              "Run#": 1,
+              "Test#": "CF1",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 0.48,
+              "Laser Diameter (cm)": 1,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow structure, rapid establishment of steady state, good agreement with numerical predictions. (Appendix A)"
+            },
+            {
+              "Run#": 1,
+              "Test#": "CF2",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 2.07,
+              "Laser Diameter (cm)": 1,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow, no secondary flows observed, velocity field becomes steady within minutes. (Appendix C)"
+            },
+            {
+              "Run#": 1,
+              "Test#": "CF3",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 2.1,
+              "Laser Diameter (cm)": 3,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow, no secondary flows observed, velocity field becomes steady within minutes. (Appendix C)"
+            },
+            {
+              "Run#": 1,
+              "Test#": "CF4",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 0.31,
+              "Laser Diameter (cm)": 5,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow, no secondary flows observed, velocity field becomes steady within minutes. (Appendix C)"
+            },
+            {
+              "Run#": 1,
+              "Test#": "CF5",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 2.05,
+              "Laser Diameter (cm)": 5,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow, no secondary flows observed, velocity field becomes steady within minutes. (Appendix C)"
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+          "location": "document body",
+          "context": "est#,Configuration,Heating Mode,Free Surface Shape,Power (W),Laser Diameter (cm),Results,Key Observations & References 1,CF1,CF,CO2 Laser,Flat,0.48,1,Stable th",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Run#,Test#,Configuration,Heating Mode,Free Surface Shape,Power (W),Laser Diameter (cm),Results,Key Observations & References",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-001/f001-PSI-108_PSI-108_Experimental_table_STDCE-1.csv",
+      "extractedPath": "data/extracted/batches/B-20261113-001/f001.extract.json",
+      "processingMs": 42
+    },
+    {
+      "id": "f002",
+      "name": "PSI-108_PSI-108_Experimental_table_STDCE-1(1).csv",
+      "sizeBytes": 6601,
+      "sha256": "9d403958984512828ade3110691f7bfc5ba1c704ef42b1093edb7fec1e2df9c7",
+      "kind": "csv",
+      "status": "extracted",
+      "domain": "fluid-physics",
+      "text": {
+        "chars": 229,
+        "headings": [
+          "PSI-108_PSI-108_Experimental_table_STDCE-1(1).csv"
+        ],
+        "fullTextPath": "data/extracted/batches/B-20261113-001/f002-PSI-108_PSI-108_Experimental_table_STDCE-1(1).txt"
+      },
+      "tables": [
+        {
+          "name": "PSI-108_PSI-108_Experimental_table_STDCE-1(1)",
+          "columns": [
+            "Run",
+            "Test",
+            "Configuration",
+            "Heating Mode",
+            "Free Surface Shape",
+            "Power (W)",
+            "Laser Diameter (cm)",
+            "Results",
+            "Key Observations & References"
+          ],
+          "rowCount": 38,
+          "sample": [
+            {
+              "Run": 1,
+              "Test": "CF1",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 0.48,
+              "Laser Diameter (cm)": 1,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow structure. rapid establishment of steady state. good agreement with numerical predictions."
+            },
+            {
+              "Run": 1,
+              "Test": "CF2",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 2.07,
+              "Laser Diameter (cm)": 1,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow. no secondary flows observed. velocity field becomes steady within minutes."
+            },
+            {
+              "Run": 1,
+              "Test": "CF3",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 2.1,
+              "Laser Diameter (cm)": 3,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow. no secondary flows observed. velocity field becomes steady within minutes."
+            },
+            {
+              "Run": 1,
+              "Test": "CF4",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 0.31,
+              "Laser Diameter (cm)": 5,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow. no secondary flows observed. velocity field becomes steady within minutes."
+            },
+            {
+              "Run": 1,
+              "Test": "CF5",
+              "Configuration": "CF",
+              "Heating Mode": "CO2 Laser",
+              "Free Surface Shape": "Flat",
+              "Power (W)": 2.05,
+              "Laser Diameter (cm)": 5,
+              "Results": "Stable thermocapillary flow",
+              "Key Observations & References": "Unicellular flow. no secondary flows observed. velocity field becomes steady within minutes."
+            }
+          ],
+          "location": "line 1 (header)"
+        }
+      ],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": []
+      },
+      "entities": [
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "PSI-108_PSI-108_Experimental_table_STDCE-1(1).csv",
+          "location": "document body",
+          "context": "Test,Configuration,Heating Mode,Free Surface Shape,Power (W),Laser Diameter (cm),Results,Key Observations & References 1,CF1,CF,CO2 Laser,Flat,0.48,1,Stable th",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "Run,Test,Configuration,Heating Mode,Free Surface Shape,Power (W),Laser Diameter (cm),Results,Key Observations & References",
+        "titleConfidence": "medium",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no DOI pattern found; no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-001/f002-PSI-108_PSI-108_Experimental_table_STDCE-1(1).csv",
+      "extractedPath": "data/extracted/batches/B-20261113-001/f002.extract.json",
+      "processingMs": 29
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "extracted": 2,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 2,
+    "pages": 0,
+    "chars": 457,
+    "tables": 2,
+    "tableRows": 76,
+    "equations": 0,
+    "figures": 0,
+    "entities": 2,
+    "newEntities": 0,
+    "mediaAssets": 0
+  },
+  "cumulative": {
+    "batches": 8,
+    "files": 52,
+    "uniqueFiles": 52,
+    "duplicateFiles": 0,
+    "documents": 52,
+    "pages": 432,
+    "chars": 835122,
+    "tables": 44,
+    "tableRows": 2223,
+    "equations": 155,
+    "figures": 468,
+    "mediaAssets": 216,
+    "entities": 115,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261113-001",
+    "updatedAt": "2026-11-13T15:13:17.172Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}

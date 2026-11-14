@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-11-12T02:37:43.706Z",
+  "framework": "Enhancement brief §15 — evaluation of search, extraction, RAG grounding, ranking and ML models with honest absences.",
+  "retrieval": {
+    "method": "BM25 lexical (k1=1.5, b=0.75) over investigations+findings+gaps+tables — the same search_evidence the agent uses",
+    "evalSetSize": 14,
+    "labelNote": "Platform-authored judgement set (documented, not crowd-sourced): each query lists PSI accessions a domain curator would judge relevant.",
+    "precisionAt1": 1,
+    "precisionAt3": 0.571,
+    "recallAt3": 0.81,
+    "ndcgAt5": 0.889,
+    "perQuery": [
+      {
+        "query": "droplet combustion and cool flame discovery",
+        "p1": 1,
+        "p3": 0.3333333333333333,
+        "r3": 0.333,
+        "ndcg5": 0.651
+      },
+      {
+        "query": "solid fuel flammability PMMA extinction limits",
+        "p1": 1,
+        "p3": 0.6666666666666666,
+        "r3": 0.5,
+        "ndcg5": 0.704
+      },
+      {
+        "query": "smoke aerosol measurement and detector response",
+        "p1": 1,
+        "p3": 1,
+        "r3": 1,
+        "ndcg5": 0.869
+      },
+      {
+        "query": "electric field effects on laminar diffusion flames",
+        "p1": 1,
+        "p3": 0.3333333333333333,
+        "r3": 1,
+        "ndcg5": 1
+      },
+      {
+        "query": "spherical diffusion flame structure and extinction",
+        "p1": 1,
+        "p3": 0.6666666666666666,
+        "r3": 1,
+        "ndcg5": 1
+      },
+      {
+        "query": "burning rate emulator for material flammability",
+        "p1": 1,
+        "p3": 0.6666666666666666,
+        "r3": 1,
+        "ndcg5": 1
+      },
+      {
+        "query": "smoke point in co-flow experiment",
+        "p1": 1,
+        "p3": 0.3333333333333333,
+        "r3": 1,
+        "ndcg5": 1
+      },
+      {
+        "query": "large scale spacecraft fire growth demonstration",
+        "p1": 1,
+        "p3": 1,
+        "r3": 1,
+        "ndcg5": 1
+      },
+      {
+        "query": "cool flames with gaseous fuels inverse configuration",
+        "p1": 1,
+        "p3": 0.3333333333333333,
+        "r3": 1,
+        "ndcg5": 0.85
+      },
+      {
+        "query": "flame liftoff and structure in co-flow",
+        "p1": 1,
+        "p3": 0.3333333333333333,
+        "r3": 0.5,
+        "ndcg5": 0.877
+      },
+      {
+        "query": "radiative extinction critical temperature",
+        "p1": 1,
+        "p3": 0.3333333333333333,
+        "r3": 0.5,
+        "ndcg5": 0.613
+      },
+      {
+        "query": "dust and aerosol measurement feasibility test",
+        "p1": 1,
+        "p3": 1,
+        "r3": 1,
+        "ndcg5": 1
+      },
+      {
+        "query": "opposed flow flame spread over solid fuels",
+        "p1": 1,
+        "p3": 0.6666666666666666,
+        "r3": 1,
+        "ndcg5": 1
+      },
+      {
+        "query": "coflow laminar diffusion flame soot measurements",
+        "p1": 1,
+        "p3": 0.3333333333333333,
+        "r3": 0.5,
+        "ndcg5": 0.877
+      }
+    ]
+  },
+  "corpus": {
+    "tables": 22,
+    "rows": 2009,
+    "columns": 231,
+    "sha256ProvenanceCoverage": 1,
+    "unitCoverage": 0.039,
+    "meanColumnFillRate": 0.894,
+    "numericParseFailures": 620,
+    "duplicateRows": 50,
+    "schemaNote": "Units are carried from source table headers where present; fill rates and parse failures recomputed from the raw recovered rows (missing stays missing)."
+  },
+  "evidence": {
+    "findingsTotal": 8,
+    "findingsWithBasisAndCaveat": 8,
+    "gapsTotal": 10,
+    "gapsWithSpecRef": 10,
+    "investigationsWithSourceUrl": 24,
+    "investigationsTotal": 24,
+    "sourceRegistrySize": 52,
+    "note": "Citation accuracy of live LLM answers is enforced by the tool protocol (every number from tool output); registry coverage above is the measurable baseline."
+  },
+  "models": [
+    {
+      "id": "flex-extinction-v2",
+      "task": "binary classification — FLEX droplet visible-flame extinction outcome (Extinction vs Disruption/Completion)",
+      "status": "verified-reproduction",
+      "metrics": {
+        "groupedAucMean": 0.8816,
+        "groupedAucFolds": [
+          0.89,
+          0.8462,
+          0.8548,
+          0.9354
+        ],
+        "balancedAccuracyMean": 0.7859,
+        "oxygenOnlyBaselineAuc": 0.8175,
+        "groupBootstrapAucCi": [
+          0.8819,
+          0.889
+        ]
+      },
+      "note": "Verified reproduction from recovered PSI-69 rows; grouped validation (AUC, balanced accuracy) + O2-only baseline + bootstrap CI."
+    },
+    {
+      "id": "cfig-hot-ignition",
+      "task": "binary classification — will a CFI-G inverse-config gaseous flame achieve hot ignition?",
+      "status": "exploratory",
+      "metrics": {
+        "logisticCalibrated": {
+          "rocAucMean": 0.682,
+          "rocAucFolds": [
+            0.914,
+            0.038,
+            0.92,
+            0.855
+          ],
+          "balancedAccuracyMean": 0.537,
+          "brierMean": 0.073
+        },
+        "gbmReference": {
+          "rocAucMean": 0.701
+        },
+        "baselines": {
+          "majorityClassRocAuc": 0.5,
+          "singleFeatureXo2RocAuc": 0.728
+        }
+      },
+      "note": "Exploratory: honest negative comparison vs single-feature baseline retained in the card."
+    },
+    {
+      "id": "spice-flame-duration",
+      "task": "regression — log flame burn duration (s) of SPICE co-flow smoke-point tests",
+      "status": "negative-result",
+      "metrics": {
+        "ridge": {
+          "rmseLogMean": 0.5943,
+          "maeLogMean": 0.4852,
+          "r2Mean": -0.409
+        },
+        "gbm": {
+          "rmseLogMean": 0.5979,
+          "maeLogMean": 0.472,
+          "r2Mean": -0.367
+        },
+        "baselineFuelMean": {
+          "rmseLogMean": 0.5817,
+          "maeLogMean": 0.4682
+        }
+      },
+      "note": "Negative result: neither ridge nor GBM beats the per-fuel mean baseline under grouped validation — NOT offered as a predictor."
+    }
+  ],
+  "absences": [
+    {
+      "area": "Computer vision (IoU / Dice / tracking error)",
+      "reason": "No trained CV model and no labelled mask/trace dataset exist in this environment — image-derived measurement is explicitly not claimed."
+    },
+    {
+      "area": "Prediction uncertainty (prediction-interval coverage)",
+      "reason": "No model in the registry emits calibrated prediction intervals; FLEX reports a bootstrap AUC CI only. PICP is therefore not computable and not reported."
+    },
+    {
+      "area": "Dense / hybrid retrieval",
+      "reason": "No embedding credentials or dense index is configured — BM25 lexical retrieval only, labelled as such in the AI-role panel."
+    },
+    {
+      "area": "Physics-based simulation validation (conservation residuals)",
+      "reason": "No CFD/fire solver runs in this platform; equation calculators are unit-verified with reference tests instead (54/54 recorded)."
+    }
+  ],
+  "dashboardIntegrity": {
+    "displayedValuesMatchDatasets": "Enforced by construction: UI values render from the same generated JSON layer this script reads.",
+    "unitsAndLabels": "Column units carried from source headers; missing units shown as '—', never guessed.",
+    "reproducibility": "This file is generated by scripts/build_evaluation.ts from the data layer — re-run to reproduce."
+  }
+}

@@ -1,0 +1,1100 @@
+{
+  "batchId": "B-20261113-003",
+  "receivedAt": "2026-11-13T15:15:15.519Z",
+  "fileCount": 10,
+  "files": [
+    {
+      "id": "f001",
+      "name": "PSI-10_record.txt",
+      "sizeBytes": 3069,
+      "sha256": "d35934fede1835e4ef4d3e487edbf0f554ee527d0591191d19fc2bbab18dafdd",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3067,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f001-PSI-10_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/w4zy-bt45"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "PSI-10_record.txt",
+          "location": "document body",
+          "context": "{\"Name\": \"Advanced Combustion via Microgravity Experiments (ACME) Combustion Integrated Rack (CIR) Reconfiguration of Combustion Integrated Rack (CIR)\", \"Lin",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flamedesign",
+          "entityLabel": "Flame Design",
+          "entityType": "investigation",
+          "source": "PSI-10_record.txt",
+          "location": "document body",
+          "context": "10 TITLE: Advanced Combustion via Microgravity Experiments / Flame Design SHORT LABEL: RESEARCH AREA: Combustion Science / Flames of Gaseous Fuels PROJECT TYPE",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-10_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/w4zy-bt45 | SOURCE: KEYWORDS: c, h, e, m, i, c, a,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-10_record.txt",
+          "location": "document body",
+          "context": "\": \"Advanced Combustion via Microgravity Experiments (ACME) Combustion Integrated Rack (CIR) Reconfiguration of Combustion Integrated Rack (CIR)\", \"Link\": \"ht",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-10_record.txt",
+          "location": "document body",
+          "context": "INVESTIGATION RECORD — PSI-10 TITLE: Advanced Combustion via Microgravity Experiments / Flame Design SHORT LABEL: RESEARCH AREA: Combustion Science / Flames of",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-pmt",
+          "entityLabel": "Photomultiplier tube",
+          "entityType": "sensor",
+          "source": "PSI-10_record.txt",
+          "location": "document body",
+          "context": "serve the flames with a broad suite of cameras, radiometers, photomultiplier tubes, and thermocouples. HYPOTHESIS: 1. Soot formation requires a region where loc",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-10_record.txt",
+          "location": "document body",
+          "context": "Zst, amount of inert (N2 or CO2), and pressure for C2H4 and CH4 flames. Identify the corresponding temperatures in hot regions. Obtain similar limits and tempe",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-10",
+        "titleConfidence": "medium",
+        "doi": "10.60555/w4zy-bt45",
+        "years": [
+          2017
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f001-PSI-10_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f001.extract.json",
+      "processingMs": 48
+    },
+    {
+      "id": "f002",
+      "name": "PSI-20_record.txt",
+      "sizeBytes": 6223,
+      "sha256": "c62fbfb1e55bbc9534994d30680c4e472ecfdd0101b5a4b96c9dd7af786edf02",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 6217,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f002-PSI-20_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/vb93-3y72"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "PSI-20_record.txt",
+          "location": "document body",
+          "context": "urner. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR) ACME\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-fcf/cir/ https://www1.grc.nasa.go",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-20_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/vb93-3y72 | SOURCE: KEYWORDS: B, u, o, y, a, n, c,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-20_record.txt",
+          "location": "document body",
+          "context": "ity flames observed with the BRE burner. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR) ACME\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-20_record.txt",
+          "location": "document body",
+          "context": "INVESTIGATION RECORD — PSI-20 TITLE: Advanced Combustion via Microgravity Experiments - Burning Rate Emulator SHORT LABEL: RESEARCH AREA: Combustion Science /",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-pmma",
+          "entityLabel": "PMMA",
+          "entityType": "material",
+          "source": "PSI-20_record.txt",
+          "location": "document body",
+          "context": "corresponding to various condensed-phase materials (such as PMMA and Nylon) was observed in microgravity despite the absence of air flow, where the cessation o",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-20_record.txt",
+          "location": "document body",
+          "context": ". Observe burning behavior in long-duration microgravity for CH4/N2 and C2H4/N2mixtures on porous circular burners of 25 and 50 mm diameter. Consider O2/N2 amb",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-20",
+        "titleConfidence": "medium",
+        "doi": "10.60555/vb93-3y72",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f002-PSI-20_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f002.extract.json",
+      "processingMs": 165
+    },
+    {
+      "id": "f003",
+      "name": "PSI-21_record.txt",
+      "sizeBytes": 5553,
+      "sha256": "0fb2f4269e5c4316a90044f76e44fb911ca29495d9567b0b3492c9869c2c0255",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 5547,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f003-PSI-21_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/23e1-9950",
+          "10.1088/1364-7830/8/3/009",
+          "10.1016/S0010-2180(00",
+          "10.1016/S0082-0784(00",
+          "10.1016/S0082-0784(98"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "PSI-21_record.txt",
+          "location": "document body",
+          "context": "ity, soot temperatures, and soot volume fractions. APPROACH: ACME CLD Flame project goals include the generation of improved computational models with improved",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "PSI-21_record.txt",
+          "location": "document body",
+          "context": "soot temperatures, and soot volume fractions. APPROACH: ACME CLD Flame project goals include the generation of improved computational models with improved soot",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-21_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/23e1-9950 | SOURCE: KEYWORDS: m, i, c, r, o, g, r,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-21_record.txt",
+          "location": "document body",
+          "context": "try under momentum-dominated conditions. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR) ACME\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-21_record.txt",
+          "location": "document body",
+          "context": "INVESTIGATION RECORD — PSI-21 TITLE: Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame SHORT LABEL: RESEARCH AREA: Combustion S",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "PSI-21_record.txt",
+          "location": "document body",
+          "context": "l-rich flames will be investigated using soot luminosity and laser extinction measurements to determine soot temperatures and soot volume fractions. Flame tempe",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-21_record.txt",
+          "location": "document body",
+          "context": "Characterize the behavior of weak coflow diffusion flames of methane and ethylene, as a function of velocity and fuel dilution, through measurement of flame sha",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-21",
+        "titleConfidence": "medium",
+        "doi": "10.60555/23e1-9950",
+        "years": [
+          1973,
+          1979,
+          1998,
+          2000,
+          2004
+        ],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f003-PSI-21_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f003.extract.json",
+      "processingMs": 23
+    },
+    {
+      "id": "f004",
+      "name": "PSI-22_record.txt",
+      "sizeBytes": 4685,
+      "sha256": "e63054fcf6eafe0ba457adac96e5a131c30591f8c070c7a33631d5eef64b2a42",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 4681,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f004-PSI-22_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/se5a-8c73"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "PSI-22_record.txt",
+          "location": "document body",
+          "context": "sions. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR) ACME\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-fcf/cir/ https://www1.grc.nasa.go",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-efield",
+          "entityLabel": "E-FIELD Flames",
+          "entityType": "investigation",
+          "source": "PSI-22_record.txt",
+          "location": "document body",
+          "context": "racterize stabilized near-limit lifted flames. APPROACH: The E-FIELD flames experiment investigates how electric fields influence the behavior of laminar diffus",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-22_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/se5a-8c73 | SOURCE: KEYWORDS: M, e, t, h, a, n, e,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-22_record.txt",
+          "location": "document body",
+          "context": "ame radiant emissions. All experiments were conducted in the combustion integrated rack (CIR). Tests were administered with Glenn Research Center (GRC) directin",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-22_record.txt",
+          "location": "document body",
+          "context": "INVESTIGATION RECORD — PSI-22 TITLE: Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames SHORT LABEL: RESEARCH",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "PSI-22_record.txt",
+          "location": "document body",
+          "context": "red flame shape, luminosity, and soot distribution. Spectral imaging with filters measures chemiluminescent emissions and soot volume fraction. There were therm",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-22_record.txt",
+          "location": "document body",
+          "context": "iving ion-driving convection and influencing flame behavior. Methane and ethylene were used as fuels and diluted with nitrogen to control flame strength. Diluti",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-22",
+        "titleConfidence": "medium",
+        "doi": "10.60555/se5a-8c73",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f004-PSI-22_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f004.extract.json",
+      "processingMs": 10
+    },
+    {
+      "id": "f005",
+      "name": "PSI-23_record.txt",
+      "sizeBytes": 5206,
+      "sha256": "de0a597b0801ce9f1d7f01795531e7ba3b6bf88e9336873f75f464d296818dba",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 5200,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f005-PSI-23_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [
+          {
+            "id": "lewis-number",
+            "name": "Lewis number",
+            "where": "page/slide 1"
+          }
+        ],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/k57n-p030"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-acme-bre",
+          "entityLabel": "ACME / BRE",
+          "entityType": "investigation",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "eters. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR) ACME\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-fcf/cir/ https://www1.grc.nasa.go",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sflame",
+          "entityLabel": "s-Flame",
+          "entityType": "investigation",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "on) of diffusion flames established at initially non-steady, spherical flame structures for mixtures of different H2/CH4/diluent ratios (soot-free) and differ",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/k57n-p030 | SOURCE: KEYWORDS: A, c, t, i, v, a, t,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "associated physico-chemical parameters. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR) ACME\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/iss-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "INVESTIGATION RECORD — PSI-23 TITLE: Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames SHORT LABEL: RESEARC",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-methane",
+          "entityLabel": "Methane",
+          "entityType": "fuel",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "f the flames. Conventional gaseous fuels including hydrogen, methane, and ethylene will be used. Hydrogen is the simplest fuel and its reaction mechanism is als",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-hydrogen",
+          "entityLabel": "Hydrogen",
+          "entityType": "fuel",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "ulations of the flames. Conventional gaseous fuels including hydrogen, methane, and ethylene will be used. Hydrogen is the simplest fuel and its reaction mechan",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-co2",
+          "entityLabel": "Carbon dioxide (suppressant)",
+          "entityType": "suppressant",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "ude nitrogen and helium to adjust mixture diffusivities, and carbon dioxide to influence flame radiation characteristics. HYPOTHESIS: The transient numerical si",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-he",
+          "entityLabel": "Helium (diluent)",
+          "entityType": "suppressant",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "arbons. Diluents mixed with fuel are to include nitrogen and helium to adjust mixture diffusivities, and carbon dioxide to influence flame radiation characteris",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "eq-lewis-number",
+          "entityLabel": "Lewis number",
+          "entityType": "equation",
+          "source": "PSI-23_record.txt",
+          "location": "document body",
+          "context": "flames using fuel/diluent mixtures that are above a critical Lewis number. APPROACH: A series of experiments is proposed in which mixtures of various gaseous fu",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-23",
+        "titleConfidence": "medium",
+        "doi": "10.60555/k57n-p030",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f005-PSI-23_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f005.extract.json",
+      "processingMs": 19
+    },
+    {
+      "id": "f006",
+      "name": "PSI-25_record.txt",
+      "sizeBytes": 3836,
+      "sha256": "6b8370495c85a6b6c0a00b7c0980b02d22242a1d0904d7716571fc083e8718ad",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 3820,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f006-PSI-25_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/4qc4-de67"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": "NASA PSI INVESTIGATION RECORD — PSI-25 TITLE: Burning and Suppression of Solids - II SHORT LABEL: RESEARCH AREA: Combustion Science / Spacecraft",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-bass2",
+          "entityLabel": "BASS-II",
+          "entityType": "investigation",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": ", , , , , , F, i, r, e, , S, a, f, e, t, y OBJECTIVES: BASS-II results contribute to the combustion computational models used in the design of fire detect",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-sofie",
+          "entityLabel": "SoFIE",
+          "entityType": "investigation",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": "d actual material flammability in microgravity. 3) Provide SoFIE PIs with preliminary data to refine Science Requirements. 4) Practical, realistic (thicker",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/4qc4-de67 | SOURCE: KEYWORDS: F, l, a, m, e, , S,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": "ab partner” operations. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. Fuel sampl",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/4qc4-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": "d in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. Fuel samples were mounted inside a small wind tunnel which cou",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "std-nasa-std",
+          "entityLabel": "NASA standard",
+          "entityType": "standard",
+          "source": "PSI-25_record.txt",
+          "location": "document body",
+          "context": "ity. 2) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test #1 method, ground-based microgravity tests, and actual material flammability in",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-25",
+        "titleConfidence": "medium",
+        "doi": "10.60555/4qc4-de67",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f006-PSI-25_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f006.extract.json",
+      "processingMs": 20
+    },
+    {
+      "id": "f007",
+      "name": "PSI-26_record.txt",
+      "sizeBytes": 4442,
+      "sha256": "e7dfda685d19414cd1ba115792c20cd74dec63e7ee3dad6ff917251b27b507ac",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 4430,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f007-PSI-26_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/58h4-dy80"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-bass",
+          "entityLabel": "BASS",
+          "entityType": "investigation",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": "NASA PSI INVESTIGATION RECORD — PSI-26 TITLE: Burning and Suppression of Solids SHORT LABEL: RESEARCH AREA: Combustion Science / Spacecraft Fire",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/58h4-dy80 | SOURCE: KEYWORDS: F, l, a, m, e, , S,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-msg",
+          "entityLabel": "Microgravity Science Glovebox (MSG)",
+          "entityType": "facility",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": "re the safety of future crewed missions. HARDWARE: {\"Name\": \"Microgravity Science Glovebox\", \"Link\": \"https://www1.grc.nasa.gov/space/iss-research/msg/\"} RECOVE",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/58h4-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-cotton",
+          "entityLabel": "Cotton fabric",
+          "entityType": "material",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": "love Box (MSG). Custom-made fabric samples consisting of 75% cotton and 25% fiberglass (by mass) measuring were used as a fuel source as well as Nomex fabric an",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-fiberglass",
+          "entityLabel": "Fiberglass",
+          "entityType": "material",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": "Custom-made fabric samples consisting of 75% cotton and 25% fiberglass (by mass) measuring were used as a fuel source as well as Nomex fabric and Ultem. A Kant",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "mat-nomex",
+          "entityLabel": "Nomex",
+          "entityType": "material",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": "ss (by mass) measuring were used as a fuel source as well as Nomex fabric and Ultem. A Kanthal wire (29-gage)igniter was used to initiate combustion at one end",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "std-nasa-std",
+          "entityLabel": "NASA standard",
+          "entityType": "standard",
+          "source": "PSI-26_record.txt",
+          "location": "document body",
+          "context": ": 1.) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test#1 method, ground-based microgravity tests, and actual material flammability in m",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-26",
+        "titleConfidence": "medium",
+        "doi": "10.60555/58h4-dy80",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f007-PSI-26_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f007.extract.json",
+      "processingMs": 63
+    },
+    {
+      "id": "f008",
+      "name": "PSI-39_record.txt",
+      "sizeBytes": 4084,
+      "sha256": "fad8926a2e0996b86addc4432bbc48a707c4da71a50bc717011db12d2cd3ff5d",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 4082,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f008-PSI-39_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/m6pj-a914"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-cldflame",
+          "entityLabel": "CLD-Flame",
+          "entityType": "investigation",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "NASA PSI INVESTIGATION RECORD — PSI-39 TITLE: Cool Flames Investigation SHORT LABEL: RESEARCH AREA: Combustion Science / Droplets PROJECT TYPE:",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/m6pj-a914 | SOURCE: KEYWORDS: D, r, o, p, l, e, t,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "f soot formation during cool flame combustion. APPROACH: The Combustion Integrated Rack (CIR) contains the Multi-User Droplet Combustion Apparatus (MDCA) which",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-mdca",
+          "entityLabel": "MDCA",
+          "entityType": "apparatus",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "(CIR) contains the Multi-User Droplet Combustion Apparatus (MDCA) which facilitates the controlled combustion of fuel droplets. A system of gas bottles and fue",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "RESEARCH AREA: Combustion Science / Droplets PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/m6pj-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "on and dynamics. Flames were observed with a black-and-white camera for droplet size measurements. A UV camera was used for capturing the OH* radical emissions",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fuel-octane",
+          "entityLabel": "n-Octane",
+          "entityType": "fuel",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "ing an understanding of how cool flame reactivity determines octane and cetane number for fuels in spark ignition and diesel engines. Cool Flames Investigation",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sup-he",
+          "entityLabel": "Helium (diluent)",
+          "entityType": "suppressant",
+          "source": "PSI-39_record.txt",
+          "location": "document body",
+          "context": "anging from 0.25 atm to 5 atm. 2) Analyze the effects of helium dilution on cool flame behavior. 3) Examine the behavior of combustion characteristics.",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-39",
+        "titleConfidence": "medium",
+        "doi": "10.60555/m6pj-a914",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f008-PSI-39_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f008.extract.json",
+      "processingMs": 49
+    },
+    {
+      "id": "f009",
+      "name": "PSI-47_record.txt",
+      "sizeBytes": 4076,
+      "sha256": "eb7488eaddafabaebaa9106d76a083a934f9b15bc19969fce1d1a3a68d471c05",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "aerosol-smoke",
+      "text": {
+        "chars": 4074,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f009-PSI-47_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/ztgj-d202"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-same",
+          "entityLabel": "SAME",
+          "entityType": "investigation",
+          "source": "PSI-47_record.txt",
+          "location": "document body",
+          "context": "The focus of DAFT / DAFT-2 was to mitigate the risk for the Smoke Aerosol Measurement Experiment (SAME). SAME relied on a commercially available condensate nuc",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-daft",
+          "entityLabel": "DAFT",
+          "entityType": "investigation",
+          "source": "PSI-47_record.txt",
+          "location": "document body",
+          "context": "e, , p, r, e, v, e, n, t, i, o, n OBJECTIVES: The focus of DAFT / DAFT-2 was to mitigate the risk for the Smoke Aerosol Measurement Experiment (SAME). SAME re",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-47_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/ztgj-d202 | SOURCE: KEYWORDS: D, A, F, T, , , ,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-47_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/ztgj-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-laser",
+          "entityLabel": "Laser diagnostics",
+          "entityType": "sensor",
+          "source": "PSI-47_record.txt",
+          "location": "document body",
+          "context": "sopropanol around aerosol particulates that are subsequently laser counted. It was hypothesized that the P-Trak would not work in microgravity due to two potent",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-47",
+        "titleConfidence": "medium",
+        "doi": "10.60555/ztgj-d202",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f009-PSI-47_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f009.extract.json",
+      "processingMs": 12
+    },
+    {
+      "id": "f010",
+      "name": "PSI-68_record.txt",
+      "sizeBytes": 6680,
+      "sha256": "1b562f16f85f306afde1daf5b3ed87dcf6d42281d9925ec7b0a88dff4b4fe80e",
+      "kind": "txt",
+      "status": "extracted",
+      "domain": "combustion",
+      "text": {
+        "chars": 6678,
+        "headings": [],
+        "fullTextPath": "data/extracted/batches/B-20261113-003/f010-PSI-68_record.txt"
+      },
+      "tables": [],
+      "equations": {
+        "matchedKnown": [],
+        "heuristicFormulas": [],
+        "doiLike": [
+          "10.60555/byp8-h018"
+        ]
+      },
+      "entities": [
+        {
+          "entityId": "inv-flex",
+          "entityLabel": "FLEX",
+          "entityType": "investigation",
+          "source": "PSI-68_record.txt",
+          "location": "document body",
+          "context": ", o, r, m, a, t, i, o, n OBJECTIVES: The primary goal of the FLEX-2 flight experiments is to extend the results of FLEX-1 to fuels and environmental conditions",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "inv-flex2",
+          "entityLabel": "FLEX-2",
+          "entityType": "investigation",
+          "source": "PSI-68_record.txt",
+          "location": "document body",
+          "context": ", o, r, m, a, t, i, o, n OBJECTIVES: The primary goal of the FLEX-2 flight experiments is to extend the results of FLEX-1 to fuels and environmental conditions",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-iss",
+          "entityLabel": "International Space Station",
+          "entityType": "facility",
+          "source": "PSI-68_record.txt",
+          "location": "document body",
+          "context": "PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/byp8-h018 | SOURCE: KEYWORDS: F, L, E, X, , , ,",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-cir",
+          "entityLabel": "Combustion Integrated Rack (CIR)",
+          "entityType": "facility",
+          "source": "PSI-68_record.txt",
+          "location": "document body",
+          "context": "with support from prior droplet results. HARDWARE: {\"Name\": \"Combustion Integrated Rack (CIR) Multi-user Droplet Combustion Appartatus (MDCA)\", \"Link\": \"https:",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "fac-mdca",
+          "entityLabel": "MDCA",
+          "entityType": "apparatus",
+          "source": "PSI-68_record.txt",
+          "location": "document body",
+          "context": "grated Rack (CIR) Multi-user Droplet Combustion Appartatus (MDCA)\", \"Link\": \"https://issnationallab.org/facilities/combustion-integrated-rack/ https://gipoc.g",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "env-microgravity",
+          "entityLabel": "Microgravity environment",
+          "entityType": "mission-environment",
+          "source": "PSI-68_record.txt",
+          "location": "document body",
+          "context": "A: Combustion Science / Spacecraft Fire Safety PROJECT TYPE: Microgravity Investigation | FLIGHT PLATFORM: International Space Station (ISS) DOI: 10.60555/byp8-",
+          "evidence": "dictionary-match"
+        },
+        {
+          "entityId": "sen-camera",
+          "entityLabel": "Camera imaging",
+          "entityType": "sensor",
+          "source": "PSI-68_record.txt",
+          "location": "document body",
+          "context": "ignitor is retracted. A near real-time download of the color camera video was employed in order to verify successful droplet deployment, ignition, and overall p",
+          "evidence": "dictionary-match"
+        }
+      ],
+      "publication": {
+        "title": "NASA PSI INVESTIGATION RECORD — PSI-68",
+        "titleConfidence": "medium",
+        "doi": "10.60555/byp8-h018",
+        "years": [],
+        "authorConfidence": "low",
+        "note": "title taken from the first substantial line of the text layer (medium confidence); no clear author pattern — authors not recorded rather than guessed; no numbered references section detected"
+      },
+      "media": [],
+      "errors": [],
+      "unresolved": [],
+      "rawPath": "data/raw/batches/B-20261113-003/f010-PSI-68_record.txt",
+      "extractedPath": "data/extracted/batches/B-20261113-003/f010.extract.json",
+      "processingMs": 28
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "extracted": 10,
+    "duplicates": 0,
+    "unsupported": 0,
+    "failed": 0,
+    "documents": 10,
+    "pages": 0,
+    "chars": 47796,
+    "tables": 0,
+    "tableRows": 0,
+    "equations": 1,
+    "figures": 0,
+    "entities": 73,
+    "newEntities": 0,
+    "mediaAssets": 0
+  },
+  "cumulative": {
+    "batches": 10,
+    "files": 63,
+    "uniqueFiles": 62,
+    "duplicateFiles": 1,
+    "documents": 62,
+    "pages": 432,
+    "chars": 882918,
+    "tables": 44,
+    "tableRows": 2223,
+    "equations": 156,
+    "figures": 468,
+    "mediaAssets": 216,
+    "entities": 115,
+    "errors": 0,
+    "userConfirmedAllUploads": true,
+    "lastBatchId": "B-20261113-003",
+    "updatedAt": "2026-11-13T15:15:16.515Z"
+  },
+  "unresolvedIssues": [],
+  "modelImpact": "No model was trained, retrained or modified by this batch. Ingestion only registers and extracts content. Dataset harmonization, ML eligibility assessment and any new model version require the global audit, which runs only after the user confirms all source files have been uploaded."
+}
