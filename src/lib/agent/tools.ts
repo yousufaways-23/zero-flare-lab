@@ -744,7 +744,7 @@ export const TOOLS: ToolDef[] = [
     name: "query_experiment_dataset",
     description: "Query a cleaned experiment dataset (CODEX Phase 1): filters, exact column resolution, numeric stats (mean/min/max/median with missing counts), group means. Real rows only — missing values are counted, never zero-filled.",
     args: { experiment_id: "Experiment_N or PSI accession", columns: "optional array of column names", filters: "optional array of {column, op(eq|neq|gt|gte|lt|lte|contains), value}", statsColumns: "optional array of numeric column names to profile", groupBy: "optional 'CategoryColumn:NumericColumn' for group means", limit: "optional sample rows (default 10, max 50)" },
-    handler: (a) => {
+    handler: async (a) => {
       const parsed = DatasetQuerySchema.safeParse({
         experimentId: String(a.experiment_id ?? ""),
         columns: Array.isArray(a.columns) ? a.columns.map(String) : undefined,
@@ -756,7 +756,7 @@ export const TOOLS: ToolDef[] = [
       if (!parsed.success) {
         return { tool: "query_experiment_dataset", ok: false, summary: `invalid query: ${parsed.error.issues[0]?.message ?? "validation failed"}`, provenance: "experiment dataset layer" };
       }
-      const r = queryExperimentDataset(parsed.data.experimentId, parsed.data);
+      const r = await queryExperimentDataset(parsed.data.experimentId, parsed.data);
       if ("error" in r) return { tool: "query_experiment_dataset", ok: false, summary: r.error, provenance: `data/experiments/${parsed.data.experimentId}_cleaned.csv` };
       const statsText = r.stats ? Object.entries(r.stats).map(([cn, s]) => `${cn}: n=${s.n} mean=${s.mean} min=${s.min} max=${s.max}`).join(" · ") : "";
       return {

@@ -12,7 +12,7 @@
  * are not involved.
  */
 
-import indexDoc from "@/../knowledge/index.json";
+import indexDoc from "@/data/generated/knowledge-index.json";
 
 export interface KnowledgeDoc {
   id: string;

@@ -57,6 +57,7 @@ import {
   Search,
   Sparkles,
 } from "lucide-react";
+import { ChartsTab } from "@/components/flame/investigations/ExperimentCharts";
 import { useAppStore, type InvestigationTab, type PillarId } from "@/lib/app-store";
 import { SaveItemButton } from "@/components/flame/shell/SaveItemButton";
 import { SourceFiguresGallery } from "@/components/flame/investigations/SourceFiguresGallery";
@@ -218,6 +219,7 @@ function ChartProvenance({ table }: { table: DataTable }) {
 const TABS: { id: InvestigationTab; label: string }[] = [
   { id: "overview", label: "Overview" },
   { id: "data", label: "Data" },
+  { id: "charts", label: "Charts" },
   { id: "equipment", label: "Equipment" },
   { id: "media", label: "Media" },
   { id: "equations", label: "Equations" },
@@ -321,6 +323,7 @@ export function InvestigationWorkspace({ accession }: { accession: string }) {
 
       {tab === "overview" && <OverviewTab inv={inv} />}
       {tab === "data" && <DataStudioTab inv={inv} />}
+      {tab === "charts" && <ChartsTab accession={inv.accession} />}
       {tab === "equipment" && <EquipmentTab accession={inv.accession} />}
       {tab === "media" && <MediaTab inv={inv} />}
       {tab === "equations" && <EquationsTab inv={inv} />}

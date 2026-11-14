@@ -13,6 +13,7 @@
 import { NextResponse } from "next/server";
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { isEdgeRuntime } from "@/lib/server/bindings";
 
 export const runtime = "nodejs";
 
@@ -33,6 +34,20 @@ const MIME: Record<string, string> = {
 };
 
 export async function GET(request: Request) {
+  // Edge posture: extracted/uploaded media binaries are not part of the
+  // immutable edge release (the 2,393 historical media binaries are unrecovered
+  // — status shown honestly in Data & Sources). Available imagery on the edge:
+  // the verified NASA Images catalogue and brand assets under /media.
+  if (isEdgeRuntime()) {
+    return NextResponse.json(
+      {
+        error: "edge_immutable_corpus",
+        detail:
+          "Extracted media binaries are not part of the immutable edge release. Available imagery: the verified NASA Images catalogue and brand assets under /media.",
+      },
+      { status: 501 },
+    );
+  }
   const url = new URL(request.url);
   const rel = url.searchParams.get("path");
   if (!rel) return NextResponse.json({ error: "missing_path" }, { status: 400 });

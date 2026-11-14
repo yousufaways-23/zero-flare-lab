@@ -11,6 +11,8 @@ import { analyzeFacility } from "@/lib/science/firesafety";
 import { richardson } from "@/lib/science/physics";
 import { getInvestigations } from "@/lib/data/catalog";
 import { getMathModel, runMathematicalModel, checkModelApplicability, selectMathModels, allMathModels } from "@/lib/science/math-models";
+import flexExtinctionExperimentJson from "@/data/generated/flex-extinction-experiment.json";
+import flexExtinctionModelCardJson from "@/data/generated/flex-extinction-model-card.json";
 
 export const runtime = "nodejs";
 
@@ -121,12 +123,16 @@ export async function GET() {
 
   // 9 — ML experiment registry integrity (M7): the registered flex-extinction-v2
   // artifact must match the published multi-candidate experiment log.
+  // Both artifacts are statically bundled (edge-safe — no filesystem reads).
   try {
-    const { readFileSync } = await import("node:fs");
-    const path = await import("node:path");
-    const root = process.cwd();
-    const exp = JSON.parse(readFileSync(path.join(root, "data", "ml", "flex_extinction_experiment.json"), "utf8"));
-    const card = JSON.parse(readFileSync(path.join(root, "models", "flex-extinction", "v2", "model_card.json"), "utf8"));
+    const exp = flexExtinctionExperimentJson as {
+      experiment_id?: string;
+      leaderboard?: unknown[];
+      championDecision?: string;
+    };
+    const card = flexExtinctionModelCardJson as {
+      reverification?: { reproductionCheck?: { pass?: boolean; coefMaxAbsDelta?: number; groupedAucDelta?: number } };
+    };
     const rv = card.reverification;
     const expOk =
       exp.experiment_id === "M7-flex-extinction-20261114" &&

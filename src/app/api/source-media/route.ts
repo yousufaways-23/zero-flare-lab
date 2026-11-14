@@ -12,9 +12,8 @@
  * interpretations (where present) are labelled as AI-INTERPRETED.
  */
 import { NextResponse } from "next/server";
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import { rateLimit, clientIp, pruneRateBuckets, RATE_LIMITS } from "@/lib/server/rate-limit";
+import { loadBatchIndex, loadReceipt } from "@/lib/ingest/storage";
 
 export const runtime = "nodejs";
 
@@ -66,13 +65,13 @@ export async function GET(request: Request) {
   const accession = url.searchParams.get("accession")?.toUpperCase();
   const limit = Math.min(120, Math.max(1, Number(url.searchParams.get("limit")) || 48));
 
-  const batchesDir = path.join(process.cwd(), "data", "ingest", "batches");
   const items: SourceMediaItem[] = [];
   try {
-    const files = (await fs.readdir(batchesDir)).filter((f) => /^B-\d{8}-\d{3}\.json$/.test(f));
-    for (const bf of files) {
-      const raw = await fs.readFile(path.join(batchesDir, bf), "utf8");
-      const receipt = JSON.parse(raw) as {
+    // Edge-portable: receipts resolve through the edge-aware ingest store
+    // (D1 overlay → /corpus static assets on Cloudflare; files on Node).
+    const index = await loadBatchIndex();
+    for (const entry of index) {
+      const receipt = await loadReceipt(entry.batchId) as null | {
         batchId: string;
         files?: {
           name: string;
@@ -88,7 +87,7 @@ export async function GET(request: Request) {
           }[];
         }[];
       };
-      if (!receipt.files) continue;
+      if (!receipt || !receipt.files) continue;
       for (const f of receipt.files) {
         if (!f.media?.length) continue;
         // map this source document to investigations/facilities

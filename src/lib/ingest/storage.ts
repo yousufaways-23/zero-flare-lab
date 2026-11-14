@@ -74,6 +74,20 @@ function safeReceiptId(batchId: string): string | null {
 
 const corpusCache = new Map<string, string>(); // relPath → raw text (immutable baseline)
 
+/**
+ * Read an immutable-corpus text file on any runtime: edge → D1 kv_json overlay,
+ * then the /corpus static-asset mirror; node → the repository file. Returns
+ * null when the artifact is unavailable (callers apply honest fallbacks).
+ */
+export async function readCorpusText(relPath: string): Promise<string | null> {
+  if (isEdgeRuntime()) return edgeReadText(relPath);
+  try {
+    return await fs.readFile(safeJoin(relPath), "utf8");
+  } catch {
+    return null;
+  }
+}
+
 async function edgeReadText(relPath: string): Promise<string | null> {
   const b = getBindings();
   if (!b) return null;

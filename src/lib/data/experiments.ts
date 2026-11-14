@@ -4,10 +4,14 @@
 // and the raw cleaned CSVs from data/experiments at request time for full-row
 // queries. Exact/unique column resolution, filtering, stats, grouping.
 // Missing values are preserved as missing (never zero-filled).
+//
+// Runtime-portable: CSV text resolves through the edge-aware corpus reader
+// (D1 overlay → /corpus static assets on Cloudflare; repository file on Node)
+// with a per-file module cache — identical rows on every runtime.
 
-import { readFileSync } from "node:fs";
 import path from "node:path";
 import experimentsRegistryJson from "@/data/generated/experiment_datasets.json";
+import { readCorpusText } from "@/lib/ingest/storage";
 
 export interface ExperimentColumnProfile {
   name: string;
@@ -93,25 +97,34 @@ export interface DatasetFilter {
   value: string;
 }
 
+/** Per-file cleaned-CSV cache (immutable artifacts — never invalidated). */
+const csvCache = new Map<string, string>();
+
+async function loadCleanedCsv(cleanedFile: string): Promise<string | null> {
+  const basename = path.basename(cleanedFile);
+  const hit = csvCache.get(basename);
+  if (hit !== undefined) return hit;
+  const text = await readCorpusText(path.posix.join("data/experiments", basename));
+  if (text !== null) csvCache.set(basename, text);
+  return text;
+}
+
 /**
  * Query a cleaned experiment dataset with exact column resolution.
  * Column matching is exact (case-insensitive) — ambiguous partial matches are
  * reported, not guessed. Numeric stats use pairwise-valid observations.
  */
-export function queryExperimentDataset(
+export async function queryExperimentDataset(
   experimentId: string,
   opts: { columns?: string[]; filters?: DatasetFilter[]; statsColumns?: string[]; groupBy?: string; limit?: number } = {},
-): DatasetQueryResult | { error: string } {
+): Promise<DatasetQueryResult | { error: string }> {
   const e = getExperimentDataset(experimentId);
   if (!e) return { error: `unknown experiment "${experimentId}" — use listExperimentDatasets or resolveExperiment` };
 
   const warnings: string[] = [];
-  const file = path.join(process.cwd(), "data", "experiments", path.basename(e.cleaned_file));
-  let text: string;
-  try {
-    text = readFileSync(file, "utf8");
-  } catch (err) {
-    return { error: `cleaned file not readable: ${(err as Error).message}` };
+  const text = await loadCleanedCsv(e.cleaned_file);
+  if (text === null) {
+    return { error: `cleaned file not available on this runtime: ${path.basename(e.cleaned_file)} (the immutable corpus mirror serves it in production; run locally for full-file access)` };
   }
 
   const lines = text.replace(/^\uFEFF/, "").split(/\r?\n/).filter((l) => l.trim());

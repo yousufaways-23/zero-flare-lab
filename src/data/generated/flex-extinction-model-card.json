@@ -1,0 +1,392 @@
+{
+ "model_id": "flex-extinction-v2",
+ "task": "binary classification — FLEX droplet visible-flame extinction outcome (Extinction vs Disruption/Completion)",
+ "pillar": "suppression",
+ "data": {
+  "source": "PSI-69_FLEX.csv (NASA PSI, DOI 10.60555/mbq8-0451), recovered from official PSI endpoint, sha256-verified vs project manifest",
+  "rows_raw": 274,
+  "rows_clean": 262,
+  "extinction": 180,
+  "extinction_share": 0.687,
+  "features": [
+   "XO2",
+   "p_mmHg",
+   "d0_mm",
+   "fuel_heptane",
+   "XHe",
+   "XCO"
+  ],
+  "outcome_definition": "y=1 if Test end == Extinction else 0 (Disruption/Completion)"
+ },
+ "validation": "GroupKFold n=4 grouped by (fuel, rounded pressure, rounded O2) condition",
+ "metrics": {
+  "groupedAucMean": 0.8816,
+  "groupedAucFolds": [
+   0.89,
+   0.8462,
+   0.8548,
+   0.9354
+  ],
+  "balancedAccuracyMean": 0.7859,
+  "oxygenOnlyBaselineAuc": 0.8175,
+  "groupBootstrapAucCi": [
+   0.8819,
+   0.889
+  ]
+ },
+ "historical_recorded": {
+  "note": "Metrics recorded in the V6 project spec from the prior repository build (protocol/grouping not fully preserved)",
+  "groupedAuc": 0.875,
+  "groupedAucCi": [
+   0.832,
+   0.917
+  ],
+  "oxygenOnlyBaselineAuc": 0.806,
+  "balancedAccuracy": 0.77,
+  "nClean": 261,
+  "extinctionShare": 0.686,
+  "conditionGroups": 110
+ },
+ "inBrowserScoring": {
+  "kind": "logistic",
+  "featureNames": [
+   "XO2",
+   "p_mmHg",
+   "d0_mm",
+   "fuel_heptane",
+   "XHe",
+   "XCO"
+  ],
+  "means": [
+   0.20103,
+   716.22023,
+   3.00168,
+   0.41221,
+   0.04809,
+   0.12424
+  ],
+  "stds": [
+   0.04728,
+   280.23267,
+   0.69402,
+   0.49223,
+   0.11298,
+   0.17629
+  ],
+  "coefStandardized": [
+   -1.86949,
+   -0.02345,
+   0.69001,
+   -0.40755,
+   0.41666,
+   0.34051
+  ],
+  "score": "sigmoid(coef . ((x - means)/stds))"
+ },
+ "limitations": [
+  "Outcome is visible-flame extinction in the FLEX droplet configuration only; not a general flammability or cabin-fire safety metric.",
+  "Applicability domain: microgravity ISS FLEX conditions (methanol/heptane droplets, ~0.21-0.65 O2, ~500-1100 mmHg). Model guard rejects gravity > 0.02 g.",
+  "Not calibrated as a probability; report as relative score with uncertainty.",
+  "Small sample; grouped CV fold variance is material.",
+  "Disruption and Completion outcomes are merged as non-extinction; they are physically distinct."
+ ],
+ "trainedAt": "2026-11-12",
+ "framework": "custom IRLS logistic regression (numpy), reproduced in this rebuild",
+ "status": "verified-reproduction",
+ "domainGuard": {
+  "maxGravityG": 0.02,
+  "fuels": [
+   "Methanol",
+   "Heptane"
+  ],
+  "o2Range": [
+   0.15,
+   0.7
+  ],
+  "pressureMmHgRange": [
+   400,
+   1150
+  ]
+ },
+ "reverification": {
+  "date": "2026-11-14",
+  "protocol": "M7 multi-candidate experiment (scripts/flame/ml-flex-extinction-experiment.mjs), same data file Experiment_13_cleaned.csv",
+  "reproductionCheck": {
+   "coefMaxAbsDelta": 0.0001,
+   "groupedAucDelta": 0.0105,
+   "reproducedMeanAuc": 0.8711,
+   "reproducedFolds": [
+    0.7872,
+    0.8868,
+    0.971,
+    0.8394
+   ],
+   "registeredMeanAuc": 0.8816,
+   "pass": true
+  },
+  "candidateComparison": {
+   "leaderboard": [
+    {
+     "candidate": "logistic-irls",
+     "hyper": {
+      "ridge": 0.01
+     },
+     "meanAuc": 0.8714,
+     "meanBalancedAcc": 0.7863,
+     "meanF1": 0.809,
+     "confusion": {
+      "tp": 130,
+      "tn": 70,
+      "fp": 12,
+      "fn": 50
+     }
+    },
+    {
+     "candidate": "logistic-irls",
+     "hyper": {
+      "ridge": 0.001
+     },
+     "meanAuc": 0.8711,
+     "meanBalancedAcc": 0.7863,
+     "meanF1": 0.809,
+     "confusion": {
+      "tp": 130,
+      "tn": 70,
+      "fp": 12,
+      "fn": 50
+     }
+    },
+    {
+     "candidate": "logistic-irls",
+     "hyper": {
+      "ridge": 0.001
+     },
+     "meanAuc": 0.8711,
+     "meanBalancedAcc": 0.7863,
+     "meanF1": 0.809,
+     "confusion": {
+      "tp": 130,
+      "tn": 70,
+      "fp": 12,
+      "fn": 50
+     }
+    },
+    {
+     "candidate": "logistic-irls",
+     "hyper": {
+      "ridge": 0.1
+     },
+     "meanAuc": 0.8709,
+     "meanBalancedAcc": 0.7863,
+     "meanF1": 0.809,
+     "confusion": {
+      "tp": 130,
+      "tn": 70,
+      "fp": 12,
+      "fn": 50
+     }
+    },
+    {
+     "candidate": "bagged-trees-forest",
+     "hyper": {
+      "nTrees": 60,
+      "depth": 3,
+      "minLeaf": 5,
+      "seed": 20261114
+     },
+     "meanAuc": 0.8709,
+     "meanBalancedAcc": 0.6603,
+     "meanF1": 0.8577,
+     "confusion": {
+      "tp": 175,
+      "tn": 29,
+      "fp": 53,
+      "fn": 5
+     }
+    },
+    {
+     "candidate": "logistic-irls",
+     "hyper": {
+      "ridge": 1
+     },
+     "meanAuc": 0.8703,
+     "meanBalancedAcc": 0.789,
+     "meanF1": 0.8128,
+     "confusion": {
+      "tp": 131,
+      "tn": 70,
+      "fp": 12,
+      "fn": 49
+     }
+    },
+    {
+     "candidate": "knn-distance",
+     "hyper": {
+      "k": 9
+     },
+     "meanAuc": 0.8402,
+     "meanBalancedAcc": 0.7731,
+     "meanF1": 0.8581,
+     "confusion": {
+      "tp": 153,
+      "tn": 57,
+      "fp": 25,
+      "fn": 27
+     }
+    },
+    {
+     "candidate": "knn-distance",
+     "hyper": {
+      "k": 7
+     },
+     "meanAuc": 0.8397,
+     "meanBalancedAcc": 0.7791,
+     "meanF1": 0.8606,
+     "confusion": {
+      "tp": 153,
+      "tn": 58,
+      "fp": 24,
+      "fn": 27
+     }
+    },
+    {
+     "candidate": "knn-distance",
+     "hyper": {
+      "k": 5
+     },
+     "meanAuc": 0.8376,
+     "meanBalancedAcc": 0.7735,
+     "meanF1": 0.8585,
+     "confusion": {
+      "tp": 153,
+      "tn": 57,
+      "fp": 25,
+      "fn": 27
+     }
+    },
+    {
+     "candidate": "cart-tree",
+     "hyper": {
+      "depth": 4,
+      "minLeaf": 15
+     },
+     "meanAuc": 0.8353,
+     "meanBalancedAcc": 0.7197,
+     "meanF1": 0.8273,
+     "confusion": {
+      "tp": 150,
+      "tn": 50,
+      "fp": 32,
+      "fn": 30
+     }
+    },
+    {
+     "candidate": "cart-tree",
+     "hyper": {
+      "depth": 4,
+      "minLeaf": 5
+     },
+     "meanAuc": 0.8334,
+     "meanBalancedAcc": 0.739,
+     "meanF1": 0.8502,
+     "confusion": {
+      "tp": 155,
+      "tn": 51,
+      "fp": 31,
+      "fn": 25
+     }
+    },
+    {
+     "candidate": "cart-tree",
+     "hyper": {
+      "depth": 3,
+      "minLeaf": 15
+     },
+     "meanAuc": 0.8322,
+     "meanBalancedAcc": 0.6746,
+     "meanF1": 0.8094,
+     "confusion": {
+      "tp": 149,
+      "tn": 43,
+      "fp": 39,
+      "fn": 31
+     }
+    }
+   ],
+   "decision": "RETAIN flex-extinction-v2 — best rival logistic-irls {\"ridge\":0.01} is +0.0003 AUC (below the +0.01 replacement bar)"
+  },
+  "secondaryDateGroupedCV": {
+   "logistic-irls {\"ridge\":0.001}": {
+    "meanAuc": 0.8703,
+    "folds": [
+     0.9234,
+     0.838,
+     0.684,
+     0.9542,
+     0.8529,
+     0.9091,
+     0.8929,
+     0.9083
+    ]
+   },
+   "logistic-irls {\"ridge\":0.1}": {
+    "meanAuc": 0.8703,
+    "folds": [
+     0.9234,
+     0.838,
+     0.684,
+     0.9542,
+     0.8529,
+     0.9091,
+     0.8929,
+     0.9083
+    ]
+   },
+   "knn-distance {\"k\":5}": {
+    "meanAuc": 0.8026,
+    "folds": [
+     0.8541,
+     0.7361,
+     0.626,
+     0.8813,
+     0.8971,
+     0.6486,
+     0.8899,
+     0.8875
+    ]
+   },
+   "cart-tree {\"depth\":3,\"minLeaf\":10}": {
+    "meanAuc": 0.7896,
+    "folds": [
+     0.933,
+     0.7245,
+     0.64,
+     0.975,
+     0.5858,
+     0.7552,
+     0.8363,
+     0.8667
+    ]
+   },
+   "bagged-trees-forest {\"nTrees\":60,\"depth\":3,\"minLeaf\":5}": {
+    "meanAuc": 0.8249,
+    "folds": [
+     0.9522,
+     0.713,
+     0.41,
+     0.9333,
+     0.8235,
+     0.9178,
+     0.9077,
+     0.9417
+    ]
+   }
+  },
+  "championGroupBootstrapCi": [
+   0.8458,
+   0.9362
+  ],
+  "experimentLog": "data/ml/experiment_log.json",
+  "experimentSummary": "data/ml/flex_extinction_experiment.json"
+ }
+}

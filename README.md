@@ -5,6 +5,13 @@ ZERO FLARE Mission Team · NASA Space Apps 2026 — *Flame in Freefall*
 Targeting **Best Use of Science** and **Best Use of Data**.
 Research copilot: **CIR-1** (26 typed tools, citations, inspectable traces).
 
+| | |
+|---|---|
+| **Live deployment** | Cloudflare Workers — **https://zero-flare-lab.yousuf-aways.workers.dev** |
+| **Release gate** | `GET /api/selftest` — deterministic scientific self-test (equations, gate, facility engine, persistence) |
+| **Open data** | `GET /corpus/README.md` — immutable, SHA-256-verified corpus mirror served from the edge |
+| **Submission kit** | `docs/SUBMISSION_FORM_CONTENT.md` (form text) · `docs/ZERO_FLARE_UIUX_Walkthrough.docx` (16-screenshot UI/UX guide) |
+
 A researcher chooses a mission environment, explores authentic experiments, equipment and
 source-linked data, asks CIR-1 to retrieve evidence, gate comparisons for comparability,
 choose equations, perform validated calculations, generate data-backed visualizations, run a
@@ -13,6 +20,24 @@ reproducible evidence packet from My Work.
 
 > Research decision support only — **not** a certified spacecraft fire-protection system.
 > Official mission-specific emergency procedures always take precedence.
+
+## Quick start
+
+```bash
+npm install          # install dependencies
+npm run dev          # http://localhost:3000 — full platform, JSONL persistence
+npm run build:cf     # build the Cloudflare Worker (OpenNext) — includes corpus mirror
+npm run cf:migrate   # apply the D1 schema (remote) — workspace persistence on the edge
+npm run deploy:cf    # deploy to Cloudflare Workers (same name/domain: zero-flare-lab)
+```
+
+Environment variables (all optional — the platform degrades honestly):
+
+| Variable | Purpose |
+|---|---|
+| `AI_API_KEY` / `AI_PROVIDER=gemini` | CIR-1 synthesis via Google Gemini (free tier) |
+| `LLM_BASE_URL` + `LLM_API_KEY` + `LLM_MODEL` | any OpenAI-compatible provider (Groq / Z.ai / …) |
+| *(none)* | on Cloudflare, the **Workers AI binding** powers CIR-1 with zero keys; locally, deterministic mode |
 
 ## The sections (merged IA — one integrated research environment)
 
@@ -29,6 +54,38 @@ reproducible evidence packet from My Work.
 | **CIR-1** (global dock) | Context-aware research copilot — every view, every selection |
 
 `Ctrl+K` opens command search (sections, 24 investigations, 63 equations, environments). Deep links: `#investigation/PSI-69`, `#compare`, `#scenarios/suppression`.
+
+## Screenshots (from the shipped build — `docs/screenshots/`)
+
+| Mission — landing & evidence base | Investigations — 24 PSI workspaces |
+|---|---|
+| ![Mission](docs/screenshots/01-mission-1440.png) | ![Investigations](docs/screenshots/02-investigations-1440.png) |
+
+| Investigation detail workspace | Compare — comparability gate |
+|---|---|
+| ![Investigation detail](docs/screenshots/03-investigation-detail-1440.png) | ![Compare gate](docs/screenshots/04-compare-gate-1440.png) |
+
+| Scenarios — fire-safety lifecycle | 3D Lab — honest fidelity labels |
+|---|---|
+| ![Scenarios](docs/screenshots/05-scenarios-1440.png) | ![3D Lab](docs/screenshots/06-lab3d-1440.png) |
+
+| Data & Sources — SHA-256 ledger | My Work — evidence packets |
+|---|---|
+| ![Data & Sources](docs/screenshots/07-data-sources-1440.png) | ![My Work](docs/screenshots/08-my-work-1440.png) |
+
+| CIR-1 — deterministic AI copilot | Evidence coverage map — the partial-gravity gap |
+|---|---|
+| ![CIR-1 copilot](docs/screenshots/13-cir1-copilot-1440.png) | ![Coverage map](docs/screenshots/14-coverage-map-1440.png) |
+
+| Guided demo — step 1 | Guided demo — copilot step |
+|---|---|
+| ![Demo step 1](docs/screenshots/15-demo-step1-1440.png) | ![Demo copilot step](docs/screenshots/16-demo-copilot-step-1440.png) |
+
+**Fully responsive** — verified at 1440 / 768 / 390 px:
+
+| Mission 768 px | Scenarios 768 px | Mission 390 px | Investigations 390 px |
+|---|---|---|---|
+| ![Mission 768](docs/screenshots/09-mission-768.png) | ![Scenarios 768](docs/screenshots/10-scenarios-768.png) | ![Mission 390](docs/screenshots/11-mission-390.png) | ![Investigations 390](docs/screenshots/12-investigations-390.png) |
 
 ## Honesty contract
 

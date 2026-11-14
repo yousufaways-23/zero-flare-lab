@@ -23,6 +23,7 @@ export type PillarId = "prevention" | "detection" | "prediction" | "suppression"
 export type InvestigationTab =
   | "overview"
   | "data"
+  | "charts"
   | "equipment"
   | "media"
   | "equations"
