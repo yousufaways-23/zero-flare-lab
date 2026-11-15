@@ -3,7 +3,16 @@
 // Task: binary classification of FLEX droplet visible-flame extinction
 // (PSI-69, Experiment_13_cleaned.csv, 274 raw tests).
 //   y = 1 if "Test end" == Extinction else 0 (Disruption/Completion)
-//   Features (pre-test only, no outcome leakage): XO2, p_mmHg, d0_mm,
+// TARGET DEFINITION (research doc §5.5): y = 1 iff the droplet test ended in
+// visible-flame EXTINCTION as recorded in the recovered PSI-69 table.
+// y = 0 covers every other recorded ending ("Disruption" — droplet disrupted
+// without visible-flame extinction; "Completion" — burned out without
+// extinction). Pooling the two non-extinction endings is justified because
+// the modelled question is strictly "did the visible flame extinguish?",
+// not "how did the test end". This is a FLEX-specific target — NOT a
+// general spacecraft-fire or habitat-safety predictor.
+//
+// Features (pre-test only, no outcome leakage): XO2, p_mmHg, d0_mm,
 //   fuel_heptane, XHe, XCO — identical to the registered flex-extinction-v2.
 //
 // Protocol (pre-declared before running):
@@ -306,15 +315,65 @@ function groupKFold(groups, K) {
   const foldOf = new Map(uniq.map((g, i) => [g, i % K]));
   return groups.map((g) => foldOf.get(g));
 }
+
+/** Stratified group K-fold (research doc §5.2): groups are assigned to folds
+ *  in order of descending positive rate so each fold carries a similar class
+ *  balance while every group stays wholly inside one fold. Falls back to the
+ *  round-robin behaviour when stratification would create class-degenerate
+ *  folds. Groups stay atomic either way — no group spans train and test. */
+function stratifiedGroupKFold(groups, y, K) {
+  const stats = new Map();
+  for (let i = 0; i < y.length; i++) {
+    const s = stats.get(groups[i]) ?? { pos: 0, n: 0 };
+    s.n++;
+    if (y[i] === 1) s.pos++;
+    stats.set(groups[i], s);
+  }
+  const uniq = [...stats.keys()].sort(
+    (a, b) => stats.get(b).pos / stats.get(b).n - stats.get(a).pos / stats.get(a).n,
+  );
+  const foldPos = new Array(K).fill(0);
+  const foldN = new Array(K).fill(0);
+  const foldOf = new Map();
+  for (const g of uniq) {
+    const s = stats.get(g);
+    // greedily place each group in the fold with the smallest resulting
+    // positive-rate deviation from the global rate
+    const globalRate = y.reduce((a, v) => a + v, 0) / y.length;
+    let best = 0;
+    let bestDev = Infinity;
+    for (let k = 0; k < K; k++) {
+      const dev = Math.abs((foldPos[k] + s.pos) / (foldN[k] + s.n) - globalRate) + (foldN[k] + s.n > y.length / K ? 0.5 : 0);
+      if (dev < bestDev) { bestDev = dev; best = k; }
+    }
+    foldOf.set(g, best);
+    foldPos[best] += s.pos;
+    foldN[best] += s.n;
+  }
+  // class-degeneracy check: every fold must hold both classes in TRAIN for
+  // the other folds; if any fold is class-degenerate overall, fall back.
+  const folds = groups.map((g) => foldOf.get(g));
+  for (let k = 0; k < K; k++) {
+    const inFold = y.filter((_, i) => folds[i] === k);
+    if (inFold.length && new Set(inFold).size < 2) return groupKFold(groups, K);
+  }
+  return folds;
+}
+
 function runCandidate(name, hyper, fitFn, X, y, groups, K) {
-  const folds = groupKFold(groups, K);
+  const folds = stratifiedGroupKFold(groups, y, K);
   const foldAucs = [], foldBalAcc = [], foldF1 = [], cms = [];
+  // Out-of-fold scores: every row is scored exactly once, by the fold model
+  // that never saw its group (research doc §5.4). null when its fold was
+  // skipped for class degeneracy.
+  const oof = new Array(y.length).fill(null);
   for (let k = 0; k < K; k++) {
     const tr = [], te = [];
     for (let i = 0; i < y.length; i++) (folds[i] === k ? te : tr).push(i);
     if (new Set(tr.map((i) => y[i])).size < 2) continue;
     const model = fitFn(tr.map((i) => X[i]), tr.map((i) => y[i]));
     const scores = model.predict(te.map((i) => X[i]));
+    te.forEach((i, j) => { oof[i] = scores[j]; });
     const yt = te.map((i) => y[i]);
     foldAucs.push(auc(yt, scores));
     const preds = scores.map((s) => (s > 0.5 ? 1 : 0));
@@ -323,20 +382,23 @@ function runCandidate(name, hyper, fitFn, X, y, groups, K) {
     foldF1.push(m.f1);
     cms.push(m);
   }
+  const oofPairs = y.map((v, i) => [v, oof[i]]).filter(([, s]) => s !== null);
+  const oofAuc = oofPairs.length === y.length ? r4(auc(oofPairs.map((p) => p[0]), oofPairs.map((p) => p[1]))) : null;
   const result = {
     candidate: name,
     hyper: hyper ?? {},
-    grouping: `${K}-fold group CV`,
+    grouping: `condition-group K=4 stratified (groups atomic)`,
     foldAucs: foldAucs.map(r4),
     meanAuc: r4(mean(foldAucs)),
     meanBalancedAcc: r4(mean(foldBalAcc)),
     meanF1: r4(mean(foldF1)),
+    oofAuc,
     confusionTotals: cms.reduce(
       (a, m) => ({ tp: a.tp + m.tp, tn: a.tn + m.tn, fp: a.fp + m.fp, fn: a.fn + m.fn }),
       { tp: 0, tn: 0, fp: 0, fn: 0 },
     ),
   };
-  return result;
+  return { result, oof };
 }
 
 // ---------------------------------------------------------------- prepare
@@ -347,9 +409,11 @@ const dateGroups = clean.map((c) => c.dateGroup);
 const experiments = [];
 
 // --- reproduction: flex-extinction-v2 protocol (IRLS ridge=1e-3, cond K=4)
-const repro = runCandidate("logistic-irls", { ridge: 0.001 }, (Xt, yt) => logregFit(Xt, yt, 0.001), X, y, condGroups, 4);
+const { result: repro, oof: reproOof } = runCandidate("logistic-irls", { ridge: 0.001 }, (Xt, yt) => logregFit(Xt, yt, 0.001), X, y, condGroups, 4);
 repro.grouping = "condition-group K=4 (v2 original protocol)";
 experiments.push(repro);
+const oofByKey = new Map();
+oofByKey.set("logistic-irls {\"ridge\":0.001}", reproOof);
 console.log("reproduction v2:", JSON.stringify({ meanAuc: repro.meanAuc, folds: repro.foldAucs, balAcc: repro.meanBalancedAcc }));
 
 // --- full-data refit for artifact comparison
@@ -357,8 +421,11 @@ const fullFit = logregFit(X, y, 0.001);
 console.log("full coef (standardized):", fullFit.artifact.coefStandardized);
 
 // --- baselines
-experiments.push(runCandidate("majority-class", {}, (Xt, yt) => ({ predict: (Te) => Te.map(() => yt.reduce((s, v) => s + v, 0) / yt.length) }), X, y, condGroups, 4));
-experiments.push(runCandidate("o2-only-baseline", { direction: "lower O2 -> extinction" }, (Xt, yt) => ({ predict: (Te) => Te.map((r) => -r[0]) }), X, y, condGroups, 4));
+for (const [n2, h2, f2] of [["majority-class", {}, (Xt, yt) => ({ predict: (Te) => Te.map(() => yt.reduce((s, v) => s + v, 0) / yt.length) })], ["o2-only-baseline", { direction: "lower O2 -> extinction" }, (Xt, yt) => ({ predict: (Te) => Te.map((r) => -r[0]) })]]) {
+  const { result: rres, oof: roof } = runCandidate(n2, h2, f2, X, y, condGroups, 4);
+  experiments.push(rres);
+  oofByKey.set(`${n2} ${JSON.stringify(h2)}`, roof);
+}
 
 // --- candidate grids (condition-group K=4 primary)
 const grid = [];
@@ -368,7 +435,9 @@ for (const depth of [2, 3, 4]) for (const minLeaf of [5, 10, 15]) grid.push(["ca
 grid.push(["bagged-trees-forest", { nTrees: 60, depth: 3, minLeaf: 5, seed: SEED }, (Xt, yt) => forestFit(Xt, yt, 60, 3, 5)]);
 
 for (const [name, hyper, fn] of grid) {
-  experiments.push(runCandidate(name, hyper, fn, X, y, condGroups, 4));
+  const { result: rres, oof: roof } = runCandidate(name, hyper, fn, X, y, condGroups, 4);
+  experiments.push(rres);
+  oofByKey.set(`${name} ${JSON.stringify(hyper)}`, roof);
 }
 
 // --- secondary: date-group K=8 (stricter leakage control) for top candidates
@@ -380,10 +449,10 @@ for (const [name, hyper, fn] of [
   ["cart-tree", { depth: 3, minLeaf: 10 }, (Xt, yt) => cartFit(Xt, yt, 3, 10)],
   ["bagged-trees-forest", { nTrees: 60, depth: 3, minLeaf: 5 }, (Xt, yt) => forestFit(Xt, yt, 60, 3, 5)],
 ]) {
-  const r = runCandidate(name, hyper, fn, X, y, dateGroups, 8);
-  r.grouping = "test-date group K=8 (secondary)";
-  secondary.push(r);
-  experiments.push(r);
+  const { result: rres, oof: _roof } = runCandidate(name, hyper, fn, X, y, dateGroups, 8);
+  rres.grouping = "test-date group K=8 (secondary)";
+  secondary.push(rres);
+  experiments.push(rres);
 }
 
 // --- group-bootstrap CI for the champion (500 resamples, seed fixed)
@@ -409,7 +478,34 @@ function groupBootstrapCi(scoreFn, groups, draws = 500) {
   aucs.sort((a, b) => a - b);
   return [r4(aucs[Math.floor(aucs.length * 0.025)]), r4(aucs[Math.floor(aucs.length * 0.975)])];
 }
-const championCi = groupBootstrapCi(() => fullFit.predict(X), condGroups);
+// --- OOF group-bootstrap CI for the champion (research doc §5.4):
+// resampling is at GROUP level, and the scores are OUT-OF-FOLD predictions
+// (each row scored by the fold model that never saw its group) — never the
+// full-data refit scoring its own training rows.
+function groupBootstrapOofCi(yAll, oof, groups, draws = 500) {
+  const uniq = [...new Set(groups)];
+  const byGroup = new Map();
+  for (let i = 0; i < yAll.length; i++) {
+    if (oof[i] === null) continue;
+    if (!byGroup.has(groups[i])) byGroup.set(groups[i], []);
+    byGroup.get(groups[i]).push(i);
+  }
+  const aucs = [];
+  for (let d = 0; d < draws; d++) {
+    const idx = [];
+    for (let g = 0; g < uniq.length; g++) {
+      const pick = uniq[Math.floor(rng() * uniq.length)];
+      idx.push(...(byGroup.get(pick) || []));
+    }
+    const yt = idx.map((i) => yAll[i]);
+    const sc = idx.map((i) => oof[i]);
+    if (new Set(yt).size < 2 || idx.length < 20) continue;
+    aucs.push(auc(yt, sc));
+  }
+  if (!aucs.length) return null;
+  aucs.sort((a, b) => a - b);
+  return { method: "group-level bootstrap over out-of-fold predictions (500 resamples, seed fixed)", ci95: [r4(aucs[Math.floor(aucs.length * 0.025)]), r4(aucs[Math.floor(aucs.length * 0.975)])], valid_draws: aucs.length };
+}
 
 // ------------------------------------------------------------ selection
 const conditionRuns = experiments.filter(
@@ -427,6 +523,19 @@ const decision = margin >= 0.01
   ? `REPLACE flex-extinction-v2 with ${bestRival.candidate} ${JSON.stringify(bestRival.hyper)} (+${margin} AUC)`
   : `RETAIN flex-extinction-v2 — best rival ${bestRival.candidate} ${JSON.stringify(bestRival.hyper)} is ${margin >= 0 ? "+" : ""}${margin} AUC (below the +0.01 replacement bar)`;
 console.log("\nDECISION:", decision);
+
+// OOF group-bootstrap CI for the champion (research doc §5.4): resampling at
+// group level over OUT-OF-FOLD predictions — never the full-data refit
+// scoring its own training rows (that was the former in-sample CI, removed).
+const oofCiKey = (name, hyper) => `${name} ${JSON.stringify(hyper)}`;
+const championOof = oofByKey.get(oofCiKey(champion.candidate, champion.hyper));
+const championCi = championOof ? groupBootstrapOofCi(y, championOof, condGroups) : null;
+console.log("champion OOF CI:", JSON.stringify(championCi));
+{
+  const yy = [], ss = [];
+  for (let i = 0; i < y.length; i++) if (championOof && championOof[i] !== null) { yy.push(y[i]); ss.push(championOof[i]); }
+  if (yy.length) console.log("champion OOF AUC:", auc(yy, ss).toFixed(4), "(vs mean fold AUC", champion.meanAuc + ")");
+}
 
 // ---------------------------------------------------------------- outputs
 mkdirSync(OUT_DIR, { recursive: true });

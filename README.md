@@ -1,6 +1,8 @@
 # ZERO FLARE — FLAME EVIDENCE LAB
 
 **AI-first scientific research platform over NASA microgravity combustion evidence.**
+
+Counts in this README are generated from [docs/data-audit/release-manifest.json](docs/data-audit/release-manifest.json) — the single source of truth (research doc §8.1).
 ZERO FLARE Mission Team · NASA Space Apps 2026 — *Flame in Freefall*
 Targeting **Best Use of Science** and **Best Use of Data**.
 Research copilot: **CIR-1** (42 typed tools, citations, inspectable traces).
@@ -110,9 +112,9 @@ Mission → open **PSI-69 FLEX** (real rows, sha256 provenance) → **Compare** 
 
 ## Evidence base (this merged build)
 
-- **22 experimental tables / 2,009 rows** recovered directly from the NASA PSI public download
-  endpoint — 19/19 manifest tables byte-identical (SHA-256); the 19 shared CSVs are also
-  byte-identical across the two source versions (verified during the merge).
+- **24 experimental tables / 2,085 rows / 249 columns** recovered directly from the NASA PSI
+  public download endpoint — all 20 present cleaned CSVs byte-identical to the acquisition
+  manifest (SHA-256, recomputed 2026-11-15; see docs/data-audit/).
 - **24 investigation metadata records** (objectives, approach, hypothesis, impacts, DOI, PI,
   hardware, publications) from the PSI repository API.
 - **41 authentic NASA media records** from the NASA Images and Video Library (credit: NASA).
@@ -126,8 +128,8 @@ Mission → open **PSI-69 FLEX** (real rows, sha256 provenance) → **Compare** 
 
 ## Evidence base (this rebuild)
 
-- **22 experimental tables / 2,009 rows** recovered directly from the NASA PSI public download
-  endpoint — 19/19 manifest tables byte-identical (SHA-256).
+- **24 experimental tables / 2,085 rows / 249 columns** recovered directly from the NASA PSI
+  public download endpoint — all 20 present cleaned CSVs byte-identical to the manifest (SHA-256).
 - **24 investigation metadata records** (objectives, approach, hypothesis, impacts, DOI, PI,
   hardware, publications) from the PSI repository API.
 - **41 authentic NASA media records** from the NASA Images and Video Library (credit: NASA).

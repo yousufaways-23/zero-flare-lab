@@ -1,0 +1,25 @@
+investigation_or_layer,files,csv_files,pdf_files,image_files,bytes
+" Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames(ACME s-Flame) PSI-23 (PSI-23)",95,93,0,0,113414212
+" Smoke and Aerosol Measurement Experiment(SAME) PSI-102 (PSI-102)",6,1,0,0,7298379
+".mimosa",5,0,0,0,7035
+"Advanced Combustion via Microgravity Experiments - Burning Rate Emulator(ACME BRE) PSI-20 (PSI-20)",5,0,0,0,2453395
+"Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames(ACME E-FIELD Flames) PSI-22 (PSI-22)",415,410,0,0,1539918061
+"Advanced Combustion via Microgravity Experiments PSI-10 (PSI-10)",9,3,0,0,2767290833
+"Advanced Combustion via Microgravity Experiments PSI-159 (PSI-159)",3,1,0,0,1470817649
+"Burning and Suppression of Solids - II(BASS-II) PSI-25 (PSI-25)",3,1,0,0,69519
+"Burning and Suppression of Solids(BASS) PSI-26 (PSI-26)",3,1,0,0,137588
+"Cool Flames Investigation(CFI) PSI-39 (PSI-39)",3,2,0,0,217269
+"Dust and Aerosol Measurement Feasibility Test _ Dust and Aerosol Measurement Feasibility Test-2(DAFT _ DAFT-2) PSI-47 (PSI-47)",11,1,0,0,3042822
+"Effect of External PSI-117 (PSI-117)",2,0,0,0,282978
+"Flame Extinguishment Experiment - 2(FLEX-2) PSI-68 (PSI-68)",2,1,0,0,108918
+"Flame Extinguishment Experiment(FLEX) PSI-69 (PSI-69)",2,1,0,0,1424584
+"Quantitative Studies",2,1,0,0,735959
+"Smoke Aerosol ",5,1,0,0,20277519
+"Smoke Point In Co-flow Experiment(SPICE) PSI-107 (PSI-107)",4,1,0,0,429741
+"Spacecraft Fire Experiment-II(SAFFIRE-II) PSI-99 (PSI-99)",11,11,0,0,21703
+"Spacecraft Fire Experiment-III(SAFFIRE-III) PSI-100 (PSI-100)",4,3,0,0,31752227
+"Spacecraft Fire Safety Experiment PSI-98 (PSI-98)",1,1,0,0,469
+"Structure and Liftoff In Combustion Experiment(SLICE) PSI-106 (PSI-106)",5,0,0,0,40409611
+"processed_data",136,136,0,0,1828652738
+"research-papers",35,0,35,0,70562900
+"root",51,0,2,0,6356946023

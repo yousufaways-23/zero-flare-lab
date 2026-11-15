@@ -94,7 +94,12 @@ export function runFlexModel(inputs: FlexInputs): FlexPrediction {
   return {
     ok: true,
     score,
-    interpretation: `Relative extinction score ${score.toFixed(3)} (uncalibrated). Trained on visible-flame extinction outcomes of 262 FLEX microgravity tests (grouped AUC ${(flex.metrics.groupedAucMean as number).toFixed(3)}). This is NOT a calibrated probability and NOT a flammability or cabin-safety verdict.`,
+    interpretation: (() => {
+      const rv = (flex as { reverification?: { championGroupBootstrapCi?: { ci95?: [number, number]; method?: string } } }).reverification;
+      const ci = rv?.championGroupBootstrapCi?.ci95;
+      const ciTxt = ci ? ` Out-of-fold AUC with group-bootstrap 95% CI [${ci[0].toFixed(3)}, ${ci[1].toFixed(3)}] (stratified group CV; groups atomic).` : "";
+      return `Relative extinction score ${score.toFixed(3)} (uncalibrated). Trained on visible-flame extinction outcomes of 262 FLEX microgravity tests (grouped AUC ${(flex.metrics.groupedAucMean as number).toFixed(3)}).${ciTxt} This is NOT a calibrated probability and NOT a flammability or cabin-safety verdict.`;
+    })(),
     applicability: { inDomain: true, violations: [] },
     provenance: "FLEX extinction model v2 — IRLS logistic, GroupKFold-4 by condition; card models/flex-extinction/v2/",
   };

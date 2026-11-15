@@ -438,10 +438,14 @@
    ]
   }
  },
- "championGroupBootstrapCi": [
-  0.8458,
-  0.9362
- ],
+ "championGroupBootstrapCi": {
+  "method": "group-level bootstrap over out-of-fold predictions (500 resamples, seed fixed)",
+  "ci95": [
+   0.8188,
+   0.9218
+  ],
+  "valid_draws": 500
+ },
  "artifactStatus": "updated with reverification (coefΔ=0.0001, aucΔ=0.0105)",
  "experimentLog": "data/ml/experiment_log.json"
 }
