@@ -413,7 +413,7 @@ function CommandPalette({ open, setOpen }: { open: boolean; setOpen: (v: boolean
           </CommandItem>
           <CommandItem value="demo guided tour judge walkthrough" onSelect={() => { useAppStore.getState().setDemoOpen(true); setOpen(false); }}>
             <Play className="mr-2 h-3.5 w-3.5 text-primary" />
-            Start the 90-second guided tour (deterministic demo)
+            Start the guided tour (9 stops · about 2 minutes)
           </CommandItem>
         </CommandGroup>
       </CommandList>

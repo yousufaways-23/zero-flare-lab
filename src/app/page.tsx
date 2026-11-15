@@ -49,14 +49,15 @@ export default function Home() {
         {view !== "mission" && (
           <div className="mb-3"><Breadcrumbs /></div>
         )}
-        {view === "mission" && <MissionView />}
-        {view === "investigations" && <InvestigationsView />}
-        {view === "compare" && <CompareView />}
-        {view === "scenarios" && <ScenariosView />}
-        {view === "lab3d" && <Lab3DView />}
-        {view === "data-sources" && <IngestionView />}
-        {view === "my-work" && <MyWorkView />}
-        {view === "tools" && <AdvancedView />}
+        {/* data-tour anchors — stable targets for the guided tour spotlight (Phase 5 W3) */}
+        {view === "mission" && <div data-tour="tour-mission"><MissionView /></div>}
+        {view === "investigations" && <div data-tour="tour-investigations"><InvestigationsView /></div>}
+        {view === "compare" && <div data-tour="tour-compare"><CompareView /></div>}
+        {view === "scenarios" && <div data-tour="tour-scenarios"><ScenariosView /></div>}
+        {view === "lab3d" && <div data-tour="tour-lab3d"><Lab3DView /></div>}
+        {view === "data-sources" && <div data-tour="tour-data-sources"><IngestionView /></div>}
+        {view === "my-work" && <div data-tour="tour-my-work"><MyWorkView /></div>}
+        {view === "tools" && <div data-tour="tour-tools"><AdvancedView /></div>}
       </main>
       <footer className="mt-auto border-t border-border/40 bg-[color:var(--space-deep)]/80 pb-14 sm:pb-12">
         <div className="mx-auto max-w-[1600px] px-4 py-5 text-[11px] leading-relaxed text-muted-foreground grid gap-3 md:grid-cols-3">

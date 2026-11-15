@@ -1,11 +1,12 @@
 /**
- * ZERO FLARE — deterministic demo script (audit §39 / P1 #10).
+ * ZERO FLARE — deterministic guided-tour script (Phase 5 W3 rewrite).
  *
- * The 90-second judge journey as a reproducible walkthrough. Every scripted
- * CIR-1 exchange is composed AT RUNTIME from the same deterministic tools the
- * live agent uses (equation registry, comparability gate, model cards) —
- * no LLM, no network, no fabricated numbers. The reply is explicitly labelled
- * as a deterministic demo replay.
+ * Nine stops in navigation order: Mission → Investigations → Compare →
+ * Scenarios → 3D Lab → Data & Sources → My Work → Research Tools → CIR-1.
+ * Every scripted CIR-1 exchange is composed AT RUNTIME from the same
+ * deterministic tools the live agent uses (equation registry, comparability
+ * gate, model cards) — no LLM, no network, no fabricated numbers. The reply
+ * is explicitly labelled as a deterministic demo replay.
  */
 
 import { getInvestigation, getCorpusTotals } from "@/lib/data/catalog";
@@ -20,7 +21,9 @@ export interface DemoStep {
   caption: string;
   /** Why it matters for Best Use of Science / Best Use of Data. */
   why: string;
-  view: "mission" | "investigations" | "compare" | "scenarios" | "lab3d" | "data-sources" | "my-work";
+  /** Stable data-tour anchor for the spotlight (rendered on the target view). */
+  target: string;
+  view: "mission" | "investigations" | "compare" | "scenarios" | "lab3d" | "data-sources" | "my-work" | "tools";
   /** Optional store actions applied when the step becomes active. */
   action?: {
     investigation?: string;
@@ -28,112 +31,95 @@ export interface DemoStep {
     equipment?: string;
     compare?: string[];
     copilotSeed?: boolean;
+    copilotOpen?: boolean;
   };
 }
 
 export const DEMO_STEPS: DemoStep[] = [
   {
     id: "mission",
-    title: "Mission — the research question",
+    title: "Mission — the question behind the platform",
     caption:
-      "One question drives the platform: how does gravity change flame behaviour, and what does the NASA evidence actually support? Pick a research environment — Earth, ISS, Moon, Mars — each with its evidence status.",
-    why: "Best Use of Science: the platform is framed as a bounded scientific question, not a data dump.",
+      "Everything here serves one bounded question: how does gravity change flame behaviour, and what does the NASA evidence actually support? Pick a research environment — Earth, ISS, Moon, Mars — and its evidence status follows you through every calculator.",
+    why: "Best Use of Science: a bounded scientific question, not a data dump.",
+    target: "tour-mission",
     view: "mission",
   },
   {
-    id: "investigation",
-    title: "PSI-69 FLEX — a real experiment workspace",
+    id: "investigations",
+    title: "Investigations — 25 evidence workspaces, one real example",
     caption:
-      "24 NASA PSI investigations, each with objectives, hardware, authentic NASA media, equipment, equations, a typed graph — and its documented limitations. The integrity case notes exactly what the recovered data can and cannot support.",
+      "We opened PSI-69 (FLEX droplet combustion). Overview shows objectives, hardware and authentic NASA media; Data holds the recovered table (SHA-256 on screen); Charts are computed live with units and missingness stated; Media shows figures extracted from the original papers; Gaps lists what the data cannot answer.",
     why: "Best Use of Data: every record traces to the official PSI repository with a DOI.",
+    target: "tour-investigations",
     view: "investigations",
     action: { investigation: "PSI-69", investigationTab: "overview" },
   },
   {
-    id: "data",
-    title: "Recovered data — real rows, real charts",
-    caption:
-      "Charts are computed live from the recovered tables — 2,009 rows, SHA-256-verified. Sample size, units and provenance strips travel with every chart. Duplicates and parse failures are counted, never hidden.",
-    why: "Best Use of Data: data quality IS part of the scientific result.",
-    view: "investigations",
-    action: { investigation: "PSI-69", investigationTab: "data" },
-  },
-  {
-    id: "copilot",
-    title: "CIR-1 — deterministic research copilot",
-    caption:
-      "CIR-1 answers with numbers from its deterministic tools, never from a language model. The reply below is a labelled replay of the live tool path — the same equations, the same gate, no network needed.",
-    why: "Best Use of Science: LLM output is orchestration; measurement stays deterministic.",
-    view: "investigations",
-    action: { investigation: "PSI-69", investigationTab: "overview", copilotSeed: true },
-  },
-  {
     id: "compare",
-    title: "Compare — the comparability gate",
+    title: "Compare — the gate decides before any chart does",
     caption:
-      "Before any cross-study chart, the gate audits gravity regime, experimental scale, hardware and outcome data. Here it refuses a direct FLEX vs SAFFIRE-II comparison and states exactly why — scientific caution as a product feature.",
+      "FLEX (droplet, microgravity) and SAFFIRE-II (bed, spacecraft) are both real — and the gate still refuses to pool them, listing scale and gravity reasons. Derived overlays appear only when the gate passes; original source figures sit beside them with page attribution.",
     why: "Best Use of Science: a comparison that is not defensible is not plotted.",
+    target: "tour-compare",
     view: "compare",
     action: { compare: ["PSI-69", "PSI-99"] },
   },
   {
-    id: "gaps",
-    title: "Research gaps — missing data is a result",
+    id: "scenarios",
+    title: "Scenarios — decision support with its feet on the data",
     caption:
-      "The gap registry distinguishes absent / not-indexed / inaccessible / no-evidence-found. Partial gravity (0.02–0.65 g) has NO combustion outcome data in PSI — the field-wide gap, visible everywhere gravity is partial.",
-    why: "Best Use of Science: limitations are credibility signals, not buried footnotes.",
-    view: "investigations",
-    action: { investigation: "PSI-69", investigationTab: "gaps" },
+      "Screen a lunar-habitat concept: a deterministic engine weighs six visible drivers, every recommendation cites PSI evidence or is labelled heuristic, and partial-gravity inputs trigger the no-data caveat. It is decision support — never a safety certificate.",
+    why: "Best Use of Science: transparent reasoning with explicit uncertainty.",
+    target: "tour-scenarios",
+    view: "scenarios",
   },
   {
-    id: "scenarios",
-    title: "Scenarios — fire-safety decision support",
+    id: "lab3d",
+    title: "3D Lab — inside the Combustion Integrated Rack",
     caption:
-      "A lunar habitat concept is screened by a deterministic engine with six visible drivers; every recommendation cites PSI evidence or is labelled heuristic. Partial-gravity inputs trigger the no-data caveat. Never a safety certificate.",
-    why: "Best Use of Science: transparent decision support with explicit uncertainty.",
-    view: "scenarios",
+      "The CIR schematic separates into eight labelled assemblies. CUTAWAY makes the skins translucent, EXPLODED pulls chamber, diagnostics and gas modules apart, and camera presets fly you around any part you click.",
+    why: "Engineering transparency: an approximate reconstruction, honestly labelled — never claimed as NASA CAD.",
+    target: "tour-lab3d",
+    view: "lab3d",
+    action: { equipment: "cir" },
+  },
+  {
+    id: "data-sources",
+    title: "Data & Sources — follow any number home",
+    caption:
+      "The acquisition ledger, batch receipts and per-file SHA-256 hashes live here, next to the downloadable /corpus mirror — the exact files the platform computes from. The 2,393 historical media binaries that were never recovered stay visible as unrecovered, not silently dropped.",
+    why: "Best Use of Data: provenance you can audit, including what is missing.",
+    target: "tour-data-sources",
+    view: "data-sources",
   },
   {
     id: "my-work",
     title: "My Work — the evidence packet",
     caption:
-      "Save investigations, gaps, equations and media as you research — then export a provenance-carrying evidence packet: sources, transformations, model versions and standing limitations included.",
-    why: "Best Use of Data: the audit trail survives the demo — reproducibly.",
+      "Save investigations, gaps, equations and media as you research, then export a provenance-carrying packet: sources, transformations and standing limitations included. On the deployed edge this persists in the Worker's D1 database.",
+    why: "Best Use of Data: the audit trail survives the session — reproducibly.",
+    target: "tour-my-work",
     view: "my-work",
   },
   {
-    id: "source-media",
-    title: "Source figures & videos — the original documents",
+    id: "tools",
+    title: "Research Tools — the registries behind every claim",
     caption:
-      "Every investigation's Media tab now shows figures extracted from the ORIGINAL NASA source documents (page + batch provenance) plus curated, oEmbed-verified research videos — each labelled by true source type, never presented as NASA footage when it is not.",
-    why: "Best Use of Data: published figures stay cited source assets, distinct from generated charts.",
+      "63 verified equations with reference tests, a variable dictionary with units and fill rates, model cards that keep negative results visible, the AI evaluation metrics, and the recovery ledger with every discrepancy.",
+    why: "Best Use of Science: the machinery is inspectable, not a black box.",
+    target: "tour-tools",
+    view: "tools",
+  },
+  {
+    id: "cir1",
+    title: "CIR-1 — answers with receipts",
+    caption:
+      "The copilot composes answers from its deterministic tools — the reply below is a labelled replay of the live tool path (same equations, same gate), not model improvisation. Ask it anything live: every number it states comes from these registries.",
+    why: "Best Use of Science: LLM output is orchestration; measurement stays deterministic.",
+    target: "tour-cir1",
     view: "investigations",
-    action: { investigation: "PSI-69", investigationTab: "media" },
-  },
-  {
-    id: "coverage",
-    title: "Evidence coverage map — what the corpus cannot answer",
-    caption:
-      "24 investigations × 8 dimensions with observed / reported / conditions-only statuses. A corpus gap is NOT proof of absence — the standing note points to CIR-1's external check before any field-wide claim.",
-    why: "Best Use of Science: limitations rendered as first-class evidence.",
-    view: "mission",
-  },
-  {
-    id: "lab3d-cir",
-    title: "3D Lab — inside the Combustion Integrated Rack",
-    caption:
-      "The CIR schematic now separates into eight labelled assemblies. Try CUTAWAY to make the outer skins translucent, EXPLODED to pull the chamber, diagnostics and gas modules apart, or the camera presets — and isolate any part you clicked.",
-    why: "Engineering transparency: approximate reconstruction, honestly labelled — never claimed NASA CAD.",
-    view: "lab3d",
-    action: { equipment: "cir" },
-  },
-  {
-    id: "mission-map",
-    title: "Mission map — real NASA assets",
-    caption:
-      "The hero scene now runs the Version 2 mission map: Blue-Marble Earth with day/night shader, textured Moon and Mars, and the OFFICIAL NASA ISS model on orbit. Select a destination to fly there; the toolbar toggles bodies and resets the camera.",
-    why: "Immersive orientation with verified assets and full camera freedom.",
-    view: "mission",
+    action: { investigation: "PSI-69", investigationTab: "overview", copilotSeed: true, copilotOpen: true },
   },
 ];
 

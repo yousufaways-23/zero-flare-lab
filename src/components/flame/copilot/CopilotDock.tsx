@@ -298,6 +298,7 @@ export function CopilotDock() {
 
   return (
     <div
+      data-tour="tour-cir1"
       className="fixed inset-x-0 bottom-0 z-40 flex max-h-[76vh] sm:inset-x-auto sm:bottom-4 sm:right-4 sm:max-h-[70vh]"
       style={desktop ? { width: dockWidth } : undefined}
     >

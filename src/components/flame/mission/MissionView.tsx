@@ -473,7 +473,7 @@ export function MissionView() {
                 </Button>
                 <Button size="lg" variant="outline" onClick={() => useAppStore.getState().setDemoOpen(true)} className="cta-glow-cool border-primary/50 text-primary">
                   <Workflow className="mr-1 h-4 w-4" aria-hidden="true" />
-                  90-second guided tour
+                  9-stop guided tour · about 2 min
                 </Button>
                 <Button size="lg" variant="outline" onClick={openCopilot} className="cta-glow-cool border-border/70">
                   <MessageSquareText className="mr-1 h-4 w-4" aria-hidden="true" />

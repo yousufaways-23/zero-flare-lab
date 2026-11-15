@@ -86,6 +86,13 @@
  */
 :root {
   --radius: 0.75rem;
+  /* Phase-5 readability tokens — text-bearing surfaces are near-opaque so body
+     text clears WCAG 2.2 AA over the starfield; the starfield itself remains
+     visible at page margins, hero art and HUD overlays. */
+  --glass-alpha-top: 0.92;
+  --glass-alpha-bottom: 0.88;
+  --panel-alpha-top: 0.92;
+  --panel-alpha-bottom: 0.88;
   /* --- cosmic base (logo-measured) --- */
   --background: #030b26;
   --foreground: #e6ecfb;
@@ -320,7 +327,7 @@
 
 /* lighter translucent research surface — readable, not a black slab (V2 .panel) */
 .panel {
-  background: linear-gradient(180deg, rgba(18, 34, 86, 0.60), rgba(11, 22, 60, 0.46));
+  background: linear-gradient(180deg, rgba(18, 34, 86, var(--panel-alpha-top)), rgba(11, 22, 60, var(--panel-alpha-bottom)));
   border: 1px solid rgba(126, 156, 224, 0.17);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(14px) saturate(1.12);
@@ -335,7 +342,7 @@
 }
 
 .panel-glass {
-  background: linear-gradient(180deg, rgba(22, 40, 100, 0.50), rgba(12, 24, 64, 0.38));
+  background: linear-gradient(180deg, rgba(22, 40, 100, 0.90), rgba(12, 24, 64, 0.86));
   border: 1px solid rgba(151, 226, 254, 0.20);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(18px) saturate(1.15);
@@ -346,7 +353,7 @@
 }
 
 .glass-panel {
-  background: linear-gradient(180deg, rgba(18, 34, 86, 0.55), rgba(11, 22, 60, 0.42));
+  background: linear-gradient(180deg, rgba(18, 34, 86, var(--glass-alpha-top)), rgba(11, 22, 60, var(--glass-alpha-bottom)));
   border: 1px solid rgba(126, 156, 224, 0.18);
   backdrop-filter: blur(14px) saturate(1.12);
   -webkit-backdrop-filter: blur(14px) saturate(1.12);
@@ -355,7 +362,7 @@
 
 /* .research-panel is now the V2 translucent research surface (was light) */
 .research-panel {
-  background: linear-gradient(180deg, rgba(18, 34, 86, 0.60), rgba(11, 22, 60, 0.46));
+  background: linear-gradient(180deg, rgba(18, 34, 86, var(--panel-alpha-top)), rgba(11, 22, 60, var(--panel-alpha-bottom)));
   color: var(--research-foreground);
   border: 1px solid rgba(126, 156, 224, 0.17);
   border-radius: var(--radius-lg);
@@ -365,6 +372,14 @@
 
 .research-panel .text-muted-foreground {
   color: var(--muted-foreground);
+}
+
+/* Phase 5 W3 — guided-tour panel: near-opaque (97%) so narration text clears
+   WCAG AA over any page content, including over the spotlight dim. */
+.tour-panel {
+  background: rgba(8, 16, 44, 0.97);
+  border: 1px solid rgba(151, 226, 254, 0.3);
+  border-radius: var(--radius-lg);
 }
 
 .research-panel [data-slot="table-head"] {

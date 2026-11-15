@@ -106,9 +106,9 @@ Environment variables (all optional — the platform degrades honestly):
 6. The comparability gate refuses cross-study plots/rankings when conditions differ — scientific
    caution is a product feature, not a footnote.
 
-## The 90-second judge journey
+## The 9-stop guided tour (about 2 minutes)
 
-Mission → open **PSI-69 FLEX** (real rows, sha256 provenance) → **Compare** with PSI-99 SAFFIRE-II and read the gate's "not directly comparable" verdict → ask **CIR-1** for lunar vs Earth pO₂ (deterministic calculation + citation) → **Scenarios**: lunar habitat facility analysis with partial-gravity caveat → discover the **partial-gravity gap** in the coverage map → save it and export the evidence packet from **My Work**.
+Mission → open **PSI-69 FLEX** (real rows, sha256 provenance) → **Compare** with PSI-99 SAFFIRE-II and read the gate's "not directly comparable" verdict → **Scenarios**: lunar habitat facility analysis with partial-gravity caveat → the **3D Lab** CIR cutaway → **Data & Sources** ledger and open /corpus mirror → **My Work** evidence packet export → **Research Tools** registries → ask **CIR-1** for lunar vs Earth pO₂ (deterministic calculation + citation, labelled demo replay).
 
 ## Evidence base (this merged build)
 
