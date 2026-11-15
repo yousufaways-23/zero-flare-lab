@@ -21,7 +21,7 @@
 
 ## CIR-1 in the cloud — enabling LLM synthesis with a FREE API key
 
-CIR-1 ships in **deterministic mode**: all 38 tools compute and answer without any LLM. To add LLM *synthesis* (phrasing, multi-step planning), get a free key from any of:
+CIR-1 ships in **deterministic mode**: all 42 tools compute and answer without any LLM. To add LLM *synthesis* (phrasing, multi-step planning), get a free key from any of:
 
 | Provider | Free tier | Base URL | Model | Get key at |
 |---|---|---|---|---|

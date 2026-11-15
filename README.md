@@ -3,7 +3,7 @@
 **AI-first scientific research platform over NASA microgravity combustion evidence.**
 ZERO FLARE Mission Team · NASA Space Apps 2026 — *Flame in Freefall*
 Targeting **Best Use of Science** and **Best Use of Data**.
-Research copilot: **CIR-1** (26 typed tools, citations, inspectable traces).
+Research copilot: **CIR-1** (42 typed tools, citations, inspectable traces).
 
 | | |
 |---|---|

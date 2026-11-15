@@ -233,7 +233,10 @@ async function callOpenAICompatible(
  */
 async function callWorkersAI(systemPrompt: string, messages: ChatTurn[]): Promise<string | null> {
   const ai = getBindings()?.AI;
-  if (!ai) return null;
+  if (!ai) {
+    console.error("[copilot] Workers AI: binding unavailable on this runtime");
+    return null;
+  }
   const model = process.env.WORKERS_AI_MODEL ?? "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
   const result = (await Promise.race([
     ai.run(model, {
@@ -244,10 +247,17 @@ async function callWorkersAI(systemPrompt: string, messages: ChatTurn[]): Promis
       temperature: 0.4,
       max_tokens: 2048,
     }),
-    new Promise((_, reject) => setTimeout(() => reject(new Error("Workers AI timeout")), 55_000)),
+    new Promise((_, reject) => setTimeout(() => reject(new Error("timeout after 55s")), 55_000)),
   ])) as { response?: unknown } | undefined;
   const content = result?.response;
-  return typeof content === "string" && content.trim() ? content : null;
+  if (typeof content !== "string" || !content.trim()) {
+    // Honest diagnostics: surface the unexpected response shape instead of
+    // failing silently (keys only — never log model output size or content).
+    const shape = result && typeof result === "object" ? Object.keys(result).slice(0, 6).join(",") : typeof result;
+    console.error(`[copilot] Workers AI: unexpected response shape (${shape})`);
+    return null;
+  }
+  return content;
 }
 
 export async function callLLM(
@@ -301,6 +311,17 @@ export async function callLLM(
       console.error("[copilot] OpenAI-compatible provider failed:", (err as Error).message);
       // fall through to platform SDK as backup
     }
+  }
+  // Route 1.5 — Cloudflare Workers AI (zero-key provider on the edge deployment;
+  // the AI binding ships with the Worker, so the live site has LLM synthesis
+  // out of the box). Uses the fenced-toolcall protocol, same as Route 1.
+  try {
+    const content = await callWorkersAI(systemPrompt, messages);
+    if (content) return content;
+    console.error("[copilot] Workers AI returned empty content");
+  } catch (err) {
+    console.error("[copilot] Workers AI failed:", (err as Error).message);
+    // fall through to platform SDK as backup
   }
   // Route 2 — platform SDK (z-ai-web-dev-sdk)
   try {
