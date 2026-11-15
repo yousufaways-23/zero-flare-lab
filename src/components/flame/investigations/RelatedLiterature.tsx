@@ -112,8 +112,8 @@ export function RelatedLiterature({ accession }: { accession: string }) {
                           className="group rounded-md border border-border/50 p-1.5 hover:border-primary/50"
                           title={`Original figure extracted from page ${f.page} — opens full resolution`}
                         >
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
+                        {/* original figure extraction — page-attributed, unmodified */}
+                        <img
                             src={f.asset}
                             alt={`Figure from page ${f.page} of ${shortTitle(p.file)}`}
                             loading="lazy"

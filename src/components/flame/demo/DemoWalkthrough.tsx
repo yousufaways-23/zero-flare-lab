@@ -68,12 +68,11 @@ export function DemoWalkthrough({ open, onClose }: { open: boolean; onClose: () 
     }
   }, [open, stepIdx, step]);
 
-  // spotlight: measure after the view transition settles, re-measure on resize/scroll
+  // spotlight: measure after the view transition settles, re-measure on resize/scroll.
+  // (no state reset on close is needed — the component renders nothing when !open,
+  // and the effect re-measures on every open/step change)
   useEffect(() => {
-    if (!open) {
-      setSpot(null);
-      return;
-    }
+    if (!open) return;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let raf = 0;
     const update = () => {

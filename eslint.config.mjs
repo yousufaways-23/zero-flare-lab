@@ -6,7 +6,14 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const eslintConfig = [...nextCoreWebVitals, ...nextTypescript, {
+const eslintConfig = [
+  {
+    // build artifacts and vendor output — never lint these
+    ignores: [".open-next/**", ".next/**", "node_modules/**", "public/corpus/**", "test-results/**", "playwright-report/**"],
+  },
+  ...nextCoreWebVitals,
+  ...nextTypescript,
+  {
   rules: {
     // TypeScript rules
     "@typescript-eslint/no-explicit-any": "off",
