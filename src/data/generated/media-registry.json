@@ -1,0 +1,1457 @@
+{
+  "generatedAt": "2026-11-15T20:23:05.599Z",
+  "scope": "Every media URL present in the repository — curated YouTube videos, NASA Images/Video Library API records, corpus-embedded links, knowledge-base SVS references — live-verified where this environment's network permits.",
+  "dedupe": "Same media id under multiple origins merges into one canonical entry; duplicate occurrences recorded below. Separate media items are never merged.",
+  "counts": {
+    "canonical": 49,
+    "verified": 49,
+    "unverified": 0,
+    "duplicateOccurrences": 0
+  },
+  "entries": [
+    {
+      "id": "yt-b3SocjRoGgA",
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=b3SocjRoGgA",
+      "title": "Why Fires In Space Are So Dangerous",
+      "author": "Scott Manley",
+      "sourceType": "independent-science-communicator",
+      "origin": "curated",
+      "mapsTo": [
+        "PSI-98",
+        "PSI-99",
+        "PSI-100",
+        "PSI-26",
+        "PSI-25"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Accessible explanation of why flames behave differently in microgravity — spherical diffusion flames, no buoyant plume — the exact physics regime of the PSI corpus. Good orientation for non-specialists.",
+      "durationNote": "topical overview",
+      "status": "verified",
+      "verify": {
+        "method": "youtube-oembed",
+        "httpStatus": 200,
+        "title": "Why Fires In Space Are So Dangerous",
+        "author": "Scott Manley",
+        "thumbnail": "https://i.ytimg.com/vi/b3SocjRoGgA/hqdefault.jpg"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "yt-C8wexPpuCcU",
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=C8wexPpuCcU",
+      "title": "Understanding Cool Flames and Warm Flames — Yiguang Ju",
+      "author": "The Combustion Institute",
+      "sourceType": "scientific-society",
+      "origin": "curated",
+      "mapsTo": [
+        "PSI-39",
+        "PSI-159",
+        "PSI-142",
+        "PSI-117"
+      ],
+      "placement": [
+        "investigation"
+      ],
+      "overview": "Combustion Institute lecture on cool-flame chemistry and limits — directly the science of CFI (droplet cool flames) and CFI-G (gaseous cool flames, up to 85% O₂ at the burner), including two-stage ignition and extinction physics.",
+      "durationNote": "technical lecture",
+      "status": "verified",
+      "verify": {
+        "method": "youtube-oembed",
+        "httpStatus": 200,
+        "title": "Understanding Cool Flames and Warm Flames, Yiguang Ju",
+        "author": "The Combustion Institute",
+        "thumbnail": "https://i.ytimg.com/vi/C8wexPpuCcU/hqdefault.jpg"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "yt-OBGPB0QSXMc",
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=OBGPB0QSXMc",
+      "title": "High Pressure Combustion in Microgravity using Biofuel — Ziaul Rizal",
+      "author": "AITC Mission Integration (Land Grant Seminar Series)",
+      "sourceType": "university-seminar",
+      "origin": "curated",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68"
+      ],
+      "placement": [
+        "investigation"
+      ],
+      "overview": "Research seminar on droplet-scale microgravity combustion at elevated pressure — methodologically adjacent to FLEX/FLEX-2 droplet extinction studies (pressure and diluent sweeps on isolated droplets).",
+      "durationNote": "research seminar",
+      "status": "verified",
+      "verify": {
+        "method": "youtube-oembed",
+        "httpStatus": 200,
+        "title": "Land Grant Seminar Series: High Pressure Combustion in Microgravity using Biofuel - Ziaul Huque",
+        "author": "AITC Mission Integration",
+        "thumbnail": "https://i.ytimg.com/vi/OBGPB0QSXMc/hqdefault.jpg"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "yt-4x5P6OR_6LA",
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=4x5P6OR_6LA",
+      "title": "Master Class: Flame Fundamentals",
+      "author": "KAUST Clean Energy Research",
+      "sourceType": "research-institution",
+      "origin": "curated",
+      "mapsTo": [
+        "PSI-107",
+        "PSI-106"
+      ],
+      "placement": [
+        "investigation",
+        "lab3d"
+      ],
+      "overview": "Flame fundamentals — stoichiometry, flame structure, soot and luminosity — the theoretical background behind the SPICE smoke-point investigation and the equation registry's combustion section.",
+      "durationNote": "master class",
+      "status": "verified",
+      "verify": {
+        "method": "youtube-oembed",
+        "httpStatus": 200,
+        "title": "Master Class: Flame Fundamentals",
+        "author": "KAUST Clean Energy Research ",
+        "thumbnail": "https://i.ytimg.com/vi/4x5P6OR_6LA/hqdefault.jpg"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "yt-lak9Bl2lZCE",
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=lak9Bl2lZCE",
+      "title": "Combustion Physics, Law, Day 1, Part 1",
+      "author": "Princeton University Combustion Summer School",
+      "sourceType": "university-course",
+      "origin": "curated",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68",
+        "PSI-20"
+      ],
+      "placement": [
+        "investigation"
+      ],
+      "overview": "Prof. Chung Law's combustion physics lectures — the same framework (droplet burning, flammability limits, extinction) that underlies the FLEX-family analyses and the project's verified equation sources.",
+      "durationNote": "course lecture",
+      "status": "verified",
+      "verify": {
+        "method": "youtube-oembed",
+        "httpStatus": 200,
+        "title": "Combustion Physics, Law, Day 1, Part 1",
+        "author": "Princeton University Combustion Summer School",
+        "thumbnail": "https://i.ytimg.com/vi/lak9Bl2lZCE/hqdefault.jpg"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "yt-v8TCBRDgrsE",
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=v8TCBRDgrsE",
+      "title": "Webinar #6 Physical Science: Fluid Dynamics (AccSpace4All Hypergravity/Microgravity Series)",
+      "author": "UN Office for Outer Space Affairs",
+      "sourceType": "un-agency",
+      "origin": "curated",
+      "mapsTo": [
+        "PSI-108"
+      ],
+      "placement": [
+        "investigation",
+        "lab3d"
+      ],
+      "overview": "UNOOSA webinar on microgravity physical-science research — programme context for why fluids/combustion experiments run on orbiting laboratories and how the results transfer (or do not) to partial gravity.",
+      "durationNote": "webinar",
+      "status": "verified",
+      "verify": {
+        "method": "youtube-oembed",
+        "httpStatus": 200,
+        "title": "Webinar#6 Physical Science: Fluid Dynamics (AccSpace4All Hypergravity/Microgravity Series)",
+        "author": "UN Office for Outer Space Affairs",
+        "thumbnail": "https://i.ytimg.com/vi/v8TCBRDgrsE/hqdefault.jpg"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "yt-f9AQ-OebO_U",
+      "kind": "youtube",
+      "url": "https://www.youtube.com/watch?v=f9AQ-OebO_U",
+      "title": "Structure and Response of Spherical Diffusion Flames (s-Flame)",
+      "author": "NASA Glenn Research and Technology",
+      "sourceType": "nasa-mission-video",
+      "origin": "corpus-metadata",
+      "mapsTo": [
+        "PSI-142",
+        "PSI-21"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation"
+      ],
+      "overview": "Linked inside the ACME research document (CFI-G / CLD-Flame context) — title/author resolved by live oEmbed below.",
+      "durationNote": null,
+      "status": "verified",
+      "verify": {
+        "method": "youtube-oembed",
+        "httpStatus": 200,
+        "title": "Structure and Response of Spherical Diffusion Flames (s-Flame)",
+        "author": "NASA Glenn Research and Technology",
+        "thumbnail": "https://i.ytimg.com/vi/f9AQ-OebO_U/hqdefault.jpg"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2016-C-05051",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2016-C-05051",
+      "title": "Advanced Combustion via Microgravity Experiments, ACME chamber insert",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-10",
+        "PSI-69",
+        "PSI-39",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "NASA Glenn engineer Christopher Mroczka inspects the gas-jet burner within the Advanced Combustion via Microgravity Experiments, ACME insert for the Combustion Integrated Rack, CIR. The apparatus allows researchers to conduct experiments wi",
+      "durationNote": "2016-06-22T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Advanced Combustion via Microgravity Experiments, ACME chamber insert",
+        "dateCreated": "2016-06-22T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2018-C-09928",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2018-C-09928",
+      "title": "High Pressure Microgravity Combustion, HPMC",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "High Pressure Microgravity Combustion Experiment, HPMC,  subjects liquid fuel droplets to high pressures and temperatures to study the ignition process in engine conditions, with a goal of improving fuel efficiency. In this configuration, t",
+      "durationNote": "2018-11-29T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "High Pressure Microgravity Combustion, HPMC",
+        "dateCreated": "2018-11-29T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss056e130654",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss056e130654",
+      "title": "Advanced Combustion via Microgravity Experiments (ACME)",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-10",
+        "PSI-69",
+        "PSI-39",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "iss056e130654 (Aug. 10, 2018) --- The Combustion Integration Rack (CIR), pictured in its open configuration, is located in the U.S. Destiny laboratory module and includes an optics bench, combustion chamber, fuel and oxidizer control, and f",
+      "durationNote": "2018-08-10T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Advanced Combustion via Microgravity Experiments (ACME)",
+        "dateCreated": "2018-08-10T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2013-C-03367",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2013-C-03367",
+      "title": "GRC-2013-C-03367",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-10",
+        "PSI-69",
+        "PSI-39",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Mechanical Engineer Adrian Drake inspects engineering model hardware built to generate a high-voltage electric field for the Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames) experiment of the Advanced Combustion via Micro",
+      "durationNote": "2013-08-19T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "GRC-2013-C-03367",
+        "dateCreated": "2013-08-19T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2019-C-00468",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2019-C-00468",
+      "title": "High Pressure Microgravity Combustion (HPMC) Facility, Drople...",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "High Pressure Microgravity Combustion Experiment, HPMC,  subjects liquid fuel droplets to high pressures and temperatures to study the ignition process in engine conditions, with a goal of improving fuel efficiency. In this configuration, t",
+      "durationNote": "2019-03-13T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "High Pressure Microgravity Combustion (HPMC) Facility, Drople...",
+        "dateCreated": "2019-03-13T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2020-C-00116",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2020-C-00116",
+      "title": "Review of International Space Station, ISS data from the Structure and Response of Spherical Diffusion Flames, s-Flame experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-10",
+        "PSI-69",
+        "PSI-39",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Review of ISS data from the Structure and Response of Spherical Diffusion Flames (s-Flame) experiment - of the Advanced Combustion via Microgravity Experiments. ACME project conducted in the Combustion Integrated Rack, CIR - by ACME Project",
+      "durationNote": "2020-01-14T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Review of International Space Station, ISS data from the Structure and Response of Spherical Diffusion Flames, s-Flame experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+        "dateCreated": "2020-01-14T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2020-C-00115",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2020-C-00115",
+      "title": "Testing of software with ground hardware for the Structue and Response of Spherical Diffusion Flames, s-Flame, experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-10",
+        "PSI-69",
+        "PSI-39",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Testing of software with ground hardware for the Structue and Response of Spherical Diffusion Flames, s-Flame, experiment  - of the Advanced Combustion via Microgravity Experiments, ACME, project conducted in the ISS Combustion Integrated R",
+      "durationNote": "2020-01-14T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Testing of software with ground hardware for the Structue and Response of Spherical Diffusion Flames, s-Flame, experiment in the Telescience Support Center, TSC, also known as the Glenn ISS Payload Operations Center, GIPOC",
+        "dateCreated": "2020-01-14T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss058e026380",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss058e026380",
+      "title": "Astronaut David Saint-Jacques works on the Combustion Integrated Rack",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "iss058e026380 (Feb. 26, 2019) --- Astronaut David Saint-Jacques of the Canadian Space Agency is inside the U.S. Destiny laboratory module working on the Combustion Integrated Rack. Saint-Jacques replaced fuel flow controllers inside the dev",
+      "durationNote": "2019-02-26T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Astronaut David Saint-Jacques works on the Combustion Integrated Rack",
+        "dateCreated": "2019-02-26T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2005-C-00892",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2005-C-00892",
+      "title": "Combustion Integration Rack (CIR) Testing",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Fluids and Combustion Facility (FCF), Combustion Integration Rack (CIR) during testing in the Structural Dynamics Laboratory (SDL). The Fluids and Combustion Facility (FCF) is a set of two International Space Station (ISS) research faciliti",
+      "durationNote": "2015-02-18T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Combustion Integration Rack (CIR) Testing",
+        "dateCreated": "2015-02-18T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2006-C-00540",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2006-C-00540",
+      "title": "GRC-2006-C-00540",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Combustion Integrated Rack (CIR)",
+      "durationNote": "2006-01-31T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "GRC-2006-C-00540",
+        "dateCreated": "2006-01-31T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2006-C-00542",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2006-C-00542",
+      "title": "GRC-2006-C-00542",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Combustion Integrated Rack (CIR)",
+      "durationNote": "2006-01-31T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "GRC-2006-C-00542",
+        "dateCreated": "2006-01-31T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2006-C-00541",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2006-C-00541",
+      "title": "GRC-2006-C-00541",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Combustion Integrated Rack (CIR)",
+      "durationNote": "2006-01-31T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "GRC-2006-C-00541",
+        "dateCreated": "2006-01-31T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-GRC-2006-C-00543",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/GRC-2006-C-00543",
+      "title": "GRC-2006-C-00543",
+      "author": "GRC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Combustion Integrated Rack (CIR)",
+      "durationNote": "2006-01-31T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "GRC-2006-C-00543",
+        "dateCreated": "2006-01-31T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss032e014574",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss032e014574",
+      "title": "Combustion Integrated Rack IFM",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS032-E-014574 (7 Aug. 2012) --- NASA astronaut Joe Acaba, Expedition 32 flight engineer, works on the Combustion Integrated Rack (CIR) in the Destiny laboratory of the International Space Station.",
+      "durationNote": "2012-08-07T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Combustion Integrated Rack IFM",
+        "dateCreated": "2012-08-07T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss043e190395",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss043e190395",
+      "title": "CIR MDCA replacement",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68",
+        "PSI-39",
+        "PSI-10",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS043E190395 (05/13/2015) --- NASA astronaut Terry Virts prepares the Multi-user Droplet Combustion Apparatus from inside the Combustion Integrated Rack for upcoming runs of the FLame Extinguishment Experiment, or FLEX-2. The FLEX-2 experi",
+      "durationNote": "2015-05-13T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "CIR MDCA replacement",
+        "dateCreated": "2015-05-13T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss035e017702",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss035e017702",
+      "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and replaces one of the",
+      "durationNote": "2013-04-10T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+        "dateCreated": "2013-04-10T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss035e017712",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss035e017712",
+      "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS035-E-017712 (10 April 2013)?-- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement in the U.S. lab Destiny.  Here, Expedition 35 Flight Engineer Chris Cassidy removes ",
+      "durationNote": "2013-04-10T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+        "dateCreated": "2013-04-10T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss035e017705",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss035e017705",
+      "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and replaces one of the",
+      "durationNote": "2013-04-10T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+        "dateCreated": "2013-04-10T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss035e017700",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss035e017700",
+      "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and replaces one of the",
+      "durationNote": "2013-04-10T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+        "dateCreated": "2013-04-10T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss035e017703",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss035e017703",
+      "title": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-69",
+        "PSI-68"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS035-E-017699 (10 April 2013) --- This is one of several photos documenting the  Multi-user Droplet Combustion Apparatus (MDCA) Fuel Reservoir replacement.  Here, Expedition 35 Flight Engineer Chris Cassidy removes and replaces one of the",
+      "durationNote": "2013-04-10T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Cassidy conducts MDCA Fuel Reservoir Remove and Replace OPS",
+        "dateCreated": "2013-04-10T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-jsc2023e046377",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/jsc2023e046377",
+      "title": "jsc2023e046377",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-98",
+        "PSI-99",
+        "PSI-100"
+      ],
+      "hardware": [
+        "SAFFIRE"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "jsc2023e046377 (12/14/2019) --- A view of the Spacecraft Fire Safety Experiments (Saffire) VI experiment hardware, loaded inside the Northrop Grumman (NG) Cygnus cargo vehicle for the 19th NG resupply mission to the International Space Stat",
+      "durationNote": "2019-12-14T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "jsc2023e046377",
+        "dateCreated": "2019-12-14T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-jsc2023e046631",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/jsc2023e046631",
+      "title": "jsc2023e046631",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-98",
+        "PSI-99",
+        "PSI-100"
+      ],
+      "hardware": [
+        "SAFFIRE"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "jsc2023e046631 (7/25/2023) --- Plexiglass is shown burning in Spacecraft Fire Experiment-IV (Saffire-IV). The flame appears orange because of the soot that is produced as it burns. As the plexiglass burns, the solid is melted, vaporized, an",
+      "durationNote": "2023-07-25T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "jsc2023e046631",
+        "dateCreated": "2023-07-25T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-jsc2020e043815",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/jsc2020e043815",
+      "title": "Cargo PORT Outer Bay 4 L912 (S/N 1002)",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-98",
+        "PSI-99",
+        "PSI-100"
+      ],
+      "hardware": [
+        "SAFFIRE"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "jsc2020e043815 (Sept. 10, 2020) --- A view of the Spacecraft Fire Safety Experiments (Saffire) V experiment hardware, loaded inside the Northrop Grumman(NG) Cygnus cargo vehicle for the 14th NG resupply mission to the International Space St",
+      "durationNote": "2020-09-10T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Cargo PORT Outer Bay 4 L912 (S/N 1002)",
+        "dateCreated": "2020-09-10T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-jsc2023e046375",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/jsc2023e046375",
+      "title": "jsc2023e046375",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-98",
+        "PSI-99",
+        "PSI-100"
+      ],
+      "hardware": [
+        "SAFFIRE"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "jsc2023e046375 (7/25/2023) --- A sample of fabric burns inside Spacecraft Fire Experiment-IV (Saffire-IV). The sample is a composite fabric made of cotton and fiberglass and is 40 cm wide. The image appears green because green LED lights ar",
+      "durationNote": "2023-07-25T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "jsc2023e046375",
+        "dateCreated": "2023-07-25T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-jsc2023e046376",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/jsc2023e046376",
+      "title": "jsc2023e046376",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-98",
+        "PSI-99",
+        "PSI-100"
+      ],
+      "hardware": [
+        "SAFFIRE"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "jsc2023e046376 (12/12/2019) --- The Far-Field Diagnostic (FFD) hardware for Spacecraft Fire Experiment-VI (Saffire-VI) is pictured aboard Cygnus before launch. This package contains the Smoke Eater and CO scrubbers, a prototype Combustion P",
+      "durationNote": "2019-12-12T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "jsc2023e046376",
+        "dateCreated": "2019-12-12T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss051e039882",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss051e039882",
+      "title": "Saffire-II in Cygnus OA-7 during Cargo Transfer OPS",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-98",
+        "PSI-99",
+        "PSI-100"
+      ],
+      "hardware": [
+        "SAFFIRE"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "iss051e039882 (5/8/2017) --- A view of Spacecraft Fire Experiment-III (Saffire-III) award the John Glenn Orbital ATK 7 (OA-7) Cygnus spacecraft, taken during cargo transfer operations (OPS). The NASA Advanced Exploration Systems program beg",
+      "durationNote": "2017-05-08T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Saffire-II in Cygnus OA-7 during Cargo Transfer OPS",
+        "dateCreated": "2017-05-08T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss064e040953",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss064e040953",
+      "title": "iss064e040953",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-10",
+        "PSI-69",
+        "PSI-39",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "iss064e040953 (March 9, 2021) --- NASA astronaut and Expedition 64 Flight Engineer Kate Rubins replaces and cleans hardware supporting a suite of studies known as ACME, or Advanced Combustion via Microgravity Experiments, located in the Com",
+      "durationNote": "2021-03-09T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "iss064e040953",
+        "dateCreated": "2021-03-09T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss058e008801",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss058e008801",
+      "title": "Astronaut David Saint-Jacques of the Canadian Space Agency",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-10",
+        "PSI-69",
+        "PSI-39",
+        "PSI-107"
+      ],
+      "hardware": [
+        "CIR"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "iss058e008801 (Jan. 31, 2019) --- Astronaut David Saint-Jacques of the Canadian Space Agency replaces a control unit and a radiometer inside the Combustion Integrated Rack's (CIR) ACME (Advanced Combustion via Microgravity Experiments) Cham",
+      "durationNote": "2019-01-30T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Astronaut David Saint-Jacques of the Canadian Space Agency",
+        "dateCreated": "2019-01-30T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-0003794",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/0003794",
+      "title": "Microgravity",
+      "author": "MSFC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Students from Albuquerque, MN, tour through the mockup of the U.S. Destiny laboratory module that will be attached to the International Space Station (ISS). Behind them are the racks for the Fluids and Combustion Facility being developed by",
+      "durationNote": "2000-01-31T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Microgravity",
+        "dateCreated": "2000-01-31T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-9705912",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/9705912",
+      "title": "International Space Station (ISS)",
+      "author": "MSFC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "This Boeing photograph shows the Node 1, Unity module, Flight Article (at right) and the U.S. Laboratory module, Destiny, Flight Article for the International Space Station (ISS) being manufactured in the High Bay Clean Room of the Space St",
+      "durationNote": "1997-06-01T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "International Space Station (ISS)",
+        "dateCreated": "1997-06-01T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-0003786",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/0003786",
+      "title": "Microgravity",
+      "author": "MSFC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Engineers from NASA's Glen Research Center demonstrate the access to one of the experiment racks plarned for the U.S. Destiny laboratory module on the International Space Station (ISS). This mockup has the full diameter, full corridor width",
+      "durationNote": "2000-01-30T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Microgravity",
+        "dateCreated": "2000-01-30T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-0102498",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/0102498",
+      "title": "International Space Station (ISS)",
+      "author": "MSFC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "The International Space Station (ISS), with its newly attached U.S. Laboratory, Destiny, was photographed by a crew member aboard the Space Shuttle Orbiter Atlantis during a fly-around inspection after Atlantis separated from the Space Stat",
+      "durationNote": "2001-02-16T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "International Space Station (ISS)",
+        "dateCreated": "2001-02-16T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-0003787",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/0003787",
+      "title": "Microgravity",
+      "author": "MSFC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Engineers from NASA's Glenn Research Center demonstrate the access to one of the experiment racks planned for the U.S. Destiny laboratory module on the International Space Station (ISS). This mockup has the full diameter, full corridor widt",
+      "durationNote": "2000-01-30T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Microgravity",
+        "dateCreated": "2000-01-30T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss015e27411",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss015e27411",
+      "title": "View of Anderson working with SAME Hardware in the US Lab during Expedition 15",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-101",
+        "PSI-115"
+      ],
+      "hardware": [
+        "SAME"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS015-E-27411 (8 Sept. 2007) --- NASA astronaut Clay Anderson, Expedition 15 flight engineer, works on the Smoke and Aerosol Measurement Experiment (SAME) hardware located in the Microgravity Science Glovebox (MSG) in the Destiny laborator",
+      "durationNote": "2007-09-08T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "View of Anderson working with SAME Hardware in the US Lab during Expedition 15",
+        "dateCreated": "2007-09-08T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss015e27397",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss015e27397",
+      "title": "View of working with SAME Hardware in the US Lab during Expedition 15",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-101",
+        "PSI-115"
+      ],
+      "hardware": [
+        "SAME"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS015-E-27397 (8 Sept. 2007) --- NASA astronaut Clay Anderson, Expedition 15 flight engineer, pauses for a photo while working on the Smoke and Aerosol Measurement Experiment (SAME) hardware located in the Microgravity Science Glovebox (MS",
+      "durationNote": "2007-09-08T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "View of working with SAME Hardware in the US Lab during Expedition 15",
+        "dateCreated": "2007-09-08T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss015e27425",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss015e27425",
+      "title": "View of Anderson working with SAME Hardware in the US Lab during Expedition 15",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-101",
+        "PSI-115"
+      ],
+      "hardware": [
+        "SAME"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS015-E-27425 (8 Sept. 2007) --- NASA astronaut Clay Anderson, Expedition 15 flight engineer, works on the Smoke and Aerosol Measurement Experiment (SAME) hardware located in the Microgravity Science Glovebox (MSG) in the Destiny laborator",
+      "durationNote": "2007-09-08T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "View of Anderson working with SAME Hardware in the US Lab during Expedition 15",
+        "dateCreated": "2007-09-08T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss015e26252",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss015e26252",
+      "title": "View of Anderson setting up SAME Hardware in the US Lab during Expedition 15",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [
+        "PSI-101",
+        "PSI-115"
+      ],
+      "hardware": [
+        "SAME"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS015-E-26252 (1 Sept. 2007) --- Astronaut Clay Anderson, Expedition 15 flight engineer, works on the Smoke and Aerosol Measurement Experiment (SAME) hardware setup located in the Microgravity Science Glovebox (MSG) in the Destiny laborato",
+      "durationNote": "2007-09-01T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "View of Anderson setting up SAME Hardware in the US Lab during Expedition 15",
+        "dateCreated": "2007-09-01T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-S106E5142",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/S106E5142",
+      "title": "Commander Wilcutt works on the Zvezda / Service Module during STS-106",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "STS106-E-5142 (12 September 2000) ---  Astronaut Terrence W. Wilcutt, mission commander, works to prepare the interior of the Zvezda service module on the International Space Station (ISS) for   astronauts and cosmonauts who will soon start",
+      "durationNote": "2000-09-12T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Commander Wilcutt works on the Zvezda / Service Module during STS-106",
+        "dateCreated": "2000-09-12T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-iss042e099123",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/iss042e099123",
+      "title": "iss042e099123",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "ISS042E099123 (01/04/2015) --- An interior view from the International Space Station’s (ISS) Cupola module. The large bay windows allowing the Expedition 42 crew to see outside. The Cupola houses one of the station’s two robotic work statio",
+      "durationNote": "2015-01-04T23:02:47Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "iss042e099123",
+        "dateCreated": "2015-01-04T23:02:47Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-sts088-359-003",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/sts088-359-003",
+      "title": "Sturckow in the Node 1/Unity module",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "STS088-359-003 (4-15 Dec. 1998) --- Astronaut Frederick W. ?Rick? Sturckow, pilot, holds up a panel while putting final touches on the interior of Node 1 or Unity.  Sturckow, who had been working with a battery-powered tool, was joined by o",
+      "durationNote": "1999-01-11T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Sturckow in the Node 1/Unity module",
+        "dateCreated": "1999-01-11T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "nasa-s98e5160",
+      "kind": "nasa-images-api",
+      "url": "https://images.nasa.gov/details/s98e5160",
+      "title": "Expedition One CDR Shepherd in U.S. Laboratory / Destiny module",
+      "author": "JSC — NASA Images and Video Library",
+      "sourceType": "nasa-official",
+      "origin": "media-index",
+      "mapsTo": [],
+      "hardware": [],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "STS98-E-5160 (11 February 2001) --- Astronaut William M. (Bill) Shepherd,  Expedition One commander, surveys the interior of the newly attached Destiny laboratory onboard the International Space Station (ISS).  After the Destiny hatch was o",
+      "durationNote": "2001-02-11T00:00:00Z",
+      "status": "verified",
+      "verify": {
+        "method": "images-api-search",
+        "httpStatus": 200,
+        "titleMatched": "Expedition One CDR Shepherd in U.S. Laboratory / Destiny module",
+        "dateCreated": "2001-02-11T00:00:00Z"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    },
+    {
+      "id": "svs-31394",
+      "kind": "svs",
+      "url": "https://svs.gsfc.nasa.gov/31394/",
+      "title": "NASA Studies Fire in Microgravity (SVS) — title from knowledge-base excerpt",
+      "author": "NASA Scientific Visualization Studio",
+      "sourceType": "nasa-official",
+      "origin": "knowledge-base",
+      "mapsTo": [
+        "PSI-117",
+        "PSI-119",
+        "PSI-121",
+        "PSI-122"
+      ],
+      "hardware": [
+        "SoFIE"
+      ],
+      "placement": [
+        "investigation",
+        "mission"
+      ],
+      "overview": "Referenced in the knowledge base search excerpts (SoFIE coverage). Live reachability probed below.",
+      "durationNote": null,
+      "status": "verified",
+      "verify": {
+        "method": "https-head",
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8"
+      },
+      "verifiedAt": "2026-11-15T20:23:05.599Z"
+    }
+  ],
+  "duplicateOccurrences": []
+}
