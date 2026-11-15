@@ -78,6 +78,7 @@ import {
   type TableColumn,
 } from "@/lib/data/catalog";
 import { EQUATIONS, EQUATION_CATEGORIES, type Equation, type EquationCategory } from "@/lib/science/equations";
+import { TeX } from "@/components/ui/tex";
 import { cn } from "@/lib/utils";
 import { MiniGraph } from "./MiniGraph";
 import { CorrelationHeatmap } from "./CorrelationHeatmap";
@@ -1219,7 +1220,7 @@ function EquationCard({ eq, onUse }: { eq: Equation; onUse: () => void }) {
           {eq.status}
         </Badge>
       </div>
-      <code className="mt-1.5 break-words font-mono text-xs text-[color:var(--hotcore)]">{eq.statement}</code>
+      <TeX math={eq.latex} className="mt-1.5 max-w-full overflow-x-auto text-xs text-[color:var(--hotcore)]" ariaLabel={`${eq.name}: ${eq.statement}`} />
       <div className="mt-1.5 text-xs text-muted-foreground">
         Output: {eq.outputLabel} ({eq.outputUnit})
       </div>

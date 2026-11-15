@@ -32,6 +32,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { TeX } from "@/components/ui/tex";
 import { Separator } from "@/components/ui/separator";
 import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
@@ -585,45 +586,52 @@ function EquationRegistryPanel() {
         </span>
       </div>
 
-      <ScrollArea className="max-h-[620px] rounded-lg">
-        <div className="pr-2">
-          <Accordion type="multiple" defaultValue={["gas-and-mixture-laws"]} className="space-y-2">
-            {grouped.map(({ cat, equations }) => (
-              <AccordionItem key={cat.id} value={cat.id} className="glass-panel border-b-0 px-4">
-                <AccordionTrigger className="py-3 text-xs font-semibold hover:no-underline">
-                  <span className="flex items-center gap-2">
-                    {cat.label}
-                    <span className="font-mono text-[10px] font-normal text-muted-foreground">{equations.length} equations</span>
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="pb-3">
-                  <ul className="border-t border-border/50 pt-1">
-                    {equations.map((e) => (
-                      <li key={e.id} className="flex items-stretch border-b border-border/40 last:border-b-0">
-                        <button
-                          onClick={() => setOpenEq(e)}
-                          className="flex min-w-0 flex-1 flex-col gap-0.5 px-1 py-2 text-left transition-colors hover:bg-accent/40"
-                          aria-haspopup="dialog"
-                        >
-                          <span className="flex flex-wrap items-baseline gap-x-2">
-                            <span className="text-xs font-medium">{e.name}</span>
-                            <span className="font-mono text-[10px] text-muted-foreground">{e.statement}</span>
-                            <span className="ml-auto font-mono text-[10px] text-[color:var(--emission)]">→ {e.outputLabel} [{e.outputUnit}]</span>
-                          </span>
-                          <span className="text-[10px] text-muted-foreground">source: {e.source} · {e.tests.length} reference test{e.tests.length === 1 ? "" : "s"}</span>
-                        </button>
-                        <div className="flex items-center pr-1">
-                          <SaveItemButton variant="icon" kind="equation" label={e.name} detail={e.statement} />
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </ScrollArea>
+      {/* Constrained, independently scrollable registry panel: the max-height +
+          overflow live on the SAME element (and the ScrollArea viewport now
+          inherits max-h), so expanding any category can never push content
+          under the page footer. `relative isolate` keeps the panel's stacking
+          self-contained on every breakpoint. */}
+      <div className="relative isolate max-h-[min(70vh,620px)] overflow-hidden rounded-lg">
+        <ScrollArea className="h-full max-h-[min(70vh,620px)] rounded-lg">
+          <div className="pr-2">
+            <Accordion type="multiple" defaultValue={["gas-and-mixture-laws"]} className="space-y-2">
+              {grouped.map(({ cat, equations }) => (
+                <AccordionItem key={cat.id} value={cat.id} className="glass-panel border-b-0 px-4">
+                  <AccordionTrigger className="py-3 text-xs font-semibold hover:no-underline">
+                    <span className="flex items-center gap-2">
+                      {cat.label}
+                      <span className="font-mono text-[10px] font-normal text-muted-foreground">{equations.length} equations</span>
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-3">
+                    <ul className="border-t border-border/50 pt-1">
+                      {equations.map((e) => (
+                        <li key={e.id} className="flex items-stretch border-b border-border/40 last:border-b-0">
+                          <button
+                            onClick={() => setOpenEq(e)}
+                            className="flex min-w-0 flex-1 flex-col gap-1 px-1 py-2 text-left transition-colors hover:bg-accent/40"
+                            aria-haspopup="dialog"
+                          >
+                            <span className="flex flex-wrap items-baseline gap-x-2">
+                              <span className="text-xs font-medium">{e.name}</span>
+                              <span className="ml-auto font-mono text-[10px] text-[color:var(--emission)]">→ {e.outputLabel} [{e.outputUnit}]</span>
+                            </span>
+                            <TeX math={e.latex} className="max-w-full overflow-x-auto text-[11px] text-[#c9d7ea]" ariaLabel={`${e.name}: ${e.statement}`} />
+                            <span className="text-[10px] text-muted-foreground">source: {e.source} · {e.tests.length} reference test{e.tests.length === 1 ? "" : "s"}</span>
+                          </button>
+                          <div className="flex items-center pr-1">
+                            <SaveItemButton variant="icon" kind="equation" label={e.name} detail={e.statement} />
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </ScrollArea>
+      </div>
 
       <Dialog open={openEq !== null} onOpenChange={(o) => !o && setOpenEq(null)}>
         <DialogContent className="max-h-[85vh] max-w-2xl overflow-y-auto data-scroll sm:max-w-2xl">
@@ -634,7 +642,11 @@ function EquationRegistryPanel() {
                   {openEq.name}
                   <Badge variant="outline" className="text-[10px]">{openEq.status}</Badge>
                 </DialogTitle>
-                <DialogDescription className="font-mono text-xs">{openEq.statement}</DialogDescription>
+                <DialogDescription asChild>
+                  <div className="rounded-md border border-border/60 bg-[#0F1B2D]/60 px-3 py-2.5">
+                    <TeX math={openEq.latex} block className="text-sm text-[#E5EEF8]" ariaLabel={`${openEq.name}: ${openEq.statement}`} />
+                  </div>
+                </DialogDescription>
               </DialogHeader>
               {/* Layered validation state (research doc §4.2) — a passing unit
                   test is not scientific validity; show each layer explicitly. */}

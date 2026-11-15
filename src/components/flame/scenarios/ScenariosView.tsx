@@ -34,6 +34,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 import { Slider } from "@/components/ui/slider";
+import { TeX } from "@/components/ui/tex";
 import { cn } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
@@ -245,7 +246,7 @@ function CalculatorCard({
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div className="min-w-0">
           <h4 className="text-sm font-semibold leading-tight">{eqn.name}</h4>
-          <p className="mt-1 font-mono text-xs text-[color:var(--research-foreground)]/80">{eqn.statement}</p>
+          <TeX math={eqn.latex} className="mt-1 max-w-full overflow-x-auto text-xs text-[color:var(--research-foreground)]/90" ariaLabel={`${eqn.name}: ${eqn.statement}`} />
         </div>
         <Badge variant="outline" className="shrink-0 text-[10px]">{eqn.id}</Badge>
       </div>
@@ -395,8 +396,9 @@ function EquationPicker({
               )}
             >
               <span className={cn("text-xs font-medium leading-tight", selectedId === e.id && "text-primary")}>{e.name}</span>
+              <TeX math={e.latex} className="max-w-full overflow-x-auto text-[11px] text-muted-foreground" ariaLabel={`${e.name}: ${e.statement}`} />
               <span className="font-mono text-[10px] text-muted-foreground">
-                {e.statement} → {e.outputLabel} [{e.outputUnit}]
+                → {e.outputLabel} [{e.outputUnit}]
               </span>
             </button>
           ))

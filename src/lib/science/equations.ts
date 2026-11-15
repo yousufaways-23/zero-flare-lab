@@ -28,6 +28,10 @@ export interface Equation {
   name: string;
   category: EquationCategory;
   statement: string; // LaTeX-like
+  /** Proper LaTeX typeset form rendered with KaTeX. Display-only: the raw
+   *  `statement` stays untouched (search, agent tools, saved items), and the
+   *  typeset form must preserve the exact same mathematics. */
+  latex: string;
   summary: string;
   variables: EquationVariable[];
   assumptions: string[];
@@ -121,6 +125,77 @@ const srcTextbook = {
   elementsStats: "standard statistics (large-sample normal approximation)",
 };
 
+/**
+ * KaTeX typeset forms, one per equation id. Display-only — none of these
+ * alter the equations, the calculators or the reference tests. Any id
+ * without an entry falls back to the raw statement string.
+ */
+const LATEX_OVERRIDES: Record<string, string> = {
+  "ideal-gas-law": "P\\,V = n\\,R\\,T",
+  "partial-pressure": "p_i = x_i \\, P",
+  "p-o2-kpa": "p_{\\mathrm{O_2}} = x_{\\mathrm{O_2}} \\, P_{\\mathrm{total}}",
+  "mean-molecular-weight": "\\bar{M} = \\textstyle\\sum_i x_i \\, M_i",
+  "gas-density": "\\rho = \\dfrac{P \\cdot M}{R \\cdot T}",
+  "mass-fraction-from-mole": "w_i = \\dfrac{x_i \\, M_i}{\\sum_j x_j \\, M_j}",
+  "ppm-to-mole-fraction": "x = \\mathrm{ppm} \\times 10^{-6}",
+  "stoich-o2-hydrocarbon": "\\mathrm{C}_x\\mathrm{H}_y + \\left(x + \\tfrac{y}{4}\\right)\\,\\mathrm{O_2} \\;\\rightarrow\\; x\\,\\mathrm{CO_2} + \\tfrac{y}{2}\\,\\mathrm{H_2O}",
+  "equivalence-ratio": "\\phi = \\dfrac{(F/A)_{\\mathrm{actual}}}{(F/A)_{\\mathrm{stoichiometric}}}",
+  "stoich-fa-mass": "(F/A)_{\\mathrm{st}} = \\dfrac{M_{\\mathrm{fuel}}}{\\nu_{\\mathrm{O_2}}\\cdot 32 + \\nu_{\\mathrm{O_2}}\\cdot\\tfrac{79}{21}\\cdot 28.01}",
+  "le-chatelier-lfl": "\\dfrac{1}{\\mathrm{LFL}_{\\mathrm{mix}}} = \\sum_i \\dfrac{x_i}{\\mathrm{LFL}_i}",
+  "arrhenius-rate": "k = A \\, \\exp\\!\\left(-\\dfrac{E_a}{R\\,T}\\right)",
+  "heat-release-rate": "\\dot{Q} = \\dot{m} \\, \\Delta H_c",
+  "adiabatic-temp-estimate": "\\Delta T_{\\mathrm{ad}} \\approx \\dfrac{w_f \\, \\Delta H_c}{\\bar{c}_p}",
+  "fourier-conduction": "q = \\dfrac{k \\, A \\, \\Delta T}{L}",
+  "newton-convection": "q = h \\, A \\, (T_s - T_{\\infty})",
+  "stefan-boltzmann": "q = \\varepsilon \\, \\sigma \\, A \\, \\left(T_s^4 - T_{\\mathrm{sur}}^4\\right)",
+  "rayleigh-number": "\\mathrm{Ra} = \\dfrac{g \\, \\beta \\, \\Delta T \\, L^3}{\\nu \\, \\alpha}",
+  "grashof-number": "\\mathrm{Gr} = \\dfrac{g \\, \\beta \\, \\Delta T \\, L^3}{\\nu^2}",
+  "nusselt-natural-conv": "\\mathrm{Nu} = 0.59 \\, \\mathrm{Ra}^{1/4} \\quad (10^4 \\le \\mathrm{Ra} \\le 10^7)",
+  "prandtl-number": "\\mathrm{Pr} = \\dfrac{\\nu}{\\alpha}",
+  "biot-number": "\\mathrm{Bi} = \\dfrac{h \\, L_c}{k_s}",
+  "fourier-number": "\\mathrm{Fo} = \\dfrac{\\alpha \\, t}{L^2}",
+  "thermal-inertia": "k \\, \\rho \\, c \\quad \\left[\\mathrm{W^2\\,s/(m^4\\,K^2)}\\right]",
+  "ignition-time-thick": "t_{\\mathrm{ig}} = \\dfrac{\\pi}{4} \\, k \\rho c \\, \\dfrac{(T_{\\mathrm{ig}} - T_{\\infty})^2}{\\dot{q}^{\\prime\\prime\\,2}}",
+  "critical-heat-flux": "\\dot{q}^{\\prime\\prime}_{\\mathrm{crit}} \\approx h_c \\, (T_{\\mathrm{ig}} - T_{\\infty}) + \\varepsilon \\, \\sigma \\, (T_{\\mathrm{ig}}^4 - T_{\\infty}^4)",
+  "froude-number": "\\mathrm{Fr} = \\dfrac{U^2}{g \\, L}",
+  "froude-spread-scaling": "V^{*} = \\dfrac{V}{\\sqrt{g \\, L}}",
+  "buoyant-velocity-scale": "U_b \\sim \\sqrt{g \\, L}",
+  "d2-law": "d^2(t) = d_0^2 - K \\, t",
+  "burning-rate-constant": "K = \\dfrac{d_0^2 - d_e^2}{t_b}",
+  "spalding-b-number": "B = \\dfrac{\\left(Y_{\\mathrm{O_2},\\infty} \\, \\Delta H_c / \\nu_{\\mathrm{O_2}}\\right) + c_p \\,(T_{\\infty} - T_s)}{L_v}",
+  "droplet-lifetime": "t_d = \\dfrac{d_0^2}{K}",
+  "stokes-settling": "v_s = \\dfrac{\\rho_p \\, d_p^2 \\, g}{18 \\, \\mu}",
+  "cunningham-correction": "C_c = 1 + \\mathrm{Kn} \\left(1.257 + 0.4\\, e^{-1.1/\\mathrm{Kn}}\\right)",
+  "lognormal-mmd": "\\mathrm{MMD} = \\mathrm{CMD} \\cdot \\exp\\!\\left(3 \\, \\ln^2 \\sigma_g\\right)",
+  "first-order-response": "y(t) = 1 - e^{-t/\\tau}",
+  "sample-std-from-moments": "\\bar{x} = \\dfrac{\\sum x}{n} \\, ; \\qquad s = \\sqrt{\\dfrac{\\sum x^2 - n \\, \\bar{x}^{\\,2}}{n - 1}}",
+  "ci95-mean": "\\mathrm{CI} = \\bar{x} \\, \\pm \\, 1.96 \\, \\dfrac{s}{\\sqrt{n}}",
+  "reynolds-number": "\\mathrm{Re} = \\dfrac{\\rho \\, U \\, L}{\\mu}",
+  "peclet-number": "\\mathrm{Pe} = \\dfrac{U \\, L}{\\alpha}",
+  "damkohler-number": "\\mathrm{Da} = \\dfrac{\\tau_{\\mathrm{flow}}}{\\tau_{\\mathrm{chemistry}}}",
+  "lewis-number": "\\mathrm{Le} = \\dfrac{\\alpha}{D}",
+  "uncertainty-sum": "\\sigma_f = \\sqrt{\\sigma_a^2 + \\sigma_b^2}",
+  "uncertainty-product": "\\left(\\dfrac{\\sigma_f}{f}\\right)^{\\!2} = \\left(\\dfrac{\\sigma_a}{a}\\right)^{\\!2} + \\left(\\dfrac{\\sigma_b}{b}\\right)^{\\!2}",
+  "standard-error-mean": "\\mathrm{SEM} = \\dfrac{s}{\\sqrt{n}}",
+  "sample-size-95": "n = \\left(\\dfrac{1.96 \\, \\sigma}{E}\\right)^{\\!2}",
+  "z-score": "z = \\dfrac{x - \\mu}{\\sigma}",
+  "logistic-sigmoid": "\\sigma(z) = \\dfrac{1}{1 + e^{-z}}",
+  "one-at-time-sensitivity": "S = \\dfrac{\\Delta y}{\\Delta x}",
+  "roc-auc-pairs": "\\mathrm{AUC} = \\dfrac{R_{\\mathrm{pos}} - \\tfrac{n_{\\mathrm{pos}}\\,(n_{\\mathrm{pos}}+1)}{2}}{n_{\\mathrm{pos}} \\, n_{\\mathrm{neg}}}",
+  "richardson-number": "\\mathrm{Ri} = \\dfrac{g \\, \\beta \\, \\Delta T \\, L}{U^2}",
+  "nusselt-sphere": "\\mathrm{Nu} = 2 + 0.6 \\, \\mathrm{Re}^{1/2} \\, \\mathrm{Pr}^{1/3}",
+  "thermal-effusivity": "e = \\sqrt{k \\, \\rho \\, c_p}",
+  "schmidt-number": "\\mathrm{Sc} = \\dfrac{\\nu}{D}",
+  "knudsen-number": "\\mathrm{Kn} = \\dfrac{\\lambda}{L}",
+  "brownian-diffusivity": "D = \\dfrac{k_B \\, T}{3 \\pi \\, \\mu \\, d_p}",
+  "stokes-number": "\\mathrm{Stk} = \\dfrac{\\tau_p \\, U}{L}",
+  "optical-extinction": "\\dfrac{I}{I_0} = e^{-K \\, L}",
+  "mae": "\\mathrm{MAE} = \\dfrac{1}{n} \\sum_i \\left| y_i - \\hat{y}_i \\right|",
+  "rmse": "\\mathrm{RMSE} = \\sqrt{\\dfrac{1}{n} \\sum_i e_i^2}",
+  "f1-score": "\\mathrm{F1} = \\dfrac{2 \\, P \\, R}{P + R}",
+  "fpr": "\\mathrm{FPR} = \\dfrac{\\mathrm{FP}}{\\mathrm{FP} + \\mathrm{TN}}",
+};
+
 function eq(
   id: string, name: string, category: EquationCategory, statement: string, summary: string,
   vars: EquationVariable[], outputUnit: string, outputLabel: string,
@@ -143,7 +218,7 @@ function eq(
     full.unitTests === "passed" && full.referenceCheck === "passed" && full.domainReview === "reviewed"
       ? "verified"
       : "candidate";
-  return { id, name, category, statement, summary, variables: vars, assumptions, calculate, outputUnit, outputLabel, source, tests, status, validation: full };
+  return { id, name, category, statement, latex: LATEX_OVERRIDES[id] ?? statement, summary, variables: vars, assumptions, calculate, outputUnit, outputLabel, source, tests, status, validation: full };
 }
 
 const v = (key: string, label: string, symbol: string, unit: string, dimension: UnitDimension, min?: number, max?: number): EquationVariable =>
