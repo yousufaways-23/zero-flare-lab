@@ -139,14 +139,8 @@ const BASS: AccessionChartSpec = {
 };
 
 const SAFFIRE_II: AccessionChartSpec = {
-  note: "SAFFIRE-II (15 samples): oxygen percentage and flow were set per test; ignition and burn times are the measured responses. n is small — distributions are shown with explicit n.",
-  columns: [
-    { name: "Percent O2 (Note 1)", role: "condition", status: "measured" },
-    { name: "Air Flow (cm/s)", role: "condition", status: "measured" },
-    { name: "Ignition Power (W)", role: "condition", status: "measured" },
-    { name: "Burn Time (s)", role: "response", status: "measured", interpretation: "Recorded burn duration per sample; 15 rows total." },
-    { name: "?-g Burn Length", role: "response", status: "measured" },
-  ],
+  note: "SAFFIRE-II (15 samples): oxygen percentage and flow were set per test; ignition and burn times are the measured responses. In the recovered table every value is a string with the unit embedded (\"9.2 s\", \"~ 21.5\") — no column types as numeric, so distribution and overlay charts are declined until a typed re-ingestion exists.",
+  columns: [],
   sequenceColumn: "Sample Number",
   categorical: ["Material", "Flow Direction"],
 };

@@ -12,6 +12,7 @@ import { AlertTriangle, GitCompare, ShieldCheck, ShieldX, X } from "lucide-react
 import { useAppStore } from "@/lib/app-store";
 import { auditComparability } from "@/lib/science/comparability";
 import { CrossExperimentCoverage } from "@/components/flame/compare/CrossExperimentCoverage";
+import { CompareEvidence } from "@/components/flame/compare/CompareEvidence";
 import {
   getEquipmentForInvestigation,
   getGaps,
@@ -473,6 +474,9 @@ export function CompareView() {
             </p>
           </section>
 
+          {/* visual evidence layer (Phase 5 W5): summary, small multiples,
+              gated derived overlay, source figures, provenance chain */}
+          <CompareEvidence selected={selected} gate={gate} />
 
           {/* graph slice */}
           <section>
