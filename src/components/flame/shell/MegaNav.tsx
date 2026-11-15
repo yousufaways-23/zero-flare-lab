@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useAppStore, VIEW_META, type ViewId, type AdvancedPanel, type EnvId } from "@/lib/app-store";
+import { useAppStore, VIEW_META, type ViewId, type AdvancedPanel, type EnvId, type PillarId } from "@/lib/app-store";
 import { getCorpusTotals, getInvestigations } from "@/lib/data/catalog";
 import { EQUATIONS } from "@/lib/science/equations";
 import {
@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { Search, Rocket, FlaskConical, GitCompare, Calculator, Boxes, Database, Wrench, Sparkles, ChevronRight, Globe2, FolderOpen, Play } from "lucide-react";
+import { Search, Rocket, FlaskConical, GitCompare, Calculator, Boxes, Database, Wrench, Sparkles, ChevronRight, Globe2, FolderOpen, Play, Shield, Radar, TrendingUp, Flame } from "lucide-react";
 
 /* origin nav instrument chips — compact environment readout by destination */
 const ENV_CHIP: Record<EnvId, string> = {
@@ -56,10 +56,29 @@ const ADVANCED_PANELS: { id: AdvancedPanel; label: string; hint: string }[] = [
   { id: "diagnostics", label: "Diagnostics & Reconciliation", hint: "Recovery ledger, discrepancies, integrity" },
 ];
 
+const PILLAR_META: { id: PillarId; label: string; hint: string; icon: React.ComponentType<{ className?: string }> }[] = [
+  { id: "prevention", label: "Prevention", hint: "Flammability, ignition, atmosphere evidence", icon: Shield },
+  { id: "detection", label: "Detection", hint: "Smoke, aerosols, sensor evidence", icon: Radar },
+  { id: "prediction", label: "Prediction", hint: "Guarded models — never out of domain", icon: TrendingUp },
+  { id: "suppression", label: "Suppression", hint: "Extinction and diluent evidence", icon: Flame },
+];
+
 export function MegaNav() {
   const { view, setView, openAdvanced, openInvestigation, commandOpen, setCommandOpen, setCopilotOpen, setEnvironment, environment, environmentLabel } = useAppStore();
   const investigations = useMemo(() => getInvestigations(), []);
   const totals = useMemo(() => getCorpusTotals(), []);
+  // Investigations mega picker filter — every investigation is listed (no slice);
+  // the query narrows by accession, title, label or research area.
+  const [invQuery, setInvQuery] = useState("");
+  const filteredInvestigations = useMemo(() => {
+    const q = invQuery.trim().toLowerCase();
+    if (!q) return investigations;
+    return investigations.filter((inv) =>
+      [inv.accession, inv.title, inv.shortLabel, inv.researchArea, inv.subResearchArea].some(
+        (v) => (v ?? "").toLowerCase().includes(q),
+      ),
+    );
+  }, [investigations, invQuery]);
 
   // Ctrl+K / Cmd+K command search
   useEffect(() => {
@@ -113,11 +132,14 @@ export function MegaNav() {
 
           <div className="hidden md:block w-px h-6 bg-border/60 mx-1 shrink-0" aria-hidden="true" />
 
-          {/* main nav with mega-menu content — overflow-x-clip (NOT hidden) so the
-              shared dropdown viewport below the header is never clipped vertically;
-              horizontal anti-bleed into the actions cluster is preserved */}
-          <div data-header-slot="nav" className="hidden min-w-0 flex-1 overflow-x-clip md:block">
-            <NavigationMenu viewport className="min-w-0 justify-start">
+          {/* main nav with per-trigger mega-menu content — viewport={false} renders each
+              NavigationMenuContent absolutely anchored under its OWN trigger (the Phase-4
+              shared viewport put every popup at the nav's left edge, which made Scenarios
+              and Research Tools appear under Mission). Popup widths are clamped to the
+              viewport so nothing overflows on md–xl screens; no overflow clip here because
+              the absolute popups legitimately extend beyond the nav box. */}
+          <div data-header-slot="nav" className="hidden min-w-0 flex-1 md:block">
+            <NavigationMenu viewport={false} className="min-w-0 justify-start">
               <NavigationMenuList className="min-w-0 data-scroll">
               {navItem("mission")}
               {/* Investigations mega */}
@@ -126,20 +148,43 @@ export function MegaNav() {
                   <FlaskConical className="mr-1 h-4 w-4" />
                   <span className="hidden xl:inline">Investigations</span>
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="w-[720px] p-0">
-                  <div className="grid grid-cols-[1fr_240px]">
-                    <div className="max-h-[420px] overflow-y-auto p-3 grid grid-cols-2 gap-1">
-                      {investigations.slice(0, 16).map((inv) => (
-                        <button
-                          key={inv.accession}
-                          onClick={() => openInvestigation(inv.accession)}
-                          className="flex flex-col items-start rounded-md px-3 py-2 text-left hover:bg-accent/60 transition-colors"
-                        >
-                          <span className="text-xs font-mono text-primary">{inv.accession}</span>
-                          <span className="text-[13px] leading-tight">{inv.shortLabel}</span>
-                          <span className="text-[11px] text-muted-foreground">{inv.tableRows} rows · {inv.subResearchArea ?? inv.researchArea ?? ""}</span>
-                        </button>
-                      ))}
+                <NavigationMenuContent className="md:w-[min(calc(100vw-20rem),820px)] p-0">
+                  <div className="grid grid-cols-[1fr_230px]">
+                    <div className="flex max-h-[min(70vh,560px)] flex-col">
+                      <div className="border-b border-border/50 p-2.5">
+                        <div className="relative">
+                          <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
+                          <input
+                            value={invQuery}
+                            onChange={(e) => setInvQuery(e.target.value)}
+                            placeholder={`Filter all ${investigations.length} investigations — accession, title or area…`}
+                            aria-label="Filter investigations"
+                            className="h-8 w-full rounded-md border border-border/60 bg-background/60 pl-8 pr-2 text-xs outline-none placeholder:text-muted-foreground/70 focus-visible:ring-2 focus-visible:ring-ring/50"
+                          />
+                        </div>
+                      </div>
+                      <div className="grid flex-1 grid-cols-2 content-start gap-1 overflow-y-auto p-2">
+                        {filteredInvestigations.length === 0 ? (
+                          <p className="col-span-2 px-3 py-6 text-center text-xs text-muted-foreground">
+                            No investigation matches “{invQuery.trim()}”.
+                          </p>
+                        ) : (
+                          filteredInvestigations.map((inv) => (
+                            <button
+                              key={inv.accession}
+                              onClick={() => openInvestigation(inv.accession)}
+                              className="flex flex-col items-start rounded-md px-3 py-2 text-left hover:bg-accent/60 transition-colors"
+                            >
+                              <span className="text-xs font-mono text-primary">{inv.accession}</span>
+                              <span className="text-[13px] leading-tight">{inv.shortLabel}</span>
+                              <span className="text-[11px] text-muted-foreground">{inv.tableRows} rows · {inv.subResearchArea ?? inv.researchArea ?? ""}</span>
+                            </button>
+                          ))
+                        )}
+                      </div>
+                      <div className="border-t border-border/50 px-3 py-1.5 text-[10px] text-muted-foreground">
+                        Showing {filteredInvestigations.length} of {investigations.length} investigations
+                      </div>
                     </div>
                     <div className="border-l border-border/60 p-4 flex flex-col gap-2 bg-accent/20">
                       <p className="text-xs font-semibold text-primary">Evidence workspaces</p>
@@ -160,23 +205,21 @@ export function MegaNav() {
                   <Calculator className="mr-1 h-4 w-4" />
                   <span className="hidden xl:inline">Scenarios</span>
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="w-[560px] p-4">
+                <NavigationMenuContent className="md:w-[min(calc(100vw-24rem),600px)] p-4">
                   <div className="grid grid-cols-2 gap-2">
-                    {([
-                      ["prevention", "Prevention", "Flammability, ignition, atmosphere evidence"],
-                      ["detection", "Detection", "Smoke, aerosols, sensor evidence"],
-                      ["prediction", "Prediction", "Guarded models — never out of domain"],
-                      ["suppression", "Suppression", "Extinction and diluent evidence"],
-                    ] as const).map(([id, label, hint]) => (
+                    {PILLAR_META.map(({ id, label, hint, icon: PillarIcon }) => (
                       <button
                         key={id}
                         onClick={() => {
                           useAppStore.getState().setScenarioPillar(id);
                           setView("scenarios");
                         }}
-                        className="flex flex-col items-start rounded-md border border-border/50 p-3 text-left hover:border-primary/50 hover:bg-accent/40 transition-colors"
+                        className="flex flex-col items-start gap-1.5 rounded-md border border-border/50 p-3 text-left hover:border-primary/50 hover:bg-accent/40 transition-colors"
                       >
-                        <span className="text-sm font-medium">{label}</span>
+                        <span className="flex items-center gap-2 text-sm font-medium">
+                          <PillarIcon className="h-4 w-4 text-primary" aria-hidden="true" />
+                          {label}
+                        </span>
                         <span className="text-[11px] text-muted-foreground">{hint}</span>
                       </button>
                     ))}
@@ -194,17 +237,19 @@ export function MegaNav() {
                   <Wrench className="mr-1 h-4 w-4" />
                   <span className="hidden xl:inline">Research Tools</span>
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="w-[480px] p-3">
-                  {ADVANCED_PANELS.map((p) => (
-                    <button
-                      key={p.id}
-                      onClick={() => openAdvanced(p.id)}
-                      className="flex w-full flex-col items-start rounded-md px-3 py-2.5 text-left hover:bg-accent/60 transition-colors"
-                    >
-                      <span className="text-sm font-medium">{p.label}</span>
-                      <span className="text-[11px] text-muted-foreground">{p.hint}</span>
-                    </button>
-                  ))}
+                <NavigationMenuContent className="md:left-auto md:right-0 md:w-[min(calc(100vw-14rem),640px)] p-3">
+                  <div className="grid grid-cols-2 gap-1">
+                    {ADVANCED_PANELS.map((p) => (
+                      <button
+                        key={p.id}
+                        onClick={() => openAdvanced(p.id)}
+                        className="flex flex-col items-start rounded-md px-3 py-2.5 text-left hover:bg-accent/60 transition-colors"
+                      >
+                        <span className="text-sm font-medium">{p.label}</span>
+                        <span className="text-[11px] text-muted-foreground">{p.hint}</span>
+                      </button>
+                    ))}
+                  </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               </NavigationMenuList>

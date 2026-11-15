@@ -22,6 +22,54 @@ test.describe("desktop navigation", () => {
     await expect(page.getByText(/PSI-69/).first()).toBeVisible();
   });
 
+  test("Investigations mega lists every investigation and the filter narrows it", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /investigations/i }).first().click();
+    const search = page.getByRole("textbox", { name: /filter investigations/i });
+    await expect(search).toBeVisible({ timeout: 5_000 });
+    // counter reads the full registry (no slice)
+    await expect(page.getByText(/showing 25 of 25 investigations/i)).toBeVisible();
+    await search.fill("PSI-69");
+    await expect(page.getByText(/showing 1 of 25 investigations/i)).toBeVisible();
+    await expect(page.getByRole("button", { name: /PSI-69/ }).first()).toBeVisible();
+    await search.fill("zzzz-no-match");
+    await expect(page.getByText(/no investigation matches/i)).toBeVisible();
+  });
+
+  test("each mega popup anchors horizontally within its own trigger", async ({ page }) => {
+    test.setTimeout(90_000); // 3 menus × retry waits; dev servers compile pages on demand
+    await page.goto("/");
+    for (const label of ["Investigations", "Scenarios", "Research Tools"] as const) {
+      const trigger = page.getByRole("button", { name: new RegExp(label, "i") }).first();
+      const popup = page.locator('[data-slot="navigation-menu-content"][data-state="open"]');
+      // in dev builds the first click can land before React hydration — retry the toggle
+      for (let attempt = 0; attempt < 3; attempt++) {
+        await trigger.click();
+        try {
+          await popup.waitFor({ state: "visible", timeout: 3_000 });
+          break;
+        } catch {
+          // hydration race — click again
+        }
+      }
+      await expect(popup).toBeVisible({ timeout: 5_000 });
+      const tb = await trigger.boundingBox();
+      const pb = await popup.boundingBox();
+      expect(tb, `${label} trigger box`).not.toBeNull();
+      expect(pb, `${label} popup box`).not.toBeNull();
+      // the popup must span the trigger's center x — i.e. it is anchored under ITS
+      // trigger, not under the Mission item at the nav's left edge (Phase-4 regression)
+      const triggerCenterX = tb!.x + tb!.width / 2;
+      expect(pb!.x, `${label} popup left edge`).toBeLessThanOrEqual(triggerCenterX);
+      expect(pb!.x + pb!.width, `${label} popup right edge`).toBeGreaterThanOrEqual(triggerCenterX);
+      // and the popup must not overflow the viewport horizontally
+      const viewportWidth = page.viewportSize()?.width ?? 1440;
+      expect(pb!.x).toBeGreaterThanOrEqual(0);
+      expect(pb!.x + pb!.width).toBeLessThanOrEqual(viewportWidth);
+      await page.keyboard.press("Escape");
+    }
+  });
+
   test("Scenarios mega-menu opens by click and lands on the pillar view", async ({ page }) => {
     await page.goto("/");
     const trigger = page.getByRole("button", { name: /scenarios/i }).first();
