@@ -7,7 +7,7 @@
 //   ASSETS — static assets (OpenNext-managed; also mirrors the open corpus under /corpus)
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "zero-flare-lab",
+  "name": "zero-flare",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-10-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
