@@ -16,7 +16,7 @@ export interface D1Result {
 
 export interface D1PreparedStatement {
   bind(...values: unknown[]): D1PreparedStatement;
-  all<T = unknown>(): Promise<D1Result & { results?: T[] }>;
+  all<T = unknown>(): Promise<{ results?: T[]; meta?: unknown }>;
   run(): Promise<D1Result>;
   first<T = unknown>(): Promise<T | null>;
 }

@@ -1,0 +1,14 @@
+{
+ "generated": "2026-11-15T15:38:53.138Z",
+ "total_files": 818,
+ "by_category": {
+  "structured-tabular": 669,
+  "archive": 60,
+  "spreadsheet": 43,
+  "document-pdf": 37,
+  "structured-json": 6,
+  "other": 2,
+  "code-notebook": 1
+ },
+ "total_bytes": 14256272132
+}

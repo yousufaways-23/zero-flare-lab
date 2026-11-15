@@ -5,28 +5,47 @@
 
 import { getToolCatalogue, executeTool, type ScenarioToolContext, type ToolResult } from "@/lib/agent/tools";
 import { geminiProvider, geminiToolSubsetNames, runGeminiAgent } from "@/lib/agent/gemini";
+import { getEnvironmentProfile } from "@/lib/science/environments";
 import { getBindings } from "@/lib/server/bindings";
 import { guardPublicHttpUrl, safeFetch } from "@/lib/server/safe-fetch";
 
-// Turn-scoped Gemini artifacts: set when Route 0 runs, consumed by runAgent to
-// merge trace/charts/uiActions into the AgentResponse (request-scoped, no
-// concurrency leak because Node handles each request synchronously through the
-// agent's own closure).
-let currentScenarioContext: ScenarioToolContext | null = null;
-let lastGeminiTrace: { name: string; summary: string; provenance: string; ok: boolean }[] = [];
-let lastGeminiCharts: unknown[] = [];
-let lastGeminiActions: Record<string, unknown>[] = [];
+// Request-scoped agent state (research doc §7.3): every runAgent call owns an
+// AgentRequestState instance passed explicitly through the provider chain.
+// Mutable module-level state was removed — concurrent requests can no longer
+// observe or overwrite each other's scenario context, tool traces, charts or
+// UI actions.
+export interface AgentRequestState {
+  scenarioContext: ScenarioToolContext | null;
+  geminiTrace: { name: string; summary: string; provenance: string; ok: boolean }[];
+  geminiCharts: unknown[];
+  geminiActions: Record<string, unknown>[];
+}
 import type { ChartSpec } from "@/lib/app-store";
 
-/** Environment id → scenario physics seed (kPa from the challenge-documented concepts). */
-const ENV_SCENARIO: Record<string, { gravity: number; o2: number; pressureKpa: number; stationType: string }> = {
-  earth: { gravity: 1, o2: 0.21, pressureKpa: 101.3, stationType: "spacecraft-cabin" },
-  iss: { gravity: 1e-6, o2: 0.21, pressureKpa: 101.3, stationType: "iss-module" },
-  moon: { gravity: 0.166, o2: 0.3, pressureKpa: 70.3, stationType: "lunar-habitat" },
-  mars: { gravity: 0.38, o2: 0.21, pressureKpa: 70.3, stationType: "pressurized-rover" },
-  spacecraft: { gravity: 1e-6, o2: 0.21, pressureKpa: 101.3, stationType: "spacecraft-cabin" },
-  spacesuit: { gravity: 1e-6, o2: 1.0, pressureKpa: 29.6, stationType: "spacecraft-cabin" },
-};
+/** Environment id → scenario physics seed, from the canonical registry
+ *  (src/lib/science/environments.ts — research doc §4.7). Every profile here
+ *  states its source type; pressurized Mars profiles are design assumptions,
+ *  never "the Mars atmosphere". */
+const ENV_SCENARIO: Record<string, { gravity: number; o2: number; pressureKpa: number; stationType: string; profileId: string; profileLabel: string }> = Object.fromEntries(
+  [
+    ["earth", "earth"],
+    ["iss", "iss"],
+    ["moon", "moon_habitat"],
+    ["mars", "mars_rover"],
+    ["spacecraft", "spacecraft"],
+    ["spacesuit", "spacesuit"],
+  ].map(([legacyId, profileId]) => {
+    const pr = getEnvironmentProfile(profileId)!;
+    return [legacyId, {
+      gravity: pr.gravityG,
+      o2: pr.oxygenMoleFraction ?? 0.21,
+      pressureKpa: pr.totalPressureKpa ?? 101.3,
+      stationType: pr.stationType,
+      profileId: pr.id,
+      profileLabel: pr.label,
+    }];
+  }),
+);
 
 /** Build the request-scoped scenario tool context (CODEX Phase 2 — replaces
  *  the former module-global setScenarioToolContext; each request gets an
@@ -263,32 +282,32 @@ async function callWorkersAI(systemPrompt: string, messages: ChatTurn[]): Promis
 export async function callLLM(
   systemPrompt: string,
   messages: ChatTurn[],
-  opts: { nativePrompt?: string; plain?: boolean } = {},
+  opts: { nativePrompt?: string; plain?: boolean; state?: AgentRequestState } = {},
 ): Promise<string | null> {
   // Route 0 — Gemini native tool-calling agent (CODEX Phase 3; preferred free tier).
   // The reply text is produced inside runGeminiAgent's loop; trace/charts/actions
-  // are captured for the current invocation via module-scoped turn state set by
-  // runAgent before calling callLLM. `plain` skips Route 0 for internal prompts
-  // (e.g. the post-tool synthesizer) that are not agent turns.
+  // are captured in the REQUEST-scoped state object and consumed by runAgent.
+  // `plain` skips Route 0 for internal prompts (e.g. the post-tool synthesizer)
+  // that are not agent turns.
   const gem = geminiProvider();
-  if (gem.enabled && !opts.plain) {
+  if (gem.enabled && !opts.plain && opts.state) {
     try {
       const agent = await runGeminiAgent(opts.nativePrompt ?? systemPrompt, messages, async (name, args) => {
         const { executeTool } = await import("@/lib/agent/tools");
-        return executeTool(name, args, currentScenarioContext);
+        return executeTool(name, args, opts.state!.scenarioContext);
       }, { maxRounds: 5 });
       if (agent.reply) {
-        lastGeminiTrace = agent.toolTrace;
-        lastGeminiCharts = agent.charts;
-        lastGeminiActions = agent.uiActions;
+        opts.state.geminiTrace = agent.toolTrace;
+        opts.state.geminiCharts = agent.charts;
+        opts.state.geminiActions = agent.uiActions;
         return agent.reply;
       }
       if (agent.toolTrace.length > 0) {
         // the loop ran real tools but exhausted its rounds before composing the
         // final text — surface the trace honestly instead of "unavailable"
-        lastGeminiTrace = agent.toolTrace;
-        lastGeminiCharts = agent.charts;
-        lastGeminiActions = agent.uiActions;
+        opts.state.geminiTrace = agent.toolTrace;
+        opts.state.geminiCharts = agent.charts;
+        opts.state.geminiActions = agent.uiActions;
         const lines = agent.toolTrace
           .map((t, i) => `${i + 1}. **${t.name}** — ${t.summary}`)
           .join("\n");
@@ -387,35 +406,36 @@ export async function runAgent(messages: ChatTurn[], ctx: AgentContext): Promise
   const systemPrompt = buildSystemPrompt(ctx);
   const nativePrompt = buildSystemPrompt(ctx, { nativeToolCalling: true });
 
-  // CODEX Phase 2 — request-scoped scenario context (replaces the former
-  // module-global setScenarioToolContext): derived from the validated request
-  // and passed through the tool-execution closure, never stored on a module.
-  const scenarioContext = buildScenarioContext(ctx);
-  currentScenarioContext = scenarioContext;
-  lastGeminiTrace = [];
-  lastGeminiCharts = [];
-  lastGeminiActions = [];
+  // Request-scoped state (research doc §7.3): scenario context + Gemini
+  // artifacts live in this per-request object and are passed explicitly to
+  // callLLM — concurrent requests can never exchange context or artifacts.
+  const state: AgentRequestState = {
+    scenarioContext: buildScenarioContext(ctx),
+    geminiTrace: [],
+    geminiCharts: [],
+    geminiActions: [],
+  };
 
-  const first = await callLLM(systemPrompt, messages.slice(-12), { nativePrompt });
+  const first = await callLLM(systemPrompt, messages.slice(-12), { nativePrompt, state });
 
   if (first === null) {
     // LLM unavailable — fall back to a graceful deterministic notice (tools stay usable via UI).
     // If Route 0 (Gemini) produced artifacts before failing, surface them honestly.
-    const hadGeminiArtifacts = lastGeminiTrace.length > 0 || lastGeminiCharts.length > 0;
+    const hadGeminiArtifacts = state.geminiTrace.length > 0 || state.geminiCharts.length > 0;
     return {
       reply: "The AI service is momentarily unavailable. You can still use the sections directly — Investigations, Compare, Scenarios, 3D Lab and the equation registry compute everything deterministically without the LLM. Please retry in a moment.",
-      toolTrace: hadGeminiArtifacts ? lastGeminiTrace.map((t) => ({ name: t.name, args: {}, summary: t.summary, provenance: t.provenance, ok: t.ok })) : [],
-      charts: (lastGeminiCharts as ChartSpec[]) ?? [],
-      uiActions: lastGeminiActions,
+      toolTrace: hadGeminiArtifacts ? state.geminiTrace.map((t) => ({ name: t.name, args: {}, summary: t.summary, provenance: t.provenance, ok: t.ok })) : [],
+      charts: (state.geminiCharts as ChartSpec[]) ?? [],
+      uiActions: state.geminiActions,
       sources: [],
       mode: hadGeminiArtifacts ? "tool-driven" : "natural",
       llm: "unavailable",
     };
   }
   // Route 0 artifacts (Gemini native tool calling) merge into the response trace
-  const geminiTrace = lastGeminiTrace;
-  const geminiCharts = lastGeminiCharts as ChartSpec[];
-  const geminiActions = lastGeminiActions;
+  const geminiTrace = state.geminiTrace;
+  const geminiCharts = state.geminiCharts as ChartSpec[];
+  const geminiActions = state.geminiActions;
 
   let current = first;
   const toolTrace: AgentResponse["toolTrace"] = [];
@@ -432,7 +452,7 @@ export async function runAgent(messages: ChatTurn[], ctx: AgentContext): Promise
     const roundStart = results.length;
     for (const call of block.toolCalls.slice(0, 4)) {
       if (toolTrace.length >= 6) break; // bounded tool budget
-      const res = await executeTool(call.name, call.args ?? {}, scenarioContext);
+      const res = await executeTool(call.name, call.args ?? {}, state.scenarioContext);
       results.push(res);
       toolTrace.push({ name: call.name, args: call.args ?? {}, summary: res.summary, provenance: res.provenance, ok: res.ok });
       if (res.chart) charts.push(res.chart);

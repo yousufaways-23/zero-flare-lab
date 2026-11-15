@@ -133,6 +133,7 @@ export async function GET() {
     const card = flexExtinctionModelCardJson as {
       reverification?: { reproductionCheck?: { pass?: boolean; coefMaxAbsDelta?: number; groupedAucDelta?: number } };
     };
+    const lb = Array.isArray(exp.leaderboard) ? exp.leaderboard : [];
     const rv = card.reverification;
     const expOk =
       exp.experiment_id === "M7-flex-extinction-20261114" &&
@@ -145,7 +146,7 @@ export async function GET() {
       id: "ml-experiment-registry",
       label: "ML experiment registry: flex-extinction-v2 reproduction + multi-candidate comparison (M7)",
       pass: expOk && reproOk,
-      detail: `reproduction coefΔ=${rv?.reproductionCheck?.coefMaxAbsDelta}, aucΔ=${rv?.reproductionCheck?.groupedAucDelta}; ${exp.leaderboard.length} candidates compared under group-aware CV; decision: ${exp.championDecision}`,
+      detail: `reproduction coefΔ=${rv?.reproductionCheck?.coefMaxAbsDelta}, aucΔ=${rv?.reproductionCheck?.groupedAucDelta}; ${lb.length} candidates compared under group-aware CV; decision: ${exp.championDecision}`,
     });
   } catch (err) {
     checks.push({

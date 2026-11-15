@@ -229,7 +229,10 @@ async function extractHtmlDataUriImages(
   const totalDataUri = (html.match(/src\s*=\s*["']data:image\/[a-z]+;base64,/gi) ?? []).length;
   let sharpFn: ((b: Buffer) => Promise<{ width?: number; height?: number }>) | null = null;
   try {
-    const sharpMod = (await import("sharp")).default as unknown as (
+    // Optional native dependency: absent on the edge release — wrapped import
+    // via variable specifier keeps the build honest without a hard dependency.
+    const sharpSpecifier = "sharp";
+    const sharpMod = (await import(sharpSpecifier)).default as unknown as (
       b: Buffer,
     ) => { metadata: () => Promise<{ width?: number; height?: number }> };
     sharpFn = async (b: Buffer) => sharpMod(b).metadata();
@@ -1014,7 +1017,8 @@ async function extractImage(input: RawInput): Promise<ExtractOutput> {
   const rel = `${mediaDirRel}/${input.fileId}-image.${ext}`;
   await fs.writeFile(path.join(process.cwd(), rel), input.bytes);
   try {
-    const sharp = (await import("sharp")).default;
+    const sharpSpecifier2 = "sharp";
+    const sharp = (await import(sharpSpecifier2)).default;
     const meta = await sharp(input.bytes).metadata();
     const text = `Image file ${input.name}: ${meta.format ?? ext}, ${meta.width}×${meta.height} px${meta.hasAlpha ? ", alpha channel" : ""}. Bytes preserved in raw layer; pixels were NOT analyzed by this registration step.`;
     const fullTextPath = `data/extracted/batches/${input.batchId}/${input.fileId}-image.txt`;

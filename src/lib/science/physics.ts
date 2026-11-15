@@ -27,38 +27,52 @@ export function flameAspect(g: number): number {
 }
 
 export interface FlowRegime {
-  id: "diffusion" | "buoyancy" | "ventilation" | "mixed";
+  id: "forced_flow_dominated" | "diffusion_dominated" | "mixed" | "not_classifiable";
   label: string;
   detail: string;
 }
 
+/** Buoyancy state is a property of gravity alone — distinct from the
+ *  transport regime, which also depends on forced ventilation. Low gravity
+ *  suppresses buoyancy; it does NOT by itself make the flow diffusion-only
+ *  (spacecraft ventilation still supplies oxidizer by advection). */
+export type BuoyancyState = "buoyancy_suppressed" | "buoyancy_relevant" | "unknown";
+
+export function buoyancyState(g: number | null | undefined): BuoyancyState {
+  if (g === null || g === undefined || !Number.isFinite(g) || g < 0) return "unknown";
+  return g <= 0.02 ? "buoyancy_suppressed" : "buoyancy_relevant";
+}
+
 /**
  * Which transport mechanism sets the flow at the flame.
+ * Requires BOTH gravity and ventilation to classify; with either missing the
+ * result is honestly "not_classifiable" — never a guessed regime.
  */
-export function flowRegime(g: number, ventilationCmS: number): FlowRegime {
-  const ub = buoyantVelocityCm(g);
-  if (g <= 0.02) {
+export function flowRegime(g: number | null | undefined, ventilationCmS: number | null | undefined): FlowRegime {
+  if (g === null || g === undefined || !Number.isFinite(g) || g < 0 ||
+      ventilationCmS === null || ventilationCmS === undefined || !Number.isFinite(ventilationCmS) || ventilationCmS < 0) {
     return {
-      id: "diffusion",
-      label: "Diffusion-limited",
+      id: "not_classifiable",
+      label: "Not classifiable",
       detail:
-        "No buoyancy. Oxygen reaches the reaction zone by diffusion and by whatever the ventilation system supplies. A quiescent microgravity flame has no fresh-oxygen engine of its own.",
+        "Gravity or ventilation input is missing or invalid, so the transport regime cannot be classified from evidence. Provide both values to obtain a regime.",
+    };
+  }
+  const ub = buoyantVelocityCm(g);
+  if (ub * 3 < ventilationCmS) {
+    return {
+      id: "forced_flow_dominated",
+      label: "Forced-flow-dominated",
+      detail:
+        "The fan outruns buoyancy: forced flow sets the residence time, and flame behaviour tracks ventilation rather than gravity. This remains true in microgravity — suppressed buoyancy does not imply a diffusion-only flame when ventilation is present.",
     };
   }
   if (ub > ventilationCmS * 3) {
     return {
-      id: "buoyancy",
-      label: "Buoyancy-dominated",
+      id: "diffusion_dominated",
+      label: "Diffusion-limited",
       detail:
-        "The buoyant plume is several times faster than the fan, so the imposed flow barely changes the flame's transport. Terrestrial screening data transfers to this condition more readily.",
-    };
-  }
-  if (ub * 3 < ventilationCmS) {
-    return {
-      id: "ventilation",
-      label: "Ventilation-dominated",
-      detail:
-        "The fan outruns buoyancy: forced flow sets the residence time, and flame behaviour tracks ventilation rather than gravity.",
+        "The buoyant plume is several times faster than the imposed flow, so advection barely changes the flame's transport and oxidizer arrival is diffusion/buoyancy-limited. (Terrestrial quiescent conditions.)",
     };
   }
   return {

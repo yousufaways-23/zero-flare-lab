@@ -636,6 +636,15 @@ function EquationRegistryPanel() {
                 </DialogTitle>
                 <DialogDescription className="font-mono text-xs">{openEq.statement}</DialogDescription>
               </DialogHeader>
+              {/* Layered validation state (research doc §4.2) — a passing unit
+                  test is not scientific validity; show each layer explicitly. */}
+              <p className="text-[11px] leading-relaxed text-muted-foreground">
+                Validation: implementation <span className="font-mono">{openEq.validation.implementation}</span> ·
+                unit tests <span className="font-mono">{openEq.validation.unitTests}</span> ·
+                independent reference check <span className="font-mono">{openEq.validation.referenceCheck}</span> ·
+                domain review <span className="font-mono">{openEq.validation.domainReview}</span> ·
+                empirical validation <span className="font-mono">{openEq.validation.empiricalValidation}</span>.
+              </p>
               <p className="text-xs leading-relaxed text-muted-foreground">{openEq.summary}</p>
 
               <div className="overflow-hidden rounded-md border border-border/60">

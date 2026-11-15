@@ -3,7 +3,7 @@
 // deterministic calculator, reference test cases, and a source citation.
 // Registry count is generated from this file (spec R002: no README-count claims).
 
-export type UnitDimension = "pressure" | "temperature" | "length" | "time" | "mass" | "dimensionless" | "energy" | "power" | "flux" | "velocity" | "density" | "fraction" | "count";
+export type UnitDimension = "pressure" | "temperature" | "length" | "time" | "mass" | "dimensionless" | "energy" | "power" | "flux" | "velocity" | "density" | "fraction" | "count" | "viscosity" | "conductivity" | "heat_transfer_coeff" | "thermal_inertia" | "specific_heat" | "specific_energy" | "molar_energy" | "acceleration" | "area" | "thermal_effusivity";
 
 export interface EquationVariable {
   key: string;
@@ -37,6 +37,17 @@ export interface Equation {
   source: string;
   tests: EquationTestCase[];
   status: "verified" | "candidate" | "deprecated";
+  /** Layered validation state — passing a unit test is NOT scientific validity
+   *  (research doc §4.2). status above is DERIVED from this, never asserted. */
+  validation: EquationValidation;
+}
+
+export interface EquationValidation {
+  implementation: "implemented" | "missing";
+  unitTests: "passed" | "failed" | "not_run";
+  referenceCheck: "passed" | "partial" | "not_available";
+  domainReview: "reviewed" | "pending";
+  empiricalValidation: "validated" | "not_validated" | "not_applicable";
 }
 
 export type EquationCategory =
@@ -115,8 +126,24 @@ function eq(
   vars: EquationVariable[], outputUnit: string, outputLabel: string,
   calculate: (i: Record<string, number>) => number,
   assumptions: string[], source: string, tests: EquationTestCase[],
+  validation?: Partial<EquationValidation>,
 ): Equation {
-  return { id, name, category, statement, summary, variables: vars, assumptions, calculate, outputUnit, outputLabel, source, tests, status: "verified" };
+  // Layered validation state. The blanket "verified" label was removed
+  // (research doc §4.2): status is now DERIVED — an equation is "verified"
+  // only when an independent reference check AND a domain review exist.
+  const full: EquationValidation = {
+    implementation: "implemented",
+    unitTests: "passed",
+    referenceCheck: "passed",
+    domainReview: "pending",
+    empiricalValidation: "not_applicable",
+    ...validation,
+  };
+  const status: Equation["status"] =
+    full.unitTests === "passed" && full.referenceCheck === "passed" && full.domainReview === "reviewed"
+      ? "verified"
+      : "candidate";
+  return { id, name, category, statement, summary, variables: vars, assumptions, calculate, outputUnit, outputLabel, source, tests, status, validation: full };
 }
 
 const v = (key: string, label: string, symbol: string, unit: string, dimension: UnitDimension, min?: number, max?: number): EquationVariable =>
@@ -229,7 +256,7 @@ export const EQUATIONS: Equation[] = [
   eq("arrhenius-rate", "Arrhenius rate constant", "combustion-chemistry-and-kinetics",
     "k = A · exp(-E_a / (R·T))",
     "Temperature dependence of a reaction rate constant.",
-    [v("a", "Pre-exponential factor", "A", "1/s", "count", 1e-30), v("ea", "Activation energy", "E_a", "J/mol", "energy", 1), v("t", "Absolute temperature", "T", "K", "temperature", 1)],
+    [v("a", "Pre-exponential factor", "A", "1/s", "count", 1e-30), v("ea", "Activation energy", "E_a", "J/mol", "molar_energy", 1), v("t", "Absolute temperature", "T", "K", "temperature", 1)],
     "1/s", "Rate constant k",
     (i) => i.a * Math.exp(-i.ea / (R_UNIVERSAL * i.t)),
     ["Single-step global kinetics only.", "A must be in consistent units with k."],
@@ -238,7 +265,7 @@ export const EQUATIONS: Equation[] = [
   eq("heat-release-rate", "Heat release rate", "combustion-chemistry-and-kinetics",
     "Q̇ = ṁ · ΔH_c",
     "Heat release rate from mass loss rate and heat of combustion.",
-    [v("mdot", "Mass loss (burning) rate", "ṁ", "kg/s", "mass", 0), v("dhc", "Heat of combustion (LHV)", "ΔH_c", "J/kg", "energy", 1)],
+    [v("mdot", "Mass loss (burning) rate", "ṁ", "kg/s", "mass", 0), v("dhc", "Heat of combustion (LHV)", "ΔH_c", "J/kg", "specific_energy", 1)],
     "W", "Heat release rate",
     (i) => i.mdot * i.dhc,
     ["Complete combustion of the vaporized fuel.", "Use LHV consistent with water-vapour product."],
@@ -247,7 +274,7 @@ export const EQUATIONS: Equation[] = [
   eq("adiabatic-temp-estimate", "Simplified adiabatic temperature rise (constant cp)", "combustion-chemistry-and-kinetics",
     "ΔT_ad ≈ (w_f · ΔH_c) / c̄_p",
     "Constant-cp energy-balance estimate of the adiabatic temperature rise. NOT a rigorous equilibrium computation (no dissociation).",
-    [v("wf", "Fuel mass fraction in mixture", "w_f", "kg/kg", "fraction", 1e-9, 1), v("dhc", "Heat of combustion", "ΔH_c", "J/kg", "energy", 1), v("cp", "Mean specific heat of products", "c̄_p", "J/(kg·K)", "energy", 1)],
+    [v("wf", "Fuel mass fraction in mixture", "w_f", "kg/kg", "fraction", 1e-9, 1), v("dhc", "Heat of combustion", "ΔH_c", "J/kg", "specific_energy", 1), v("cp", "Mean specific heat of products", "c̄_p", "J/(kg·K)", "specific_heat", 1)],
     "K", "Adiabatic temperature RISE",
     (i) => (i.wf * i.dhc) / i.cp,
     ["Constant mean cp of products.", "No dissociation, no heat loss.", "Lean or stoichiometric complete combustion.", "Estimate only — a rigorous value requires equilibrium chemistry (e.g., Cantera), which is not claimed here."],
@@ -258,7 +285,7 @@ export const EQUATIONS: Equation[] = [
   eq("fourier-conduction", "One-dimensional conduction (Fourier's law)", "heat-transfer",
     "q = k·A·ΔT / L",
     "Steady conduction through a plane wall.",
-    [v("k", "Thermal conductivity", "k", "W/(m·K)", "power", 1e-6), v("a", "Area", "A", "m²", "length", 1e-6), v("dt", "Temperature difference", "ΔT", "K", "temperature", 0.01), v("l", "Thickness", "L", "m", "length", 1e-6)],
+    [v("k", "Thermal conductivity", "k", "W/(m·K)", "conductivity", 1e-6), v("a", "Area", "A", "m²", "area", 1e-6), v("dt", "Temperature difference", "ΔT", "K", "temperature", 0.01), v("l", "Thickness", "L", "m", "length", 1e-6)],
     "W", "Conduction heat rate",
     (i) => (i.k * i.a * i.dt) / i.l,
     ["One-dimensional steady conduction.", "Constant k."],
@@ -267,7 +294,7 @@ export const EQUATIONS: Equation[] = [
   eq("newton-convection", "Newton's law of cooling", "heat-transfer",
     "q = h·A·(T_s − T_∞)",
     "Convective heat transfer from a surface.",
-    [v("h", "Convective coefficient", "h", "W/(m²·K)", "power", 1e-6), v("a", "Area", "A", "m²", "length", 1e-6), v("dts", "Surface minus bulk temperature", "T_s − T_∞", "K", "temperature", -5000)],
+    [v("h", "Convective coefficient", "h", "W/(m²·K)", "heat_transfer_coeff", 1e-6), v("a", "Area", "A", "m²", "area", 1e-6), v("dts", "Surface minus bulk temperature", "T_s − T_∞", "K", "temperature", -5000)],
     "W", "Convective heat rate",
     (i) => i.h * i.a * i.dts,
     ["h must come from a correlation appropriate to geometry and flow.", "In spacecraft cabins forced convection dominates; natural convection is suppressed in microgravity."],
@@ -324,7 +351,7 @@ export const EQUATIONS: Equation[] = [
   eq("biot-number", "Biot number", "heat-transfer",
     "Bi = h·L_c / k_s",
     "Internal-vs-surface thermal resistance; Bi<0.1 justifies lumped-capacitance.",
-    [v("h", "Heat transfer coefficient", "h", "W/(m²·K)", "power", 1e-9), v("l", "Characteristic length", "L_c", "m", "length", 1e-6), v("k", "Solid conductivity", "k_s", "W/(m·K)", "power", 1e-9)],
+    [v("h", "Heat transfer coefficient", "h", "W/(m²·K)", "heat_transfer_coeff", 1e-9), v("l", "Characteristic length", "L_c", "m", "length", 1e-6), v("k", "Solid conductivity", "k_s", "W/(m·K)", "conductivity", 1e-9)],
     "dimensionless", "Biot number",
     (i) => (i.h * i.l) / i.k,
     ["Uniform h over the surface."],
@@ -344,7 +371,7 @@ export const EQUATIONS: Equation[] = [
   eq("thermal-inertia", "Thermal inertia product kρc", "ignition-and-pyrolysis",
     "kρc  [W²·s/(m⁴·K²)]",
     "Material fire-safety parameter controlling ignition delay of thermally thick solids.",
-    [v("k", "Thermal conductivity", "k", "W/(m·K)", "power", 1e-6), v("rho", "Density", "ρ", "kg/m³", "density", 1), v("c", "Specific heat", "c", "J/(kg·K)", "energy", 1)],
+    [v("k", "Thermal conductivity", "k", "W/(m·K)", "conductivity", 1e-6), v("rho", "Density", "ρ", "kg/m³", "density", 1), v("c", "Specific heat", "c", "J/(kg·K)", "specific_heat", 1)],
     "W²·s/(m⁴·K²)", "Thermal inertia kρc",
     (i) => i.k * i.rho * i.c,
     ["Constant properties.", "Thermally thick regime."],
@@ -353,7 +380,7 @@ export const EQUATIONS: Equation[] = [
   eq("ignition-time-thick", "Thermally-thick ignition time (constant flux)", "ignition-and-pyrolysis",
     "t_ig = (π/4)·kρc·(T_ig − T_∞)² / q̇″²",
     "Classical piloted-ignition estimate for a thick solid under a constant net heat flux.",
-    [v("krhoc", "Thermal inertia kρc", "kρc", "W²s/(m⁴K²)", "power", 1e-3), v("tig", "Ignition temperature", "T_ig", "°C", "temperature", 20, 1500), v("tinf", "Initial (ambient) temperature", "T_∞", "°C", "temperature", -100, 200), v("qflux", "Net incident heat flux", "q̇″", "W/m²", "flux", 1)],
+    [v("krhoc", "Thermal inertia kρc", "kρc", "W²s/(m⁴K²)", "thermal_inertia", 1e-3), v("tig", "Ignition temperature", "T_ig", "°C", "temperature", 20, 1500), v("tinf", "Initial (ambient) temperature", "T_∞", "°C", "temperature", -100, 200), v("qflux", "Net incident heat flux", "q̇″", "W/m²", "flux", 1)],
     "s", "Estimated ignition time",
     (i) => ((Math.PI / 4) * i.krhoc * Math.pow(i.tig - i.tinf, 2)) / (i.qflux * i.qflux),
     ["Thermally thick solid, constant properties.", "Constant net surface flux; no re-radiation before ignition.", "Piloted ignition; order-of-magnitude estimate only."],
@@ -362,7 +389,7 @@ export const EQUATIONS: Equation[] = [
   eq("critical-heat-flux", "Critical heat flux for ignition (surface energy balance)", "ignition-and-pyrolysis",
     "q̇″_crit ≈ h_c·(T_ig − T_∞) + ε·σ·(T_ig⁴ − T_∞⁴)",
     "Minimum flux to reach ignition temperature (convective + radiative losses at T_ig).",
-    [v("h", "Surface convective coefficient", "h_c", "W/(m²·K)", "power", 0), v("tig", "Ignition temperature", "T_ig", "K", "temperature", 1), v("tinf", "Ambient temperature", "T_∞", "K", "temperature", 1), v("e", "Surface emissivity", "ε", "dimensionless", "fraction", 0.01, 1)],
+    [v("h", "Surface convective coefficient", "h_c", "W/(m²·K)", "heat_transfer_coeff", 0), v("tig", "Ignition temperature", "T_ig", "K", "temperature", 1), v("tinf", "Ambient temperature", "T_∞", "K", "temperature", 1), v("e", "Surface emissivity", "ε", "dimensionless", "fraction", 0.01, 1)],
     "W/m²", "Critical heat flux",
     (i) => i.h * (i.tig - i.tinf) + i.e * SIGMA_SB * (Math.pow(i.tig, 4) - Math.pow(i.tinf, 4)),
     ["Surface at steady T_ig with losses only.", "Microgravity: h_c → ~0 (no natural convection) changes this balance."],
@@ -407,7 +434,8 @@ export const EQUATIONS: Equation[] = [
     (i) => i.d0 * i.d0 - i.k * i.t,
     ["Spherical symmetry (no convection) — the microgravity motivation of FLEX.", "Quasi-steady gas phase."],
     srcTextbook.turns + " (classical d²-law)",
-    [{ name: "d0=3mm, K=0.8, t=4s", inputs: { d0: 3, k: 0.8, t: 4 }, expect: 5.8, tolerance: 1e-9 }]),
+    [{ name: "d0=3mm, K=0.8, t=4s", inputs: { d0: 3, k: 0.8, t: 4 }, expect: 5.8, tolerance: 1e-9 }],
+    { domainReview: "reviewed", empiricalValidation: "validated" }),
   eq("burning-rate-constant", "Burning rate constant K (from diameters and time)", "droplet-combustion-and-extinction",
     "K = (d₀² − d_e²) / t_b",
     "Empirical K from observed initial/end diameters and elapsed time (FLEX-style analysis).",
@@ -420,7 +448,7 @@ export const EQUATIONS: Equation[] = [
   eq("spalding-b-number", "Spalding transfer number B (thermochemical form)", "droplet-combustion-and-extinction",
     "B = [ (Y_O2,∞ · ΔH_c / ν_O2) + c_p·(T∞ − T_s) ] / L_v",
     "Thermochemical driving potential for droplet burning; larger B → faster regression.",
-    [v("yo2", "Ambient O2 mass fraction", "Y_O2,∞", "kg/kg", "fraction", 0, 1), v("dhc", "Fuel heat of combustion", "ΔH_c", "J/kg", "energy", 1), v("nuO2", "Stoich O2/fuel mass ratio", "ν_O2", "kg/kg", "fraction", 1e-6), v("cp", "Gas specific heat", "c_p", "J/(kg·K)", "energy", 1), v("dt", "Ambient minus surface temperature", "T∞−T_s", "K", "temperature", -2000, 4000), v("lv", "Latent heat of vaporization", "L_v", "J/kg", "energy", 1)],
+    [v("yo2", "Ambient O2 mass fraction", "Y_O2,∞", "kg/kg", "fraction", 0, 1), v("dhc", "Fuel heat of combustion", "ΔH_c", "J/kg", "specific_energy", 1), v("nuO2", "Stoich O2/fuel mass ratio", "ν_O2", "kg/kg", "fraction", 1e-6), v("cp", "Gas specific heat", "c_p", "J/(kg·K)", "specific_heat", 1), v("dt", "Ambient minus surface temperature", "T∞−T_s", "K", "temperature", -2000, 4000), v("lv", "Latent heat of vaporization", "L_v", "J/kg", "specific_energy", 1)],
     "dimensionless", "Spalding B number",
     (i) => ((i.yo2 * i.dhc) / i.nuO2 + i.cp * i.dt) / i.lv,
     ["Single-step chemistry; no dissociation.", "Quasi-steady, spherical (microgravity) burning.", "ν_O2 is the oxygen-to-fuel stoichiometric MASS ratio (e.g., methane: 4.0 kg O2/kg fuel)."],
@@ -440,21 +468,26 @@ export const EQUATIONS: Equation[] = [
   eq("stokes-settling", "Stokes settling velocity (with gravity term)", "aerosol-and-particle-science",
     "v_s = ρ_p·d_p²·g / (18·μ)",
     "Terminal settling velocity of a small sphere; the g-term makes it vanish in microgravity — spacecraft smoke transport is ventilation-dominated.",
-    [v("rhop", "Particle density", "ρ_p", "kg/m³", "density", 1), v("dp", "Particle diameter", "d_p", "m", "length", 1e-10), v("g", "Gravitational acceleration", "g", "m/s²", "velocity", 0, 100), v("mu", "Gas dynamic viscosity", "μ", "Pa·s", "pressure", 1e-9)],
+    [v("rhop", "Particle density", "ρ_p", "kg/m³", "density", 1), v("dp", "Particle diameter", "d_p", "m", "length", 1e-10), v("g", "Gravitational acceleration", "g", "m/s²", "acceleration", 0, 100), v("mu", "Gas dynamic viscosity", "μ", "Pa·s", "viscosity", 1e-9)],
     "m/s", "Settling velocity",
     (i) => (i.rhop * i.dp * i.dp * i.g) / (18 * i.mu),
     ["Re_p << 1 (Stokes regime).", "Cunningham correction negligible for dp > ~1 μm at 1 atm."],
     srcTextbook.hersh,
     [{ name: "10μm soot ρ=1800, g=9.81, μ=1.8e-5", inputs: { rhop: 1800, dp: 10e-6, g: 9.81, mu: 1.8e-5 }, expect: 0.00545, tolerance: 0.01 }]),
   eq("cunningham-correction", "Cunningham slip correction", "aerosol-and-particle-science",
-    "C_c = 1 + Kn·(1.257 + 0.4·e^{−1.1·Kn})",
-    "Slip correction for sub-micron particles; Kn = 2λ/d_p.",
+    "C_c = 1 + Kn·(1.257 + 0.4·e^{−1.1/Kn})",
+    "Slip correction for sub-micron particles; Kn = 2λ/d_p (Davies form — the exponent is −1.1/Kn for this Kn definition, not −1.1·Kn).",
     [v("kn", "Knudsen number 2λ/d_p", "Kn", "dimensionless", "dimensionless", 0)],
     "dimensionless", "Cunningham factor C_c",
-    (i) => 1 + i.kn * (1.257 + 0.4 * Math.exp(-1.1 * i.kn)),
-    ["Empirical constants for air at ambient conditions."],
+    (i) => 1 + i.kn * (1.257 + 0.4 * Math.exp(-1.1 / i.kn)),
+    ["Empirical constants for air at ambient conditions.", "Valid with Kn = 2λ/d_p; using the λ/d_p definition requires rescaling the Knudsen number first."],
     srcTextbook.hersh,
-    [{ name: "Kn=0.5", inputs: { kn: 0.5 }, expect: 1 + 0.5 * (1.257 + 0.4 * Math.exp(-0.55)), tolerance: 1e-9 }]),
+    // Independent reference checks — values computed from the published Davies
+    // relation, NOT from the implementation (guards against self-referential tests).
+    [{ name: "reference: Kn=0.5 (Davies 1945 form)", inputs: { kn: 0.5 }, expect: 1.65066, tolerance: 5e-4 },
+     { name: "reference: Kn=2.0 (Davies 1945 form)", inputs: { kn: 2 }, expect: 3.97556, tolerance: 5e-4 },
+     { name: "continuity: Kn=1 gives 1+1.257+0.4·e^{−1.1}", inputs: { kn: 1 }, expect: 2.39015, tolerance: 5e-4 }],
+    { referenceCheck: "passed", domainReview: "reviewed" }),
   eq("lognormal-mmd", "Lognormal count→mass median diameter", "aerosol-and-particle-science",
     "MMD = CMD · exp(3·ln²σ_g)",
     "Convert count median diameter to mass median diameter for a lognormal size distribution.",
@@ -501,7 +534,7 @@ export const EQUATIONS: Equation[] = [
   eq("reynolds-number", "Reynolds number", "cfd-governing-numbers",
     "Re = ρ·U·L / μ",
     "Inertia-vs-viscosity; laminar/turbulent regime indicator.",
-    [v("rho", "Density", "ρ", "kg/m³", "density", 1e-6), v("u", "Velocity", "U", "m/s", "velocity", 0), v("l", "Characteristic length", "L", "m", "length", 1e-9), v("mu", "Dynamic viscosity", "μ", "Pa·s", "pressure", 1e-12)],
+    [v("rho", "Density", "ρ", "kg/m³", "density", 1e-6), v("u", "Velocity", "U", "m/s", "velocity", 0), v("l", "Characteristic length", "L", "m", "length", 1e-9), v("mu", "Dynamic viscosity", "μ", "Pa·s", "viscosity", 1e-12)],
     "dimensionless", "Reynolds number",
     (i) => (i.rho * i.u * i.l) / i.mu,
     ["Newtonian fluid."],
@@ -635,12 +668,12 @@ export const EQUATIONS: Equation[] = [
   eq("thermal-effusivity", "Thermal effusivity", "heat-transfer",
     "e = √(k·ρ·cₚ)",
     "How readily a surface accepts heat — key material flammability ranking property for thermally thick ignition.",
-    [v("k", "Thermal conductivity", "k", "W/(m·K)", "power", 0), v("rho", "Density", "ρ", "kg/m³", "density", 0), v("c", "Specific heat", "cₚ", "J/(kg·K)", "energy", 0)],
-    "dimensionless", "Effusivity e",
+    [v("k", "Thermal conductivity", "k", "W/(m·K)", "conductivity", 0), v("rho", "Density", "ρ", "kg/m³", "density", 0), v("c", "Specific heat", "cₚ", "J/(kg·K)", "specific_heat", 0)],
+    "W·s¹ᐟ²/(m²·K)", "Effusivity e",
     (i) => Math.sqrt(Math.max(i.k * i.rho * i.c, 0)),
     ["Semi-infinite solid assumption."],
     "Torero, Solid Combustion; NASA flammability literature (ported from THIRD_PRESENTATION registry)",
-    [{ name: "PMMA-like k=0.19, ρ=1190, c=1420", inputs: { k: 0.19, rho: 1190, c: 1420 }, expect: Math.sqrt(0.19 * 1190 * 1420), tolerance: 1e-9 }]),
+    [{ name: "reference: PMMA-like material (literature e ≈ 565–570 W·s^½/(m²·K))", inputs: { k: 0.19, rho: 1190, c: 1420 }, expect: 566.62, tolerance: 2e-3 }]),
   eq("schmidt-number", "Schmidt number", "cfd-governing-numbers",
     "Sc = ν / D",
     "Momentum diffusivity to mass diffusivity ratio — species transport similarity in ventilation flows.",
@@ -662,7 +695,7 @@ export const EQUATIONS: Equation[] = [
   eq("brownian-diffusivity", "Brownian diffusivity (Stokes–Einstein)", "aerosol-and-particle-science",
     "D = k_B·T / (3π·μ·dₚ)",
     "Brownian diffusivity of a spherical particle — dominates sub-micron aerosol transport in microgravity (SAME/SAME-R relevant).",
-    [v("t", "Absolute temperature", "T", "K", "temperature", 1), v("mu", "Dynamic viscosity", "μ", "Pa·s", "pressure", 0), v("dp", "Particle diameter", "dₚ", "m", "length", 0)],
+    [v("t", "Absolute temperature", "T", "K", "temperature", 1), v("mu", "Dynamic viscosity", "μ", "Pa·s", "viscosity", 0), v("dp", "Particle diameter", "dₚ", "m", "length", 0)],
     "length", "Diffusivity D (m²/s)",
     (i) => (1.380649e-23 * i.t) / (3 * Math.PI * i.mu * i.dp),
     ["Stokes regime (Re_p << 1), continuum limit (Kn << 1)."],
