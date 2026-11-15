@@ -22,6 +22,7 @@ const SRC = [
   { from: "data/experiments", to: "public/corpus/data/experiments" },
   { from: "data/ml", to: "public/corpus/data/ml" },
   { from: "knowledge", to: "public/corpus/knowledge" },
+  { from: "paper-figures", to: "public/corpus/paper-figures" },
 ];
 
 let total = 0;
