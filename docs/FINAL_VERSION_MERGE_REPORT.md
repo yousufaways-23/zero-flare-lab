@@ -36,9 +36,9 @@ The final tree (`zero-flare/`) is the Original V7 rebuild upgraded with Second's
 ## 4. Acceptance journey (challenge §27) — implemented end-to-end
 
 1. **Mission** → environment journey with flight-proven vs concept labels, evidence coverage, ranked findings, authentic NASA media.
-2. **Investigations** → 24 PSI workspaces: overview, real EDA charts from recovered rows, equipment, media, equations, typed graph, gaps — all with SHA-256 provenance strips.
+2. **Investigations** → 24 PSI workspaces at merge time (25 in the current merged build): overview, real EDA charts from recovered rows, equipment, media, equations, typed graph, gaps — all with SHA-256 provenance strips.
 3. **Compare** → comparability gate verdict BEFORE the matrix; typed graph slices; gap discovery.
-4. **CIR-1** → 26 typed tools, context-aware, citations, inspectable traces; deterministic tools produce every number.
+4. **CIR-1** → 26 typed tools at merge time (42 in the current build — release manifest `agentTools: 42`), context-aware, citations, inspectable traces; deterministic tools produce every number.
 5. **Charts** → `generate_chart` renders only real recovered rows with sample size + provenance.
 6. **Calculations** → 63-equation registry, slider↔field two-way inputs, missing inputs refused.
 7. **Models** → applicability domains enforced (FLEX refuses >0.02 g); uncertainty and negative results visible.

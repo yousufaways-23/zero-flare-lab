@@ -12,7 +12,7 @@ CIR-1 (named for the Combustion Integrated Rack) is the platform's research copi
 4. grounded summarization — reply restricted to tool outputs; provenance cited inline; refusals explained; residual protocol fences stripped;
 5. context awareness — current view, environment (gravity/atmosphere seed), investigation + tab, facility screening state, equipment, scenario pillar injected server-side per request.
 
-## Tool namespaces (26 tools)
+## Tool namespaces (26 tools at the time of writing — the registry has since expanded to **42 typed tools**; release manifest `agentTools: 42` is the current source of truth)
 
 - **evidence**: search_evidence (BM25), list/get_investigation, get_table_schema, list_tables, query_dataset, eda_statistics, search_variables, get_findings, get_graph, get_atmospheres, get_equipment, search_media, get_source_registry
 - **science**: search_equations, calculate_equation, run_flex_model, run_cfig_model, model_validation_metrics, get_model_registry, analyze_fire_safety_scenario (NEW — deterministic facility engine with live context seeding), compare_comparability_gate (NEW)

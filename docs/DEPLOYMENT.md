@@ -2,9 +2,12 @@
 
 ## Live site
 
-- **URL:** https://zero-flare-lab.zcode.site (prefix `zero-flare-lab`; exact host printed by the deploy command / `zcode-site status`)
-- **Runtime:** ZCode Sites cloud (Debian 12, Node 24, 0.5 vCPU / 512 MB), Next.js standalone server on 0.0.0.0:3000
-- **Stage size:** 72 MB unpacked / 2,118 files (limits: 400 MB / 20,000 — previously blocked at 205 MB compressed, now pruned)
+- **URL (production):** https://zero-flare.yousuf-aways.workers.dev — Cloudflare Workers via
+  @opennextjs/cloudflare (Worker `zero-flare`, D1 database `zero-flare-lab`, Static Assets for
+  /corpus). This is the canonical owner production URL per the release manifest
+  (docs/data-audit/release-manifest.json → productionUrl).
+- **Historical note:** an earlier ZCode Sites sandbox host (`zero-flare-lab.zcode.site`) existed
+  during development; it is retired and NOT the production deployment.
 
 ## What was packaged (and what was not)
 

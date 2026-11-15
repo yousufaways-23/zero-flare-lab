@@ -28,7 +28,7 @@ CIR-1 `search_equations` (natural-language over the registry) + `calculate_equat
 
 ## Variable dictionary
 
-- `search_variables` tool enumerates canonical columns across all 22 tables with units parsed from NASA source headers, fill rates, min/max/mean.
+- `search_variables` tool enumerates canonical columns across all recovered tables (24 in the current merged build) with units parsed from NASA source headers, fill rates, min/max/mean.
 - Fuels: 9-fuel property library (NIST-sourced: MW, LHV, latent heat, stoichiometric O₂, boiling point) pre-fills calculators; changing fuel prefills inputs only — historical data never modified.
 - Atmospheres: 6 environments with gravity/pressure/O₂ + evidence status (flight-proven vs concept), recomputed pO₂ via the `p-o2-kpa` registry equation.
 - Materials: screening library maps evidence classes to corpus accessions (BASS/SAFFIRE solid fuels, PMMA-class, Nomex-class, wiring, batteries flagged out-of-corpus).

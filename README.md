@@ -9,7 +9,7 @@ Research copilot: **CIR-1** (42 typed tools, citations, inspectable traces).
 
 | | |
 |---|---|
-| **Live deployment** | Cloudflare Workers — **https://zero-flare-lab.yousuf-aways.workers.dev** |
+| **Live deployment** | Cloudflare Workers — **https://zero-flare.yousuf-aways.workers.dev** |
 | **Release gate** | `GET /api/selftest` — deterministic scientific self-test (equations, gate, facility engine, persistence) |
 | **Open data** | `GET /corpus/README.md` — immutable, SHA-256-verified corpus mirror served from the edge |
 | **Submission kit** | `docs/SUBMISSION_FORM_CONTENT.md` (form text) · `docs/ZERO_FLARE_UIUX_Walkthrough.docx` (16-screenshot UI/UX guide) |
@@ -115,10 +115,11 @@ Mission → open **PSI-69 FLEX** (real rows, sha256 provenance) → **Compare** 
 - **24 experimental tables / 2,085 rows / 249 columns** recovered directly from the NASA PSI
   public download endpoint — all 20 present cleaned CSVs byte-identical to the acquisition
   manifest (SHA-256, recomputed 2026-11-15; see docs/data-audit/).
-- **24 investigation metadata records** (objectives, approach, hypothesis, impacts, DOI, PI,
+- **25 investigation metadata records** (objectives, approach, hypothesis, impacts, DOI, PI,
   hardware, publications) from the PSI repository API.
-- **41 authentic NASA media records** from the NASA Images and Video Library (credit: NASA).
-- **63-equation registry (68/68 reference tests)** merged from two version registries; 26 typed
+- **49 live-verified media records** (41 NASA Images/Video Library + curated mission videos +
+  SVS, media registry `src/data/generated/media-registry.json`; credit: NASA).
+- **63-equation registry (68/68 reference tests)** merged from two version registries; 42 typed
   agent tools; deterministic comparability gate and fire-safety facility engine.
 - **FLEX extinction model v2** retrained from recovered data: grouped AUC 0.882
   (historical build recorded 0.875); O2-only baseline 0.818.
@@ -128,9 +129,11 @@ Mission → open **PSI-69 FLEX** (real rows, sha256 provenance) → **Compare** 
 
 ## Evidence base (this rebuild)
 
+> Historical build section — the merged-build section above is current.
+
 - **24 experimental tables / 2,085 rows / 249 columns** recovered directly from the NASA PSI
   public download endpoint — all 20 present cleaned CSVs byte-identical to the manifest (SHA-256).
-- **24 investigation metadata records** (objectives, approach, hypothesis, impacts, DOI, PI,
+- **25 investigation metadata records** (objectives, approach, hypothesis, impacts, DOI, PI,
   hardware, publications) from the PSI repository API.
 - **41 authentic NASA media records** from the NASA Images and Video Library (credit: NASA).
 - **FLEX extinction model v2** retrained from recovered data: grouped AUC 0.882

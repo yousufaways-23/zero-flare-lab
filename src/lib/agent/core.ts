@@ -6,6 +6,7 @@
 import { getToolCatalogue, executeTool, type ScenarioToolContext, type ToolResult } from "@/lib/agent/tools";
 import { geminiProvider, geminiToolSubsetNames, runGeminiAgent } from "@/lib/agent/gemini";
 import { getEnvironmentProfile } from "@/lib/science/environments";
+import { getCorpusTotals, getInvestigations } from "@/lib/data/catalog";
 import { getBindings } from "@/lib/server/bindings";
 import { guardPublicHttpUrl, safeFetch } from "@/lib/server/safe-fetch";
 
@@ -161,7 +162,7 @@ You help researchers and space-safety specialists evaluate fire risks for the fa
   return `You are CIR-1, the research copilot of the ZERO FLARE team's FLAME EVIDENCE LAB — an evidence-grounded AI research assistant over NASA microgravity combustion evidence (NASA Space Apps challenge "Flame in Freefall"). Your name is CIR-1 (after the Combustion Integrated Rack you are modelled on); introduce yourself as CIR-1 when asked who you are.
 
 PRODUCT CONTEXT
-- Evidence base: 24 NASA PSI combustion investigations (metadata + 22 recovered experimental tables, 2,009 rows, SHA-256-verified against the project manifest), findings registry, gap registry, verified equation registry, model registry (FLEX extinction v2 verified reproduction; CFI-G exploratory; SPICE negative result), authentic NASA media index, official source registry.
+- Evidence base: ${getInvestigations().length} NASA PSI combustion investigations (metadata + ${getCorpusTotals().tables} recovered experimental tables, ${getCorpusTotals().rows.toLocaleString("en-US")} rows, SHA-256-verified against the project manifest), findings registry, gap registry, verified equation registry, model registry (FLEX extinction v2 verified reproduction; CFI-G exploratory; SPICE negative result), authentic NASA media index, official source registry. Counts interpolate live from the bundled corpus so they can never drift from it again.
 - This is research decision support, NOT a certified spacecraft fire-safety system. Never issue operational fire-emergency instructions; official mission procedures always take precedence.
 
 USER CONTEXT (answer with this awareness)

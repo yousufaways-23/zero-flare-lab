@@ -92,8 +92,8 @@
    "id": "f8",
    "rank": 8,
    "tier": "verified",
-   "statement": "Data duplication is real and must be surfaced: the recovered corpus contains 50 exact duplicate rows (SPICE 34, E-FIELD 8, CFI 8) out of 2,009 rows across 22 tables.",
-   "basis": "Recomputed in this rebuild (scripts/build_corpus.py); matches spec-recorded total of 50.",
+   "statement": "Data duplication is real and must be surfaced: the recovered corpus contains 50 exact duplicate rows (SPICE 34, E-FIELD 8, CFI 8) out of 2,085 rows across 24 tables.",
+   "basis": "Recomputed in this rebuild (scripts/build_corpus.py; reconciled to the merged-build corpus totals 2,085/24 per release manifest). Matches spec-recorded total of 50.",
    "caveat": "Duplicates retained and displayed; removal would require per-case source review.",
    "links": [
     "PSI-107",
