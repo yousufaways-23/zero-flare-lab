@@ -13,6 +13,7 @@
 import { useMemo, useState } from "react";
 import { FileText, ImageOff } from "lucide-react";
 import paperFigures from "@/data/generated/paper-figures.json";
+import { accessionsForPaperLabel } from "@/lib/science/coverage";
 
 interface FigureAsset { asset: string; page: number; bytes: number }
 interface PaperEntry {
@@ -41,7 +42,12 @@ function shortTitle(file: string): string {
 
 export function RelatedLiterature({ accession }: { accession: string }) {
   const papers = useMemo(
-    () => REG.papers.filter((p) => !p.error && p.investigations_linked.some((k) => k.toLowerCase() === accession.toLowerCase())),
+    () =>
+      REG.papers.filter(
+        (p) =>
+          !p.error &&
+          p.investigations_linked.some((label) => accessionsForPaperLabel(label).includes(accession.toUpperCase())),
+      ),
     [accession],
   );
   const [openPaper, setOpenPaper] = useState<string | null>(null);

@@ -25,6 +25,7 @@ import {
 import { FileText, GitCompare, ImageOff, ShieldAlert, ShieldCheck, ShieldX } from "lucide-react";
 import { getTablesForInvestigation, type DataTable, type Investigation } from "@/lib/data/catalog";
 import { resolveChartColumns } from "@/lib/science/chart-columns";
+import { accessionsForPaperLabel } from "@/lib/science/coverage";
 import paperFigures from "@/data/generated/paper-figures.json";
 
 interface FigureAsset { asset: string; page: number; bytes: number }
@@ -148,7 +149,10 @@ export function CompareEvidence({ selected, gate }: { selected: Investigation[];
     () =>
       selected.map((inv) => {
         const papers = REG.papers.filter(
-          (p) => !p.error && p.investigations_linked.some((k) => k.toLowerCase() === inv.accession.toLowerCase()) && (p.figures_published?.length ?? 0) > 0,
+          (p) =>
+            !p.error &&
+            p.investigations_linked.some((label) => accessionsForPaperLabel(label).includes(inv.accession.toUpperCase())) &&
+            (p.figures_published?.length ?? 0) > 0,
         );
         return { inv, papers: papers.slice(0, 2) };
       }),
@@ -383,7 +387,9 @@ export function CompareEvidence({ selected, gate }: { selected: Investigation[];
               <span>→</span>
               <span>
                 {(() => {
-                  const n = REG.papers.filter((p) => !p.error && p.investigations_linked.some((k) => k.toLowerCase() === inv.accession.toLowerCase())).length;
+                  const n = REG.papers.filter(
+                    (p) => !p.error && p.investigations_linked.some((label) => accessionsForPaperLabel(label).includes(inv.accession.toUpperCase())),
+                  ).length;
                   return `${n} archive paper${n === 1 ? "" : "s"}`;
                 })()}
               </span>
