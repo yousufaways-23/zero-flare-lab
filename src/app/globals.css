@@ -219,7 +219,9 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-  /* starfield layer — fixed, subtle, above the nebulae, below all content */
+  /* starfield layer — fixed, subtle, above the nebulae, below all content.
+     Readability pass (research doc §3.3/§7-4): opacity reduced 0.55 → 0.32 so
+     stars stop competing with body text; the tile stays visible as texture. */
   body::before {
     content: "";
     position: fixed;
@@ -228,10 +230,11 @@
     background-image: url("/textures/starfield-tile.png");
     background-repeat: repeat;
     background-size: 640px 640px;
-    opacity: 0.55;
+    opacity: 0.32;
     pointer-events: none;
   }
-  /* atmospheric depth: gentle top glow + vignette */
+  /* atmospheric depth: gentle top glow + vignette + a slight global dim so
+     foreground surfaces win the contrast battle (WCAG 2.2 AA margins). */
   body::after {
     content: "";
     position: fixed;
@@ -240,7 +243,15 @@
     pointer-events: none;
     background:
       linear-gradient(to bottom, rgba(71, 132, 217, 0.10), transparent 18%),
-      radial-gradient(ellipse 120% 90% at 50% 50%, transparent 62%, rgba(1, 6, 22, 0.5) 100%);
+      radial-gradient(ellipse 120% 90% at 50% 50%, rgba(2, 8, 28, 0.18) 55%, rgba(1, 6, 22, 0.62) 100%);
+  }
+  /* readability scrim behind the main content column — translucent surface in
+     the same deep-space family, keeps the theme while lifting text contrast */
+  main[data-scroll-root], main {
+    position: relative;
+  }
+  main > * {
+    text-shadow: none;
   }
   ::selection {
     background: color-mix(in oklch, var(--flame) 32%, transparent);

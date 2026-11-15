@@ -113,9 +113,11 @@ export function MegaNav() {
 
           <div className="hidden md:block w-px h-6 bg-border/60 mx-1 shrink-0" aria-hidden="true" />
 
-          {/* main nav with mega-menu content — min-w-0 + overflow-hidden so it can never bleed into actions */}
-          <div data-header-slot="nav" className="hidden min-w-0 flex-1 overflow-hidden md:block">
-            <NavigationMenu className="min-w-0 justify-start">
+          {/* main nav with mega-menu content — overflow-x-clip (NOT hidden) so the
+              shared dropdown viewport below the header is never clipped vertically;
+              horizontal anti-bleed into the actions cluster is preserved */}
+          <div data-header-slot="nav" className="hidden min-w-0 flex-1 overflow-x-clip md:block">
+            <NavigationMenu viewport className="min-w-0 justify-start">
               <NavigationMenuList className="min-w-0 data-scroll">
               {navItem("mission")}
               {/* Investigations mega */}

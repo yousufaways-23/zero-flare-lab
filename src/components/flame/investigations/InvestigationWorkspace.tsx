@@ -58,6 +58,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { ChartsTab } from "@/components/flame/investigations/ExperimentCharts";
+import { RelatedLiterature } from "@/components/flame/investigations/RelatedLiterature";
 import { useAppStore, type InvestigationTab, type PillarId } from "@/lib/app-store";
 import { SaveItemButton } from "@/components/flame/shell/SaveItemButton";
 import { SourceFiguresGallery } from "@/components/flame/investigations/SourceFiguresGallery";
@@ -469,6 +470,10 @@ function OverviewTab({ inv }: { inv: Investigation }) {
             </div>
           )}
         </div>
+
+        {/* Related literature — Fold Data archive papers full-text linked to this
+            investigation (candidate-level links; verified only after citation review) */}
+        <RelatedLiterature accession={inv.accession} />
 
         {/* integrity cases */}
         {inv.integrityCases.length > 0 && (

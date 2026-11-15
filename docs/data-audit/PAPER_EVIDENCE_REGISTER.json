@@ -1,0 +1,1586 @@
+[
+ {
+  "file": "1-s2.0-S0010218021000493-am.pdf",
+  "pages": 46,
+  "text_chars": 66235,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "The measurement objective is to"
+   },
+   {
+    "n": "3",
+    "caption": "They have been edited to give the best images, but in all"
+   },
+   {
+    "n": "3",
+    "caption": "The uncorrected"
+   },
+   {
+    "n": "4",
+    "caption": "Moreover, The transient flame length, base radius and"
+   },
+   {
+    "n": "1",
+    "caption": "BRE burner image (left) and drawing (right)."
+   },
+   {
+    "n": "2",
+    "caption": "Radiometer schematic"
+   },
+   {
+    "n": "3",
+    "caption": "Color images of tests (a) 87B1(\u0018\u001c \u001d\u001d = 1.78 N/\u0018sW), (b) 51D1 (\u0018\u001c \u001d\u001d ="
+   },
+   {
+    "n": "4",
+    "caption": "Heat flux and surface temperature for tests (Left) 94K1 and (Right) 87B1. Both are at"
+   },
+   {
+    "n": "5",
+    "caption": "Color images of tests (a) 39B3 (\u0018\u001c \u001d\u001d = 2.55 N/\u0018sW) and (b) 51A1 (\u0018\u001c \u001d\u001d = 2.55 N/\u0018sW). Both"
+   },
+   {
+    "n": "6",
+    "caption": "Color images of tests (a) 39D1 (\u0018\u001c \u001d\u001d = 2.54 N/\u0018sW) and (b) 66G1 (\u0018\u001c \u001d\u001d = 2.45 N/\u0018sW)."
+   }
+  ],
+  "abstract_snippet": "Burning in Microgravity: Experimental Results and Analysis Parham Dehghani, Peter B. Sunderland, James G. Quintiere*, John L. deRis Department of Fire Protection Engineering, University of Maryland, College Park, MD 20742 USA Submitted to: "
+ },
+ {
+  "file": "1-s2.0-S0010218021000821-am.pdf",
+  "pages": 29,
+  "text_chars": 43921,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "Flame Design",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "3",
+    "caption": "The R pixel intensities are"
+   },
+   {
+    "n": "5",
+    "caption": "As observed in previous investigations, these spherical diffusion flames in microgravity"
+   },
+   {
+    "n": "7",
+    "caption": "Figure 7a show the progression of"
+   },
+   {
+    "n": "1",
+    "caption": "Representation of the growth process of spherical diffusion flames in microgravity. =>H"
+   },
+   {
+    "n": "2",
+    "caption": "Illustration of the experimental configuration and a microgravity spherical diffusion"
+   },
+   {
+    "n": "3",
+    "caption": "Normalized intensity as a function of temperature. Curves denote the results from Eq."
+   },
+   {
+    "n": "4",
+    "caption": "Representative images of the flames in Table 1. The elapsed times are shown below the"
+   },
+   {
+    "n": "5",
+    "caption": "Flame radius and burner temperature as functions of time. Open circles denote measured"
+   },
+   {
+    "n": "6",
+    "caption": "Experimental measurements of irradiance at 310 nm (top) and 230-700 nm (bottom) as"
+   },
+   {
+    "n": "7",
+    "caption": "A progression of photos from the operations video for flame 3 showing the oscillatory"
+   }
+  ],
+  "abstract_snippet": "Observations of Long Duration Microgravity Spherical Diffusion Flames Aboard the International Space Station Phillip H. Irace1, Han Ju Lee2, Kendyl Waddell2, Logan Tan1, Dennis P. Stocker3, Peter B. Sunderland2, Richard L. Axelbaum1* 1 Depa"
+ },
+ {
+  "file": "1-s2.0-S0010218021003151-am.pdf",
+  "pages": 47,
+  "text_chars": 61515,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "2",
+    "caption": "The theory clearly under-predicts, but the similarity is"
+   },
+   {
+    "n": "3",
+    "caption": "The result of this singular graph is empirical and only holds for the"
+   },
+   {
+    "n": "4",
+    "caption": "For high oxygen and pressures the flames"
+   },
+   {
+    "n": "9",
+    "caption": "The computed radiation flux to the burner surface"
+   },
+   {
+    "n": "13",
+    "caption": "Steady experimental data are also included in the figure. Here the results"
+   },
+   {
+    "n": "1",
+    "caption": "Measured vs. calculated flame height"
+   },
+   {
+    "n": "3",
+    "caption": "Absorption coefficients normalized by partial pressures of combustion"
+   },
+   {
+    "n": "4",
+    "caption": "BRE flames emissivity vs. fuel mixture mass flux"
+   },
+   {
+    "n": "5",
+    "caption": "Radiant fraction correlation"
+   },
+   {
+    "n": "6",
+    "caption": "Calculated vs. measured radiant fraction"
+   }
+  ],
+  "abstract_snippet": "Theoretical Analysis and Predictions of Burning in Microgravity using a Burning Emulator Parham Dehghania and James G. Quintierea,* aDepartment of Fire Protection Engineering, University of Maryland, College Park, MD USA Submitted to: Combu"
+ },
+ {
+  "file": "1-s2.0-S0010218022000864-am.pdf",
+  "pages": 24,
+  "text_chars": 44705,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "2",
+    "caption": "Figure 1: The diagram of the coflow burner which consists of a center fuel tube and coaxial tube"
+   },
+   {
+    "n": "2",
+    "caption": "The piping and instrumentation diagram (P&ID) of the high-pressure flow system."
+   },
+   {
+    "n": "3",
+    "caption": "OH PLIF experimental setup."
+   },
+   {
+    "n": "4",
+    "caption": "OH laser induced fluorescence (LIF) results at various elevated pressures."
+   },
+   {
+    "n": "5",
+    "caption": "Time-resolved LII decay."
+   },
+   {
+    "n": "6",
+    "caption": "OH* is typically used as a"
+   },
+   {
+    "n": "6",
+    "caption": "OH* chemiluminescence at various pressures. Both the original line of sight (right side"
+   },
+   {
+    "n": "7",
+    "caption": "CH* chemiluminescence at various pressures. Note that the soot incandescence"
+   },
+   {
+    "n": "8",
+    "caption": "For an easier visualization of the results and to highlight"
+   },
+   {
+    "n": "8",
+    "caption": "Simulated normalized OIefficiency (OIeff) as a function of pressure."
+   }
+  ],
+  "abstract_snippet": "PLIF and Chemiluminescence in a Small Laminar Coflow Methane-Air Diffusion Flame at Elevated Pressures David Escofet-Martin, Yu-Chien Chien*, Derek Dunn-Rankin Mechanical and Aerospace Engineering, University of California Irvine, 4200 Engi"
+ },
+ {
+  "file": "1-s2.0-S0010218022001742-am.pdf",
+  "pages": 34,
+  "text_chars": 50822,
+  "investigations_linked": [
+   "FLEX",
+   "SAME",
+   "s-Flame",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Radiative heat flux calculated using the Edwards exponential wide-band model [19-"
+   },
+   {
+    "n": "2",
+    "caption": "The burner consists of"
+   },
+   {
+    "n": "2",
+    "caption": "Experimental configuration with a representative diagram of the three flame shapes"
+   },
+   {
+    "n": "3",
+    "caption": "Measured spectral response of the D610 camera and BG62 filter."
+   },
+   {
+    "n": "4",
+    "caption": "Theoretical gray body (solid lines) and soot (dashed lines) temperature lookup table"
+   },
+   {
+    "n": "5",
+    "caption": "Radiation loss fraction as a function of CSR. Open circles (methane) and open squares"
+   },
+   {
+    "n": "6",
+    "caption": "Image of each flame in Table 1. The CSR is denoted above each image."
+   },
+   {
+    "n": "7",
+    "caption": "Two-color ratio pyrometry measurements of soot volume fraction for each flame in Table 1. The soot"
+   },
+   {
+    "n": "8",
+    "caption": "Two-color ratio pyrometry measurements of soot temperature for each flame in Table 1."
+   },
+   {
+    "n": "9",
+    "caption": "Measured total flame and calculated total soot radiation heat loss rate as a function of"
+   }
+  ],
+  "abstract_snippet": "1 An investigation of thermal radiation from laminar diffusion flames in a tri-coflow burner with central oxygen P.H. Irace 1, A. Gopan 2, R.L. Axelbaum 1,* 1 Department of Energy, Environmental & Chemical Engineering, Washington University"
+ },
+ {
+  "file": "1-s2.0-S0010218022004606-main.pdf",
+  "pages": 11,
+  "text_chars": 57964,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "Flame Design",
+   "E-FIELD",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "2",
+    "caption": "Solid model representation of the ACME chamber insert with E-FIELD Flames"
+   },
+   {
+    "n": "3",
+    "caption": "The stainless steel fuel tube in the burner"
+   },
+   {
+    "n": "4",
+    "caption": "Illustration of (a) positive electric field direction and (b) negative electric"
+   },
+   {
+    "n": "5",
+    "caption": "An example of the full voltage sweep."
+   },
+   {
+    "n": "6",
+    "caption": "VCC curves in microgravity of methane coflow flames in positive field."
+   },
+   {
+    "n": "7",
+    "caption": "The ion flux at the acme current verses the carbon atom influx for positive"
+   },
+   {
+    "n": "8",
+    "caption": "The relation between the ion flux and the field strength at acme saturation."
+   },
+   {
+    "n": "7",
+    "caption": "The acme saturated ion flux has a linear trend"
+   },
+   {
+    "n": "9",
+    "caption": "Flame images in microgravity of methane coflow flames in positive field. The middle column represents the acme current flame images. The fuel tube is s"
+   },
+   {
+    "n": "10",
+    "caption": "Flame images with similar ion current at different electric field strength for"
+   }
+  ],
+  "abstract_snippet": "Combustion and Flame 246 (2022) 112443 Contents lists available at ScienceDirect Combustion and Flame journal homepage: www.elsevier.com/locate/combustflame Electric-field effects on methane coflow flames aboard the international space stat"
+ },
+ {
+  "file": "1-s2.0-S0010218023001803-am.pdf",
+  "pages": 35,
+  "text_chars": 55314,
+  "investigations_linked": [
+   "SAME",
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Schematic of the radiometry apparatus (Left) and the BRE burner (Right)"
+   },
+   {
+    "n": "2",
+    "caption": "Measured heat flux at the center and the offset location on the surface at the endpoints of steady"
+   },
+   {
+    "n": "3",
+    "caption": "Calculated radiative and convective heat flux for steady flames (left and middle respectively) and"
+   },
+   {
+    "n": "2",
+    "caption": "This is shown in Figure 4. The calculated values are generally slightly"
+   },
+   {
+    "n": "5",
+    "caption": "The scatter of"
+   },
+   {
+    "n": "5",
+    "caption": "Figure 4. Calculated vs. measured average heat flux for steady flames generated by the 25 mm BRE burner"
+   },
+   {
+    "n": "5",
+    "caption": "Contribution of the radiative (left), and convective (middle) heat flux components to calculated heat"
+   },
+   {
+    "n": "6",
+    "caption": "Calculated vs. measured heats of gasification for steady flames generated by the 25 mm BRE"
+   },
+   {
+    "n": "7",
+    "caption": "The flammability map for nominal XO2 of 0.4 along with trends of calculated Xr, and calculated Tf at"
+   },
+   {
+    "n": "8",
+    "caption": "The flammability map for nominal XO2 of 0.34 along with trends of calculated Xr, and calculated Tf at"
+   }
+  ],
+  "abstract_snippet": "Flammability Maps for Microgravity Burning of a Small Flat Material in a Quiescent Ambient Parham Dehghania, James G. Quintiere*b a Fire Safety Research Institute UL, 6200 Old Dobbin Ln., Columbia, MD 2104, USA b Department of Fire Protecti"
+ },
+ {
+  "file": "1-s2.0-S001021802300233X-am.pdf",
+  "pages": 7,
+  "text_chars": 22373,
+  "investigations_linked": [
+   "SAME",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "The fuel is n-heptane, which has a"
+   },
+   {
+    "n": "1",
+    "caption": "Schematic of the burner apparatus showing"
+   },
+   {
+    "n": "2",
+    "caption": "Color images of representative n-heptane"
+   },
+   {
+    "n": "2",
+    "caption": "The hot flames were visible under"
+   },
+   {
+    "n": "5",
+    "caption": "When no fuel was present, the gas"
+   },
+   {
+    "n": "5",
+    "caption": "As the heater temperature Fig. 5. Gas, heater, and disk temperatures versus"
+   },
+   {
+    "n": "4",
+    "caption": "Peak temperatures of the CDFs as a function"
+   }
+  ],
+  "abstract_snippet": "1 Cool diffusion flames in a stably stratified stagnation flow Kendyl A. Waddella, Han Ju Leea, Vedha Nayagamb, Richard L. Axelbaumc, Peter B. Sunderlanda,*, aDepartment of Fire Protection Engineering, University of Maryland, College Park, "
+ },
+ {
+  "file": "1-s2.0-S0016236115011758-am.pdf",
+  "pages": 47,
+  "text_chars": 59324,
+  "investigations_linked": [
+   "SAME"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "4",
+    "caption": "Although this front is sustained much longer"
+   },
+   {
+    "n": "5",
+    "caption": "It is seen that the maximum temperature first stays around"
+   },
+   {
+    "n": "5",
+    "caption": "It is seen that the"
+   },
+   {
+    "n": "6",
+    "caption": "Figures 7 and 8 together then show the different transition processes of low-"
+   },
+   {
+    "n": "9",
+    "caption": "It is seen that with decreasing dilution, the S-curve becomes more"
+   },
+   {
+    "n": "10",
+    "caption": "It is seen that the ignition turning point is"
+   },
+   {
+    "n": "8",
+    "caption": "With k increased from 20 to 30 /s, a steady-state cool flame can be initiated, with"
+   },
+   {
+    "n": "15",
+    "caption": "Clearly a thin layer with chemiluminescence is"
+   },
+   {
+    "n": "15",
+    "caption": "The cool flame would recur if the amount of N2 in the mixture was"
+   },
+   {
+    "n": "11",
+    "caption": "Figure 17 compares the experimental image with detailed calculation for the"
+   }
+  ],
+  "abstract_snippet": "1 Initiation and Propagation of Laminar Premixed Cool Flames Peng Zhao‡, Wenkai Liang, Sili Deng and Chung K. Law† Department of Mechanical and Aerospace Engineering Princeton University, Princeton, NJ 08544, USA Abstract Cool flames, being"
+ },
+ {
+  "file": "1-s2.0-S0379711219306137-am.pdf",
+  "pages": 30,
+  "text_chars": 59248,
+  "investigations_linked": [
+   "SAFFIRE",
+   "SAME",
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Experimental setup of the combustion experiment [21]. More instruments were used in"
+   },
+   {
+    "n": "2",
+    "caption": "Time series of gas and particle concentrations during a cotton smoldering combustion"
+   },
+   {
+    "n": "3",
+    "caption": "Relationship between obscuration and (a) PM2.5 by DRX, and (b) CO by Langan T15n"
+   },
+   {
+    "n": "4",
+    "caption": "Time series of gas and particle concentrations during a PMMA pyrolysis test. CO2 and"
+   },
+   {
+    "n": "5",
+    "caption": "Time series of gas and particle concentrations during a PMMA flaming combustion"
+   },
+   {
+    "n": "6",
+    "caption": "Correlation for cotton and PMMA smoldering and flaming combustion emissions"
+   },
+   {
+    "n": "7",
+    "caption": "Comparison of: (a) mass and (b) number concentrations for 0.5-10 μm diameter"
+   },
+   {
+    "n": "8",
+    "caption": "Comparison of: (a) mass and (b) number distributions measured during a PMMA"
+   }
+  ],
+  "abstract_snippet": "1 Evaluation of Gas and Particle Sensors for Detecting 1 Spacecraft-Relevant Fire Emissions 2 3 4 Xiaoliang Wanga*, Hao Zhoua, W. Patrick Arnottb, Marit E. Meyerc, Samuel Taylorb, Hatef 5 Firouzkouhia, Hans Moosmüllera, Judith C. Chowa, and"
+ },
+ {
+  "file": "1-s2.0-S0898122113000254-main.pdf",
+  "pages": 8,
+  "text_chars": 24089,
+  "investigations_linked": [
+   "SAME"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "The counterflow flame was modeled with the"
+   },
+   {
+    "n": "1",
+    "caption": "Schematic of counterflow diffusion flame burner."
+   },
+   {
+    "n": "2",
+    "caption": "Temperature, fuel and oxygen mole fraction profiles in physical space for Zst of 0.064, 0.4, and 0.75 for ethylene (C2 H4 ) flames."
+   },
+   {
+    "n": "3",
+    "caption": "Temperature, fuel and oxygen mole fraction profiles in mixture fraction space for Zst of 0.064, 0.4, and 0.75 for ethylene (C2 H4 ) flames."
+   },
+   {
+    "n": "4",
+    "caption": "Temperature, fuel and oxygen mole fraction profiles in C/O ratio space for Zst of 0.064, 0.4, and 0.75 for ethylene (C2 H4 ) flames."
+   },
+   {
+    "n": "5",
+    "caption": "Temperature, radical and soot precursor mole fraction profiles in C/O ratio space for Zst of 0.064, 0.4, and 0.75 for ethylene (C2 H4 ) flames."
+   },
+   {
+    "n": "6",
+    "caption": "Ethylene flames — temperature, O2 , critical radical and precursor mole fraction profiles in C/O ratio space for Zst = 0.064 with inlet velocities of"
+   },
+   {
+    "n": "7",
+    "caption": "Propane flames – temperature, O2 , critical radical and precursor mole fraction profiles in C/O ratio space for Zst = 0.06 with inlet velocities of"
+   },
+   {
+    "n": "8",
+    "caption": "Kinetic ratio for reactions from (R1) to (R4) for C2 H4 with Zst of 0.064."
+   },
+   {
+    "n": "9",
+    "caption": "Kinetic ratio for reactions from (R1) to (R4) for C2 H4 with Zst of 0.6."
+   }
+  ],
+  "abstract_snippet": "Computers and Mathematics with Applications 65 (2013) 1625–1632 Contents lists available at SciVerse ScienceDirect Computers and Mathematics with Applications journal homepage: www.elsevier.com/locate/camwa Simplifying the complexity of dif"
+ },
+ {
+  "file": "1-s2.0-S1540748918302682-am.pdf",
+  "pages": 15,
+  "text_chars": 23922,
+  "investigations_linked": [
+   "SAME",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "2",
+    "caption": "Stoichiometric flame lengths for methane predicted by the Roper model, Eq. (1), in"
+   },
+   {
+    "n": "3",
+    "caption": "Representative methane flame images and intensity profiles, in arbitrary units. (a)"
+   },
+   {
+    "n": "4",
+    "caption": "Color images of representative methane diffusion flames. (a) shows NDFs (ṁCH4 ="
+   },
+   {
+    "n": "5",
+    "caption": "Test matrix of (a) methane and (b) propane jet diffusion flames. The dashed curves"
+   },
+   {
+    "n": "6",
+    "caption": "Flame length measurements compared to the extended Roper model predictions"
+   },
+   {
+    "n": "2",
+    "caption": "Stoichiometric flame lengths for methane predicted by the Roper model, Eq. (1), in terms of burner"
+   },
+   {
+    "n": "3",
+    "caption": "Representative methane flame images and intensity profiles, in arbitrary units. (a) An NDF with"
+   },
+   {
+    "n": "4",
+    "caption": "Color images of representative methane diffusion flames. (a) shows NDFs (ṁCH4 = 2.97 mg/s and"
+   },
+   {
+    "n": "5",
+    "caption": "Test matrix of (a) methane and (b) propane jet diffusion flames. The dashed curves denote"
+   },
+   {
+    "n": "6",
+    "caption": "Flame length measurements compared to the extended Roper model predictions for (a) methane"
+   }
+  ],
+  "abstract_snippet": "1 Dilution effects on laminar jet diffusion flame lengths Zhengyang Wanga, Peter B. Sunderlanda,*, Richard L. Axelbaumb a Department of Fire Protection Engineering, University of Maryland, College Park, MD 20742, USA; b Department of Energy"
+ },
+ {
+  "file": "1-s2.0-S1540748918303778-am.pdf",
+  "pages": 8,
+  "text_chars": 30762,
+  "investigations_linked": [
+   "SLICE",
+   "SAME",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Steady flamelet solutions for temperature at stoichiometric"
+   },
+   {
+    "n": "1",
+    "caption": "The unsteady terms in the unsteady flamelet equa-"
+   },
+   {
+    "n": "1",
+    "caption": "Two “cool” flame DNS calculations are performed"
+   },
+   {
+    "n": "2",
+    "caption": "Grid convergence was verified by conduct-"
+   },
+   {
+    "n": "2",
+    "caption": "Temperature field for the Da- case at t/τeddy = 2 with white"
+   },
+   {
+    "n": "3",
+    "caption": "Comparison at t = 2.25 ms of stoichiometric elements from"
+   },
+   {
+    "n": "4",
+    "caption": "Data at one (left), three (center), and five (right) eddy turnover times comparing DNS data from the Da- case(gray points) to the nominal"
+   },
+   {
+    "n": "5",
+    "caption": "Evolution over non-dimensional time of the total percent of"
+   },
+   {
+    "n": "6",
+    "caption": "Comparison at t/τeddy = 2 of points along the stoichio-"
+   },
+   {
+    "n": "7",
+    "caption": "Presumed scalar dissipation rate from Eq. (7) (solid line)"
+   }
+  ],
+  "abstract_snippet": "Direct Numerical Simulation of Turbulent Nonpremixed “Cool” Flames: Applicability of Flamelet Models Alex G. Novoselova,∗, Chung K. Lawa, Michael E. Muellera aDepartment of Mechanical and Aerospace Engineering, Princeton University, Princet"
+ },
+ {
+  "file": "1-s2.0-S1540748918303845-am.pdf",
+  "pages": 21,
+  "text_chars": 31945,
+  "investigations_linked": [
+   "FLEX",
+   "SAME",
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Isolated xylene droplets with a"
+   },
+   {
+    "n": "1",
+    "caption": "Sketch of the experimental setup."
+   },
+   {
+    "n": "2",
+    "caption": "Time sequence images of a collision in the regime of reflexive separation, We=105,"
+   },
+   {
+    "n": "3",
+    "caption": "Time sequence images of a collision in the regime of stretching separation, We=96,"
+   },
+   {
+    "n": "4",
+    "caption": "Time sequence images of a collision in the regime of coalescence, We=105, B=0.21."
+   },
+   {
+    "n": "5",
+    "caption": "Mean visible flame radiation for different collision regimes at a We~100. (a) reflexive"
+   },
+   {
+    "n": "2",
+    "caption": "The flame spread and visible radiation of the stretching separation and"
+   },
+   {
+    "n": "6",
+    "caption": "Time sequence images of a collision in the regime of reflexive separation, We=48,"
+   },
+   {
+    "n": "7",
+    "caption": "The intensity change of the visible flame radiation still"
+   },
+   {
+    "n": "7",
+    "caption": "Mean visible flame radiation for different collision regimes at a We~50. (a)"
+   }
+  ],
+  "abstract_snippet": "1 Binary Collision of a Burning Droplet and a Non-Burning Droplet of Xylene: Outcome Regimes and Flame Dynamics Gang Xiong1, Rahul Gandhi1, Xiaosheng Zhong1, Lutz Mädler2, and Stephen D. Tse1* 1Department of Mechanical and Aerospace Enginee"
+ },
+ {
+  "file": "1-s2.0-S1540748918305145-am.pdf",
+  "pages": 18,
+  "text_chars": 27778,
+  "investigations_linked": [
+   "BASS",
+   "SAME",
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Schematic of LIBT setup."
+   },
+   {
+    "n": "2",
+    "caption": "Extreme large values can easily be identified under"
+   },
+   {
+    "n": "2",
+    "caption": "Histograms of acoustic signals from the McKenna burner for the same equivalence ratio and"
+   },
+   {
+    "n": "3",
+    "caption": "Thus, the acoustic signal"
+   },
+   {
+    "n": "3",
+    "caption": "Negative correlation between acoustic signal and thermocouple-measured temperature using a"
+   },
+   {
+    "n": "4",
+    "caption": "Acoustic signals and thermocouple-measured flame temperatures as a function of equivalence"
+   },
+   {
+    "n": "5",
+    "caption": "Deviation of acoustic signal from the mean value in equivalence ratio space."
+   },
+   {
+    "n": "6",
+    "caption": "The 0.95 confidence interval of LIBT measurement as a function of sample size corresponding to"
+   }
+  ],
+  "abstract_snippet": "1 A new method of flame temperature measurement utilizing the acoustic emissions from laser-induced plasmas Wendong Wu a, Adewale Adeosun b, Richard L. Axelbaum b,* Mailing Address: a School of Mechanical Engineering, Shanghai Jiaotong Univ"
+ },
+ {
+  "file": "1-s2.0-S1540748920300602-am.pdf",
+  "pages": 19,
+  "text_chars": 34701,
+  "investigations_linked": [
+   "SAME",
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Experimental composite temperature map for the 40% flame where Rayleigh SLIPI was applied"
+   },
+   {
+    "n": "2",
+    "caption": "The fitted solution is shown as a thin black line while the unfitted data"
+   },
+   {
+    "n": "2",
+    "caption": "Comparison between the raw experimental data (thick red, blue, or green lines) and the fitted"
+   },
+   {
+    "n": "3",
+    "caption": "Experimentally-derived temperature (left panel) compared to the unconstrained computed"
+   },
+   {
+    "n": "4",
+    "caption": "Measured (left figure) versus computed (right figure) soot volume fraction contours with both"
+   }
+  ],
+  "abstract_snippet": "1 Constrained-Temperature Solutions of Coflow Laminar Diffusion Flames Nathan J. Kempema1*, Richard R. Dobbins2, Marshall B. Long3 and Mitchell D. Smooke3 1 Applied Research Laboratory, The Pennsylvania State University, State College, Penn"
+ },
+ {
+  "file": "1-s2.0-S1540748920301711-am.pdf",
+  "pages": 19,
+  "text_chars": 33439,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Small circular holes are scattered over the top plate to facilitate a uniform 82"
+   },
+   {
+    "n": "1",
+    "caption": "The BRE burner and the igniter 86"
+   },
+   {
+    "n": "2",
+    "caption": "Because of the rapidly decreasing temperature, flame luminosity appears to be very low 154"
+   },
+   {
+    "n": "2",
+    "caption": "The steady growth of the flame ball observed in the microgravity experiment (left, test 19039H2) and 164"
+   },
+   {
+    "n": "3",
+    "caption": "Predicted vertical centerline profiles of the heat release rate, net radiative emission (top) and 183"
+   },
+   {
+    "n": "4",
+    "caption": "The remaining flame may exhibit oscillations, with the upper part moving up and down. At 193"
+   },
+   {
+    "n": "4",
+    "caption": "Transient disintegration and quenching of the flame. Top to bottom: extinction of the upper part; flame 200"
+   },
+   {
+    "n": "4",
+    "caption": "An interesting observation is that the classical triple (tribrachial) flames develop, comprising 207"
+   },
+   {
+    "n": "5",
+    "caption": "Collision and annihilation of the triple flames formed in flame ball re-ignition. Simulations with 215"
+   },
+   {
+    "n": "6",
+    "caption": "Transient variations of the heat release rate and the peak temperature in test 19039H2 predicted with 237"
+   }
+  ],
+  "abstract_snippet": "1 Transient dynamics of radiative extinction 1 in low-momentum microgravity diffusion flames 2 3 Alexander Snegirev*, 1, Egor Kuznetsov1, Ekaterina Markus1, Parham Dehghani2, Peter Sunderland2 4 5 1 School of Applied Mathematics and Computa"
+ },
+ {
+  "file": "1-s2.0-S1540748922000670-am.pdf",
+  "pages": 9,
+  "text_chars": 36558,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "Flame Design",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "2",
+    "caption": "Representative photographs of a normal"
+   },
+   {
+    "n": "1",
+    "caption": "Illustration of the experimental configuration"
+   },
+   {
+    "n": "3",
+    "caption": "Simulated radiative loss fraction (total"
+   },
+   {
+    "n": "5",
+    "caption": "Simulated flame temperature as a function of"
+   },
+   {
+    "n": "4",
+    "caption": "Simulated (a) radiation heat loss rate per unit volume, heat release rate per unit volume, and temperature, and (b)"
+   },
+   {
+    "n": "6",
+    "caption": "Flame radius at extinction as a function of fuel"
+   },
+   {
+    "n": "7",
+    "caption": "Simulated flame radius (primary axis) and"
+   },
+   {
+    "n": "8",
+    "caption": "Flame radius at extinction as a function of"
+   }
+  ],
+  "abstract_snippet": "1 Critical temperature and reactant mass flux for radiative extinction of ethylene microgravity spherical diffusion flames at 1 bar Phillip H. Iracea, Kendyl A. Waddellb, Denis Constalesc, Peter B. Sunderlandb, Richard L. Axelbauma, * aDepa"
+ },
+ {
+  "file": "1-s2.0-S1540748922000736-am.pdf",
+  "pages": 9,
+  "text_chars": 38050,
+  "investigations_linked": [
+   "SAME",
+   "ACME",
+   "Flame Design",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Photograph of the experimental configuration"
+   },
+   {
+    "n": "4",
+    "caption": "Flame IE1. Black lines show measured OH*"
+   },
+   {
+    "n": "5",
+    "caption": "Photographs of (a) IE1 and (b) an inverse flame"
+   }
+  ],
+  "abstract_snippet": "1 On the existence of steady-state gaseous microgravity spherical diffusion flames in the presence of radiation heat loss Phillip H. Iracea, Kendyl A. Waddellb, Denis Constalesc, Minhyeng Kimb, Gregory Yablonskya, Peter B. Sunderlandb, Rich"
+ },
+ {
+  "file": "1-s2.0-S1540748922004497-am.pdf",
+  "pages": 10,
+  "text_chars": 36298,
+  "investigations_linked": [
+   "SAME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Schematic of the burner surface and heat flux"
+   },
+   {
+    "n": "2",
+    "caption": "Two typical BRE flames with same mass flux of 2.55 g/m2s and heat of combustion of 47.2 kJ/g, fuel terminated at"
+   },
+   {
+    "n": "3",
+    "caption": "Radiative loss fraction empirical correlation"
+   },
+   {
+    "n": "4",
+    "caption": "Calculated flame temperature at flame sheet, cp = 1.24 J/g K"
+   },
+   {
+    "n": "5",
+    "caption": "Calculated vs. measured, flame heights (top) and"
+   },
+   {
+    "n": "5",
+    "caption": "The accuracy of the analytical model introduced in"
+   },
+   {
+    "n": "6",
+    "caption": "Flammability map (heats of gasification vs. fuel mixture mass flux) for micro and normal gravity data for the surface"
+   },
+   {
+    "n": "6",
+    "caption": "The sources of"
+   }
+  ],
+  "abstract_snippet": "1 Demonstrating Steady Burning for Small Flat Materials in Microgravity in a Quiescent Ambient Parham Dehghani, John L. de Ris, James G. Quintiere* University of Maryland, College Park, Maryland 20742, USA __________________________________"
+ },
+ {
+  "file": "20170000230.pdf",
+  "pages": 9,
+  "text_chars": 33679,
+  "investigations_linked": [
+   "SAFFIRE-II",
+   "SAFFIRE-I",
+   "SAFFIRE",
+   "SAME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "The flow duct forms the primary chamber of the experiment while the avionics bay is"
+   },
+   {
+    "n": "1",
+    "caption": "Schematic of the Spacecraft Fire Safety Demonstration Experiment."
+   },
+   {
+    "n": "2",
+    "caption": "Sample cards for the Saffire-I, II, and III experiments."
+   },
+   {
+    "n": "3",
+    "caption": "The hardware remained in Cygnus through the preparations for the launch of OA-6."
+   },
+   {
+    "n": "3",
+    "caption": "The Saffire-I hardware installed in the Cygnus OA-6 Pressurized"
+   }
+  ],
+  "abstract_snippet": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire) Gary A. Ruff1 and David L. Urban.2 NASA John H. Glenn Research Center, Cleveland, OH 44135 Since 2012, a series of Spacecraft Fire Experiments (Saffire) have been"
+ },
+ {
+  "file": "Ann NY Acad Sci - 2006 - DUNN‐RANKIN - Using Large Electric Fields to Control Transport in Microgravity.pdf",
+  "pages": 15,
+  "text_chars": 31493,
+  "investigations_linked": [
+   "SAME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [],
+  "abstract_snippet": "Using Large Electric Fields to Control Transport in Microgravity DEREK DUNN-RANKINa AND FELIX J. WEINBERGb a Department of Mechanical and Aerospace Engineering, University of California, Irvine, California 92697-3975, USA b Department of Ch"
+ },
+ {
+  "file": "Ann NY Acad Sci - 2006 - PAPAC - Canceling Buoyancy of Gaseous Fuel Flames in a Gravitational Environment Using an.pdf",
+  "pages": 17,
+  "text_chars": 36687,
+  "investigations_linked": [
+   "SAME"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [],
+  "abstract_snippet": "Canceling Buoyancy of Gaseous Fuel Flames in a Gravitational Environment Using an Ion-Driven Wind M. J. PAPAC AND D. DUNN-RANKIN Mechanical and Aerospace Engineering Department, University of California at Irvine, Irvine California 92697, U"
+ },
+ {
+  "file": "Emulation of condensed fuel flames with gaseous fuels supplied through a porous copper calorimeter.pdf",
+  "pages": 8,
+  "text_chars": 2569,
+  "investigations_linked": [],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [],
+  "abstract_snippet": " 10991018, 2020, 7, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/fam.2896. By Egyptian National Sti. Network (Enstinet), Wiley Online Library on [08/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/term"
+ },
+ {
+  "file": "Fire in Microgravity _ American Scientist.pdf",
+  "pages": 19,
+  "text_chars": 30748,
+  "investigations_linked": [
+   "SAME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [],
+  "abstract_snippet": "(/) In the late 1980s the American and Soviet space programs were planning longer space missions, some for a half-year or more, and these plans led them to a practical question: If there is an electrical short or other spark, followed by a "
+ },
+ {
+  "file": "IAS_926-1347.pdf",
+  "pages": 12,
+  "text_chars": 43093,
+  "investigations_linked": [
+   "SAME",
+   "BRE",
+   "CLD",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "2",
+    "caption": "Selected images from a fiber-supported heptane"
+   },
+   {
+    "n": "3",
+    "caption": "Image selected from a fiber-supported toluene"
+   },
+   {
+    "n": "4",
+    "caption": "The points in the red areas"
+   },
+   {
+    "n": "2",
+    "caption": "For a droplet image with little background"
+   },
+   {
+    "n": "4",
+    "caption": "Steps in a manual Image-Pro analysis, for both"
+   },
+   {
+    "n": "3",
+    "caption": "The original image is shown in Fig. 4b-1. Fig. 4b-2"
+   },
+   {
+    "n": "5",
+    "caption": "Flowchart for the DROPLETD automated analysis."
+   },
+   {
+    "n": "6",
+    "caption": "Output of DROPLETD analysis of the 15th"
+   },
+   {
+    "n": "7",
+    "caption": "Evolution of (a) D2 and (b) error (Eq. 6) for heptane (cf. Fig. 2)."
+   },
+   {
+    "n": "8",
+    "caption": "Evolution of (a) D2 and (b) error (Eq. 6) for toluene (cf. Fig. 3)."
+   }
+  ],
+  "abstract_snippet": "Image Anal Stereol 2012;31:137-148 doi:10.5566/ias.v31.p137-148 Original Research Paper AUTOMATED DATA ANALYSIS FOR CONSECUTIVE IMAGES FROM DROPLET COMBUSTION EXPERIMENTS C HRISTOPHER L D EMBIA, Y U-C HENG L IU AND C. T HOMAS A VEDISIAN Si"
+ },
+ {
+  "file": "Interpretation_of_Backlit_Droplet_Images_from_ISS_Droplet_Combustion_Experiments.pdf",
+  "pages": 12,
+  "text_chars": 21104,
+  "investigations_linked": [
+   "FLEX-2",
+   "FLEX",
+   "SAME",
+   "MDCA",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "3",
+    "caption": "The appearance of the"
+   },
+   {
+    "n": "3",
+    "caption": "Schematic of diffraction of light by a droplet."
+   },
+   {
+    "n": "10",
+    "caption": "Circle fit schematic."
+   },
+   {
+    "n": "12",
+    "caption": "Figure 4a shows the digital image that was"
+   },
+   {
+    "n": "11",
+    "caption": "The best-fit circle is shown as the red"
+   },
+   {
+    "n": "11",
+    "caption": "Results from an analysis of the image in Figure 4a: (a) first iteration; (b) second iteration; and (c)"
+   },
+   {
+    "n": "12",
+    "caption": "Calculated sphere diameter as a function of the normalized light intensity that was assumed to"
+   }
+  ],
+  "abstract_snippet": "Research Article Interpretation of Backlit Droplet Images from ISS Droplet Combustion Experiments Fei Yu1 and Benjamin D. Shaw2 1Computer Science Department, University of California - Davis, Davis, CA; 2Mechanical and Aerospace Engineering"
+ },
+ {
+  "file": "Journal of Combustion - 2012 - Shaw - Combustion of Methanol Droplets in Air‐Diluent Environments with Reduced and Normal.pdf",
+  "pages": 8,
+  "text_chars": 37859,
+  "investigations_linked": [
+   "SAME",
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Thermocouple data for air : helium ambients: (a) normal gravity and (b) reduced gravity."
+   },
+   {
+    "n": "2",
+    "caption": "Radiometer data for air : helium ambients: (a) normal gravity and (b) reduced gravity."
+   },
+   {
+    "n": "3",
+    "caption": "Radiometer data for air : CO 2 ambients: (a) normal gravity and (b) reduced gravity."
+   },
+   {
+    "n": "4",
+    "caption": "Droplet size data for air : helium ambients: (a) normal gravity and (b) reduced gravity."
+   },
+   {
+    "n": "5",
+    "caption": "Gasification-rate data for air : helium ambients."
+   },
+   {
+    "n": "6",
+    "caption": "Gasification-rate data for air : CO2 ambients."
+   },
+   {
+    "n": "7",
+    "caption": "Gasification-rate data for air : xenon ambients."
+   }
+  ],
+  "abstract_snippet": "Hindawi Publishing Corporation Journal of Combustion Volume 2012, Article ID 587987, 8 pages doi:10.1155/2012/587987 Research Article Combustion of Methanol Droplets in Air-Diluent Environments with Reduced and Normal Gravity Benjamin Shaw "
+ },
+ {
+  "file": "Journal of Combustion - 2013 - Aharon - Combustion of Submillimeter Heptane Methanol and Heptane Ethanol Droplets in.pdf",
+  "pages": 6,
+  "text_chars": 28271,
+  "investigations_linked": [
+   "SAME",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Digitized frame of 16 mm film from the droplet view"
+   },
+   {
+    "n": "2",
+    "caption": "Digitized frame of 16 mm film from the flame view"
+   },
+   {
+    "n": "1",
+    "caption": "After the rotation to orient the"
+   },
+   {
+    "n": "3",
+    "caption": "Images showing (a) the binary image with a thin fiber and (b) the droplet outline and fiber location."
+   },
+   {
+    "n": "4",
+    "caption": "Plots of the brightest pixel with the corresponding region of interest for (a) the flame view camera and (b) the droplet view camera."
+   },
+   {
+    "n": "5",
+    "caption": "Representative plots of (a) droplet diameter and (b) flame diameter histories for a heptane/methanol droplet in air."
+   },
+   {
+    "n": "6",
+    "caption": "Burning rate"
+   },
+   {
+    "n": "6",
+    "caption": "Representative plot of 𝑑2 versus 𝑡 and the curve fit used to"
+   },
+   {
+    "n": "7",
+    "caption": "The addition of ethanol or methanol to a heptane droplet"
+   },
+   {
+    "n": "7",
+    "caption": "Droplet burning rates 𝐾 as a function of the initial droplet"
+   }
+  ],
+  "abstract_snippet": "Hindawi Publishing Corporation Journal of Combustion Volume 2013, Article ID 154202, 6 pages http://dx.doi.org/10.1155/2013/154202 Research Article Combustion of Submillimeter Heptane/Methanol and Heptane/Ethanol Droplets in Reduced Gravity"
+ },
+ {
+  "file": "Soot Formation in Spherical Diffusion Flames.pdf",
+  "pages": 25,
+  "text_chars": 87617,
+  "investigations_linked": [
+   "SAME",
+   "Flame Design",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "Photograph of the porous sphere mounted on a gas supply tube (a) and the schematic of"
+   },
+   {
+    "n": "1",
+    "caption": "Photograph of the porous sphere mounted on a gas supply tube (a) and the schematic of"
+   },
+   {
+    "n": "2",
+    "caption": "Photographs of the spherical diffusion flames of ethylene in the Flame Design (Adamant)"
+   },
+   {
+    "n": "2",
+    "caption": "Photographs of the spherical diffusion flames of ethylene in the Flame Design (Adamant)"
+   },
+   {
+    "n": "3",
+    "caption": "Examples of the time histories of the flame radius: (a) normal flame; (b) inverse flame."
+   },
+   {
+    "n": "3",
+    "caption": "Examples of the time histories of the flame radius: (a) normal flame; (b) inverse flame."
+   },
+   {
+    "n": "4",
+    "caption": "Examples of the time histories of the flame temperature: (a) normal flame; (b) inverse"
+   },
+   {
+    "n": "4",
+    "caption": "Examples of the time histories of the flame temperature: (a) normal flame; (b) inverse flame."
+   },
+   {
+    "n": "4",
+    "caption": "Examples of the time histories of the flame temperature: (a) normal flame; (b) inverse"
+   },
+   {
+    "n": "5",
+    "caption": "Examples of time histories of the size (a) and temperature (b) of a quasi-stationary inverse"
+   }
+  ],
+  "abstract_snippet": "Citation: Frolov, S.M.; Ivanov, V.S.; Frolov, F.S.; Vlasov, P.A.; Axelbaum, R.; Irace, P.H.; Yablonsky, G.; Waddell, K. Soot Formation in Spherical Diffusion Flames. Mathematics 2023, 11, 261. https://doi.org/10.3390/ math11020261 Academic "
+ },
+ {
+  "file": "Spherical gas-fueled cool diffusion flames.pdf",
+  "pages": 9,
+  "text_chars": 34168,
+  "investigations_linked": [
+   "SAME",
+   "CFI-G",
+   "CFI",
+   "ACME",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "The spherical porous burner prior to testing."
+   },
+   {
+    "n": "2",
+    "caption": "As discussed in"
+   },
+   {
+    "n": "2",
+    "caption": "Temperature T versus mixture fraction in the"
+   },
+   {
+    "n": "3",
+    "caption": "Model predictions of normal cool diffusion flames"
+   },
+   {
+    "n": "4",
+    "caption": "Intensified camera images from Test D of (a) the hot"
+   },
+   {
+    "n": "5",
+    "caption": "Temporal plots of measurements for (a) a hot flame at ṁHC = 2 mg/s that extinguishes, (b) a hot flame at ṁHC = 1.5 mg/s"
+   },
+   {
+    "n": "6",
+    "caption": "The cool flame radius was"
+   },
+   {
+    "n": "7",
+    "caption": "Measured versus modeled flame radii for hot and"
+   },
+   {
+    "n": "6",
+    "caption": "Averaged image of the cool flame of Test G1 and a"
+   }
+  ],
+  "abstract_snippet": "1 Spherical Gas-Fueled Cool Diffusion Flames Minhyeng Kima, Kendyl A. Waddella, Peter B. Sunderlanda,*, Vedha Nayagamb, Dennis P. Stockerc, Daniel L. Dietrichc, Yiguang Jud, Forman A. Williamse, Phillip Iracef, and Richard L. Axelbaumf aDep"
+ },
+ {
+  "file": "annurev-chembioeng-060718-030141.pdf",
+  "pages": 19,
+  "text_chars": 54183,
+  "investigations_linked": [
+   "BRE"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "4",
+    "caption": "The results demonstrate that, for the low-pressure peninsula, the explosion limits"
+   },
+   {
+    "n": "5",
+    "caption": "The catalytic action"
+   },
+   {
+    "n": "6",
+    "caption": "Specifically, Figure 6a shows a and b over the range of the hydrogen percentage in fuel from zero"
+   },
+   {
+    "n": "9",
+    "caption": "For the H 2 -CO-O 2 mixtures, α and β show a"
+   },
+   {
+    "n": "11",
+    "caption": "Although all of these expressions show good agreement with"
+   },
+   {
+    "n": "12",
+    "caption": "The LTC reactivity decreases"
+   },
+   {
+    "n": "14",
+    "caption": "Although λi varies with ξ , there is at"
+   },
+   {
+    "n": "15",
+    "caption": "Through such critical Damköhler number analysis at different system pressures, the"
+   },
+   {
+    "n": "16",
+    "caption": "Whereas the high diffusivity of the hydrogen molecule"
+   }
+  ],
+  "abstract_snippet": "Downloaded from www.annualreviews.org. Guest (guest) IP: 154.182.82.227 On: Thu, 08 Oct 2026 23:36:20 Annual Review of Chemical and Biomolecular Engineering On Radical-Induced Ignition in Combustion Systems Wenkai Liang and Chung K. Law Dep"
+ },
+ {
+  "file": "nihms-1555213.pdf",
+  "pages": 33,
+  "text_chars": 73568,
+  "investigations_linked": [
+   "SAFFIRE",
+   "SAME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "7",
+    "caption": "For comparison purposes, the flame tip progress during"
+   },
+   {
+    "n": "7",
+    "caption": "From the results of Fig. 7, it can be inferred that"
+   },
+   {
+    "n": "10",
+    "caption": "This indicates that ambient pressure, and consequently buoyancy"
+   },
+   {
+    "n": "6",
+    "caption": "Also included in Fig. 11"
+   },
+   {
+    "n": "7",
+    "caption": "The error bars show the"
+   },
+   {
+    "n": "12",
+    "caption": "It is seen that Eq. (6) correlates well"
+   },
+   {
+    "n": "1",
+    "caption": "Schematic diagram of concurrent flame spread over a thick sample."
+   },
+   {
+    "n": "3",
+    "caption": "Flow duct and PMMA samples used in the normal gravity tests."
+   },
+   {
+    "n": "4",
+    "caption": "The different samples (a) used during Saffire II were mounted in the flow duct (b). The"
+   },
+   {
+    "n": "5",
+    "caption": "Front view of two representative frames at 100 and 40 kPa with (a) the light off showing the"
+   }
+  ],
+  "abstract_snippet": "Buoyancy effects on concurrent flame spread over thick PMMA Maria Thomsena,*, Carlos Fernandez-Pelloa, Gary A. Ruffb, David L. Urbanb aDepartment of Mechanical Engineering, University of California, Berkeley, Berkeley, CA 94720, USA bNASA G"
+ },
+ {
+  "file": "nihms-1658855.pdf",
+  "pages": 26,
+  "text_chars": 48650,
+  "investigations_linked": [
+   "SAME"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "3",
+    "caption": "Space experiments are ideally"
+   },
+   {
+    "n": "7",
+    "caption": "The diameter is seen to consistently increase with aging"
+   },
+   {
+    "n": "8",
+    "caption": "Overall the results correlate strongly with a slope of 1. This suggests that at flow"
+   },
+   {
+    "n": "9",
+    "caption": "There is a much smaller data set for the Space Shuttle detector as it"
+   },
+   {
+    "n": "12",
+    "caption": "Note that the morphology of the Pyrell smoke changed from fractal-like clusters with up to"
+   },
+   {
+    "n": "3",
+    "caption": "Schematic of the SAME hardware."
+   },
+   {
+    "n": "4",
+    "caption": "Diagram (a) shows the hot wire above the TEM grid in the path of the smoke-laden airflow."
+   },
+   {
+    "n": "5",
+    "caption": "Plot of the ratio of the mass concentration from the DustTrak with a 10 μm impactor to the"
+   },
+   {
+    "n": "6",
+    "caption": "Diameter of average mass versus air flow velocity for different materials. These tests were"
+   },
+   {
+    "n": "7",
+    "caption": "Diameter of average mass versus the aging time for five materials at low temperature and 8.1"
+   }
+  ],
+  "abstract_snippet": "Evaluation of Spacecraft Smoke Detector Performance in the Low-Gravity Environment Marit Meyer1, David Urban1, George Mulholland2, Victoria Bryg4, Zengguang Yuan4, Gary Ruff1, Thomas Cleary3, Jiann Yang3 1NASA Glenn Research Center, Clevela"
+ },
+ {
+  "file": "nihms859813.pdf",
+  "pages": 26,
+  "text_chars": 50957,
+  "investigations_linked": [
+   "SAME",
+   "BRE",
+   "CIR"
+  ],
+  "link_status": "candidate (full-text name occurrence; citation-verify before confirmed)",
+  "figure_captions": [
+   {
+    "n": "1",
+    "caption": "The stainless steel coflow burner is 13 cm tall and"
+   },
+   {
+    "n": "6",
+    "caption": "Chien et al. Page 5"
+   },
+   {
+    "n": "9",
+    "caption": "The laser power density is high enough to ensure"
+   },
+   {
+    "n": "1",
+    "caption": "Schematic diagram of the experiment. (a) Side view schematic of the coflow burner and gas"
+   },
+   {
+    "n": "2",
+    "caption": "Experimental conditions. The bottom line of the image is aligned with the level of the jet"
+   },
+   {
+    "n": "3",
+    "caption": "Schlieren image of the flow field with at H/D = 4.5."
+   },
+   {
+    "n": "4",
+    "caption": "An example Infrared image of the impinging plate; the maximum temperature is located at"
+   },
+   {
+    "n": "5",
+    "caption": "Schematic of the PLIF experimental setup."
+   },
+   {
+    "n": "6",
+    "caption": "OH* chemiluminescence."
+   },
+   {
+    "n": "7",
+    "caption": "Simulated fluorescence excitation spectrum for the Q branch (0,0) band of the B1Σ"
+   }
+  ],
+  "abstract_snippet": "CO Emission from an Impinging Non-Premixed Flame Y.C. Chien, D. Escofet-Martin, and D. Dunn-Rankin Mechanical and Aerospace Engineering, University of California Irvine, Irvine, 92697. USA Abstract Carbon monoxide (CO) results from the inco"
+ }
+]
